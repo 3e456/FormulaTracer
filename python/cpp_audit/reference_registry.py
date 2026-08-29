@@ -9,7 +9,6 @@ from __future__ import annotations
 
 from collections import Counter, defaultdict
 from dataclasses import asdict, dataclass
-from enum import StrEnum
 from html.parser import HTMLParser
 import fnmatch
 import hashlib
@@ -21,6 +20,7 @@ from typing import Any, Callable, Iterable
 
 import yaml
 
+from ._compat import StrEnum
 from .library_contracts import LibraryContractRegistry, SemanticFamily
 from .reference_harvester import (ContractKind, FAMILY_CANONICALIZATION, HARVESTER_VERSION,
                                   classify_contract)

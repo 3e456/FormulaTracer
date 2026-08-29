@@ -14,11 +14,11 @@ import urllib.parse
 import urllib.request
 import zlib
 from collections import Counter, defaultdict
-from enum import StrEnum
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any, Iterable
 
+from ._compat import StrEnum
 from .library_contracts import LibraryContractRegistry, SemanticFamily, integrate_reference_harvest
 
 # The verified registry is authoritative.  Legacy names are retained only to
