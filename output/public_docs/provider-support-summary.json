@@ -1,0 +1,5 @@
+{
+  "catalog_count_is_support_count": false,
+  "policy": "SELECTED_CONTRACTS_NOT_ENTIRE_UPSTREAM_LIBRARY",
+  "version_policy": "REFERENCE_ONLY_VERSION_UNPINNED"
+}

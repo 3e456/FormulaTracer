@@ -1,0 +1,29 @@
+{
+  "examples": [
+    {
+      "name": "python_audit",
+      "exists": true,
+      "execution": "SEE_VALIDATION_RESULTS"
+    },
+    {
+      "name": "operational_audit",
+      "exists": true,
+      "execution": "SEE_VALIDATION_RESULTS"
+    },
+    {
+      "name": "rust_native",
+      "exists": true,
+      "execution": "SEE_VALIDATION_RESULTS"
+    },
+    {
+      "name": "c_native",
+      "exists": true,
+      "execution": "SEE_VALIDATION_RESULTS"
+    },
+    {
+      "name": "cpp_native",
+      "exists": true,
+      "execution": "SEE_VALIDATION_RESULTS"
+    }
+  ]
+}

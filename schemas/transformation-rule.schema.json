@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cpp-audit.dev/schemas/transformation-rule-0.1.json",
+  "type": "object", "required": ["schema_version", "rule"],
+  "properties": {"schema_version": {"const": "0.1"}, "rule": {"type": "object",
+    "required": ["id", "kind", "source_pattern", "target_template"],
+    "properties": {"id": {"type": "string"}, "kind": {"enum": ["exact", "exact_under_assumptions", "approximation"]},
+      "source_pattern": {"type": "object"}, "target_template": {"type": "object"},
+      "conditions": {"type": "array"}, "numeric_mode_restrictions": {"type": "array"},
+      "theorem_reference": {"type": ["string", "null"]}, "supported_observables": {"type": "array"},
+      "cost": {"type": "object"}, "hard_constraints": {"type": "object"},
+      "parameters": {"type": "array"}, "provenance": {"type": "object"},
+      "approximation_family_id": {"type": "string"}, "selection_error_estimate": {"type": ["number", "null"]},
+      "error_bound": {"type": ["number", "null"]}, "proof_status": {"type": "string"},
+      "library_contract": {"type": ["object", "null"]}, "relation": {"type": "string"}}}}
+}

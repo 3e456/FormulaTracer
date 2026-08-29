@@ -1,0 +1,19 @@
+schema_version: "0.1"
+entity_id: std.numeric.inner_product
+standard_version: cpp17
+header: numeric
+qualified_name: std::inner_product
+kind: function_template
+signature: "T inner_product(InputIt1, InputIt1, InputIt2, T)"
+template_parameters: [InputIt1, InputIt2, T]
+effect: Pure
+semantic_family: TransformFoldLeft
+preconditions: [valid_first_range, valid_second_range]
+postconditions: [returns_left_fold_of_pairwise_products]
+exceptions: [propagates_element_operation_exceptions]
+aliasing: {permits_read_alias: true, permits_output_alias: false}
+iterator_requirements: [input_iterator]
+complexity: "exactly 2*N arithmetic operations"
+lowering: {op: TransformReduce, reduction_order: left_to_right, transform: Multiply, reduce: Add}
+proof_status: SEMANTICALLY_VERIFIED
+source_reference: "ISO C++17 [inner.product]"

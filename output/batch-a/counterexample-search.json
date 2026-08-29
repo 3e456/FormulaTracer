@@ -1,0 +1,110 @@
+{
+  "counterexample_candidates": [
+    {
+      "actual_value": 72500.0,
+      "candidate_id": "counterexample:612de60ebf1de9b1",
+      "evidence_level": "NUMERICALLY_CHECKED",
+      "expected_value": 0.0725,
+      "inputs": {
+        "kg": 72.5
+      },
+      "status": "COUNTEREXAMPLE_CANDIDATE_NUMERICALLY_CONFIRMED"
+    },
+    {
+      "actual_value": 31250.0,
+      "candidate_id": "counterexample:7be78d7bd63e3b9e",
+      "evidence_level": "NUMERICALLY_CHECKED",
+      "expected_value": 0.03125,
+      "inputs": {
+        "kg": 31.25
+      },
+      "status": "COUNTEREXAMPLE_CANDIDATE_NUMERICALLY_CONFIRMED"
+    },
+    {
+      "actual_value": -3125.0,
+      "candidate_id": "counterexample:50fd8569053db73d",
+      "evidence_level": "NUMERICALLY_CHECKED",
+      "expected_value": -0.003125,
+      "inputs": {
+        "kg": -3.125
+      },
+      "status": "COUNTEREXAMPLE_CANDIDATE_NUMERICALLY_CONFIRMED"
+    },
+    {
+      "actual_value": 10625.0,
+      "candidate_id": "counterexample:5bf30b464abf1457",
+      "evidence_level": "NUMERICALLY_CHECKED",
+      "expected_value": 0.010625,
+      "inputs": {
+        "kg": 10.625
+      },
+      "status": "COUNTEREXAMPLE_CANDIDATE_NUMERICALLY_CONFIRMED"
+    }
+  ],
+  "diagnostics": [],
+  "failure_regions": [
+    {
+      "branch_constraints": [],
+      "divergence_ids": [
+        "semantic-divergence:acadb8930061701d"
+      ],
+      "evidence": "SYMBOLIC_INTERVAL",
+      "input_intervals": {
+        "kg": {
+          "lower": 45.0,
+          "upper": 100.0
+        }
+      },
+      "region_id": "failure-region:989915ce08f7ae7d",
+      "status": "FAILURE_REGION_PROVEN"
+    },
+    {
+      "branch_constraints": [],
+      "divergence_ids": [
+        "semantic-divergence:acadb8930061701d"
+      ],
+      "evidence": "SYMBOLIC_INTERVAL",
+      "input_intervals": {
+        "kg": {
+          "lower": 17.5,
+          "upper": 45.0
+        }
+      },
+      "region_id": "failure-region:a0a82ee77d78e6df",
+      "status": "FAILURE_REGION_PROVEN"
+    },
+    {
+      "branch_constraints": [],
+      "divergence_ids": [
+        "semantic-divergence:acadb8930061701d"
+      ],
+      "evidence": "INTERVAL_OVERLAP_INCONCLUSIVE",
+      "input_intervals": {
+        "kg": {
+          "lower": -10.0,
+          "upper": 3.75
+        }
+      },
+      "region_id": "failure-region:e1261ea85ecdeae3",
+      "status": "FAILURE_REGION_POSSIBLE"
+    },
+    {
+      "branch_constraints": [],
+      "divergence_ids": [
+        "semantic-divergence:acadb8930061701d"
+      ],
+      "evidence": "SYMBOLIC_INTERVAL",
+      "input_intervals": {
+        "kg": {
+          "lower": 3.75,
+          "upper": 17.5
+        }
+      },
+      "region_id": "failure-region:0ddd9c64bcc9ad9d",
+      "status": "FAILURE_REGION_PROVEN"
+    }
+  ],
+  "method": "INTERVAL_SUBDIVISION_WITH_SYMBOLIC_NARROWING",
+  "status": "FAILURE_REGION_LOCALIZED",
+  "subdivisions": 6
+}

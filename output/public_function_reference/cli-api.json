@@ -1,0 +1,28 @@
+{
+  "exit_codes": {
+    "0": "success",
+    "nonzero": "invalid input, unsupported operation, or failed command"
+  },
+  "native_cli": [
+    "canonicalize FILE",
+    "tex FILE",
+    "kernel FILE",
+    "compare THEORY IMPLEMENTATION"
+  ],
+  "preferred_name": "formulatracer",
+  "python_compatibility_cli": [
+    "audit",
+    "normalize",
+    "print-ir",
+    "compare",
+    "explain",
+    "graph",
+    "lean-export",
+    "verify",
+    "frontend-ir",
+    "python-audit",
+    "python-cfg",
+    "python-certificate",
+    "project-analyze"
+  ]
+}

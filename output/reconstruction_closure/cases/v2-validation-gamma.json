@@ -1,0 +1,38 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "args": [
+      {
+        "name": "z",
+        "op": "FreeVariable"
+      }
+    ],
+    "name": "gamma",
+    "op": "FunctionCall"
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-validation-gamma.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-validation-gamma",
+  "root_cause": "PROVIDER_CONTRACT_GAP",
+  "source_artifact_hash": "57ec6c896ca3dcc4163bcf02eee0dbe96c18bb070b9237c3539ff3c4d5317e21",
+  "case_specific_rule_used": false
+}

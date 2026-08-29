@@ -1,0 +1,16 @@
+schema_version: "0.1"
+package: cupy
+version: "*"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://docs.cupy.dev/en/stable/reference/generated/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-27"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape]
+  ignore: [gpu_kernel, device, parallel_reduction_order]
+simple_bindings:
+  reduction: {add: [cupy.sum], multiply: [cupy.prod], mean: [cupy.mean]}
+  contraction: {dot: [cupy.dot], matmul: [cupy.matmul]}
+  shape: {reshape: [cupy.reshape], transpose: [cupy.transpose]}
+  conditional: {where: [cupy.where]}
+  unary: {abs: [cupy.abs], sqrt: [cupy.sqrt], log: [cupy.log], exp: [cupy.exp]}

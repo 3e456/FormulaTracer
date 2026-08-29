@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "baseline_commit": "1730a3088e4f16b3544b663443bd206a4b705594",
+  "tested_source_commit": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "starting_findings": 24,
+  "fixed_findings": 24,
+  "remaining_findings": 0,
+  "global_suppressions_added": 0,
+  "local_allows": {
+    "count": 3,
+    "lint": "clippy::too_many_arguments",
+    "justification": "Explicit native trust-boundary constructors preserve the stable semantic/ABI field contract."
+  },
+  "behavioral_or_semantic_changes": 0,
+  "changed_public_api": false,
+  "changed_c_abi": false,
+  "changed_schema": false,
+  "files_reviewed": [
+    "rust/formulatracer-core/src/bitvector.rs",
+    "rust/formulatracer-core/src/debugger_provenance.rs",
+    "rust/formulatracer-core/src/error_analysis.rs",
+    "rust/formulatracer-core/src/error_semantics.rs",
+    "rust/formulatracer-core/src/legacy_interval.rs",
+    "rust/formulatracer-core/src/legacy_numeric_types.rs",
+    "rust/formulatracer-core/src/legacy_transformations.rs"
+  ],
+  "command": "cargo clippy --workspace --all-targets --locked -- -D warnings",
+  "windows_status": "PASS",
+  "linux_status": "PASS",
+  "warning_count": 0,
+  "status": "PASS"
+}

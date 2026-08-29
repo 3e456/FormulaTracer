@@ -1,0 +1,36 @@
+{
+  "meaningful_category_counts": {
+    "ELEMENTWISE": 43,
+    "EXECUTION_ONLY": 13,
+    "GRAPH": 8,
+    "INDEXING": 21,
+    "INTERPOLATION": 1,
+    "IO_SERIALIZATION": 14,
+    "LINEAR_ALGEBRA": 3,
+    "QUADRATURE": 1,
+    "RANDOMNESS": 1,
+    "REDUCTION": 29,
+    "REFERENCE_ONLY": 9,
+    "RESHAPE": 26,
+    "SPATIAL": 12,
+    "STATISTICS": 15,
+    "TABULAR": 12,
+    "TENSOR_CONTRACTION": 11,
+    "UNKNOWN": 58
+  },
+  "real_world_other_reclassification": {
+    "before": 3239,
+    "classification_rate": 0.9657301636307503,
+    "meaningful_classified": 3128,
+    "reclassified": {
+      "CONTROL_FLOW": 141,
+      "ELEMENTWISE": 80,
+      "INDEXING": 211,
+      "IO_SERIALIZATION": 49,
+      "NON_MATHEMATICAL": 1503,
+      "REFERENCE_ONLY": 1144,
+      "UNKNOWN": 111
+    }
+  },
+  "schema_version": "1.0"
+}

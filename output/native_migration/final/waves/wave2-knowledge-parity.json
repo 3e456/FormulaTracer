@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "owner": "cpp_audit.mathematical_knowledge",
+  "native_operation": "D/LEGACY_KNOWLEDGE",
+  "cases": [
+    {
+      "case": "exact-classification",
+      "match": true
+    },
+    {
+      "case": "exact-filter",
+      "match": true
+    },
+    {
+      "case": "metrics",
+      "match": true
+    },
+    {
+      "case": "validation",
+      "match": true
+    },
+    {
+      "case": "subgraph-application",
+      "match": true
+    },
+    {
+      "case": "condition-required",
+      "match": true
+    },
+    {
+      "case": "unbound-rejected",
+      "match": true
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

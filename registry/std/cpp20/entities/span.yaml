@@ -1,0 +1,19 @@
+schema_version: "0.1"
+entity_id: std.span.index
+standard_version: cpp20
+header: span
+qualified_name: std::span::operator[]
+kind: member_function
+signature: "constexpr reference operator[](size_type) const"
+template_parameters: []
+effect: ReadMemory
+semantic_family: BoundedIndex
+preconditions: [index_in_bounds, object_lifetime_valid]
+postconditions: [returns_element_reference]
+exceptions: []
+aliasing: {returns_alias_of_input: true}
+iterator_requirements: []
+complexity: constant
+lowering: {op: Index}
+proof_status: CONTRACT_VERIFIED
+source_reference: "ISO C++20 [span.elem]"

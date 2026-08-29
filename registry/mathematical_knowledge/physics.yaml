@@ -1,0 +1,133 @@
+schema_version: "1.0"
+defaults: &defaults
+  preconditions: []
+  domain_constraints: []
+  type_constraints: []
+  shape_constraints: []
+  required_facts: []
+  algebraic_structures: []
+  forward_enabled: true
+  reverse_enabled: false
+  rewrite_cost: 2
+  priority: 90
+  motif_tags: [physics_foundation]
+  provider_hints: []
+  evidence_kind: REFERENCE_THEOREM
+  reference: "registry/scientific_foundations/physics-v1.json"
+  lean_theorem: null
+knowledge:
+  - <<: *defaults
+    knowledge_id: physics_gradient_definition
+    name: Gradient component definition
+    category: MULTIVARIABLE_CALCULUS
+    lhs: {op: Gradient, function: {op: PatternVariable, name: f}}
+    rhs: {op: IndexedValue, name: grad_f, indices: [i], definition: {op: Derivative, function: {op: PatternVariable, name: f}, variable: {op: IndexedValue, name: x, indices: [i]}}}
+    relation_kind: DEFINITIONAL
+    motif_tags: [physics_foundation, gradient, derivative]
+  - <<: *defaults
+    knowledge_id: physics_divergence_definition
+    name: Cartesian divergence definition
+    category: VECTOR_CALCULUS
+    lhs: {op: Divergence, field: {op: PatternVariable, name: f}}
+    rhs: {op: FiniteSum, bound_index: i, body: {op: Derivative, function: {op: IndexedValue, name: f, indices: [i]}, variable: {op: IndexedValue, name: x, indices: [i]}}}
+    relation_kind: DEFINITIONAL
+    required_facts: [cartesian_coordinates]
+    motif_tags: [physics_foundation, divergence, finite_sum, derivative]
+  - <<: *defaults
+    knowledge_id: physics_laplacian_definition
+    name: Laplacian as divergence of gradient
+    category: VECTOR_CALCULUS
+    lhs: {op: Laplacian, function: {op: PatternVariable, name: f}}
+    rhs: {op: Divergence, field: {op: Gradient, function: {op: PatternVariable, name: f}}}
+    relation_kind: DEFINITIONAL
+    motif_tags: [physics_foundation, laplacian, gradient, divergence]
+  - <<: *defaults
+    knowledge_id: physics_mixed_partial_symmetry
+    name: Mixed partial symmetry under Schwarz conditions
+    category: MULTIVARIABLE_CALCULUS
+    lhs: {op: Derivative, function: {op: PatternVariable, name: f}, variables: [x, y]}
+    rhs: {op: Derivative, function: {op: PatternVariable, name: f}, variables: [y, x]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [continuous_second_partials_on_neighborhood]
+    motif_tags: [physics_foundation, derivative, mixed_partial]
+  - <<: *defaults
+    knowledge_id: physics_flux_definition
+    name: Oriented flux integral
+    category: GEOMETRIC_INTEGRALS
+    lhs: {op: FluxIntegral, field: {op: PatternVariable, name: f}, surface: {op: PatternVariable, name: s}}
+    rhs: {op: Integral, domain: {op: PatternVariable, name: s}, measure: SURFACE, body: {op: Dot, args: [{op: PatternVariable, name: f}, {op: SurfaceNormal}]}}
+    relation_kind: DEFINITIONAL
+    required_facts: [surface_orientation_declared]
+    motif_tags: [physics_foundation, integral, flux]
+  - <<: *defaults
+    knowledge_id: physics_gauss_theorem
+    name: Gauss divergence theorem
+    category: GEOMETRIC_INTEGRALS
+    lhs: {op: Integral, domain: {op: PatternVariable, name: v}, body: {op: Divergence, field: {op: PatternVariable, name: f}}}
+    rhs: {op: FluxIntegral, field: {op: PatternVariable, name: f}, surface: {op: Boundary, domain: {op: PatternVariable, name: v}}}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [field_continuously_differentiable, bounded_regular_domain, outward_boundary_orientation]
+    motif_tags: [physics_foundation, gauss, integral, flux]
+  - <<: *defaults
+    knowledge_id: physics_stokes_theorem
+    name: Stokes theorem
+    category: GEOMETRIC_INTEGRALS
+    lhs: {op: SurfaceIntegral, surface: {op: PatternVariable, name: s}, body: {op: Curl, field: {op: PatternVariable, name: f}}}
+    rhs: {op: LineIntegral, curve: {op: Boundary, domain: {op: PatternVariable, name: s}}, field: {op: PatternVariable, name: f}}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [field_continuously_differentiable, orientable_regular_surface, boundary_orientation_compatible]
+    motif_tags: [physics_foundation, stokes, integral, curl]
+  - <<: *defaults
+    knowledge_id: physics_euler_lagrange
+    name: Euler-Lagrange necessary condition
+    category: VARIATIONAL_MECHANICS
+    lhs: {op: StationaryAction, path: {op: PatternVariable, name: q}}
+    rhs: {op: EulerLagrangeEquation, path: {op: PatternVariable, name: q}}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [admissible_fixed_endpoint_variations, lagrangian_twice_differentiable]
+    motif_tags: [physics_foundation, variational, lagrangian]
+  - <<: *defaults
+    knowledge_id: physics_noether
+    name: Noether symmetry to conserved quantity
+    category: VARIATIONAL_MECHANICS
+    lhs: {op: ContinuousSymmetry, of: {op: Action}}
+    rhs: {op: ConservedQuantity, provenance: NOETHER_DERIVED}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [differentiable_one_parameter_symmetry, action_invariant_up_to_boundary_term, euler_lagrange_holds]
+    motif_tags: [physics_foundation, noether, conservation]
+  - <<: *defaults
+    knowledge_id: physics_local_integral_conservation
+    name: Local to integral conservation law
+    category: PDE
+    lhs: {op: ConservationLaw}
+    rhs: {op: ControlVolumeBalance}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [gauss_theorem_applicable, regular_control_volume, outward_flux_orientation]
+    motif_tags: [physics_foundation, conservation, pde, integral]
+  - <<: *defaults
+    knowledge_id: physics_finite_volume_realization
+    name: Finite-volume control-volume realization
+    category: NUMERICAL_REALIZATION
+    lhs: {op: ControlVolumeBalance}
+    rhs: {op: FiniteVolumeFluxSum}
+    relation_kind: DISCRETIZATION
+    required_facts: [valid_mesh_control_volumes, oriented_faces, flux_consistency]
+    motif_tags: [physics_foundation, finite_volume, discretization]
+  - <<: *defaults
+    knowledge_id: physics_laplace_fourier_restriction
+    name: Fourier transform as Laplace imaginary-axis restriction
+    category: TRANSFORMS
+    lhs: {op: LaplaceTransform, parameter: s}
+    rhs: {op: FourierTransform, parameter: omega}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [transform_conventions_compatible, imaginary_axis_in_region_of_convergence]
+    motif_tags: [physics_foundation, laplace, fourier, transform]
+  - <<: *defaults
+    knowledge_id: physics_small_angle_rotation
+    name: Small-angle rotation approximation
+    category: ROTATION
+    lhs: {op: RotationExponential, argument: {op: PatternVariable, name: theta}}
+    rhs: {op: Add, args: [{op: IdentityMatrix}, {op: SkewMatrix, argument: {op: PatternVariable, name: theta}}]}
+    relation_kind: APPROXIMATION
+    required_facts: [small_angle_bound, taylor_remainder_bound]
+    motif_tags: [physics_foundation, rotation, taylor, approximation]

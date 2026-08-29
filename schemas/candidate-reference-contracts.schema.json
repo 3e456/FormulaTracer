@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/candidate-reference-contracts.schema.json",
+  "title": "Class-level reviewed reference contracts",
+  "type": "object",
+  "required": ["schema_version", "templates"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "templates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["class_id", "template_id", "semantic_family", "semantic_subtype", "member_apis", "canonical_semantics", "argument_mapping", "return_type_rule", "receiver_type_rule", "preserve_scope", "ignore_scope", "reference_provenance", "formalization_status"],
+        "properties": {
+          "class_id": {"type": "string", "minLength": 1},
+          "template_id": {"type": "string", "minLength": 1},
+          "member_apis": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+          "formalization_status": {"const": "FORMALIZED"},
+          "signature_required": {"type": "boolean"},
+          "canonical_semantics": {
+            "type": "object",
+            "required": ["relation_kind", "operator", "mathematical_relation", "latex_template"]
+          }
+        }
+      }
+    }
+  }
+}

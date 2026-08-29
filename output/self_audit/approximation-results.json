@@ -1,0 +1,127 @@
+{
+  "cases": [
+    {
+      "api": "numpy.diff",
+      "error_ir_status": "ERROR_FAMILY_REQUIRES_ASSUMPTIONS",
+      "range_status": "ENCLOSURE_REQUIRES_INPUT_RANGES",
+      "recognition": {
+        "approximation_family_ids": [
+          "forward_difference_first_derivative"
+        ],
+        "derivative_is_exact_semantics": false,
+        "exact_semantic_operator": "DiscreteDifference",
+        "provenance": {
+          "authority": "public_reference_contract",
+          "registry": "registry/libraries/numpy.yaml"
+        },
+        "public_reference_semantics": {
+          "axis": "positional",
+          "derivative_claim": false,
+          "order_parameter": "n",
+          "scaling": "absent"
+        },
+        "qualified_callable": "numpy.diff",
+        "status": "EXACT_DISCRETE_SEMANTICS_RECORDED"
+      },
+      "theorem_bindings": [
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED"
+      ]
+    },
+    {
+      "api": "numpy.gradient",
+      "error_ir_status": "ERROR_FAMILY_REQUIRES_ASSUMPTIONS",
+      "range_status": "ENCLOSURE_REQUIRES_INPUT_RANGES",
+      "recognition": {
+        "approximation_family_ids": [
+          "central_difference_first_derivative",
+          "forward_difference_first_derivative",
+          "backward_difference_first_derivative"
+        ],
+        "derivative_is_exact_semantics": false,
+        "exact_semantic_operator": "FiniteDifference",
+        "provenance": {
+          "authority": "public_reference_contract",
+          "registry": "registry/libraries/numpy.yaml"
+        },
+        "public_reference_semantics": {
+          "axis": "positional",
+          "boundary": "one_sided",
+          "edge_order": [
+            1,
+            2
+          ],
+          "interior": "central",
+          "spacing": "explicit_or_unit"
+        },
+        "qualified_callable": "numpy.gradient",
+        "status": "EXACT_DISCRETE_SEMANTICS_RECORDED"
+      },
+      "theorem_bindings": [
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED",
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED",
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED"
+      ]
+    },
+    {
+      "api": "xarray.DataArray.diff",
+      "error_ir_status": "ERROR_FAMILY_REQUIRES_ASSUMPTIONS",
+      "range_status": "ENCLOSURE_REQUIRES_INPUT_RANGES",
+      "recognition": {
+        "approximation_family_ids": [
+          "forward_difference_first_derivative",
+          "backward_difference_first_derivative"
+        ],
+        "derivative_is_exact_semantics": false,
+        "exact_semantic_operator": "DiscreteDifference",
+        "provenance": {
+          "authority": "public_reference_contract",
+          "registry": "registry/libraries/xarray.yaml"
+        },
+        "public_reference_semantics": {
+          "derivative_claim": false,
+          "dimension": "named",
+          "label": "upper_or_lower",
+          "scaling": "absent"
+        },
+        "qualified_callable": "xarray.DataArray.diff",
+        "status": "EXACT_DISCRETE_SEMANTICS_RECORDED"
+      },
+      "theorem_bindings": [
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED",
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED"
+      ]
+    },
+    {
+      "api": "xarray.DataArray.interp",
+      "error_ir_status": "ERROR_FAMILY_REQUIRES_ASSUMPTIONS",
+      "range_status": "ENCLOSURE_REQUIRES_INPUT_RANGES",
+      "recognition": {
+        "approximation_family_ids": [
+          "nearest_neighbor_interpolation",
+          "linear_interpolation",
+          "multilinear_interpolation"
+        ],
+        "derivative_is_exact_semantics": false,
+        "exact_semantic_operator": "Interpolation",
+        "provenance": {
+          "authority": "public_reference_contract",
+          "registry": "registry/libraries/xarray.yaml"
+        },
+        "public_reference_semantics": {
+          "dimension": "named",
+          "extrapolation": "separately_detected",
+          "label_alignment": "preserved"
+        },
+        "qualified_callable": "xarray.DataArray.interp",
+        "status": "INTERPOLATION_RECOGNIZED"
+      },
+      "theorem_bindings": [
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED",
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED",
+        "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED"
+      ]
+    }
+  ],
+  "recognized": 4,
+  "schema_version": "1.0"
+}

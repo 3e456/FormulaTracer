@@ -1,0 +1,200 @@
+schema_version: "0.1"
+package: xarray
+version: ">=2025.1,<2027.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://docs.xarray.dev/en/stable/generated/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape, dimension_names, label_alignment]
+  ignore: [implementation_algorithm, memory_layout]
+simple_bindings:
+  reduction:
+    mean: [xarray.DataArray.mean]
+    minimum: [xarray.DataArray.min, xarray.Dataset.min]
+    maximum: [xarray.DataArray.max, xarray.Dataset.max]
+    median: [xarray.DataArray.median, xarray.Dataset.median]
+    any: [xarray.DataArray.any, xarray.Dataset.any]
+  shape:
+    transpose: [xarray.DataArray.transpose, xarray.Dataset.transpose]
+    broadcast: [xarray.broadcast]
+    broadcast_like: [xarray.DataArray.broadcast_like, xarray.Dataset.broadcast_like]
+    squeeze: [xarray.DataArray.squeeze, xarray.Dataset.squeeze]
+    expand_dimensions: [xarray.DataArray.expand_dims, xarray.Dataset.expand_dims]
+  representation:
+    labeled_array: [xarray.DataArray]
+    rename_dimensions: [xarray.DataArray.rename]
+    cast: [xarray.DataArray.astype, xarray.Dataset.astype]
+    copy: [xarray.DataArray.copy, xarray.Dataset.copy]
+    full_like: [xarray.full_like]
+    zeros_like: [xarray.zeros_like]
+  selection:
+    label: [xarray.DataArray.sel]
+    integer: [xarray.DataArray.isel]
+    dataset_label: [xarray.Dataset.sel]
+    dataset_integer: [xarray.Dataset.isel]
+    reindex: [xarray.DataArray.reindex, xarray.Dataset.reindex]
+    sort_by: [xarray.DataArray.sortby, xarray.Dataset.sortby]
+  conditional:
+    where: [xarray.where, xarray.DataArray.where, xarray.Dataset.where]
+  alignment:
+    concatenate: [xarray.concat]
+    align_indexes: [xarray.align]
+  table:
+    assign_coordinates: [xarray.DataArray.assign_coords, xarray.Dataset.assign_coords]
+    rename_variables: [xarray.Dataset.rename_vars]
+    to_dataset: [xarray.DataArray.to_dataset]
+    assign_variables: [xarray.DataArray.assign, xarray.Dataset.assign]
+    fill_missing: [xarray.DataArray.fillna, xarray.Dataset.fillna]
+    clip: [xarray.DataArray.clip, xarray.Dataset.clip]
+    reindex_like: [xarray.DataArray.reindex_like, xarray.Dataset.reindex_like]
+  grouping:
+    group_by: [xarray.DataArray.groupby, xarray.Dataset.groupby]
+bindings:
+  - callable: xarray.concat
+    family: Alignment
+    bind: {alignment: concatenate, input_parameter: objs,
+           preserve: [dimension_names, coordinates, label_alignment]}
+    return_type:
+      kind: conditional
+      evidence: REFERENCE_DETERMINED
+      cases:
+        - when: {input_type: xarray.DataArray}
+          returns: xarray.DataArray
+        - when: {input_type: xarray.Dataset}
+          returns: xarray.Dataset
+    reference: https://docs.xarray.dev/en/stable/generated/xarray.concat.html
+    reference_status: REFERENCE_REVIEWED
+  - callable: xarray.where
+    family: ConditionalSelection
+    bind: {selection: where, type_priority: [Dataset, DataArray, Variable, array],
+           preserve: [dimension_names, coordinates, label_alignment]}
+    return_type:
+      kind: conditional
+      evidence: REFERENCE_DETERMINED
+      cases:
+        - when: {input_type: xarray.Dataset}
+          returns: xarray.Dataset
+        - when: {input_type: xarray.DataArray}
+          returns: xarray.DataArray
+        - when: {input_type: xarray.Variable}
+          returns: xarray.Variable
+        - when: {input_type: array_like}
+          returns: numpy.ndarray
+    reference: https://docs.xarray.dev/en/stable/generated/xarray.where.html
+    reference_status: REFERENCE_REVIEWED
+  - callable: xarray.align
+    family: Alignment
+    bind: {alignment: align_indexes, returns_tuple: true,
+           preserve: [input_types, dimension_names, coordinates, label_alignment]}
+    return_type: {kind: xarray.AlignedObjectsTuple, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.xarray.dev/en/stable/generated/xarray.align.html
+    reference_status: REFERENCE_REVIEWED
+  - callable: xarray.Dataset
+    family: RepresentationMapping
+    bind: {mapping: labeled_dataset_constructor, result_type: xarray.Dataset}
+  - callable: xarray.IndexVariable
+    family: RepresentationMapping
+    bind: {mapping: named_index_variable}
+  - callable: xarray.DataArray.sum
+    family: Reduction
+    bind: {reducer: add}
+    return_type: {kind: xarray.DataArray, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.xarray.dev/en/stable/generated/xarray.DataArray.sum.html
+    reference_status: LEAN_VERIFIED_MAPPING
+  - callable: xarray.DataArray.diff
+    family: Statistics
+    bind: {statistic: finite_difference, dimension_parameter: dim,
+           label_parameter: label, result_type: xarray.DataArray}
+  - callable: xarray.DataArray.groupby
+    family: Grouping
+    bind: {grouping: label_grouping, group_parameter: group,
+           result_type: xarray.core.groupby.DataArrayGroupBy}
+  - callable: xarray.Dataset.groupby
+    family: Grouping
+    bind: {grouping: label_grouping, group_parameter: group,
+           result_type: xarray.core.groupby.DatasetGroupBy}
+  - callable: xarray.DataArray.interp
+    family: Interpolation
+    bind: {method: coordinate_interpolation, coordinates_from: coords,
+           method_parameter: method, result_type: xarray.DataArray}
+  - callable: xarray.Dataset.interp
+    family: Interpolation
+    bind: {method: coordinate_interpolation, coordinates_from: coords,
+           method_parameter: method, result_type: xarray.Dataset}
+  - callable: xarray.DataArray.coarsen
+    family: Grouping
+    bind: {grouping: coordinate_block_windows, dimensions_from: dim,
+           boundary_parameter: boundary, result_type: xarray.computation.rolling.DataArrayCoarsen}
+  - callable: xarray.computation.rolling.DataArrayCoarsen.sum
+    family: Aggregation
+    bind: {aggregation: sum, result_type: xarray.DataArray}
+    reference: https://docs.xarray.dev/en/stable/generated/xarray.computation.rolling.DataArrayCoarsen.sum.html
+  - callable: xarray.computation.rolling.DataArrayCoarsen.mean
+    family: Aggregation
+    bind: {aggregation: mean, result_type: xarray.DataArray}
+    reference: https://docs.xarray.dev/en/stable/generated/xarray.computation.rolling.DataArrayCoarsen.mean.html
+  - callable: xarray.apply_ufunc
+    family: AlgorithmInvocation
+    bind: {algorithm: labeled_generalized_function_application, function_parameter: func}
+  - callable: xarray.DataArray.chunk
+    family: ParallelExecution
+    bind: {operation: chunk, result_type: xarray.DataArray}
+    execution: {op: ChunkedArray}
+  - callable: xarray.Dataset.chunk
+    family: ParallelExecution
+    bind: {operation: chunk, result_type: xarray.Dataset}
+    execution: {op: ChunkedArray}
+  - callable: xarray.DataArray.compute
+    family: ParallelExecution
+    bind: {operation: materialize, result_type: xarray.DataArray}
+    execution: {op: Materialize}
+  - callable: xarray.Dataset.compute
+    family: ParallelExecution
+    bind: {operation: materialize, result_type: xarray.Dataset}
+    execution: {op: Materialize}
+  - callable: xarray.open_zarr
+    family: RepresentationMapping
+    bind: {mapping: numeric_input_boundary, result_type: xarray.Dataset, io_boundary: true}
+  - callable: xarray.DataArray.min
+    family: Reduction
+    bind: {reducer: minimum}
+    return_type: {kind: xarray.DataArray, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.DataArray.max
+    family: Reduction
+    bind: {reducer: maximum}
+    return_type: {kind: xarray.DataArray, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.DataArray.median
+    family: Reduction
+    bind: {reducer: median}
+    return_type: {kind: xarray.DataArray, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.Dataset.min
+    family: Reduction
+    bind: {reducer: minimum}
+    return_type: {kind: xarray.Dataset, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.Dataset.max
+    family: Reduction
+    bind: {reducer: maximum}
+    return_type: {kind: xarray.Dataset, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.Dataset.median
+    family: Reduction
+    bind: {reducer: median}
+    return_type: {kind: xarray.Dataset, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.DataArray.reset_coords
+    family: TableMapping
+    bind: {mapping: reset_coordinates}
+    return_type: {kind: xarray.DataArray, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.Dataset.reset_coords
+    family: TableMapping
+    bind: {mapping: reset_coordinates}
+    return_type: {kind: xarray.Dataset, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.Dataset.rename
+    family: TableMapping
+    bind: {mapping: rename_variables_dimensions_or_coordinates}
+    return_type: {kind: xarray.Dataset, evidence: REFERENCE_DETERMINED}
+  - callable: xarray.DataArray.values
+    family: RepresentationMapping
+    bind: {mapping: labeled_array_values_to_numpy, property: true}
+    return_type: {kind: numpy.ndarray, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.xarray.dev/en/stable/generated/xarray.DataArray.values.html
+    reference_status: REFERENCE_REVIEWED

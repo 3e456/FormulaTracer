@@ -1,0 +1,16 @@
+{
+  "classification_counts": {
+    "COVERABLE_BUT_DEFERRED": 1,
+    "NOT_SOUNDLY_DECIDABLE_STATICALLY": 2,
+    "REQUIRES_PROVIDER_INFORMATION": 1,
+    "REQUIRES_RUNTIME_EVIDENCE": 1,
+    "REQUIRES_USER_INFORMATION": 2,
+    "SOLVED": 2,
+    "SOUNDLY_PARTIAL_ONLY": 1
+  },
+  "provider_information_solvable": 1,
+  "restricted_subset_further_coverable": true,
+  "runtime_evidence_solvable": 2,
+  "total_gaps": 10,
+  "user_contract_solvable": 2
+}

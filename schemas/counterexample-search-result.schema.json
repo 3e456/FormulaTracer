@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/counterexample-search-result.schema.json",
+  "title": "CounterexampleSearchResult",
+  "type": "object",
+  "required": ["status", "failure_regions", "counterexample_candidates", "subdivisions", "method", "diagnostics"],
+  "properties": {
+    "status": {"enum": ["FAILURE_REGION_LOCALIZED", "COUNTEREXAMPLE_SEARCH_INCONCLUSIVE", "COUNTEREXAMPLE_SEARCH_UNAVAILABLE"]},
+    "failure_regions": {"type": "array", "items": {"type": "object", "required": ["region_id", "input_intervals", "status", "evidence", "divergence_ids", "branch_constraints"]}},
+    "counterexample_candidates": {"type": "array", "items": {"type": "object", "required": ["candidate_id", "inputs", "expected_value", "actual_value", "status", "evidence_level"]}},
+    "subdivisions": {"type": "integer", "minimum": 0},
+    "method": {"const": "INTERVAL_SUBDIVISION_WITH_SYMBOLIC_NARROWING"},
+    "diagnostics": {"type": "array"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,26 @@
+{
+  "impacts": [
+    {
+      "affected_semantic_family": "Reduction",
+      "change": "SIGNATURE_CHANGED",
+      "new_contract_id": "new",
+      "old_contract_id": "old",
+      "qualified_name": "lib.sum",
+      "reason": "Public signature changed.",
+      "review_status": "CONTRACT_REVIEW_REQUIRED"
+    }
+  ],
+  "new_version": "2",
+  "old_version": "1",
+  "package": "lib",
+  "status": "CONTRACT_REVIEW_REQUIRED",
+  "summary": {
+    "API_ADDED": 0,
+    "API_REMOVED": 0,
+    "DEPRECATED": 0,
+    "REFERENCE_CHANGED": 0,
+    "SEMANTICS_POTENTIALLY_CHANGED": 0,
+    "SIGNATURE_CHANGED": 1,
+    "UNCHANGED": 0
+  }
+}

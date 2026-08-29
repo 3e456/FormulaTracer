@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/interval.schema.json",
+  "title": "Interval",
+  "type": "object",
+  "required": ["lower", "upper", "lower_closed", "upper_closed", "numeric_domain", "proof_status", "provenance", "status", "assumptions", "dimensions", "interval_id"],
+  "properties": {
+    "lower": {},
+    "upper": {},
+    "lower_closed": {"type": "boolean"},
+    "upper_closed": {"type": "boolean"},
+    "numeric_domain": {"enum": ["MATHEMATICAL_RANGE", "ERROR_RANGE", "TRUE_VALUE_RANGE", "EXECUTION_RANGE"]},
+    "proof_status": {"enum": ["INTERVAL_RULE_KERNEL_VERIFIED", "INTERVAL_PROPAGATION_KERNEL_VERIFIED", "INTERVAL_PROPAGATION_SYMBOLIC", "INTERVAL_PROPAGATION_PARTIAL", "INTERVAL_UNRESOLVED"]},
+    "provenance": {"type": "object"},
+    "status": {"enum": ["EXACT_SINGLETON", "KERNEL_VERIFIED_INTERVAL", "KERNEL_VERIFIED_INTERVAL_UNDER_ASSUMPTIONS", "SYMBOLIC_INTERVAL", "INTERVAL_ARITHMETIC_VERIFIED", "REFERENCE_CONTRACT_INTERVAL", "USER_PROVIDED_INTERVAL", "NUMERICALLY_OBSERVED_ONLY", "INTERVAL_UNRESOLVED", "INTERVAL_INVALID"]},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "dimensions": {"type": "array", "items": {"type": "string"}},
+    "interval_id": {"type": "string"}
+  },
+  "additionalProperties": false
+}

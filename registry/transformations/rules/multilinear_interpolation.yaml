@@ -1,0 +1,13 @@
+schema_version: "0.1"
+rule:
+  id: multilinear_interpolation
+  kind: approximation
+  approximation_family_id: multilinear_interpolation
+  relation: APPROXIMATION_OF
+  source_pattern: {op: Interpolation}
+  target_template: {op: Interpolation, method: multilinear, support_points: {op: FreeVariable, name: cell_vertices}, query_point: {op: FreeVariable, name: query}, weights: {op: FreeVariable, name: tensor_product_weights}, axis: {op: FreeVariable, name: axes}, domain_status: INTERPOLATION}
+  parameters: [cell_vertices, query, tensor_product_weights, axes, dimensions]
+  conditions: ["query point is inside support cell", "every axis or dimension is explicit"]
+  proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_multilinear2D_is_registered
+  cost: {symbolic_arithmetic_operations: 8, asymptotic_memory_rank: 2, transformation_path_length: 1}

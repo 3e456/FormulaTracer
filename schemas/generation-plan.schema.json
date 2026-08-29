@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/generation-plan.schema.json",
+  "title": "GenerationPlan",
+  "type": "object",
+  "required": ["requested_expression", "candidates", "budget", "status", "decision_provenance"],
+  "properties": {
+    "requested_expression": {"type": "object"},
+    "candidates": {"type": "array", "items": {
+      "type": "object",
+      "required": ["provider_id", "rank", "score", "verification_status"],
+      "properties": {
+        "provider_id": {"type": "string"}, "rank": {"type": "integer", "minimum": 1},
+        "score": {"type": "number"}, "verification_status": {"type": "string"},
+        "matched_path": {"type": "array"}, "reasons": {"type": "array", "items": {"type": "string"}}
+      }, "additionalProperties": true
+    }},
+    "budget": {"type": "object", "required": ["retrieval", "detailed_unification", "full_verification", "rewrite_states", "rewrite_depth"]},
+    "status": {"type": "string"},
+    "selected": {"type": ["object", "null"]},
+    "decision_provenance": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/project-dependency-graph.schema.json",
+  "title": "ProjectDependencyGraph",
+  "type": "object",
+  "required": ["modules", "symbols", "edges", "external_modules", "diagnostics", "cycles", "graph_hash"],
+  "properties": {
+    "modules": {"type": "array", "items": {"$ref": "#/$defs/module"}},
+    "symbols": {"type": "array", "items": {"$ref": "#/$defs/symbol"}},
+    "edges": {"type": "array", "items": {"$ref": "#/$defs/edge"}},
+    "external_modules": {"type": "array", "items": {"type": "string"}},
+    "diagnostics": {"type": "array", "items": {"type": "object"}},
+    "cycles": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}},
+    "graph_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "metadata": {"type": "object"}
+  },
+  "$defs": {
+    "module": {"type": "object", "required": ["module_id", "name", "path", "language", "source_hash", "status"]},
+    "symbol": {"type": "object", "required": ["symbol_id", "module", "name", "kind", "canonical_name", "source_span"]},
+    "edge": {"type": "object", "required": ["source", "target", "kind", "provenance"]}
+  }
+}

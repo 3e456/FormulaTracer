@@ -1,0 +1,118 @@
+schema_version: "0.1"
+package: scipy
+version: ">=1.15,<2.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_status: REFERENCE_REVIEWED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape]
+  ignore: [implementation_algorithm, native_kernel, tree_traversal_order]
+bindings:
+  - callable: scipy.integrate.quad
+    family: AlgorithmInvocation
+    bind: {target: continuous_integral, callback_parameter: func,
+           lower_parameter: a, upper_parameter: b, returned_error: estimate_not_certificate}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.quad.html
+    execution: {op: AdaptiveQuadrature, relation: APPROXIMATION_OF,
+                callback_reconstruction: INTERPROCEDURAL_WHEN_AVAILABLE}
+  - callable: scipy.integrate.solve_ivp
+    family: AlgorithmInvocation
+    bind: {target: initial_value_problem, callback_parameter: fun,
+           time_span_parameter: t_span, initial_state_parameter: y0}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html
+    execution: {op: AdaptiveTimeStepper, relation: APPROXIMATION_OF,
+                callback_reconstruction: INTERPROCEDURAL_WHEN_AVAILABLE}
+  - callable: scipy.optimize.minimize
+    family: AlgorithmInvocation
+    bind: {target: local_minimization_problem, callback_parameter: fun,
+           initial_guess_parameter: x0, method_parameter: method}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html
+    execution: {op: IterativeOptimizer, relation: ALGORITHMICALLY_REALIZED_BY,
+                callback_reconstruction: INTERPROCEDURAL_WHEN_AVAILABLE}
+  - callable: scipy.spatial.cKDTree
+    family: GraphAlgorithm
+    bind: {algorithm: nearest_neighbor_index_construction, result_type: scipy.spatial.cKDTree,
+           metric_dimension_from: data}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.html
+  - callable: scipy.spatial.cKDTree.query
+    family: GraphAlgorithm
+    bind: {algorithm: nearest_neighbor_query, metric_parameter: p, approximation_parameter: eps}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.query.html
+  - callable: scipy.spatial.cKDTree.query_ball_point
+    family: GraphAlgorithm
+    bind: {algorithm: radius_neighbor_query, radius_parameter: r,
+           metric_parameter: p, approximation_parameter: eps}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.query_ball_point.html
+  - callable: scipy.spatial.cKDTree.query_pairs
+    family: GraphAlgorithm
+    bind: {algorithm: radius_neighbor_pairs, radius_parameter: r,
+           metric_parameter: p, approximation_parameter: eps}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.cKDTree.query_pairs.html
+  - callable: scipy.sparse.csr_matrix
+    family: RepresentationMapping
+    bind: {mapping: compressed_sparse_row_matrix, result_type: scipy.sparse.csr_matrix,
+           preserve: [shape, data, indices, index_pointer]}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html
+  - callable: scipy.sparse.csgraph.connected_components
+    family: GraphAlgorithm
+    bind: {algorithm: graph_component_partition, directed_parameter: directed,
+           connection_parameter: connection, return_labels_parameter: return_labels}
+    return_type:
+      kind: conditional
+      evidence: REFERENCE_DETERMINED
+      cases:
+        - when: {input_type: return_labels_true}
+          returns: scipy.ConnectedComponentsResult
+        - when: {input_type: return_labels_false}
+          returns: builtins.int
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.connected_components.html
+  - callable: scipy.sparse.csgraph.dijkstra
+    family: GraphAlgorithm
+    bind: {algorithm: shortest_path_relation, directed_parameter: directed,
+           indices_parameter: indices, distance_limit_parameter: limit,
+           predecessor_parameter: return_predecessors}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csgraph.dijkstra.html
+    reference_status: LEAN_VERIFIED_MAPPING
+  - callable: scipy.ndimage.label
+    family: GraphAlgorithm
+    bind: {algorithm: connected_feature_labeling, connectivity_from: structure}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.label.html
+  - callable: scipy.ndimage.median_filter
+    family: Statistics
+    bind: {statistic: neighborhood_median_filter, size_parameter: size,
+           footprint_parameter: footprint, boundary_parameter: mode,
+           result_type: numpy.ndarray}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.median_filter.html
+  - callable: scipy.cluster.hierarchy.linkage
+    family: AlgorithmInvocation
+    bind: {algorithm: hierarchical_agglomerative_clustering, method_parameter: method,
+           metric_parameter: metric}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.linkage.html
+  - callable: scipy.cluster.hierarchy.fcluster
+    family: AlgorithmInvocation
+    bind: {algorithm: flat_clusters_from_linkage, threshold_parameter: t,
+           criterion_parameter: criterion}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.fcluster.html
+  - callable: scipy.interpolate.interp1d
+    family: Interpolation
+    bind: {method: one_dimensional_interpolation, kind_parameter: kind}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.interp1d.html
+  - callable: scipy.linalg.solve
+    family: LinearAlgebraRelation
+    bind: {relation: solve_linear_system}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.solve.html
+  - callable: scipy.sparse.csr_matrix.data
+    family: RepresentationMapping
+    bind: {mapping: csr_stored_numeric_values, property: true}
+    return_type: {kind: numpy.ndarray, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html
+  - callable: scipy.sparse.csr_matrix.indices
+    family: RepresentationMapping
+    bind: {mapping: csr_column_index_array, property: true, dtype_class: integer}
+    return_type: {kind: numpy.ndarray, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html
+  - callable: scipy.sparse.csr_matrix.indptr
+    family: RepresentationMapping
+    bind: {mapping: csr_index_pointer_array, property: true, dtype_class: integer}
+    return_type: {kind: numpy.ndarray, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.csr_matrix.html

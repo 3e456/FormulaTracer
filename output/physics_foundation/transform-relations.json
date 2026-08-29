@@ -1,0 +1,30 @@
+{
+  "definitions": [],
+  "realizations": [],
+  "schema_version": "1.0",
+  "theorems": [
+    {
+      "assumptions": [
+        "transform_conventions_compatible",
+        "imaginary_axis_in_region_of_convergence"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "LaplaceTransform",
+        "parameter": "s"
+      },
+      "name": "Fourier as Laplace imaginary-axis restriction",
+      "references": [
+        "ref.dlmf.laplace",
+        "ref.dlmf.fourier"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "FourierTransform",
+        "parameter": "omega"
+      },
+      "theorem_id": "fourier_laplace_restriction"
+    }
+  ]
+}

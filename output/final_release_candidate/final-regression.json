@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "tested_source_commit": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "windows_python": {"passed": 608, "subtests_passed": 36, "failed": 0, "status": "PASS"},
+  "linux_python": {"passed": 607, "skipped_platform_specific": 1, "subtests_passed": 36, "failed": 0, "status": "PASS"},
+  "rust": {"core": 65, "c_abi": 3, "failed": 0, "status": "PASS"},
+  "c_and_cpp_consumers": {"passed": 4, "failed": 0, "status": "PASS"},
+  "python_rust_differential": {"cases": 1056, "matches": 1056, "false_acceptance": 0, "status": "PASS"},
+  "tex_differential": {"cases": 1056, "matches": 1056, "status": "PASS"},
+  "structural_isomorphism": {"cases": 28, "false_isomorphism": 0, "semantic_mutation_collapse": 0, "status": "PASS"},
+  "bitvector_exhaustive": {"cases": 196864, "status": "PASS"},
+  "lean": {"version": "4.19.0", "target": "CppAudit", "build": "PASS", "sorry": 0, "admit": 0, "axiom": 0},
+  "provider_runtime": {"cases": 6, "passed": 6, "false_exact_promotion": 0, "false_certified_promotion": 0, "status": "PASS"},
+  "physics_focused": {"status": "PASS"},
+  "round_trip_and_public_examples": {"status": "PASS"},
+  "windows_packaging": {"wheel": "PASS", "sdist": "PASS", "clean_install": "PASS", "native_load": "PASS"},
+  "linux_packaging": {"wheel": "PASS", "sdist": "PASS", "clean_install": "PASS", "native_load": "PASS"},
+  "audit_bundle_parity": "PASS",
+  "false_acceptance": 0,
+  "false_exact_promotion": 0,
+  "false_certified_promotion": 0,
+  "status": "PASS"
+}

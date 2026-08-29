@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "total": 6,
+  "passed": 6,
+  "false_acceptance": 0,
+  "cases": [
+    {"case": "rss-unknown-dependency", "result": "RSS_REQUIRES_PROVEN_INDEPENDENCE"},
+    {"case": "rss-proven-independence", "result": "STATISTICAL_UNDER_INPUTS_INDEPENDENT"},
+    {"case": "shared-semantic-cause", "result": "SHARED_ERROR_CAUSE"},
+    {"case": "subtraction-no-implicit-cancellation", "result": "CONSERVATIVE_TRIANGLE_BOUND"},
+    {"case": "unknown-correlation", "result": "NOT_PROMOTED_TO_ZERO_COVARIANCE"},
+    {"case": "unsupported-covariance-matrix", "result": "FAIL_CLOSED_UNKNOWN_OPERATION"}
+  ],
+  "UNKNOWN_DEPENDENCY_PROMOTED_TO_INDEPENDENT": 0,
+  "UNJUSTIFIED_RSS_ACCEPTANCE": 0
+}

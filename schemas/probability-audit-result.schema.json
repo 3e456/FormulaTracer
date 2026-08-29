@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/probability-audit-result.schema.json",
+  "title": "ProbabilityAuditResult",
+  "type": "object",
+  "required": ["distribution", "definition_validation", "empirical_validation", "independence", "clt", "estimator", "empirical_estimator", "monte_carlo", "parallel_randomness", "status"],
+  "properties": {
+    "distribution": {"type": "object"},
+    "definition_validation": {"type": ["object", "null"]},
+    "empirical_validation": {"type": ["object", "null"]},
+    "independence": {"type": ["object", "null"]},
+    "clt": {"type": ["object", "null"]},
+    "estimator": {"type": ["object", "null"]},
+    "empirical_estimator": {"type": ["object", "null"]},
+    "monte_carlo": {"type": ["object", "null"]},
+    "parallel_randomness": {"type": ["object", "null"]},
+    "status": {"enum": ["PROBABILITY_AUDIT_FAILED", "PROBABILITY_AUDIT_EMPIRICALLY_SUPPORTED", "PROBABILITY_AUDIT_REFERENCE_CONTRACT", "PROBABILITY_AUDIT_UNRESOLVED"]}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,14 @@
+{
+  "error": "FormulaTracer-derived only when dtype/tree/backend known",
+  "execution": "ChunkedReduction",
+  "mathematics": "FiniteSum",
+  "preserved_parameters": [
+    "axis",
+    "dtype",
+    "keepdims",
+    "split_every"
+  ],
+  "reference": "ref.dask.sum",
+  "schema_version": "1.0",
+  "unknown_backend": "UNRESOLVED"
+}

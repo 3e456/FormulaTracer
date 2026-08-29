@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "total": 5,
+  "pass": 5,
+  "mismatch": 0,
+  "records": [
+    {
+      "case": "operator",
+      "match": true,
+      "reference": [
+        "OPERATOR_MISMATCH"
+      ],
+      "native": [
+        "OPERATOR_MISMATCH"
+      ]
+    },
+    {
+      "case": "axis",
+      "match": true,
+      "reference": [
+        "AXIS_MISMATCH"
+      ],
+      "native": [
+        "AXIS_MISMATCH"
+      ]
+    },
+    {
+      "case": "approximation",
+      "match": true,
+      "reference": [
+        "APPROXIMATION_FAMILY_MISMATCH"
+      ],
+      "native": [
+        "APPROXIMATION_FAMILY_MISMATCH"
+      ]
+    },
+    {
+      "case": "error",
+      "match": true,
+      "reference": [
+        "OPERATOR_MISMATCH",
+        "ERROR_BOUND_VIOLATION"
+      ],
+      "native": [
+        "ERROR_BOUND_VIOLATION",
+        "OPERATOR_MISMATCH"
+      ]
+    },
+    {
+      "case": "verified",
+      "match": true,
+      "reference": [],
+      "native": []
+    }
+  ]
+}

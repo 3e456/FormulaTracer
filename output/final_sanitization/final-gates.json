@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "current_tree": "PASS",
+  "generated_output": "PASS",
+  "distribution_archives": "PASS",
+  "reachable_history": {
+    "status": "PASS_WITH_JUSTIFIED_SCANNER_DEFINITION_MATCH",
+    "raw_hit_count": 1,
+    "privacy_relevant_hit_count": 0,
+    "classification": "SANITIZER_PATTERN_LITERAL_IN_HISTORICAL_ARTIFACT_SCANNER",
+    "source_retained": false
+  },
+  "e_drive_accessed": false,
+  "protected_docx_touched": false,
+  "external_source_retained": 0,
+  "status": "PASS"
+}

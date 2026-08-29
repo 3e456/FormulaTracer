@@ -1,0 +1,25 @@
+{
+  "windows_x86_64": {
+    "layout_ready": true,
+    "validated": "SEE_VALIDATION_RESULTS"
+  },
+  "linux_x86_64": {
+    "layout_ready": true,
+    "validated": "SEE_VALIDATION_RESULTS"
+  },
+  "contents": [
+    "include",
+    "lib",
+    "bin",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "python_required": {
+    "rust": false,
+    "c": false,
+    "cpp": false
+  },
+  "limitations": [
+    "native CLI handles semantic documents, not full Rust-source audit orchestration"
+  ]
+}

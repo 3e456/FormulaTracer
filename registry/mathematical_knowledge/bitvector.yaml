@@ -1,0 +1,106 @@
+schema_version: "1.0"
+defaults: &defaults
+  preconditions: []
+  domain_constraints: []
+  type_constraints: []
+  shape_constraints: []
+  required_facts: []
+  algebraic_structures: [BITVECTOR_ALGEBRA]
+  forward_enabled: true
+  reverse_enabled: false
+  rewrite_cost: 1
+  priority: 50
+  motif_tags: [bitvector]
+  provider_hints: [numpy.bitwise, rust.fixed_integer, cpp.fixed_integer]
+  evidence_kind: FORMALLY_DERIVED
+  reference: "Finite bit-vector encoding/decoding semantics"
+  lean_theorem: null
+knowledge:
+  - <<: *defaults
+    knowledge_id: python_bitand_mask8_mod
+    name: Python integer low-byte mask
+    category: BITVECTOR
+    lhs: {op: BitAnd, args: [{op: PatternVariable, name: x}, {op: Constant, value: 255}], semantic_domain: UnboundedIntegerBits}
+    rhs: {op: Modulo, args: [{op: PatternVariable, name: x}, {op: Constant, value: 256}]}
+    relation_kind: EXACT
+    algebraic_structures: [COMMUTATIVE_RING]
+    motif_tags: [bitvector, mask, modulo]
+  - <<: *defaults
+    knowledge_id: unsigned8_bitnot_subtract
+    name: Unsigned 8-bit complement
+    category: BITVECTOR
+    lhs: {op: BitNot, args: [{op: PatternVariable, name: x}], bit_representation: {width: 8, signedness: UNSIGNED}}
+    rhs: {op: Subtract, args: [{op: Constant, value: 255}, {op: PatternVariable, name: x}]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    type_constraints: [x_unsigned8]
+    required_facts: [x_unsigned8]
+    reverse_enabled: true
+  - <<: *defaults
+    knowledge_id: unsigned8_shift_left_mod
+    name: Unsigned 8-bit left shift as modular multiplication
+    category: BITVECTOR
+    lhs: {op: ShiftLeft, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: n}], bit_representation: {width: 8, signedness: UNSIGNED}}
+    rhs: {op: Modulo, args: [{op: Multiply, args: [{op: PatternVariable, name: x}, {op: Power, args: [{op: Constant, value: 2}, {op: PatternVariable, name: n}]}]}, {op: Constant, value: 256}]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    preconditions: [shift_count_0_to_7]
+    type_constraints: [x_unsigned8]
+    required_facts: [shift_count_0_to_7, x_unsigned8]
+  - <<: *defaults
+    knowledge_id: unsigned8_logical_shift_right_floor
+    name: Unsigned 8-bit logical right shift
+    category: BITVECTOR
+    lhs: {op: ShiftRight, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: n}], shift_semantics: LOGICAL_RIGHT, bit_representation: {width: 8, signedness: UNSIGNED}}
+    rhs: {op: FloorDivide, args: [{op: PatternVariable, name: x}, {op: Power, args: [{op: Constant, value: 2}, {op: PatternVariable, name: n}]}]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    preconditions: [shift_count_0_to_7]
+    type_constraints: [x_unsigned8]
+    required_facts: [shift_count_0_to_7, x_unsigned8]
+  - <<: *defaults
+    knowledge_id: bitfield_extract_shift_mask
+    name: Shift-and-mask bit-field extraction
+    category: BITVECTOR
+    lhs: {op: BitAnd, args: [{op: ShiftRight, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: offset}]}, {op: PatternVariable, name: low_mask}]}
+    rhs: {op: BitFieldExtract, value: {op: PatternVariable, name: x}, offset: {op: PatternVariable, name: offset}, width_from_mask: {op: PatternVariable, name: low_mask}}
+    relation_kind: DEFINITIONAL
+    preconditions: [mask_is_contiguous_low_bits, bit_field_in_range]
+    required_facts: [mask_is_contiguous_low_bits, bit_field_in_range]
+  - <<: *defaults
+    knowledge_id: bitand_commutative
+    name: Bitwise AND commutativity
+    category: BITVECTOR
+    lhs: {op: BitAnd, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: y}]}
+    rhs: {op: BitAnd, args: [{op: PatternVariable, name: y}, {op: PatternVariable, name: x}]}
+    relation_kind: EXACT
+    algebraic_structures: []
+    reverse_enabled: false
+  - <<: *defaults
+    knowledge_id: bitor_commutative
+    name: Bitwise OR commutativity
+    category: BITVECTOR
+    lhs: {op: BitOr, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: y}]}
+    rhs: {op: BitOr, args: [{op: PatternVariable, name: y}, {op: PatternVariable, name: x}]}
+    relation_kind: EXACT
+    algebraic_structures: []
+  - <<: *defaults
+    knowledge_id: bitxor_self_zero
+    name: Bitwise XOR self cancellation
+    category: BITVECTOR
+    lhs: {op: BitXor, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: x}]}
+    rhs: {op: Constant, value: 0}
+    relation_kind: EXACT
+  - <<: *defaults
+    knowledge_id: bitand_zero
+    name: Bitwise AND zero
+    category: BITVECTOR
+    lhs: {op: BitAnd, args: [{op: PatternVariable, name: x}, {op: Constant, value: 0}]}
+    rhs: {op: Constant, value: 0}
+    relation_kind: EXACT
+  - <<: *defaults
+    knowledge_id: rotate_roundtrip
+    name: Fixed-width rotate roundtrip
+    category: BITVECTOR
+    lhs: {op: RotateRight, args: [{op: RotateLeft, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: n}]}, {op: PatternVariable, name: n}]}
+    rhs: {op: PatternVariable, name: x}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    preconditions: [fixed_bit_width]
+    required_facts: [fixed_bit_width]

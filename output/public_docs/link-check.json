@@ -1,0 +1,12 @@
+{
+  "broken": [],
+  "checked_internal_links": 140,
+  "external_links_checked_date": "2026-08-29",
+  "external_official_links": [
+    "https://github.com/numpy/numpy",
+    "https://github.com/scipy/scipy",
+    "https://github.com/pydata/xarray",
+    "https://github.com/dask/dask"
+  ],
+  "status": "PASS"
+}

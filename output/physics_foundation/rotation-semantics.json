@@ -1,0 +1,253 @@
+{
+  "definitions": [
+    {
+      "definition_id": "so3",
+      "expansion": {
+        "args": [
+          {
+            "lhs": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "R",
+                      "op": "PatternVariable"
+                    }
+                  ],
+                  "op": "Transpose"
+                },
+                {
+                  "name": "R",
+                  "op": "PatternVariable"
+                }
+              ],
+              "op": "MatMul"
+            },
+            "op": "Equation",
+            "rhs": {
+              "op": "IdentityMatrix"
+            }
+          },
+          {
+            "lhs": {
+              "args": [
+                {
+                  "name": "R",
+                  "op": "PatternVariable"
+                }
+              ],
+              "op": "Determinant"
+            },
+            "op": "Equation",
+            "rhs": {
+              "op": "Constant",
+              "value": 1
+            }
+          }
+        ],
+        "op": "Predicate"
+      },
+      "expression": {
+        "op": "Rotation",
+        "representation": {
+          "name": "R",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Special orthogonal rotation",
+      "references": [
+        "ref.rotation"
+      ]
+    },
+    {
+      "assumptions": [
+        "R_in_SO3"
+      ],
+      "definition_id": "se3",
+      "expansion": {
+        "blocks": [
+          {
+            "name": "R",
+            "op": "PatternVariable"
+          },
+          {
+            "name": "t",
+            "op": "PatternVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1
+          }
+        ],
+        "op": "HomogeneousMatrix"
+      },
+      "expression": {
+        "op": "RigidTransform",
+        "rotation": {
+          "name": "R",
+          "op": "PatternVariable"
+        },
+        "translation": {
+          "name": "t",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Rigid transform",
+      "references": [
+        "ref.rotation"
+      ]
+    }
+  ],
+  "realizations": [
+    {
+      "assumptions": [
+        "quaternion_norm_nonzero"
+      ],
+      "error_evidence": {
+        "kind": "UNIT_NORM_DRIFT_AND_PROJECTION_ERROR"
+      },
+      "implementation": {
+        "op": "QuaternionRenormalization"
+      },
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "proof_obligations": [
+        "roundoff_bound_required"
+      ],
+      "realization_id": "renormalized_quaternion_rotation",
+      "references": [
+        "ref.rotation"
+      ],
+      "relation": "ALGORITHMICALLY_REALIZED_BY",
+      "target": {
+        "op": "Rotation"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "theorems": [
+    {
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.complexQuaternionEmbeddingMul",
+      "lhs": {
+        "op": "ComplexProduct"
+      },
+      "name": "Complex subalgebra embeds in quaternions",
+      "references": [
+        "ref.quaternion"
+      ],
+      "relation": "EXACT_EQUALITY",
+      "rhs": {
+        "op": "QuaternionProduct",
+        "subalgebra": "C"
+      },
+      "theorem_id": "complex_quaternion_embedding"
+    },
+    {
+      "assumptions": [
+        "unit_quaternion"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "QuaternionRotation",
+        "quaternion": {
+          "name": "q",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Antipodal unit quaternions represent one rotation",
+      "references": [
+        "ref.rotation"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "QuaternionRotation",
+        "quaternion": {
+          "args": [
+            {
+              "name": "q",
+              "op": "PatternVariable"
+            }
+          ],
+          "op": "Negate"
+        }
+      },
+      "theorem_id": "quaternion_double_cover"
+    },
+    {
+      "assumptions": [
+        "rotation_maps_body_to_world",
+        "rotation_verified"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "frame": "BODY",
+        "op": "Vector"
+      },
+      "name": "Vector frame transformation",
+      "references": [
+        "ref.rotation"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "args": [
+          {
+            "op": "Rotation",
+            "source": "BODY",
+            "target": "WORLD"
+          },
+          {
+            "frame": "BODY",
+            "op": "Vector"
+          }
+        ],
+        "op": "MatMul"
+      },
+      "theorem_id": "frame_transform_vector"
+    },
+    {
+      "assumptions": [
+        "second_order_cartesian_tensor",
+        "orthogonal_rotation",
+        "frame_direction_declared"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "frame": "SOURCE",
+        "op": "Tensor"
+      },
+      "name": "Second-order tensor transformation",
+      "references": [
+        "ref.tensor-analysis"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "args": [
+          {
+            "op": "Rotation"
+          },
+          {
+            "frame": "SOURCE",
+            "op": "Tensor"
+          },
+          {
+            "args": [
+              {
+                "op": "Rotation"
+              }
+            ],
+            "op": "Transpose"
+          }
+        ],
+        "op": "MatMul"
+      },
+      "theorem_id": "tensor_transform"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+schema_version: "0.1"
+entity_id: std.numeric.reduce
+standard_version: cpp17
+header: numeric
+qualified_name: std::reduce
+kind: function_template
+signature: "T reduce(InputIt, InputIt, T)"
+template_parameters: [InputIt, T]
+effect: Pure
+semantic_family: ReorderedReduction
+preconditions: [valid_range, associative_commutative_operation]
+postconditions: [returns_permitted_reordering]
+exceptions: [propagates_element_operation_exceptions]
+aliasing: {permits_read_alias: true}
+iterator_requirements: [input_iterator]
+complexity: "O(N)"
+lowering: {op: Reduce, reduction_order: implementation_permitted_reordering, reduce: Add}
+proof_status: CONTRACT_VERIFIED
+source_reference: "ISO C++17 [reduce]"

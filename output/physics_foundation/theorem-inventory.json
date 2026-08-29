@@ -1,0 +1,514 @@
+{
+  "schema_version": "1.0",
+  "theorems": [
+    {
+      "assumptions": [
+        "continuous_second_partials_on_neighborhood"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Derivative",
+        "variables": [
+          "x",
+          "y"
+        ]
+      },
+      "name": "Schwarz mixed-partial theorem",
+      "references": [
+        "ref.multivariable-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Derivative",
+        "variables": [
+          "y",
+          "x"
+        ]
+      },
+      "theorem_id": "mixed_partial_symmetry"
+    },
+    {
+      "assumptions": [
+        "F_differentiable",
+        "G_differentiable",
+        "domain_composable"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "function": {
+          "args": [
+            {
+              "name": "F",
+              "op": "PatternVariable"
+            },
+            {
+              "name": "G",
+              "op": "PatternVariable"
+            }
+          ],
+          "op": "FunctionComposition"
+        },
+        "op": "Derivative"
+      },
+      "name": "Multivariable chain rule",
+      "references": [
+        "ref.multivariable-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "args": [
+          {
+            "function": {
+              "name": "F",
+              "op": "PatternVariable"
+            },
+            "op": "Jacobian"
+          },
+          {
+            "function": {
+              "name": "G",
+              "op": "PatternVariable"
+            },
+            "op": "Jacobian"
+          }
+        ],
+        "op": "MatMul"
+      },
+      "theorem_id": "multivariable_chain_rule"
+    },
+    {
+      "assumptions": [
+        "continuous_second_partials",
+        "simply_defined_cartesian_chart"
+      ],
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.curlGradientZero",
+      "lhs": {
+        "field": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Gradient"
+        },
+        "op": "Curl"
+      },
+      "name": "Curl of a gradient",
+      "references": [
+        "ref.vector-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "ZeroVector"
+      },
+      "theorem_id": "curl_gradient_zero"
+    },
+    {
+      "assumptions": [
+        "continuous_second_partials",
+        "three_dimensional_cartesian"
+      ],
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.divergenceCurlZero",
+      "lhs": {
+        "field": {
+          "field": {
+            "name": "F",
+            "op": "PatternVariable"
+          },
+          "op": "Curl"
+        },
+        "op": "Divergence"
+      },
+      "name": "Divergence of a curl",
+      "references": [
+        "ref.vector-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "Constant",
+        "value": 0
+      },
+      "theorem_id": "divergence_curl_zero"
+    },
+    {
+      "assumptions": [
+        "F_continuously_differentiable",
+        "V_bounded_regular_domain",
+        "outward_boundary_orientation"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "body": {
+          "field": {
+            "name": "F",
+            "op": "PatternVariable"
+          },
+          "op": "Divergence"
+        },
+        "domain": {
+          "name": "V",
+          "op": "PatternVariable"
+        },
+        "op": "Integral"
+      },
+      "name": "Gauss divergence theorem",
+      "references": [
+        "ref.gauss"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "FluxIntegral",
+        "surface": {
+          "domain": {
+            "name": "V",
+            "op": "PatternVariable"
+          },
+          "op": "Boundary"
+        }
+      },
+      "theorem_id": "gauss_divergence"
+    },
+    {
+      "assumptions": [
+        "F_continuously_differentiable",
+        "S_orientable_regular_surface",
+        "boundary_orientation_compatible"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "body": {
+          "field": {
+            "name": "F",
+            "op": "PatternVariable"
+          },
+          "op": "Curl"
+        },
+        "op": "SurfaceIntegral",
+        "surface": {
+          "name": "S",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Stokes theorem",
+      "references": [
+        "ref.stokes"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "curve": {
+          "domain": {
+            "name": "S",
+            "op": "PatternVariable"
+          },
+          "op": "Boundary"
+        },
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "LineIntegral"
+      },
+      "theorem_id": "stokes"
+    },
+    {
+      "assumptions": [
+        "admissible_variations",
+        "fixed_endpoint_variation",
+        "L_twice_differentiable"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "StationaryAction",
+        "path": {
+          "name": "q",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Euler-Lagrange necessary condition",
+      "references": [
+        "ref.variational-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "lhs": {
+          "args": [
+            {
+              "function": {
+                "function": {
+                  "op": "Lagrangian"
+                },
+                "op": "Derivative",
+                "variable": "qdot"
+              },
+              "op": "Derivative",
+              "variable": "t"
+            },
+            {
+              "function": {
+                "op": "Lagrangian"
+              },
+              "op": "Derivative",
+              "variable": "q"
+            }
+          ],
+          "op": "Subtract"
+        },
+        "op": "Equation",
+        "rhs": {
+          "op": "Constant",
+          "value": 0
+        }
+      },
+      "theorem_id": "euler_lagrange"
+    },
+    {
+      "assumptions": [
+        "differentiable_one_parameter_symmetry",
+        "action_invariant_up_to_boundary_term",
+        "euler_lagrange_holds"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "of": {
+          "op": "Action"
+        },
+        "op": "ContinuousSymmetry"
+      },
+      "name": "Noether symmetry to conservation",
+      "references": [
+        "ref.noether"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "ConservedQuantity",
+        "provenance": "NOETHER_DERIVED"
+      },
+      "theorem_id": "noether"
+    },
+    {
+      "assumptions": [
+        "regular_legendre_transform",
+        "momentum_definition"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "Lagrangian"
+      },
+      "name": "Lagrangian-Hamiltonian Legendre relation",
+      "references": [
+        "ref.hamiltonian-mechanics"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "definition": {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "p",
+                  "op": "FreeVariable"
+                },
+                {
+                  "name": "qdot",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Dot"
+            },
+            {
+              "op": "Lagrangian"
+            }
+          ],
+          "op": "Subtract"
+        },
+        "op": "Hamiltonian"
+      },
+      "theorem_id": "legendre_hamiltonian"
+    },
+    {
+      "assumptions": [
+        "gauss_theorem_applicable",
+        "control_volume_regular",
+        "flux_orientation_outward"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "ConservationLaw"
+      },
+      "name": "Local to integral conservation",
+      "references": [
+        "ref.conservation-law",
+        "ref.gauss"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "ControlVolumeBalance"
+      },
+      "theorem_id": "local_integral_conservation"
+    },
+    {
+      "assumptions": [
+        "transform_conventions_compatible",
+        "imaginary_axis_in_region_of_convergence"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "LaplaceTransform",
+        "parameter": "s"
+      },
+      "name": "Fourier as Laplace imaginary-axis restriction",
+      "references": [
+        "ref.dlmf.laplace",
+        "ref.dlmf.fourier"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "FourierTransform",
+        "parameter": "omega"
+      },
+      "theorem_id": "fourier_laplace_restriction"
+    },
+    {
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.complexQuaternionEmbeddingMul",
+      "lhs": {
+        "op": "ComplexProduct"
+      },
+      "name": "Complex subalgebra embeds in quaternions",
+      "references": [
+        "ref.quaternion"
+      ],
+      "relation": "EXACT_EQUALITY",
+      "rhs": {
+        "op": "QuaternionProduct",
+        "subalgebra": "C"
+      },
+      "theorem_id": "complex_quaternion_embedding"
+    },
+    {
+      "assumptions": [
+        "unit_quaternion"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "QuaternionRotation",
+        "quaternion": {
+          "name": "q",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Antipodal unit quaternions represent one rotation",
+      "references": [
+        "ref.rotation"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "QuaternionRotation",
+        "quaternion": {
+          "args": [
+            {
+              "name": "q",
+              "op": "PatternVariable"
+            }
+          ],
+          "op": "Negate"
+        }
+      },
+      "theorem_id": "quaternion_double_cover"
+    },
+    {
+      "assumptions": [
+        "rotation_maps_body_to_world",
+        "rotation_verified"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "frame": "BODY",
+        "op": "Vector"
+      },
+      "name": "Vector frame transformation",
+      "references": [
+        "ref.rotation"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "args": [
+          {
+            "op": "Rotation",
+            "source": "BODY",
+            "target": "WORLD"
+          },
+          {
+            "frame": "BODY",
+            "op": "Vector"
+          }
+        ],
+        "op": "MatMul"
+      },
+      "theorem_id": "frame_transform_vector"
+    },
+    {
+      "assumptions": [
+        "second_order_cartesian_tensor",
+        "orthogonal_rotation",
+        "frame_direction_declared"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "frame": "SOURCE",
+        "op": "Tensor"
+      },
+      "name": "Second-order tensor transformation",
+      "references": [
+        "ref.tensor-analysis"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "args": [
+          {
+            "op": "Rotation"
+          },
+          {
+            "frame": "SOURCE",
+            "op": "Tensor"
+          },
+          {
+            "args": [
+              {
+                "op": "Rotation"
+              }
+            ],
+            "op": "Transpose"
+          }
+        ],
+        "op": "MatMul"
+      },
+      "theorem_id": "tensor_transform"
+    }
+  ]
+}

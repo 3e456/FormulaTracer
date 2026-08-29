@@ -1,0 +1,127 @@
+schema_version: "1.0"
+defaults: &defaults
+  preconditions: []
+  domain_constraints: []
+  type_constraints: []
+  shape_constraints: []
+  required_facts: []
+  algebraic_structures: []
+  forward_enabled: true
+  reverse_enabled: false
+  rewrite_cost: 2
+  priority: 80
+  motif_tags: []
+  provider_hints: []
+  evidence_kind: REFERENCE_THEOREM
+  reference: "FormulaTracer foundational mathematical semantics"
+  lean_theorem: null
+knowledge:
+  - <<: *defaults
+    knowledge_id: select_piecewise_definition
+    name: Select as two-case piecewise expression
+    category: LOGIC_CONDITIONS
+    lhs: {op: Select, condition: {op: PatternVariable, name: p}, then: {op: PatternVariable, name: a}, else: {op: PatternVariable, name: b}}
+    rhs: {op: Piecewise, cases: [{predicate: {op: PatternVariable, name: p}, expression: {op: PatternVariable, name: a}}], otherwise: {op: PatternVariable, name: b}}
+    relation_kind: DEFINITIONAL
+    reverse_enabled: true
+    motif_tags: [piecewise, select]
+    provider_hints: [numpy.where, jax.numpy.where, torch.where]
+  - <<: *defaults
+    knowledge_id: select_indicator_affine
+    name: Select as affine indicator expression
+    category: LOGIC_CONDITIONS
+    lhs: {op: Select, condition: {op: PatternVariable, name: p}, then: {op: PatternVariable, name: a}, else: {op: PatternVariable, name: b}}
+    rhs: {op: Add, args: [{op: PatternVariable, name: b}, {op: Multiply, args: [{op: Subtract, args: [{op: PatternVariable, name: a}, {op: PatternVariable, name: b}]}, {op: Indicator, predicate: {op: PatternVariable, name: p}}]}]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    type_constraints: [a_b_same_ring]
+    required_facts: [a_b_same_ring]
+    algebraic_structures: [RING]
+    motif_tags: [piecewise, indicator]
+  - <<: *defaults
+    knowledge_id: maximum_select
+    name: Maximum as conditional selection
+    category: LOGIC_CONDITIONS
+    lhs: {op: Maximum, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: y}]}
+    rhs: {op: Select, condition: {op: Predicate, expression: {op: Compare, comparison: GreaterEqual, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: y}]}}, then: {op: PatternVariable, name: x}, else: {op: PatternVariable, name: y}}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [total_order]
+    algebraic_structures: [FIELD]
+    motif_tags: [maximum, piecewise]
+  - <<: *defaults
+    knowledge_id: relu_maximum
+    name: ReLU as maximum
+    category: LOGIC_CONDITIONS
+    lhs: {op: FunctionCall, name: relu, args: [{op: PatternVariable, name: x}]}
+    rhs: {op: Maximum, args: [{op: PatternVariable, name: x}, {op: Constant, value: 0}]}
+    relation_kind: DEFINITIONAL
+    motif_tags: [relu, maximum]
+    provider_hints: [torch.relu, jax.nn.relu]
+  - <<: *defaults
+    knowledge_id: clamp_piecewise
+    name: Clamp as nested min/max
+    category: LOGIC_CONDITIONS
+    lhs: {op: Clamp, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: lo}, {op: PatternVariable, name: hi}]}
+    rhs: {op: Minimum, args: [{op: Maximum, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: lo}]}, {op: PatternVariable, name: hi}]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [lo_less_equal_hi, total_order]
+    algebraic_structures: [FIELD]
+    motif_tags: [clamp, minimum, maximum]
+    provider_hints: [numpy.clip, torch.clamp, jax.numpy.clip]
+  - <<: *defaults
+    knowledge_id: membership_intersection
+    name: Membership in set intersection
+    category: SETS_RELATIONS
+    lhs: {op: Membership, element: {op: PatternVariable, name: x}, set: {op: SetIntersection, args: [{op: PatternVariable, name: a}, {op: PatternVariable, name: b}]}}
+    rhs: {op: LogicalAnd, args: [{op: Membership, element: {op: PatternVariable, name: x}, set: {op: PatternVariable, name: a}}, {op: Membership, element: {op: PatternVariable, name: x}, set: {op: PatternVariable, name: b}}]}
+    relation_kind: DEFINITIONAL
+    algebraic_structures: [BOOLEAN_ALGEBRA]
+    motif_tags: [set, intersection, predicate]
+  - <<: *defaults
+    knowledge_id: inverse_composition_bijective
+    name: Inverse-map composition
+    category: MAP_PROPERTIES
+    lhs: {op: MapComposition, args: [{op: InverseMap, function: {op: PatternVariable, name: f}}, {op: PatternVariable, name: f}]}
+    rhs: {op: IdentityMap}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    required_facts: [f_bijective]
+    motif_tags: [map, inverse, composition]
+  - <<: *defaults
+    knowledge_id: conjugate_involution
+    name: Complex conjugation involution
+    category: COMPLEX
+    lhs: {op: Conjugate, args: [{op: Conjugate, args: [{op: PatternVariable, name: z}]}]}
+    rhs: {op: PatternVariable, name: z}
+    relation_kind: EXACT
+    algebraic_structures: [FIELD]
+    required_facts: [complex_semantics]
+    motif_tags: [complex, conjugate]
+  - <<: *defaults
+    knowledge_id: polynomial_horner_definition
+    name: Polynomial Horner representation
+    category: POLYNOMIALS
+    lhs: {op: Polynomial, variable: {op: PatternVariable, name: x}, coefficients: {op: PatternVariable, name: coefficients}}
+    rhs: {op: HornerEvaluation, variable: {op: PatternVariable, name: x}, coefficients: {op: PatternVariable, name: coefficients}}
+    relation_kind: DEFINITIONAL
+    required_facts: [coefficient_order_declared]
+    algebraic_structures: [RING]
+    motif_tags: [polynomial, horner]
+    provider_hints: [numpy.polynomial, scipy.interpolate]
+  - <<: *defaults
+    knowledge_id: equation_newton_iteration
+    name: Newton iteration approximates an equation solution
+    category: EQUATIONS_SOLVERS
+    lhs: {op: Equation, lhs: {op: PatternVariable, name: f}, rhs: {op: Constant, value: 0}}
+    rhs: {op: NewtonIteration, function: {op: PatternVariable, name: f}}
+    relation_kind: APPROXIMATION
+    required_facts: [newton_convergence_conditions, termination_tolerance]
+    motif_tags: [equation, root_finding, iteration]
+    provider_hints: [scipy.optimize.newton]
+  - <<: *defaults
+    knowledge_id: quantity_unit_conversion
+    name: Exact affine unit conversion
+    category: UNITS_DIMENSIONS
+    lhs: {op: Quantity, value: {op: PatternVariable, name: x}, unit: {op: PatternVariable, name: u}}
+    rhs: {op: UnitConversion, value: {op: PatternVariable, name: x}, source_unit: {op: PatternVariable, name: u}, target_unit: {op: PatternVariable, name: v}}
+    relation_kind: TRANSFORMATION
+    required_facts: [same_physical_dimension, exact_scale_and_offset]
+    motif_tags: [unit, dimension, conversion]

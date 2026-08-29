@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "wave": 4,
+  "status": "IN_PROGRESS",
+  "owners": [
+    "cpp_audit.synthesis"
+  ],
+  "semantic_symbols": 6,
+  "symbols": [
+    {
+      "module": "cpp_audit.synthesis",
+      "symbol": "cpp_audit.synthesis.GeneratedImplementation.write",
+      "semantic_responsibility": "identity or source emission support",
+      "production_caller": [
+        "cpp_audit.synthesis.GeneratedImplementation",
+        "cpp_audit.synthesis.GeneratedImplementation.write"
+      ],
+      "input": "Theory/Implementation IR, constraints, provider contract, or debugger finding",
+      "output": "GenerationDecision, round-trip/repair verdict, or formatted artifact",
+      "provider_dependency": "explicit ProviderContract only",
+      "relation_dependency": "existing exact/non-exact relation taxonomy",
+      "assumptions": "explicit only",
+      "proof_obligations": "open obligations forbid SAFE_TO_GENERATE_EXACT",
+      "rust_equivalent": "D/LEGACY_SYNTHESIS",
+      "runtime_reachability": "PRODUCTION_REACHABLE",
+      "scc": 0,
+      "final_classification": "PENDING"
+    },
+    {
+      "module": "cpp_audit.synthesis",
+      "symbol": "cpp_audit.synthesis._id",
+      "semantic_responsibility": "identity or source emission support",
+      "production_caller": [
+        "cpp_audit.synthesis.propose_repair",
+        "cpp_audit.synthesis._id"
+      ],
+      "input": "Theory/Implementation IR, constraints, provider contract, or debugger finding",
+      "output": "GenerationDecision, round-trip/repair verdict, or formatted artifact",
+      "provider_dependency": "explicit ProviderContract only",
+      "relation_dependency": "existing exact/non-exact relation taxonomy",
+      "assumptions": "explicit only",
+      "proof_obligations": "open obligations forbid SAFE_TO_GENERATE_EXACT",
+      "rust_equivalent": "D/LEGACY_SYNTHESIS",
+      "runtime_reachability": "PRODUCTION_REACHABLE",
+      "scc": 0,
+      "final_classification": "PENDING"
+    },
+    {
+      "module": "cpp_audit.synthesis",
+      "symbol": "cpp_audit.synthesis._normalize",
+      "semantic_responsibility": "canonical semantic comparison boundary",
+      "production_caller": [
+        "cpp_audit.synthesis.synthesize_cross_language",
+        "cpp_audit.synthesis._normalize"
+      ],
+      "input": "Theory/Implementation IR, constraints, provider contract, or debugger finding",
+      "output": "GenerationDecision, round-trip/repair verdict, or formatted artifact",
+      "provider_dependency": "explicit ProviderContract only",
+      "relation_dependency": "existing exact/non-exact relation taxonomy",
+      "assumptions": "explicit only",
+      "proof_obligations": "open obligations forbid SAFE_TO_GENERATE_EXACT",
+      "rust_equivalent": "D/LEGACY_SYNTHESIS",
+      "runtime_reachability": "PRODUCTION_REACHABLE",
+      "scc": 0,
+      "final_classification": "PENDING"
+    },
+    {
+      "module": "cpp_audit.synthesis",
+      "symbol": "cpp_audit.synthesis.propose_repair",
+      "semantic_responsibility": "repair eligibility and semantic replacement decision",
+      "production_caller": [
+        "cpp_audit.synthesis.propose_repair"
+      ],
+      "input": "Theory/Implementation IR, constraints, provider contract, or debugger finding",
+      "output": "GenerationDecision, round-trip/repair verdict, or formatted artifact",
+      "provider_dependency": "explicit ProviderContract only",
+      "relation_dependency": "existing exact/non-exact relation taxonomy",
+      "assumptions": "explicit only",
+      "proof_obligations": "open obligations forbid SAFE_TO_GENERATE_EXACT",
+      "rust_equivalent": "D/LEGACY_SYNTHESIS",
+      "runtime_reachability": "PRODUCTION_REACHABLE",
+      "scc": 0,
+      "final_classification": "PENDING"
+    },
+    {
+      "module": "cpp_audit.synthesis",
+      "symbol": "cpp_audit.synthesis.verify_repair",
+      "semantic_responsibility": "post-repair semantic acceptance",
+      "production_caller": [
+        "cpp_audit.synthesis.verify_repair"
+      ],
+      "input": "Theory/Implementation IR, constraints, provider contract, or debugger finding",
+      "output": "GenerationDecision, round-trip/repair verdict, or formatted artifact",
+      "provider_dependency": "explicit ProviderContract only",
+      "relation_dependency": "existing exact/non-exact relation taxonomy",
+      "assumptions": "explicit only",
+      "proof_obligations": "open obligations forbid SAFE_TO_GENERATE_EXACT",
+      "rust_equivalent": "D/LEGACY_SYNTHESIS",
+      "runtime_reachability": "PRODUCTION_REACHABLE",
+      "scc": 0,
+      "final_classification": "PENDING"
+    },
+    {
+      "module": "cpp_audit.synthesis",
+      "symbol": "cpp_audit.synthesis.verify_round_trip",
+      "semantic_responsibility": "independent frontend reconstruction verdict",
+      "production_caller": [
+        "cpp_audit.synthesis.verify_round_trip"
+      ],
+      "input": "Theory/Implementation IR, constraints, provider contract, or debugger finding",
+      "output": "GenerationDecision, round-trip/repair verdict, or formatted artifact",
+      "provider_dependency": "explicit ProviderContract only",
+      "relation_dependency": "existing exact/non-exact relation taxonomy",
+      "assumptions": "explicit only",
+      "proof_obligations": "open obligations forbid SAFE_TO_GENERATE_EXACT",
+      "rust_equivalent": "D/LEGACY_SYNTHESIS",
+      "runtime_reachability": "PRODUCTION_REACHABLE",
+      "scc": 0,
+      "final_classification": "PENDING"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "source": "cpp_audit.synthesis",
+      "target": "cpp_audit.generation_planning"
+    }
+  ],
+  "sccs": [
+    [
+      "cpp_audit.synthesis"
+    ]
+  ],
+  "order_rationale": "GenerationDecision and semantic verification precede language-specific source formatting."
+}

@@ -1,0 +1,164 @@
+{
+  "definitions": [
+    {
+      "definition_id": "flux_integral",
+      "expansion": {
+        "body": {
+          "args": [
+            {
+              "name": "F",
+              "op": "PatternVariable"
+            },
+            {
+              "op": "SurfaceNormal"
+            }
+          ],
+          "op": "Dot"
+        },
+        "domain": {
+          "name": "S",
+          "op": "PatternVariable"
+        },
+        "measure": "SURFACE",
+        "op": "Integral",
+        "orientation": {
+          "name": "orientation",
+          "op": "PatternVariable"
+        }
+      },
+      "expression": {
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "FluxIntegral",
+        "surface": {
+          "name": "S",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Oriented flux integral",
+      "references": [
+        "ref.stokes"
+      ]
+    }
+  ],
+  "realizations": [
+    {
+      "assumptions": [
+        "parameterization_regular"
+      ],
+      "error_evidence": {
+        "kind": "QUADRATURE_ERROR"
+      },
+      "implementation": {
+        "op": "Quadrature"
+      },
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "proof_obligations": [
+        "quadrature_error_bound"
+      ],
+      "realization_id": "quadrature_geometric_integral",
+      "references": [
+        "ref.quadrature"
+      ],
+      "relation": "APPROXIMATION_OF",
+      "target": {
+        "op": "Integral"
+      }
+    }
+  ],
+  "schema_version": "1.0",
+  "theorems": [
+    {
+      "assumptions": [
+        "F_continuously_differentiable",
+        "V_bounded_regular_domain",
+        "outward_boundary_orientation"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "body": {
+          "field": {
+            "name": "F",
+            "op": "PatternVariable"
+          },
+          "op": "Divergence"
+        },
+        "domain": {
+          "name": "V",
+          "op": "PatternVariable"
+        },
+        "op": "Integral"
+      },
+      "name": "Gauss divergence theorem",
+      "references": [
+        "ref.gauss"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "FluxIntegral",
+        "surface": {
+          "domain": {
+            "name": "V",
+            "op": "PatternVariable"
+          },
+          "op": "Boundary"
+        }
+      },
+      "theorem_id": "gauss_divergence"
+    },
+    {
+      "assumptions": [
+        "F_continuously_differentiable",
+        "S_orientable_regular_surface",
+        "boundary_orientation_compatible"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "body": {
+          "field": {
+            "name": "F",
+            "op": "PatternVariable"
+          },
+          "op": "Curl"
+        },
+        "op": "SurfaceIntegral",
+        "surface": {
+          "name": "S",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Stokes theorem",
+      "references": [
+        "ref.stokes"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "curve": {
+          "domain": {
+            "name": "S",
+            "op": "PatternVariable"
+          },
+          "op": "Boundary"
+        },
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "LineIntegral"
+      },
+      "theorem_id": "stokes"
+    }
+  ]
+}

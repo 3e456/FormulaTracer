@@ -1,0 +1,70 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [
+    "complex input",
+    "normalization convention validated"
+  ],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "body": {
+      "args": [
+        {
+          "indices": [
+            {
+              "name": "sample",
+              "op": "BoundVariable"
+            }
+          ],
+          "name": "signal",
+          "op": "IndexedValue"
+        },
+        {
+          "args": [
+            {
+              "name": "phase",
+              "op": "FreeVariable"
+            }
+          ],
+          "name": "exp",
+          "op": "FunctionCall"
+        }
+      ],
+      "op": "Multiply"
+    },
+    "bound_index": "sample",
+    "index_domain": {
+      "lower": {
+        "op": "Constant",
+        "value": 0
+      },
+      "upper_exclusive": {
+        "name": "L",
+        "op": "FreeVariable"
+      }
+    },
+    "op": "FiniteSum"
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-holdout-fourier-renamed.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-holdout-fourier-renamed",
+  "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+  "source_artifact_hash": "0b46d2ade8c7ea327e72d1aadbb97756e65c7125f5038bc93a86da3810d37874",
+  "case_specific_rule_used": false
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/public-api-inventory.schema.json",
+  "title": "Official-reference public API inventory",
+  "type": "object",
+  "required": ["schema_version", "library", "provenance", "inventory", "coverage", "registry_integration"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "library": {
+      "type": "object",
+      "required": ["package", "package_version", "documentation_root"],
+      "properties": {
+        "package": {"type": "string", "minLength": 1},
+        "package_version": {"type": "string", "minLength": 1},
+        "documentation_root": {"type": "string", "format": "uri"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["canonical_url", "requested_version", "documentation_version", "content_sha256", "parsed_inventory_sha256", "harvester_parser_version"],
+      "properties": {
+        "canonical_url": {"type": "string", "format": "uri"},
+        "content_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "parsed_inventory_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["qualified_name", "object_kind", "canonical_reference_url", "publicness_evidence", "contract_kind", "semantic_family", "registry_resolution", "deprecated_status", "signature_status", "version_verification_status", "semantic_class_id", "formalization_status"],
+        "properties": {
+          "qualified_name": {"type": "string", "minLength": 1},
+          "deprecated_status": {"enum": ["CURRENT", "DEPRECATED", "UNKNOWN"]},
+          "signature_status": {"enum": ["SIGNATURE_RESOLVED", "SIGNATURE_UNKNOWN"]},
+          "version_verification_status": {"enum": ["VERSION_VERIFIED", "VERSION_PARTIALLY_VERIFIED", "VERSION_UNVERIFIED"]},
+          "semantic_class_id": {"type": "string", "minLength": 1},
+          "formalization_status": {"enum": ["FORMALIZED", "FORMALIZED_CLASS_BOUNDARY", "REVIEW_PENDING", "REFERENCE_INSUFFICIENT", "NOT_APPLICABLE", "REJECTED", "AMBIGUOUS", "NOT_CONTRACT_TARGET"]},
+          "registry_resolution": {
+            "type": "object",
+            "required": ["resolution_kind", "status", "priority"],
+            "properties": {
+              "resolution_kind": {"enum": ["REGISTERED_CONTRACT", "REFERENCE_SIMPLE_MAPPING", "REFERENCE_DETAILED_CONTRACT"]},
+              "status": {"enum": ["VERIFIED_REGISTRY_CONTRACT", "NEEDS_REVIEW"]}
+            }
+          }
+        }
+      }
+    },
+    "coverage": {"type": "object"},
+    "registry_integration": {
+      "type": "object",
+      "required": ["verified_registry_total", "resolution_priority", "candidates_are_not_registry_bindings"],
+      "properties": {"candidates_are_not_registry_bindings": {"const": true}}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "starting_head": "b0d011f37c99ce7905176f82313a2b7327dff893",
+  "status": "PASS",
+  "checks": {
+    "owner_count_matches_records": true,
+    "owner_symbol_count_matches_records": true,
+    "classification_total_matches_records": true,
+    "symbols_are_unique": true,
+    "all_owner_modules_have_symbols": true,
+    "all_symbols_have_exactly_one_classification": true,
+    "production_dynamic_reachability_resolved": true
+  },
+  "owner_count": 0,
+  "owner_symbol_count": 0,
+  "baseline_symbol_count": 424,
+  "introduced_binding_symbol_count": 18,
+  "classification_counts": {
+    "LANGUAGE_FRONTEND": 50,
+    "ORCHESTRATION_SERIALIZATION_PRESENTATION": 214,
+    "PRODUCTION_REACHABLE_THIN_WRAPPER": 131,
+    "REFERENCE_ORACLE": 41,
+    "VALIDATION_ONLY": 6
+  },
+  "production_entrypoint_count": 543,
+  "production_reachable_python_semantic_symbols": 0,
+  "production_reachability_unresolved": 0
+}

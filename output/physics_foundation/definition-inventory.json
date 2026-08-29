@@ -1,0 +1,563 @@
+{
+  "definitions": [
+    {
+      "definition_id": "gradient",
+      "expansion": {
+        "definition": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Derivative",
+          "variable": {
+            "indices": [
+              "i"
+            ],
+            "name": "x",
+            "op": "IndexedValue"
+          }
+        },
+        "indices": [
+          "i"
+        ],
+        "name": "grad_f",
+        "op": "IndexedValue"
+      },
+      "expression": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Gradient"
+      },
+      "name": "Gradient by partial derivatives",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    },
+    {
+      "definition_id": "jacobian",
+      "expansion": {
+        "definition": {
+          "function": {
+            "indices": [
+              "i"
+            ],
+            "name": "F",
+            "op": "IndexedValue"
+          },
+          "op": "Derivative",
+          "variable": {
+            "indices": [
+              "j"
+            ],
+            "name": "x",
+            "op": "IndexedValue"
+          }
+        },
+        "indices": [
+          "i",
+          "j"
+        ],
+        "name": "J_F",
+        "op": "IndexedValue"
+      },
+      "expression": {
+        "function": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "Jacobian"
+      },
+      "name": "Jacobian by component partials",
+      "references": [
+        "ref.multivariable-calculus"
+      ]
+    },
+    {
+      "definition_id": "hessian",
+      "expansion": {
+        "definition": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Derivative",
+          "order": 2,
+          "variables": [
+            "x_i",
+            "x_j"
+          ]
+        },
+        "indices": [
+          "i",
+          "j"
+        ],
+        "name": "H_f",
+        "op": "IndexedValue"
+      },
+      "expression": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Hessian"
+      },
+      "name": "Hessian by mixed partials",
+      "references": [
+        "ref.multivariable-calculus"
+      ]
+    },
+    {
+      "definition_id": "directional_derivative",
+      "expansion": {
+        "args": [
+          {
+            "name": "v",
+            "op": "PatternVariable"
+          },
+          {
+            "function": {
+              "name": "f",
+              "op": "PatternVariable"
+            },
+            "op": "Gradient"
+          }
+        ],
+        "op": "Dot"
+      },
+      "expression": {
+        "direction": {
+          "name": "v",
+          "op": "PatternVariable"
+        },
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "DirectionalDerivative"
+      },
+      "name": "Directional derivative",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    },
+    {
+      "definition_id": "divergence",
+      "expansion": {
+        "body": {
+          "function": {
+            "indices": [
+              "i"
+            ],
+            "name": "F",
+            "op": "IndexedValue"
+          },
+          "op": "Derivative",
+          "variable": {
+            "indices": [
+              "i"
+            ],
+            "name": "x",
+            "op": "IndexedValue"
+          }
+        },
+        "bound_index": "i",
+        "op": "FiniteSum"
+      },
+      "expression": {
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "Divergence"
+      },
+      "name": "Cartesian divergence",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    },
+    {
+      "assumptions": [
+        "three_dimensional_cartesian",
+        "right_handed_orientation"
+      ],
+      "definition_id": "curl_r3",
+      "expansion": {
+        "definition": {
+          "body": {
+            "args": [
+              {
+                "indices": [
+                  "i",
+                  "j",
+                  "k"
+                ],
+                "op": "LeviCivita"
+              },
+              {
+                "function": {
+                  "indices": [
+                    "k"
+                  ],
+                  "name": "F",
+                  "op": "IndexedValue"
+                },
+                "op": "Derivative",
+                "variable": {
+                  "indices": [
+                    "j"
+                  ],
+                  "name": "x",
+                  "op": "IndexedValue"
+                }
+              }
+            ],
+            "op": "Multiply"
+          },
+          "bound_indices": [
+            "j",
+            "k"
+          ],
+          "op": "FiniteSum"
+        },
+        "indices": [
+          "i"
+        ],
+        "name": "curl_F",
+        "op": "IndexedValue"
+      },
+      "expression": {
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "Curl",
+        "orientation": "RIGHT_HANDED"
+      },
+      "name": "Right-handed Cartesian curl",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    },
+    {
+      "definition_id": "laplacian",
+      "expansion": {
+        "field": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Gradient"
+        },
+        "op": "Divergence"
+      },
+      "expression": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Laplacian"
+      },
+      "name": "Laplacian as divergence of gradient",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    },
+    {
+      "definition_id": "flux_integral",
+      "expansion": {
+        "body": {
+          "args": [
+            {
+              "name": "F",
+              "op": "PatternVariable"
+            },
+            {
+              "op": "SurfaceNormal"
+            }
+          ],
+          "op": "Dot"
+        },
+        "domain": {
+          "name": "S",
+          "op": "PatternVariable"
+        },
+        "measure": "SURFACE",
+        "op": "Integral",
+        "orientation": {
+          "name": "orientation",
+          "op": "PatternVariable"
+        }
+      },
+      "expression": {
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "FluxIntegral",
+        "surface": {
+          "name": "S",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Oriented flux integral",
+      "references": [
+        "ref.stokes"
+      ]
+    },
+    {
+      "definition_id": "action",
+      "expansion": {
+        "body": {
+          "args": [
+            {
+              "name": "q",
+              "op": "PatternVariable"
+            },
+            {
+              "function": {
+                "name": "q",
+                "op": "PatternVariable"
+              },
+              "op": "Derivative",
+              "variable": "t"
+            },
+            {
+              "name": "t",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Lagrangian"
+        },
+        "op": "Integral",
+        "variable": "t"
+      },
+      "expression": {
+        "op": "Action",
+        "path": {
+          "name": "q",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Action functional",
+      "references": [
+        "ref.variational-calculus"
+      ]
+    },
+    {
+      "definition_id": "poisson_bracket",
+      "expansion": {
+        "body": {
+          "args": [
+            {
+              "args": [
+                {
+                  "function": {
+                    "name": "f",
+                    "op": "PatternVariable"
+                  },
+                  "op": "Derivative",
+                  "variable": "q_i"
+                },
+                {
+                  "function": {
+                    "name": "g",
+                    "op": "PatternVariable"
+                  },
+                  "op": "Derivative",
+                  "variable": "p_i"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "args": [
+                {
+                  "function": {
+                    "name": "f",
+                    "op": "PatternVariable"
+                  },
+                  "op": "Derivative",
+                  "variable": "p_i"
+                },
+                {
+                  "function": {
+                    "name": "g",
+                    "op": "PatternVariable"
+                  },
+                  "op": "Derivative",
+                  "variable": "q_i"
+                }
+              ],
+              "op": "Multiply"
+            }
+          ],
+          "op": "Subtract"
+        },
+        "bound_index": "i",
+        "op": "FiniteSum"
+      },
+      "expression": {
+        "args": [
+          {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          {
+            "name": "g",
+            "op": "PatternVariable"
+          }
+        ],
+        "op": "PoissonBracket"
+      },
+      "name": "Canonical Poisson bracket",
+      "references": [
+        "ref.hamiltonian-mechanics"
+      ]
+    },
+    {
+      "definition_id": "conservation_law",
+      "expansion": {
+        "lhs": {
+          "args": [
+            {
+              "function": {
+                "name": "rho",
+                "op": "PatternVariable"
+              },
+              "op": "Derivative",
+              "variable": "t"
+            },
+            {
+              "field": {
+                "name": "J",
+                "op": "PatternVariable"
+              },
+              "op": "Divergence"
+            }
+          ],
+          "op": "Add"
+        },
+        "op": "Equation",
+        "rhs": {
+          "op": "Constant",
+          "value": 0
+        }
+      },
+      "expression": {
+        "density": {
+          "name": "rho",
+          "op": "PatternVariable"
+        },
+        "flux": {
+          "name": "J",
+          "op": "PatternVariable"
+        },
+        "op": "ConservationLaw"
+      },
+      "name": "Local conservation law",
+      "references": [
+        "ref.conservation-law"
+      ]
+    },
+    {
+      "definition_id": "so3",
+      "expansion": {
+        "args": [
+          {
+            "lhs": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "R",
+                      "op": "PatternVariable"
+                    }
+                  ],
+                  "op": "Transpose"
+                },
+                {
+                  "name": "R",
+                  "op": "PatternVariable"
+                }
+              ],
+              "op": "MatMul"
+            },
+            "op": "Equation",
+            "rhs": {
+              "op": "IdentityMatrix"
+            }
+          },
+          {
+            "lhs": {
+              "args": [
+                {
+                  "name": "R",
+                  "op": "PatternVariable"
+                }
+              ],
+              "op": "Determinant"
+            },
+            "op": "Equation",
+            "rhs": {
+              "op": "Constant",
+              "value": 1
+            }
+          }
+        ],
+        "op": "Predicate"
+      },
+      "expression": {
+        "op": "Rotation",
+        "representation": {
+          "name": "R",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Special orthogonal rotation",
+      "references": [
+        "ref.rotation"
+      ]
+    },
+    {
+      "assumptions": [
+        "R_in_SO3"
+      ],
+      "definition_id": "se3",
+      "expansion": {
+        "blocks": [
+          {
+            "name": "R",
+            "op": "PatternVariable"
+          },
+          {
+            "name": "t",
+            "op": "PatternVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1
+          }
+        ],
+        "op": "HomogeneousMatrix"
+      },
+      "expression": {
+        "op": "RigidTransform",
+        "rotation": {
+          "name": "R",
+          "op": "PatternVariable"
+        },
+        "translation": {
+          "name": "t",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Rigid transform",
+      "references": [
+        "ref.rotation"
+      ]
+    }
+  ],
+  "schema_version": "1.0"
+}

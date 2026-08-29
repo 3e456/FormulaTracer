@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "wave": 3,
+  "status": "PASS",
+  "cases": 20,
+  "false_acceptance": 0,
+  "families": {
+    "ieee754": ["NaN is not Real", "floating infinity is not mathematical infinity", "signed zero is preserved", "unknown rounding fails closed"],
+    "interval": ["division across zero unresolved", "four-corner multiplication", "even power crossing zero", "periodic critical points", "invalid elementary domain unresolved", "branch feasibility native"],
+    "probability": ["unknown provider unresolved", "empirical evidence not proof", "unbounded support has no probabilistic enclosure", "IID remains an explicit assumption"]
+  },
+  "evidence": [
+    "wave3-ieee754-parity.json",
+    "wave3-interval-parity.json",
+    "wave3-probability-parity.json"
+  ]
+}

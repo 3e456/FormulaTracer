@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cpp-audit.dev/schemas/dependency-graph-0.1.json",
+  "type": "object",
+  "required": ["schema_version", "status", "nodes", "edges", "output_node_ids", "diagnostics"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "status": {"enum": ["DEPENDENCY_GRAPH_BUILT", "DEPENDENCY_GRAPH_INVALID"]},
+    "nodes": {"type": "array", "items": {"type": "object", "required": ["id", "kind", "source_span", "effect", "attributes"]}},
+    "edges": {"type": "array", "items": {"type": "object", "required": ["edge_id", "kind", "source_node_id", "target_node_id", "argument_role", "source_span", "confidence", "derivation"]}},
+    "output_node_ids": {"type": "array", "items": {"type": "string"}},
+    "diagnostics": {"type": "array", "items": {"type": "object"}}
+  }
+}

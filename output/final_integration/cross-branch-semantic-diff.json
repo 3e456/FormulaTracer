@@ -1,0 +1,27 @@
+{
+  "coverage_changed_files": 31,
+  "divergent_overlap": 0,
+  "duplicate_implementation": 0,
+  "overlaps": [
+    {
+      "classification": "COMPATIBLE_OVERLAP",
+      "file": "rust/formulatracer-core/src/kernel.rs",
+      "resolution": "additive dispatch"
+    },
+    {
+      "classification": "COMPATIBLE_OVERLAP",
+      "file": "rust/formulatracer-core/src/lib.rs",
+      "resolution": "single module graph"
+    },
+    {
+      "classification": "COMPATIBLE_OVERLAP",
+      "file": "docs/README.md",
+      "resolution": "both references retained"
+    }
+  ],
+  "physics_changed_files": 52,
+  "schema_version": "1.0",
+  "superseded": 0,
+  "unique_coverage_changes": 28,
+  "unique_physics_changes": 49
+}

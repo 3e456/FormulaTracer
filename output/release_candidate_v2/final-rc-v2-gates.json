@@ -1,0 +1,478 @@
+{
+  "schema_version": "2.0",
+  "generated": "2026-08-28",
+  "status": "RC_NOT_READY",
+  "starting_head": "1426247d7378a50b120866c72e7a50dd1a5f77f2",
+  "gates": {
+    "NATIVE_MIGRATION_COMPLETE": false,
+    "PYTHON_SEMANTIC_SOURCE_OF_TRUTH_RETIRED": false,
+    "NO_SEMANTIC_REIMPLEMENTATION_IN_BINDINGS": true,
+    "CRITICAL_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_PYTHON_RUST_SEMANTIC_MISMATCH_OPEN": 0,
+    "CRITICAL_RELATION_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_ERROR_BOUND_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_RANGE_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_PROVENANCE_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_CACHE_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_FALSE_LOCALIZATION_OPEN": 0,
+    "CRITICAL_C_ABI_DEFECT_OPEN": 0,
+    "CRITICAL_TEX_SEMANTIC_MISMATCH_OPEN": 0,
+    "CASE_SPECIFIC_EXCEPTION_OPEN": 0,
+    "BENCHMARK_OVERFIT_RISK_OPEN": 0,
+    "WINDOWS_VALIDATION_COMPLETE": true,
+    "LINUX_VALIDATION_COMPLETE": true,
+    "LICENSE_DECISION_COMPLETE": true,
+    "OLD_HOLDOUT_EXECUTED": true,
+    "RC_V2_HOLDOUT_EXECUTED_AND_SEALED": true,
+    "EXTERNAL_SOURCE_RETAINED": 0
+  },
+  "blockers": [
+    "35 Python modules still require native differential and retirement",
+    "fact/constraint, exact e-graph, relation, unification, pack, error/range, provenance/cache/debugger parity gates remain open",
+    "native TeX piecewise and declaration-driven indexed notation are incomplete",
+    "external Formula-to-Code-to-Formula reconstruction remains unresolved for 20 sealed outcomes",
+    "native AuditBundle has no legacy Python bundle differential gate yet"
+  ],
+  "migration_components": [
+    {
+      "component": "fundamental_ir_and_schema_bridge",
+      "python_reference": "python IR dataclasses/dicts",
+      "rust_status": "COMPLETE_CANDIDATE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "canonicalization_and_symbol_isomorphism",
+      "python_reference": "math_surface.generalize/canonical_equal",
+      "rust_status": "DIFFERENTIAL_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "numeral_and_bitvector",
+      "python_reference": "bitvector.py",
+      "rust_status": "EXHAUSTIVE_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "fact_constraint_engine",
+      "python_reference": "equality_saturation.MathematicalFactEngine",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "exact_egraph",
+      "python_reference": "equality_saturation.TypedEGraph",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "relation_graph",
+      "python_reference": "equality_saturation.MathematicalRelationGraph",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "typed_unification",
+      "python_reference": "math_surface.typed_unify",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "knowledge_and_provider_pack_engine",
+      "python_reference": "registry and generation_planning",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "approximation_error_range",
+      "python_reference": "approximation/error/interval modules",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "provenance_cache_debugger",
+      "python_reference": "research_provenance/semantic_debugger",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "tex_renderer",
+      "python_reference": "math_surface.to_tex",
+      "rust_status": "DIFFERENTIAL_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "tex_parser",
+      "python_reference": "math_surface.parse_tex",
+      "rust_status": "PARTIAL_FAIL_CLOSED_CANDIDATE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "verification_result",
+      "python_reference": "Python presentation wrappers",
+      "rust_status": "NATIVE_STRUCTURED_RESULT_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "mathematical_function",
+      "python_reference": "no retired Python semantic equivalent",
+      "rust_status": "NATIVE_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "tex_certificate",
+      "python_reference": "audit_execution presentation",
+      "rust_status": "NATIVE_STRUCTURED_CERTIFICATE_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "audit_bundle",
+      "python_reference": "assurance_release AuditBundle",
+      "rust_status": "NOT_MIGRATED",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "python_frontends",
+      "python_reference": "Python AST/CFG/project adapters",
+      "rust_status": "INTENTIONALLY_RETAINED_FRONTEND",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "cpp_clang_frontend",
+      "python_reference": "Clang 18 adapter",
+      "rust_status": "INTENTIONALLY_RETAINED_FRONTEND",
+      "semantic_match": false,
+      "python_retired": false
+    }
+  ],
+  "feature_freeze_evidence": {
+    "schema_version": "1.0",
+    "generated": "2026-08-28",
+    "baseline_sha": "1426247d7378a50b120866c72e7a50dd1a5f77f2",
+    "status": "FEATURE_FREEZE_BLOCKED",
+    "feature_freeze_ready": false,
+    "critical_false_acceptance_open": 0,
+    "completed_in_this_pass": [
+      "semantic-noise invariance regression",
+      "semantic-string no-execution fail-closed boundary",
+      "explicit custom operator overload fail-closed boundary",
+      "native TeX structural binder expansion",
+      "native integrity-protected AuditBundle candidate and C ABI projection",
+      "complete Python module/symbol retirement inventory",
+      "sealed 20-case reconstruction root-cause taxonomy"
+    ],
+    "components": [
+      {
+        "component": "fundamental_ir_and_schema_bridge",
+        "python_reference": "python IR dataclasses/dicts",
+        "rust_status": "COMPLETE_CANDIDATE",
+        "semantic_match": true,
+        "python_retired": false
+      },
+      {
+        "component": "canonicalization_and_symbol_isomorphism",
+        "python_reference": "math_surface.generalize/canonical_equal",
+        "rust_status": "DIFFERENTIAL_GATE_PASSED",
+        "semantic_match": true,
+        "python_retired": false
+      },
+      {
+        "component": "numeral_and_bitvector",
+        "python_reference": "bitvector.py",
+        "rust_status": "EXHAUSTIVE_GATE_PASSED",
+        "semantic_match": true,
+        "python_retired": false
+      },
+      {
+        "component": "fact_constraint_engine",
+        "python_reference": "equality_saturation.MathematicalFactEngine",
+        "rust_status": "PARTIAL_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false
+      },
+      {
+        "component": "exact_egraph",
+        "python_reference": "equality_saturation.TypedEGraph",
+        "rust_status": "PARTIAL_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false
+      },
+      {
+        "component": "relation_graph",
+        "python_reference": "equality_saturation.MathematicalRelationGraph",
+        "rust_status": "PARTIAL_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false
+      },
+      {
+        "component": "typed_unification",
+        "python_reference": "math_surface.typed_unify",
+        "rust_status": "PARTIAL_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false
+      },
+      {
+        "component": "knowledge_and_provider_pack_engine",
+        "python_reference": "registry and generation_planning",
+        "rust_status": "PARTIAL_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false
+      },
+      {
+        "component": "approximation_error_range",
+        "python_reference": "approximation/error/interval modules",
+        "rust_status": "PARTIAL_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false
+      },
+      {
+        "component": "provenance_cache_debugger",
+        "python_reference": "research_provenance/semantic_debugger",
+        "rust_status": "PARTIAL_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false
+      },
+      {
+        "component": "tex_renderer",
+        "python_reference": "math_surface.to_tex",
+        "rust_status": "DIFFERENTIAL_GATE_PASSED",
+        "semantic_match": true,
+        "python_retired": false
+      },
+      {
+        "component": "tex_parser",
+        "python_reference": "math_surface.parse_tex",
+        "rust_status": "EXPANDED_FAIL_CLOSED_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false,
+        "accepted_roles": [
+          "arithmetic",
+          "fraction",
+          "unambiguous_power",
+          "function_application",
+          "finite_sum",
+          "infinite_series",
+          "finite_product",
+          "infinite_product",
+          "definite_integral",
+          "limit",
+          "ordinary_derivative"
+        ],
+        "note": "Piecewise and declaration-driven standalone indexed notation remain open; ambiguity is rejected."
+      },
+      {
+        "component": "verification_result",
+        "python_reference": "Python presentation wrappers",
+        "rust_status": "NATIVE_STRUCTURED_RESULT_COMPLETE",
+        "semantic_match": true,
+        "python_retired": false
+      },
+      {
+        "component": "mathematical_function",
+        "python_reference": "no retired Python semantic equivalent",
+        "rust_status": "NATIVE_COMPLETE",
+        "semantic_match": true,
+        "python_retired": false
+      },
+      {
+        "component": "tex_certificate",
+        "python_reference": "audit_execution presentation",
+        "rust_status": "NATIVE_STRUCTURED_CERTIFICATE_COMPLETE",
+        "semantic_match": true,
+        "python_retired": false
+      },
+      {
+        "component": "audit_bundle",
+        "python_reference": "assurance_release AuditBundle",
+        "rust_status": "NATIVE_INTEGRITY_PROTECTED_CANDIDATE",
+        "semantic_match": false,
+        "python_retired": false,
+        "note": "Native object/C ABI/Python facade implemented; legacy Python bundle differential and retirement remain open."
+      },
+      {
+        "component": "python_frontends",
+        "python_reference": "Python AST/CFG/project adapters",
+        "rust_status": "INTENTIONALLY_RETAINED_FRONTEND",
+        "semantic_match": false,
+        "python_retired": false
+      },
+      {
+        "component": "cpp_clang_frontend",
+        "python_reference": "Clang 18 adapter",
+        "rust_status": "INTENTIONALLY_RETAINED_FRONTEND",
+        "semantic_match": false,
+        "python_retired": false
+      }
+    ],
+    "blockers": [
+      "35 Python modules still require native differential and retirement",
+      "fact/constraint, exact e-graph, relation, unification, pack, error/range, provenance/cache/debugger parity gates remain open",
+      "native TeX piecewise and declaration-driven indexed notation are incomplete",
+      "external Formula-to-Code-to-Formula reconstruction remains unresolved for 20 sealed outcomes",
+      "native AuditBundle has no legacy Python bundle differential gate yet"
+    ],
+    "gate_policy": "No migration, retirement, reconstruction, or RC gate is promoted without measured differential evidence."
+  },
+  "python_semantic_inventory": {
+    "LANGUAGE_FRONTEND": 6,
+    "PRESENTATION_ONLY": 2,
+    "PUBLIC_FACADE": 1,
+    "REFERENCE_ONLY": 2,
+    "THIN_BINDING": 2,
+    "TO_BE_RETIRED": 35,
+    "VALIDATION_ONLY": 9
+  },
+  "reconstruction_root_causes": {
+    "ALGORITHM_SEMANTICS_GAP": 1,
+    "APPROXIMATION_RELATION_GAP": 1,
+    "ASSUMPTION_GAP": 1,
+    "CONSTRAINT_PROPAGATION_GAP": 1,
+    "ERROR_EVIDENCE_GAP": 2,
+    "FRONTEND_RECONSTRUCTION_GAP": 4,
+    "PROVIDER_CONTRACT_GAP": 4,
+    "THEORY_IR_GAP": 4,
+    "TRANSFORM_RELATION_GAP": 1,
+    "TRUNCATION_RELATION_GAP": 1
+  },
+  "differential": {
+    "schema_version": "1.0",
+    "baseline_sha": "8df98ee529f86fa6b8142c3b6a96abe240150419",
+    "mode": "MIGRATION_DUAL_ENGINE_ONLY",
+    "cases": 1056,
+    "semantic_matches": 1056,
+    "tex_matches": 1056,
+    "false_acceptance": 0,
+    "mismatches": [],
+    "tex_mismatches": [],
+    "performance_observation": {
+      "native_c_abi_1000_comparisons_seconds": 0.6012129000009736,
+      "release_gate": false
+    }
+  },
+  "external_mathematical_assurance": {
+    "reference_sites": 6,
+    "reference_records": 10,
+    "formula_cases": 21,
+    "algorithm_cases": 5,
+    "retrieval": {
+      "recall_at_1": {
+        "hits": 6,
+        "total": 8,
+        "value": 0.75
+      },
+      "recall_at_5": {
+        "hits": 8,
+        "total": 8,
+        "value": 1.0
+      },
+      "recall_at_10": {
+        "hits": 8,
+        "total": 8,
+        "value": 1.0
+      },
+      "recall_at_20": {
+        "hits": 8,
+        "total": 8,
+        "value": 1.0
+      }
+    },
+    "reconstruction": {
+      "resolved": 1,
+      "unresolved": 20,
+      "completion_rate": 0.047619047619047616,
+      "false_acceptance": 0
+    }
+  },
+  "platforms": {
+    "windows": {
+      "schema_version": "1.0",
+      "platform": "win32",
+      "architecture": "AMD64",
+      "native_library": "formulatracer_c_api.dll",
+      "wheel": "dist\\native\\formulatracer-0.1.0-py3-none-win_amd64.whl",
+      "wheel_sha256": "5188dfb4fc59fa59f347a6e2fe8953a454b8c2b3b67c6705d32216f35dc2feaf",
+      "wheel_size_bytes": 712672,
+      "license_files": [
+        "formulatracer-0.1.0.dist-info/LICENSE"
+      ],
+      "complete_project_license_included": true,
+      "docx_included": false,
+      "build_passed": true,
+      "normal_user_requires_rust": false,
+      "stdout": "Processing <PROJECT_ROOT>\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: formulatracer\n  Building wheel for formulatracer (pyproject.toml): started\n  Building wheel for formulatracer (pyproject.toml): finished with status 'done'\n  Created wheel for formulatracer: filename=formulatracer-0.1.0-py3-none-win_amd64.whl size=712672 sha256=5188dfb4fc59fa59f347a6e2fe8953a454b8c2b3b67c6705d32216f35dc2feaf\n  Stored in directory: <LOCAL_PATH> built formulatracer\n",
+      "stderr": "\n[notice] A new release of pip is available: 24.0 -> 26.2.1\n[notice] To update, run: <PROJECT_ROOT>\\.venv\\Scripts\\python.exe -m pip install --upgrade pip\n"
+    },
+    "linux": {
+      "schema_version": "1.0",
+      "executed": "2026-08-27",
+      "environment": "WSL2 Ubuntu 24.04 isolated user cache",
+      "architecture": "x86_64",
+      "python": "3.12.14",
+      "rust": "1.98.0",
+      "c_compiler": "GCC 15.1.0",
+      "clang_frontend": "LLVM/Clang 18.1.8",
+      "lean": "4.19.0",
+      "results": {
+        "rust_workspace": {
+          "passed": 12,
+          "failed": 0
+        },
+        "python_native_conformance": {
+          "passed": 6,
+          "failed": 0
+        },
+        "c_abi": "PASS",
+        "cpp_raii": "PASS",
+        "clang18_frontend_build": "PASS",
+        "clang18_fixture_ir_extraction": "PASS",
+        "lean_lake_build": "PASS",
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "native_wheel_build": "PASS",
+        "clean_venv_install": "PASS",
+        "packaged_native_library_load": "PASS",
+        "native_finite_sum_tex_parse": "PASS",
+        "complete_project_license_in_wheel": "PASS",
+        "docx_in_wheel": 0
+      },
+      "wheel": {
+        "filename": "formulatracer-0.1.0-py3-none-linux_x86_64.whl",
+        "sha256": "f44cb88696f4e3a47af39cd0f80b7bdef1e69a2600f8f6131d0cfcd41840ec0b",
+        "size_bytes": 845531,
+        "normal_user_requires_rust": false
+      },
+      "corpus_policy": {
+        "repository_copy": "temporary isolated copy",
+        "git_copied": false,
+        "docx_copied": false
+      },
+      "notes": [
+        "The wheel was rebuilt after the FormulaTracer distribution naming cleanup, full Apache-2.0 license installation, and notation-role parser hardening.",
+        "Clang 18 frontend was built from the portable CMake configuration and extracted the weighted-sum fixture IR."
+      ]
+    }
+  },
+  "license": {
+    "selected": "Apache-2.0",
+    "complete_text": true,
+    "rationale": "permissive measured dependency set and explicit patent grant"
+  },
+  "release_tag_candidate": null
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "owner": "cpp_audit.ieee754",
+  "native_operation": "A/LEGACY_IEEE754",
+  "cases": [
+    {
+      "case": "finite-format",
+      "match": true
+    },
+    {
+      "case": "mathematical-vs-floating",
+      "match": true
+    },
+    {
+      "case": "nan-not-real",
+      "match": true
+    },
+    {
+      "case": "infinity-not-mathematical-infinity",
+      "match": true
+    },
+    {
+      "case": "signed-zero-preserved",
+      "match": true
+    },
+    {
+      "case": "special-observations",
+      "match": true
+    },
+    {
+      "case": "unknown-rounding-fails-closed",
+      "match": true
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

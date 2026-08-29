@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/language-boundary.schema.json",
+  "title": "LanguageBoundary",
+  "type": "object",
+  "required": ["boundary_id", "source_language", "target_language", "source_symbol", "target_symbol", "resolution_status", "representation_mapping", "provenance"],
+  "properties": {
+    "boundary_id": {"type": "string"},
+    "source_language": {"type": "string"},
+    "target_language": {"type": "string"},
+    "source_symbol": {"type": "string"},
+    "target_symbol": {"type": "string"},
+    "resolution_status": {"type": "string"},
+    "representation_mapping": {"type": "string"},
+    "provenance": {"type": "object"},
+    "ffi_framework": {"type": "string"},
+    "dtype_mapping": {"type": "object"},
+    "proof_obligations": {"type": "array", "items": {"type": "object"}}
+  }
+}

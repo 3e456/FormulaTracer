@@ -1,0 +1,15 @@
+{
+  "documents": [
+    "README.md",
+    "README.ja.md"
+  ],
+  "required_topics": [
+    "Quick start",
+    "Supported languages",
+    "Evidence",
+    "provider",
+    "Physics foundation",
+    "User-defined semantics",
+    "Platform"
+  ]
+}

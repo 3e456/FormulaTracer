@@ -1,0 +1,95 @@
+{
+  "references": [
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "REFERENCE_ONLY",
+      "reference_id": "ref.dlmf.fourier",
+      "retained_source": false,
+      "title": "NIST DLMF §1.14(i) Fourier Transform",
+      "url": "https://dlmf.nist.gov/1.14.i"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "REFERENCE_ONLY",
+      "reference_id": "ref.dlmf.laplace",
+      "retained_source": false,
+      "title": "NIST DLMF §1.14(iii) Laplace Transform",
+      "url": "https://dlmf.nist.gov/1.14.iii"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "ALGORITHM_REFERENCE_ONLY",
+      "reference_id": "ref.scipy.quad",
+      "retained_source": false,
+      "title": "SciPy integrate official reference",
+      "url": "https://docs.scipy.org/doc/scipy/reference/integrate.html"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "ALGORITHM_REFERENCE_ONLY",
+      "reference_id": "ref.scipy.solve_ivp",
+      "retained_source": false,
+      "title": "SciPy solve_ivp official reference",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "ALGORITHM_REFERENCE_ONLY",
+      "reference_id": "ref.scipy.minimize",
+      "retained_source": false,
+      "title": "SciPy minimize official reference",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "ALGORITHM_REFERENCE_ONLY",
+      "reference_id": "ref.dask.sum",
+      "retained_source": false,
+      "title": "Dask array sum official reference",
+      "url": "https://docs.dask.org/en/stable/generated/dask.array.sum.html"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "REFERENCE_ONLY",
+      "reference_id": "ref.xarray",
+      "retained_source": false,
+      "title": "Xarray user guide",
+      "url": "https://docs.xarray.dev/en/stable/user-guide/index.html"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "REFERENCE_ONLY",
+      "reference_id": "ref.pandas",
+      "retained_source": false,
+      "title": "Pandas user guide",
+      "url": "https://pandas.pydata.org/docs/user_guide/"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "REFERENCE_ONLY",
+      "reference_id": "ref.noether",
+      "retained_source": false,
+      "title": "E. Noether, Invariante Variationsprobleme (1918)",
+      "url": "https://eudml.org/doc/59024"
+    },
+    {
+      "accessed": "2026-08-29",
+      "copied_source": false,
+      "mode": "REFERENCE_ONLY",
+      "reference_id": "ref.mathlib",
+      "retained_source": false,
+      "title": "Mathlib 4 calculus documentation",
+      "url": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/LineDeriv/IntegrationByParts.html"
+    }
+  ],
+  "schema_version": "1.0"
+}

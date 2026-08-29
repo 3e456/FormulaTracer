@@ -1,0 +1,32 @@
+{
+  "licenses": [
+    {
+      "commit": "6068016edd5acb19e17c0abbe809cdce8ba1370a",
+      "license": "BSD-3-Clause",
+      "repository": "https://github.com/numpy/numpy",
+      "source_distributed": false,
+      "usage": "VALIDATION_ONLY"
+    },
+    {
+      "commit": "aca77e3b86d37990e8e3a5b05857cf1ee330ea90",
+      "license": "BSD-3-Clause",
+      "repository": "https://github.com/scipy/scipy",
+      "source_distributed": false,
+      "usage": "VALIDATION_ONLY"
+    },
+    {
+      "commit": "a48f3152c3e83be2069772fc8043383f8a7ad62a",
+      "license": "Apache-2.0",
+      "repository": "https://github.com/pydata/xarray",
+      "source_distributed": false,
+      "usage": "VALIDATION_ONLY"
+    },
+    {
+      "commit": "9dc535daa30d7d36d63d4a003b54342fbc7032db",
+      "license": "BSD-3-Clause",
+      "repository": "https://github.com/dask/dask",
+      "source_distributed": false,
+      "usage": "VALIDATION_ONLY"
+    }
+  ]
+}

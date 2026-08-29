@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.75in]{geometry}
+\begin{document}
+\section*{FormulaTracer Probability Audit}
+\noindent Overall status: \texttt{PROBABILITY\_AUDIT\_EMPIRICALLY\_SUPPORTED}\par
+\noindent Distribution: \texttt{UserDefinedDistribution}\par
+\section*{Formal / reference boundary}
+\noindent Definition: \texttt{DISTRIBUTION\_DEFINITION\_NUMERICALLY\_VALIDATED}\par
+\noindent Sampler conformance: \texttt{SAMPLER\_CONFORMANCE\_NOT\_PROVEN}\par
+\section*{Empirical distribution validation}
+\noindent Status: \texttt{DISTRIBUTION\_EMPIRICALLY\_SUPPORTED}\par
+\noindent Sample size: 200\par
+\noindent Empirical CDF distance: 0.0025\par
+\section*{Dependence diagnostics}
+\noindent Status: \texttt{INDEPENDENCE\_EMPIRICALLY\_INCONSISTENT}\par
+\section*{Estimator / Monte Carlo}
+\noindent Estimate: 0.5\par
+\noindent Sampling claim: \texttt{MONTE\_CARLO\_PROBABILISTIC\_ENCLOSURE\_UNDER\_ASSUMPTIONS}\par
+\section*{Trust boundary}
+Empirical support is not a distribution proof. PRNG internals and physical randomness are not kernel verified.
+\end{document}

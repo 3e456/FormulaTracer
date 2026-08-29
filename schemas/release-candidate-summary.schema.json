@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/release-candidate-summary.schema.json",
+  "title": "FormulaTracer release candidate summary",
+  "type": "object",
+  "required": ["schema_version", "status", "outcomes", "retrieval", "platforms", "gates", "corpora", "anti_overfit", "defect_summary", "evidence_boundaries"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"enum": ["RC_READY", "RC_NOT_READY"]},
+    "outcomes": {"type": "array", "items": {"type": "object", "required": ["case_id", "split", "verification_status", "relation_status", "semantic_fingerprint"]}},
+    "retrieval": {"type": "object"},
+    "platforms": {"type": "object"},
+    "gates": {"type": "object"},
+    "corpora": {"type": "object"},
+    "anti_overfit": {"type": "object"},
+    "defect_summary": {"type": "object"},
+    "evidence_boundaries": {"type": "object"}
+  },
+  "additionalProperties": true
+}

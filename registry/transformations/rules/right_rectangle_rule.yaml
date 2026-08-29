@@ -1,0 +1,13 @@
+schema_version: "0.1"
+rule:
+  id: right_rectangle_rule
+  kind: approximation
+  approximation_family_id: right_rectangle_rule
+  relation: APPROXIMATION_OF
+  source_pattern: {op: Integral, domain: {op: PatternVariable, name: domain}}
+  target_template: {op: Quadrature, method: right_rectangle, integration_domain: {op: PatternVariable, name: domain}, partition: {op: FreeVariable, name: partition}, step_size: {op: FreeVariable, name: h}, sample_nodes: [right], weights: [{op: Constant, value: 1}], composite: true}
+  parameters: [h, partition, axis, dimension]
+  conditions: ["partition and step are known"]
+  proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_right_rectangle_is_registered
+  cost: {symbolic_arithmetic_operations: 1, asymptotic_memory_rank: 1, transformation_path_length: 1}

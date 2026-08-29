@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "executed": "2026-08-27",
+  "holdout_fingerprint": "9045716113c56c085ed62e9f9d5c2fc5bca85a8e419bff16bbb2c4e7b5194eb5",
+  "policy": "immutable result; changed manifests fail closed",
+  "outcomes": [
+    {
+      "case_id": "holdout-series-rename",
+      "split": "final_holdout",
+      "family": "series",
+      "expected_provider": "scipy.special.expn_series",
+      "provider_rank": 1,
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "NON_EXACT_RELATION_CANDIDATE",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "semantic_fingerprint": "b70622c10beea2c18234caba76802f0a0bc5577e5e9581e1ff3ac52c73d645ee"
+    },
+    {
+      "case_id": "holdout-weighted-rename",
+      "split": "final_holdout",
+      "family": "quadrature",
+      "expected_provider": "numpy.dot.quadrature",
+      "provider_rank": 4,
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "CONTRACT_OBLIGATIONS_REMAINING",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "semantic_fingerprint": "a930ad60c2fbf2d9d8fb5b48248c9d417ecdbf1225be1b12aa7cc1dbf57f002d"
+    },
+    {
+      "case_id": "holdout-negative-add",
+      "split": "final_holdout",
+      "family": "negative_control",
+      "expected_provider": null,
+      "provider_rank": null,
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "NEGATIVE_CONTROL",
+      "semantic_fingerprint": "0feb9ad86a624f911ecc1932a8f4671b664e55094aa0c61685f61722681da358"
+    }
+  ]
+}

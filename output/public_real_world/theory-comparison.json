@@ -1,0 +1,26 @@
+{
+  "cases": [
+    {
+      "comparison": "REFERENCE_CONSISTENT_PARTIAL",
+      "declared_target": "finite-difference gradient",
+      "repository": "https://github.com/numpy/numpy"
+    },
+    {
+      "comparison": "REFERENCE_CONSISTENT_PARTIAL",
+      "declared_target": "trapezoidal quadrature",
+      "repository": "https://github.com/scipy/scipy"
+    },
+    {
+      "comparison": "REFERENCE_CONSISTENT_PARTIAL",
+      "declared_target": "labeled dot/tensor contraction",
+      "repository": "https://github.com/pydata/xarray"
+    },
+    {
+      "comparison": "REFERENCE_CONSISTENT_PARTIAL",
+      "declared_target": "chunked sum reduction",
+      "repository": "https://github.com/dask/dask"
+    }
+  ],
+  "comparison_performed_after_code_reconstruction": true,
+  "exact_claims": 0
+}

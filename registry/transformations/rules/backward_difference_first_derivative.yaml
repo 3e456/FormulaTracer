@@ -1,0 +1,16 @@
+schema_version: "0.1"
+rule:
+  id: backward_difference_first_derivative
+  kind: approximation
+  approximation_family_id: backward_difference_first_derivative
+  source_pattern: {op: Derivative, order: 1, variable: x}
+  target_template:
+    op: Divide
+    numerator: {op: Subtract, args: [{op: FunctionCall, name: f, args: [{op: FreeVariable, name: x}]}, {op: FunctionCall, name: f, args: [{op: Subtract, args: [{op: FreeVariable, name: x}, {op: FreeVariable, name: h}]}]}]}
+    denominator: {op: FreeVariable, name: h}
+  parameters: [h, spacing, axis, dimension]
+  conditions: ["h > 0", "x-h is in domain", "f is sufficiently smooth"]
+  proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_backward_is_registered
+  cost: {symbolic_arithmetic_operations: 2, asymptotic_memory_rank: 1, transformation_path_length: 1}
+  library_contract: {qualified_callable: numpy.gradient, exact_semantic_operator: FiniteDifference, scope: public_reference_contract}

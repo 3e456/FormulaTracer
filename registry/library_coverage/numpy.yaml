@@ -1,0 +1,25 @@
+schema_version: "0.1"
+package: numpy
+version: ">=2.0,<3.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://numpy.org/doc/stable/reference/generated/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-27"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape]
+  ignore: [implementation_algorithm, memory_layout, native_kernel]
+simple_bindings:
+  representation:
+    contiguous_array: [numpy.ascontiguousarray]
+    numeric_input_boundary: [numpy.load]
+    numeric_output_boundary: [numpy.save, numpy.savez, numpy.savez_compressed]
+    type_relation: [numpy.issubclass_]
+  cast:
+    unsigned_integer: [numpy.uint8, numpy.uint16]
+bindings:
+  - callable: numpy.minimum.reduceat
+    family: Reduction
+    bind: {reducer: segmented_minimum, indices_parameter: indices,
+           axis_parameter: axis, segmented: true}
+    reference: https://numpy.org/doc/stable/reference/generated/numpy.ufunc.reduceat.html
+    reference_status: REFERENCE_REVIEWED

@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "providers": [
+    "dask"
+  ],
+  "counts": {
+    "FULL_RECONSTRUCTION": 3,
+    "PARTIAL_RECONSTRUCTION": 1
+  },
+  "false_exact_promotion": 0,
+  "false_certified_promotion": 0,
+  "records": [
+    {
+      "case_id": "dask-elementwise-known",
+      "provider": "dask",
+      "root_cause": "LIBRARY_COMPOSITION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "error_certificate": {
+            "authority": "FORMULA_TRACER_DERIVED_GUARANTEE",
+            "certified": false,
+            "proof_obligations": [
+              "IEEE754_BACKEND_CONTRACT",
+              "REDUCTION_TREE_VALIDATION"
+            ],
+            "status": "UNRESOLVED"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "claims": [
+                "chunk/combine/aggregate structure",
+                "axis",
+                "dtype",
+                "keepdims",
+                "split_every"
+              ],
+              "reference": "https://docs.dask.org/en/stable/generated/dask.array.reduction.html"
+            }
+          ],
+          "execution_semantics": {
+            "backend": "NUMPY",
+            "dtype": "float64",
+            "op": "DataflowElementwise"
+          },
+          "mathematical_execution_exact_equivalence": false,
+          "mathematical_target": {
+            "op": "Elementwise",
+            "operator": "ADD"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "dask-sum-known-tree",
+      "provider": "dask",
+      "root_cause": "REDUCTION_TREE",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "error_certificate": {
+            "authority": "FORMULA_TRACER_DERIVED_GUARANTEE",
+            "certified": false,
+            "proof_obligations": [
+              "IEEE754_BACKEND_CONTRACT",
+              "REDUCTION_TREE_VALIDATION"
+            ],
+            "status": "CONDITIONAL_DERIVATION_AVAILABLE"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "claims": [
+                "chunk/combine/aggregate structure",
+                "axis",
+                "dtype",
+                "keepdims",
+                "split_every"
+              ],
+              "reference": "https://docs.dask.org/en/stable/generated/dask.array.reduction.html"
+            }
+          ],
+          "execution_semantics": {
+            "backend": "NUMPY",
+            "chunk_counts": [
+              4
+            ],
+            "dtype": "float64",
+            "op": "ChunkedReduction",
+            "split_every": 2,
+            "stages": [
+              "CHUNK",
+              "COMBINE",
+              "AGGREGATE"
+            ],
+            "tree_known": true
+          },
+          "mathematical_execution_exact_equivalence": false,
+          "mathematical_target": {
+            "axis": 0,
+            "op": "FiniteSum"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "dask-sum-unknown-backend",
+      "provider": "dask",
+      "root_cause": "DYNAMIC_DISPATCH",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "error_certificate": {
+            "authority": "FORMULA_TRACER_DERIVED_GUARANTEE",
+            "certified": false,
+            "proof_obligations": [
+              "IEEE754_BACKEND_CONTRACT",
+              "REDUCTION_TREE_VALIDATION"
+            ],
+            "status": "UNRESOLVED"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "claims": [
+                "chunk/combine/aggregate structure",
+                "axis",
+                "dtype",
+                "keepdims",
+                "split_every"
+              ],
+              "reference": "https://docs.dask.org/en/stable/generated/dask.array.reduction.html"
+            }
+          ],
+          "execution_semantics": {
+            "backend": null,
+            "chunk_counts": [
+              4
+            ],
+            "dtype": "float64",
+            "op": "ChunkedReduction",
+            "split_every": 2,
+            "stages": [
+              "CHUNK",
+              "COMBINE",
+              "AGGREGATE"
+            ],
+            "tree_known": true
+          },
+          "mathematical_execution_exact_equivalence": false,
+          "mathematical_target": {
+            "axis": 0,
+            "op": "FiniteSum"
+          },
+          "status": "PARTIAL_RECONSTRUCTION",
+          "unresolved": [
+            {
+              "code": "DASK_BACKEND_UNRESOLVED"
+            }
+          ]
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "dask-tree-mutation",
+      "provider": "dask",
+      "root_cause": "REDUCTION_TREE",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "bitwise_equivalent": "FALSE_OR_NOT_ESTABLISHED",
+          "exact_promotion": false,
+          "same_execution_order": false,
+          "same_mathematical_target": true
+        },
+        "schema_version": "1.0"
+      }
+    }
+  ]
+}

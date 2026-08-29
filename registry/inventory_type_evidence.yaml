@@ -1,0 +1,160 @@
+schema_version: "0.1"
+inventory: public_api_reference_inventory
+verified_date: "2026-08-26"
+description: >-
+  Curated generic type facts retained from public contract review. Private
+  corpus call-site provenance is intentionally not distributed.
+baseline_needs_contract:
+  - xarray.concat.assign_coords
+  - dask.array.isel.isel
+  - xarray.concat.assign_coords.rename
+  - dask.array.isel.isel.isel
+  - dask.array.isel.isel.where.where
+  - dask.array.isel.isel.where.reset_coords.reset_coords
+  - dask.array.sum.sum
+  - pandas.to_numeric.astype
+  - pandas.to_numeric.to_numpy
+  - xarray.concat.sel
+  - xarray.where.fillna
+  - xarray.where.fillna.clip
+  - dask.array.copy
+  - dask.array.isel
+  - dask.array.isel.isel.where.max
+  - dask.array.isel.isel.where.min
+  - dask.array.isel.isel.where.reset_coords.max
+  - dask.array.isel.isel.where.reset_coords.min
+  - dask.array.isel.max
+  - dask.array.isel.min
+  - dask.array.isel.where.where
+  - dask.array.sel
+  - dask.array.sum.isel.isel
+  - dask.array.sum.isel.isel.isel
+  - dask.array.sum.isel.isel.transpose.transpose
+  - numpy.ndarray.compute
+  - numpy.ndarray.values.flatten
+  - pandas.concat.copy.apply
+  - pandas.concat.copy.copy
+  - pandas.concat.copy.dropna.dropna
+  - pandas.concat.copy.dropna.reset_index.reset_index
+  - pandas.concat.copy.dropna.reset_index.to_numpy
+  - pandas.DataFrame.copy.pivot_table.reset_index.rename_axis
+  - pandas.Series.values.astype
+  - pandas.to_numeric.fillna
+  - pandas.to_numeric.fillna.clip
+  - pandas.to_numeric.notna
+  - pandas.to_numeric.notna.all
+  - scipy.sparse.csgraph.connected_components.astype
+  - scipy.sparse.csr_matrix.data.astype
+  - scipy.sparse.csr_matrix.indices.astype
+  - scipy.sparse.csr_matrix.indptr.astype
+  - xarray.align.isel
+  - xarray.concat.assign
+  - xarray.concat.assign.assign.assign
+  - xarray.concat.assign_coords.assign_coords
+  - xarray.concat.assign_coords.rename.rename
+  - xarray.concat.max
+  - xarray.concat.max.reindex_like.reindex_like
+  - xarray.concat.max.reindex_like.where.values.flatten
+  - xarray.concat.max.reindex_like.where.where
+  - xarray.DataArray.values.astype
+  - xarray.where.astype
+  - xarray.where.where
+  - xarray.where.where.median
+rules:
+  - callable: pandas.concat.*
+    input_types: [pandas.DataFrame]
+    evidence: INPUT_TYPE_DETERMINED
+    source: <LOCAL_PATH>
+  - callable: pandas.to_numeric.*
+    input_types: [pandas.Series]
+    evidence: INPUT_TYPE_DETERMINED
+    source: <LOCAL_PATH>
+  - callable: pandas.Series.values.astype
+    receiver_type: pandas.DataFrame
+    namespace_segments: 2
+    evidence: STATICALLY_CONSTRAINED
+    source: <LOCAL_PATH>
+
+  - callable: xarray.concat.*
+    input_types: [xarray.DataArray]
+    evidence: INPUT_TYPE_DETERMINED
+    labels: true
+    container: labeled_array
+    source: <LOCAL_PATH>
+  - callable: xarray.where.*
+    input_types: [xarray.DataArray]
+    evidence: INPUT_TYPE_DETERMINED
+    labels: true
+    container: labeled_array
+    source: <LOCAL_PATH>
+  - callable: xarray.align.isel
+    input_types: [xarray.DataArray]
+    result_type: xarray.DataArray
+    evidence: INPUT_TYPE_DETERMINED
+    labels: true
+    container: labeled_array
+    source: <LOCAL_PATH>
+
+  - callable: dask.array.isel*
+    receiver_type: xarray.DataArray
+    namespace_segments: 2
+    evidence: STATICALLY_CONSTRAINED
+    backend: dask.array.Array
+    lazy: true
+    labels: true
+    container: labeled_array
+    mechanisms: [NAMESPACE_CORRECTION]
+    source: <LOCAL_PATH>
+  - callable: dask.array.sel*
+    receiver_type: xarray.DataArray
+    namespace_segments: 2
+    evidence: STATICALLY_CONSTRAINED
+    backend: dask.array.Array
+    lazy: true
+    labels: true
+    container: labeled_array
+    mechanisms: [NAMESPACE_CORRECTION]
+    source: <LOCAL_PATH>
+  - callable: dask.array.sum*
+    receiver_type: xarray.DataArray
+    namespace_segments: 2
+    evidence: INPUT_TYPE_DETERMINED
+    backend: dask.array.Array
+    lazy: true
+    labels: true
+    container: labeled_array
+    mechanisms: [NAMESPACE_CORRECTION]
+    source: <LOCAL_PATH>
+  - callable: dask.array.copy
+    receiver_type: xarray.DataArray
+    namespace_segments: 2
+    evidence: ANNOTATION_DETERMINED
+    backend: dask.array.Array
+    lazy: true
+    labels: true
+    container: labeled_array
+    mechanisms: [NAMESPACE_CORRECTION]
+    source: <LOCAL_PATH>
+
+  - callable: numpy.ndarray.compute
+    receiver_type: xarray.DataArray
+    namespace_segments: 2
+    evidence: STATICALLY_CONSTRAINED
+    backend: dask.array.Array
+    lazy: true
+    labels: true
+    mechanisms: [NAMESPACE_CORRECTION]
+    source: <LOCAL_PATH>
+  - callable: numpy.ndarray.values.flatten
+    receiver_type: xarray.DataArray
+    namespace_segments: 2
+    evidence: INPUT_TYPE_DETERMINED
+    labels: true
+    mechanisms: [NAMESPACE_CORRECTION]
+    source: <LOCAL_PATH>
+
+  - callable: scipy.sparse.csgraph.connected_components.astype
+    result_type: numpy.ndarray
+    evidence: INPUT_TYPE_DETERMINED
+    dtype_class: integer
+    source: <LOCAL_PATH>

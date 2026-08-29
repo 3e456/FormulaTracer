@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "platform": "win32",
+  "architecture": "AMD64",
+  "native_library": "formulatracer_c_api.dll",
+  "wheel": "dist\\native\\cpp_algorithm_audit-0.1.0-py3-none-win_amd64.whl",
+  "build_passed": true,
+  "normal_user_requires_rust": false,
+  "stdout": "Processing <PROJECT_ROOT>\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: cpp-algorithm-audit\n  Building wheel for cpp-algorithm-audit (pyproject.toml): started\n  Building wheel for cpp-algorithm-audit (pyproject.toml): finished with status 'done'\n  Created wheel for cpp-algorithm-audit: filename=cpp_algorithm_audit-0.1.0-py3-none-win_amd64.whl size=591308 sha256=320930907b0478a26029559bdc44549570ede6ce71aa83625998fa1a14b040b3\n  Stored in directory: <LOCAL_PATH> built cpp-algorithm-audit\n",
+  "stderr": "\n[notice] A new release of pip is available: 24.0 -> 26.2.1\n[notice] To update, run: <PROJECT_ROOT>\\.venv\\Scripts\\python.exe -m pip install --upgrade pip\n"
+}

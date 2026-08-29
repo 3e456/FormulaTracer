@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "python": {
+    "passed": 579,
+    "skipped": 1,
+    "subtests_passed": 36,
+    "failed": 0
+  },
+  "rust": {
+    "core_passed": 49,
+    "c_api_passed": 3,
+    "failed": 0
+  },
+  "c_abi_cpp_wrapper": "PASS_4_OF_4",
+  "rust_standalone": "PASS",
+  "c_standalone": "PASS",
+  "cpp_standalone": "PASS",
+  "readme_quickstart": "PASS",
+  "example_execution_failures": 0,
+  "lean": {
+    "lake_build": "PASS",
+    "sorry": 0,
+    "admit": 0,
+    "axiom": 0
+  },
+  "python_distribution": {
+    "windows_wheel_build": "PASS",
+    "windows_clean_install": "PASS",
+    "linux_wheel_build": "PASS",
+    "linux_clean_install": "PASS",
+    "sdist_build": "PASS",
+    "end_user_rust_required": false
+  },
+  "native_semantic_ownership": {
+    "production_python_semantic_symbols": 0,
+    "production_reachable_python_semantic_symbols": 0,
+    "dynamic_reachability_unresolved": 0,
+    "python_semantic_fallback_count": 0
+  },
+  "differential": {
+    "python_rust": "1056/1056",
+    "tex": "1056/1056",
+    "false_acceptance": 0
+  },
+  "structural_isomorphism": {
+    "cases": 28,
+    "false_structural_isomorphism": 0,
+    "semantic_mutation_collapse": 0
+  },
+  "bitvector_exhaustive": "196864/196864",
+  "privacy_security": "PASS"
+}

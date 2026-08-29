@@ -1,0 +1,466 @@
+{
+  "schema_version": "1.0",
+  "scope": "native migration additions",
+  "project_license_decision": "Apache-2.0",
+  "items": [
+    {
+      "name": "formulatracer-core",
+      "version_revision": "0.1.0",
+      "license": "Apache-2.0",
+      "usage_category": "PROJECT_COMPONENT",
+      "linked_imported": false,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [],
+      "manifest_path": "<PROJECT_ROOT>\\rust\\formulatracer-core\\Cargo.toml"
+    },
+    {
+      "name": "formulatracer-c-api",
+      "version_revision": "0.1.0",
+      "license": "Apache-2.0",
+      "usage_category": "PROJECT_COMPONENT",
+      "linked_imported": false,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [],
+      "manifest_path": "<PROJECT_ROOT>\\rust\\formulatracer-c-api\\Cargo.toml"
+    },
+    {
+      "name": "formulatracer-cli",
+      "version_revision": "0.1.0",
+      "license": "Apache-2.0",
+      "usage_category": "PROJECT_COMPONENT",
+      "linked_imported": false,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [],
+      "manifest_path": "<PROJECT_ROOT>\\rust\\formulatracer-cli\\Cargo.toml"
+    },
+    {
+      "name": "block-buffer",
+      "version_revision": "0.10.4",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "cfg-if",
+      "version_revision": "1.0.4",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "cpufeatures",
+      "version_revision": "0.2.17",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "crypto-common",
+      "version_revision": "0.1.7",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "digest",
+      "version_revision": "0.10.7",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "generic-array",
+      "version_revision": "0.14.7",
+      "license": "MIT",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "itoa",
+      "version_revision": "1.0.18",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "libc",
+      "version_revision": "0.2.189",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": null,
+      "license_source": "https://github.com/rust-lang/libc#license"
+    },
+    {
+      "name": "memchr",
+      "version_revision": "2.8.3",
+      "license": "Unlicense OR MIT",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "proc-macro2",
+      "version_revision": "1.0.107",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "quote",
+      "version_revision": "1.0.47",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "serde",
+      "version_revision": "1.0.229",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "serde_core",
+      "version_revision": "1.0.229",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "serde_derive",
+      "version_revision": "1.0.229",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "serde_json",
+      "version_revision": "1.0.151",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "sha2",
+      "version_revision": "0.10.9",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "syn",
+      "version_revision": "3.0.4",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "thiserror",
+      "version_revision": "2.0.20",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "thiserror-impl",
+      "version_revision": "2.0.20",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "typenum",
+      "version_revision": "1.20.1",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "unicode-ident",
+      "version_revision": "1.0.24",
+      "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "version_check",
+      "version_revision": "0.9.5",
+      "license": "MIT/Apache-2.0",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    },
+    {
+      "name": "zmij",
+      "version_revision": "1.0.23",
+      "license": "MIT",
+      "usage_category": "RUNTIME_DEPENDENCY_LINKED_IN_NATIVE_LIBRARY",
+      "linked_imported": true,
+      "distributed_with_formulatracer": true,
+      "source_copied": false,
+      "notice_required": "PRESERVE_APPLICABLE_UPSTREAM_NOTICES",
+      "license_text_required": "INCLUDED_OR_ATTRIBUTED_PER_LICENSE",
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "manifest_path": "<LOCAL_PATH>",
+      "license_source": "<LOCAL_PATH>"
+    }
+  ],
+  "build_dependencies": [
+    "Rust 1.98.0",
+    "MSVC 19.42 on measured Windows host",
+    "GCC 15.1 and LLVM/Clang 18.1.8 on measured Linux host"
+  ],
+  "optional_or_reference_only_scientific_providers": "unchanged; not linked into native core"
+}

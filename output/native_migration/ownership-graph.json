@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "policy": "Kernel/SCC migration; module count is not a completion claim.",
+  "nodes": [
+    {
+      "module": "cpp_audit.equality_saturation",
+      "kernel": "B",
+      "classification": "PYTHON_SEMANTIC_SOURCE_OF_TRUTH",
+      "retirement_status": "OPEN",
+      "scc": 0
+    },
+    {
+      "module": "cpp_audit.ieee754",
+      "kernel": "A",
+      "classification": "PYTHON_SEMANTIC_SOURCE_OF_TRUTH",
+      "retirement_status": "OPEN",
+      "scc": 1
+    },
+    {
+      "module": "cpp_audit.interval",
+      "kernel": "C",
+      "classification": "PYTHON_SEMANTIC_SOURCE_OF_TRUTH",
+      "retirement_status": "OPEN",
+      "scc": 2
+    },
+    {
+      "module": "cpp_audit.probability",
+      "kernel": "C",
+      "classification": "PYTHON_SEMANTIC_SOURCE_OF_TRUTH",
+      "retirement_status": "OPEN",
+      "scc": 3
+    },
+    {
+      "module": "cpp_audit.synthesis",
+      "kernel": "D",
+      "classification": "PYTHON_SEMANTIC_SOURCE_OF_TRUTH",
+      "retirement_status": "OPEN",
+      "scc": 4
+    },
+    {
+      "module": "cpp_audit.transformations",
+      "kernel": "B",
+      "classification": "PYTHON_SEMANTIC_SOURCE_OF_TRUTH",
+      "retirement_status": "OPEN",
+      "scc": 5
+    }
+  ],
+  "edges": [
+    {
+      "source": "cpp_audit.equality_saturation",
+      "target": "cpp_audit.transformations"
+    }
+  ],
+  "strongly_connected_components": [
+    {
+      "scc": 0,
+      "modules": [
+        "cpp_audit.equality_saturation"
+      ],
+      "kernels": [
+        "B"
+      ]
+    },
+    {
+      "scc": 1,
+      "modules": [
+        "cpp_audit.ieee754"
+      ],
+      "kernels": [
+        "A"
+      ]
+    },
+    {
+      "scc": 2,
+      "modules": [
+        "cpp_audit.interval"
+      ],
+      "kernels": [
+        "C"
+      ]
+    },
+    {
+      "scc": 3,
+      "modules": [
+        "cpp_audit.probability"
+      ],
+      "kernels": [
+        "C"
+      ]
+    },
+    {
+      "scc": 4,
+      "modules": [
+        "cpp_audit.synthesis"
+      ],
+      "kernels": [
+        "D"
+      ]
+    },
+    {
+      "scc": 5,
+      "modules": [
+        "cpp_audit.transformations"
+      ],
+      "kernels": [
+        "B"
+      ]
+    }
+  ],
+  "by_kernel": {
+    "A": [
+      "cpp_audit.ieee754"
+    ],
+    "B": [
+      "cpp_audit.equality_saturation",
+      "cpp_audit.transformations"
+    ],
+    "C": [
+      "cpp_audit.interval",
+      "cpp_audit.probability"
+    ],
+    "D": [
+      "cpp_audit.synthesis"
+    ],
+    "E": [],
+    "F": []
+  },
+  "python_semantic_source_of_truth_modules": 6,
+  "all_retired": false
+}

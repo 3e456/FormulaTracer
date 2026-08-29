@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/range-enclosure.schema.json",
+  "title": "RangeEnclosure",
+  "type": "object",
+  "required": ["output", "value_interval", "error_interval", "true_value_enclosure", "status", "proof_status", "obligations", "kind"],
+  "properties": {
+    "output": {"type": "string"},
+    "value_interval": {"type": "object", "required": ["interval", "symbol", "scope", "kind"]},
+    "error_interval": {"type": "object", "required": ["interval", "output", "component_ids", "total", "kind"]},
+    "true_value_enclosure": {"$ref": "interval.schema.json"},
+    "status": {"enum": ["TOTAL_TRUE_VALUE_ENCLOSURE_VERIFIED", "PARTIAL_TRUE_VALUE_ENCLOSURE", "TOTAL_TRUE_VALUE_ENCLOSURE_UNRESOLVED"]},
+    "proof_status": {"type": "string"},
+    "obligations": {"type": "array"},
+    "constraint_status": {"type": ["string", "null"]},
+    "kind": {"const": "TRUE_VALUE_ENCLOSURE"}
+  }
+}

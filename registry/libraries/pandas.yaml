@@ -1,0 +1,172 @@
+schema_version: "0.1"
+package: pandas
+version: ">=2.0,<4.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://pandas.pydata.org/docs/reference/api/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [values, index, columns, missing_value_rules, argument_mapping]
+  ignore: [implementation_algorithm, memory_layout, storage_manager]
+
+simple_bindings:
+  representation:
+    numeric_array: [pandas.Series.to_numpy, pandas.DataFrame.to_numpy]
+    numeric_conversion: [pandas.to_numeric]
+    python_list: [pandas.Series.tolist, pandas.Index.tolist]
+  cast:
+    astype: [pandas.Series.astype, pandas.DataFrame.astype]
+  predicate:
+    is_missing: [pandas.isna, pandas.Series.isna, pandas.DataFrame.isna]
+    is_not_missing: [pandas.notna, pandas.Series.notna, pandas.DataFrame.notna]
+    membership: [pandas.Series.isin, pandas.DataFrame.isin]
+    duplicated: [pandas.Series.duplicated, pandas.DataFrame.duplicated]
+  table:
+    copy: [pandas.Series.copy, pandas.DataFrame.copy]
+    fill_missing: [pandas.Series.fillna, pandas.DataFrame.fillna]
+    drop_missing: [pandas.Series.dropna, pandas.DataFrame.dropna]
+    replace: [pandas.Series.replace, pandas.DataFrame.replace]
+    apply: [pandas.Series.apply, pandas.DataFrame.apply]
+    map: [pandas.Series.map, pandas.DataFrame.map]
+    assign: [pandas.DataFrame.assign]
+    rename: [pandas.Series.rename, pandas.DataFrame.rename]
+    set_index: [pandas.DataFrame.set_index]
+    reset_index: [pandas.Series.reset_index, pandas.DataFrame.reset_index]
+    sort_values: [pandas.Series.sort_values, pandas.DataFrame.sort_values]
+    insert: [pandas.DataFrame.insert]
+    rank: [pandas.Series.rank, pandas.DataFrame.rank]
+    drop_labels: [pandas.Series.drop, pandas.DataFrame.drop]
+    drop_duplicates: [pandas.Series.drop_duplicates, pandas.DataFrame.drop_duplicates]
+    clip: [pandas.Series.clip, pandas.DataFrame.clip]
+    divide: [pandas.Series.div, pandas.DataFrame.div]
+    group_tail: [pandas.api.typing.DataFrameGroupBy.tail]
+    row_iteration: [pandas.DataFrame.iterrows]
+  selection:
+    label_accessor: [pandas.Series.loc, pandas.DataFrame.loc]
+    integer_accessor: [pandas.Series.iloc, pandas.DataFrame.iloc]
+    keyed_get: [pandas.Series.get]
+  grouping:
+    group_by_keys: [pandas.Series.groupby, pandas.DataFrame.groupby]
+  aggregation:
+    sum: [pandas.Series.sum, pandas.DataFrame.sum, pandas.api.typing.DataFrameGroupBy.sum]
+    all: [pandas.Series.all, pandas.DataFrame.all]
+    mean: [pandas.Series.mean, pandas.DataFrame.mean, pandas.api.typing.DataFrameGroupBy.mean]
+    standard_deviation: [pandas.Series.std, pandas.DataFrame.std, pandas.api.typing.DataFrameGroupBy.std]
+    median: [pandas.Series.median, pandas.DataFrame.median, pandas.api.typing.DataFrameGroupBy.median]
+    quantile: [pandas.Series.quantile, pandas.DataFrame.quantile, pandas.api.typing.DataFrameGroupBy.quantile]
+    aggregate: [pandas.Series.agg, pandas.DataFrame.agg, pandas.api.typing.DataFrameGroupBy.agg]
+    group_transform: [pandas.api.typing.DataFrameGroupBy.transform]
+  alignment:
+    concatenate: [pandas.concat]
+    merge: [pandas.merge, pandas.DataFrame.merge]
+    join: [pandas.DataFrame.join]
+    pivot_table: [pandas.pivot_table, pandas.DataFrame.pivot_table]
+
+bindings:
+  - callable: pandas.concat
+    family: Alignment
+    bind: {alignment: concatenate, input_parameter: objs}
+    return_type:
+      kind: conditional
+      evidence: REFERENCE_DETERMINED
+      cases:
+        - when: {input_type: pandas.DataFrame}
+          returns: pandas.DataFrame
+        - when: {input_type: pandas.Series}
+          returns: pandas.Series
+    reference: https://pandas.pydata.org/docs/reference/api/pandas.concat.html
+    reference_status: REFERENCE_REVIEWED
+  - callable: pandas.to_numeric
+    family: RepresentationMapping
+    bind: {mapping: numeric_conversion, input_parameter: arg}
+    return_type:
+      kind: conditional
+      evidence: REFERENCE_DETERMINED
+      cases:
+        - when: {input_type: pandas.Series}
+          returns: pandas.Series
+        - when: {input_type: array_like}
+          returns: numpy.ndarray
+    reference: https://pandas.pydata.org/docs/reference/api/pandas.to_numeric.html
+    reference_status: REFERENCE_REVIEWED
+  - callable: pandas.DataFrame.sum
+    family: Aggregation
+    bind: {aggregation: sum}
+    reference: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sum.html
+    reference_status: LEAN_VERIFIED_MAPPING
+  - callable: pandas.DataFrame
+    family: TableMapping
+    bind: {mapping: dataframe_constructor, result_type: pandas.DataFrame}
+  - callable: pandas.DataFrame.from_records
+    family: TableMapping
+    bind: {mapping: records_to_dataframe, result_type: pandas.DataFrame}
+  - callable: pandas.Series
+    family: TableMapping
+    bind: {mapping: series_constructor, result_type: pandas.Series}
+  - callable: pandas.DataFrame.groupby
+    family: Grouping
+    bind: {grouping: split_by_keys, result_type: pandas.api.typing.DataFrameGroupBy,
+           key_parameter: by, preserve_group_order_parameter: sort}
+  - callable: pandas.Series.groupby
+    family: Grouping
+    bind: {grouping: split_by_keys, result_type: pandas.api.typing.SeriesGroupBy,
+           key_parameter: by, preserve_group_order_parameter: sort}
+  - callable: pandas.api.typing.DataFrameGroupBy.sum
+    family: Aggregation
+    bind: {aggregation: sum}
+    return_type: {kind: pandas.DataFrame, evidence: REFERENCE_DETERMINED}
+    reference: https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.DataFrameGroupBy.sum.html
+  - callable: pandas.api.typing.SeriesGroupBy.sum
+    family: Aggregation
+    bind: {aggregation: sum}
+    return_type: {kind: pandas.Series, evidence: REFERENCE_DETERMINED}
+    reference: https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.SeriesGroupBy.sum.html
+  - callable: pandas.api.typing.DataFrameGroupBy.transform
+    family: TableMapping
+    bind: {mapping: same_index_group_transform, result_type: pandas.DataFrame,
+           function_parameter: func}
+    reference_status: REFERENCE_REVIEWED
+  - callable: pandas.api.types.is_numeric_dtype
+    family: ElementwisePredicate
+    bind: {predicate: numeric_dtype}
+  - callable: pandas.read_sql
+    family: RepresentationMapping
+    bind: {mapping: numeric_input_boundary, result_type: pandas.DataFrame, io_boundary: true}
+  - callable: pandas.read_sql_query
+    family: RepresentationMapping
+    bind: {mapping: numeric_input_boundary, result_type: pandas.DataFrame, io_boundary: true}
+  - callable: pandas.to_datetime
+    family: RepresentationMapping
+    bind: {mapping: datetime_representation}
+  - callable: pandas.DataFrame.index
+    family: RepresentationMapping
+    bind: {mapping: row_index, result_type: pandas.Index}
+  - callable: pandas.Index.astype
+    family: NumericCast
+    bind: {cast: index_dtype_cast, result_type: pandas.Index}
+  - callable: pandas.DataFrame.rename_axis
+    family: TableMapping
+    bind: {mapping: rename_axis_labels}
+    return_type: {kind: receiver, evidence: REFERENCE_DETERMINED}
+  - callable: pandas.Series.rename_axis
+    family: TableMapping
+    bind: {mapping: rename_axis_labels}
+    return_type: {kind: receiver, evidence: REFERENCE_DETERMINED}
+  - callable: pandas.DataFrame.values
+    family: RepresentationMapping
+    bind: {mapping: table_values_array, property: true}
+    return_type: {kind: numpy.ndarray, evidence: REFERENCE_DETERMINED}
+  - callable: pandas.Series.values
+    family: RepresentationMapping
+    bind: {mapping: series_values_array_like, property: true}
+    return_type: {kind: conditional, evidence: REFERENCE_DETERMINED,
+      cases: [{when: {input_type: numpy_backed_series}, returns: numpy.ndarray},
+              {when: {input_type: extension_backed_series}, returns: pandas.api.extensions.ExtensionArray}]}
+  - callable: pandas.Series.to_numpy
+    family: RepresentationMapping
+    bind: {mapping: numeric_array}
+    return_type: {kind: numpy.ndarray, evidence: REFERENCE_DETERMINED}
+  - callable: pandas.DataFrame.to_numpy
+    family: RepresentationMapping
+    bind: {mapping: numeric_array}
+    return_type: {kind: numpy.ndarray, evidence: REFERENCE_DETERMINED}

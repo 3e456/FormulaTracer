@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "mode": "baseline",
+  "measurement_kind": "FROZEN_CAPABILITY_CENSUS",
+  "assessed_revision": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "corpus": "PUBLIC_SYNTHETIC_PREPUBLIC_V1",
+  "case_count": 23,
+  "definition": {
+    "FULL_RECONSTRUCTION": "all material modeled semantics resolved",
+    "PARTIAL_RECONSTRUCTION": "mathematical target known but material execution/metadata unresolved",
+    "STRUCTURAL_ONLY": "structure known without mathematical meaning",
+    "UNRESOLVED": "required semantic evidence unavailable"
+  },
+  "counts": {
+    "PARTIAL_RECONSTRUCTION": 17,
+    "STRUCTURAL_ONLY": 1,
+    "UNRESOLVED": 5
+  },
+  "unresolved_root_causes": {
+    "CALLBACK": 5,
+    "CONTAINER": 2,
+    "DYNAMIC_DISPATCH": 1,
+    "INTERPOLATION": 1,
+    "INTERPROCEDURAL": 2,
+    "LABELED_ALIGNMENT": 1,
+    "LABELED_REDUCTION": 1,
+    "LABELED_SELECTION": 1,
+    "LIBRARY_COMPOSITION": 1,
+    "LOOP_FOLD": 1,
+    "MISSINGNESS": 1,
+    "NUMERICAL_RELATION": 1,
+    "PATH_CONDITION": 1,
+    "REDUCTION_TREE": 2,
+    "SHAPE_INDEX": 1,
+    "TYPED_OPAQUE": 1
+  },
+  "false_acceptance": 0,
+  "false_exact_promotion": 0,
+  "false_certified_promotion": 0,
+  "records": [
+    {
+      "case_id": "interprocedural-safe",
+      "provider": "generic",
+      "root_cause": "INTERPROCEDURAL",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "interprocedural-effect",
+      "provider": "generic",
+      "root_cause": "INTERPROCEDURAL",
+      "status": "UNRESOLVED",
+      "result": null
+    },
+    {
+      "case_id": "loop-sum",
+      "provider": "generic",
+      "root_cause": "LOOP_FOLD",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "loop-conditional",
+      "provider": "generic",
+      "root_cause": "PATH_CONDITION",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "container-static",
+      "provider": "generic",
+      "root_cause": "CONTAINER",
+      "status": "STRUCTURAL_ONLY",
+      "result": null
+    },
+    {
+      "case_id": "container-dynamic",
+      "provider": "generic",
+      "root_cause": "CONTAINER",
+      "status": "UNRESOLVED",
+      "result": null
+    },
+    {
+      "case_id": "tensor-index",
+      "provider": "generic",
+      "root_cause": "SHAPE_INDEX",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "opaque-shape-identity",
+      "provider": "generic",
+      "root_cause": "TYPED_OPAQUE",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "callback-quad",
+      "provider": "generic",
+      "root_cause": "CALLBACK",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "callback-missing",
+      "provider": "generic",
+      "root_cause": "CALLBACK",
+      "status": "UNRESOLVED",
+      "result": null
+    },
+    {
+      "case_id": "xarray-inner-alignment",
+      "provider": "xarray",
+      "root_cause": "LABELED_ALIGNMENT",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "pandas-outer-fill",
+      "provider": "pandas",
+      "root_cause": "MISSINGNESS",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "xarray-label-select",
+      "provider": "xarray",
+      "root_cause": "LABELED_SELECTION",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "xarray-skipna-reduction",
+      "provider": "xarray",
+      "root_cause": "LABELED_REDUCTION",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "xarray-linear-interpolation",
+      "provider": "xarray",
+      "root_cause": "INTERPOLATION",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "dask-elementwise-known",
+      "provider": "dask",
+      "root_cause": "LIBRARY_COMPOSITION",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "dask-sum-known-tree",
+      "provider": "dask",
+      "root_cause": "REDUCTION_TREE",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "dask-sum-unknown-backend",
+      "provider": "dask",
+      "root_cause": "DYNAMIC_DISPATCH",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "dask-tree-mutation",
+      "provider": "dask",
+      "root_cause": "REDUCTION_TREE",
+      "status": "UNRESOLVED",
+      "result": null
+    },
+    {
+      "case_id": "scipy-linear-solve",
+      "provider": "scipy",
+      "root_cause": "NUMERICAL_RELATION",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "scipy-quad",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    },
+    {
+      "case_id": "scipy-quad-missing-callback",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "UNRESOLVED",
+      "result": null
+    },
+    {
+      "case_id": "scipy-minimize",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": null
+    }
+  ]
+}

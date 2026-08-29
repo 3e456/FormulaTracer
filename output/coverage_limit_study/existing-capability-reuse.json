@@ -1,0 +1,12 @@
+{
+  "new_semantic_engines": 0,
+  "reused": [
+    "Mathematical IR",
+    "Piecewise",
+    "Fact/Constraint Engine",
+    "Coverage Kernel C",
+    "Relation/Evidence/Provenance",
+    "Provider execution",
+    "existing @theory frontend"
+  ]
+}

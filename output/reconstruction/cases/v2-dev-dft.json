@@ -1,0 +1,650 @@
+{
+  "schema_version": "1.0",
+  "case_id": "v2-dev-dft",
+  "split": "development",
+  "family": "fourier",
+  "reference_id": [
+    "numpy-fft"
+  ],
+  "reference_version_or_revision": {
+    "numpy-fft": "stable documentation"
+  },
+  "original_theory_tex": "\\sum_{n=0}^{N-1} {x_{n}\\,\\exp(phase)}",
+  "original_theory_ir": {
+    "op": "FiniteSum",
+    "bound_index": "n",
+    "index_domain": {
+      "lower": {
+        "op": "Constant",
+        "value": 0
+      },
+      "upper_exclusive": {
+        "op": "FreeVariable",
+        "name": "N"
+      }
+    },
+    "body": {
+      "op": "Multiply",
+      "args": [
+        {
+          "op": "IndexedValue",
+          "name": "x",
+          "indices": [
+            {
+              "op": "BoundVariable",
+              "name": "n"
+            }
+          ]
+        },
+        {
+          "op": "FunctionCall",
+          "name": "exp",
+          "args": [
+            {
+              "op": "FreeVariable",
+              "name": "phase"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "normalized_theory_ir": {
+    "body": {
+      "args": [
+        {
+          "indices": [
+            {
+              "name": "#b0",
+              "op": "BoundVariable"
+            }
+          ],
+          "name": "x",
+          "op": "IndexedValue"
+        },
+        {
+          "args": [
+            {
+              "name": "phase",
+              "op": "FreeVariable"
+            }
+          ],
+          "name": "exp",
+          "op": "FunctionCall"
+        }
+      ],
+      "op": "Multiply"
+    },
+    "bound_index": "#b0",
+    "index_domain": {
+      "lower": {
+        "op": "Constant",
+        "value": 0
+      },
+      "upper_exclusive": {
+        "name": "N",
+        "op": "FreeVariable"
+      }
+    },
+    "op": "FiniteSum"
+  },
+  "theory_structural_quotient": {
+    "representative": {
+      "body": {
+        "args": [
+          {
+            "indices": [
+              {
+                "name": "#b0",
+                "op": "BoundVariable"
+              }
+            ],
+            "name": "x",
+            "op": "IndexedValue"
+          },
+          {
+            "args": [
+              {
+                "name": "phase",
+                "op": "FreeVariable"
+              }
+            ],
+            "name": "exp",
+            "op": "FunctionCall"
+          }
+        ],
+        "op": "Multiply"
+      },
+      "bound_index": "#b0",
+      "index_domain": {
+        "lower": {
+          "op": "Constant",
+          "value": 0
+        },
+        "upper_exclusive": {
+          "name": "N",
+          "op": "FreeVariable"
+        }
+      },
+      "op": "FiniteSum"
+    },
+    "status": "QUOTIENT_NORMALIZED",
+    "witness": {
+      "association_changes": [],
+      "binder_mapping": {
+        "n": "#b0"
+      },
+      "blocked_reasons": [],
+      "evidence_level": "COMPARISON_AID",
+      "ignored_representation_metadata": [],
+      "index_mapping": {
+        "n": "#b0"
+      },
+      "mapping": {},
+      "node_mapping": {},
+      "operand_permutations": [],
+      "proof_authority": false,
+      "provenance": [
+        "formulatracer-core:typed-structural-isomorphism-v1"
+      ],
+      "required_assumptions": [],
+      "required_facts": []
+    }
+  },
+  "generation_plan": {
+    "requested_expression": {
+      "op": "FiniteSum",
+      "bound_index": "n",
+      "index_domain": {
+        "lower": {
+          "op": "Constant",
+          "value": 0
+        },
+        "upper_exclusive": {
+          "op": "FreeVariable",
+          "name": "N"
+        }
+      },
+      "body": {
+        "op": "Multiply",
+        "args": [
+          {
+            "op": "IndexedValue",
+            "name": "x",
+            "indices": [
+              {
+                "op": "BoundVariable",
+                "name": "n"
+              }
+            ]
+          },
+          {
+            "op": "FunctionCall",
+            "name": "exp",
+            "args": [
+              {
+                "op": "FreeVariable",
+                "name": "phase"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "candidates": [
+      {
+        "provider_id": "numpy.fft.fft",
+        "rank": 1,
+        "score": 25.5,
+        "reasons": [
+          "shared mathematical motif: complex_exponential",
+          "shared mathematical motif: finite_sum",
+          "shared mathematical motif: fourier",
+          "shared mathematical motif: indexed_multiplication"
+        ],
+        "matched_path": [],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "cpp.eigen.dot",
+        "rank": 2,
+        "score": 20.0,
+        "reasons": [
+          "shared mathematical motif: finite_sum",
+          "shared mathematical motif: indexed_multiplication",
+          "shared mathematical motif: weighted_sum"
+        ],
+        "matched_path": [],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "cpp.std.inner_product",
+        "rank": 3,
+        "score": 20.0,
+        "reasons": [
+          "shared mathematical motif: finite_sum",
+          "shared mathematical motif: indexed_multiplication",
+          "shared mathematical motif: weighted_sum"
+        ],
+        "matched_path": [],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "rust.ndarray.dot",
+        "rank": 4,
+        "score": 20.0,
+        "reasons": [
+          "shared mathematical motif: finite_sum",
+          "shared mathematical motif: indexed_multiplication",
+          "shared mathematical motif: weighted_sum"
+        ],
+        "matched_path": [],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "numpy.dot.quadrature",
+        "rank": 5,
+        "score": 18.0,
+        "reasons": [
+          "shared mathematical motif: finite_sum",
+          "shared mathematical motif: weighted_sum"
+        ],
+        "matched_path": [],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "scipy.special.expn_series",
+        "rank": 6,
+        "score": 12.0,
+        "reasons": [
+          "shared mathematical motif: finite_sum"
+        ],
+        "matched_path": [],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "numpy.central_difference",
+        "rank": 7,
+        "score": 6.0,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "scipy.signal.fftconvolve",
+        "rank": 8,
+        "score": 2.0,
+        "reasons": [
+          "shared mathematical motif: fourier"
+        ],
+        "matched_path": [],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "python.builtin.direct",
+        "rank": 9,
+        "score": 0.1,
+        "reasons": [
+          "universal direct lowering fallback"
+        ],
+        "matched_path": [
+          "body",
+          "args",
+          0,
+          "indices",
+          0
+        ],
+        "stage": "RIGOROUS_RECOMPARISON",
+        "verification_status": "RIGOROUS_EXACT_MATCH",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "cpp.std.direct",
+        "rank": 10,
+        "score": 0.0,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "body",
+          "args",
+          0,
+          "indices",
+          0
+        ],
+        "stage": "RIGOROUS_RECOMPARISON",
+        "verification_status": "RIGOROUS_EXACT_MATCH",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "rust.std.direct",
+        "rank": 11,
+        "score": 0.0,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "body",
+          "args",
+          0,
+          "indices",
+          0
+        ],
+        "stage": "RIGOROUS_RECOMPARISON",
+        "verification_status": "RIGOROUS_EXACT_MATCH",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "scipy.integrate.quad",
+        "rank": 12,
+        "score": 0.0,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "body",
+          "args",
+          0,
+          "indices",
+          0
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      }
+    ],
+    "budget": {
+      "retrieval": 100,
+      "detailed_unification": 20,
+      "full_verification": 5,
+      "rewrite_states": 30,
+      "rewrite_depth": 4,
+      "egraph_iterations": 8,
+      "egraph_enodes": 200,
+      "egraph_rule_applications": 500
+    },
+    "status": "PROVIDER_CANDIDATES_PLANNED",
+    "selected": null,
+    "relation_graph": {
+      "edges": []
+    },
+    "decision_provenance": [
+      {
+        "candidate_count": 12,
+        "event": "BROAD_RETRIEVAL",
+        "motifs": [
+          "complex_exponential",
+          "exp",
+          "finite_sum",
+          "fourier",
+          "indexed_multiplication",
+          "multiply",
+          "weighted_sum"
+        ]
+      }
+    ]
+  },
+  "provider_candidate": {
+    "provider_id": "numpy.fft.fft",
+    "language": "python",
+    "callable": "numpy.fft.fft",
+    "contract_pattern": {
+      "op": "FiniteSum",
+      "bound_index": "n",
+      "index_domain": {
+        "lower": {
+          "op": "Constant",
+          "value": 0
+        },
+        "upper_exclusive": {
+          "op": "FreeVariable",
+          "name": "N"
+        }
+      },
+      "body": {
+        "op": "Multiply",
+        "args": [
+          {
+            "op": "IndexedValue",
+            "name": "x",
+            "indices": [
+              {
+                "op": "BoundVariable",
+                "name": "n"
+              }
+            ]
+          },
+          {
+            "op": "FunctionCall",
+            "name": "exp",
+            "args": [
+              {
+                "op": "Divide",
+                "args": [
+                  {
+                    "op": "Multiply",
+                    "args": [
+                      {
+                        "op": "Constant",
+                        "value": "-2*pi*i"
+                      },
+                      {
+                        "op": "Multiply",
+                        "args": [
+                          {
+                            "op": "BoundVariable",
+                            "name": "k"
+                          },
+                          {
+                            "op": "BoundVariable",
+                            "name": "n"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "FreeVariable",
+                    "name": "N"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "mathematical_relation": "EXACT_EQUAL",
+    "realization_relation": "ALGORITHMICALLY_REALIZED_BY",
+    "lowering": "fft",
+    "normalization_convention": null,
+    "assumptions": [
+      "complex input",
+      "normalization convention validated"
+    ],
+    "shape_type_constraints": [
+      "complex input",
+      "normalization convention validated"
+    ],
+    "execution_metadata": {
+      "device": "CPU",
+      "algorithm": "FFT"
+    },
+    "useful_rewrites": [
+      "euler_to_exponential",
+      "sum_reindex",
+      "dft_inverse_normalization"
+    ]
+  },
+  "selected_provider": null,
+  "generation_decision": null,
+  "algorithm_ir": {
+    "op": "ProviderAlgorithmContract",
+    "provider_id": "numpy.fft.fft",
+    "language": "python",
+    "lowering": "fft",
+    "mathematical_target": {
+      "op": "FiniteSum",
+      "bound_index": "n",
+      "index_domain": {
+        "lower": {
+          "op": "Constant",
+          "value": 0
+        },
+        "upper_exclusive": {
+          "op": "FreeVariable",
+          "name": "N"
+        }
+      },
+      "body": {
+        "op": "Multiply",
+        "args": [
+          {
+            "op": "IndexedValue",
+            "name": "x",
+            "indices": [
+              {
+                "op": "BoundVariable",
+                "name": "n"
+              }
+            ]
+          },
+          {
+            "op": "FunctionCall",
+            "name": "exp",
+            "args": [
+              {
+                "op": "Divide",
+                "args": [
+                  {
+                    "op": "Multiply",
+                    "args": [
+                      {
+                        "op": "Constant",
+                        "value": "-2*pi*i"
+                      },
+                      {
+                        "op": "Multiply",
+                        "args": [
+                          {
+                            "op": "BoundVariable",
+                            "name": "k"
+                          },
+                          {
+                            "op": "BoundVariable",
+                            "name": "n"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "op": "FreeVariable",
+                    "name": "N"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "implementation_relation": "EXACT_EQUAL",
+    "realization_relation": "ALGORITHMICALLY_REALIZED_BY",
+    "execution_metadata": {
+      "device": "CPU",
+      "algorithm": "FFT"
+    }
+  },
+  "generated_language": null,
+  "generated_source_fingerprint": null,
+  "observed_implementation_ir": null,
+  "reconstructed_math_ir": null,
+  "reconstructed_structural_quotient": null,
+  "structural_isomorphism_status": null,
+  "structural_isomorphism_witness": null,
+  "exact_egraph_status": null,
+  "relation_graph_status": {
+    "status": "RECONSTRUCTION_UNRESOLVED",
+    "edges": []
+  },
+  "assumptions": [
+    "complex input",
+    "normalization convention validated"
+  ],
+  "error_range_evidence": null,
+  "final_reconstruction_status": "RECONSTRUCTION_UNRESOLVED",
+  "implementation_provenance": {
+    "temporary_assignments": [],
+    "inline_expansions": [],
+    "status": "NOT_CAPTURED_NO_GENERATED_IMPLEMENTATION"
+  },
+  "loop_reduction_provenance": {
+    "loop_variable": null,
+    "initialization": null,
+    "update": null,
+    "termination": null,
+    "reduction_operation": null,
+    "body_dependency": null,
+    "order": null,
+    "status": "NOT_CAPTURED_NO_GENERATED_IMPLEMENTATION"
+  },
+  "semantic_fingerprint": "fde6de2eefdee59e33a2f58c05d2dad7b6d4751fcfc0907ab53342561e8db995",
+  "external_source_retained": false,
+  "unavailable_reasons": {
+    "selected_provider": "NO_RIGOROUS_PROVIDER_SELECTION_WAS_PERFORMED",
+    "generation_decision": "NO_PROVIDER_SELECTION_DECISION_WAS_PERFORMED",
+    "generated_language": "NO_SOURCE_WAS_GENERATED_FOR_THIS_ASSURANCE_CASE",
+    "generated_source_fingerprint": "NO_SOURCE_WAS_GENERATED_FOR_THIS_ASSURANCE_CASE",
+    "observed_implementation_ir": "NO_GENERATED_SOURCE_WAS_INDEPENDENTLY_REANALYZED",
+    "reconstructed_math_ir": "NO_GENERATED_SOURCE_WAS_INDEPENDENTLY_REANALYZED",
+    "reconstructed_structural_quotient": "RECONSTRUCTED_MATH_IR_UNAVAILABLE",
+    "structural_isomorphism_status": "THEORY_RECONSTRUCTED_IR_PAIR_UNAVAILABLE",
+    "structural_isomorphism_witness": "THEORY_RECONSTRUCTED_IR_PAIR_UNAVAILABLE",
+    "error_range_evidence": "NO_CERTIFIED_ERROR_OR_RANGE_EVIDENCE_WAS_PRODUCED",
+    "exact_egraph_status": "EXACT_EGRAPH_STAGE_NOT_REACHED_OR_NO_MATCH_RECORDED"
+  },
+  "artifact_payload_hash": "cbabf538f472dcb670842725007ec89d2d9978c01a1be8e7e4b345cf356f8248"
+}

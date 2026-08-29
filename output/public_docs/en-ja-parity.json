@@ -1,0 +1,25 @@
+{
+  "claim_strength_parity": true,
+  "language_matrix_parity": true,
+  "limitation_parity": true,
+  "platform_parity": true,
+  "status": "PASS",
+  "topics": [
+    "purpose",
+    "installation",
+    "languages",
+    "platforms",
+    "architecture",
+    "quick start",
+    "result",
+    "evidence",
+    "providers",
+    "physics",
+    "user-defined semantics",
+    "limitations",
+    "security",
+    "privacy",
+    "citation",
+    "license"
+  ]
+}

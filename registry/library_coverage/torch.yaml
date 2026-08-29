@@ -1,0 +1,25 @@
+schema_version: "0.1"
+package: torch
+version: "*"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://docs.pytorch.org/docs/stable/generated/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-27"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape]
+  ignore: [device, kernel, parallel_reduction_order, autograd_trace]
+simple_bindings:
+  reduction: {add: [torch.sum, torch.Tensor.sum], multiply: [torch.prod, torch.Tensor.prod], mean: [torch.mean, torch.Tensor.mean]}
+  contraction: {matmul: [torch.matmul, torch.Tensor.matmul], dot: [torch.dot, torch.Tensor.dot]}
+  shape: {reshape: [torch.reshape, torch.Tensor.reshape], transpose: [torch.transpose, torch.Tensor.transpose], permute: [torch.permute, torch.Tensor.permute]}
+  conditional: {where: [torch.where]}
+  unary: {abs: [torch.abs], sqrt: [torch.sqrt], log: [torch.log], exp: [torch.exp]}
+bindings:
+  - callable: torch.compile
+    family: ParallelExecution
+    bind: {operation: jit_boundary, preserves_mathematical_relation: true}
+    execution: {op: JITBoundary, device: input_dependent}
+  - callable: torch.Tensor.add_
+    family: AlgorithmInvocation
+    bind: {algorithm: in_place_add, mutates_input: true, pure_expression: false}
+    execution: {op: InPlaceMutation}

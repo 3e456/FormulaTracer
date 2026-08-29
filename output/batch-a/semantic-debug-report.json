@@ -1,0 +1,383 @@
+{
+  "affected_outputs": [
+    {
+      "artifact_outputs": [],
+      "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+      "name": "converted",
+      "output_id": "output:2d89660ee9a32e05",
+      "root_id": "root:258104850581630d"
+    }
+  ],
+  "debug_traces": [
+    {
+      "artifact_outputs": [],
+      "dependency_path": [
+        {
+          "id": "semantic-divergence:acadb8930061701d",
+          "kind": "SEMANTIC_NODE",
+          "source_span": {
+            "begin_column": 5,
+            "begin_line": 6,
+            "end_column": 26,
+            "end_line": 6,
+            "file": "<PROJECT_ROOT>\\examples\\semantic_debugger\\wrong_operator.py"
+          }
+        },
+        {
+          "id": "wrong_operator.convert_mass.converted:6",
+          "kind": "DEPENDENCY"
+        },
+        {
+          "id": "wrong_operator.convert_mass.kg",
+          "kind": "DEPENDENCY"
+        },
+        {
+          "id": "output:2d89660ee9a32e05",
+          "kind": "OUTPUT",
+          "name": "converted"
+        }
+      ],
+      "output_ids": [
+        "output:2d89660ee9a32e05"
+      ],
+      "root_cause_node": "semantic-divergence:acadb8930061701d",
+      "trace_id": "debug-trace:2e9225ae08d34ded"
+    }
+  ],
+  "diagnostics": [
+    {
+      "diagnostic_code": "OPERATOR_MISMATCH",
+      "message_key": "semantic_debug.operator_mismatch",
+      "parameters": {
+        "actual": {
+          "args": [
+            {
+              "name": "wrong_operator.convert_mass.kg",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1000
+            }
+          ],
+          "op": "Multiply"
+        },
+        "expected": {
+          "args": [
+            {
+              "name": "kg",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1000
+            }
+          ],
+          "op": "Divide"
+        },
+        "source_symbol": null
+      }
+    }
+  ],
+  "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+  "findings": [
+    {
+      "actual": {
+        "args": [
+          {
+            "name": "wrong_operator.convert_mass.kg",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1000
+          }
+        ],
+        "op": "Multiply"
+      },
+      "affected_outputs": [
+        {
+          "artifact_outputs": [],
+          "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+          "name": "converted",
+          "output_id": "output:2d89660ee9a32e05",
+          "root_id": "root:258104850581630d"
+        }
+      ],
+      "amplification_points": [],
+      "confidence": "STRONG_ROOT_CAUSE_CANDIDATE",
+      "debug_trace": {
+        "artifact_outputs": [],
+        "dependency_path": [
+          {
+            "id": "semantic-divergence:acadb8930061701d",
+            "kind": "SEMANTIC_NODE",
+            "source_span": {
+              "begin_column": 5,
+              "begin_line": 6,
+              "end_column": 26,
+              "end_line": 6,
+              "file": "<PROJECT_ROOT>\\examples\\semantic_debugger\\wrong_operator.py"
+            }
+          },
+          {
+            "id": "wrong_operator.convert_mass.converted:6",
+            "kind": "DEPENDENCY"
+          },
+          {
+            "id": "wrong_operator.convert_mass.kg",
+            "kind": "DEPENDENCY"
+          },
+          {
+            "id": "output:2d89660ee9a32e05",
+            "kind": "OUTPUT",
+            "name": "converted"
+          }
+        ],
+        "output_ids": [
+          "output:2d89660ee9a32e05"
+        ],
+        "root_cause_node": "semantic-divergence:acadb8930061701d",
+        "trace_id": "debug-trace:2e9225ae08d34ded"
+      },
+      "diagnostic_code": "OPERATOR_MISMATCH",
+      "error_contributions": [],
+      "expected": {
+        "args": [
+          {
+            "name": "kg",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1000
+          }
+        ],
+        "op": "Divide"
+      },
+      "finding_id": "debug-finding:dd433e4dfe5f34a5",
+      "invalidated_claims": [
+        "e2e-claim:2dc6416425c7ab76",
+        "TOTAL_TRUE_VALUE_ENCLOSURE_UNRESOLVED"
+      ],
+      "message_key": "semantic_debug.operator_mismatch",
+      "parameters": {
+        "actual": {
+          "args": [
+            {
+              "name": "wrong_operator.convert_mass.kg",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1000
+            }
+          ],
+          "op": "Multiply"
+        },
+        "expected": {
+          "args": [
+            {
+              "name": "kg",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1000
+            }
+          ],
+          "op": "Divide"
+        },
+        "source_symbol": null
+      },
+      "source": {
+        "begin_column": 5,
+        "begin_line": 6,
+        "end_column": 26,
+        "end_line": 6,
+        "file": "<PROJECT_ROOT>\\examples\\semantic_debugger\\wrong_operator.py"
+      },
+      "type": "OPERATOR_MISMATCH"
+    }
+  ],
+  "first_divergences": [
+    {
+      "divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "wrong_operator.convert_mass.kg",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1000
+            }
+          ],
+          "op": "Multiply"
+        },
+        "divergence_id": "semantic-divergence:acadb8930061701d",
+        "expected": {
+          "args": [
+            {
+              "name": "kg",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1000
+            }
+          ],
+          "op": "Divide"
+        },
+        "expression_path": [],
+        "mathematical_layer": true,
+        "semantic_difference": {
+          "path": [],
+          "role": null,
+          "type": "OPERATOR_MISMATCH"
+        },
+        "source": {
+          "begin_column": 5,
+          "begin_line": 6,
+          "end_column": 26,
+          "end_line": 6,
+          "file": "<PROJECT_ROOT>\\examples\\semantic_debugger\\wrong_operator.py"
+        },
+        "type": "OPERATOR_MISMATCH"
+      },
+      "divergence_id": "semantic-divergence:acadb8930061701d",
+      "downstream_affected_region": [
+        "output:2d89660ee9a32e05"
+      ],
+      "matching_upstream_region": [],
+      "minimal_subgraph_id": "minimal-divergent-subgraph:18c4c39b60499302",
+      "output_ids": [
+        "output:2d89660ee9a32e05"
+      ],
+      "root_id": "root:258104850581630d"
+    }
+  ],
+  "invalidated_claims": [
+    "e2e-claim:2dc6416425c7ab76",
+    "TOTAL_TRUE_VALUE_ENCLOSURE_UNRESOLVED"
+  ],
+  "minimal_divergent_subgraphs": [
+    {
+      "boundary_inputs": [],
+      "boundary_outputs": [
+        "output:2d89660ee9a32e05"
+      ],
+      "implementation_nodes": [
+        {
+          "args": [
+            {
+              "name": "wrong_operator.convert_mass.kg",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1000
+            }
+          ],
+          "op": "Multiply"
+        }
+      ],
+      "semantic_difference": {
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "source_spans": [
+        {
+          "begin_column": 5,
+          "begin_line": 6,
+          "end_column": 26,
+          "end_line": 6,
+          "file": "<PROJECT_ROOT>\\examples\\semantic_debugger\\wrong_operator.py"
+        }
+      ],
+      "subgraph_id": "minimal-divergent-subgraph:18c4c39b60499302",
+      "theory_nodes": [
+        {
+          "args": [
+            {
+              "name": "kg",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1000
+            }
+          ],
+          "op": "Divide"
+        }
+      ]
+    }
+  ],
+  "project_status": "PROJECT_UNRESOLVED",
+  "root_causes": [
+    {
+      "actual_semantics": {
+        "args": [
+          {
+            "name": "wrong_operator.convert_mass.kg",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1000
+          }
+        ],
+        "op": "Multiply"
+      },
+      "confidence": "STRONG_ROOT_CAUSE_CANDIDATE",
+      "divergence_type": "OPERATOR_MISMATCH",
+      "downstream_affected_outputs": [
+        {
+          "artifact_outputs": [],
+          "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+          "name": "converted",
+          "output_id": "output:2d89660ee9a32e05",
+          "root_id": "root:258104850581630d"
+        }
+      ],
+      "error_bounds_invalidated": [],
+      "expected_semantics": {
+        "args": [
+          {
+            "name": "kg",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1000
+          }
+        ],
+        "op": "Divide"
+      },
+      "finding_id": "debug-finding:dd433e4dfe5f34a5",
+      "proofs_invalidated": [
+        "e2e-claim:2dc6416425c7ab76"
+      ],
+      "range_claims_invalidated": [
+        "TOTAL_TRUE_VALUE_ENCLOSURE_UNRESOLVED"
+      ],
+      "rank": 1,
+      "source_file": "<PROJECT_ROOT>\\examples\\semantic_debugger\\wrong_operator.py",
+      "source_span": {
+        "begin_column": 5,
+        "begin_line": 6,
+        "end_column": 26,
+        "end_line": 6,
+        "file": "<PROJECT_ROOT>\\examples\\semantic_debugger\\wrong_operator.py"
+      },
+      "source_symbol": null,
+      "upstream_context": []
+    }
+  ],
+  "root_results": {
+    "root:258104850581630d": "DIVERGENCE_LOCALIZED"
+  },
+  "status": "SEMANTIC_DIVERGENCE_LOCALIZED"
+}

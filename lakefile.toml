@@ -1,0 +1,12 @@
+name = "cpp-audit"
+version = "0.1.0"
+defaultTargets = ["CppAudit"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.19.0"
+
+[[lean_lib]]
+name = "CppAudit"
+srcDir = "lean"

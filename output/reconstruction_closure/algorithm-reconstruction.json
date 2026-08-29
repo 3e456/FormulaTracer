@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "status": "AVAILABLE",
+  "owner": "RUST_LOOP_FOLD_AND_PROVIDER_ALGORITHM_IR",
+  "safe_hierarchy": [
+    "Loop",
+    "Fold",
+    "Reduction",
+    "FiniteSum_or_FiniteProduct"
+  ]
+}

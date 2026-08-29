@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "wave": 4,
+  "status": "PASS",
+  "initial_production_semantic_symbols": 6,
+  "migrated": 4,
+  "reclassified": 2,
+  "remaining": 0,
+  "parity": {
+    "schema_version": "1.0",
+    "wave": 4,
+    "owner": "cpp_audit.synthesis",
+    "native_operation": "D/LEGACY_SYNTHESIS",
+    "cases": [
+      {
+        "case": "positive_exact",
+        "passed": true,
+        "kind": "positive"
+      },
+      {
+        "case": "formatting_invariant",
+        "passed": true,
+        "kind": "metamorphic"
+      },
+      {
+        "case": "wrong_provider_domain",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_dtype",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_shape",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_axis",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_fourier_normalization",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_sign_convention",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_truncation",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "provider_language",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "missing_assumption",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "open_obligation",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "approximation_not_exact",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "unauthorized_family",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "unsupported_language",
+        "passed": true,
+        "kind": "negative"
+      }
+    ],
+    "positive": 1,
+    "negative": 13,
+    "metamorphic": 1,
+    "total": 15,
+    "passed": 15,
+    "false_acceptance": 0,
+    "open_obligation_promoted_to_safe": 0,
+    "status": "PASS"
+  },
+  "adversarial": {
+    "schema_version": "1.0",
+    "wave": 4,
+    "owner": "cpp_audit.synthesis",
+    "native_operation": "D/LEGACY_SYNTHESIS",
+    "cases": [
+      {
+        "case": "positive_exact",
+        "passed": true,
+        "kind": "positive"
+      },
+      {
+        "case": "formatting_invariant",
+        "passed": true,
+        "kind": "metamorphic"
+      },
+      {
+        "case": "wrong_provider_domain",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_dtype",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_shape",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_axis",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_fourier_normalization",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_sign_convention",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "wrong_truncation",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "provider_language",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "missing_assumption",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "open_obligation",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "approximation_not_exact",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "unauthorized_family",
+        "passed": true,
+        "kind": "negative"
+      },
+      {
+        "case": "unsupported_language",
+        "passed": true,
+        "kind": "negative"
+      }
+    ],
+    "positive": 1,
+    "negative": 13,
+    "metamorphic": 1,
+    "total": 15,
+    "passed": 15,
+    "false_acceptance": 0,
+    "open_obligation_promoted_to_safe": 0,
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "invariant_provenance": [
+    "NOETHER_DERIVED",
+    "ALGEBRAIC",
+    "GEOMETRIC",
+    "NUMERICAL_METHOD_SPECIFIC",
+    "USER_DECLARED"
+  ],
+  "numeric_statuses": [
+    "MODEL_CONSERVED",
+    "NUMERICALLY_PRESERVED_EXACTLY",
+    "NUMERICALLY_PRESERVED_WITH_BOUND",
+    "NUMERICAL_DRIFT_OBSERVED",
+    "NOT_ESTABLISHED"
+  ],
+  "schema_version": "1.0",
+  "theorem": {
+    "assumptions": [
+      "differentiable_one_parameter_symmetry",
+      "action_invariant_up_to_boundary_term",
+      "euler_lagrange_holds"
+    ],
+    "formalization_level": "THEOREM_REGISTERED",
+    "lean_theorem": null,
+    "lhs": {
+      "of": {
+        "op": "Action"
+      },
+      "op": "ContinuousSymmetry"
+    },
+    "name": "Noether symmetry to conservation",
+    "references": [
+      "ref.noether"
+    ],
+    "relation": "EXACT_UNDER_ASSUMPTIONS",
+    "rhs": {
+      "op": "ConservedQuantity",
+      "provenance": "NOETHER_DERIVED"
+    },
+    "theorem_id": "noether"
+  }
+}

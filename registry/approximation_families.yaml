@@ -1,0 +1,159 @@
+schema_version: "0.2"
+families:
+  - &forward
+    family_id: forward_difference_first_derivative
+    mathematical_operator: Derivative
+    approximation_kind: finite_difference
+    order: 1
+    stencil: {region: boundary_or_interior, offsets: [0, 1], coefficients: [-1, 1], scaling: h}
+    quadrature: null
+    step_parameter: h
+    domain_requirements: ["x and x+h are in the domain"]
+    smoothness_requirements: ["f has two continuous derivatives locally"]
+    boundary_requirements: ["forward stencil is authorized at the selected location"]
+    convergence_order: 1
+    convergence_parameter: h
+    convergence_target: "Derivative(order=1)"
+    library_contract_mappings: [numpy.gradient, xarray.DataArray.differentiate]
+    provenance: {kind: mathematical_definition, reference: "finite-difference family registry"}
+    proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+    selection_error_estimate: 0.00001
+  - <<: *forward
+    family_id: backward_difference_first_derivative
+    stencil: {region: boundary_or_interior, offsets: [-1, 0], coefficients: [-1, 1], scaling: h}
+    domain_requirements: ["x-h and x are in the domain"]
+    boundary_requirements: ["backward stencil is authorized at the selected location"]
+    selection_error_estimate: null
+  - <<: *forward
+    family_id: central_difference_first_derivative
+    stencil: {region: interior, offsets: [-1, 1], coefficients: [-1, 1], scaling: "2*h"}
+    domain_requirements: ["x-h and x+h are in the domain"]
+    smoothness_requirements: ["f has three continuous derivatives locally"]
+    boundary_requirements: ["selected location is interior"]
+    convergence_order: 2
+    selection_error_estimate: 0.000001
+  - <<: *forward
+    family_id: central_difference_second_derivative
+    order: 2
+    stencil: {region: interior, offsets: [-1, 0, 1], coefficients: [1, -2, 1], scaling: "h^2"}
+    smoothness_requirements: ["f has four continuous derivatives locally"]
+    convergence_order: 2
+    convergence_target: "Derivative(order=2)"
+    selection_error_estimate: null
+  - &quadrature
+    family_id: left_rectangle_rule
+    mathematical_operator: Integral
+    approximation_kind: quadrature
+    order: null
+    stencil: null
+    quadrature: {nodes: [left], weights: [1], panel: composite_or_single}
+    step_parameter: h
+    domain_requirements: ["finite ordered integration domain", "partition and step size are known"]
+    smoothness_requirements: ["integrand is continuously differentiable"]
+    boundary_requirements: []
+    convergence_order: 1
+    convergence_parameter: h
+    convergence_target: Integral
+    library_contract_mappings: []
+    provenance: {kind: mathematical_definition, reference: "quadrature family registry"}
+    proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+    selection_error_estimate: null
+  - <<: *quadrature
+    family_id: right_rectangle_rule
+    quadrature: {nodes: [right], weights: [1], panel: composite_or_single}
+  - <<: *quadrature
+    family_id: midpoint_rule
+    quadrature: {nodes: [midpoint], weights: [1], panel: composite_or_single}
+    convergence_order: 2
+  - <<: *quadrature
+    family_id: trapezoidal_rule
+    quadrature: {nodes: [left, right], weights: [0.5, 0.5], panel: composite_or_single}
+    smoothness_requirements: ["integrand has two continuous derivatives"]
+    convergence_order: 2
+    library_contract_mappings: [scipy.integrate.trapezoid]
+  - <<: *quadrature
+    family_id: simpson_rule
+    quadrature: {nodes: [left, midpoint, right], weights: ["1/6", "4/6", "1/6"], panel: composite_or_single}
+    domain_requirements: ["finite ordered integration domain", "uniform partition is known", "composite interval count is even"]
+    smoothness_requirements: ["integrand has four continuous derivatives"]
+    convergence_order: 4
+    library_contract_mappings: [scipy.integrate.simpson]
+  - &interpolation
+    family_id: nearest_neighbor_interpolation
+    mathematical_operator: Interpolation
+    approximation_kind: interpolation
+    order: 0
+    stencil: {support_points: nearest, weights: [1], axis: explicit}
+    quadrature: null
+    step_parameter: null
+    domain_requirements: ["query point is inside the support domain"]
+    smoothness_requirements: []
+    boundary_requirements: ["extrapolation is separately classified"]
+    convergence_order: 1
+    convergence_parameter: support_spacing
+    convergence_target: Interpolation
+    library_contract_mappings: [xarray.DataArray.interp, scipy.interpolate.interp1d, scipy.interpolate.RegularGridInterpolator]
+    provenance: {kind: public_reference_semantics, reference: "interpolation family registry"}
+    proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+    selection_error_estimate: null
+  - <<: *interpolation
+    family_id: linear_interpolation
+    order: 1
+    stencil: {support_points: [left, right], weights: ["1-t", t], axis: explicit}
+    convergence_order: 2
+  - <<: *interpolation
+    family_id: multilinear_interpolation
+    order: 1
+    stencil: {support_points: "2^dimensions cell vertices", weights: "tensor product of per-axis linear weights", axis: explicit}
+    library_contract_mappings: [xarray.DataArray.interp, scipy.interpolate.RegularGridInterpolator, scipy.interpolate.interpn]
+library_mappings:
+  - qualified_callable: numpy.diff
+    exact_semantic_operator: DiscreteDifference
+    approximation_family_ids: [forward_difference_first_derivative]
+    public_reference_semantics: {order_parameter: n, axis: positional, scaling: absent, derivative_claim: false}
+    provenance: {registry: registry/libraries/numpy.yaml, authority: public_reference_contract}
+  - qualified_callable: numpy.gradient
+    exact_semantic_operator: FiniteDifference
+    approximation_family_ids: [central_difference_first_derivative, forward_difference_first_derivative, backward_difference_first_derivative]
+    public_reference_semantics: {interior: central, boundary: one_sided, edge_order: [1, 2], spacing: explicit_or_unit, axis: positional}
+    provenance: {registry: registry/libraries/numpy.yaml, authority: public_reference_contract}
+  - qualified_callable: xarray.DataArray.diff
+    exact_semantic_operator: DiscreteDifference
+    approximation_family_ids: [forward_difference_first_derivative, backward_difference_first_derivative]
+    public_reference_semantics: {dimension: named, label: upper_or_lower, scaling: absent, derivative_claim: false}
+    provenance: {registry: registry/libraries/xarray.yaml, authority: public_reference_contract}
+  - qualified_callable: xarray.DataArray.differentiate
+    exact_semantic_operator: FiniteDifference
+    approximation_family_ids: [central_difference_first_derivative, forward_difference_first_derivative, backward_difference_first_derivative]
+    public_reference_semantics: {dimension: named, coordinate_spacing: required, edge_order: [1, 2]}
+    provenance: {registry: registry/libraries/xarray.yaml, authority: public_reference_contract}
+  - qualified_callable: xarray.DataArray.interp
+    exact_semantic_operator: Interpolation
+    approximation_family_ids: [nearest_neighbor_interpolation, linear_interpolation, multilinear_interpolation]
+    public_reference_semantics: {dimension: named, label_alignment: preserved, extrapolation: separately_detected}
+    provenance: {registry: registry/libraries/xarray.yaml, authority: public_reference_contract}
+  - qualified_callable: scipy.integrate.trapezoid
+    exact_semantic_operator: Quadrature
+    approximation_family_ids: [trapezoidal_rule]
+    public_reference_semantics: {axis: positional, sample_coordinates: x_or_dx, composite: true}
+    provenance: {registry: registry/libraries/scipy.yaml, authority: public_reference_contract}
+  - qualified_callable: scipy.integrate.simpson
+    exact_semantic_operator: Quadrature
+    approximation_family_ids: [simpson_rule]
+    public_reference_semantics: {axis: positional, sample_coordinates: x_or_dx, composite: true, even_interval_requirement: true}
+    provenance: {registry: registry/libraries/scipy.yaml, authority: public_reference_contract}
+  - qualified_callable: scipy.interpolate.interp1d
+    exact_semantic_operator: Interpolation
+    approximation_family_ids: [nearest_neighbor_interpolation, linear_interpolation]
+    public_reference_semantics: {axis: positional, bounds_error_or_fill_value: true}
+    provenance: {registry: registry/libraries/scipy.yaml, authority: public_reference_contract}
+  - qualified_callable: scipy.interpolate.RegularGridInterpolator
+    exact_semantic_operator: Interpolation
+    approximation_family_ids: [nearest_neighbor_interpolation, multilinear_interpolation]
+    public_reference_semantics: {axes: positional_regular_grid, bounds_error_or_fill_value: true}
+    provenance: {registry: registry/libraries/scipy.yaml, authority: public_reference_contract}
+  - qualified_callable: scipy.interpolate.interpn
+    exact_semantic_operator: Interpolation
+    approximation_family_ids: [nearest_neighbor_interpolation, multilinear_interpolation]
+    public_reference_semantics: {axes: positional_regular_grid, bounds_error_or_fill_value: true}
+    provenance: {registry: registry/libraries/scipy.yaml, authority: public_reference_contract}

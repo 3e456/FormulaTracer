@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "scope": "DEVELOPMENT_FIXTURE_ONLY",
+  "component": "end_to_end_verification_assembly",
+  "status": "PASS",
+  "comparisons": {
+    "project_status": true,
+    "claims": true,
+    "coverage": true,
+    "output_status": true,
+    "proof_chains": true,
+    "error_bounds": true,
+    "enclosures": true
+  },
+  "holdout_feedback_used": false,
+  "ignored_representation_differences": [
+    "claim_id hash encoding",
+    "chain_id hash encoding",
+    "evidence_id hash encoding"
+  ]
+}

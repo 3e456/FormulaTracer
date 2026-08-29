@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "baseline_reported_total": 51,
+  "new_release_gate_defects_discovered": 3,
+  "final_total": 54,
+  "status_counts": {
+    "VERIFIED_FIXED": 50,
+    "DEFERRED": 3,
+    "WONT_FIX_WITH_REASON": 1,
+    "OPEN": 0
+  },
+  "status_sum": 54,
+  "unaccounted": 0,
+  "open_critical": 0,
+  "open_false_acceptance": 0,
+  "open_privacy_critical": 0,
+  "nonblocking_findings": [
+    {"defect_id": "DEFECT-NATIVE-0001", "severity": "MEDIUM", "status": "DEFERRED", "reason": "toolchain interop limitation; no semantic or false-acceptance path"},
+    {"defect_id": "DEFECT-NATIVE-0005", "severity": "MEDIUM", "status": "DEFERRED", "reason": "runtime instrumentation limitation; production semantic fallback remains zero"},
+    {"defect_id": "DEFECT-PROVENANCE-NATIVE-0003", "severity": "MEDIUM", "status": "DEFERRED", "reason": "performance regression only; correctness and localization evidence retained"},
+    {"defect_id": "DEFECT-ERROR-NATIVE-0003", "severity": "MEDIUM", "status": "WONT_FIX_WITH_REASON", "reason": "retired validation-only Python oracle false rejection; Rust production owner is independently verified"}
+  ],
+  "release_gate": "PASS"
+}

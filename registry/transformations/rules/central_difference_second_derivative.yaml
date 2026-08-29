@@ -1,0 +1,15 @@
+schema_version: "0.1"
+rule:
+  id: central_difference_second_derivative
+  kind: approximation
+  approximation_family_id: central_difference_second_derivative
+  source_pattern: {op: Derivative, order: 2, variable: x}
+  target_template:
+    op: Divide
+    numerator: {op: Add, args: [{op: FunctionCall, name: f, args: [{op: Add, args: [{op: FreeVariable, name: x}, {op: FreeVariable, name: h}]}]}, {op: Multiply, args: [{op: Constant, value: -2}, {op: FunctionCall, name: f, args: [{op: FreeVariable, name: x}]}]}, {op: FunctionCall, name: f, args: [{op: Subtract, args: [{op: FreeVariable, name: x}, {op: FreeVariable, name: h}]}]}]}
+    denominator: {op: Power, args: [{op: FreeVariable, name: h}, {op: Constant, value: 2}]}
+  parameters: [h, spacing, axis, dimension]
+  conditions: ["h > 0", "x is interior", "f is sufficiently smooth"]
+  proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_second_central_is_registered
+  cost: {symbolic_arithmetic_operations: 5, asymptotic_memory_rank: 1, transformation_path_length: 1}

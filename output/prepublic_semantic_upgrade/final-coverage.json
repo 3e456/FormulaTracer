@@ -1,0 +1,990 @@
+{
+  "schema_version": "1.0",
+  "mode": "final",
+  "measurement_kind": "NATIVE_KERNEL_EXECUTION",
+  "assessed_revision": "e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
+  "corpus": "PUBLIC_SYNTHETIC_PREPUBLIC_V1",
+  "case_count": 23,
+  "definition": {
+    "FULL_RECONSTRUCTION": "all material modeled semantics resolved",
+    "PARTIAL_RECONSTRUCTION": "mathematical target known but material execution/metadata unresolved",
+    "STRUCTURAL_ONLY": "structure known without mathematical meaning",
+    "UNRESOLVED": "required semantic evidence unavailable"
+  },
+  "counts": {
+    "FULL_RECONSTRUCTION": 18,
+    "PARTIAL_RECONSTRUCTION": 2,
+    "UNRESOLVED": 3
+  },
+  "unresolved_root_causes": {
+    "CALLBACK": 2,
+    "CONTAINER": 1,
+    "DYNAMIC_DISPATCH": 1,
+    "INTERPROCEDURAL": 1
+  },
+  "false_acceptance": 0,
+  "false_exact_promotion": 0,
+  "false_certified_promotion": 0,
+  "records": [
+    {
+      "case_id": "interprocedural-safe",
+      "provider": "generic",
+      "root_cause": "INTERPROCEDURAL",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [
+            {
+              "kind": "FORMALLY_DERIVED",
+              "source": "native-interprocedural-substitution"
+            }
+          ],
+          "semantic_object": {
+            "arguments": {
+              "x": {
+                "name": "input",
+                "op": "FreeVariable"
+              }
+            },
+            "expression": {
+              "args": [
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                },
+                2
+              ],
+              "op": "Multiply"
+            },
+            "op": "ComposedCall"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "interprocedural-effect",
+      "provider": "generic",
+      "root_cause": "INTERPROCEDURAL",
+      "status": "UNRESOLVED",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [],
+          "semantic_object": null,
+          "status": "UNRESOLVED",
+          "unresolved": [
+            {
+              "code": "CALL_EFFECTS_UNRESOLVED",
+              "missing": [
+                "callee purity/effect summary"
+              ]
+            }
+          ]
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "loop-sum",
+      "provider": "generic",
+      "root_cause": "LOOP_FOLD",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [
+            {
+              "kind": "FORMALLY_DERIVED",
+              "source": "native-loop-fold"
+            }
+          ],
+          "semantic_object": {
+            "body": {
+              "indices": [
+                "i"
+              ],
+              "name": "x",
+              "op": "IndexedValue"
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "start": 0,
+              "stop": "n"
+            },
+            "lowered_from": "LoopFold",
+            "op": "FiniteSum"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "loop-conditional",
+      "provider": "generic",
+      "root_cause": "PATH_CONDITION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [
+            {
+              "kind": "FORMALLY_DERIVED",
+              "source": "native-loop-fold"
+            }
+          ],
+          "semantic_object": {
+            "body": {
+              "args": [
+                {
+                  "op": "Indicator",
+                  "predicate": {
+                    "args": [
+                      "x_i",
+                      0
+                    ],
+                    "op": "GreaterThan"
+                  }
+                },
+                "x_i"
+              ],
+              "op": "Multiply"
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "start": 0,
+              "stop": "n"
+            },
+            "lowered_from": "LoopFold",
+            "op": "FiniteSum"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "container-static",
+      "provider": "generic",
+      "root_cause": "CONTAINER",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [
+            {
+              "kind": "FORMALLY_DERIVED",
+              "source": "native-transparent-container-access"
+            }
+          ],
+          "semantic_object": {
+            "container": "params",
+            "container_kind": "DICT",
+            "key": "yield",
+            "op": "TransparentContainerAccess",
+            "value": {
+              "name": "yield",
+              "op": "FreeVariable"
+            }
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "container-dynamic",
+      "provider": "generic",
+      "root_cause": "CONTAINER",
+      "status": "UNRESOLVED",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [],
+          "semantic_object": null,
+          "status": "UNRESOLVED",
+          "unresolved": [
+            {
+              "code": "CONTAINER_ACCESS_UNRESOLVED",
+              "missing": [
+                "static key",
+                "pure lookup"
+              ]
+            }
+          ]
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "tensor-index",
+      "provider": "generic",
+      "root_cause": "SHAPE_INDEX",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [
+            {
+              "kind": "FORMALLY_DERIVED",
+              "source": "native-tensor-index-algebra"
+            }
+          ],
+          "semantic_object": {
+            "broadcast": [],
+            "indices": [
+              "slice",
+              0
+            ],
+            "op": "TensorIndex",
+            "shape": [
+              3,
+              4
+            ],
+            "value": "A"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "opaque-shape-identity",
+      "provider": "generic",
+      "root_cause": "TYPED_OPAQUE",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "opaque_kind": "SHAPE_TRANSFORM",
+          "semantic_object": {
+            "op": "ValueIdentity",
+            "shape_transform": "reshape(x,(2,2))"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": [],
+          "value_semantics_preserved": true
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "callback-quad",
+      "provider": "generic",
+      "root_cause": "CALLBACK",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [
+            {
+              "kind": "FORMALLY_DERIVED",
+              "source": "native-higher-order-reconstruction"
+            }
+          ],
+          "semantic_object": {
+            "algorithm": "quadrature",
+            "callback": {
+              "base": "x",
+              "exponent": 2,
+              "op": "Power"
+            },
+            "op": "HigherOrderCall",
+            "parameters": {
+              "a": 0,
+              "b": 1
+            }
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "callback-missing",
+      "provider": "generic",
+      "root_cause": "CALLBACK",
+      "status": "UNRESOLVED",
+      "result": {
+        "kernel": "C",
+        "operation": "COVERAGE_BLOCKER",
+        "result": {
+          "evidence": [],
+          "semantic_object": null,
+          "status": "UNRESOLVED",
+          "unresolved": [
+            {
+              "code": "CALLBACK_RECONSTRUCTION_UNRESOLVED",
+              "missing": [
+                "callback Mathematical IR"
+              ]
+            }
+          ]
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "xarray-inner-alignment",
+      "provider": "xarray",
+      "root_cause": "LABELED_ALIGNMENT",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "alignment_semantics": {
+            "kind": "INNER",
+            "mapping": [
+              {
+                "dimension": "time",
+                "left_present": true,
+                "output_label": 1,
+                "right_present": true
+              },
+              {
+                "dimension": "time",
+                "left_present": true,
+                "output_label": 2,
+                "right_present": true
+              }
+            ]
+          },
+          "coordinate_semantics": {
+            "time": [
+              1,
+              2
+            ]
+          },
+          "dimension_semantics": [
+            {
+              "length": 3,
+              "name": "time"
+            }
+          ],
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "xarray"
+            }
+          ],
+          "missingness_semantics": "PROPAGATE",
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "args": [
+              "x",
+              "y"
+            ],
+            "op": "Add"
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "pandas-outer-fill",
+      "provider": "pandas",
+      "root_cause": "MISSINGNESS",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "alignment_semantics": {
+            "kind": "OUTER",
+            "mapping": [
+              {
+                "dimension": "time",
+                "left_present": true,
+                "output_label": 0,
+                "right_present": false
+              },
+              {
+                "dimension": "time",
+                "left_present": true,
+                "output_label": 1,
+                "right_present": true
+              },
+              {
+                "dimension": "time",
+                "left_present": false,
+                "output_label": 2,
+                "right_present": true
+              }
+            ]
+          },
+          "coordinate_semantics": {
+            "time": [
+              0,
+              1,
+              2
+            ]
+          },
+          "dimension_semantics": [
+            {
+              "length": 2,
+              "name": "time"
+            }
+          ],
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "pandas"
+            }
+          ],
+          "missingness_semantics": "CONDITIONAL_FALLBACK",
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "cases": [
+              {
+                "then": {
+                  "args": [
+                    "x",
+                    "y"
+                  ],
+                  "op": "Add"
+                },
+                "when": "both_available"
+              },
+              {
+                "then": {
+                  "name": "x",
+                  "op": "FreeVariable"
+                },
+                "when": "left_only"
+              },
+              {
+                "then": {
+                  "name": "y",
+                  "op": "FreeVariable"
+                },
+                "when": "right_only"
+              }
+            ],
+            "op": "Piecewise",
+            "otherwise": {
+              "op": "Missing"
+            }
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "xarray-label-select",
+      "provider": "xarray",
+      "root_cause": "LABELED_SELECTION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "xarray"
+            }
+          ],
+          "selection_semantics": {
+            "kind": "LABEL",
+            "selector": [
+              1,
+              2
+            ]
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "input": {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            "kind": "LABEL",
+            "op": "Selection",
+            "selector": [
+              1,
+              2
+            ]
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "xarray-skipna-reduction",
+      "provider": "xarray",
+      "root_cause": "LABELED_REDUCTION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "xarray"
+            }
+          ],
+          "reduction_semantics": {
+            "dimensions": [
+              "time"
+            ],
+            "dtype": "float64",
+            "keepdims": false,
+            "missing_policy": "IGNORE"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "dimensions": [
+              "time"
+            ],
+            "input": {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            "op": "FiniteSum",
+            "skip_missing": true
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "xarray-linear-interpolation",
+      "provider": "xarray",
+      "root_cause": "INTERPOLATION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "xarray"
+            }
+          ],
+          "exact_promotion": false,
+          "proof_obligations": [
+            "INTERPOLATION_ERROR_BOUND_NOT_ESTABLISHED"
+          ],
+          "relation": "APPROXIMATION_OF",
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "coordinates": {
+              "time": [
+                0.5
+              ]
+            },
+            "input": {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            "method": "LINEAR",
+            "op": "Interpolation"
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "dask-elementwise-known",
+      "provider": "dask",
+      "root_cause": "LIBRARY_COMPOSITION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "error_certificate": {
+            "authority": "FORMULA_TRACER_DERIVED_GUARANTEE",
+            "certified": false,
+            "proof_obligations": [
+              "IEEE754_BACKEND_CONTRACT",
+              "REDUCTION_TREE_VALIDATION"
+            ],
+            "status": "UNRESOLVED"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "claims": [
+                "chunk/combine/aggregate structure",
+                "axis",
+                "dtype",
+                "keepdims",
+                "split_every"
+              ],
+              "reference": "https://docs.dask.org/en/stable/generated/dask.array.reduction.html"
+            }
+          ],
+          "execution_semantics": {
+            "backend": "NUMPY",
+            "dtype": "float64",
+            "op": "DataflowElementwise"
+          },
+          "mathematical_execution_exact_equivalence": false,
+          "mathematical_target": {
+            "op": "Elementwise",
+            "operator": "ADD"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "dask-sum-known-tree",
+      "provider": "dask",
+      "root_cause": "REDUCTION_TREE",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "error_certificate": {
+            "authority": "FORMULA_TRACER_DERIVED_GUARANTEE",
+            "certified": false,
+            "proof_obligations": [
+              "IEEE754_BACKEND_CONTRACT",
+              "REDUCTION_TREE_VALIDATION"
+            ],
+            "status": "CONDITIONAL_DERIVATION_AVAILABLE"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "claims": [
+                "chunk/combine/aggregate structure",
+                "axis",
+                "dtype",
+                "keepdims",
+                "split_every"
+              ],
+              "reference": "https://docs.dask.org/en/stable/generated/dask.array.reduction.html"
+            }
+          ],
+          "execution_semantics": {
+            "backend": "NUMPY",
+            "chunk_counts": [
+              4
+            ],
+            "dtype": "float64",
+            "op": "ChunkedReduction",
+            "split_every": 2,
+            "stages": [
+              "CHUNK",
+              "COMBINE",
+              "AGGREGATE"
+            ],
+            "tree_known": true
+          },
+          "mathematical_execution_exact_equivalence": false,
+          "mathematical_target": {
+            "axis": 0,
+            "op": "FiniteSum"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "dask-sum-unknown-backend",
+      "provider": "dask",
+      "root_cause": "DYNAMIC_DISPATCH",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "error_certificate": {
+            "authority": "FORMULA_TRACER_DERIVED_GUARANTEE",
+            "certified": false,
+            "proof_obligations": [
+              "IEEE754_BACKEND_CONTRACT",
+              "REDUCTION_TREE_VALIDATION"
+            ],
+            "status": "UNRESOLVED"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "claims": [
+                "chunk/combine/aggregate structure",
+                "axis",
+                "dtype",
+                "keepdims",
+                "split_every"
+              ],
+              "reference": "https://docs.dask.org/en/stable/generated/dask.array.reduction.html"
+            }
+          ],
+          "execution_semantics": {
+            "backend": null,
+            "chunk_counts": [
+              4
+            ],
+            "dtype": "float64",
+            "op": "ChunkedReduction",
+            "split_every": 2,
+            "stages": [
+              "CHUNK",
+              "COMBINE",
+              "AGGREGATE"
+            ],
+            "tree_known": true
+          },
+          "mathematical_execution_exact_equivalence": false,
+          "mathematical_target": {
+            "axis": 0,
+            "op": "FiniteSum"
+          },
+          "status": "PARTIAL_RECONSTRUCTION",
+          "unresolved": [
+            {
+              "code": "DASK_BACKEND_UNRESOLVED"
+            }
+          ]
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "dask-tree-mutation",
+      "provider": "dask",
+      "root_cause": "REDUCTION_TREE",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "bitwise_equivalent": "FALSE_OR_NOT_ESTABLISHED",
+          "exact_promotion": false,
+          "same_execution_order": false,
+          "same_mathematical_target": true
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "scipy-linear-solve",
+      "provider": "scipy",
+      "root_cause": "NUMERICAL_RELATION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "algorithm_layer": {
+            "callback": null,
+            "method": "LAPACK_SOLVER",
+            "tolerances": {}
+          },
+          "certified_promotion": false,
+          "error_evidence": {
+            "certified": false,
+            "kind": "BOUND_NOT_AVAILABLE"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.solve.html"
+            }
+          ],
+          "exact_promotion": false,
+          "problem_layer": {
+            "kind": "LINEAR_SOLVE",
+            "target": {
+              "a": "A",
+              "b": "b",
+              "op": "LinearSystem"
+            }
+          },
+          "relation_chain": [
+            {
+              "from": "PROBLEM",
+              "kind": "ALGORITHMICALLY_REALIZED_BY",
+              "to": "ALGORITHM"
+            },
+            {
+              "from": "COMPUTED_RESULT",
+              "kind": "APPROXIMATION_OF",
+              "to": "PROBLEM"
+            }
+          ],
+          "result_layer": "x_hat",
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "scipy-quad",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "algorithm_layer": {
+            "callback": {
+              "base": "x",
+              "exponent": 2,
+              "op": "Power"
+            },
+            "method": "QUADPACK",
+            "tolerances": {
+              "epsabs": 1.49e-08,
+              "epsrel": 1.49e-08
+            }
+          },
+          "certified_promotion": false,
+          "error_evidence": {
+            "certified": false,
+            "kind": "LIBRARY_RETURNED_ESTIMATE",
+            "value": "abserr"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.quad.html"
+            }
+          ],
+          "exact_promotion": false,
+          "problem_layer": {
+            "kind": "DEFINITE_INTEGRAL",
+            "target": {
+              "bounds": [
+                0,
+                1
+              ],
+              "op": "Integral"
+            }
+          },
+          "relation_chain": [
+            {
+              "from": "PROBLEM",
+              "kind": "ALGORITHMICALLY_REALIZED_BY",
+              "to": "ALGORITHM"
+            },
+            {
+              "from": "COMPUTED_RESULT",
+              "kind": "APPROXIMATION_OF",
+              "to": "PROBLEM"
+            }
+          ],
+          "result_layer": "y_hat",
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "scipy-quad-missing-callback",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "algorithm": "QUADPACK",
+          "certified_promotion": false,
+          "exact_promotion": false,
+          "problem": {
+            "op": "Integral"
+          },
+          "returned_approximation": "y_hat",
+          "status": "PARTIAL_RECONSTRUCTION",
+          "unresolved": [
+            {
+              "code": "CALLBACK_RECONSTRUCTION_UNRESOLVED"
+            }
+          ]
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "scipy-minimize",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "algorithm_layer": {
+            "callback": {
+              "base": "x",
+              "exponent": 2,
+              "op": "Power"
+            },
+            "method": "BFGS",
+            "tolerances": {
+              "tol": 1e-08
+            }
+          },
+          "certified_promotion": false,
+          "error_evidence": {
+            "certified": false,
+            "kind": "BOUND_NOT_AVAILABLE"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html"
+            }
+          ],
+          "exact_promotion": false,
+          "problem_layer": {
+            "kind": "OPTIMIZATION",
+            "target": {
+              "op": "ArgMin",
+              "variable": "x"
+            }
+          },
+          "relation_chain": [
+            {
+              "from": "PROBLEM",
+              "kind": "ALGORITHMICALLY_REALIZED_BY",
+              "to": "ALGORITHM"
+            },
+            {
+              "from": "COMPUTED_RESULT",
+              "kind": "APPROXIMATION_OF",
+              "to": "PROBLEM"
+            }
+          ],
+          "result_layer": "x_hat",
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    }
+  ]
+}

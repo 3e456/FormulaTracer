@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "baseline_sha": "8df98ee529f86fa6b8142c3b6a96abe240150419",
+  "mode": "MIGRATION_DUAL_ENGINE_ONLY",
+  "cases": 1056,
+  "semantic_matches": 1056,
+  "tex_matches": 1056,
+  "false_acceptance": 0,
+  "mismatches": [],
+  "tex_mismatches": [],
+  "performance_observation": {
+    "native_c_abi_1000_comparisons_seconds": 0.6251775000127964,
+    "release_gate": false
+  }
+}

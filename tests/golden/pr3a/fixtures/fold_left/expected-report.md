@@ -1,0 +1,5 @@
+# Extracted expression
+
+```text
+sum_values = 2.0 + Σ(i=0..n-1) x[i]
+```

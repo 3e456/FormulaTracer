@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/reference-registry.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["reference_id", "title", "organization", "url", "reference_kind", "version_or_revision", "accessed", "retained_source"],
+    "properties": {
+      "reference_id": {"type": "string", "minLength": 1},
+      "url": {"type": "string", "pattern": "^https://"},
+      "accessed": {"type": "string", "format": "date"},
+      "retained_source": {"const": false}
+    },
+    "additionalProperties": true
+  }
+}

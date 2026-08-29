@@ -1,0 +1,42 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "args": [
+      {
+        "name": "x",
+        "op": "FreeVariable"
+      },
+      {
+        "op": "Constant",
+        "value": 255
+      }
+    ],
+    "op": "BitAnd",
+    "width": 8
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-final_holdout_v2-bitvector.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-final_holdout_v2-bitvector",
+  "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+  "source_artifact_hash": "ad7dcaa777fa3a7569996f08ffa8ee1e9d414f904bc615038de51ffdb67da2c6",
+  "case_specific_rule_used": false
+}

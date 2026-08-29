@@ -1,0 +1,3080 @@
+{
+  "alias_graph": {
+    "ambiguous": {},
+    "cycles": [],
+    "edge_count": 158,
+    "edges": [
+      {
+        "alias": "dask.array.core.Array",
+        "canonical": "dask.array.Array"
+      },
+      {
+        "alias": "dask.bag.core.Bag",
+        "canonical": "dask.bag.Bag"
+      },
+      {
+        "alias": "dask.bag.core.Item",
+        "canonical": "dask.bag.Item"
+      },
+      {
+        "alias": "dask.dataframe.groupby.Aggregation",
+        "canonical": "dask.dataframe.Aggregation"
+      },
+      {
+        "alias": "geopandas.geodataframe.GeoDataFrame",
+        "canonical": "geopandas.GeoDataFrame"
+      },
+      {
+        "alias": "geopandas.geoseries.GeoSeries",
+        "canonical": "geopandas.GeoSeries"
+      },
+      {
+        "alias": "igraph.Cover.membership",
+        "canonical": "igraph.Clustering.membership"
+      },
+      {
+        "alias": "igraph.Cover.n",
+        "canonical": "igraph.Clustering.n"
+      },
+      {
+        "alias": "igraph.Cover.size",
+        "canonical": "igraph.Clustering.size"
+      },
+      {
+        "alias": "igraph.Cover.size_histogram",
+        "canonical": "igraph.Clustering.size_histogram"
+      },
+      {
+        "alias": "igraph.Cover.sizes",
+        "canonical": "igraph.Clustering.sizes"
+      },
+      {
+        "alias": "igraph.Cover.summary",
+        "canonical": "igraph.Clustering.summary"
+      },
+      {
+        "alias": "igraph.Dendrogram.summary",
+        "canonical": "igraph.Clustering.summary"
+      },
+      {
+        "alias": "igraph.EdgeSeq.attributes",
+        "canonical": "igraph.Edge.attributes"
+      },
+      {
+        "alias": "igraph.Graph.es",
+        "canonical": "igraph.Cut.es"
+      },
+      {
+        "alias": "igraph.Graph.summary",
+        "canonical": "igraph.Clustering.summary"
+      },
+      {
+        "alias": "igraph.GraphBase.Adjacency",
+        "canonical": "igraph.Graph.Adjacency"
+      },
+      {
+        "alias": "igraph.GraphBase.Read_DIMACS",
+        "canonical": "igraph.Graph.Read_DIMACS"
+      },
+      {
+        "alias": "igraph.GraphBase.add_edges",
+        "canonical": "igraph.Graph.add_edges"
+      },
+      {
+        "alias": "igraph.GraphBase.add_vertices",
+        "canonical": "igraph.Graph.add_vertices"
+      },
+      {
+        "alias": "igraph.GraphBase.all_st_cuts",
+        "canonical": "igraph.Graph.all_st_cuts"
+      },
+      {
+        "alias": "igraph.GraphBase.all_st_mincuts",
+        "canonical": "igraph.Graph.all_st_mincuts"
+      },
+      {
+        "alias": "igraph.GraphBase.attributes",
+        "canonical": "igraph.Edge.attributes"
+      },
+      {
+        "alias": "igraph.GraphBase.biconnected_components",
+        "canonical": "igraph.Graph.biconnected_components"
+      },
+      {
+        "alias": "igraph.GraphBase.bipartite_projection",
+        "canonical": "igraph.Graph.bipartite_projection"
+      },
+      {
+        "alias": "igraph.GraphBase.bipartite_projection_size",
+        "canonical": "igraph.Graph.bipartite_projection_size"
+      },
+      {
+        "alias": "igraph.GraphBase.cohesive_blocks",
+        "canonical": "igraph.Graph.cohesive_blocks"
+      },
+      {
+        "alias": "igraph.GraphBase.community_edge_betweenness",
+        "canonical": "igraph.Graph.community_edge_betweenness"
+      },
+      {
+        "alias": "igraph.GraphBase.community_fastgreedy",
+        "canonical": "igraph.Graph.community_fastgreedy"
+      },
+      {
+        "alias": "igraph.GraphBase.community_fluid_communities",
+        "canonical": "igraph.Graph.community_fluid_communities"
+      },
+      {
+        "alias": "igraph.GraphBase.community_infomap",
+        "canonical": "igraph.Graph.community_infomap"
+      },
+      {
+        "alias": "igraph.GraphBase.community_label_propagation",
+        "canonical": "igraph.Graph.community_label_propagation"
+      },
+      {
+        "alias": "igraph.GraphBase.community_leading_eigenvector",
+        "canonical": "igraph.Graph.community_leading_eigenvector"
+      },
+      {
+        "alias": "igraph.GraphBase.community_leiden",
+        "canonical": "igraph.Graph.community_leiden"
+      },
+      {
+        "alias": "igraph.GraphBase.community_multilevel",
+        "canonical": "igraph.Graph.community_multilevel"
+      },
+      {
+        "alias": "igraph.GraphBase.community_optimal_modularity",
+        "canonical": "igraph.Graph.community_optimal_modularity"
+      },
+      {
+        "alias": "igraph.GraphBase.community_spinglass",
+        "canonical": "igraph.Graph.community_spinglass"
+      },
+      {
+        "alias": "igraph.GraphBase.community_voronoi",
+        "canonical": "igraph.Graph.community_voronoi"
+      },
+      {
+        "alias": "igraph.GraphBase.community_walktrap",
+        "canonical": "igraph.Graph.community_walktrap"
+      },
+      {
+        "alias": "igraph.GraphBase.connected_components",
+        "canonical": "igraph.Graph.connected_components"
+      },
+      {
+        "alias": "igraph.GraphBase.count_multiple",
+        "canonical": "igraph.Edge.count_multiple"
+      },
+      {
+        "alias": "igraph.GraphBase.delete_edges",
+        "canonical": "igraph.Graph.delete_edges"
+      },
+      {
+        "alias": "igraph.GraphBase.dyad_census",
+        "canonical": "igraph.Graph.dyad_census"
+      },
+      {
+        "alias": "igraph.GraphBase.get_adjacency",
+        "canonical": "igraph.Graph.get_adjacency"
+      },
+      {
+        "alias": "igraph.GraphBase.get_biadjacency",
+        "canonical": "igraph.Graph.get_biadjacency"
+      },
+      {
+        "alias": "igraph.GraphBase.gomory_hu_tree",
+        "canonical": "igraph.Graph.gomory_hu_tree"
+      },
+      {
+        "alias": "igraph.GraphBase.is_loop",
+        "canonical": "igraph.Edge.is_loop"
+      },
+      {
+        "alias": "igraph.GraphBase.is_multiple",
+        "canonical": "igraph.Edge.is_multiple"
+      },
+      {
+        "alias": "igraph.GraphBase.is_mutual",
+        "canonical": "igraph.Edge.is_mutual"
+      },
+      {
+        "alias": "igraph.GraphBase.maxflow",
+        "canonical": "igraph.Graph.maxflow"
+      },
+      {
+        "alias": "igraph.GraphBase.mincut",
+        "canonical": "igraph.Graph.mincut"
+      },
+      {
+        "alias": "igraph.GraphBase.modularity",
+        "canonical": "igraph.Graph.modularity"
+      },
+      {
+        "alias": "igraph.GraphBase.path_length_hist",
+        "canonical": "igraph.Graph.path_length_hist"
+      },
+      {
+        "alias": "igraph.GraphBase.st_mincut",
+        "canonical": "igraph.Graph.st_mincut"
+      },
+      {
+        "alias": "igraph.GraphBase.transitivity_avglocal_undirected",
+        "canonical": "igraph.Graph.transitivity_avglocal_undirected"
+      },
+      {
+        "alias": "igraph.GraphBase.triad_census",
+        "canonical": "igraph.Graph.triad_census"
+      },
+      {
+        "alias": "igraph.GraphBase.write_dimacs",
+        "canonical": "igraph.Graph.write_dimacs"
+      },
+      {
+        "alias": "igraph.Matching.graph",
+        "canonical": "igraph.Edge.graph"
+      },
+      {
+        "alias": "igraph.Vertex.attribute_names",
+        "canonical": "igraph.Edge.attribute_names"
+      },
+      {
+        "alias": "igraph.Vertex.attributes",
+        "canonical": "igraph.Edge.attributes"
+      },
+      {
+        "alias": "igraph.Vertex.betweenness",
+        "canonical": "igraph.GraphBase.betweenness"
+      },
+      {
+        "alias": "igraph.Vertex.closeness",
+        "canonical": "igraph.GraphBase.closeness"
+      },
+      {
+        "alias": "igraph.Vertex.constraint",
+        "canonical": "igraph.GraphBase.constraint"
+      },
+      {
+        "alias": "igraph.Vertex.degree",
+        "canonical": "igraph.GraphBase.degree"
+      },
+      {
+        "alias": "igraph.Vertex.delete",
+        "canonical": "igraph.Edge.delete"
+      },
+      {
+        "alias": "igraph.Vertex.distances",
+        "canonical": "igraph.GraphBase.distances"
+      },
+      {
+        "alias": "igraph.Vertex.diversity",
+        "canonical": "igraph.GraphBase.diversity"
+      },
+      {
+        "alias": "igraph.Vertex.eccentricity",
+        "canonical": "igraph.GraphBase.eccentricity"
+      },
+      {
+        "alias": "igraph.Vertex.get_shortest_paths",
+        "canonical": "igraph.GraphBase.get_shortest_paths"
+      },
+      {
+        "alias": "igraph.Vertex.graph",
+        "canonical": "igraph.Edge.graph"
+      },
+      {
+        "alias": "igraph.Vertex.incident",
+        "canonical": "igraph.GraphBase.incident"
+      },
+      {
+        "alias": "igraph.Vertex.indegree",
+        "canonical": "igraph.Graph.indegree"
+      },
+      {
+        "alias": "igraph.Vertex.index",
+        "canonical": "igraph.Edge.index"
+      },
+      {
+        "alias": "igraph.Vertex.is_minimal_separator",
+        "canonical": "igraph.GraphBase.is_minimal_separator"
+      },
+      {
+        "alias": "igraph.Vertex.is_separator",
+        "canonical": "igraph.GraphBase.is_separator"
+      },
+      {
+        "alias": "igraph.Vertex.neighbors",
+        "canonical": "igraph.GraphBase.neighbors"
+      },
+      {
+        "alias": "igraph.Vertex.outdegree",
+        "canonical": "igraph.Graph.outdegree"
+      },
+      {
+        "alias": "igraph.Vertex.pagerank",
+        "canonical": "igraph.Graph.pagerank"
+      },
+      {
+        "alias": "igraph.Vertex.personalized_pagerank",
+        "canonical": "igraph.GraphBase.personalized_pagerank"
+      },
+      {
+        "alias": "igraph.Vertex.predecessors",
+        "canonical": "igraph.Graph.predecessors"
+      },
+      {
+        "alias": "igraph.Vertex.strength",
+        "canonical": "igraph.GraphBase.strength"
+      },
+      {
+        "alias": "igraph.Vertex.successors",
+        "canonical": "igraph.Graph.successors"
+      },
+      {
+        "alias": "igraph.Vertex.update_attributes",
+        "canonical": "igraph.Edge.update_attributes"
+      },
+      {
+        "alias": "igraph.VertexClustering.as_cover",
+        "canonical": "igraph.Clustering.as_cover"
+      },
+      {
+        "alias": "igraph.VertexClustering.graph",
+        "canonical": "igraph.Edge.graph"
+      },
+      {
+        "alias": "igraph.VertexClustering.modularity",
+        "canonical": "igraph.Graph.modularity"
+      },
+      {
+        "alias": "igraph.VertexCover.crossing",
+        "canonical": "igraph.VertexClustering.crossing"
+      },
+      {
+        "alias": "igraph.VertexCover.graph",
+        "canonical": "igraph.Edge.graph"
+      },
+      {
+        "alias": "igraph.VertexCover.subgraph",
+        "canonical": "igraph.VertexClustering.subgraph"
+      },
+      {
+        "alias": "igraph.VertexCover.subgraphs",
+        "canonical": "igraph.VertexClustering.subgraphs"
+      },
+      {
+        "alias": "igraph.VertexSeq.attributes",
+        "canonical": "igraph.Edge.attributes"
+      },
+      {
+        "alias": "igraph.VertexSeq.find",
+        "canonical": "igraph.EdgeSeq.find"
+      },
+      {
+        "alias": "igraph.VertexSeq.select",
+        "canonical": "igraph.EdgeSeq.select"
+      },
+      {
+        "alias": "igraph.summary.summary",
+        "canonical": "igraph.Clustering.summary"
+      },
+      {
+        "alias": "igraph.write",
+        "canonical": "igraph.Graph.write"
+      },
+      {
+        "alias": "numpy.distutils.extension.Extension",
+        "canonical": "numpy.distutils.core.Extension"
+      },
+      {
+        "alias": "numpy.random.bit_generator.BitGenerator",
+        "canonical": "numpy.random.BitGenerator"
+      },
+      {
+        "alias": "numpy.random.bit_generator.SeedSequence",
+        "canonical": "numpy.random.SeedSequence"
+      },
+      {
+        "alias": "numpy.random.mtrand.RandomState",
+        "canonical": "numpy.random.RandomState"
+      },
+      {
+        "alias": "numpy.recarray",
+        "canonical": "numpy.rec.recarray"
+      },
+      {
+        "alias": "pandas.tseries.offsets.DateOffset",
+        "canonical": "pandas.DateOffset"
+      },
+      {
+        "alias": "pyproj.crs.crs.BoundCRS",
+        "canonical": "pyproj.crs.BoundCRS"
+      },
+      {
+        "alias": "pyproj.crs.crs.CRS",
+        "canonical": "pyproj.crs.CRS"
+      },
+      {
+        "alias": "pyproj.crs.crs.CompoundCRS",
+        "canonical": "pyproj.crs.CompoundCRS"
+      },
+      {
+        "alias": "pyproj.crs.crs.CustomConstructorCRS",
+        "canonical": "pyproj.crs.CustomConstructorCRS"
+      },
+      {
+        "alias": "pyproj.crs.crs.DerivedGeographicCRS",
+        "canonical": "pyproj.crs.DerivedGeographicCRS"
+      },
+      {
+        "alias": "pyproj.crs.crs.GeocentricCRS",
+        "canonical": "pyproj.crs.GeocentricCRS"
+      },
+      {
+        "alias": "pyproj.crs.crs.GeographicCRS",
+        "canonical": "pyproj.crs.GeographicCRS"
+      },
+      {
+        "alias": "pyproj.crs.crs.ProjectedCRS",
+        "canonical": "pyproj.crs.ProjectedCRS"
+      },
+      {
+        "alias": "pyproj.crs.crs.VerticalCRS",
+        "canonical": "pyproj.crs.VerticalCRS"
+      },
+      {
+        "alias": "pyproj.geod.Geod",
+        "canonical": "pyproj.Geod"
+      },
+      {
+        "alias": "pyproj.proj.Proj",
+        "canonical": "pyproj.Proj"
+      },
+      {
+        "alias": "shapely.constructive.BufferCapStyle",
+        "canonical": "shapely.BufferCapStyle"
+      },
+      {
+        "alias": "shapely.constructive.BufferJoinStyle",
+        "canonical": "shapely.BufferJoinStyle"
+      },
+      {
+        "alias": "shapely.geometry.collection.GeometryCollection",
+        "canonical": "shapely.GeometryCollection"
+      },
+      {
+        "alias": "shapely.geometry.linestring.LineString",
+        "canonical": "shapely.LineString"
+      },
+      {
+        "alias": "shapely.geometry.multilinestring.MultiLineString",
+        "canonical": "shapely.MultiLineString"
+      },
+      {
+        "alias": "shapely.geometry.multipoint.MultiPoint",
+        "canonical": "shapely.MultiPoint"
+      },
+      {
+        "alias": "shapely.geometry.multipolygon.MultiPolygon",
+        "canonical": "shapely.MultiPolygon"
+      },
+      {
+        "alias": "shapely.geometry.point.Point",
+        "canonical": "shapely.Point"
+      },
+      {
+        "alias": "shapely.geometry.polygon.LinearRing",
+        "canonical": "shapely.LinearRing"
+      },
+      {
+        "alias": "shapely.geometry.polygon.Polygon",
+        "canonical": "shapely.Polygon"
+      },
+      {
+        "alias": "shapely.strtree.STRtree",
+        "canonical": "shapely.STRtree"
+      },
+      {
+        "alias": "xarray.backends.common.BackendArray",
+        "canonical": "xarray.backends.BackendArray"
+      },
+      {
+        "alias": "xarray.backends.common.BackendEntrypoint",
+        "canonical": "xarray.backends.BackendEntrypoint"
+      },
+      {
+        "alias": "xarray.backends.file_manager.CachingFileManager",
+        "canonical": "xarray.backends.CachingFileManager"
+      },
+      {
+        "alias": "xarray.backends.file_manager.DummyFileManager",
+        "canonical": "xarray.backends.DummyFileManager"
+      },
+      {
+        "alias": "xarray.backends.file_manager.FileManager",
+        "canonical": "xarray.backends.FileManager"
+      },
+      {
+        "alias": "xarray.backends.h5netcdf_.H5NetCDFStore",
+        "canonical": "xarray.backends.H5NetCDFStore"
+      },
+      {
+        "alias": "xarray.backends.h5netcdf_.H5netcdfBackendEntrypoint",
+        "canonical": "xarray.backends.H5netcdfBackendEntrypoint"
+      },
+      {
+        "alias": "xarray.backends.netCDF4_.NetCDF4BackendEntrypoint",
+        "canonical": "xarray.backends.NetCDF4BackendEntrypoint"
+      },
+      {
+        "alias": "xarray.backends.netCDF4_.NetCDF4DataStore",
+        "canonical": "xarray.backends.NetCDF4DataStore"
+      },
+      {
+        "alias": "xarray.backends.pydap_.PydapBackendEntrypoint",
+        "canonical": "xarray.backends.PydapBackendEntrypoint"
+      },
+      {
+        "alias": "xarray.backends.pydap_.PydapDataStore",
+        "canonical": "xarray.backends.PydapDataStore"
+      },
+      {
+        "alias": "xarray.backends.scipy_.ScipyBackendEntrypoint",
+        "canonical": "xarray.backends.ScipyBackendEntrypoint"
+      },
+      {
+        "alias": "xarray.backends.scipy_.ScipyDataStore",
+        "canonical": "xarray.backends.ScipyDataStore"
+      },
+      {
+        "alias": "xarray.backends.store.StoreBackendEntrypoint",
+        "canonical": "xarray.backends.StoreBackendEntrypoint"
+      },
+      {
+        "alias": "xarray.backends.zarr.ZarrBackendEntrypoint",
+        "canonical": "xarray.backends.ZarrBackendEntrypoint"
+      },
+      {
+        "alias": "xarray.backends.zarr.ZarrStore",
+        "canonical": "xarray.backends.ZarrStore"
+      },
+      {
+        "alias": "xarray.coding.cftimeindex.CFTimeIndex",
+        "canonical": "xarray.CFTimeIndex"
+      },
+      {
+        "alias": "xarray.core.coordinates.Coordinates",
+        "canonical": "xarray.Coordinates"
+      },
+      {
+        "alias": "xarray.core.dataarray.DataArray",
+        "canonical": "xarray.DataArray"
+      },
+      {
+        "alias": "xarray.core.dataset.Dataset",
+        "canonical": "xarray.Dataset"
+      },
+      {
+        "alias": "xarray.core.datatree.DataTree",
+        "canonical": "xarray.DataTree"
+      },
+      {
+        "alias": "xarray.core.indexes.Index",
+        "canonical": "xarray.Index"
+      },
+      {
+        "alias": "xarray.core.indexing.IndexSelResult",
+        "canonical": "xarray.IndexSelResult"
+      },
+      {
+        "alias": "xarray.core.variable.IndexVariable",
+        "canonical": "xarray.IndexVariable"
+      },
+      {
+        "alias": "xarray.core.variable.Variable",
+        "canonical": "xarray.Variable"
+      },
+      {
+        "alias": "xarray.indexes.CoordinateTransform",
+        "canonical": "xarray.core.coordinate_transform.CoordinateTransform"
+      },
+      {
+        "alias": "xarray.indexes.CoordinateTransformIndex",
+        "canonical": "xarray.core.indexes.CoordinateTransformIndex"
+      },
+      {
+        "alias": "xarray.indexes.PandasIndex",
+        "canonical": "xarray.core.indexes.PandasIndex"
+      },
+      {
+        "alias": "xarray.indexes.PandasMultiIndex",
+        "canonical": "xarray.core.indexes.PandasMultiIndex"
+      },
+      {
+        "alias": "xarray.indexes.nd_point_index.NDPointIndex",
+        "canonical": "xarray.indexes.NDPointIndex"
+      },
+      {
+        "alias": "xarray.indexes.nd_point_index.TreeAdapter",
+        "canonical": "xarray.indexes.TreeAdapter"
+      },
+      {
+        "alias": "xarray.indexes.range_index.RangeIndex",
+        "canonical": "xarray.indexes.RangeIndex"
+      },
+      {
+        "alias": "xarray.plot.facetgrid.FacetGrid",
+        "canonical": "xarray.plot.FacetGrid"
+      },
+      {
+        "alias": "xarray.set_options",
+        "canonical": "xarray.core.options.set_options"
+      },
+      {
+        "alias": "xarray.structure.merge.Context",
+        "canonical": "xarray.Context"
+      }
+    ],
+    "node_count": 14864,
+    "status": "VALID"
+  },
+  "candidate_dispositions": {
+    "AMBIGUOUS": 0,
+    "FORMALIZED": 3877,
+    "NOT_APPLICABLE": 139,
+    "REFERENCE_INSUFFICIENT": 4,
+    "REJECTED": 0,
+    "REVIEW_PENDING": 0
+  },
+  "candidate_reference_contract_template_count": 1722,
+  "deprecated": {
+    "CURRENT": 0,
+    "DEPRECATED": 34,
+    "UNKNOWN": 14830
+  },
+  "detailed_review_api_count": 5330,
+  "detailed_review_template_count": 21,
+  "environment_version": {
+    "ENVIRONMENT_VERSION_UNVERIFIED": 12,
+    "ENVIRONMENT_VERSION_VERIFIED": 0,
+    "source_inventory_sha256": null
+  },
+  "existing_family_candidate_count": 4020,
+  "existing_formal_contracts": 396,
+  "formal_contract_inventory_alignment": {
+    "aligned": 380,
+    "alignment_rate": 0.9595959595959596,
+    "counts": {
+      "ALIGNED_ALIAS": 14,
+      "ALIGNED_DIRECT": 366,
+      "INVENTORY_EXTERNAL": 16
+    },
+    "entries": [
+      {
+        "formal_contract": "abs",
+        "public_api": "abs",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.Array.compute",
+        "public_api": "dask.array.Array.compute",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.Array.copy",
+        "public_api": "dask.array.Array.copy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.Array.max",
+        "public_api": "dask.array.Array.max",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.Array.mean",
+        "public_api": "dask.array.Array.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.Array.min",
+        "public_api": "dask.array.Array.min",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.Array.sum",
+        "public_api": "dask.array.Array.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.coarsen",
+        "public_api": "dask.array.coarsen",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.from_array",
+        "public_api": "dask.array.from_array",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.max",
+        "public_api": "dask.array.max",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.mean",
+        "public_api": "dask.array.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.min",
+        "public_api": "dask.array.min",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.prod",
+        "public_api": "dask.array.prod",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.rechunk",
+        "public_api": "dask.array.rechunk",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.sum",
+        "public_api": "dask.array.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.array.where",
+        "public_api": "dask.array.where",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.compute",
+        "public_api": "dask.compute",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "dask.delayed",
+        "public_api": "dask.delayed.delayed",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "dask.distributed.Client",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "dask.distributed.Client.gather",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "dask.distributed.Client.map",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "dask.distributed.Client.scatter",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "dask.distributed.Client.submit",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "dask.distributed.Future.result",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "dask.distributed.LocalCluster",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "dask.distributed.as_completed",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "dask.distributed.wait",
+        "public_api": null,
+        "reason": "HARVEST_GAP_DISTRIBUTED_REFERENCE_NOT_INCLUDED",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "divmod",
+        "public_api": "divmod",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.GeoDataFrame",
+        "public_api": "geopandas.GeoDataFrame",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.GeoDataFrame.geometry",
+        "public_api": null,
+        "reason": "HARVEST_GAP_PROPERTY_OR_METHOD_NOT_IN_INVENTORY",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "geopandas.GeoDataFrame.set_crs",
+        "public_api": "geopandas.GeoDataFrame.set_crs",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.GeoDataFrame.to_crs",
+        "public_api": "geopandas.GeoDataFrame.to_crs",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.GeoSeries",
+        "public_api": "geopandas.GeoSeries",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.GeoSeries.contains",
+        "public_api": "geopandas.GeoSeries.contains",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.GeoSeries.representative_point",
+        "public_api": "geopandas.GeoSeries.representative_point",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.GeoSeries.set_crs",
+        "public_api": "geopandas.GeoSeries.set_crs",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.GeoSeries.to_crs",
+        "public_api": "geopandas.GeoSeries.to_crs",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.points_from_xy",
+        "public_api": "geopandas.points_from_xy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "geopandas.read_file",
+        "public_api": "geopandas.read_file",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "igraph.Graph",
+        "public_api": "igraph.Graph",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "max",
+        "public_api": "max",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "min",
+        "public_api": "min",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "netCDF4.Dataset",
+        "public_api": "netCDF4.Dataset",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.abs",
+        "public_api": "numpy.absolute",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "numpy.add.at",
+        "public_api": "numpy.ufunc.at",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "numpy.all",
+        "public_api": "numpy.all",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.allclose",
+        "public_api": "numpy.allclose",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.any",
+        "public_api": "numpy.any",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.arange",
+        "public_api": "numpy.arange",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.arcsin",
+        "public_api": "numpy.arcsin",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.arctan2",
+        "public_api": "numpy.arctan2",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.argmax",
+        "public_api": "numpy.argmax",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.argmin",
+        "public_api": "numpy.argmin",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.argpartition",
+        "public_api": "numpy.argpartition",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.argsort",
+        "public_api": "numpy.argsort",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.argwhere",
+        "public_api": "numpy.argwhere",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.array",
+        "public_api": "numpy.array",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.array_equal",
+        "public_api": "numpy.array_equal",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.asarray",
+        "public_api": "numpy.asarray",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.atleast_1d",
+        "public_api": "numpy.atleast_1d",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.bincount",
+        "public_api": "numpy.bincount",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.broadcast_to",
+        "public_api": "numpy.broadcast_to",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ceil",
+        "public_api": "numpy.ceil",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.clip",
+        "public_api": "numpy.clip",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.column_stack",
+        "public_api": "numpy.column_stack",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.concatenate",
+        "public_api": "numpy.concatenate",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.corrcoef",
+        "public_api": "numpy.corrcoef",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.cos",
+        "public_api": "numpy.cos",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.count_nonzero",
+        "public_api": "numpy.count_nonzero",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.cov",
+        "public_api": "numpy.cov",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.cumsum",
+        "public_api": "numpy.cumsum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.deg2rad",
+        "public_api": "numpy.deg2rad",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.diff",
+        "public_api": "numpy.diff",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.divide",
+        "public_api": "numpy.divide",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.dot",
+        "public_api": "numpy.dot",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.einsum",
+        "public_api": "numpy.einsum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.empty",
+        "public_api": "numpy.empty",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.empty_like",
+        "public_api": "numpy.empty_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.errstate",
+        "public_api": "numpy.errstate",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.exp",
+        "public_api": "numpy.exp",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.eye",
+        "public_api": "numpy.eye",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.fill_diagonal",
+        "public_api": "numpy.fill_diagonal",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.flatnonzero",
+        "public_api": "numpy.flatnonzero",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.flipud",
+        "public_api": "numpy.flipud",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.float32",
+        "public_api": "numpy.float32",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.floor",
+        "public_api": "numpy.floor",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.fromiter",
+        "public_api": "numpy.fromiter",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.full",
+        "public_api": "numpy.full",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.full_like",
+        "public_api": "numpy.full_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.gradient",
+        "public_api": "numpy.gradient",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.iinfo",
+        "public_api": "numpy.iinfo",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.indices",
+        "public_api": "numpy.indices",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.interp",
+        "public_api": "numpy.interp",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.isclose",
+        "public_api": "numpy.isclose",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.isfinite",
+        "public_api": "numpy.isfinite",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.isin",
+        "public_api": "numpy.isin",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.isnan",
+        "public_api": "numpy.isnan",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.isscalar",
+        "public_api": "numpy.isscalar",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.issubdtype",
+        "public_api": "numpy.issubdtype",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.lexsort",
+        "public_api": "numpy.lexsort",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.linalg.eigh",
+        "public_api": "numpy.linalg.eigh",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.linalg.norm",
+        "public_api": "numpy.linalg.norm",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.linalg.svd",
+        "public_api": "numpy.linalg.svd",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.linspace",
+        "public_api": "numpy.linspace",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.log",
+        "public_api": "numpy.log",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.log10",
+        "public_api": "numpy.log10",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.log1p",
+        "public_api": "numpy.log1p",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ma.filled",
+        "public_api": "numpy.ma.filled",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ma.is_masked",
+        "public_api": "numpy.ma.is_masked",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ma.masked_invalid",
+        "public_api": "numpy.ma.masked_invalid",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.matmul",
+        "public_api": "numpy.matmul",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.max",
+        "public_api": "numpy.max",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.maximum",
+        "public_api": "numpy.maximum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.maximum.at",
+        "public_api": "numpy.ufunc.at",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "numpy.mean",
+        "public_api": "numpy.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.median",
+        "public_api": "numpy.median",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.meshgrid",
+        "public_api": "numpy.meshgrid",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.min",
+        "public_api": "numpy.min",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.minimum",
+        "public_api": "numpy.minimum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.minimum.at",
+        "public_api": "numpy.ufunc.at",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "numpy.moveaxis",
+        "public_api": "numpy.moveaxis",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nan_to_num",
+        "public_api": "numpy.nan_to_num",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nanmax",
+        "public_api": "numpy.nanmax",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nanmean",
+        "public_api": "numpy.nanmean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nanmedian",
+        "public_api": "numpy.nanmedian",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nanmin",
+        "public_api": "numpy.nanmin",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nanpercentile",
+        "public_api": "numpy.nanpercentile",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nanquantile",
+        "public_api": "numpy.nanquantile",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nanstd",
+        "public_api": "numpy.nanstd",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nansum",
+        "public_api": "numpy.nansum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.all",
+        "public_api": "numpy.ndarray.all",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.any",
+        "public_api": "numpy.ndarray.any",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.argmin",
+        "public_api": "numpy.ndarray.argmin",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.astype",
+        "public_api": "numpy.ndarray.astype",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.copy",
+        "public_api": "numpy.ndarray.copy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.flatten",
+        "public_api": "numpy.ndarray.flatten",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.item",
+        "public_api": "numpy.ndarray.item",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.max",
+        "public_api": "numpy.ndarray.max",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.mean",
+        "public_api": "numpy.ndarray.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.median",
+        "public_api": "numpy.median",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "numpy.ndarray.min",
+        "public_api": "numpy.ndarray.min",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.prod",
+        "public_api": "numpy.ndarray.prod",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.ravel",
+        "public_api": "numpy.ndarray.ravel",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.reshape",
+        "public_api": "numpy.ndarray.reshape",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.std",
+        "public_api": "numpy.ndarray.std",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.sum",
+        "public_api": "numpy.ndarray.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.tobytes",
+        "public_api": "numpy.ndarray.tobytes",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.tolist",
+        "public_api": "numpy.ndarray.tolist",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.transpose",
+        "public_api": "numpy.ndarray.transpose",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndarray.view",
+        "public_api": "numpy.ndarray.view",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ndim",
+        "public_api": "numpy.ndim",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.nonzero",
+        "public_api": "numpy.nonzero",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ones",
+        "public_api": "numpy.ones",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.ones_like",
+        "public_api": "numpy.ones_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.percentile",
+        "public_api": "numpy.percentile",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.power",
+        "public_api": "numpy.power",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.prod",
+        "public_api": "numpy.prod",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.quantile",
+        "public_api": "numpy.quantile",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.radians",
+        "public_api": "numpy.radians",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.random.Generator.choice",
+        "public_api": "numpy.random.Generator.choice",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.random.Generator.integers",
+        "public_api": "numpy.random.Generator.integers",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.random.Generator.normal",
+        "public_api": "numpy.random.Generator.normal",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.random.Generator.permutation",
+        "public_api": "numpy.random.Generator.permutation",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.random.Generator.uniform",
+        "public_api": "numpy.random.Generator.uniform",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.random.default_rng",
+        "public_api": "numpy.random.default_rng",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.repeat",
+        "public_api": "numpy.repeat",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.reshape",
+        "public_api": "numpy.reshape",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.rint",
+        "public_api": "numpy.rint",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.round",
+        "public_api": "numpy.round",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.searchsorted",
+        "public_api": "numpy.searchsorted",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.sin",
+        "public_api": "numpy.sin",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.size",
+        "public_api": "numpy.size",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.sort",
+        "public_api": "numpy.sort",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.sqrt",
+        "public_api": "numpy.sqrt",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.stack",
+        "public_api": "numpy.stack",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.std",
+        "public_api": "numpy.std",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.sum",
+        "public_api": "numpy.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.take_along_axis",
+        "public_api": "numpy.take_along_axis",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.tile",
+        "public_api": "numpy.tile",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.timedelta64",
+        "public_api": "numpy.timedelta64",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.transpose",
+        "public_api": "numpy.transpose",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.triu_indices",
+        "public_api": "numpy.triu_indices",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.unique",
+        "public_api": "numpy.unique",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.unravel_index",
+        "public_api": "numpy.unravel_index",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.vstack",
+        "public_api": "numpy.vstack",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.where",
+        "public_api": "numpy.where",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.zeros",
+        "public_api": "numpy.zeros",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "numpy.zeros_like",
+        "public_api": "numpy.zeros_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame",
+        "public_api": "pandas.DataFrame",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.agg",
+        "public_api": "pandas.DataFrame.agg",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.all",
+        "public_api": "pandas.DataFrame.all",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.apply",
+        "public_api": "pandas.DataFrame.apply",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.assign",
+        "public_api": "pandas.DataFrame.assign",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.astype",
+        "public_api": "pandas.DataFrame.astype",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.clip",
+        "public_api": "pandas.DataFrame.clip",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.copy",
+        "public_api": "pandas.DataFrame.copy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.div",
+        "public_api": "pandas.DataFrame.div",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.drop",
+        "public_api": "pandas.DataFrame.drop",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.drop_duplicates",
+        "public_api": "pandas.DataFrame.drop_duplicates",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.dropna",
+        "public_api": "pandas.DataFrame.dropna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.duplicated",
+        "public_api": "pandas.DataFrame.duplicated",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.fillna",
+        "public_api": "pandas.DataFrame.fillna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.from_records",
+        "public_api": "pandas.DataFrame.from_records",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.groupby",
+        "public_api": "pandas.DataFrame.groupby",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.iloc",
+        "public_api": "pandas.DataFrame.iloc",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.index",
+        "public_api": "pandas.DataFrame.index",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.insert",
+        "public_api": "pandas.DataFrame.insert",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.isin",
+        "public_api": "pandas.DataFrame.isin",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.isna",
+        "public_api": "pandas.DataFrame.isna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.iterrows",
+        "public_api": "pandas.DataFrame.iterrows",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.join",
+        "public_api": "pandas.DataFrame.join",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.loc",
+        "public_api": "pandas.DataFrame.loc",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.map",
+        "public_api": "pandas.DataFrame.map",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.mean",
+        "public_api": "pandas.DataFrame.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.median",
+        "public_api": "pandas.DataFrame.median",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.merge",
+        "public_api": "pandas.DataFrame.merge",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.notna",
+        "public_api": "pandas.DataFrame.notna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.pivot_table",
+        "public_api": "pandas.DataFrame.pivot_table",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.quantile",
+        "public_api": "pandas.DataFrame.quantile",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.rank",
+        "public_api": "pandas.DataFrame.rank",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.rename",
+        "public_api": "pandas.DataFrame.rename",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.rename_axis",
+        "public_api": "pandas.DataFrame.rename_axis",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.replace",
+        "public_api": "pandas.DataFrame.replace",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.reset_index",
+        "public_api": "pandas.DataFrame.reset_index",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.set_index",
+        "public_api": "pandas.DataFrame.set_index",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.sort_values",
+        "public_api": "pandas.DataFrame.sort_values",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.std",
+        "public_api": "pandas.DataFrame.std",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.sum",
+        "public_api": "pandas.DataFrame.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.to_numpy",
+        "public_api": "pandas.DataFrame.to_numpy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.DataFrame.values",
+        "public_api": "pandas.DataFrame.values",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Index.astype",
+        "public_api": "pandas.Index.astype",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Index.tolist",
+        "public_api": "pandas.Index.to_list",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "pandas.Series",
+        "public_api": "pandas.Series",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.agg",
+        "public_api": "pandas.Series.agg",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.all",
+        "public_api": "pandas.Series.all",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.apply",
+        "public_api": "pandas.Series.apply",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.astype",
+        "public_api": "pandas.Series.astype",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.clip",
+        "public_api": "pandas.Series.clip",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.copy",
+        "public_api": "pandas.Series.copy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.div",
+        "public_api": "pandas.Series.div",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.drop",
+        "public_api": "pandas.Series.drop",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.drop_duplicates",
+        "public_api": "pandas.Series.drop_duplicates",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.dropna",
+        "public_api": "pandas.Series.dropna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.duplicated",
+        "public_api": "pandas.Series.duplicated",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.fillna",
+        "public_api": "pandas.Series.fillna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.get",
+        "public_api": "pandas.Series.get",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.groupby",
+        "public_api": "pandas.Series.groupby",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.iloc",
+        "public_api": "pandas.Series.iloc",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.isin",
+        "public_api": "pandas.Series.isin",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.isna",
+        "public_api": "pandas.Series.isna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.loc",
+        "public_api": "pandas.Series.loc",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.map",
+        "public_api": "pandas.Series.map",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.mean",
+        "public_api": "pandas.Series.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.median",
+        "public_api": "pandas.Series.median",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.notna",
+        "public_api": "pandas.Series.notna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.quantile",
+        "public_api": "pandas.Series.quantile",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.rank",
+        "public_api": "pandas.Series.rank",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.rename",
+        "public_api": "pandas.Series.rename",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.rename_axis",
+        "public_api": "pandas.Series.rename_axis",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.replace",
+        "public_api": "pandas.Series.replace",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.reset_index",
+        "public_api": "pandas.Series.reset_index",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.sort_values",
+        "public_api": "pandas.Series.sort_values",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.std",
+        "public_api": "pandas.Series.std",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.sum",
+        "public_api": "pandas.Series.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.to_numpy",
+        "public_api": "pandas.Series.to_numpy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.Series.tolist",
+        "public_api": "pandas.Series.to_list",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "pandas.Series.values",
+        "public_api": "pandas.Series.values",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.types.is_numeric_dtype",
+        "public_api": "pandas.api.types.is_numeric_dtype",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.DataFrameGroupBy.agg",
+        "public_api": "pandas.api.typing.DataFrameGroupBy.agg",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.DataFrameGroupBy.mean",
+        "public_api": "pandas.api.typing.DataFrameGroupBy.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.DataFrameGroupBy.median",
+        "public_api": "pandas.api.typing.DataFrameGroupBy.median",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.DataFrameGroupBy.quantile",
+        "public_api": "pandas.api.typing.DataFrameGroupBy.quantile",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.DataFrameGroupBy.std",
+        "public_api": "pandas.api.typing.DataFrameGroupBy.std",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.DataFrameGroupBy.sum",
+        "public_api": "pandas.api.typing.DataFrameGroupBy.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.DataFrameGroupBy.tail",
+        "public_api": "pandas.api.typing.DataFrameGroupBy.tail",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.DataFrameGroupBy.transform",
+        "public_api": "pandas.api.typing.DataFrameGroupBy.transform",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.api.typing.SeriesGroupBy.sum",
+        "public_api": "pandas.api.typing.SeriesGroupBy.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.concat",
+        "public_api": "pandas.concat",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.isna",
+        "public_api": "pandas.isna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.merge",
+        "public_api": "pandas.merge",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.notna",
+        "public_api": "pandas.notna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.pivot_table",
+        "public_api": "pandas.pivot_table",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.read_sql",
+        "public_api": "pandas.read_sql",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.read_sql_query",
+        "public_api": "pandas.read_sql_query",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.to_datetime",
+        "public_api": "pandas.to_datetime",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pandas.to_numeric",
+        "public_api": "pandas.to_numeric",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pyproj.Geod",
+        "public_api": "pyproj.Geod",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pyproj.Geod.inv",
+        "public_api": "pyproj.Geod.inv",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "pyproj.Geod.line_length",
+        "public_api": "pyproj.Geod.line_length",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "rasterio.features.rasterize",
+        "public_api": "rasterio.features.rasterize",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "rasterio.transform.from_bounds",
+        "public_api": "rasterio.transform.from_bounds",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "round",
+        "public_api": "round",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.cluster.hierarchy.fcluster",
+        "public_api": "scipy.cluster.hierarchy.fcluster",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.cluster.hierarchy.linkage",
+        "public_api": "scipy.cluster.hierarchy.linkage",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.integrate.quad",
+        "public_api": "scipy.integrate.quad",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.integrate.solve_ivp",
+        "public_api": "scipy.integrate.solve_ivp",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.interpolate.interp1d",
+        "public_api": "scipy.interpolate.interp1d",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.linalg.solve",
+        "public_api": "scipy.linalg.solve",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.ndimage.label",
+        "public_api": "scipy.ndimage.label",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.ndimage.median_filter",
+        "public_api": "scipy.ndimage.median_filter",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.optimize.minimize",
+        "public_api": "scipy.optimize.minimize",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.sparse.csgraph.connected_components",
+        "public_api": "scipy.sparse.csgraph.connected_components",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.sparse.csgraph.dijkstra",
+        "public_api": "scipy.sparse.csgraph.dijkstra",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.sparse.csr_matrix",
+        "public_api": "scipy.sparse.csr_matrix",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.sparse.csr_matrix.data",
+        "public_api": null,
+        "reason": "HARVEST_GAP_PROPERTY_OR_METHOD_NOT_IN_INVENTORY",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "scipy.sparse.csr_matrix.indices",
+        "public_api": null,
+        "reason": "HARVEST_GAP_PROPERTY_OR_METHOD_NOT_IN_INVENTORY",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "scipy.sparse.csr_matrix.indptr",
+        "public_api": null,
+        "reason": "HARVEST_GAP_PROPERTY_OR_METHOD_NOT_IN_INVENTORY",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "scipy.spatial.cKDTree",
+        "public_api": "scipy.spatial.cKDTree",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.spatial.cKDTree.query",
+        "public_api": "scipy.spatial.cKDTree.query",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.spatial.cKDTree.query_ball_point",
+        "public_api": "scipy.spatial.cKDTree.query_ball_point",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "scipy.spatial.cKDTree.query_pairs",
+        "public_api": "scipy.spatial.cKDTree.query_pairs",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "shapely.Geometry.buffer",
+        "public_api": "shapely.buffer",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "shapely.contains_xy",
+        "public_api": "shapely.contains_xy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "shapely.geometry.Point",
+        "public_api": "shapely.Point",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "shapely.geometry.box",
+        "public_api": "shapely.geometry.box",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "shapely.geometry.shape",
+        "public_api": "shapely.geometry.shape",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "shapely.ops.nearest_points",
+        "public_api": null,
+        "reason": "NAMESPACE_DIFFERENCE_WITHOUT_PUBLIC_INVENTORY_ALIAS",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "shapely.ops.unary_union",
+        "public_api": "shapely.unary_union",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "shapely.prepared.prep",
+        "public_api": null,
+        "reason": "NAMESPACE_DIFFERENCE_WITHOUT_PUBLIC_INVENTORY_ALIAS",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "shapely.strtree.STRtree",
+        "public_api": "shapely.strtree.STRtree",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "shapely.strtree.STRtree.nearest",
+        "public_api": "shapely.STRtree.nearest",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "shapely.strtree.STRtree.query",
+        "public_api": "shapely.STRtree.query",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "shapely.vectorized.contains",
+        "public_api": "shapely.contains_xy",
+        "reason": "ALIAS_OR_CANONICAL_NAME_DIFFERENCE",
+        "status": "ALIGNED_ALIAS"
+      },
+      {
+        "formal_contract": "sum",
+        "public_api": "sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray",
+        "public_api": "xarray.DataArray",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.any",
+        "public_api": "xarray.DataArray.any",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.assign",
+        "public_api": null,
+        "reason": "HARVEST_GAP_PROPERTY_OR_METHOD_NOT_IN_INVENTORY",
+        "status": "INVENTORY_EXTERNAL"
+      },
+      {
+        "formal_contract": "xarray.DataArray.assign_coords",
+        "public_api": "xarray.DataArray.assign_coords",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.astype",
+        "public_api": "xarray.DataArray.astype",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.broadcast_like",
+        "public_api": "xarray.DataArray.broadcast_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.chunk",
+        "public_api": "xarray.DataArray.chunk",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.clip",
+        "public_api": "xarray.DataArray.clip",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.coarsen",
+        "public_api": "xarray.DataArray.coarsen",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.compute",
+        "public_api": "xarray.DataArray.compute",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.copy",
+        "public_api": "xarray.DataArray.copy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.diff",
+        "public_api": "xarray.DataArray.diff",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.expand_dims",
+        "public_api": "xarray.DataArray.expand_dims",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.fillna",
+        "public_api": "xarray.DataArray.fillna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.groupby",
+        "public_api": "xarray.DataArray.groupby",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.interp",
+        "public_api": "xarray.DataArray.interp",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.isel",
+        "public_api": "xarray.DataArray.isel",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.max",
+        "public_api": "xarray.DataArray.max",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.mean",
+        "public_api": "xarray.DataArray.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.median",
+        "public_api": "xarray.DataArray.median",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.min",
+        "public_api": "xarray.DataArray.min",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.reindex",
+        "public_api": "xarray.DataArray.reindex",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.reindex_like",
+        "public_api": "xarray.DataArray.reindex_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.rename",
+        "public_api": "xarray.DataArray.rename",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.reset_coords",
+        "public_api": "xarray.DataArray.reset_coords",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.sel",
+        "public_api": "xarray.DataArray.sel",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.sortby",
+        "public_api": "xarray.DataArray.sortby",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.squeeze",
+        "public_api": "xarray.DataArray.squeeze",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.sum",
+        "public_api": "xarray.DataArray.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.to_dataset",
+        "public_api": "xarray.DataArray.to_dataset",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.transpose",
+        "public_api": "xarray.DataArray.transpose",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.values",
+        "public_api": "xarray.DataArray.values",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.DataArray.where",
+        "public_api": "xarray.DataArray.where",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset",
+        "public_api": "xarray.Dataset",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.any",
+        "public_api": "xarray.Dataset.any",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.assign",
+        "public_api": "xarray.Dataset.assign",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.assign_coords",
+        "public_api": "xarray.Dataset.assign_coords",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.astype",
+        "public_api": "xarray.Dataset.astype",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.broadcast_like",
+        "public_api": "xarray.Dataset.broadcast_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.chunk",
+        "public_api": "xarray.Dataset.chunk",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.clip",
+        "public_api": "xarray.Dataset.clip",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.compute",
+        "public_api": "xarray.Dataset.compute",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.copy",
+        "public_api": "xarray.Dataset.copy",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.expand_dims",
+        "public_api": "xarray.Dataset.expand_dims",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.fillna",
+        "public_api": "xarray.Dataset.fillna",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.groupby",
+        "public_api": "xarray.Dataset.groupby",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.interp",
+        "public_api": "xarray.Dataset.interp",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.isel",
+        "public_api": "xarray.Dataset.isel",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.max",
+        "public_api": "xarray.Dataset.max",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.median",
+        "public_api": "xarray.Dataset.median",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.min",
+        "public_api": "xarray.Dataset.min",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.reindex",
+        "public_api": "xarray.Dataset.reindex",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.reindex_like",
+        "public_api": "xarray.Dataset.reindex_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.rename",
+        "public_api": "xarray.Dataset.rename",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.rename_vars",
+        "public_api": "xarray.Dataset.rename_vars",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.reset_coords",
+        "public_api": "xarray.Dataset.reset_coords",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.sel",
+        "public_api": "xarray.Dataset.sel",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.sortby",
+        "public_api": "xarray.Dataset.sortby",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.squeeze",
+        "public_api": "xarray.Dataset.squeeze",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.transpose",
+        "public_api": "xarray.Dataset.transpose",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.Dataset.where",
+        "public_api": "xarray.Dataset.where",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.IndexVariable",
+        "public_api": "xarray.IndexVariable",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.align",
+        "public_api": "xarray.align",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.apply_ufunc",
+        "public_api": "xarray.apply_ufunc",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.broadcast",
+        "public_api": "xarray.broadcast",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.computation.rolling.DataArrayCoarsen.mean",
+        "public_api": "xarray.computation.rolling.DataArrayCoarsen.mean",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.computation.rolling.DataArrayCoarsen.sum",
+        "public_api": "xarray.computation.rolling.DataArrayCoarsen.sum",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.concat",
+        "public_api": "xarray.concat",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.full_like",
+        "public_api": "xarray.full_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.open_zarr",
+        "public_api": "xarray.open_zarr",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.where",
+        "public_api": "xarray.where",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      },
+      {
+        "formal_contract": "xarray.zeros_like",
+        "public_api": "xarray.zeros_like",
+        "reason": "EXACT_QUALIFIED_NAME",
+        "status": "ALIGNED_DIRECT"
+      }
+    ],
+    "formal_contract_total": 396,
+    "schema_version": 1
+  },
+  "formal_contract_objects": 2139,
+  "formalized_public_api_count": 9207,
+  "generated_by": "cpp_audit.reference_registry/1.1.0",
+  "schema_version": 1,
+  "semantic_class_count": 1837,
+  "semantic_class_status": {
+    "FORMALIZED": 1725,
+    "FORMALIZED_CLASS_BOUNDARY": 21,
+    "NOT_APPLICABLE": 89,
+    "REFERENCE_INSUFFICIENT": 2
+  },
+  "signature": {
+    "SIGNATURE_RESOLVED": 4,
+    "SIGNATURE_UNKNOWN": 14860
+  },
+  "signature_semantic_sufficiency": {
+    "blocking_unknown": 0,
+    "resolved_where_required": 0,
+    "unknown_but_acceptable": 3873
+  },
+  "version": {
+    "VERSION_PARTIALLY_VERIFIED": 4,
+    "VERSION_UNVERIFIED": 2,
+    "VERSION_VERIFIED": 6
+  }
+}

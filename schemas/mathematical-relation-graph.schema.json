@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/mathematical-relation-graph.schema.json",
+  "title": "Mathematical Relation Graph",
+  "type": "object",
+  "required": ["edges"],
+  "properties": {
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source_eclass_id", "target_eclass_id", "relation_kind", "conditions", "metadata"],
+        "properties": {
+          "source_eclass_id": {"type": "string"},
+          "target_eclass_id": {"type": "string"},
+          "relation_kind": {"enum": ["APPROXIMATION_OF", "DISCRETIZATION_OF", "TRUNCATED_TO", "SAMPLED_AS", "TRANSFORMED_TO", "ALGORITHMICALLY_REALIZED_BY"]},
+          "conditions": {"type": "array", "items": {"type": "string"}},
+          "evidence": {"type": ["string", "null"]},
+          "metadata": {"type": "object"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "repository": "3e456/FormulaTracer",
+  "tool": "git-filter-repo",
+  "execution_model": "FRESH_MIRROR_WITH_LOCAL_PRIVATE_BACKUP",
+  "pre_rewrite": {
+    "branches": 2,
+    "tags": 0,
+    "commits": 163,
+    "main": "1c91fcbd9afce6993338e89eb67b199d79cf8b52",
+    "feature": "a59d8ff0b826171e5e3738f78ceb408cd95f16d0"
+  },
+  "operations": {
+    "confirmed_private_paths_removed": 130,
+    "confirmed_path_scoped_text_replacements": 51,
+    "commit_email_policy": "NON_NOREPLY_TO_PROJECT_NOREPLY",
+    "all_public_relevant_branches": true
+  },
+  "private_source_reloaded": false,
+  "protected_untracked_document_touched": false
+}

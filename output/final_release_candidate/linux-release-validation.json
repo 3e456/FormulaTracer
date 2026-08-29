@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "tested_source_commit": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "environment": {
+    "os": "Linux",
+    "distribution": "Debian GNU/Linux 12 (bookworm)",
+    "architecture": "x86_64",
+    "python": "3.11.2",
+    "rust": "rustc 1.98.0 (88d9e12ae 2026-08-18)",
+    "msrv_separately_tested": "1.85.0",
+    "compiler": "GCC 12.2.0",
+    "glibc": "2.36",
+    "lean": "4.19.0",
+    "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b"
+  },
+  "source_checkout": "PASS",
+  "rust_build": "PASS",
+  "rust_tests": {"passed": 68, "failed": 0},
+  "clippy_deny_warnings": {"status": "PASS", "warnings": 0},
+  "lean_build": {"target": "CppAudit", "status": "PASS"},
+  "python_tests": {"passed": 607, "skipped_platform_specific": 1, "subtests_passed": 36, "failed": 0},
+  "wheel": {
+    "filename": "formulatracer-0.1.0-py3-none-linux_x86_64.whl",
+    "platform_tag": "linux_x86_64",
+    "sha256": "56652259c1d5fc597759cde1064c3b6b2607e0b165a4861bcaf0fe34120b0d36",
+    "native_library": "libformulatracer_c_api.so",
+    "windows_dll_contamination": 0,
+    "unexpected_platform_binary": 0,
+    "private_path_trace": 0,
+    "protected_docx": 0,
+    "clean_install": "PASS",
+    "native_load": "PASS",
+    "minimal_audit": "PASS"
+  },
+  "sdist": {
+    "filename": "formulatracer-0.1.0.tar.gz",
+    "sha256": "fd2d0729653fb3ea12b704ea5f3d03dae1d3b3db6a62ec402035f299479c3c43",
+    "build": "PASS",
+    "private_trace": 0
+  },
+  "reproducibility": "STRUCTURALLY_REPRODUCIBLE",
+  "portability_claim": "ONLY_THIS_RECORDED_RUNNER_ENVIRONMENT",
+  "github_actions": {
+    "runner_allocated": false,
+    "external_blocker": "ACCOUNT_BILLING_OR_SPENDING_LIMIT",
+    "code_execution_evidence": false,
+    "billing_changed": false
+  },
+  "actual_linux_runner_evidence": "LOCAL_DOCKER_DEBIAN_12",
+  "status": "PASS"
+}

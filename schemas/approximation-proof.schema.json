@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/approximation-proof-0.1.json",
+  "type": "object",
+  "required": ["schema_version", "proofs"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "proofs": {"type": "array", "items": {"$ref": "#/$defs/proof"}}
+  },
+  "$defs": {
+    "assumption": {
+      "type": "object", "required": ["assumption_id", "kind", "statement", "lean_type", "discharge_status", "evidence"],
+      "properties": {"assumption_id": {"type": "string"}, "kind": {"type": "string"}, "statement": {"type": "string"},
+        "lean_type": {"type": "string"}, "discharge_status": {"enum": ["ASSUMPTION_PROVEN", "ASSUMPTION_PROVIDED", "ASSUMPTION_REFERENCE_CONTRACT", "ASSUMPTION_UNRESOLVED"]},
+        "evidence": {"type": ["object", "null"]}}, "additionalProperties": false
+    },
+    "proof": {
+      "type": "object",
+      "required": ["family_id", "theorem_id", "target_operator", "approximation_expression", "domain", "parameters", "assumptions", "error_expression", "error_bound", "bound_constant", "convergence_order", "proof_status", "convergence_status", "lean_theorem_name", "lean_convergence_theorem", "lean_source_hash", "provenance"],
+      "properties": {
+        "family_id": {"type": "string"}, "theorem_id": {"type": "string"}, "target_operator": {"type": "string"},
+        "approximation_expression": {"type": "string"}, "domain": {"type": "object"}, "parameters": {"type": "object"},
+        "assumptions": {"type": "array", "items": {"$ref": "#/$defs/assumption"}},
+        "error_expression": {"type": "string"}, "error_bound": {"type": ["string", "null"]},
+        "bound_constant": {"type": ["string", "null"]}, "convergence_order": {"type": ["integer", "null"]},
+        "proof_status": {"type": "string"}, "convergence_status": {"type": "string"},
+        "lean_theorem_name": {"type": ["string", "null"]}, "lean_convergence_theorem": {"type": ["string", "null"]},
+        "lean_source_hash": {"type": ["string", "null"]}, "provenance": {"type": "object"}
+      }, "additionalProperties": false
+    }
+  }, "additionalProperties": false
+}

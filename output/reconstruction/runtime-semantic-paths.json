@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "TOTAL_SEMANTIC_CALLS": 63,
+  "RUST_NATIVE_SEMANTIC_CALLS": 63,
+  "PYTHON_REFERENCE_CALLS": 0,
+  "PYTHON_SEMANTIC_FALLBACK_COUNT": 0,
+  "UNSUPPORTED_COUNT": 0,
+  "UNRESOLVED_COUNT": 0,
+  "fallback_by_kernel": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "E": 0,
+    "F": 0
+  },
+  "calls_by_kernel": {
+    "A": 0,
+    "B": 42,
+    "C": 0,
+    "D": 21,
+    "E": 0,
+    "F": 0
+  },
+  "calls_by_owner": {
+    "semantic_kernel": 63
+  },
+  "calls_by_operation": {
+    "semantic_kernel:PLAN_GENERATION": 21,
+    "semantic_kernel:QUOTIENT_NORMALIZE": 21,
+    "semantic_kernel:RENDER_TEX": 21
+  },
+  "calls_by_scope": {
+    "PRODUCTION": 63
+  },
+  "paths_by_scope": {
+    "DIFFERENTIAL_VALIDATION": {
+      "PYTHON_FALLBACK": 0,
+      "PYTHON_REFERENCE": 0,
+      "RUST_NATIVE": 0,
+      "UNRESOLVED": 0,
+      "UNSUPPORTED": 0
+    },
+    "PRODUCTION": {
+      "PYTHON_FALLBACK": 0,
+      "PYTHON_REFERENCE": 0,
+      "RUST_NATIVE": 63,
+      "UNRESOLVED": 0,
+      "UNSUPPORTED": 0
+    },
+    "REFERENCE_ORACLE": {
+      "PYTHON_FALLBACK": 0,
+      "PYTHON_REFERENCE": 0,
+      "RUST_NATIVE": 0,
+      "UNRESOLVED": 0,
+      "UNSUPPORTED": 0
+    },
+    "TEST_ONLY": {
+      "PYTHON_FALLBACK": 0,
+      "PYTHON_REFERENCE": 0,
+      "RUST_NATIVE": 0,
+      "UNRESOLVED": 0,
+      "UNSUPPORTED": 0
+    }
+  },
+  "event_limit": 250000,
+  "recorded_event_details": 0,
+  "dropped_event_details": 63,
+  "measurement_scope": "EXTERNAL_21_RECONSTRUCTION_ARTIFACT_RUN",
+  "TOTAL_PRODUCTION_SEMANTIC_CALLS": 63,
+  "DIRECT_PYTHON_SEMANTIC_REFERENCE_CALLS": 0,
+  "PRODUCTION_PYTHON_SEMANTIC_CALLS": 0
+}

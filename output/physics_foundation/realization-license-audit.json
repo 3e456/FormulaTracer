@@ -1,0 +1,63 @@
+{
+  "copied_upstream_source_count": 0,
+  "items": [
+    {
+      "copied_source": false,
+      "license_review": "PASS",
+      "realization_id": "cartesian_divergence_from_partials",
+      "reference_mode": "INDEPENDENT_REIMPLEMENTATION",
+      "retained_source": false
+    },
+    {
+      "copied_source": false,
+      "license_review": "PASS",
+      "realization_id": "central_difference_partial",
+      "reference_mode": "INDEPENDENT_REIMPLEMENTATION",
+      "retained_source": false
+    },
+    {
+      "copied_source": false,
+      "license_review": "PASS",
+      "realization_id": "finite_volume_flux",
+      "reference_mode": "INDEPENDENT_REIMPLEMENTATION",
+      "retained_source": false
+    },
+    {
+      "copied_source": false,
+      "license_review": "PASS",
+      "realization_id": "quadrature_geometric_integral",
+      "reference_mode": "INDEPENDENT_REIMPLEMENTATION",
+      "retained_source": false
+    },
+    {
+      "copied_source": false,
+      "license_review": "PASS",
+      "realization_id": "forward_ad_derivative",
+      "reference_mode": "INDEPENDENT_REIMPLEMENTATION",
+      "retained_source": false
+    },
+    {
+      "copied_source": false,
+      "license_review": "PASS",
+      "realization_id": "renormalized_quaternion_rotation",
+      "reference_mode": "INDEPENDENT_REIMPLEMENTATION",
+      "retained_source": false
+    },
+    {
+      "copied_source": false,
+      "license_review": "PASS",
+      "realization_id": "dask_tree_sum",
+      "reference_mode": "INDEPENDENT_REIMPLEMENTATION",
+      "retained_source": false
+    },
+    {
+      "copied_source": false,
+      "license_review": "PASS",
+      "realization_id": "scipy_quad_callback",
+      "reference_mode": "INDEPENDENT_REIMPLEMENTATION",
+      "retained_source": false
+    }
+  ],
+  "retained_upstream_source_count": 0,
+  "schema_version": "1.0"
+}

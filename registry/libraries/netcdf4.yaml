@@ -1,0 +1,15 @@
+schema_version: "0.1"
+package: netCDF4
+version: ">=1.7,<2.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_status: REFERENCE_REVIEWED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [dimensions, variables, numeric_types, file_mode, data_model]
+  ignore: [netcdf_c_implementation, HDF5_layout, compression_algorithm]
+bindings:
+  - callable: netCDF4.Dataset
+    family: RepresentationMapping
+    bind: {mapping: numeric_dataset_io_boundary, result_type: netCDF4.Dataset,
+           path_parameter: filename, mode_parameter: mode, io_boundary: true}
+    reference: https://unidata.github.io/netcdf4-python/#netCDF4.Dataset

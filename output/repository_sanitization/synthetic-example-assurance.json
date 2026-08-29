@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "example_origin": "INDEPENDENT_SYNTHETIC",
+  "exact": {
+    "status": "PASS",
+    "comparison_match": true,
+    "implementation_root": "Map"
+  },
+  "relational": {
+    "status": "APPROXIMATION_ERROR_NOT_YET_PROVEN",
+    "relation": "DISCRETIZATION_OF",
+    "remaining_obligations": 4
+  },
+  "unresolved": {
+    "status": "PASS_WITH_FINDINGS",
+    "operation": "OpaqueNumericCall"
+  },
+  "false_acceptance": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,479 @@
+{
+  "diagnostics": [],
+  "edge_ids": [
+    "e-a-mul-VALUE_DEPENDS_ON-lhs",
+    "e-b-body-VALUE_DEPENDS_ON-rhs",
+    "e-body-store-VALUE_DEPENDS_ON-value",
+    "e-i-decl-loop-LOOP_BOUND_DEPENDS_ON-index",
+    "e-i-ref-x-index-VALUE_DEPENDS_ON-arg1",
+    "e-i-ref-y-index-VALUE_DEPENDS_ON-arg1",
+    "e-loop-store-CONTROL_GUARDS-loop",
+    "e-mul-body-VALUE_DEPENDS_ON-lhs",
+    "e-n-ref-loop-LOOP_BOUND_DEPENDS_ON-upper",
+    "e-x-index-mul-VALUE_DEPENDS_ON-rhs",
+    "e-y-index-store-WRITES-lhs",
+    "e-zero-loop-LOOP_BOUND_DEPENDS_ON-lower"
+  ],
+  "edges": [
+    {
+      "argument_role": "lhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-a-mul-VALUE_DEPENDS_ON-lhs",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "a",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "mul"
+    },
+    {
+      "argument_role": "rhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-b-body-VALUE_DEPENDS_ON-rhs",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "b",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "body"
+    },
+    {
+      "argument_role": "value",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-body-store-VALUE_DEPENDS_ON-value",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "body",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "store"
+    },
+    {
+      "argument_role": "index",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-i-decl-loop-LOOP_BOUND_DEPENDS_ON-index",
+      "kind": "LOOP_BOUND_DEPENDS_ON",
+      "source_node_id": "i-decl",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "loop"
+    },
+    {
+      "argument_role": "arg1",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-i-ref-x-index-VALUE_DEPENDS_ON-arg1",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "i-ref",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "x-index"
+    },
+    {
+      "argument_role": "arg1",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-i-ref-y-index-VALUE_DEPENDS_ON-arg1",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "i-ref",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "y-index"
+    },
+    {
+      "argument_role": "loop",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-loop-store-CONTROL_GUARDS-loop",
+      "kind": "CONTROL_GUARDS",
+      "source_node_id": "loop",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "store"
+    },
+    {
+      "argument_role": "lhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-mul-body-VALUE_DEPENDS_ON-lhs",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "mul",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "body"
+    },
+    {
+      "argument_role": "upper",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-n-ref-loop-LOOP_BOUND_DEPENDS_ON-upper",
+      "kind": "LOOP_BOUND_DEPENDS_ON",
+      "source_node_id": "n-ref",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "loop"
+    },
+    {
+      "argument_role": "rhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-x-index-mul-VALUE_DEPENDS_ON-rhs",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "x-index",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "mul"
+    },
+    {
+      "argument_role": "lhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-y-index-store-WRITES-lhs",
+      "kind": "WRITES",
+      "source_node_id": "y-index",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "store"
+    },
+    {
+      "argument_role": "lower",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-zero-loop-LOOP_BOUND_DEPENDS_ON-lower",
+      "kind": "LOOP_BOUND_DEPENDS_ON",
+      "source_node_id": "zero",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "target_node_id": "loop"
+    }
+  ],
+  "node_ids": [
+    "a",
+    "b",
+    "body",
+    "i-decl",
+    "i-ref",
+    "loop",
+    "mul",
+    "n-ref",
+    "store",
+    "x-index",
+    "y-index",
+    "zero"
+  ],
+  "nodes": [
+    {
+      "attributes": {
+        "name": "a",
+        "semantic_kind": "Load"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "a",
+      "kind": "DeclRefExpr",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "name": "b",
+        "semantic_kind": "Load"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "b",
+      "kind": "DeclRefExpr",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "operator": "+",
+        "semantic_kind": "BinaryOperation"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "body",
+      "kind": "BinaryOperator",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "name": "i",
+        "semantic_kind": "LocalVariable"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "i-decl",
+      "kind": "VarDecl",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "name": "i",
+        "semantic_kind": "Load"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "i-ref",
+      "kind": "DeclRefExpr",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "comparison": "<",
+        "index": "i",
+        "lower": "0",
+        "semantic_kind": "Loop",
+        "upper": "n"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "loop",
+      "kind": "ForStmt",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "operator": "*",
+        "semantic_kind": "BinaryOperation"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "mul",
+      "kind": "BinaryOperator",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "name": "n",
+        "semantic_kind": "Load"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "n-ref",
+      "kind": "DeclRefExpr",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "operator": "=",
+        "output_base": "y",
+        "output_index": "i",
+        "semantic_kind": "Store"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "WriteMemory",
+      "id": "store",
+      "kind": "BinaryOperator",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "arg0": "x",
+        "arg1": "i",
+        "semantic_kind": "Call"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "x-index",
+      "kind": "CXXOperatorCallExpr",
+      "resolved_symbol": "std::span::operator[]",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "arg0": "y",
+        "arg1": "i",
+        "semantic_kind": "Call"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "y-index",
+      "kind": "CXXOperatorCallExpr",
+      "resolved_symbol": "std::span::operator[]",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "semantic_kind": "Literal",
+        "value": "0"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "zero",
+      "kind": "IntegerLiteral",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/map/source.cpp"
+      },
+      "value_category": "prvalue"
+    }
+  ],
+  "output_node_ids": [
+    "store"
+  ],
+  "schema_version": "0.1",
+  "status": "OUTPUT_SLICE_EXTRACTED"
+}

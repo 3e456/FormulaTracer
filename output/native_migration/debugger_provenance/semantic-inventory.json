@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "kernel": "E",
+  "source_owners_before": [
+    "cpp_audit.semantic_debugger",
+    "cpp_audit.research_provenance"
+  ],
+  "rust_module": "formulatracer_core::debugger_provenance",
+  "provenance_operations": [
+    "ORIGIN_SET",
+    "RESOLVE_CONFIGURATION",
+    "COMPARE_DATASET_SCHEMAS",
+    "BUILD_DATA_LINEAGE",
+    "ASSEMBLE_PROVENANCE",
+    "SEMANTIC_DIFF"
+  ],
+  "lineage_operations": [
+    "FIELD_DERIVED_FROM",
+    "FIELD_SERIALIZED_TO",
+    "ARTIFACT_DEPENDENCY"
+  ],
+  "debugger_operations": [
+    "DEBUG_PROJECT",
+    "SELECT_MINIMAL_REPRODUCER"
+  ],
+  "debugger_rules": [
+    "operator",
+    "constant",
+    "axis",
+    "dimension",
+    "shape",
+    "branch",
+    "loop_bound",
+    "reduction",
+    "approximation_family",
+    "dtype",
+    "range",
+    "error_bound",
+    "ffi_boundary",
+    "serialization",
+    "unknown_fail_closed"
+  ],
+  "object_model": [
+    "SourceOrigin",
+    "SourceSpan",
+    "OriginSet",
+    "TransformationProvenance",
+    "RelationProvenance",
+    "ProviderProvenance",
+    "ErrorProvenance",
+    "InputProvenance",
+    "ConfigurationProvenance",
+    "EnvironmentProvenance",
+    "GitProvenance",
+    "DependencyProvenance",
+    "FieldLineage",
+    "ArtifactLineage",
+    "OutputLineage",
+    "DebuggerTrace",
+    "LocalizationEvidence"
+  ]
+}

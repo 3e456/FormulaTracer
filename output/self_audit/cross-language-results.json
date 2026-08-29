@@ -1,0 +1,116 @@
+{
+  "groups": [
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:e81edfdfe098222f"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:cfe1871294dc4aec"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:774eaae57bc3034a"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:91d1abfbee7bae06"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:33e697db1df7b38e"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:d279c527017b27cc"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:d6455ae4bcbebe87"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:d4154f81633c87fd"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:ac4c17cc9b5d9bc1"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:fec83eaa8a56f687"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:c4a3fefef65a51de"
+    },
+    {
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "theory_id": "theory:c13813939690866d"
+    }
+  ],
+  "schema_version": "1.0",
+  "status_counts": {
+    "SAME_CANONICAL_MATHEMATICAL_IR": 12
+  }
+}

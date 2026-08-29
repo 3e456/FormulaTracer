@@ -1,0 +1,9 @@
+{
+  "authoritative_semantic_core": "rust/formulatracer-core",
+  "duplicate_semantic_system_count": 0,
+  "second_callback_engine": false,
+  "second_provider_registry": false,
+  "second_theorem_engine": false,
+  "second_unit_system": false,
+  "second_user_semantic_engine": false
+}

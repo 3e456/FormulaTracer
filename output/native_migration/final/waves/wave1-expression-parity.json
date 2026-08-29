@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "owner": "cpp_audit.expression",
+  "native_operation": "F/LEGACY_EXPRESSION",
+  "cases": [
+    {
+      "case": "normalize-0",
+      "match": true
+    },
+    {
+      "case": "normalize-1",
+      "match": true
+    },
+    {
+      "case": "normalize-2",
+      "match": true
+    },
+    {
+      "case": "compare-positive",
+      "match": true
+    },
+    {
+      "case": "compare-negative-mutation",
+      "match": true
+    },
+    {
+      "case": "selection-cost",
+      "match": true
+    },
+    {
+      "case": "selection-error",
+      "match": true
+    },
+    {
+      "case": "selection-fail-closed",
+      "match": true
+    }
+  ],
+  "passed": 8,
+  "total": 8,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

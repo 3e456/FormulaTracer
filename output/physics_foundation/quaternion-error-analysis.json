@@ -1,0 +1,16 @@
+{
+  "components": [
+    "local_roundoff",
+    "repeated_multiplication_error",
+    "unit_norm_drift",
+    "renormalization_error"
+  ],
+  "floating_exact_preservation": false,
+  "lean_proofs": [
+    "complexQuaternionEmbeddingMul",
+    "antipodalUnitQuaternionSameQuadraticAction"
+  ],
+  "model": "unit quaternion",
+  "schema_version": "1.0",
+  "zero_norm": "CORRECTLY_UNRESOLVED"
+}

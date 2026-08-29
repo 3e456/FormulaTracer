@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "policy": "OFFICIAL_REFERENCE_AND_FAIL_CLOSED",
+  "registered_api_not_found": 0,
+  "critical_signature_mismatch": 0,
+  "critical_default_semantics_mismatch": 0,
+  "critical_mathematical_contract_mismatch": 0,
+  "critical_axis_semantics_mismatch": 0,
+  "critical_dtype_semantics_mismatch": 0,
+  "unverified_provider_advertised_as_supported": 0,
+  "reference_insufficient": 4,
+  "version_specific_public_support_ranges": [],
+  "representative_checks": [
+    {
+      "reference_id": "NUMPY_SUM",
+      "organization": "NumPy project",
+      "title": "numpy.sum reference",
+      "official_url": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
+      "reference_type": "provider contract",
+      "used_by": "provider contract",
+      "verified_accessed_date": "2026-08-29",
+      "retained_source": false,
+      "copied_source": false,
+      "correctness_proof": false
+    },
+    {
+      "reference_id": "SCIPY_SOLVE",
+      "organization": "SciPy project",
+      "title": "scipy.linalg.solve reference",
+      "official_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.solve.html",
+      "reference_type": "provider contract",
+      "used_by": "provider contract",
+      "verified_accessed_date": "2026-08-29",
+      "retained_source": false,
+      "copied_source": false,
+      "correctness_proof": false
+    },
+    {
+      "reference_id": "XARRAY_SUM",
+      "organization": "xarray project",
+      "title": "xarray.DataArray.sum reference",
+      "official_url": "https://docs.xarray.dev/en/stable/generated/xarray.DataArray.sum.html",
+      "reference_type": "provider contract",
+      "used_by": "provider contract",
+      "verified_accessed_date": "2026-08-29",
+      "retained_source": false,
+      "copied_source": false,
+      "correctness_proof": false
+    },
+    {
+      "reference_id": "PYTORCH_SUM",
+      "organization": "PyTorch project",
+      "title": "torch.Tensor.sum reference",
+      "official_url": "https://docs.pytorch.org/docs/stable/generated/torch.Tensor.sum.html",
+      "reference_type": "provider contract",
+      "used_by": "provider contract",
+      "verified_accessed_date": "2026-08-29",
+      "retained_source": false,
+      "copied_source": false,
+      "correctness_proof": false
+    }
+  ],
+  "status": "PASS_WITH_VERSION_RANGES_UNPINNED"
+}

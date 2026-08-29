@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cpp-audit.dev/schemas/output-slice-0.1.json",
+  "type": "object",
+  "required": ["schema_version", "status", "output_node_ids", "node_ids", "edge_ids", "nodes", "edges", "diagnostics"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "status": {"enum": ["OUTPUT_SLICE_EXTRACTED", "EXPRESSION_EXTRACTION_FAILED"]},
+    "output_node_ids": {"type": "array", "items": {"type": "string"}},
+    "node_ids": {"type": "array", "items": {"type": "string"}},
+    "edge_ids": {"type": "array", "items": {"type": "string"}},
+    "nodes": {"type": "array", "items": {"type": "object"}},
+    "edges": {"type": "array", "items": {"type": "object"}},
+    "diagnostics": {"type": "array", "items": {"type": "object"}}
+  }
+}

@@ -1,0 +1,6 @@
+schema_version: "0.1"
+classification_policy:
+  required_states: [SEMANTICALLY_VERIFIED, CONTRACT_VERIFIED, STRUCTURALLY_RECOGNIZED, ENVIRONMENT_DEPENDENT, UNSUPPORTED_SEMANTICS]
+  unknown_entity: fail
+  unknown_effect: fail
+environment_dependent_headers: [filesystem, iostream, fstream, locale, regex, thread, mutex, condition_variable, atomic, future, random, chrono, execution]

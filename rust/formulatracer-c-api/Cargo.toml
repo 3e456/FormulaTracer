@@ -1,0 +1,18 @@
+[package]
+name = "formulatracer-c-api"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Stable C ABI v1 for the FormulaTracer native semantic core"
+readme = "../../docs/reference/c-api.md"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+formulatracer-core = { path = "../formulatracer-core" }
+serde.workspace = true
+serde_json.workspace = true

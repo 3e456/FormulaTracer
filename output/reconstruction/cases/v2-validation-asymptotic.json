@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0",
+  "case_id": "v2-validation-asymptotic",
+  "split": "validation",
+  "family": "asymptotic",
+  "reference_id": [
+    "dlmf-asymptotic"
+  ],
+  "reference_version_or_revision": {
+    "dlmf-asymptotic": "DLMF 1.2.7"
+  },
+  "original_theory_tex": "\\operatorname{BigO}",
+  "original_theory_ir": {
+    "op": "BigO",
+    "expression": {
+      "op": "FreeVariable",
+      "name": "x"
+    },
+    "variable": "x"
+  },
+  "normalized_theory_ir": {
+    "expression": {
+      "name": "x",
+      "op": "FreeVariable"
+    },
+    "op": "BigO",
+    "variable": "x"
+  },
+  "theory_structural_quotient": {
+    "representative": {
+      "expression": {
+        "name": "x",
+        "op": "FreeVariable"
+      },
+      "op": "BigO",
+      "variable": "x"
+    },
+    "status": "STRUCTURALLY_IDENTICAL",
+    "witness": {
+      "association_changes": [],
+      "binder_mapping": {},
+      "blocked_reasons": [],
+      "evidence_level": "COMPARISON_AID",
+      "ignored_representation_metadata": [],
+      "index_mapping": {},
+      "mapping": {},
+      "node_mapping": {},
+      "operand_permutations": [],
+      "proof_authority": false,
+      "provenance": [
+        "formulatracer-core:typed-structural-isomorphism-v1"
+      ],
+      "required_assumptions": [],
+      "required_facts": []
+    }
+  },
+  "generation_plan": {
+    "requested_expression": {
+      "op": "BigO",
+      "expression": {
+        "op": "FreeVariable",
+        "name": "x"
+      },
+      "variable": "x"
+    },
+    "candidates": [
+      {
+        "provider_id": "cpp.eigen.dot",
+        "rank": 1,
+        "score": 1.5,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "cpp.std.inner_product",
+        "rank": 2,
+        "score": 1.5,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "numpy.central_difference",
+        "rank": 3,
+        "score": 1.5,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "numpy.dot.quadrature",
+        "rank": 4,
+        "score": 1.5,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "numpy.fft.fft",
+        "rank": 5,
+        "score": 1.5,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "rust.ndarray.dot",
+        "rank": 6,
+        "score": 1.5,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "scipy.special.expn_series",
+        "rank": 7,
+        "score": 1.5,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "python.builtin.direct",
+        "rank": 8,
+        "score": 0.1,
+        "reasons": [
+          "universal direct lowering fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "RIGOROUS_RECOMPARISON",
+        "verification_status": "GENERATION_LOWERING_UNSUPPORTED",
+        "remaining_obligations": [
+          "finite algorithm lowering required"
+        ],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "cpp.std.direct",
+        "rank": 9,
+        "score": 0.0,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "RIGOROUS_RECOMPARISON",
+        "verification_status": "GENERATION_LOWERING_UNSUPPORTED",
+        "remaining_obligations": [
+          "finite algorithm lowering required"
+        ],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "rust.std.direct",
+        "rank": 10,
+        "score": 0.0,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "RIGOROUS_RECOMPARISON",
+        "verification_status": "GENERATION_LOWERING_UNSUPPORTED",
+        "remaining_obligations": [
+          "finite algorithm lowering required"
+        ],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "scipy.integrate.quad",
+        "rank": 11,
+        "score": 0.0,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      },
+      {
+        "provider_id": "scipy.signal.fftconvolve",
+        "rank": 12,
+        "score": 0.0,
+        "reasons": [
+          "weak structural fallback"
+        ],
+        "matched_path": [
+          "expression"
+        ],
+        "stage": "TYPED_UNIFICATION",
+        "verification_status": "NOT_VERIFIED",
+        "remaining_obligations": [],
+        "egraph_status": null,
+        "relation_edges": []
+      }
+    ],
+    "budget": {
+      "retrieval": 100,
+      "detailed_unification": 20,
+      "full_verification": 5,
+      "rewrite_states": 30,
+      "rewrite_depth": 4,
+      "egraph_iterations": 8,
+      "egraph_enodes": 200,
+      "egraph_rule_applications": 500
+    },
+    "status": "PROVIDER_CANDIDATES_PLANNED",
+    "selected": null,
+    "relation_graph": {
+      "edges": []
+    },
+    "decision_provenance": [
+      {
+        "candidate_count": 12,
+        "event": "BROAD_RETRIEVAL",
+        "motifs": []
+      }
+    ]
+  },
+  "provider_candidate": null,
+  "selected_provider": null,
+  "generation_decision": null,
+  "algorithm_ir": null,
+  "generated_language": null,
+  "generated_source_fingerprint": null,
+  "observed_implementation_ir": null,
+  "reconstructed_math_ir": null,
+  "reconstructed_structural_quotient": null,
+  "structural_isomorphism_status": null,
+  "structural_isomorphism_witness": null,
+  "exact_egraph_status": null,
+  "relation_graph_status": {
+    "status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+    "edges": []
+  },
+  "assumptions": [],
+  "error_range_evidence": null,
+  "final_reconstruction_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+  "implementation_provenance": {
+    "temporary_assignments": [],
+    "inline_expansions": [],
+    "status": "NOT_CAPTURED_NO_GENERATED_IMPLEMENTATION"
+  },
+  "loop_reduction_provenance": {
+    "loop_variable": null,
+    "initialization": null,
+    "update": null,
+    "termination": null,
+    "reduction_operation": null,
+    "body_dependency": null,
+    "order": null,
+    "status": "NOT_CAPTURED_NO_GENERATED_IMPLEMENTATION"
+  },
+  "semantic_fingerprint": "8150c0e1affbc13dc624cbe151f1459051058689f352a9a667b863236a35e006",
+  "external_source_retained": false,
+  "unavailable_reasons": {
+    "selected_provider": "NO_RIGOROUS_PROVIDER_SELECTION_WAS_PERFORMED",
+    "generation_decision": "NO_PROVIDER_SELECTION_DECISION_WAS_PERFORMED",
+    "generated_language": "NO_SOURCE_WAS_GENERATED_FOR_THIS_ASSURANCE_CASE",
+    "generated_source_fingerprint": "NO_SOURCE_WAS_GENERATED_FOR_THIS_ASSURANCE_CASE",
+    "observed_implementation_ir": "NO_GENERATED_SOURCE_WAS_INDEPENDENTLY_REANALYZED",
+    "reconstructed_math_ir": "NO_GENERATED_SOURCE_WAS_INDEPENDENTLY_REANALYZED",
+    "reconstructed_structural_quotient": "RECONSTRUCTED_MATH_IR_UNAVAILABLE",
+    "structural_isomorphism_status": "THEORY_RECONSTRUCTED_IR_PAIR_UNAVAILABLE",
+    "structural_isomorphism_witness": "THEORY_RECONSTRUCTED_IR_PAIR_UNAVAILABLE",
+    "error_range_evidence": "NO_CERTIFIED_ERROR_OR_RANGE_EVIDENCE_WAS_PRODUCED",
+    "provider_candidate": "EXPECTED_PROVIDER_NOT_RETRIEVED_OR_NOT_APPLICABLE",
+    "algorithm_ir": "NO_PROVIDER_ALGORITHM_CONTRACT_AVAILABLE",
+    "exact_egraph_status": "NO_PROVIDER_COMPARISON_WAS_PERFORMED"
+  },
+  "artifact_payload_hash": "fb7c99cab33f2ee95a5aee00c1f9bba7bd39b2bd0a6a4a90067870065fc6ac55"
+}

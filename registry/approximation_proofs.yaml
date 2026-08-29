@@ -1,0 +1,177 @@
+schema_version: "0.1"
+proofs:
+  - &forward
+    family_id: forward_difference_first_derivative
+    theorem_id: forward_difference_error_bound_v1
+    target_operator: "Derivative(order=1)"
+    approximation_expression: "(f(x+h)-f(x))/h"
+    domain: {required_interval: "[x,x+h]", stencil_region: boundary_or_interior}
+    parameters: {step: h, derivative_bound: M, exponent: 1}
+    assumptions:
+      - {assumption_id: positive_step, kind: STEP_CONDITION, statement: "0 < h", lean_type: "0 < h", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: domain_interval, kind: DOMAIN_CONDITION, statement: "[x,x+h] is contained in the function domain", lean_type: "Set.Icc x (x+h) ⊆ domain", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: second_derivative_bound, kind: SMOOTHNESS_BOUND, statement: "the second derivative norm is bounded by M on [x,x+h]", lean_type: "∀ y ∈ Set.Icc x (x+h), ‖iteratedDerivWithin 2 f domain y‖ ≤ M", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: first_order_taylor_remainder, kind: TAYLOR_REMAINDER, statement: "the first-order Taylor remainder is bounded by M|h|²/2", lean_type: "TaylorRemainderBound f x d h M (1/2)", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+    error_expression: "abs(forwardDifference(f,x,h)-f'(x))"
+    error_bound: "(M/2)*abs(h)"
+    bound_constant: "M/2"
+    convergence_order: 1
+    proof_status: KERNEL_VERIFIED_ERROR_BOUND_UNDER_ASSUMPTIONS
+    convergence_status: KERNEL_VERIFIED_CONVERGENCE_UNDER_ASSUMPTIONS
+    lean_theorem_name: CppAudit.Approximation.forward_difference_error_bound
+    lean_convergence_theorem: CppAudit.Approximation.polynomial_error_bound_implies_convergence
+    lean_source_hash: null
+    provenance: {proof_source: lean/CppAudit/Approximation/FiniteDifference.lean, mathlib_dependency: Mathlib.Analysis.Calculus.Taylor.taylor_mean_remainder_bound, proof_uses_selection_metadata: false}
+  - <<: *forward
+    family_id: backward_difference_first_derivative
+    theorem_id: backward_difference_error_bound_v1
+    approximation_expression: "(f(x)-f(x-h))/h"
+    domain: {required_interval: "[x-h,x]", stencil_region: boundary_or_interior}
+    assumptions:
+      - {assumption_id: positive_step, kind: STEP_CONDITION, statement: "0 < h", lean_type: "0 < h", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: domain_interval, kind: DOMAIN_CONDITION, statement: "[x-h,x] is contained in the function domain", lean_type: "Set.Icc (x-h) x ⊆ domain", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: second_derivative_bound, kind: SMOOTHNESS_BOUND, statement: "the second derivative norm is bounded by M on [x-h,x]", lean_type: "∀ y ∈ Set.Icc (x-h) x, ‖iteratedDerivWithin 2 f domain y‖ ≤ M", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: first_order_taylor_remainder, kind: TAYLOR_REMAINDER, statement: "the backward first-order Taylor remainder is bounded by M|h|²/2", lean_type: "TaylorRemainderBound f x d (-h) M (1/2)", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+    error_expression: "abs(backwardDifference(f,x,h)-f'(x))"
+    lean_theorem_name: CppAudit.Approximation.backward_difference_error_bound
+  - <<: *forward
+    family_id: central_difference_first_derivative
+    theorem_id: central_difference_first_error_bound_v1
+    approximation_expression: "(f(x+h)-f(x-h))/(2*h)"
+    domain: {required_interval: "[x-h,x+h]", stencil_region: interior}
+    parameters: {step: h, third_derivative_bound: M, exponent: 2}
+    assumptions:
+      - {assumption_id: positive_step, kind: STEP_CONDITION, statement: "0 < h", lean_type: "0 < h", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: interior_domain, kind: DOMAIN_CONDITION, statement: "[x-h,x+h] is contained in the function domain", lean_type: "Set.Icc (x-h) (x+h) ⊆ domain", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: third_derivative_bound, kind: SMOOTHNESS_BOUND, statement: "the third derivative norm is bounded by M on [x-h,x+h]", lean_type: "∀ y ∈ Set.Icc (x-h) (x+h), ‖iteratedDerivWithin 3 f domain y‖ ≤ M", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: symmetric_third_order_remainders, kind: TAYLOR_REMAINDER, statement: "both signed second-order Taylor remainders are bounded by M|h|³/6", lean_type: "ThirdOrderTaylorRemainderBound f x d d2 h M (1/6) ∧ ThirdOrderTaylorRemainderBound f x d d2 (-h) M (1/6)", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+    error_expression: "abs(centralDifference(f,x,h)-f'(x))"
+    error_bound: "(M/6)*abs(h)^2"
+    bound_constant: "M/6"
+    convergence_order: 2
+    lean_theorem_name: CppAudit.Approximation.central_difference_error_bound
+  - &trapezoid
+    family_id: trapezoidal_rule
+    theorem_id: composite_trapezoidal_error_bound_v1
+    target_operator: Integral
+    approximation_expression: "compositeTrapezoidal(f,a,b,n)"
+    domain: {interval: "[a,b]", partition: uniform, composite: true}
+    parameters: {step: h, panels: n, width: "b-a", second_derivative_bound: M, exponent: 2}
+    assumptions:
+      - {assumption_id: nonnegative_step, kind: STEP_CONDITION, statement: "0 ≤ h", lean_type: "0 ≤ h", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: partition_relation, kind: PARTITION_CONDITION, statement: "b-a = n*h", lean_type: "width = n*h", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: second_derivative_bound, kind: SMOOTHNESS_BOUND, statement: "the second derivative norm is bounded by M on [a,b]", lean_type: "∀ x ∈ Set.Icc a b, ‖iteratedDerivWithin 2 f domain x‖ ≤ M", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: local_panel_error, kind: LOCAL_QUADRATURE_BOUND, statement: "every panel trapezoidal error is bounded by M*h³/12", lean_type: "∀ i, |localError i| ≤ M*h^3/12", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+    error_expression: "abs(compositeTrapezoidal(f,a,b,n)-integral(f,a,b))"
+    error_bound: "((b-a)*M/12)*h^2"
+    bound_constant: "(b-a)*M/12"
+    convergence_order: 2
+    proof_status: KERNEL_VERIFIED_ERROR_BOUND_UNDER_ASSUMPTIONS
+    convergence_status: KERNEL_VERIFIED_CONVERGENCE_UNDER_ASSUMPTIONS
+    lean_theorem_name: CppAudit.Approximation.composite_trapezoidal_error_bound
+    lean_convergence_theorem: CppAudit.Approximation.polynomial_error_bound_implies_convergence
+    lean_source_hash: null
+    provenance: {proof_source: lean/CppAudit/Approximation/Quadrature.lean, proof_dependency: Finset.abs_sum_le_sum_abs, proof_uses_selection_metadata: false}
+  - &nearest
+    family_id: nearest_neighbor_interpolation
+    theorem_id: nearest_lipschitz_error_bound_v1
+    target_operator: Interpolation
+    approximation_expression: "f(nearest_support(q))"
+    domain: {query_status: INTERPOLATION}
+    parameters: {lipschitz_constant: L, support_radius: radius, exponent: 1}
+    assumptions:
+      - {assumption_id: interpolation_domain, kind: DOMAIN_CONDITION, statement: "query is inside the interpolation domain", lean_type: "q ∈ domain", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: lipschitz_bound, kind: SMOOTHNESS_BOUND, statement: "f is L-Lipschitz on the support domain", lean_type: "|f q-f x| ≤ L*|q-x|", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: support_radius, kind: SUPPORT_CONDITION, statement: "|q-x| ≤ radius", lean_type: "|q-x| ≤ radius", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+    error_expression: "abs(f(q)-f(nearest_support(q)))"
+    error_bound: "L*radius"
+    bound_constant: L
+    convergence_order: 1
+    proof_status: KERNEL_VERIFIED_ERROR_BOUND_UNDER_ASSUMPTIONS
+    convergence_status: KERNEL_VERIFIED_CONVERGENCE_UNDER_ASSUMPTIONS
+    lean_theorem_name: CppAudit.Approximation.nearest_interpolation_error_bound
+    lean_convergence_theorem: CppAudit.Approximation.polynomial_error_bound_implies_convergence
+    lean_source_hash: null
+    provenance: {proof_source: lean/CppAudit/Approximation/Interpolation.lean, proof_uses_selection_metadata: false}
+  - <<: *nearest
+    family_id: linear_interpolation
+    theorem_id: linear_interpolation_error_bound_v1
+    approximation_expression: "(1-t)*f(x0)+t*f(x1)"
+    parameters: {second_derivative_bound: M, support_spacing: h, exponent: 2}
+    assumptions:
+      - {assumption_id: interpolation_domain, kind: DOMAIN_CONDITION, statement: "query is inside [x0,x1], not extrapolation", lean_type: "q ∈ Set.Icc x0 x1", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: second_derivative_bound, kind: SMOOTHNESS_BOUND, statement: "the second derivative norm is bounded by M on [x0,x1]", lean_type: "∀ x ∈ Set.Icc x0 x1, ‖iteratedDerivWithin 2 f domain x‖ ≤ M", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+      - {assumption_id: linear_remainder, kind: INTERPOLATION_REMAINDER, statement: "the linear interpolation remainder is bounded by M*h²/8", lean_type: "|implementation-exact| ≤ M*h^2/8", discharge_status: ASSUMPTION_UNRESOLVED, evidence: null}
+    error_expression: "abs(linearInterpolation(f,q)-f(q))"
+    error_bound: "(M/8)*h^2"
+    bound_constant: "M/8"
+    convergence_order: 2
+    lean_theorem_name: CppAudit.Approximation.linear_interpolation_error_bound_from_remainder
+  - family_id: central_difference_second_derivative
+    theorem_id: central_second_reference_v1
+    target_operator: "Derivative(order=2)"
+    approximation_expression: "(f(x+h)-2*f(x)+f(x-h))/h^2"
+    domain: {required_interval: "[x-h,x+h]", stencil_region: interior}
+    parameters: {step: h, fourth_derivative_bound: M, exponent: 2}
+    assumptions: []
+    error_expression: "abs(secondCentralDifference(f,x,h)-f''(x))"
+    error_bound: null
+    bound_constant: null
+    convergence_order: 2
+    proof_status: REFERENCE_THEOREM_ONLY
+    convergence_status: CONVERGENCE_NOT_PROVEN
+    lean_theorem_name: null
+    lean_convergence_theorem: null
+    lean_source_hash: null
+    provenance: {proof_source: reference_only, proof_uses_selection_metadata: false}
+  - &referenceQuadrature
+    family_id: left_rectangle_rule
+    theorem_id: left_rectangle_reference_v1
+    target_operator: Integral
+    approximation_expression: leftRectangle
+    domain: {interval: "[a,b]", partition: uniform}
+    parameters: {step: h, exponent: 1}
+    assumptions: []
+    error_expression: rectangle_error
+    error_bound: null
+    bound_constant: null
+    convergence_order: 1
+    proof_status: REFERENCE_THEOREM_ONLY
+    convergence_status: CONVERGENCE_NOT_PROVEN
+    lean_theorem_name: null
+    lean_convergence_theorem: null
+    lean_source_hash: null
+    provenance: {proof_source: reference_only, proof_uses_selection_metadata: false}
+  - <<: *referenceQuadrature
+    family_id: right_rectangle_rule
+    theorem_id: right_rectangle_reference_v1
+    approximation_expression: rightRectangle
+  - <<: *referenceQuadrature
+    family_id: midpoint_rule
+    theorem_id: midpoint_reference_v1
+    approximation_expression: midpointRule
+    parameters: {step: h, exponent: 2}
+    convergence_order: 2
+  - <<: *referenceQuadrature
+    family_id: simpson_rule
+    theorem_id: simpson_reference_v1
+    approximation_expression: compositeSimpson
+    parameters: {step: h, exponent: 4, parity: even}
+    convergence_order: 4
+  - family_id: multilinear_interpolation
+    theorem_id: multilinear_reference_v1
+    target_operator: Interpolation
+    approximation_expression: multilinearInterpolation
+    domain: {query_status: INTERPOLATION, dimensions: n}
+    parameters: {support_spacing_per_axis: h}
+    assumptions: []
+    error_expression: multilinear_error
+    error_bound: null
+    bound_constant: null
+    convergence_order: 2
+    proof_status: REFERENCE_THEOREM_ONLY
+    convergence_status: CONVERGENCE_NOT_PROVEN
+    lean_theorem_name: null
+    lean_convergence_theorem: null
+    lean_source_hash: null
+    provenance: {proof_source: reference_only, proof_uses_selection_metadata: false}

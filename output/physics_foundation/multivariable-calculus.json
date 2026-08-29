@@ -1,0 +1,235 @@
+{
+  "definitions": [
+    {
+      "definition_id": "gradient",
+      "expansion": {
+        "definition": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Derivative",
+          "variable": {
+            "indices": [
+              "i"
+            ],
+            "name": "x",
+            "op": "IndexedValue"
+          }
+        },
+        "indices": [
+          "i"
+        ],
+        "name": "grad_f",
+        "op": "IndexedValue"
+      },
+      "expression": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Gradient"
+      },
+      "name": "Gradient by partial derivatives",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    },
+    {
+      "definition_id": "jacobian",
+      "expansion": {
+        "definition": {
+          "function": {
+            "indices": [
+              "i"
+            ],
+            "name": "F",
+            "op": "IndexedValue"
+          },
+          "op": "Derivative",
+          "variable": {
+            "indices": [
+              "j"
+            ],
+            "name": "x",
+            "op": "IndexedValue"
+          }
+        },
+        "indices": [
+          "i",
+          "j"
+        ],
+        "name": "J_F",
+        "op": "IndexedValue"
+      },
+      "expression": {
+        "function": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "Jacobian"
+      },
+      "name": "Jacobian by component partials",
+      "references": [
+        "ref.multivariable-calculus"
+      ]
+    },
+    {
+      "definition_id": "hessian",
+      "expansion": {
+        "definition": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Derivative",
+          "order": 2,
+          "variables": [
+            "x_i",
+            "x_j"
+          ]
+        },
+        "indices": [
+          "i",
+          "j"
+        ],
+        "name": "H_f",
+        "op": "IndexedValue"
+      },
+      "expression": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Hessian"
+      },
+      "name": "Hessian by mixed partials",
+      "references": [
+        "ref.multivariable-calculus"
+      ]
+    },
+    {
+      "definition_id": "directional_derivative",
+      "expansion": {
+        "args": [
+          {
+            "name": "v",
+            "op": "PatternVariable"
+          },
+          {
+            "function": {
+              "name": "f",
+              "op": "PatternVariable"
+            },
+            "op": "Gradient"
+          }
+        ],
+        "op": "Dot"
+      },
+      "expression": {
+        "direction": {
+          "name": "v",
+          "op": "PatternVariable"
+        },
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "DirectionalDerivative"
+      },
+      "name": "Directional derivative",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    }
+  ],
+  "realizations": [],
+  "schema_version": "1.0",
+  "theorems": [
+    {
+      "assumptions": [
+        "continuous_second_partials_on_neighborhood"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Derivative",
+        "variables": [
+          "x",
+          "y"
+        ]
+      },
+      "name": "Schwarz mixed-partial theorem",
+      "references": [
+        "ref.multivariable-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Derivative",
+        "variables": [
+          "y",
+          "x"
+        ]
+      },
+      "theorem_id": "mixed_partial_symmetry"
+    },
+    {
+      "assumptions": [
+        "F_differentiable",
+        "G_differentiable",
+        "domain_composable"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "function": {
+          "args": [
+            {
+              "name": "F",
+              "op": "PatternVariable"
+            },
+            {
+              "name": "G",
+              "op": "PatternVariable"
+            }
+          ],
+          "op": "FunctionComposition"
+        },
+        "op": "Derivative"
+      },
+      "name": "Multivariable chain rule",
+      "references": [
+        "ref.multivariable-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "args": [
+          {
+            "function": {
+              "name": "F",
+              "op": "PatternVariable"
+            },
+            "op": "Jacobian"
+          },
+          {
+            "function": {
+              "name": "G",
+              "op": "PatternVariable"
+            },
+            "op": "Jacobian"
+          }
+        ],
+        "op": "MatMul"
+      },
+      "theorem_id": "multivariable_chain_rule"
+    }
+  ]
+}

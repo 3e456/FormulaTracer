@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/provenance-assurance-report.schema.json",
+  "type": "object",
+  "required": ["cases", "coverage", "release_gates", "status"],
+  "properties": {
+    "cases": {"type": "array", "items": {"type": "object", "required": ["case_id", "category", "mutation", "expected", "actual", "detected", "false_acceptance"]}},
+    "coverage": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "release_gates": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "status": {"enum": ["PROVENANCE_ASSURANCE_PASSED", "CRITICAL_ASSURANCE_FAILURE"]}
+  },
+  "additionalProperties": false
+}

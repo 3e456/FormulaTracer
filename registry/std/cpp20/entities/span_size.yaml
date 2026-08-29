@@ -1,0 +1,19 @@
+schema_version: "0.1"
+entity_id: std.span.size
+standard_version: cpp20
+header: span
+qualified_name: std::span::size
+kind: member_function
+signature: "constexpr size_type size() const noexcept"
+template_parameters: []
+effect: Pure
+semantic_family: Extent
+preconditions: [object_lifetime_valid]
+postconditions: [returns_number_of_elements]
+exceptions: []
+aliasing: {returns_alias_of_input: false}
+iterator_requirements: []
+complexity: constant
+lowering: {op: Extent}
+proof_status: CONTRACT_VERIFIED
+source_reference: "ISO C++20 [span.obs]"

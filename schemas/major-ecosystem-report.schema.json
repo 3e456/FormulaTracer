@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/major-ecosystem-report.schema.json",
+  "type": "object",
+  "required": ["contracts", "coverage", "status", "provenance"],
+  "properties": {
+    "contracts": {"type": "array", "items": {"type": "object", "required": ["contract_id", "language", "package", "version", "qualified_name", "semantic_family", "mathematical_ir", "execution_metadata", "classification", "family_reuse", "official_reference", "reference_status"]}},
+    "coverage": {"type": "object", "required": ["total", "formal_semantic_contract", "reference_only_contract", "not_applicable", "reference_insufficient", "existing_family_reuse", "new_semantic_families_required", "by_language", "by_package"]},
+    "status": {"const": "DETERMINISTIC_CLASSIFICATION_COMPLETE"},
+    "provenance": {"type": "object"}
+  },
+  "additionalProperties": false
+}

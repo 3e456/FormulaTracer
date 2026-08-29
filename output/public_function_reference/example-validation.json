@@ -1,0 +1,18 @@
+{
+  "examples": [
+    "Bilingual class/function arguments and return values",
+    "Python code-first audit",
+    "user declaration match/mismatch",
+    "Rust native compare",
+    "C native lifecycle",
+    "C++ RAII lifecycle",
+    "physics vector/rotation/transform metadata"
+  ],
+  "executed_by": [
+    "examples/api_reference_usage.py",
+    "tests/test_public_function_reference.py",
+    "tools/run_native_cpp_tests.py"
+  ],
+  "failed": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0",
+  "wave": 3,
+  "name": "wave3-numerical",
+  "status": "COMPLETE",
+  "owners_before": [
+    "cpp_audit.ieee754",
+    "cpp_audit.interval",
+    "cpp_audit.probability"
+  ],
+  "semantic_symbols_before": 60,
+  "symbols_before": 118,
+  "symbols_migrated": [
+    "cpp_audit.ieee754.analyze_ieee754",
+    "cpp_audit.interval.Interval.singleton",
+    "cpp_audit.interval._constraint_status",
+    "cpp_audit.interval._contains_zero",
+    "cpp_audit.interval._result",
+    "cpp_audit.interval.interval_abs",
+    "cpp_audit.interval.interval_add",
+    "cpp_audit.interval.interval_div",
+    "cpp_audit.interval.interval_hull",
+    "cpp_audit.interval.interval_mul",
+    "cpp_audit.interval.interval_neg",
+    "cpp_audit.interval.interval_power",
+    "cpp_audit.interval.interval_sub",
+    "cpp_audit.interval.simplify_expression",
+    "cpp_audit.interval.singleton",
+    "cpp_audit.interval.unresolved_interval",
+    "cpp_audit.probability.audit_probability",
+    "cpp_audit.probability.classify_random_source",
+    "cpp_audit.probability.extract_estimator",
+    "cpp_audit.probability.monte_carlo_estimate"
+  ],
+  "symbols_reclassified": [
+    {
+      "symbol": "cpp_audit.interval.InputRange.count",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.InputRange.interval",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.Interval.__post_init__",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.Interval.resolved",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine.__init__",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine._condition",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine._count",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine._elementary",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine._indexed",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine._reduced_dimensions",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine._refine",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine._resolve_name",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine.evaluate",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine.obligation",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalEngine.record",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.IntervalPropagation.__post_init__",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.RangeSpecification.constraint",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.RangeSpecification.from_value",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval.RangeSpecification.resolve",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval._bound",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.interval._down",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.interval._endpoint",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.interval._error_interval",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval._execution_checks",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval._expr",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.interval._id",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval._input_range",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.interval._number",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.interval._numeric_binary",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.interval._output_constraint",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.interval._same",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.interval._serial",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval._set_dimensions",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.interval._up",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.interval.analyze_project_ranges",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.probability.ProbabilityAuditResult.write_latex",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.probability._id",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.probability._numeric_function",
+      "classification": "VALIDATION_ONLY"
+    },
+    {
+      "symbol": "cpp_audit.probability._serial",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.probability._target_cdf",
+      "classification": "VALIDATION_ONLY"
+    }
+  ],
+  "symbols_remaining": [],
+  "rust_parity": "PASS",
+  "false_acceptance": 0,
+  "reachability": {
+    "production_semantic": 0,
+    "dynamic_unresolved": 0
+  },
+  "dependency_edges": [
+    {
+      "source": "cpp_audit.ieee754",
+      "target": "cpp_audit.core"
+    },
+    {
+      "source": "cpp_audit.ieee754",
+      "target": "cpp_audit.numeric_types"
+    },
+    {
+      "source": "cpp_audit.interval",
+      "target": "cpp_audit.core"
+    }
+  ],
+  "sccs": {
+    "cpp_audit.ieee754": 3,
+    "cpp_audit.interval": 4,
+    "cpp_audit.probability": 8
+  },
+  "order_rationale": "Each remaining owner is a singleton SCC. Dependencies are migrated before consumers; frontend extraction may remain Python while all semantic decisions move native.",
+  "symbols_initial": [
+    "cpp_audit.ieee754.analyze_ieee754",
+    "cpp_audit.interval.InputRange.count",
+    "cpp_audit.interval.InputRange.interval",
+    "cpp_audit.interval.Interval.__post_init__",
+    "cpp_audit.interval.Interval.resolved",
+    "cpp_audit.interval.Interval.singleton",
+    "cpp_audit.interval.IntervalEngine.__init__",
+    "cpp_audit.interval.IntervalEngine._condition",
+    "cpp_audit.interval.IntervalEngine._count",
+    "cpp_audit.interval.IntervalEngine._elementary",
+    "cpp_audit.interval.IntervalEngine._indexed",
+    "cpp_audit.interval.IntervalEngine._reduced_dimensions",
+    "cpp_audit.interval.IntervalEngine._refine",
+    "cpp_audit.interval.IntervalEngine._resolve_name",
+    "cpp_audit.interval.IntervalEngine.evaluate",
+    "cpp_audit.interval.IntervalEngine.obligation",
+    "cpp_audit.interval.IntervalEngine.record",
+    "cpp_audit.interval.IntervalPropagation.__post_init__",
+    "cpp_audit.interval.RangeSpecification.constraint",
+    "cpp_audit.interval.RangeSpecification.from_value",
+    "cpp_audit.interval.RangeSpecification.resolve",
+    "cpp_audit.interval._bound",
+    "cpp_audit.interval._constraint_status",
+    "cpp_audit.interval._contains_zero",
+    "cpp_audit.interval._down",
+    "cpp_audit.interval._endpoint",
+    "cpp_audit.interval._error_interval",
+    "cpp_audit.interval._execution_checks",
+    "cpp_audit.interval._expr",
+    "cpp_audit.interval._id",
+    "cpp_audit.interval._input_range",
+    "cpp_audit.interval._number",
+    "cpp_audit.interval._numeric_binary",
+    "cpp_audit.interval._output_constraint",
+    "cpp_audit.interval._result",
+    "cpp_audit.interval._same",
+    "cpp_audit.interval._serial",
+    "cpp_audit.interval._set_dimensions",
+    "cpp_audit.interval._up",
+    "cpp_audit.interval.analyze_project_ranges",
+    "cpp_audit.interval.interval_abs",
+    "cpp_audit.interval.interval_add",
+    "cpp_audit.interval.interval_div",
+    "cpp_audit.interval.interval_hull",
+    "cpp_audit.interval.interval_mul",
+    "cpp_audit.interval.interval_neg",
+    "cpp_audit.interval.interval_power",
+    "cpp_audit.interval.interval_sub",
+    "cpp_audit.interval.simplify_expression",
+    "cpp_audit.interval.singleton",
+    "cpp_audit.interval.unresolved_interval",
+    "cpp_audit.probability.ProbabilityAuditResult.write_latex",
+    "cpp_audit.probability._id",
+    "cpp_audit.probability._numeric_function",
+    "cpp_audit.probability._serial",
+    "cpp_audit.probability._target_cdf",
+    "cpp_audit.probability.audit_probability",
+    "cpp_audit.probability.classify_random_source",
+    "cpp_audit.probability.extract_estimator",
+    "cpp_audit.probability.monte_carlo_estimate"
+  ],
+  "parity_artifacts": [
+    "output/native_migration/final/waves/wave3-ieee754-parity.json",
+    "output/native_migration/final/waves/wave3-interval-parity.json",
+    "output/native_migration/final/waves/wave3-probability-parity.json"
+  ]
+}

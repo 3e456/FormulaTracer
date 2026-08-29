@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "c_abi_cpp_conformance": {
+    "schema_version": "1.0",
+    "interop_contract": "STABLE_C_ABI_V1",
+    "bindings": {
+      "c": "DIRECT_C_ABI",
+      "cpp": "THIN_RAII_OVER_C_ABI",
+      "python": "THIN_ERGONOMIC_OVER_C_ABI",
+      "rust": "NATIVE_API_SAME_CORE"
+    },
+    "semantic_implementation_count": 1,
+    "generated_research_code_languages": [
+      "Python",
+      "Rust",
+      "C++"
+    ],
+    "tooling_limitation": "CMake 3.31 crashes after MSVC detection in this Unicode workspace; direct MSVC conformance is authoritative for this host",
+    "passed": true,
+    "steps": [
+      {
+        "command": [
+          "<LOCAL_PATH>",
+          "/nologo",
+          "/W4",
+          "/std:c17",
+          "/I<PROJECT_ROOT>\\include",
+          "<PROJECT_ROOT>\\tests\\native\\c_api_test.c",
+          "<PROJECT_ROOT>\\target\\debug\\formulatracer_c_api.dll.lib",
+          "/Fo:<PROJECT_ROOT>\\build\\native-api-tests-msvc\\c_api_test.obj",
+          "/Fe:<PROJECT_ROOT>\\build\\native-api-tests-msvc\\formulatracer_c_api_test.exe"
+        ],
+        "returncode": 0,
+        "stdout": "c_api_test.c\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "<LOCAL_PATH>",
+          "/nologo",
+          "/W4",
+          "/EHsc",
+          "/std:c++20",
+          "/I<PROJECT_ROOT>\\include",
+          "<PROJECT_ROOT>\\tests\\native\\cpp_api_test.cpp",
+          "<PROJECT_ROOT>\\target\\debug\\formulatracer_c_api.dll.lib",
+          "/Fo:<PROJECT_ROOT>\\build\\native-api-tests-msvc\\cpp_api_test.obj",
+          "/Fe:<PROJECT_ROOT>\\build\\native-api-tests-msvc\\formulatracer_cpp_api_test.exe"
+        ],
+        "returncode": 0,
+        "stdout": "cpp_api_test.cpp\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "<PROJECT_ROOT>\\build\\native-api-tests-msvc\\formulatracer_c_api_test.exe"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "<PROJECT_ROOT>\\build\\native-api-tests-msvc\\formulatracer_cpp_api_test.exe"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  },
+  "python_rust_semantic_cases": 1056,
+  "semantic_matches": 1056,
+  "tex_matches": 1056,
+  "false_acceptance": 0
+}

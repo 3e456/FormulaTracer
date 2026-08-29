@@ -1,0 +1,22 @@
+{
+  "categories": {
+    "CALLBACK": 2,
+    "CONTAINER": 1,
+    "CONTROL_FLOW": 1,
+    "DYNAMIC_DISPATCH": 1,
+    "GENUINELY_UNSUPPORTED": 4,
+    "INTERPROCEDURAL": 2,
+    "OPAQUE": 1,
+    "PROVIDER_CONTRACT": 3,
+    "SHAPE_INDEX": 2
+  },
+  "corpus": "PUBLIC_SYNTHETIC_ONLY",
+  "priority": [
+    "PROVIDER_CONTRACT",
+    "INTERPROCEDURAL",
+    "CALLBACK",
+    "SHAPE_INDEX"
+  ],
+  "private_corpus_used": false,
+  "schema_version": "1.0"
+}

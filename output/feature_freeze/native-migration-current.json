@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-08-28",
+  "baseline_sha": "1426247d7378a50b120866c72e7a50dd1a5f77f2",
+  "status": "FEATURE_FREEZE_BLOCKED",
+  "feature_freeze_ready": false,
+  "critical_false_acceptance_open": 0,
+  "completed_in_this_pass": [
+    "semantic-noise invariance regression",
+    "semantic-string no-execution fail-closed boundary",
+    "explicit custom operator overload fail-closed boundary",
+    "native TeX structural binder expansion",
+    "native integrity-protected AuditBundle candidate and C ABI projection",
+    "complete Python module/symbol retirement inventory",
+    "sealed 20-case reconstruction root-cause taxonomy"
+  ],
+  "components": [
+    {
+      "component": "fundamental_ir_and_schema_bridge",
+      "python_reference": "python IR dataclasses/dicts",
+      "rust_status": "COMPLETE_CANDIDATE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "canonicalization_and_symbol_isomorphism",
+      "python_reference": "math_surface.generalize/canonical_equal",
+      "rust_status": "DIFFERENTIAL_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "numeral_and_bitvector",
+      "python_reference": "bitvector.py",
+      "rust_status": "EXHAUSTIVE_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "fact_constraint_engine",
+      "python_reference": "equality_saturation.MathematicalFactEngine",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "exact_egraph",
+      "python_reference": "equality_saturation.TypedEGraph",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "relation_graph",
+      "python_reference": "equality_saturation.MathematicalRelationGraph",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "typed_unification",
+      "python_reference": "math_surface.typed_unify",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "knowledge_and_provider_pack_engine",
+      "python_reference": "registry and generation_planning",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "approximation_error_range",
+      "python_reference": "approximation/error/interval modules",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "provenance_cache_debugger",
+      "python_reference": "research_provenance/semantic_debugger",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "tex_renderer",
+      "python_reference": "math_surface.to_tex",
+      "rust_status": "DIFFERENTIAL_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "tex_parser",
+      "python_reference": "math_surface.parse_tex",
+      "rust_status": "EXPANDED_FAIL_CLOSED_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false,
+      "accepted_roles": [
+        "arithmetic",
+        "fraction",
+        "unambiguous_power",
+        "function_application",
+        "finite_sum",
+        "infinite_series",
+        "finite_product",
+        "infinite_product",
+        "definite_integral",
+        "limit",
+        "ordinary_derivative"
+      ],
+      "note": "Piecewise and declaration-driven standalone indexed notation remain open; ambiguity is rejected."
+    },
+    {
+      "component": "verification_result",
+      "python_reference": "Python presentation wrappers",
+      "rust_status": "NATIVE_STRUCTURED_RESULT_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "mathematical_function",
+      "python_reference": "no retired Python semantic equivalent",
+      "rust_status": "NATIVE_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "tex_certificate",
+      "python_reference": "audit_execution presentation",
+      "rust_status": "NATIVE_STRUCTURED_CERTIFICATE_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "audit_bundle",
+      "python_reference": "assurance_release AuditBundle",
+      "rust_status": "NATIVE_INTEGRITY_PROTECTED_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false,
+      "note": "Native object/C ABI/Python facade implemented; legacy Python bundle differential and retirement remain open."
+    },
+    {
+      "component": "python_frontends",
+      "python_reference": "Python AST/CFG/project adapters",
+      "rust_status": "INTENTIONALLY_RETAINED_FRONTEND",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "cpp_clang_frontend",
+      "python_reference": "Clang 18 adapter",
+      "rust_status": "INTENTIONALLY_RETAINED_FRONTEND",
+      "semantic_match": false,
+      "python_retired": false
+    }
+  ],
+  "blockers": [
+    "35 Python modules still require native differential and retirement",
+    "fact/constraint, exact e-graph, relation, unification, pack, error/range, provenance/cache/debugger parity gates remain open",
+    "native TeX piecewise and declaration-driven indexed notation are incomplete",
+    "external Formula-to-Code-to-Formula reconstruction remains unresolved for 20 sealed outcomes",
+    "native AuditBundle has no legacy Python bundle differential gate yet"
+  ],
+  "gate_policy": "No migration, retirement, reconstruction, or RC gate is promoted without measured differential evidence."
+}

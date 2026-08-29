@@ -1,0 +1,1766 @@
+{
+  "contracts": [
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:51d4cf033f519781",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reduction(Add)",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.sum",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:faf216c1758f2a63",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reduction(Multiply)",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.prod",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:b12bbe1233f994da",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Mean",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.mean",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:f4943d0453dbeb08",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "TensorContraction",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.matmul",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:26de974088e80cff",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Dot",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.dot",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:16beb2704114d0e7",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reshape",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.reshape",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:67ae338a3066e80b",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Transpose",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.transpose",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:5c255e097ce9065e",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "IfThenElse",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.where",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Selection",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:ac7c4493bf348caf",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Abs",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.abs",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:ce563ec3021984cc",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Sqrt",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.sqrt",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:2620fe208ec1e684",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Log",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.log",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:f33d5da45af520d2",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Exp",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.numpy.exp",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:c106200d90ce64c7",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reduction(Add)",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.sum",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:a22f73980a7386c0",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reduction(Multiply)",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.prod",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:5d212a6dd0a806d0",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Mean",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.mean",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:d24e263b38a9c97a",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "TensorContraction",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.matmul",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:63a6516952336040",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Dot",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.dot",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:0b8e1a6309100f08",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reshape",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.reshape",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:774ac210c12d87cd",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Transpose",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.transpose",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:dd34a2e4df3722b6",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "IfThenElse",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.where",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Selection",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:a806e363eb4ddff8",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Abs",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.abs",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:b9770f375f653a17",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Sqrt",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.sqrt",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:b374c2f73f2997db",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Log",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.log",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:5b11ce4a9d928375",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Exp",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.exp",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:c23dbe68597c03a3",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reduction(Add)",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.sum",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:ef83e13249abfc55",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reduction(Multiply)",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.prod",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:b6f549a0942c74b1",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Mean",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.mean",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:2e6517451c1d5d42",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "TensorContraction",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.matmul",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:17741be64f2ca881",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Dot",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.dot",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:149ca8f775fcdd51",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Reshape",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.reshape",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:c9dbf04044d12fbc",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Transpose",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.transpose",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:7243343c7743413c",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "IfThenElse",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.where",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Selection",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:e6c63113e56cc6c6",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Abs",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.abs",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:c70f52c4396187b7",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Sqrt",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.sqrt",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:197abbfc0b834fdc",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Log",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.log",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:3d731d7106969304",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "python",
+      "mathematical_ir": "Exp",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/index.html",
+      "package": "cupy",
+      "qualified_name": "cupy.exp",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ElementaryFunction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:e19ba2dacadd8c8c",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Derivative",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.grad",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "AutodiffBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:887f22198d7cdbe3",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "IdentityOnMathematicalSemantics",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.jit",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "JITBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:9d0e4bef311bc787",
+      "execution_metadata": {
+        "array_model": "IMMUTABLE",
+        "autodiff": true,
+        "backend": "JIT_DEVICE"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "IdentityOnValues",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "qualified_name": "jax.device_put",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "DeviceTransfer",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:46b0cb8f60046da1",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Derivative",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.autograd.grad",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "AutodiffBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:6e140935b139465f",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "IdentityOnMathematicalSemantics",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.compile",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "JITBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:5248bfc49af9bf64",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE",
+        "device": "CPU_OR_ACCELERATOR"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "IdentityOrCast",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "qualified_name": "torch.Tensor.to",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "DeviceTransfer",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:127408bf5253ed26",
+      "execution_metadata": {
+        "backend": "JIT_CPU_OR_CUDA",
+        "compiler_boundary": true
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "IdentityOnMathematicalSemantics",
+      "official_reference": "https://numba.readthedocs.io/en/stable/reference/index.html",
+      "package": "numba",
+      "qualified_name": "numba.jit",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "JITBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:16acc03eee23607c",
+      "execution_metadata": {
+        "backend": "JIT_CPU_OR_CUDA",
+        "compiler_boundary": true
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "IdentityOnMathematicalSemantics",
+      "official_reference": "https://numba.readthedocs.io/en/stable/reference/index.html",
+      "package": "numba",
+      "qualified_name": "numba.njit",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "JITBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:7bd9bbb58fa3fb0c",
+      "execution_metadata": {
+        "backend": "JIT_CPU_OR_CUDA",
+        "compiler_boundary": true
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "IdentityOnMathematicalSemantics",
+      "official_reference": "https://numba.readthedocs.io/en/stable/reference/index.html",
+      "package": "numba",
+      "qualified_name": "numba.vectorize",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "JITBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:556fcb1b90e99dd2",
+      "execution_metadata": {
+        "backend": "JIT_CPU_OR_CUDA",
+        "compiler_boundary": true
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "FiniteIteration",
+      "official_reference": "https://numba.readthedocs.io/en/stable/reference/index.html",
+      "package": "numba",
+      "qualified_name": "numba.prange",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ParallelExecution",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:176a29817d433ae1",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "EquivalentExpression",
+      "official_reference": "https://docs.sympy.org/latest/reference/index.html",
+      "package": "sympy",
+      "qualified_name": "sympy.simplify",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "SymbolicAlgebra",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:825354bfdb8b2dce",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Derivative",
+      "official_reference": "https://docs.sympy.org/latest/reference/index.html",
+      "package": "sympy",
+      "qualified_name": "sympy.diff",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "SymbolicAlgebra",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:ea0163b8b66982ab",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Integral",
+      "official_reference": "https://docs.sympy.org/latest/reference/index.html",
+      "package": "sympy",
+      "qualified_name": "sympy.integrate",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "SymbolicAlgebra",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:54efed779341e9cd",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "SolutionSet",
+      "official_reference": "https://docs.sympy.org/latest/reference/index.html",
+      "package": "sympy",
+      "qualified_name": "sympy.solve",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "RootFindingRelation",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:cba03711a8cbf63e",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Estimator",
+      "official_reference": "https://scikit-learn.org/stable/api/index.html",
+      "package": "sklearn",
+      "qualified_name": "sklearn.Estimator.fit",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "EstimatorConstruction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:c70e28f6af984506",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Predictor",
+      "official_reference": "https://scikit-learn.org/stable/api/index.html",
+      "package": "sklearn",
+      "qualified_name": "sklearn.Estimator.predict",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Predictor",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:0a0ccbe377cd39d3",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Transformer",
+      "official_reference": "https://scikit-learn.org/stable/api/index.html",
+      "package": "sklearn",
+      "qualified_name": "sklearn.Estimator.transform",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Transformer",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:0a8dbd566a91dea7",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Metric",
+      "official_reference": "https://scikit-learn.org/stable/api/index.html",
+      "package": "sklearn",
+      "qualified_name": "sklearn.Estimator.score",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Metric",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:8a088b23b7809f89",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Estimator",
+      "official_reference": "https://www.statsmodels.org/stable/api.html",
+      "package": "statsmodels",
+      "qualified_name": "statsmodels.Estimator.fit",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "EstimatorConstruction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:4cab7307addf052e",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Predictor",
+      "official_reference": "https://www.statsmodels.org/stable/api.html",
+      "package": "statsmodels",
+      "qualified_name": "statsmodels.Estimator.predict",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Predictor",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:fe93ecdd1c0067ec",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Estimator",
+      "official_reference": "https://xgboost.readthedocs.io/en/stable/python/python_api.html",
+      "package": "xgboost",
+      "qualified_name": "xgboost.Estimator.fit",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "EstimatorConstruction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:3254dcd81a7af635",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Predictor",
+      "official_reference": "https://xgboost.readthedocs.io/en/stable/python/python_api.html",
+      "package": "xgboost",
+      "qualified_name": "xgboost.Estimator.predict",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Predictor",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:2b853be04402e39f",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Estimator",
+      "official_reference": "https://lightgbm.readthedocs.io/en/stable/Python-API.html",
+      "package": "lightgbm",
+      "qualified_name": "lightgbm.Estimator.fit",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "EstimatorConstruction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:2e2aade902c963f8",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Predictor",
+      "official_reference": "https://lightgbm.readthedocs.io/en/stable/Python-API.html",
+      "package": "lightgbm",
+      "qualified_name": "lightgbm.Estimator.predict",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Predictor",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:650c67084454711a",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Estimator",
+      "official_reference": "https://ml.dask.org/modules/api.html",
+      "package": "dask_ml",
+      "qualified_name": "dask_ml.Estimator.fit",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "EstimatorConstruction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:bd5ab73c4a4b1ccf",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Predictor",
+      "official_reference": "https://ml.dask.org/modules/api.html",
+      "package": "dask_ml",
+      "qualified_name": "dask_ml.Estimator.predict",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Predictor",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:aca8cb01c4ec7b47",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Transformer",
+      "official_reference": "https://ml.dask.org/modules/api.html",
+      "package": "dask_ml",
+      "qualified_name": "dask_ml.Estimator.transform",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Transformer",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:703326ee1ce12cc7",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "Metric",
+      "official_reference": "https://ml.dask.org/modules/api.html",
+      "package": "dask_ml",
+      "qualified_name": "dask_ml.Estimator.score",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Metric",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:88a31ed79acefa9e",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "GraphRelation",
+      "official_reference": "https://networkx.org/documentation/stable/reference/index.html",
+      "package": "networkx",
+      "qualified_name": "networkx.shortest_path",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "GraphAlgorithm",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:582bcb263ee93bf4",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "GraphRelation",
+      "official_reference": "https://networkx.org/documentation/stable/reference/index.html",
+      "package": "networkx",
+      "qualified_name": "networkx.pagerank",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "GraphAlgorithm",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:c4dd64d6bf205e1a",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "GraphRelation",
+      "official_reference": "https://networkx.org/documentation/stable/reference/index.html",
+      "package": "networkx",
+      "qualified_name": "networkx.connected_components",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "GraphAlgorithm",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:5757b925d65128c3",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "TableRelation",
+      "official_reference": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "package": "polars",
+      "qualified_name": "polars.DataFrame.select",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TableTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:6bcdfef22036edd3",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "TableRelation",
+      "official_reference": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "package": "polars",
+      "qualified_name": "polars.DataFrame.group_by",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TableTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:67d62a3049b0e2d4",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "TableRelation",
+      "official_reference": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "package": "polars",
+      "qualified_name": "polars.DataFrame.join",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TableTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:0ce3851f94c35c3e",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "OutputSink",
+      "official_reference": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "package": "polars",
+      "qualified_name": "polars.DataFrame.write_parquet",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "IOBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:3b4142c27c92d33d",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "TableRelation",
+      "official_reference": "https://arrow.apache.org/docs/python/api.html",
+      "package": "pyarrow",
+      "qualified_name": "pyarrow.Table.select",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TableTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:1e86c35591fdbc25",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "TableRelation",
+      "official_reference": "https://arrow.apache.org/docs/python/api.html",
+      "package": "pyarrow",
+      "qualified_name": "pyarrow.Table.join",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TableTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:e5dc4bc23b6fb303",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "OutputSink",
+      "official_reference": "https://arrow.apache.org/docs/python/api.html",
+      "package": "pyarrow",
+      "qualified_name": "pyarrow.parquet.write_table",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "IOBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:b24f88c1298cdcd6",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "OutputSink",
+      "official_reference": "https://docs.h5py.org/en/stable/high/dataset.html",
+      "package": "h5py",
+      "qualified_name": "h5py.File",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "IOBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:e6ee7a567c79fe55",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "TableRelation",
+      "official_reference": "https://docs.h5py.org/en/stable/high/dataset.html",
+      "package": "h5py",
+      "qualified_name": "h5py.Dataset.__getitem__",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TableTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:8bb3022e77a0fe15",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "OutputSink",
+      "official_reference": "https://docs.h5py.org/en/stable/high/dataset.html",
+      "package": "h5py",
+      "qualified_name": "h5py.Dataset.__setitem__",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "IOBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:904049d42e385300",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "OutputSink",
+      "official_reference": "https://zarr.readthedocs.io/en/stable/api.html",
+      "package": "zarr",
+      "qualified_name": "zarr.open",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "IOBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:f2d6bae8ce235622",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "TableRelation",
+      "official_reference": "https://zarr.readthedocs.io/en/stable/api.html",
+      "package": "zarr",
+      "qualified_name": "zarr.Array.__getitem__",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TableTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "REFERENCE_ONLY_CONTRACT",
+      "contract_id": "ecosystem-contract:b0ba60a80cba7b58",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "NEW_FAMILY_REQUIRED",
+      "language": "python",
+      "mathematical_ir": "OutputSink",
+      "official_reference": "https://zarr.readthedocs.io/en/stable/api.html",
+      "package": "zarr",
+      "qualified_name": "zarr.Array.__setitem__",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "IOBoundary",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:a2905b4c9433ca4c",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "execution_policy": "POLICY_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Reduction(Add)",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "qualified_name": "std::iter::Iterator::sum",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:b2d0d3a951ac9e33",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "execution_policy": "POLICY_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Reduction(Multiply)",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "qualified_name": "std::iter::Iterator::product",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:45ddc026c7bb9c20",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Reduction(Add)",
+      "official_reference": "https://docs.rs/ndarray/latest/ndarray/",
+      "package": "ndarray",
+      "qualified_name": "ndarray::ArrayBase::sum",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:b6f2e8fa3e92fdc6",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Dot",
+      "official_reference": "https://docs.rs/ndarray/latest/ndarray/",
+      "package": "ndarray",
+      "qualified_name": "ndarray::ArrayBase::dot",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:653bc3d68f27b62a",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Transpose",
+      "official_reference": "https://docs.rs/ndarray/latest/ndarray/",
+      "package": "ndarray",
+      "qualified_name": "ndarray::ArrayBase::t",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:c52c00eeac28c555",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "MatMul",
+      "official_reference": "https://docs.rs/nalgebra/latest/nalgebra/",
+      "package": "nalgebra",
+      "qualified_name": "nalgebra::Matrix::mul",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:fa654721a4310d3a",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Transpose",
+      "official_reference": "https://docs.rs/nalgebra/latest/nalgebra/",
+      "package": "nalgebra",
+      "qualified_name": "nalgebra::Matrix::transpose",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:128dbc44da8679b8",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "MatMul",
+      "official_reference": "https://docs.rs/faer/latest/faer/",
+      "package": "faer",
+      "qualified_name": "faer::Mat::mul",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:ce91439890682c18",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Transpose",
+      "official_reference": "https://docs.rs/faer/latest/faer/",
+      "package": "faer",
+      "qualified_name": "faer::Mat::transpose",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:00c797b0e0cef133",
+      "execution_metadata": {
+        "backend": "PARALLEL_CPU",
+        "reduction_order": "REORDERABLE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Reduction(Add)",
+      "official_reference": "https://docs.rs/rayon/latest/rayon/",
+      "package": "rayon",
+      "qualified_name": "rayon::iter::ParallelIterator::sum",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:1aa6d8f6ff8f1152",
+      "execution_metadata": {
+        "backend": "PARALLEL_CPU",
+        "reduction_order": "REORDERABLE"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "rust",
+      "mathematical_ir": "Map",
+      "official_reference": "https://docs.rs/rayon/latest/rayon/",
+      "package": "rayon",
+      "qualified_name": "rayon::iter::ParallelIterator::map",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Map",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:6b431be85397622c",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "execution_policy": "POLICY_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "FoldLeft",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "qualified_name": "std::accumulate",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:702edbcda4080cfc",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "execution_policy": "POLICY_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "Reduction",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "qualified_name": "std::reduce",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:e0d77cbd5de1ae4a",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "execution_policy": "POLICY_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "TransformReduce",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "qualified_name": "std::transform_reduce",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:a1407672fe15ee31",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "execution_policy": "POLICY_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "Dot",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "qualified_name": "std::inner_product",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:59ce7032f27cf8fc",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "vectorization": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "Reduction(Add)",
+      "official_reference": "https://eigen.tuxfamily.org/dox/",
+      "package": "Eigen",
+      "qualified_name": "Eigen::MatrixBase::sum",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:6081204102d79364",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "vectorization": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "Reduction(Multiply)",
+      "official_reference": "https://eigen.tuxfamily.org/dox/",
+      "package": "Eigen",
+      "qualified_name": "Eigen::MatrixBase::prod",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Reduction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:d4e0fcc8336f2547",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "vectorization": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "MatMul",
+      "official_reference": "https://eigen.tuxfamily.org/dox/",
+      "package": "Eigen",
+      "qualified_name": "Eigen::MatrixBase::operator*",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "TensorContraction",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:3b5af84a7affa760",
+      "execution_metadata": {
+        "backend": "NATIVE_CPP",
+        "vectorization": "IMPLEMENTATION_DEPENDENT"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "Reshape",
+      "official_reference": "https://eigen.tuxfamily.org/dox/",
+      "package": "Eigen",
+      "qualified_name": "Eigen::DenseBase::reshaped",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "ShapeTransform",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:1307cc57afcd9b7a",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "Normal",
+      "official_reference": "https://www.boost.org/doc/libs/release/libs/math/doc/html/index.html",
+      "package": "Boost",
+      "qualified_name": "boost::math::normal_distribution",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "KnownDistribution",
+      "version": "UNVERIFIED"
+    },
+    {
+      "classification": "FORMAL_SEMANTIC_CONTRACT",
+      "contract_id": "ecosystem-contract:26e9d8fd6504ea92",
+      "execution_metadata": {
+        "backend": "LIBRARY_DEFINED"
+      },
+      "family_reuse": "EXISTING_FAMILY_REUSED",
+      "language": "cpp",
+      "mathematical_ir": "Quadrature",
+      "official_reference": "https://www.boost.org/doc/libs/release/libs/math/doc/html/index.html",
+      "package": "Boost",
+      "qualified_name": "boost::math::quadrature::trapezoidal",
+      "reference_status": "OFFICIAL_PUBLIC_REFERENCE",
+      "semantic_family": "Quadrature",
+      "version": "UNVERIFIED"
+    }
+  ],
+  "coverage": {
+    "by_language": {
+      "cpp": 10,
+      "python": 80,
+      "rust": 11
+    },
+    "by_package": {
+      "Boost": 2,
+      "Eigen": 4,
+      "cupy": 12,
+      "dask_ml": 4,
+      "faer": 2,
+      "h5py": 3,
+      "jax": 15,
+      "lightgbm": 2,
+      "nalgebra": 2,
+      "ndarray": 3,
+      "networkx": 3,
+      "numba": 4,
+      "polars": 4,
+      "pyarrow": 3,
+      "rayon": 2,
+      "sklearn": 4,
+      "statsmodels": 2,
+      "std": 6,
+      "sympy": 4,
+      "torch": 15,
+      "xgboost": 2,
+      "zarr": 3
+    },
+    "existing_family_reuse": 57,
+    "formal_semantic_contract": 57,
+    "new_semantic_families_required": [
+      "AutodiffBoundary",
+      "DeviceTransfer",
+      "EstimatorConstruction",
+      "GraphAlgorithm",
+      "IOBoundary",
+      "JITBoundary",
+      "Metric",
+      "ParallelExecution",
+      "Predictor",
+      "RootFindingRelation",
+      "SymbolicAlgebra",
+      "TableTransform",
+      "Transformer"
+    ],
+    "not_applicable": 0,
+    "reference_insufficient": 0,
+    "reference_only_contract": 44,
+    "total": 101
+  },
+  "provenance": {
+    "catalog_hash": "a2efe61b0f19469fd3ece095e7540916a750857260035b80b074c6f9d39c14eb",
+    "harvester": "OFFICIAL_PUBLIC_REFERENCE_SEED_HARVEST",
+    "versions": "UNVERIFIED_UNLESS_PINNED_BY_CALLER"
+  },
+  "status": "DETERMINISTIC_CLASSIFICATION_COMPLETE"
+}

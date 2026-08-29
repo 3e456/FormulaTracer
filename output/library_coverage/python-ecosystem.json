@@ -1,0 +1,1116 @@
+{
+  "api_count": 80,
+  "apis": [
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.abs.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.abs",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.dot.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.dot",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.exp.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.exp",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.log.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.log",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.matmul.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.matmul",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.mean.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.mean",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.prod.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.prod",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.reshape.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.reshape",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "reshape",
+          "named_dimensions_preserved": false,
+          "relation": "product(shape(out))=product(shape(in))"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.sqrt.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.sqrt",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.sum.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.sum",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.transpose.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.transpose",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "INDEXING",
+      "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.where.html",
+      "package": "cupy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "cupy.where",
+      "semantic_family": "ConditionalSelection",
+      "shape_constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://ml.dask.org/modules/api.html",
+      "package": "dask_ml",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "dask_ml.Estimator.fit",
+      "semantic_family": "EstimatorConstruction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://ml.dask.org/modules/api.html",
+      "package": "dask_ml",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "dask_ml.Estimator.predict",
+      "semantic_family": "Predictor",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://ml.dask.org/modules/api.html",
+      "package": "dask_ml",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "dask_ml.Estimator.score",
+      "semantic_family": "Metric",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://ml.dask.org/modules/api.html",
+      "package": "dask_ml",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "dask_ml.Estimator.transform",
+      "semantic_family": "Transformer",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TABULAR",
+      "official_reference": "https://docs.h5py.org/en/stable/high/dataset.html",
+      "package": "h5py",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "h5py.Dataset.__getitem__",
+      "semantic_family": "TableTransform",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "IO_SERIALIZATION",
+      "official_reference": "https://docs.h5py.org/en/stable/high/dataset.html",
+      "package": "h5py",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "h5py.Dataset.__setitem__",
+      "semantic_family": "IOBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "IO_SERIALIZATION",
+      "official_reference": "https://docs.h5py.org/en/stable/high/dataset.html",
+      "package": "h5py",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "h5py.File",
+      "semantic_family": "IOBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "EXECUTION_ONLY",
+      "official_reference": "https://docs.jax.dev/en/latest/jax.numpy.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.device_put",
+      "semantic_family": "DeviceTransfer",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REFERENCE_ONLY",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.grad.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.grad",
+      "semantic_family": "AlgorithmInvocation",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "EXECUTION_ONLY",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.jit.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.jit",
+      "semantic_family": "ParallelExecution",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.abs.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.abs",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.dot.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.dot",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.exp.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.exp",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.log.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.log",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.matmul.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.matmul",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.mean.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.mean",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.prod.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.prod",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.reshape.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.reshape",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "reshape",
+          "named_dimensions_preserved": false,
+          "relation": "product(shape(out))=product(shape(in))"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.sqrt.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.sqrt",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.sum.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.sum",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.transpose.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.transpose",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "INDEXING",
+      "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.where.html",
+      "package": "jax",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "jax.numpy.where",
+      "semantic_family": "ConditionalSelection",
+      "shape_constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://lightgbm.readthedocs.io/en/stable/Python-API.html",
+      "package": "lightgbm",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "lightgbm.Estimator.fit",
+      "semantic_family": "EstimatorConstruction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://lightgbm.readthedocs.io/en/stable/Python-API.html",
+      "package": "lightgbm",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "lightgbm.Estimator.predict",
+      "semantic_family": "Predictor",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "GRAPH",
+      "official_reference": "https://networkx.org/documentation/stable/reference/index.html",
+      "package": "networkx",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "networkx.connected_components",
+      "semantic_family": "GraphAlgorithm",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "GRAPH",
+      "official_reference": "https://networkx.org/documentation/stable/reference/index.html",
+      "package": "networkx",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "networkx.pagerank",
+      "semantic_family": "GraphAlgorithm",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "GRAPH",
+      "official_reference": "https://networkx.org/documentation/stable/reference/index.html",
+      "package": "networkx",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "networkx.shortest_path",
+      "semantic_family": "GraphAlgorithm",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "EXECUTION_ONLY",
+      "official_reference": "https://numba.readthedocs.io/en/stable/reference/index.html",
+      "package": "numba",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "numba.jit",
+      "semantic_family": "JITBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "EXECUTION_ONLY",
+      "official_reference": "https://numba.readthedocs.io/en/stable/reference/index.html",
+      "package": "numba",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "numba.njit",
+      "semantic_family": "JITBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "EXECUTION_ONLY",
+      "official_reference": "https://numba.readthedocs.io/en/stable/reference/index.html",
+      "package": "numba",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "numba.prange",
+      "semantic_family": "ParallelExecution",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "EXECUTION_ONLY",
+      "official_reference": "https://numba.readthedocs.io/en/stable/reference/index.html",
+      "package": "numba",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "numba.vectorize",
+      "semantic_family": "JITBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TABULAR",
+      "official_reference": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "package": "polars",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "polars.DataFrame.group_by",
+      "semantic_family": "TableTransform",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TABULAR",
+      "official_reference": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "package": "polars",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "polars.DataFrame.join",
+      "semantic_family": "TableTransform",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TABULAR",
+      "official_reference": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "package": "polars",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "polars.DataFrame.select",
+      "semantic_family": "TableTransform",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "IO_SERIALIZATION",
+      "official_reference": "https://docs.pola.rs/api/python/stable/reference/index.html",
+      "package": "polars",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "polars.DataFrame.write_parquet",
+      "semantic_family": "IOBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TABULAR",
+      "official_reference": "https://arrow.apache.org/docs/python/api.html",
+      "package": "pyarrow",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "pyarrow.Table.join",
+      "semantic_family": "TableTransform",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TABULAR",
+      "official_reference": "https://arrow.apache.org/docs/python/api.html",
+      "package": "pyarrow",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "pyarrow.Table.select",
+      "semantic_family": "TableTransform",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "IO_SERIALIZATION",
+      "official_reference": "https://arrow.apache.org/docs/python/api.html",
+      "package": "pyarrow",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "pyarrow.parquet.write_table",
+      "semantic_family": "IOBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://scikit-learn.org/stable/api/index.html",
+      "package": "sklearn",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "sklearn.Estimator.fit",
+      "semantic_family": "EstimatorConstruction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://scikit-learn.org/stable/api/index.html",
+      "package": "sklearn",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "sklearn.Estimator.predict",
+      "semantic_family": "Predictor",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://scikit-learn.org/stable/api/index.html",
+      "package": "sklearn",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "sklearn.Estimator.score",
+      "semantic_family": "Metric",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://scikit-learn.org/stable/api/index.html",
+      "package": "sklearn",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "sklearn.Estimator.transform",
+      "semantic_family": "Transformer",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://www.statsmodels.org/stable/api.html",
+      "package": "statsmodels",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "statsmodels.Estimator.fit",
+      "semantic_family": "EstimatorConstruction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://www.statsmodels.org/stable/api.html",
+      "package": "statsmodels",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "statsmodels.Estimator.predict",
+      "semantic_family": "Predictor",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://docs.sympy.org/latest/reference/index.html",
+      "package": "sympy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "sympy.diff",
+      "semantic_family": "SymbolicAlgebra",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://docs.sympy.org/latest/reference/index.html",
+      "package": "sympy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "sympy.integrate",
+      "semantic_family": "SymbolicAlgebra",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://docs.sympy.org/latest/reference/index.html",
+      "package": "sympy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "sympy.simplify",
+      "semantic_family": "SymbolicAlgebra",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://docs.sympy.org/latest/reference/index.html",
+      "package": "sympy",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "sympy.solve",
+      "semantic_family": "RootFindingRelation",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "EXECUTION_ONLY",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.Tensor.to",
+      "semantic_family": "DeviceTransfer",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.abs.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.abs",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://docs.pytorch.org/docs/stable/torch.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.autograd.grad",
+      "semantic_family": "AutodiffBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "EXECUTION_ONLY",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.compile.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.compile",
+      "semantic_family": "ParallelExecution",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.dot.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.dot",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.exp.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.exp",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.log.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.log",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.matmul.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.matmul",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.mean.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.mean",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.prod.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.prod",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.reshape.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.reshape",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "reshape",
+          "named_dimensions_preserved": false,
+          "relation": "product(shape(out))=product(shape(in))"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "ELEMENTWISE",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.sqrt.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.sqrt",
+      "semantic_family": "ElementwiseFunction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.sum.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.sum",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.transpose.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.transpose",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "INDEXING",
+      "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.where.html",
+      "package": "torch",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "torch.where",
+      "semantic_family": "ConditionalSelection",
+      "shape_constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://xgboost.readthedocs.io/en/stable/python/python_api.html",
+      "package": "xgboost",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "xgboost.Estimator.fit",
+      "semantic_family": "EstimatorConstruction",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://xgboost.readthedocs.io/en/stable/python/python_api.html",
+      "package": "xgboost",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "xgboost.Estimator.predict",
+      "semantic_family": "Predictor",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "TABULAR",
+      "official_reference": "https://zarr.readthedocs.io/en/stable/api.html",
+      "package": "zarr",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "zarr.Array.__getitem__",
+      "semantic_family": "TableTransform",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "IO_SERIALIZATION",
+      "official_reference": "https://zarr.readthedocs.io/en/stable/api.html",
+      "package": "zarr",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "zarr.Array.__setitem__",
+      "semantic_family": "IOBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "REFERENCE_CONTRACT",
+      "meaningful_category": "IO_SERIALIZATION",
+      "official_reference": "https://zarr.readthedocs.io/en/stable/api.html",
+      "package": "zarr",
+      "proof_evidence": "REFERENCE_CONTRACT",
+      "qualified_name": "zarr.open",
+      "semantic_family": "IOBoundary",
+      "shape_constraints": [],
+      "usage_files": []
+    }
+  ],
+  "classification_counts": {
+    "REFERENCE_CONTRACT": 80
+  },
+  "language": "python"
+}

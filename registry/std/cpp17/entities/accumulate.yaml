@@ -1,0 +1,19 @@
+schema_version: "0.1"
+entity_id: std.numeric.accumulate
+standard_version: cpp17
+header: numeric
+qualified_name: std::accumulate
+kind: function_template
+signature: "T accumulate(InputIt, InputIt, T)"
+template_parameters: [InputIt, T]
+effect: Pure
+semantic_family: FoldLeft
+preconditions: [valid_range]
+postconditions: [returns_left_fold]
+exceptions: [propagates_element_operation_exceptions]
+aliasing: {permits_read_alias: true}
+iterator_requirements: [input_iterator]
+complexity: "exactly N applications"
+lowering: {op: Fold, reduction_order: left_to_right, reduce: Add}
+proof_status: SEMANTICALLY_VERIFIED
+source_reference: "ISO C++17 [accumulate]"

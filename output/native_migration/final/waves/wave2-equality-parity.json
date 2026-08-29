@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "owner": "cpp_audit.equality_saturation",
+  "native_operations": [
+    "B/LEGACY_EQUALITY",
+    "B/EGRAPH"
+  ],
+  "cases": [
+    {
+      "case": "unknown-fact-blocks-exact-merge",
+      "match": true
+    },
+    {
+      "case": "discharged-fact-authorizes-exact-merge",
+      "match": true
+    },
+    {
+      "case": "nonexact-relation-never-merges",
+      "match": true
+    },
+    {
+      "case": "fact-conflict-fails-closed",
+      "match": true
+    },
+    {
+      "case": "exact-equality-rejected-from-relation-graph",
+      "match": true
+    },
+    {
+      "case": "native-cost-extraction",
+      "match": true
+    },
+    {
+      "case": "budget-exhaustion-visible",
+      "match": true
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

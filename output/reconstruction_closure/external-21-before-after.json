@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "total": 21,
+  "initial": {
+    "resolved": 1,
+    "resolved_kind": "NEGATIVE_CONTROL_NOT_EQUIVALENT",
+    "positive_or_relational_reconstruction_resolved": 0,
+    "unresolved": 20,
+    "false_acceptance": 0
+  },
+  "final_status_counts": {
+    "CORRECTLY_UNRESOLVED": 21
+  },
+  "false_acceptance": 0,
+  "case_specific_repairs": 0,
+  "artifact_completeness": "21/21",
+  "correctly_unresolved_explanation_complete": true,
+  "note": "The fixed external corpus did not retain generated source; provider retrieval alone is intentionally insufficient for reconstruction closure.",
+  "outcomes": [
+    {
+      "case_id": "v2-dev-dft",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-dev-quadrature",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "ERROR_EVIDENCE_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-dev-series",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "TRUNCATION_RELATION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-final_holdout_v2-bitvector",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-final_holdout_v2-integer_modulo",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "THEORY_IR_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-final_holdout_v2-laplace",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "TRANSFORM_RELATION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-final_holdout_v2-piecewise",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "THEORY_IR_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-final_holdout_v2-units",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "CONSTRAINT_PROPAGATION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-holdout-fourier-renamed",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-holdout-negative",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "NEGATIVE_CONTROL_NOT_EQUIVALENT",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-holdout-weighted-renamed",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "ERROR_EVIDENCE_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-asymptotic",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "THEORY_IR_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-beta",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "PROVIDER_CONTRACT_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-convolution",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-difference",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "ASSUMPTION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-gamma",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "PROVIDER_CONTRACT_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-integral",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "APPROXIMATION_RELATION_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-matrix_multiply",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "PROVIDER_CONTRACT_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-probability",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "THEORY_IR_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-root_finding",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "ALGORITHM_SEMANTICS_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    },
+    {
+      "case_id": "v2-validation-svd",
+      "status": "CORRECTLY_UNRESOLVED",
+      "root_cause": "PROVIDER_CONTRACT_GAP",
+      "unresolved_reason": {
+        "blocking_stage": "LANGUAGE_FRONTEND",
+        "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+        "missing_capability": "generated source or independently observed Mathematical IR"
+      }
+    }
+  ]
+}

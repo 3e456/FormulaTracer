@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/audit-bundle-manifest.schema.json",
+  "type": "object",
+  "required": ["bundle_version", "bundle_hash", "locale", "files", "source_hashes", "status"],
+  "properties": {
+    "bundle_version": {"const": "1.0"}, "bundle_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "locale": {"enum": ["en-US", "ja-JP"]},
+    "files": {"type": "array", "items": {"type": "object", "required": ["path", "sha256"]}},
+    "source_hashes": {"type": "object"}, "status": {"const": "AUDIT_BUNDLE_COMPLETE"}
+  },
+  "additionalProperties": false
+}

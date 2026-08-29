@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "wave": 4,
+  "name": "wave4-synthesis",
+  "status": "COMPLETE",
+  "owners_before": [
+    "cpp_audit.synthesis"
+  ],
+  "semantic_symbols_before": 6,
+  "symbols_before": 27,
+  "symbols_migrated": [
+    "cpp_audit.synthesis._normalize",
+    "cpp_audit.synthesis.propose_repair",
+    "cpp_audit.synthesis.verify_repair",
+    "cpp_audit.synthesis.verify_round_trip"
+  ],
+  "symbols_reclassified": [
+    {
+      "symbol": "cpp_audit.synthesis.GeneratedImplementation.write",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.synthesis._id",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    }
+  ],
+  "symbols_remaining": [],
+  "rust_parity": "PASS",
+  "false_acceptance": 0,
+  "reachability": {
+    "production_semantic": 0,
+    "dynamic_unresolved": 0
+  },
+  "dependency_edges": [],
+  "sccs": {
+    "cpp_audit.synthesis": 9
+  },
+  "order_rationale": "Each remaining owner is a singleton SCC. Dependencies are migrated before consumers; frontend extraction may remain Python while all semantic decisions move native.",
+  "symbols_initial": [
+    "cpp_audit.synthesis.GeneratedImplementation.write",
+    "cpp_audit.synthesis._id",
+    "cpp_audit.synthesis._normalize",
+    "cpp_audit.synthesis.propose_repair",
+    "cpp_audit.synthesis.verify_repair",
+    "cpp_audit.synthesis.verify_round_trip"
+  ],
+  "parity_artifacts": [
+    "output/native_migration/final/waves/wave4-synthesis-parity.json"
+  ]
+}

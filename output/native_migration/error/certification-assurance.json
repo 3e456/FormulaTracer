@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "checks": {
+    "first_order_promoted_to_certified": 0,
+    "empirical_promoted_to_certified": 0,
+    "unknown_dependency_promoted_to_independent": 0,
+    "unsafe_division_bound_accepted": 0,
+    "unjustified_rss_accepted": 0,
+    "unresolved_component_dropped": 0,
+    "overflow_finite_enclosure_accepted": 0,
+    "critical_false_acceptance": 0
+  },
+  "classification_boundary": [
+    "EXACT_ERROR_RELATION", "CERTIFIED_UPPER_BOUND",
+    "CERTIFIED_UPPER_BOUND_UNDER_ASSUMPTIONS", "SYMBOLICALLY_DERIVED",
+    "NUMERICALLY_CHECKED_ONLY", "UNRESOLVED"
+  ]
+}

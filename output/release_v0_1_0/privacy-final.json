@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "current_tracked_tree": {"files_scanned": 980, "hits": 0, "status": "PASS"},
+  "generated_reference": {"hits": 0, "status": "PASS"},
+  "private_research_trace": 0,
+  "private_local_path_trace": 0,
+  "distribution_private_trace": 0,
+  "secret_or_credential_open": 0,
+  "public_artifact_absolute_private_path": 0,
+  "history_auxiliary_scan": {
+    "raw_pattern_hits": 3,
+    "classified_private_hits": 0,
+    "classification": "SELF_MATCHING_PRIVACY_REGEX_LITERALS_IN_OLD_SCANNER_BLOBS"
+  },
+  "e_drive_accessed": false,
+  "protected_docx_touched": false,
+  "repository_visibility_changed": false,
+  "status": "PASS"
+}

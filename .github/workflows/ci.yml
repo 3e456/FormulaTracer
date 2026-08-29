@@ -1,0 +1,69 @@
+name: Tier 1 - Fast checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fast-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python-compatibility:
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.11", "3.12", "3.13"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - run: python -m pip install -r requirements/ci.txt -e .
+      - name: Focused compatibility tests
+        run: >-
+          python -m pytest -q
+          tests/test_dependency_graph.py
+          tests/test_generated_public_api_inventory.py
+          tests/test_reference_registry.py
+          tests/test_maintenance_infrastructure.py
+
+  rust-fast:
+    strategy:
+      fail-fast: false
+      matrix:
+        toolchain: ["1.85.0", "stable"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: rustup toolchain install ${{ matrix.toolchain }} --profile minimal
+      - run: cargo +${{ matrix.toolchain }} test --workspace --locked
+      - if: matrix.toolchain == 'stable'
+        run: rustup component add rustfmt clippy --toolchain stable
+      - if: matrix.toolchain == 'stable'
+        run: cargo +stable fmt --all -- --check
+      - if: matrix.toolchain == 'stable'
+        run: cargo +stable clippy --workspace --all-targets --locked -- -A warnings -D clippy::correctness -D clippy::suspicious
+
+  docs-security-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements/ci.txt -e .
+      - run: python tools/check_maintenance.py
+      - name: Diff and private-path hygiene
+        run: |
+          git diff --check
+          test -z "$(git status --porcelain)"

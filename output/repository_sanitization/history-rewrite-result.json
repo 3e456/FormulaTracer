@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "rewritten_branches": {
+    "main": "8ff86f8c4b8d51289c7d26d0e11d685c60cafa6b",
+    "feature/public-api-reference-harvester": "5fb6725b11d0d995104a7b1027490469fef330e8"
+  },
+  "rewritten_tags": 0,
+  "post_rewrite_commits": 155,
+  "post_rewrite_history_scan": {
+    "text_blobs_scanned": 1738,
+    "binary_or_oversize_skipped": 5,
+    "private_research_trace": 0,
+    "private_local_path": 0,
+    "secret_or_credential": 0
+  },
+  "commit_metadata": {
+    "unique_public_noreply_emails": 2,
+    "private_commit_emails": 0
+  },
+  "remote_update": {
+    "method": "FORCE_WITH_LEASE",
+    "status": "PASS",
+    "main": "8ff86f8c4b8d51289c7d26d0e11d685c60cafa6b",
+    "feature": "d8eba429c58ccf87ba147e78c049600a3f81b4e9",
+    "read_back_verified": true
+  },
+  "working_clone_incident": {
+    "occurred": true,
+    "remote_updated_before_mirror_validation": false,
+    "recovery_available": true,
+    "authoritative_result": "FRESH_MIRROR",
+    "protected_untracked_document_touched": false
+  }
+}

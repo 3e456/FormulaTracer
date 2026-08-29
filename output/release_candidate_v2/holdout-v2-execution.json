@@ -1,0 +1,87 @@
+{
+  "schema_version": "2.0",
+  "executed": "2026-08-27",
+  "holdout_fingerprint": "6ed578f70fa857a7c87d45af014c35011b884bd97db38d09bb8c67d60d72755b",
+  "outcomes": [
+    {
+      "case_id": "v2-final_holdout_v2-piecewise",
+      "split": "final_holdout_v2",
+      "family": "piecewise",
+      "provider_rank": null,
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "semantic_fingerprint": "1e3e339ef1e557e05db1ad24d0990a1e4dee4fb1ded672b59d09c9a26ccd9da9"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-integer_modulo",
+      "split": "final_holdout_v2",
+      "family": "integer_modulo",
+      "provider_rank": null,
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "semantic_fingerprint": "d6729c13d674bed807c2e33955c309794b76bf95217b9ee08cd5cad729bd4843"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-bitvector",
+      "split": "final_holdout_v2",
+      "family": "bitvector",
+      "provider_rank": null,
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "semantic_fingerprint": "ec74bfaf2f1bd8d336cd8a7ea4232bff60194c7f0b647ef20cb016a41794efc3"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-units",
+      "split": "final_holdout_v2",
+      "family": "units",
+      "provider_rank": null,
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "semantic_fingerprint": "0eba4f3e0acd6be71985b8041f0853f6673e8ce6c6d89941aea30faf6c5daf60"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-laplace",
+      "split": "final_holdout_v2",
+      "family": "laplace",
+      "provider_rank": null,
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "semantic_fingerprint": "19d894b9dbc879c9e5ffea31ed316807c1edc8b07a5c0911ead7095d58ece7f6"
+    },
+    {
+      "case_id": "v2-holdout-fourier-renamed",
+      "split": "final_holdout_v2",
+      "family": "fourier",
+      "provider_rank": 1,
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "NOT_VERIFIED",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "semantic_fingerprint": "401679dd27fa1d526db169061af385421c8bf0f5d163d5ef6ac8835613408d27"
+    },
+    {
+      "case_id": "v2-holdout-weighted-renamed",
+      "split": "final_holdout_v2",
+      "family": "quadrature",
+      "provider_rank": 4,
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "CONTRACT_OBLIGATIONS_REMAINING",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "semantic_fingerprint": "1bf420343524f022cf3146c213c73a8b25d62f5527b82fecdf9420b6205aca42"
+    },
+    {
+      "case_id": "v2-holdout-negative",
+      "split": "final_holdout_v2",
+      "family": "negative_control",
+      "provider_rank": null,
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "NOT_EQUIVALENT",
+      "semantic_fingerprint": "e0b6c76f2141addf91565c9ddb90420cf5fd4f3d17c767085788f966afa5c800"
+    }
+  ]
+}

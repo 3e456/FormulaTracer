@@ -1,0 +1,151 @@
+schema_version: "0.1"
+package: dask
+version: ">=2026.1,<2027.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape]
+  ignore: [scheduler_algorithm, task_order, worker_placement]
+bindings:
+  - callable: dask.distributed.Client
+    family: ParallelExecution
+    bind: {operation: client}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.Client
+  - callable: dask.distributed.LocalCluster
+    family: ParallelExecution
+    bind: {operation: local_cluster, result_type: dask.distributed.LocalCluster}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.LocalCluster
+  - callable: dask.distributed.as_completed
+    family: ParallelExecution
+    bind: {operation: completion_order_iterator}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.as_completed
+    execution: {op: Gather}
+  - callable: dask.array.sum
+    family: Reduction
+    bind: {reducer: add, axis_parameter: axis, dtype_parameter: dtype,
+           keepdims_parameter: keepdims, split_every_parameter: split_every}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.sum.html
+    reference_status: LEAN_VERIFIED_MAPPING
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.Array.sum
+    family: Reduction
+    bind: {reducer: add, axis_parameter: axis, dtype_parameter: dtype,
+           keepdims_parameter: keepdims, split_every_parameter: split_every}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.Array.sum.html
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.prod
+    family: Reduction
+    bind: {reducer: multiply, axis_parameter: axis, dtype_parameter: dtype,
+           keepdims_parameter: keepdims, split_every_parameter: split_every}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.prod.html
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.mean
+    family: Reduction
+    bind: {reducer: mean, axis_parameter: axis, dtype_parameter: dtype,
+           keepdims_parameter: keepdims, split_every_parameter: split_every}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.mean.html
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.Array.mean
+    family: Reduction
+    bind: {reducer: mean}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.Array.mean.html
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.max
+    family: Reduction
+    bind: {reducer: maximum}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.max.html
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.Array.max
+    family: Reduction
+    bind: {reducer: maximum}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.Array.max.html
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.min
+    family: Reduction
+    bind: {reducer: minimum}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.min.html
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.Array.min
+    family: Reduction
+    bind: {reducer: minimum}
+    return_type: {kind: dask.array.Array, evidence: REFERENCE_DETERMINED}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.Array.min.html
+    execution: {op: ChunkedReduction, floating_point_relation: FLOATING_REDUCTION_ORDER_DIFFERS}
+  - callable: dask.array.where
+    family: ConditionalSelection
+    bind: {selection: where}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.where.html
+    execution: {op: ParallelMap}
+  - callable: dask.array.Array.copy
+    family: RepresentationMapping
+    bind: {mapping: lazy_array_copy, result_type: dask.array.Array}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.Array.copy.html
+  - callable: dask.array.Array.compute
+    family: ParallelExecution
+    bind: {operation: materialize}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.Array.compute.html
+    execution: {op: Materialize}
+  - callable: dask.array.rechunk
+    family: ShapeTransform
+    bind: {transform: rechunk, result_type: dask.array.Array}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.rechunk.html
+    execution: {op: Rechunk}
+  - callable: dask.array.coarsen
+    family: AlgorithmInvocation
+    bind: {algorithm: coarsen, result_type: dask.array.Array}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.coarsen.html
+    execution: {op: Coarsen}
+  - callable: dask.array.from_array
+    family: RepresentationMapping
+    bind: {mapping: chunked_array}
+    reference: https://docs.dask.org/en/stable/generated/dask.array.from_array.html
+    execution: {op: ChunkedArray}
+  - callable: dask.delayed
+    family: ParallelExecution
+    bind: {operation: delayed_call}
+    reference: https://docs.dask.org/en/stable/delayed.html
+    execution: {op: ParallelTask}
+  - callable: dask.distributed.Client.submit
+    family: ParallelExecution
+    bind: {operation: submit, result_type: dask.distributed.Future}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.Client.submit
+    execution: {op: ParallelTask}
+  - callable: dask.distributed.Client.map
+    family: ParallelExecution
+    bind: {operation: map}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.Client.map
+    execution: {op: ParallelMap}
+  - callable: dask.distributed.Client.scatter
+    family: ParallelExecution
+    bind: {operation: scatter}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.Client.scatter
+    execution: {op: Scatter}
+  - callable: dask.distributed.Client.gather
+    family: ParallelExecution
+    bind: {operation: gather}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.Client.gather
+    execution: {op: Gather}
+  - callable: dask.distributed.Future.result
+    family: ParallelExecution
+    bind: {operation: materialize}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.Future.result
+    execution: {op: Materialize}
+  - callable: dask.compute
+    family: ParallelExecution
+    bind: {operation: materialize}
+    reference: https://docs.dask.org/en/stable/generated/dask.compute.html
+    execution: {op: Materialize}
+  - callable: dask.distributed.wait
+    family: ParallelExecution
+    bind: {operation: wait}
+    reference: https://distributed.dask.org/en/stable/api.html#distributed.wait
+    execution: {op: ExecutionBarrier}

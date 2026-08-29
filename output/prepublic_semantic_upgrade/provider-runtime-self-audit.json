@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "corpus": "PUBLIC_SYNTHETIC_PROVIDER_RUNTIME_V1",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "xarray": "2026.7.0",
+    "dask": "2026.8.0",
+    "scipy": "1.17.1"
+  },
+  "records": [
+    {
+      "case": "xarray-inner-alignment",
+      "passed": true
+    },
+    {
+      "case": "pandas-outer-fill",
+      "passed": true
+    },
+    {
+      "case": "dask-tree-sum",
+      "passed": true
+    },
+    {
+      "case": "scipy-linear-solve",
+      "passed": true
+    },
+    {
+      "case": "scipy-quad",
+      "passed": true
+    },
+    {
+      "case": "scipy-minimize",
+      "passed": true
+    }
+  ],
+  "passed": 6,
+  "failed": 0,
+  "false_exact_promotion": 0,
+  "false_certified_promotion": 0
+}

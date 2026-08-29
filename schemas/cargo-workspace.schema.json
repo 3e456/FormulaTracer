@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/cargo-workspace.schema.json",
+  "title": "CargoWorkspace",
+  "type": "object",
+  "required": ["root", "manifest_path", "cargo_toml_hash", "members", "packages", "selected_features", "target_configuration"],
+  "properties": {
+    "root": {"type": "string"},
+    "manifest_path": {"type": "string"},
+    "cargo_toml_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "cargo_lock_hash": {"type": ["string", "null"]},
+    "members": {"type": "array", "items": {"type": "string"}},
+    "packages": {"type": "array", "items": {"$ref": "#/$defs/package"}},
+    "selected_features": {"type": "array", "items": {"type": "string"}},
+    "target_configuration": {"type": "string"}
+  },
+  "$defs": {
+    "package": {
+      "type": "object",
+      "required": ["name", "version", "manifest_path", "crates", "dependencies", "features", "proc_macro"]
+    }
+  }
+}

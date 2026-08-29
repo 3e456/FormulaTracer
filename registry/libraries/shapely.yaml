@@ -1,0 +1,61 @@
+schema_version: "0.1"
+package: shapely
+version: ">=2.0,<3.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://shapely.readthedocs.io/en/stable/reference/{callable}.html"
+reference_status: REFERENCE_REVIEWED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [geometry_relation, coordinates, topology, argument_mapping]
+  ignore: [GEOS_algorithm, spatial_index_layout, memory_layout]
+bindings:
+  - callable: shapely.geometry.Point
+    family: SpatialGeometry
+    bind: {relation: point_construction, result_type: shapely.Geometry}
+    reference: https://shapely.readthedocs.io/en/stable/reference/shapely.Point.html
+  - callable: shapely.geometry.box
+    family: SpatialGeometry
+    bind: {relation: rectangular_polygon_construction, result_type: shapely.Geometry}
+    reference: https://shapely.readthedocs.io/en/stable/reference/shapely.box.html
+  - callable: shapely.geometry.shape
+    family: SpatialGeometry
+    bind: {relation: geo_interface_to_geometry, result_type: shapely.Geometry}
+    reference: https://shapely.readthedocs.io/en/stable/reference/shapely.geometry.shape.html
+  - callable: shapely.contains_xy
+    family: SpatialGeometry
+    bind: {relation: contains_point_coordinates}
+    reference: https://shapely.readthedocs.io/en/stable/reference/shapely.contains_xy.html
+    reference_status: LEAN_VERIFIED_MAPPING
+  - callable: shapely.vectorized.contains
+    family: SpatialGeometry
+    bind: {relation: vectorized_contains_point_coordinates}
+    reference: https://shapely.readthedocs.io/en/stable/reference/shapely.contains_xy.html
+  - callable: shapely.ops.unary_union
+    family: SpatialGeometry
+    bind: {relation: geometry_union, result_type: shapely.Geometry}
+    reference: https://shapely.readthedocs.io/en/stable/reference/shapely.unary_union.html
+  - callable: shapely.ops.nearest_points
+    family: SpatialGeometry
+    bind: {relation: nearest_geometry_points}
+    reference: https://shapely.readthedocs.io/en/stable/manual.html#nearest-points-shortest-line
+  - callable: shapely.Geometry.buffer
+    family: SpatialGeometry
+    bind: {relation: geometry_buffer, distance_parameter: distance,
+           result_type: shapely.Geometry}
+    reference: https://shapely.readthedocs.io/en/stable/reference/shapely.buffer.html
+  - callable: shapely.strtree.STRtree
+    family: SpatialGeometry
+    bind: {relation: spatial_index_construction, result_type: shapely.strtree.STRtree}
+    reference: https://shapely.readthedocs.io/en/stable/strtree.html
+  - callable: shapely.strtree.STRtree.query
+    family: SpatialGeometry
+    bind: {relation: bounding_box_spatial_query, predicate_parameter: predicate}
+    reference: https://shapely.readthedocs.io/en/stable/strtree.html#shapely.STRtree.query
+  - callable: shapely.strtree.STRtree.nearest
+    family: SpatialGeometry
+    bind: {relation: nearest_geometry}
+    reference: https://shapely.readthedocs.io/en/stable/strtree.html#shapely.STRtree.nearest
+  - callable: shapely.prepared.prep
+    family: RepresentationMapping
+    bind: {mapping: prepared_geometry_for_predicates, result_type: shapely.PreparedGeometry}
+    reference: https://shapely.readthedocs.io/en/stable/manual.html#prepared-geometry-operations

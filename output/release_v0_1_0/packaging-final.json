@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "validated_at_sha": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "runtime_product_diff_since_validation": false,
+  "windows_x86_64": {
+    "wheel": "PASS",
+    "clean_install": "PASS",
+    "native_load": "PASS",
+    "content_inspection": "PASS",
+    "privacy": "PASS"
+  },
+  "linux_x86_64": {
+    "environment": "Debian GNU/Linux 12 (bookworm) x86_64, Python 3.11.2",
+    "portability_claim": "RELEASE_VALIDATED_ON_THIS_RECORDED_ENVIRONMENT_ONLY",
+    "wheel": "PASS",
+    "clean_install": "PASS",
+    "native_load": "PASS",
+    "content_inspection": "PASS",
+    "privacy": "PASS"
+  },
+  "sdist": "PASS",
+  "github_actions": "CI_NOT_EXECUTED_DUE_TO_ACCOUNT_LIMIT",
+  "alternative_linux_evidence": "LOCAL_DOCKER_DEBIAN_12_X86_64",
+  "binary_artifacts_attached_to_github_release": false,
+  "reason_not_attached": "The exact validated binary payloads were not retained in this checkout. No mismatched or newly unvalidated binary is attached; GitHub source archives plus SBOM and evidence manifests are released.",
+  "pypi_publish": false,
+  "crates_io_publish": false,
+  "status": "PASS"
+}

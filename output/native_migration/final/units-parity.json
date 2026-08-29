@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "component": "cpp_audit.units",
+  "native_operation": "A/UNITS",
+  "status": "PASS",
+  "checks": {
+    "dimension_division": true,
+    "affine_conversion": true,
+    "addition_with_conversion": true,
+    "dimension_mismatch_fail_closed": true,
+    "native_path_only": true
+  },
+  "runtime": {
+    "schema_version": "1.0",
+    "TOTAL_SEMANTIC_CALLS": 7,
+    "RUST_NATIVE_SEMANTIC_CALLS": 6,
+    "PYTHON_REFERENCE_CALLS": 0,
+    "PYTHON_SEMANTIC_FALLBACK_COUNT": 0,
+    "UNSUPPORTED_COUNT": 0,
+    "UNRESOLVED_COUNT": 1,
+    "fallback_by_kernel": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "E": 0,
+      "F": 0
+    },
+    "calls_by_kernel": {
+      "A": 7,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "E": 0,
+      "F": 0
+    },
+    "calls_by_owner": {
+      "semantic_kernel": 7
+    },
+    "calls_by_operation": {
+      "semantic_kernel:UNITS": 7
+    },
+    "calls_by_scope": {
+      "PRODUCTION": 7
+    },
+    "paths_by_scope": {
+      "DIFFERENTIAL_VALIDATION": {
+        "PYTHON_FALLBACK": 0,
+        "PYTHON_REFERENCE": 0,
+        "RUST_NATIVE": 0,
+        "UNRESOLVED": 0,
+        "UNSUPPORTED": 0
+      },
+      "PRODUCTION": {
+        "PYTHON_FALLBACK": 0,
+        "PYTHON_REFERENCE": 0,
+        "RUST_NATIVE": 6,
+        "UNRESOLVED": 1,
+        "UNSUPPORTED": 0
+      },
+      "REFERENCE_ORACLE": {
+        "PYTHON_FALLBACK": 0,
+        "PYTHON_REFERENCE": 0,
+        "RUST_NATIVE": 0,
+        "UNRESOLVED": 0,
+        "UNSUPPORTED": 0
+      },
+      "TEST_ONLY": {
+        "PYTHON_FALLBACK": 0,
+        "PYTHON_REFERENCE": 0,
+        "RUST_NATIVE": 0,
+        "UNRESOLVED": 0,
+        "UNSUPPORTED": 0
+      }
+    },
+    "event_limit": 250000,
+    "recorded_event_details": 7,
+    "dropped_event_details": 0,
+    "events": [
+      {
+        "sequence": 1,
+        "kernel": "A",
+        "component": "semantic_kernel",
+        "operation": "UNITS",
+        "caller": "cpp_audit.units._native:22",
+        "semantic_owner": "RUST_CORE",
+        "execution_backend": "STABLE_C_ABI_V1",
+        "path": "RUST_NATIVE",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "request_id": "semantic-request:1",
+        "result_id": "semantic-result:1",
+        "execution_scope": "PRODUCTION"
+      },
+      {
+        "sequence": 2,
+        "kernel": "A",
+        "component": "semantic_kernel",
+        "operation": "UNITS",
+        "caller": "cpp_audit.units._native:22",
+        "semantic_owner": "RUST_CORE",
+        "execution_backend": "STABLE_C_ABI_V1",
+        "path": "RUST_NATIVE",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "request_id": "semantic-request:2",
+        "result_id": "semantic-result:2",
+        "execution_scope": "PRODUCTION"
+      },
+      {
+        "sequence": 3,
+        "kernel": "A",
+        "component": "semantic_kernel",
+        "operation": "UNITS",
+        "caller": "cpp_audit.units._native:22",
+        "semantic_owner": "RUST_CORE",
+        "execution_backend": "STABLE_C_ABI_V1",
+        "path": "RUST_NATIVE",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "request_id": "semantic-request:3",
+        "result_id": "semantic-result:3",
+        "execution_scope": "PRODUCTION"
+      },
+      {
+        "sequence": 4,
+        "kernel": "A",
+        "component": "semantic_kernel",
+        "operation": "UNITS",
+        "caller": "cpp_audit.units._native:22",
+        "semantic_owner": "RUST_CORE",
+        "execution_backend": "STABLE_C_ABI_V1",
+        "path": "RUST_NATIVE",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "request_id": "semantic-request:4",
+        "result_id": "semantic-result:4",
+        "execution_scope": "PRODUCTION"
+      },
+      {
+        "sequence": 5,
+        "kernel": "A",
+        "component": "semantic_kernel",
+        "operation": "UNITS",
+        "caller": "cpp_audit.units._native:22",
+        "semantic_owner": "RUST_CORE",
+        "execution_backend": "STABLE_C_ABI_V1",
+        "path": "RUST_NATIVE",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "request_id": "semantic-request:5",
+        "result_id": "semantic-result:5",
+        "execution_scope": "PRODUCTION"
+      },
+      {
+        "sequence": 6,
+        "kernel": "A",
+        "component": "semantic_kernel",
+        "operation": "UNITS",
+        "caller": "cpp_audit.units._native:22",
+        "semantic_owner": "RUST_CORE",
+        "execution_backend": "STABLE_C_ABI_V1",
+        "path": "RUST_NATIVE",
+        "fallback_used": false,
+        "fallback_reason": null,
+        "request_id": "semantic-request:6",
+        "result_id": "semantic-result:6",
+        "execution_scope": "PRODUCTION"
+      },
+      {
+        "sequence": 7,
+        "kernel": "A",
+        "component": "semantic_kernel",
+        "operation": "UNITS",
+        "caller": "cpp_audit.units._native:22",
+        "semantic_owner": "RUST_CORE",
+        "execution_backend": "STABLE_C_ABI_V1",
+        "path": "UNRESOLVED",
+        "fallback_used": false,
+        "fallback_reason": "invalid semantic document: UNIT_DIMENSION_MISMATCH",
+        "request_id": "semantic-request:7",
+        "result_id": "semantic-result:7",
+        "execution_scope": "PRODUCTION"
+      }
+    ]
+  }
+}

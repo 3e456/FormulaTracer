@@ -1,0 +1,14 @@
+{
+  "layer": "metadata over existing array/tensor IR",
+  "properties": [
+    "named_dimensions",
+    "coordinates/index",
+    "alignment",
+    "missingness",
+    "selection",
+    "interpolation",
+    "reduction"
+  ],
+  "schema_version": "1.0",
+  "second_array_ir": false
+}

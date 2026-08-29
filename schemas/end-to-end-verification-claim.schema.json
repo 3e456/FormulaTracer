@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/end-to-end-verification-claim.schema.json",
+  "title": "EndToEndVerificationClaim",
+  "type": "object",
+  "required": ["claim_id", "root_id", "output_id", "output_name", "theory_expression", "implementation_expression", "transformation_trace", "approximation_proofs", "value_enclosure", "error_components", "known_error_bound", "total_error_bound", "true_value_enclosure", "execution_semantics", "ffi_boundaries", "serialization_boundaries", "artifact", "assumptions", "assumption_dependencies", "remaining_obligations", "proof_chain", "verification_matrix", "error_completeness_status", "status", "explanation", "enclosure"],
+  "properties": {
+    "claim_id": {"type": "string"}, "root_id": {"type": "string"}, "output_id": {"type": "string"}, "output_name": {"type": "string"},
+    "theory_expression": {}, "implementation_expression": {}, "transformation_trace": {},
+    "approximation_proofs": {"type": "array"}, "value_enclosure": {}, "error_components": {"type": "array"},
+    "known_error_bound": {}, "total_error_bound": {}, "true_value_enclosure": {}, "execution_semantics": {},
+    "ffi_boundaries": {"type": "array"}, "serialization_boundaries": {"type": "array"},
+    "artifact": {"type": "array", "items": {"$ref": "#/$defs/artifactEnclosure"}},
+    "assumptions": {"type": "array"}, "assumption_dependencies": {"type": "array"},
+    "remaining_obligations": {"type": "array"}, "proof_chain": {"$ref": "#/$defs/proofChain"},
+    "verification_matrix": {"type": "array", "items": {"$ref": "#/$defs/layer"}},
+    "error_completeness_status": {"enum": ["ERROR_MODEL_COMPLETE", "ERROR_MODEL_COMPLETE_UNDER_ASSUMPTIONS", "ERROR_MODEL_PARTIAL", "ERROR_SOURCE_UNRESOLVED"]},
+    "tolerance_status": {"type": ["string", "null"]}, "output_range_constraint_status": {"type": ["string", "null"]},
+    "observed_result": {}, "observed_result_status": {"type": ["string", "null"]}, "model_error_scope": {"type": "string"},
+    "status": {"$ref": "#/$defs/finalStatus"}, "explanation": {"type": "string"}, "enclosure": {"type": "object"}
+  },
+  "$defs": {
+    "finalStatus": {"enum": ["END_TO_END_KERNEL_VERIFIED", "END_TO_END_KERNEL_VERIFIED_UNDER_ASSUMPTIONS", "END_TO_END_ENCLOSURE_VERIFIED", "END_TO_END_ENCLOSURE_VERIFIED_UNDER_ASSUMPTIONS", "PARTIAL_END_TO_END_VERIFICATION", "END_TO_END_UNRESOLVED", "END_TO_END_FAILED"]},
+    "layer": {"type": "object", "required": ["layer", "status", "explanation", "evidence_ids", "assumptions", "obligations", "critical"], "properties": {"layer": {"enum": ["THEORY", "IMPLEMENTATION", "THEORY_IMPLEMENTATION", "TRANSFORMATION", "APPROXIMATION", "NUMERIC_EXECUTION", "PARALLEL", "RANGE", "ERROR", "FFI", "SERIALIZATION", "ARTIFACT", "LEAN"]}, "status": {"type": "string"}, "explanation": {"type": "string"}, "evidence_ids": {"type": "array"}, "assumptions": {"type": "array"}, "obligations": {"type": "array"}, "critical": {"type": "boolean"}}},
+    "proofChain": {"type": "object", "required": ["nodes", "edges", "evidence", "status", "chain_id"], "properties": {"nodes": {"type": "array"}, "edges": {"type": "array"}, "evidence": {"type": "array"}, "status": {"type": "string"}, "chain_id": {"type": "string"}}},
+    "artifactEnclosure": {"type": "object", "required": ["artifact_id", "format", "payload_value_enclosure", "payload_error_enclosure", "materialization_status", "status", "obligations"], "properties": {"artifact_id": {"type": "string"}, "path": {"type": ["string", "null"]}, "format": {"type": "string"}, "payload_symbol": {"type": ["string", "null"]}, "dataset_variable": {"type": ["string", "null"]}, "payload_value_enclosure": {}, "payload_error_enclosure": {}, "serialization_contract": {}, "stored_dtype": {"type": ["string", "null"]}, "materialization_status": {"enum": ["ARTIFACT_MATERIALIZED", "ARTIFACT_NOT_MATERIALIZED"]}, "artifact_hash": {"type": ["string", "null"]}, "status": {"enum": ["ARTIFACT_PAYLOAD_ENCLOSURE_VERIFIED", "ARTIFACT_PAYLOAD_ENCLOSURE_UNRESOLVED"]}, "obligations": {"type": "array"}}}
+  }
+}

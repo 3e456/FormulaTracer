@@ -1,0 +1,23 @@
+{
+  "canonical_ir_status": "SAME_CANONICAL_MATHEMATICAL_IR",
+  "generated_source_committed": false,
+  "languages": {
+    "cpp": {
+      "normal_frontend": "OBSERVED_MATHEMATICAL_IR",
+      "round_trip": "ROUND_TRIP_VERIFIED",
+      "status": "ROUND_TRIP_VERIFIED"
+    },
+    "python": {
+      "normal_frontend": "OBSERVED_MATHEMATICAL_IR",
+      "round_trip": "ROUND_TRIP_VERIFIED",
+      "status": "ROUND_TRIP_VERIFIED"
+    },
+    "rust": {
+      "normal_frontend": "OBSERVED_MATHEMATICAL_IR",
+      "round_trip": "ROUND_TRIP_VERIFIED",
+      "status": "ROUND_TRIP_VERIFIED"
+    }
+  },
+  "realization_id": "cartesian_divergence_from_partials",
+  "schema_version": "1.0"
+}

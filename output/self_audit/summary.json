@@ -1,0 +1,126 @@
+{
+  "CRITICAL_SELF_AUDIT_FALSE_ACCEPTANCE_OPEN": 0,
+  "analysis_wall_time_seconds": 3.3413308000017423,
+  "backend_coverage": 8,
+  "backend_results": {
+    "cpp-explicit": {
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 12
+    },
+    "cupy": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 96,
+      "generated": 96
+    },
+    "jax": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 96,
+      "generated": 96
+    },
+    "numpy": {
+      "EXACT_ROUND_TRIP": 120,
+      "generated": 120
+    },
+    "python-explicit": {
+      "EXACT_ROUND_TRIP": 36,
+      "generated": 36
+    },
+    "python-loop": {
+      "EXACT_ROUND_TRIP": 12,
+      "ROUND_TRIP_UNRESOLVED": 12,
+      "generated": 24
+    },
+    "rust-explicit": {
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 12
+    },
+    "torch": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 72,
+      "generated": 72
+    }
+  },
+  "cases_per_second": 140.0639529614236,
+  "debugger_correct_semantic_node": 156,
+  "debugger_exact_source_span": 0,
+  "false_acceptance": 0,
+  "family_coverage": 28,
+  "family_results": {
+    "Arithmetic": {
+      "EXACT_ROUND_TRIP": 36,
+      "generated": 36
+    },
+    "DiscreteDifference": {
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 12
+    },
+    "Dot": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 36,
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 48
+    },
+    "Elementwise": {
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 12
+    },
+    "FiniteDifference": {
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 12
+    },
+    "FiniteProduct": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 36,
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 48
+    },
+    "FiniteSum": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 36,
+      "EXACT_ROUND_TRIP": 12,
+      "ROUND_TRIP_UNRESOLVED": 12,
+      "generated": 60
+    },
+    "MatrixMultiply": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 36,
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 48
+    },
+    "Piecewise": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 36,
+      "EXACT_ROUND_TRIP": 36,
+      "generated": 72
+    },
+    "Reduction": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 36,
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 48
+    },
+    "Reshape": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 24,
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 36
+    },
+    "Transpose": {
+      "EQUIVALENT_UNDER_ASSUMPTIONS": 24,
+      "EXACT_ROUND_TRIP": 12,
+      "generated": 36
+    }
+  },
+  "generator_version": "large-self-audit-v1",
+  "language_coverage": 3,
+  "metamorphic_cases": 120,
+  "metamorphic_false_rejection": 0,
+  "metamorphic_true_acceptance": 120,
+  "metamorphic_unresolved": 0,
+  "mutation_cases": 252,
+  "mutation_fail_closed": 0,
+  "mutations_detected": 252,
+  "peak_memory_bytes": null,
+  "release_criterion": "PASS",
+  "round_trip_counts": {
+    "EQUIVALENT_UNDER_ASSUMPTIONS": 264,
+    "EXACT_ROUND_TRIP": 192,
+    "ROUND_TRIP_UNRESOLVED": 12
+  },
+  "schema_version": "1.0",
+  "seed": 20260827,
+  "status": "LARGE_SCALE_SELF_AUDIT_COMPLETE",
+  "theories_generated": 336,
+  "valid_source_cases": 468,
+  "validated_semantic_changing_mutations": 252
+}

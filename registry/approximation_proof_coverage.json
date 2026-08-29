@@ -1,0 +1,18 @@
+{
+  "schema_version": "0.1",
+  "generated_from": "registry/approximation_proofs.yaml",
+  "families": [
+    {"family_id": "backward_difference_first_derivative", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "ERROR_BOUND_VERIFIED_UNDER_ASSUMPTIONS", "convergence": "CONVERGENCE_KERNEL_VERIFIED"},
+    {"family_id": "central_difference_first_derivative", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "ERROR_BOUND_VERIFIED_UNDER_ASSUMPTIONS", "convergence": "CONVERGENCE_KERNEL_VERIFIED"},
+    {"family_id": "central_difference_second_derivative", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "REFERENCE_ONLY", "convergence": "UNRESOLVED"},
+    {"family_id": "forward_difference_first_derivative", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "ERROR_BOUND_VERIFIED_UNDER_ASSUMPTIONS", "convergence": "CONVERGENCE_KERNEL_VERIFIED"},
+    {"family_id": "left_rectangle_rule", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "REFERENCE_ONLY", "convergence": "UNRESOLVED"},
+    {"family_id": "linear_interpolation", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "ERROR_BOUND_VERIFIED_UNDER_ASSUMPTIONS", "convergence": "CONVERGENCE_KERNEL_VERIFIED"},
+    {"family_id": "midpoint_rule", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "REFERENCE_ONLY", "convergence": "UNRESOLVED"},
+    {"family_id": "multilinear_interpolation", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "REFERENCE_ONLY", "convergence": "UNRESOLVED"},
+    {"family_id": "nearest_neighbor_interpolation", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "ERROR_BOUND_VERIFIED_UNDER_ASSUMPTIONS", "convergence": "CONVERGENCE_KERNEL_VERIFIED"},
+    {"family_id": "right_rectangle_rule", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "REFERENCE_ONLY", "convergence": "UNRESOLVED"},
+    {"family_id": "simpson_rule", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "REFERENCE_ONLY", "convergence": "UNRESOLVED"},
+    {"family_id": "trapezoidal_rule", "discrete_semantics": "DISCRETE_SEMANTICS_VERIFIED", "error_bound": "ERROR_BOUND_VERIFIED_UNDER_ASSUMPTIONS", "convergence": "CONVERGENCE_KERNEL_VERIFIED"}
+  ]
+}

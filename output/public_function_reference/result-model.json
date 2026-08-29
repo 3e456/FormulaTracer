@@ -1,0 +1,24 @@
+{
+  "canonical_result_is_not_text": true,
+  "canonical_type": "VerificationResult/NativeResult",
+  "fields": [
+    "status",
+    "theory",
+    "implementation",
+    "relation",
+    "assumptions",
+    "proof_obligations",
+    "error",
+    "range",
+    "evidence",
+    "provenance",
+    "debugger",
+    "reconstruction"
+  ],
+  "renderings": [
+    "to_tex",
+    "to_json",
+    "to_dict",
+    "explain"
+  ]
+}

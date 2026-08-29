@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "starting_head": "f8c2345b1326c5772cfb67fdfa8ccfc11451e3f7",
+  "audited_working_revision": "371bc3c9df509c91fd016c1557db06f9466f5871",
+  "branch": "feature/public-api-reference-harvester",
+  "project_version": "0.1.0",
+  "public_release_operation_performed": false,
+  "ci": {
+    "tier_1_fast": ".github/workflows/ci.yml",
+    "tier_2_integration": ".github/workflows/integration.yml",
+    "tier_3_release_manual_only": ".github/workflows/release-validation.yml",
+    "scheduled_non_blocking": ".github/workflows/maintenance.yml",
+    "default_permissions": "contents: read"
+  },
+  "compatibility": {
+    "python_api_policy": "maintenance/api-policy.json",
+    "schema_policy": "maintenance/schema-policy.json",
+    "c_abi": "v1",
+    "api_drift_gate": "PASS",
+    "unsupported_future_schema": "FAIL_CLOSED"
+  },
+  "reproducible_build": {
+    "classification": "STRUCTURALLY_REPRODUCIBLE",
+    "canonical_entrypoint": "tools/build_release.py",
+    "artifact_manifest": "tools/artifact_manifest.py",
+    "cargo_locked": true,
+    "lean_pinned": true,
+    "ci_requirements_locked": "requirements/ci.txt",
+    "windows_wheel": "PASS",
+    "linux_wheel": "PASS"
+  },
+  "validation": {
+    "python": {
+      "passed": 582,
+      "skipped": 1,
+      "failed": 0
+    },
+    "rust_stable": "PASS_52",
+    "rust_msrv_1_85": "PASS_52",
+    "c_cpp": "PASS_4_OF_4",
+    "rust_fmt": "PASS",
+    "rust_clippy_correctness_suspicious": "PASS",
+    "synthetic_operational_exact_relational_unresolved": "PASS_3_OF_3",
+    "maintenance_gate": "PASS",
+    "public_release_ready_preserved": true
+  },
+  "worktree_hygiene": {
+    "canonical_clone_clean_before_task": true,
+    "parent_duplicate_tracked_changes_hash_matched_and_restored": 4,
+    "parent_tracked_changes_not_hash_equal": [
+      "README.md",
+      "README.ja.md",
+      "pyproject.toml"
+    ],
+    "status": "MANUAL_WORKTREE_REVIEW_REQUIRED",
+    "untracked_files_modified": false,
+    "protected_private_file_accessed": false,
+    "e_drive_accessed": false
+  },
+  "release_publication": {
+    "main_merged": false,
+    "tag_created": false,
+    "release_published": false,
+    "pypi_published": false,
+    "crates_io_published": false
+  },
+  "MAINTENANCE_INFRASTRUCTURE_READY": true,
+  "remaining_manual_action": "Review three non-identical tracked changes and all untracked files in the parent worktree without touching protected private content."
+}

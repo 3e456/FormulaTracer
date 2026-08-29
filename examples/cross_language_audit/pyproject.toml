@@ -1,0 +1,11 @@
+[build-system]
+requires = ["maturin>=1"]
+build-backend = "maturin"
+
+[project]
+name = "cross-language-audit"
+version = "0.1.0"
+
+[tool.maturin]
+module-name = "native_ext"
+manifest-path = "Cargo.toml"

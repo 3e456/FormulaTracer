@@ -1,0 +1,19 @@
+schema_version: "0.1"
+entity_id: std.algorithm.transform
+standard_version: cpp17
+header: algorithm
+qualified_name: std::transform
+kind: function_template
+signature: "OutputIt transform(InputIt, InputIt, OutputIt, UnaryOperation)"
+template_parameters: [InputIt, OutputIt, UnaryOperation]
+effect: WriteMemory
+semantic_family: Map
+preconditions: [valid_input_range, valid_output_range]
+postconditions: [writes_elementwise_transformation]
+exceptions: [propagates_element_operation_exceptions]
+aliasing: {permits_in_place: true}
+iterator_requirements: [input_iterator, output_iterator]
+complexity: "exactly N applications"
+lowering: {op: Map, order: left_to_right}
+proof_status: CONTRACT_VERIFIED
+source_reference: "ISO C++17 [alg.transform]"

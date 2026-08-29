@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "readme_en": "PASS",
+  "readme_ja": "PASS",
+  "bilingual_api_usage_guide": "PASS",
+  "theory_example": "FULLY_SYNTHETIC_SCORE_EXAMPLE",
+  "public_reference_items": 628,
+  "public_stable_symbols": 113,
+  "documented_symbol_not_found": 0,
+  "undocumented_stable_public_symbol": 0,
+  "doc_signature_mismatch": 0,
+  "doc_default_value_mismatch": 0,
+  "stale_enum_value": 0,
+  "broken_reference_link": 0,
+  "missing_en": 0,
+  "missing_ja": 0,
+  "en_ja_semantic_discrepancy": 0,
+  "user_declared_boundary_preserved": true,
+  "physics_claim_boundary_preserved": true,
+  "provider_claim_boundary_preserved": true,
+  "document_example_tests": "6/6 PASS",
+  "status": "PASS"
+}

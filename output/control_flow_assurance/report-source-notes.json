@@ -1,0 +1,21 @@
+{
+  "audience": "technical",
+  "delivery_mode": "markdown_requested_by_user",
+  "required_structure_mapping": [
+    "title",
+    "technical summary",
+    "key findings",
+    "scope/data/metrics",
+    "methodology",
+    "limitations/robustness",
+    "recommended next steps",
+    "further questions"
+  ],
+  "schema_version": "1.0",
+  "sources": [
+    "<PRIVATE_AUDIT_OUTPUT>/inventory.json",
+    "output/control_flow_assurance/*.json",
+    "pinned external repository metadata"
+  ],
+  "visual_omission_reason": "Exact audit tables are more legible than charts for the small categorical result sets."
+}

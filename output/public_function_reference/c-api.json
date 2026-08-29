@@ -1,0 +1,906 @@
+{
+  "items": [
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "borrowed/scalar or consumes no ownership",
+      "parameters": [],
+      "qualified_symbol": "ft_abi_version",
+      "related_symbols": [],
+      "return_type": "uint32_t",
+      "signature": "uint32_t ft_abi_version(void);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_abi_version",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "FT_Context*",
+        "const char* request_json"
+      ],
+      "qualified_symbol": "ft_kernel_execute_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_kernel_execute_json(FT_Context*, const char* request_json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_kernel_execute_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_context_free",
+      "parameters": [],
+      "qualified_symbol": "ft_context_create",
+      "related_symbols": [
+        "ft_context_free"
+      ],
+      "return_type": "FT_Context*",
+      "signature": "FT_Context* ft_context_create(void);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_context_create",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "borrowed/scalar or consumes no ownership",
+      "parameters": [
+        "FT_Context*"
+      ],
+      "qualified_symbol": "ft_context_free",
+      "related_symbols": [],
+      "return_type": "void",
+      "signature": "void ft_context_free(FT_Context*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_context_free",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Context*"
+      ],
+      "qualified_symbol": "ft_context_last_error",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_context_last_error(const FT_Context*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_context_last_error",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const char* json"
+      ],
+      "qualified_symbol": "ft_formula_from_json",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Formula*",
+      "signature": "FT_Formula* ft_formula_from_json(FT_Context*, const char* json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_formula_from_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const char* tex"
+      ],
+      "qualified_symbol": "ft_formula_from_tex",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Formula*",
+      "signature": "FT_Formula* ft_formula_from_tex(FT_Context*, const char* tex);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_formula_from_tex",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "borrowed/scalar or consumes no ownership",
+      "parameters": [
+        "FT_Formula*"
+      ],
+      "qualified_symbol": "ft_formula_free",
+      "related_symbols": [],
+      "return_type": "void",
+      "signature": "void ft_formula_free(FT_Formula*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_formula_free",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const FT_Formula*"
+      ],
+      "qualified_symbol": "ft_verify",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Result*",
+      "signature": "FT_Result* ft_verify(FT_Context*, const FT_Formula*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_verify",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const FT_Formula* theory",
+        "const FT_Formula* implementation"
+      ],
+      "qualified_symbol": "ft_verify_pair",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Result*",
+      "signature": "FT_Result* ft_verify_pair(FT_Context*, const FT_Formula* theory, const FT_Formula* implementation);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_verify_pair",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const char* json"
+      ],
+      "qualified_symbol": "ft_audit_ir_json",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Result*",
+      "signature": "FT_Result* ft_audit_ir_json(FT_Context*, const char* json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_audit_ir_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const char* json"
+      ],
+      "qualified_symbol": "ft_audit_project_ir_json",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Result*",
+      "signature": "FT_Result* ft_audit_project_ir_json(FT_Context*, const char* json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_audit_project_ir_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "borrowed/scalar or consumes no ownership",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_status",
+      "related_symbols": [],
+      "return_type": "FT_Status",
+      "signature": "FT_Status ft_result_status(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_status",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_to_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_result_to_json(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_to_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_to_tex",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_result_to_tex(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_to_tex",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "FT_Context*",
+        "const FT_Result*",
+        "const char* source_context_json",
+        "const char* environment_json",
+        "const char* artifact_lineage_json"
+      ],
+      "qualified_symbol": "ft_result_to_audit_bundle_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_result_to_audit_bundle_json(FT_Context*, const FT_Result*, const char* source_context_json, const char* environment_json, const char* artifact_lineage_json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_to_audit_bundle_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_theory",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_SemanticObject*",
+      "signature": "FT_SemanticObject* ft_result_theory(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_theory",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_implementation",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_SemanticObject*",
+      "signature": "FT_SemanticObject* ft_result_implementation(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_implementation",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_SemanticObject*"
+      ],
+      "qualified_symbol": "ft_semantic_object_to_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_semantic_object_to_json(const FT_SemanticObject*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_semantic_object_to_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_SemanticObject*"
+      ],
+      "qualified_symbol": "ft_semantic_object_to_tex",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_semantic_object_to_tex(const FT_SemanticObject*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_semantic_object_to_tex",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "borrowed/scalar or consumes no ownership",
+      "parameters": [
+        "FT_SemanticObject*"
+      ],
+      "qualified_symbol": "ft_semantic_object_free",
+      "related_symbols": [],
+      "return_type": "void",
+      "signature": "void ft_semantic_object_free(FT_SemanticObject*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_semantic_object_free",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const char* ir_json",
+        "const char* metadata_json"
+      ],
+      "qualified_symbol": "ft_function_from_ir_json",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Function*",
+      "signature": "FT_Function* ft_function_from_ir_json(FT_Context*, const char* ir_json, const char* metadata_json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_function_from_ir_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const char* function_json"
+      ],
+      "qualified_symbol": "ft_function_from_json",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Function*",
+      "signature": "FT_Function* ft_function_from_json(FT_Context*, const char* function_json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_function_from_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_theory_function",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Function*",
+      "signature": "FT_Function* ft_result_theory_function(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_theory_function",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_implementation_function",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Function*",
+      "signature": "FT_Function* ft_result_implementation_function(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_implementation_function",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_error_function",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Function*",
+      "signature": "FT_Function* ft_result_error_function(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_error_function",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_range_lower_function",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Function*",
+      "signature": "FT_Function* ft_result_range_lower_function(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_range_lower_function",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_range_upper_function",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Function*",
+      "signature": "FT_Function* ft_result_range_upper_function(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_range_upper_function",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "FT_Context*",
+        "const FT_Function*",
+        "const char* inputs_json"
+      ],
+      "qualified_symbol": "ft_function_evaluate_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_function_evaluate_json(FT_Context*, const FT_Function*, const char* inputs_json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_function_evaluate_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with matching *_free function",
+      "parameters": [
+        "FT_Context*",
+        "const FT_Function*",
+        "const char* values_json"
+      ],
+      "qualified_symbol": "ft_function_substitute_json",
+      "related_symbols": [
+        "matching *_free function"
+      ],
+      "return_type": "FT_Function*",
+      "signature": "FT_Function* ft_function_substitute_json(FT_Context*, const FT_Function*, const char* values_json);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_function_substitute_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Function*"
+      ],
+      "qualified_symbol": "ft_function_to_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_function_to_json(const FT_Function*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_function_to_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Function*"
+      ],
+      "qualified_symbol": "ft_function_to_tex",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_function_to_tex(const FT_Function*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_function_to_tex",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Function*"
+      ],
+      "qualified_symbol": "ft_function_inspect_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_function_inspect_json(const FT_Function*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_function_inspect_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "borrowed/scalar or consumes no ownership",
+      "parameters": [
+        "FT_Function*"
+      ],
+      "qualified_symbol": "ft_function_free",
+      "related_symbols": [],
+      "return_type": "void",
+      "signature": "void ft_function_free(FT_Function*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_function_free",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_diagnostics_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_result_diagnostics_json(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_diagnostics_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_assumptions_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_result_assumptions_json(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_assumptions_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_evidence_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_result_evidence_json(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_evidence_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_error_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_result_error_json(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_error_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "owned; caller must free with ft_string_free",
+      "parameters": [
+        "const FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_range_json",
+      "related_symbols": [
+        "ft_string_free"
+      ],
+      "return_type": "char*",
+      "signature": "char* ft_result_range_json(const FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_range_json",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "borrowed/scalar or consumes no ownership",
+      "parameters": [
+        "FT_Result*"
+      ],
+      "qualified_symbol": "ft_result_free",
+      "related_symbols": [],
+      "return_type": "void",
+      "signature": "void ft_result_free(FT_Result*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_result_free",
+      "visibility": "PUBLIC"
+    },
+    {
+      "error_status_behavior": "returns null/status and records a context error; panics are contained at the ABI boundary",
+      "kind": "function",
+      "language": "C",
+      "module": "include/formulatracer.h",
+      "nullability": "pointer arguments may be null only where the implementation explicitly accepts them; invalid required pointers fail closed",
+      "ownership": "borrowed/scalar or consumes no ownership",
+      "parameters": [
+        "char*"
+      ],
+      "qualified_symbol": "ft_string_free",
+      "related_symbols": [],
+      "return_type": "void",
+      "signature": "void ft_string_free(char*);",
+      "since": "C ABI v1",
+      "source_location": "include/formulatracer.h",
+      "stability": "PUBLIC_STABLE",
+      "symbol": "ft_string_free",
+      "visibility": "PUBLIC"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,19 @@
+schema_version: "0.1"
+entity_id: std.math.sqrt
+standard_version: cpp17
+header: cmath
+qualified_name: std::sqrt
+kind: function
+signature: "floating sqrt(floating)"
+template_parameters: []
+effect: Pure
+semantic_family: ElementaryFunction
+preconditions: [argument_nonnegative_or_environment_domain_behavior]
+postconditions: [returns_square_root]
+exceptions: [floating_environment_dependent]
+aliasing: {}
+iterator_requirements: []
+complexity: implementation_defined
+lowering: {op: FunctionCall, function: sqrt}
+proof_status: ENVIRONMENT_DEPENDENT
+source_reference: "ISO C++17 [cmath.syn]"

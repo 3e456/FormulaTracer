@@ -1,0 +1,19 @@
+schema_version: "0.1"
+package: rasterio
+version: ">=1.4,<2.0"
+resolution_kind: REFERENCE_DETAILED_CONTRACT
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-27"
+equivalence_scope:
+  preserve: [spatial_relation, parameters, shape, transform]
+  ignore: [native_kernel, implementation_algorithm]
+bindings:
+  - callable: rasterio.open
+    family: RepresentationMapping
+    bind: {mapping: raster_dataset_io_boundary, io_boundary: true}
+    reference: https://rasterio.readthedocs.io/en/stable/api/rasterio.html#rasterio.open
+  - callable: rasterio.features.features.rasterize
+    family: SpatialGeometry
+    bind: {relation: geometry_to_raster_cells, transform_parameter: transform,
+           output_shape_parameter: out_shape}
+    reference: https://rasterio.readthedocs.io/en/stable/api/rasterio.features.html#rasterio.features.rasterize

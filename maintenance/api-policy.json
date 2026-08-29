@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "project_version": "0.1.0",
+  "policy": "0.x compatibility with documented deprecation",
+  "python": {
+    "stable": [
+      "FormulaTracer",
+      "ProjectAnalyzer",
+      "reconstruct",
+      "ReconstructionResult",
+      "NativeResult",
+      "NativeFormula",
+      "NativeMathematicalFunction",
+      "compare_ir",
+      "native_available",
+      "plan_generation",
+      "MathematicalFormula"
+    ],
+    "experimental": "All other names currently exported by formulatracer.__all__",
+    "internal": "Names not exported by formulatracer.__all__"
+  },
+  "rust": {
+    "stable": ["Formula", "SemanticObject", "VerificationResult", "MathematicalFunction"],
+    "experimental": "Other public formulatracer-core items until explicitly promoted"
+  },
+  "c_abi": {
+    "version": 1,
+    "stable": true,
+    "header": "include/formulatracer.h"
+  },
+  "cpp": {
+    "stable": ["Context", "Formula", "Result"],
+    "semantic_authority": false,
+    "boundary": "thin RAII wrapper over Stable C ABI v1"
+  }
+}

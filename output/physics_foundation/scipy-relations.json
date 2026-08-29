@@ -1,0 +1,10 @@
+{
+  "callback": "INTERPROCEDURAL_WHEN_AVAILABLE",
+  "contracts": [
+    "scipy.integrate.quad",
+    "scipy.integrate.solve_ivp",
+    "scipy.optimize.minimize"
+  ],
+  "returned_values": "APPROXIMATIONS_NOT_EXACT_SOLUTIONS",
+  "schema_version": "1.0"
+}

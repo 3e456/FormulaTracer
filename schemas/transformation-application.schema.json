@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/transformation-application.schema.json",
+  "type": "object",
+  "required": ["rule_id", "source_expression_id", "target_expression_id", "parameters", "rule_kind", "assumptions", "hard_constraints", "discharged_obligations", "remaining_obligations", "reference", "authorization_status", "status"],
+  "properties": {
+    "rule_id": {"type": "string"}, "source_expression_id": {"type": "string"},
+    "target_expression_id": {"type": "string"}, "parameters": {"type": "object"},
+    "rule_kind": {"enum": ["EXACT", "EXACT_UNDER_ASSUMPTIONS", "APPROXIMATION"]},
+    "assumptions": {"type": "array"}, "hard_constraints": {"type": "array"},
+    "discharged_obligations": {"type": "array"}, "remaining_obligations": {"type": "array"},
+    "reference": {"type": "object"}, "authorization_status": {"enum": ["RULE_ALLOWED", "RULE_NOT_ALLOWED"]},
+    "status": {"type": "string"}
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "backend_seconds": {
+    "cpp-explicit": 0.8667472999804886,
+    "cupy": 0.1693821999215288,
+    "jax": 0.1736619000439532,
+    "numpy": 0.21368240004812833,
+    "python-explicit": 0.140749699974549,
+    "python-loop": 0.03947319999861065,
+    "rust-explicit": 0.8915464999881806,
+    "torch": 0.13320030004251748
+  },
+  "cases_per_second": 140.0639529614236,
+  "family_seconds": {
+    "Arithmetic": 1.8480868999758968,
+    "DiscreteDifference": 0.02064450000762008,
+    "Dot": 0.08304479999060277,
+    "Elementwise": 0.031687799986684695,
+    "FiniteDifference": 0.02049359999364242,
+    "FiniteProduct": 0.08455079997656867,
+    "FiniteSum": 0.11240500000712927,
+    "MatrixMultiply": 0.08511619994533248,
+    "Piecewise": 0.12353009998332709,
+    "Reduction": 0.0947342000581557,
+    "Reshape": 0.06252070002665278,
+    "Transpose": 0.061628900046343915
+  },
+  "peak_memory_bytes": null,
+  "peak_memory_measurement": "UNAVAILABLE_WITHOUT_PROFILER_OVERHEAD",
+  "schema_version": "1.0",
+  "wall_time_seconds": 3.3413308000017423
+}

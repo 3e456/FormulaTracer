@@ -1,0 +1,9 @@
+{
+  "candidates": [
+    "symbolic shape refinement",
+    "effect/alias summaries",
+    "runtime call-target evidence",
+    "provider backend evidence"
+  ],
+  "policy": "generic wins only; no fixture-specific branches"
+}

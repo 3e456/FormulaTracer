@@ -1,0 +1,60 @@
+schema_version: "0.1"
+package: geopandas
+version: ">=1.0,<2.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://geopandas.org/en/stable/docs/reference/api/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [geometry_values, crs, index_alignment, argument_mapping]
+  ignore: [implementation_algorithm, spatial_index_backend, memory_layout]
+bindings:
+  - callable: geopandas.GeoDataFrame
+    family: TableMapping
+    bind: {mapping: geospatial_dataframe_constructor, result_type: geopandas.GeoDataFrame,
+           crs_parameter: crs, geometry_parameter: geometry}
+  - callable: geopandas.GeoSeries
+    family: TableMapping
+    bind: {mapping: geometry_series_constructor, result_type: geopandas.GeoSeries,
+           crs_parameter: crs}
+  - callable: geopandas.points_from_xy
+    family: SpatialGeometry
+    bind: {relation: point_construction_from_coordinates, x_parameter: x,
+           y_parameter: y, z_parameter: z, crs_parameter: crs,
+           result_type: geopandas.GeoSeries}
+  - callable: geopandas.read_file
+    family: RepresentationMapping
+    bind: {mapping: geospatial_input_boundary, result_type: geopandas.GeoDataFrame,
+           io_boundary: true, crs_preserved_from_source: true}
+  - callable: geopandas.GeoDataFrame.to_crs
+    family: SpatialGeometry
+    bind: {relation: coordinate_transform, source_crs_from: receiver.crs,
+           target_crs_parameter: crs, target_epsg_parameter: epsg,
+           result_type: geopandas.GeoDataFrame}
+    reference_status: REFERENCE_REVIEWED
+  - callable: geopandas.GeoSeries.to_crs
+    family: SpatialGeometry
+    bind: {relation: coordinate_transform, source_crs_from: receiver.crs,
+           target_crs_parameter: crs, target_epsg_parameter: epsg,
+           result_type: geopandas.GeoSeries}
+    reference_status: REFERENCE_REVIEWED
+  - callable: geopandas.GeoDataFrame.set_crs
+    family: RepresentationMapping
+    bind: {mapping: assign_crs_metadata_without_coordinate_transform,
+           crs_parameter: crs, result_type: geopandas.GeoDataFrame}
+  - callable: geopandas.GeoSeries.set_crs
+    family: RepresentationMapping
+    bind: {mapping: assign_crs_metadata_without_coordinate_transform,
+           crs_parameter: crs, result_type: geopandas.GeoSeries}
+  - callable: geopandas.GeoSeries.contains
+    family: SpatialGeometry
+    bind: {relation: contains_predicate, alignment_parameter: align}
+    reference_status: LEAN_VERIFIED_MAPPING
+  - callable: geopandas.GeoSeries.representative_point
+    family: SpatialGeometry
+    bind: {relation: representative_interior_point, result_type: geopandas.GeoSeries}
+  - callable: geopandas.GeoDataFrame.geometry
+    family: RepresentationMapping
+    bind: {mapping: active_geometry_column, result_type: geopandas.GeoSeries,
+           crs_preserved: true}
+    reference: https://geopandas.org/en/stable/docs/reference/api/geopandas.GeoDataFrame.geometry.html

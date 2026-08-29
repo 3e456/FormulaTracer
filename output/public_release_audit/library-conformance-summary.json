@@ -1,0 +1,11 @@
+{
+  "provider_count": 34,
+  "primary_harvest_library_count": 12,
+  "contract_targets": 9350,
+  "formalized_or_classified": 9207,
+  "not_applicable": 139,
+  "reference_insufficient": 4,
+  "formal_contract_objects": 2139,
+  "critical_mismatches": 0,
+  "status": "PASS_WITH_VERSION_RANGES_UNPINNED"
+}

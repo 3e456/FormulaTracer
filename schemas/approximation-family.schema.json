@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/approximation-family-0.2.json",
+  "type": "object",
+  "required": ["schema_version", "families", "library_mappings"],
+  "properties": {
+    "schema_version": {"const": "0.2"},
+    "families": {"type": "array", "items": {"$ref": "#/$defs/family"}},
+    "library_mappings": {"type": "array", "items": {"$ref": "#/$defs/libraryMapping"}}
+  },
+  "$defs": {
+    "family": {
+      "type": "object",
+      "required": ["family_id", "mathematical_operator", "approximation_kind", "order", "stencil", "quadrature", "step_parameter", "domain_requirements", "smoothness_requirements", "boundary_requirements", "convergence_order", "convergence_parameter", "convergence_target", "library_contract_mappings", "provenance", "proof_status", "selection_error_estimate"],
+      "properties": {
+        "family_id": {"type": "string"}, "mathematical_operator": {"enum": ["Derivative", "Integral", "Interpolation"]},
+        "approximation_kind": {"enum": ["finite_difference", "quadrature", "interpolation"]},
+        "order": {"type": ["integer", "null"]}, "stencil": {"type": ["object", "null"]}, "quadrature": {"type": ["object", "null"]},
+        "step_parameter": {"type": ["string", "null"]}, "domain_requirements": {"type": "array", "items": {"type": "string"}},
+        "smoothness_requirements": {"type": "array", "items": {"type": "string"}}, "boundary_requirements": {"type": "array", "items": {"type": "string"}},
+        "convergence_order": {"type": ["integer", "null"]}, "convergence_parameter": {"type": ["string", "null"]}, "convergence_target": {"type": "string"},
+        "library_contract_mappings": {"type": "array", "items": {"type": "string"}}, "provenance": {"type": "object"},
+        "proof_status": {"const": "CONVERGENCE_PROOF_NOT_YET_ESTABLISHED"}, "selection_error_estimate": {"type": ["number", "null"]}
+      }, "additionalProperties": false
+    },
+    "libraryMapping": {
+      "type": "object", "required": ["qualified_callable", "exact_semantic_operator", "approximation_family_ids", "public_reference_semantics", "provenance"],
+      "properties": {"qualified_callable": {"type": "string"}, "exact_semantic_operator": {"enum": ["DiscreteDifference", "FiniteDifference", "Quadrature", "Interpolation", "Extrapolation"]},
+        "approximation_family_ids": {"type": "array", "items": {"type": "string"}}, "public_reference_semantics": {"type": "object"}, "provenance": {"type": "object"}},
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

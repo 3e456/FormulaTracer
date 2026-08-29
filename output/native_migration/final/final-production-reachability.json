@@ -1,0 +1,4979 @@
+{
+  "schema_version": "1.0",
+  "production_entrypoint_count": 543,
+  "production_reachable_symbols": 1417,
+  "remaining_owner_symbols_reachable": 0,
+  "reviewed_former_owner_symbols_reachable": 219,
+  "production_reachable_python_semantic_symbols": 0,
+  "production_reachability_unresolved": 0,
+  "entrypoints": [
+    {
+      "entrypoint": "cpp_audit.algebraic_domains.AlgebraicStructure",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.algebraic_domains.DomainSemantics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.algebraic_domains.NumericDomain",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.algebraic_domains.domain_facts",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.algebraic_domains.structure_closure",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.algebraic_domains.structure_fact",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_families.ApproximationFamily",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_families.ApproximationStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_families.ExactSemanticOperator",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_families.LibraryFamilyMapping",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_families.classify_library_call",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_families.load_approximation_families",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_families.load_library_family_mappings",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.ApproximationAssumption",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.ApproximationErrorBound",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.ApproximationProof",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.ApproximationTheorem",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.AssumptionStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.ConvergenceClaim",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.ProofEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.ProofStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.approximation_proof_coverage",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY",
+        "C/APPROXIMATION_PROOF",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.load_approximation_proof_registry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_PROOF",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.approximation_proofs.resolve_approximation_proof",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/APPROXIMATION_FAMILY",
+        "C/APPROXIMATION_PROOF",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.AssuranceMetrics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.AssuranceReport",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.AuditBundle",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.AuditDiff",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.MutationOutcome",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.RealWorldValidationSummary",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.audit_diff",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.create_audit_bundle",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.localized_certificate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.run_assurance_suite",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.summarize_real_world",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.assurance_release.verify_audit_bundle",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.AuditCertificate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.ClaimStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.ConstantDependencyGraph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.ConstantKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.execute_audit",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LEGACY_IEEE754",
+        "B/CANONICALIZE",
+        "B/LEGACY_TRANSFORMATIONS",
+        "C/APPROXIMATION_FAMILY",
+        "C/APPROXIMATION_PROOF",
+        "C/PARALLEL_ANALYZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION",
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.extract_constant_graph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.render_latex_certificate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.summarize_value",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.audit_execution.write_certificate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.BitAssuranceResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.BitEncoding",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.BitRepresentation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.NumeralRepresentation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.OverflowSemantics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.ShiftSemantics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.Signedness",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.bit_field_extract",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.bit_field_insert",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.bit_ir",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.decode_bits",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.encode_bits",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.evaluate_bit_operation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.recognize_bit_field_extract",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.representation_for_dtype",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.representation_from_dict",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.bitvector.run_exhaustive_bit_assurance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.cli.main",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LEGACY_IEEE754",
+        "B/CANONICALIZE",
+        "B/LEGACY_TRANSFORMATIONS",
+        "C/APPROXIMATION_FAMILY",
+        "C/APPROXIMATION_PROOF",
+        "C/PARALLEL_ANALYZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION",
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.AssuranceEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.ControlFlowAssuranceStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.EphemeralCheckout",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.ExternalCorpusManifest",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.ExternalCorpusResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.aggregate_records",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.analyze_external_manifest",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.evaluate_mathematical_ir",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.inventory_source",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.run_finite_exhaustive",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.run_generated_round_trip",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.run_metamorphic_assurance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.control_flow_assurance.run_mutation_assurance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.core.AuditError",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.core.AuditResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.core.audit",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.core.extract_ir",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.core.load_spec",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.core.normalize",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.cpp_project.CppCompilationEnvironment",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.cpp_project.CppCompileCommand",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.cpp_project.CppDependencyResolver",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.cpp_project.CppEnvironmentResolver",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.cpp_project.CppProjectAnalyzer",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.cpp_project.CppSource",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.cpp_project.parse_cpp_source",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.ArtifactEnclosure",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.EnclosureEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.EndToEndEnclosure",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.EndToEndProofChain",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.EndToEndStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.EndToEndVerificationClaim",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.ErrorCompletenessStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.LayerVerification",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.VerificationLayer",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.end_to_end.build_end_to_end_claims",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.EClass",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.EGraphMatchResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.ENode",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.EqualityTraceStep",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.ExactEqualitySaturator",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY",
+        "B/LEGACY_TRANSFORMATIONS",
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.FactConflict",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.MathematicalFact",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.MathematicalFactEngine",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.MathematicalRelationGraph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.RelationEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.RelationKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.RewritePack",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.SaturationBudget",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.SaturationResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.SaturationStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.TypedEGraph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.load_rewrite_packs",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.replay_equality_trace",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY",
+        "B/LEGACY_TRANSFORMATIONS",
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.saturate_and_match",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY",
+        "B/LEGACY_TRANSFORMATIONS",
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.equality_saturation.select_rewrite_packs",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.CompositionProofStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.CompositionResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.DependencyStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.FunctionSensitivityContract",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.GraphPropagationResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.PropagationNode",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.compose_error_components",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.evaluate_error_budget",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_composition.propagate_expression_graph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.BoundStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ErrorAnalysis",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ErrorBound",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ErrorComponent",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ErrorComposition",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ErrorCompositionKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ErrorMetric",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ErrorSource",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ErrorSpecification",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.GraphEnclosure",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ProofObligation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.ResidualExpression",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.error_ir.build_error_analysis",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.execution_sandbox.SandboxExecutionEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.execution_sandbox.SandboxPolicy",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.execution_sandbox.run_sandboxed",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.CandidateMatch",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.GeneratedMathematicalImplementation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.GenerationDecision",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.GenerationPlan",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.MathematicalFormula",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY",
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.MathematicalPatternIndex",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.ProviderContract",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.SearchBudget",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.default_provider_registry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.function",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY",
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.mathematical_features",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.generation_planning.plan_generation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.ieee754.EquivalenceStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LEGACY_IEEE754"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.ieee754.FloatingOperation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LEGACY_IEEE754"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.ieee754.IEEE754Analysis",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LEGACY_IEEE754"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.ieee754.RoundingMode",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LEGACY_IEEE754"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.ieee754.analyze_ieee754",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LEGACY_IEEE754",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.AffineForm",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.BranchStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.DependencyAwareRange",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.ErrorInterval",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.InputRange",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.Interval",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.IntervalEngine",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.IntervalEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.IntervalObligation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.IntervalProofStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.IntervalPropagation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.OutputRangeConstraint",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.RangeEnclosure",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.RangeSpecification",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.RangeStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.SymbolicBound",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.ValueInterval",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.analyze_project_ranges",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.interval_abs",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.interval_add",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.interval_div",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.interval_mul",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.interval_neg",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.interval_power",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.interval_sub",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.interval.simplify_expression",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_INTERVAL"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.knowledge_assurance.KnowledgeAssuranceCase",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.knowledge_assurance.KnowledgeAssuranceReport",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.knowledge_assurance.run_knowledge_assurance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY",
+        "B/LEGACY_TRANSFORMATIONS",
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.LibraryContractRegistry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.ReferenceStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.SemanticFamily",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.TypeEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.ValueTypeInfo",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.analyze_inventory_coverage",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.generate_inventory_candidates",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.load_inventory_type_evidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.write_inventory_candidates",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_contracts.write_inventory_coverage",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_coverage.LibraryBackend",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_coverage.LibraryCapability",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_coverage.LibraryLoweringRule",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_coverage.classify_apis",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_coverage.library_backends",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_coverage.real_world_gap_analysis",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.library_coverage.run_self_generation_smoke",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.BranchDomain",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.PiecewiseDomainAnalysis",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.analyze_piecewise_domains",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.canonicalize_logic",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.evaluate_logic",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.indicator",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.piecewise",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.predicate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.logic_semantics.select",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/LOGIC"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.major_ecosystem.ContractImpact",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.major_ecosystem.EcosystemContract",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.major_ecosystem.EcosystemCoverage",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.major_ecosystem.LibraryVersionDiff",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.major_ecosystem.MajorEcosystemReport",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.major_ecosystem.diff_library_versions",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.major_ecosystem.harvest_major_ecosystem_contracts",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_assurance.AdversarialOutcome",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_assurance.MathematicalAssuranceReport",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_assurance.RetrievalOutcome",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_assurance.run_mathematical_assurance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY",
+        "B/LEGACY_TRANSFORMATIONS",
+        "D/LEGACY_KNOWLEDGE",
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.CertifiedRange",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.ConvergenceResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.Domain",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.EvidenceStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.FourierSeries",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.FunctionProperties",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.InfiniteProcess",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.MathematicalDebugLocation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.MathematicalRelation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.OriginSet",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.PowerSeries",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.Sequence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.SourceOrigin",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.TaylorSeries",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.TransformSemantics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.TruncationRequirement",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.TruncationRequirementSolver",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.TruncationSolution",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.analyze_convergence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.convolution",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.discrete_transform_layers",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.function_properties",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.integral_transform",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.inverse_mapping",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.localize_mathematical_node",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.propagate_properties",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.range_condition_status",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_semantics.series_evaluation_candidates",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.AntiUnificationResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.CanonicalSymbolRegistry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.MathBuilder",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.MathSurfaceAST",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.MathematicalSubstitution",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.NotationResolutionError",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.SymbolDeclaration",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.TypedPattern",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.UnificationResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.anti_unify",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.canonical_equal",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.generalize",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.instantiate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.parse_tex",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.to_dsl",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.to_json",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.to_markdown",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.to_tex",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.to_unicode",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.math_surface.typed_unify",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.mathematical_knowledge.KnowledgeEvidenceKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.mathematical_knowledge.KnowledgeRelationKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.mathematical_knowledge.MathematicalKnowledgeEntry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS",
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS",
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.mathematical_knowledge.apply_knowledge_once",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_KNOWLEDGE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.mathematical_primitives.MathematicalPrimitive",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/PRIMITIVE_REGISTRY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.mathematical_primitives.mathematical_primitive_registry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/PRIMITIVE_REGISTRY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.mathematical_primitives.primitive_categories",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/PRIMITIVE_REGISTRY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.NumericCast",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.NumericExecutionType",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.NumericTypeAnalysis",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.OverflowSemantics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.PromotionRule",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.UnderflowSemantics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.analyze_numeric_types",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE",
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.execution_type",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.numeric_types.infer_value_type",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_NUMERIC_TYPES"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.parallel_semantics.ExecutionPolicy",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/PARALLEL_ANALYZE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.parallel_semantics.ParallelOperation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/PARALLEL_ANALYZE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.parallel_semantics.ParallelSemantics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/PARALLEL_ANALYZE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.parallel_semantics.analyze_parallel_semantics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/PARALLEL_ANALYZE",
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.pipeline.PipelineResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.pipeline.audit_ir",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.pipeline.normalize_clang_ir",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.CLTValidation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.Covariance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.DistributionKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.DistributionValidation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.EmpiricalDistributionValidation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.EmpiricalEstimator",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.Estimator",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.EstimatorTarget",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.Expectation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.IndependenceValidation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.KnownDistribution",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.MonteCarloEstimate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.ParallelRandomness",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.ProbabilisticEnclosure",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.ProbabilityAuditResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.SamplingError",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.UserDefinedDistribution",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.Variance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.audit_probability",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.classify_random_source",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.extract_estimator",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.monte_carlo_estimate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.validate_clt",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.validate_distribution",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.validate_empirical_distribution",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.probability.validate_independence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "C/LEGACY_PROBABILITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.AuditOutputResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.AuditRootResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.CallEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.CppFrontend",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.CrossLanguageCallEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.DatasetOutput",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.DefinitionEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.DependencyEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.DependencyResolver",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ExpressionTarget",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ExternalSymbol",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.FFIBoundary",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.FormulaTracer",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.IOProvenance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ImportEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.IncludeEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.LanguageBoundary",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.LanguageFrontend",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ModuleNode",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.NativeExtension",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.OutputSink",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.OutputTarget",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.OutputTargetKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ProjectAnalyzer",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ProjectAuditResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ProjectDependencyGraph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ProjectStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.PythonDependencyResolver",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.PythonFrontend",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ReExportEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.RuntimeEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.RustFrontend",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.SerializationBoundary",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.SharedDependencyKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.SymbolNode",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.ValueDependencyEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.project.VariableTarget",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.provenance_assurance.ProvenanceAssuranceCase",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.provenance_assurance.ProvenanceAssuranceReport",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.provenance_assurance.run_provenance_assurance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_audit.AuditMode",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_audit.PythonAuditResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_audit.audit_python",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_audit.theory",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_cfg.BasicBlock",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_cfg.ControlFlowEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_cfg.ControlFlowGraph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_cfg.ControlFlowStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_cfg.Mutation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.python_cfg.build_python_cfg",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate.BenchmarkCase",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate.BenchmarkOutcome",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate.ReferenceRecord",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate.benchmark_cases",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate.dependency_license_inventory",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate.reference_registry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate.run_release_candidate_validation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY",
+        "B/LEGACY_TRANSFORMATIONS",
+        "D/LEGACY_KNOWLEDGE",
+        "F/LEGACY_MATH_SEMANTICS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate_v2.RCv2Case",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate_v2.benchmark_cases_v2",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate_v2.reference_registry_v2",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.release_candidate_v2.run_release_candidate_v2",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/EGRAPH",
+        "B/LEGACY_EQUALITY"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.AcceptedAuditBaseline",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.AuditCacheKey",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.AuditProfile",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.CacheLookupResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ConfigurationParameter",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ConfigurationSource",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.DataLineage",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.DatasetSchema",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.DatasetTransformation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.DependencyProvenance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.EnvironmentSnapshot",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ExtensionPackManifest",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.FieldSchema",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.GitSourceProvenance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.IncrementalAuditCache",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.IncrementalAuditPlan",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.IncrementalAuditResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.InputArtifact",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.MissingEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ParameterResolutionStep",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ParameterResolutionTrace",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ProvenanceEdge",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ProvenanceEdgeKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ProvenanceNode",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ProvenanceNodeKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ResearchProvenanceGraph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.ResolutionSuggestion",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.SchemaChangeKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.SensitivityFinding",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.TestCaseCandidate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.augment_project_provenance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.build_cache_key",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.build_data_lineage",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.capture_environment",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.capture_git_provenance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.compare_dataset_schemas",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.current_source_hashes",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.explain_result",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.explain_unresolved",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.generate_test_candidates",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.load_extension_pack",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.plan_incremental_audit",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.profile_acceptance",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.provenance_coverage",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.resolve_configuration",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.run_incremental_audit",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.research_provenance.sensitivity_report",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_contracts.RustLibraryContract",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_contracts.RustLibraryContractRegistry",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.CargoCrate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.CargoDependency",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.CargoDependencyKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.CargoPackage",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.CargoWorkspace",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.FFIResolutionStatus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.RustDependencyResolver",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.RustProjectAnalyzer",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.RustSource",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.rust_project.parse_rust_source",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "F/LEGACY_CORE"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.self_audit.TheoryCase",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.self_audit.backend_capabilities",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.self_audit.generate_theory_corpus",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.self_audit.run_large_scale_self_audit",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "C/APPROXIMATION_FAMILY",
+        "C/LEGACY_PROBABILITY",
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.AffectedOutput",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.AuditDebugResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.AuditDebugger",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.CounterexampleCandidate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.CounterexampleSearchResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.DebugFinding",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.DebugLocalizationLevel",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.DebugLocalizationMetrics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.DebugTrace",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.DivergenceType",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.ErrorAmplificationPoint",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.ErrorContribution",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.FailureRegion",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.FirstSemanticDivergence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.MinimalDivergentSubgraph",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.MinimalReproducer",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.RootCauseCandidate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.RootCauseConfidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.SemanticDivergence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.aggregate_localization_metrics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.debug_project",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.semantic_debugger.search_counterexamples",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.AlgorithmIR",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.CodeSynthesisResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.CrossLanguageSynthesisResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.ExpectedImplementationIR",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.GeneratedImplementation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.ImplementationConstraints",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.RepairCandidate",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.RepairVerificationResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.RoundTripVerification",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.SynthesisDivergence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.TheorySpecification",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.propose_repair",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.synthesize",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.synthesize_cross_language",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.verify_repair",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.synthesis.verify_round_trip",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "D/LEGACY_SYNTHESIS",
+        "D/PLAN_GENERATION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.BoundedRewriteResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.ComparisonRelation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.RewriteRuleDescriptor",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.RewriteState",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.RuleKind",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.TransformationApplication",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.TransformationObligation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.TransformationResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.TransformationTrace",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.apply_transformation_set",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/CANONICALIZE",
+        "B/LEGACY_TRANSFORMATIONS",
+        "C/APPROXIMATION_FAMILY",
+        "F/LEGACY_CORE",
+        "F/LEGACY_EXPRESSION"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.bounded_rewrite_search",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.transformations.load_rewrite_catalog",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "B/LEGACY_TRANSFORMATIONS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.units.PhysicalDimension",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/UNITS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.units.Quantity",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/UNITS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "cpp_audit.units.Unit",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [
+        "A/UNITS"
+      ],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeCallError",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeContext",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeEvidence",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeFormula",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeFunctionalValue",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeLibrary",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeMathematicalFunction",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeRangeValue",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeRelation",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeResultValue",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeSemanticObjectValue",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.NativeUnavailableError",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.compare_ir",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.execute_native_kernel",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.native.native_available",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.SemanticPathEvent",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.inferred_caller",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.observe_python_semantic_runtime",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.record_semantic_path",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.reset_semantic_runtime_metrics",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.semantic_execution_scope",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.semantic_runtime_events",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.semantic_runtime_snapshot",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.runtime_paths.write_semantic_runtime_snapshot",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.QuotientNormalizationResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.QuotientNormalizationResult.representative",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.QuotientNormalizationResult.status",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.QuotientNormalizationResult.to_dict",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.QuotientNormalizationResult.witness",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult.binder_mapping",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult.comparison_may_proceed",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult.establishes_mathematical_equality",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult.explain",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult.mapping",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult.status",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult.to_dict",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.StructuralIsomorphismResult.witness",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.quotient_normalize",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    },
+    {
+      "entrypoint": "formulatracer.structural.structural_isomorphism",
+      "reachable_python_semantic_symbols": [],
+      "reachable_python_semantic_symbol_count": 0,
+      "reachability_unresolved_symbols": [],
+      "reachable_rust_operations": [],
+      "status": "NO_PYTHON_SEMANTIC_OWNER_REACHABLE"
+    }
+  ],
+  "status": "PASS",
+  "no_production_reference_semantic_reachability": true
+}

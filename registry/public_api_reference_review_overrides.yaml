@@ -1,0 +1,60 @@
+schema_version: "1.0"
+rules:
+  - callable: numpy.testing.suppress_warnings
+    deprecated_status: DEPRECATED
+    deprecated_since: "2.4"
+    replacement_if_documented: warnings.filterwarnings
+    official_signature: "(forwarding_rule='always', _warn=True)"
+    official_reference: https://numpy.org/doc/2.4/reference/generated/numpy.testing.suppress_warnings.html
+  - callable: numpy.testing.assert_warns
+    deprecated_status: DEPRECATED
+    deprecated_since: "2.4"
+    replacement_if_documented: warnings.catch_warnings
+    official_signature: "(warning_class, *args, **kwargs)"
+    official_reference: https://numpy.org/doc/2.4/reference/generated/numpy.testing.assert_warns.html
+  - callable: scipy.odr.Data
+    deprecated_status: DEPRECATED
+    deprecated_since: "1.17.0"
+    removal_version_if_documented: "1.19.0"
+    replacement_if_documented: odrpack.Data
+    official_signature: "(x, y=None, we=None, wd=None, fix=None, meta=None)"
+    official_reference: https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.odr.Data.html
+  - callable: scipy.odr.ODR
+    deprecated_status: DEPRECATED
+    deprecated_since: "1.17.0"
+    removal_version_if_documented: "1.19.0"
+    replacement_if_documented: odrpack.ODR
+    official_signature: "(data, model, beta0=None, delta0=None, ifixb=None, ifixx=None, job=None, iprint=None, errfile=None, rptfile=None, ndigit=None, taufac=None, sstol=None, partol=None, maxit=None, stpb=None, stpd=None, sclb=None, scld=None, work=None, iwork=None, overwrite=False)"
+    official_reference: https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.odr.ODR.html
+  - callable: scipy.odr.*
+    deprecated_status: DEPRECATED
+    deprecated_since: "1.17.0"
+    removal_version_if_documented: "1.19.0"
+    replacement_if_documented: odrpack
+    official_reference: https://docs.scipy.org/doc/scipy-1.17.0/reference/odr.html
+  - callable: xarray.Dataset.drop
+    deprecated_status: DEPRECATED
+    replacement_if_documented: drop_vars or drop_sel
+    official_reference: https://docs.xarray.dev/en/stable/api/deprecated.html
+  - callable: xarray.DataArray.drop
+    deprecated_status: DEPRECATED
+    replacement_if_documented: drop_vars or drop_sel
+    official_reference: https://docs.xarray.dev/en/stable/api/deprecated.html
+  - callable: xarray.Dataset.apply
+    deprecated_status: DEPRECATED
+    replacement_if_documented: map
+    official_reference: https://docs.xarray.dev/en/stable/api/deprecated.html
+  - callable: xarray.core.groupby.DataArrayGroupBy.apply
+    deprecated_status: DEPRECATED
+    replacement_if_documented: map
+    official_reference: https://docs.xarray.dev/en/stable/api/deprecated.html
+  - callable: xarray.core.groupby.DatasetGroupBy.apply
+    deprecated_status: DEPRECATED
+    replacement_if_documented: map
+    official_reference: https://docs.xarray.dev/en/stable/api/deprecated.html
+  - callable: xarray.DataArray.dt.week
+    deprecated_status: DEPRECATED
+    official_reference: https://docs.xarray.dev/en/stable/api/deprecated.html
+  - callable: xarray.DataArray.dt.weekofyear
+    deprecated_status: DEPRECATED
+    official_reference: https://docs.xarray.dev/en/stable/api/deprecated.html

@@ -1,0 +1,25 @@
+schema_version: "0.1"
+package: jax
+version: "*"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://docs.jax.dev/en/latest/_autosummary/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-27"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape]
+  ignore: [jit_strategy, device, parallel_reduction_order, autodiff_trace]
+simple_bindings:
+  reduction: {add: [jax.numpy.sum], multiply: [jax.numpy.prod], mean: [jax.numpy.mean]}
+  contraction: {dot: [jax.numpy.dot], matmul: [jax.numpy.matmul]}
+  shape: {reshape: [jax.numpy.reshape], transpose: [jax.numpy.transpose]}
+  conditional: {where: [jax.numpy.where]}
+  unary: {abs: [jax.numpy.abs], sqrt: [jax.numpy.sqrt], log: [jax.numpy.log], exp: [jax.numpy.exp]}
+bindings:
+  - callable: jax.jit
+    family: ParallelExecution
+    bind: {operation: jit_boundary, preserves_mathematical_relation: true}
+    execution: {op: JITBoundary, device: implementation_selected}
+  - callable: jax.grad
+    family: AlgorithmInvocation
+    bind: {algorithm: autodiff_boundary, result_relation: derivative}
+    execution: {op: AutodiffBoundary}

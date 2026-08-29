@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "claim_strength_equal": true,
+  "topics": [
+    "purpose",
+    "quick_start",
+    "languages",
+    "providers",
+    "evidence",
+    "limitations",
+    "support",
+    "security",
+    "license"
+  ]
+}

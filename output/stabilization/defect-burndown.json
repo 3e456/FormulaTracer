@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "source": "docs/defect-ledger/defects.json",
+  "counts": {
+    "discovered_defects": 54,
+    "fixed": 50,
+    "verified_fixed": 50,
+    "deferred": 3,
+    "wont_fix_with_reason": 1,
+    "critical_false_acceptance_open": 0
+  },
+  "release_gate": {
+    "critical_false_acceptance_open": 0,
+    "status": "PASS"
+  }
+}

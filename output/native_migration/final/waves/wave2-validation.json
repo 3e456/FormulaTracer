@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "wave": 2,
+  "status": "PASS",
+  "boundary": {
+    "knowledge": "VERSIONED_DATA_INTERPRETED_BY_RUST",
+    "transformation": "AUTHORIZED_RELATION_DECIDED_BY_RUST",
+    "egraph": "EXACT_CLOSURE_DECIDED_BY_RUST",
+    "non_exact_relation_exact_merge": "FORBIDDEN",
+    "unknown_fact_rewrite_authorization": "FORBIDDEN"
+  },
+  "focused_parity": {
+    "knowledge": {"passed": 7, "total": 7},
+    "transformations": {"passed": 5, "total": 5},
+    "equality_saturation": {"passed": 7, "total": 7},
+    "false_acceptance": 0
+  },
+  "regression": {
+    "python": {"passed": 567, "skipped": 1, "subtests_passed": 36},
+    "rust_core": {"passed": 35, "failed": 0},
+    "rust_c_api": {"passed": 3, "failed": 0},
+    "c_api_executable": "PASS",
+    "cpp_api_executable": "PASS",
+    "lean_build": "PASS",
+    "lean_sorry": 0,
+    "lean_admit": 0,
+    "lean_axiom": 0,
+    "bitvector_exhaustive_cases": 196864
+  },
+  "inventory": {
+    "wave2_semantic_symbols_before": 56,
+    "wave2_semantic_symbols_remaining": 0,
+    "all_remaining_production_semantic_symbols": 66,
+    "remaining_owners": [
+      "cpp_audit.ieee754",
+      "cpp_audit.interval",
+      "cpp_audit.probability",
+      "cpp_audit.synthesis"
+    ],
+    "dynamic_reachability_unresolved": 0,
+    "python_semantic_fallback_count": 0
+  },
+  "completion": {
+    "WAVE2_COMPLETE": true,
+    "TRANSFORMATIONS_NATIVE_SOURCE_OF_TRUTH": true,
+    "EQUALITY_SATURATION_NATIVE_SOURCE_OF_TRUTH": true,
+    "MATHEMATICAL_KNOWLEDGE_NATIVE_SOURCE_OF_TRUTH": true,
+    "NATIVE_MIGRATION_COMPLETE": false,
+    "NATIVE_CORE_COMPLETE": false
+  }
+}

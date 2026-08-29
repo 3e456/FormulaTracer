@@ -1,0 +1,10 @@
+[package]
+name = "formulatracer-rust-native-example"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+formulatracer-core = { path = "../../rust/formulatracer-core" }
+
+[workspace]

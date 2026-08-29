@@ -1,0 +1,82 @@
+{
+  "admit": 0,
+  "axiom": 0,
+  "lean_status": "PASS",
+  "proofs": [
+    {
+      "assumptions": [
+        "continuous_second_partials",
+        "simply_defined_cartesian_chart"
+      ],
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.curlGradientZero",
+      "lhs": {
+        "field": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Gradient"
+        },
+        "op": "Curl"
+      },
+      "name": "Curl of a gradient",
+      "references": [
+        "ref.vector-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "ZeroVector"
+      },
+      "theorem_id": "curl_gradient_zero"
+    },
+    {
+      "assumptions": [
+        "continuous_second_partials",
+        "three_dimensional_cartesian"
+      ],
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.divergenceCurlZero",
+      "lhs": {
+        "field": {
+          "field": {
+            "name": "F",
+            "op": "PatternVariable"
+          },
+          "op": "Curl"
+        },
+        "op": "Divergence"
+      },
+      "name": "Divergence of a curl",
+      "references": [
+        "ref.vector-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "Constant",
+        "value": 0
+      },
+      "theorem_id": "divergence_curl_zero"
+    },
+    {
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.complexQuaternionEmbeddingMul",
+      "lhs": {
+        "op": "ComplexProduct"
+      },
+      "name": "Complex subalgebra embeds in quaternions",
+      "references": [
+        "ref.quaternion"
+      ],
+      "relation": "EXACT_EQUALITY",
+      "rhs": {
+        "op": "QuaternionProduct",
+        "subalgebra": "C"
+      },
+      "theorem_id": "complex_quaternion_embedding"
+    }
+  ],
+  "schema_version": "1.0",
+  "sorry": 0,
+  "source": "lean/CppAudit/Physics/Foundation.lean"
+}

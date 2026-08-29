@@ -1,0 +1,897 @@
+{
+  "constraint_count": 87,
+  "constraints": [
+    {
+      "constraints": [
+        {
+          "kind": "Eigen::DenseBase::reshaped",
+          "named_dimensions_preserved": false,
+          "relation": "product(shape(out))=product(shape(in))"
+        }
+      ],
+      "qualified_name": "Eigen::DenseBase::reshaped"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "Eigen::MatrixBase::operator*"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "Eigen::MatrixBase::prod"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "Eigen::MatrixBase::sum"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "cupy.dot"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "cupy.matmul"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "cupy.mean"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "cupy.prod"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "reshape",
+          "named_dimensions_preserved": false,
+          "relation": "product(shape(out))=product(shape(in))"
+        }
+      ],
+      "qualified_name": "cupy.reshape"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "cupy.sum"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "qualified_name": "cupy.transpose"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "cupy.where"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "faer::Mat::mul"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "faer::Mat::transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "qualified_name": "faer::Mat::transpose"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "jax.numpy.dot"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "jax.numpy.matmul"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "jax.numpy.mean"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "jax.numpy.prod"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "reshape",
+          "named_dimensions_preserved": false,
+          "relation": "product(shape(out))=product(shape(in))"
+        }
+      ],
+      "qualified_name": "jax.numpy.reshape"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "jax.numpy.sum"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "qualified_name": "jax.numpy.transpose"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "jax.numpy.where"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "nalgebra::Matrix::mul"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "nalgebra::Matrix::transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "qualified_name": "nalgebra::Matrix::transpose"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "ndarray::ArrayBase::dot"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "ndarray::ArrayBase::sum"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "ndarray::ArrayBase::t",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "ndarray::ArrayBase::t"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.all"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.any"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.arange"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.argmax"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.argmin"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.argpartition"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.argsort"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.argwhere"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "atleast_1d",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.atleast_1d"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "broadcast_to",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.broadcast_to"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "column_stack",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.column_stack"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "concatenate",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.concatenate"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.flatnonzero"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "flipud",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.flipud"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.indices"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.lexsort"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.linspace"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.max"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.mean"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "meshgrid",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.meshgrid"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.min"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.minimum.reduceat"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "moveaxis",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.moveaxis"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.nanmax"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.nanmin"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.nansum"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "ndim",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.ndim"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.nonzero"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.prod"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "repeat",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.repeat"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.searchsorted"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "size",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.size"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.sort"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "stack",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.stack"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "numpy.sum"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.take_along_axis"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "tile",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.tile"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.triu_indices"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.unravel_index"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "vstack",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "numpy.vstack"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "numpy.where"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "concat",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "pandas.concat"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "rayon::iter::ParallelIterator::sum"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "std::accumulate"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "std::inner_product"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "std::iter::Iterator::product"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "std::iter::Iterator::sum"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "std::reduce"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "std::transform_reduce"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "torch.dot"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "qualified_name": "torch.matmul"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "torch.mean"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "torch.prod"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "reshape",
+          "named_dimensions_preserved": false,
+          "relation": "product(shape(out))=product(shape(in))"
+        }
+      ],
+      "qualified_name": "torch.reshape"
+    },
+    {
+      "constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "qualified_name": "torch.sum"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "qualified_name": "torch.transpose"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": false,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "torch.where"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "align",
+          "named_dimensions_preserved": true,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "xarray.align"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "concat",
+          "named_dimensions_preserved": true,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "qualified_name": "xarray.concat"
+    },
+    {
+      "constraints": [
+        {
+          "kind": "index_relation",
+          "named_dimensions_preserved": true,
+          "relation": "selected labels/indices constrain output extents"
+        }
+      ],
+      "qualified_name": "xarray.where"
+    }
+  ],
+  "fail_closed": "Missing shape evidence remains SHAPE_UNRESOLVED.",
+  "named_dimension_api_count": 3,
+  "schema_version": "1.0",
+  "shape_aware_api_count": 87
+}

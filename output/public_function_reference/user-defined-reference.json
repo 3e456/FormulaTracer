@@ -1,0 +1,12 @@
+{
+  "auto_verified": false,
+  "effects": "UNKNOWN_EFFECT remains unresolved",
+  "evidence": "USER_DECLARED",
+  "operation": "COVERAGE_BLOCKER/USER_DECLARATION",
+  "second_engine": false,
+  "statuses": [
+    "MATCH",
+    "MISMATCH",
+    "NOT_EVALUABLE"
+  ]
+}

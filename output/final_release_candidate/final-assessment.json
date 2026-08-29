@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "starting_integration_head": "1730a3088e4f16b3544b663443bd206a4b705594",
+  "tested_source_commit": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "integration_branch": "feature/prepublic-final-integration-assurance",
+  "release_branch": "feature/public-api-reference-harvester",
+  "release_branch_head_before": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "release_branch_head_after": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "release_branch_modified": false,
+  "gates": {
+    "linux_release_validation": "PASS",
+    "rust_clippy_deny_warnings": "PASS",
+    "clippy_warning_count": 0,
+    "defect_accounting": "54/54",
+    "unaccounted_defects": 0,
+    "critical_open_defects": 0,
+    "regression": "PASS",
+    "lean": "PASS",
+    "false_acceptance": 0,
+    "privacy": "PASS",
+    "english_japanese_docs": "PASS",
+    "function_reference_release_ready": true
+  },
+  "github_actions_runner_status": "EXTERNAL_ACCOUNT_BILLING_BLOCK_NO_RUNNER_ALLOCATED",
+  "actual_linux_evidence_used": "LOCAL_DOCKER_DEBIAN_12_X86_64",
+  "new_feature_work": false,
+  "release_action_performed": false,
+  "e_drive_accessed": false,
+  "protected_docx_touched": false,
+  "assessment": "SAFE_TO_INTEGRATE_INTO_RELEASE_BRANCH",
+  "blockers": []
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "production_case_specific_branches": 0,
+  "benchmark_identifier_branches": 0,
+  "exact_tex_or_fingerprint_branches": 0,
+  "provider_semantic_bypasses": 0,
+  "validation_only_case_manifests": [
+    "python/cpp_audit/release_candidate.py",
+    "python/cpp_audit/release_candidate_v2.py"
+  ],
+  "CASE_SPECIFIC_EXCEPTION_OPEN": 0,
+  "BENCHMARK_OVERFIT_RISK_OPEN": 0
+}

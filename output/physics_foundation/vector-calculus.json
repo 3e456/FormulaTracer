@@ -1,0 +1,185 @@
+{
+  "definitions": [
+    {
+      "definition_id": "divergence",
+      "expansion": {
+        "body": {
+          "function": {
+            "indices": [
+              "i"
+            ],
+            "name": "F",
+            "op": "IndexedValue"
+          },
+          "op": "Derivative",
+          "variable": {
+            "indices": [
+              "i"
+            ],
+            "name": "x",
+            "op": "IndexedValue"
+          }
+        },
+        "bound_index": "i",
+        "op": "FiniteSum"
+      },
+      "expression": {
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "Divergence"
+      },
+      "name": "Cartesian divergence",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    },
+    {
+      "assumptions": [
+        "three_dimensional_cartesian",
+        "right_handed_orientation"
+      ],
+      "definition_id": "curl_r3",
+      "expansion": {
+        "definition": {
+          "body": {
+            "args": [
+              {
+                "indices": [
+                  "i",
+                  "j",
+                  "k"
+                ],
+                "op": "LeviCivita"
+              },
+              {
+                "function": {
+                  "indices": [
+                    "k"
+                  ],
+                  "name": "F",
+                  "op": "IndexedValue"
+                },
+                "op": "Derivative",
+                "variable": {
+                  "indices": [
+                    "j"
+                  ],
+                  "name": "x",
+                  "op": "IndexedValue"
+                }
+              }
+            ],
+            "op": "Multiply"
+          },
+          "bound_indices": [
+            "j",
+            "k"
+          ],
+          "op": "FiniteSum"
+        },
+        "indices": [
+          "i"
+        ],
+        "name": "curl_F",
+        "op": "IndexedValue"
+      },
+      "expression": {
+        "field": {
+          "name": "F",
+          "op": "PatternVariable"
+        },
+        "op": "Curl",
+        "orientation": "RIGHT_HANDED"
+      },
+      "name": "Right-handed Cartesian curl",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    },
+    {
+      "definition_id": "laplacian",
+      "expansion": {
+        "field": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Gradient"
+        },
+        "op": "Divergence"
+      },
+      "expression": {
+        "function": {
+          "name": "f",
+          "op": "PatternVariable"
+        },
+        "op": "Laplacian"
+      },
+      "name": "Laplacian as divergence of gradient",
+      "references": [
+        "ref.vector-calculus"
+      ]
+    }
+  ],
+  "realizations": [],
+  "schema_version": "1.0",
+  "theorems": [
+    {
+      "assumptions": [
+        "continuous_second_partials",
+        "simply_defined_cartesian_chart"
+      ],
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.curlGradientZero",
+      "lhs": {
+        "field": {
+          "function": {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          "op": "Gradient"
+        },
+        "op": "Curl"
+      },
+      "name": "Curl of a gradient",
+      "references": [
+        "ref.vector-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "ZeroVector"
+      },
+      "theorem_id": "curl_gradient_zero"
+    },
+    {
+      "assumptions": [
+        "continuous_second_partials",
+        "three_dimensional_cartesian"
+      ],
+      "formalization_level": "LEAN_KERNEL_VERIFIED",
+      "lean_theorem": "CppAudit.Physics.divergenceCurlZero",
+      "lhs": {
+        "field": {
+          "field": {
+            "name": "F",
+            "op": "PatternVariable"
+          },
+          "op": "Curl"
+        },
+        "op": "Divergence"
+      },
+      "name": "Divergence of a curl",
+      "references": [
+        "ref.vector-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "Constant",
+        "value": 0
+      },
+      "theorem_id": "divergence_curl_zero"
+    }
+  ]
+}

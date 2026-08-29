@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "owner": "cpp_audit.transformations",
+  "native_operation": "B/LEGACY_TRANSFORMATIONS",
+  "cases": [
+    {
+      "case": "exact-neutral",
+      "expected": "TRANSFORMATION_APPLIED",
+      "actual": "TRANSFORMATION_APPLIED",
+      "match": true
+    },
+    {
+      "case": "unknown-condition-fails-closed",
+      "expected": "TRANSFORMATION_OBLIGATION_REMAINING",
+      "actual": "TRANSFORMATION_OBLIGATION_REMAINING",
+      "match": true
+    },
+    {
+      "case": "hard-constraint-before-selection",
+      "expected": "TRANSFORMATION_CONSTRAINT_FAILED",
+      "actual": "TRANSFORMATION_CONSTRAINT_FAILED",
+      "match": true
+    },
+    {
+      "case": "authorized-exact-rewrite",
+      "expected": "REWRITE_PATH_FOUND",
+      "actual": "REWRITE_PATH_FOUND",
+      "match": true
+    },
+    {
+      "case": "nonexact-never-enters-exact-search",
+      "expected": "NO_AUTHORIZED_REWRITE_PATH",
+      "actual": "NO_AUTHORIZED_REWRITE_PATH",
+      "match": true
+    }
+  ],
+  "passed": 5,
+  "total": 5,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

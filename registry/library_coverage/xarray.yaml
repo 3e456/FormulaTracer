@@ -1,0 +1,13 @@
+schema_version: "0.1"
+package: xarray
+version: ">=2025.1,<2027.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://docs.xarray.dev/en/stable/generated/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-27"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape, dimension_names, label_alignment]
+  ignore: [implementation_algorithm, memory_layout]
+simple_bindings:
+  representation:
+    dataset_input_boundary: [xarray.open_dataset, xarray.open_dataarray]

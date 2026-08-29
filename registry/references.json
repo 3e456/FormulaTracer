@@ -1,0 +1,62 @@
+[
+  {
+    "reference_id": "scipy-fft",
+    "title": "Discrete Fourier transforms",
+    "organization": "SciPy",
+    "url": "https://docs.scipy.org/doc/scipy/reference/fft.html",
+    "reference_kind": "OFFICIAL_PUBLIC_REFERENCE",
+    "version_or_revision": "SciPy current documentation",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "scipy-fft-api",
+    "title": "scipy.fft.fft",
+    "organization": "SciPy",
+    "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fft.html",
+    "reference_kind": "OFFICIAL_ALGORITHM_REFERENCE",
+    "version_or_revision": "SciPy current documentation",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "scipy-integrate",
+    "title": "Integration",
+    "organization": "SciPy",
+    "url": "https://docs.scipy.org/doc/scipy/reference/integrate.html",
+    "reference_kind": "OFFICIAL_PUBLIC_REFERENCE",
+    "version_or_revision": "SciPy current documentation",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "dlmf-taylor",
+    "title": "DLMF §1.2 Elementary Algebra",
+    "organization": "NIST DLMF",
+    "url": "https://dlmf.nist.gov/1.2",
+    "reference_kind": "PRIMARY_MATHEMATICAL_REFERENCE",
+    "version_or_revision": "DLMF 1.2",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "lapack-lug",
+    "title": "LAPACK Users' Guide",
+    "organization": "Netlib",
+    "url": "https://www.netlib.org/lapack/lug/",
+    "reference_kind": "PRIMARY_ALGORITHM_REFERENCE",
+    "version_or_revision": "3rd edition",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "egg-paper",
+    "title": "egg: Fast and Extensible Equality Saturation",
+    "organization": "ACM",
+    "url": "https://doi.org/10.1145/3434304",
+    "reference_kind": "RESEARCH_PAPER",
+    "version_or_revision": "POPL 2021",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  }
+]

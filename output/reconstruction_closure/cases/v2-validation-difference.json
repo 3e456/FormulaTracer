@@ -1,0 +1,92 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [
+    "h != 0",
+    "smoothness and error bound"
+  ],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "args": [
+      {
+        "args": [
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  },
+                  {
+                    "name": "h",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Add"
+              }
+            ],
+            "name": "f",
+            "op": "FunctionCall"
+          },
+          {
+            "args": [
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  },
+                  {
+                    "name": "h",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Subtract"
+              }
+            ],
+            "name": "f",
+            "op": "FunctionCall"
+          }
+        ],
+        "op": "Subtract"
+      },
+      {
+        "args": [
+          {
+            "op": "Constant",
+            "value": 2
+          },
+          {
+            "name": "h",
+            "op": "FreeVariable"
+          }
+        ],
+        "op": "Multiply"
+      }
+    ],
+    "op": "Divide"
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-validation-difference.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-validation-difference",
+  "root_cause": "ASSUMPTION_GAP",
+  "source_artifact_hash": "8332e039c980c37fef9071a9463fc64567781e1669fcd9342ed6b97cbabc2f14",
+  "case_specific_rule_used": false
+}

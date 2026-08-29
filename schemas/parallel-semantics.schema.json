@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/parallel-semantics.schema.json",
+  "type": "object",
+  "required": ["status", "overall_policy", "operations", "claims", "diagnostics"],
+  "properties": {
+    "status": {"enum": ["PARALLEL_SEMANTICS_RESOLVED", "PARALLEL_SEMANTICS_UNRESOLVED"]},
+    "overall_policy": {"enum": ["SEQUENTIAL", "PARALLEL_DETERMINISTIC", "PARALLEL_REORDERABLE", "PARALLEL_NONDETERMINISTIC", "DISTRIBUTED", "GPU_PARALLEL", "UNKNOWN_EXECUTION_POLICY"]},
+    "operations": {"type": "array"}, "claims": {"type": "object"}, "diagnostics": {"type": "array"}
+  },
+  "additionalProperties": false
+}

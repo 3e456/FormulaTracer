@@ -1,0 +1,27 @@
+schema_version: "0.1"
+rule:
+  id: forward_difference_first_derivative
+  kind: approximation
+  approximation_family_id: forward_difference_first_derivative
+  source_pattern: {op: Derivative, order: 1, variable: x}
+  target_template:
+    op: Divide
+    numerator: {op: Subtract, args: [{op: FunctionCall, name: f, args: [{op: Add, args: [{op: FreeVariable, name: x}, {op: FreeVariable, name: h}]}]}, {op: FunctionCall, name: f, args: [{op: FreeVariable, name: x}]}]}
+    denominator: {op: FreeVariable, name: h}
+  parameters: [h, spacing, axis, dimension]
+  conditions: ["h > 0", "x+h is in domain", "f is sufficiently smooth"]
+  convergence: {kind: uniform_on_region, parameter: h, limit_point: 0, error_order: 1}
+  supported_observables: []
+  selection_error_estimate: 0.00001
+  proof_status: UNPROVEN_SELECTION_METADATA
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_forward_is_registered
+  library_contract: {qualified_callable: numpy.diff, registry: registry/libraries/numpy.yaml, exact_semantic_operator: DiscreteDifference, derivative_claim_requires_scaling: true, scope: public_reference_contract}
+  cost:
+    asymptotic_time: O(n)
+    asymptotic_memory: O(1)
+    asymptotic_memory_rank: 1
+    symbolic_arithmetic_operations: 2
+    function_evaluations: "2*n"
+    memory_reads: "2*n"
+    memory_writes: n
+    transformation_path_length: 1

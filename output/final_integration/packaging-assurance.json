@@ -1,0 +1,7 @@
+{
+  "external_source_retained": 0,
+  "linux": "CI_CONFIGURED_NOT_EXECUTED",
+  "native_load": "SEE_TEST_LOG",
+  "sdist": "PASS",
+  "windows": "PASS"
+}

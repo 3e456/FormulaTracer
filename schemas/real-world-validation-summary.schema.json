@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/real-world-validation-summary.schema.json",
+  "type": "object",
+  "required": ["schema_version", "status", "critical_false_acceptance_open", "corpus", "audit", "coverage", "libraries", "mutation", "metamorphic", "assurance_obligations", "performance", "trust_boundary"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"const": "PRIVATE_CORPUS_VALIDATION_COMPLETED"},
+    "critical_false_acceptance_open": {"type": "integer", "minimum": 0},
+    "corpus": {"type": "object", "required": ["projects_discovered", "projects_analyzed", "source_files", "loc", "languages", "excluded"]},
+    "audit": {"type": "object", "required": ["entries", "audit_roots", "outputs", "verification_status", "layer_status", "unresolved_causes", "debugger_findings"]},
+    "coverage": {"type": "object"},
+    "libraries": {"type": "object"},
+    "mutation": {"type": "object"},
+    "metamorphic": {"type": "object"},
+    "assurance_obligations": {"type": "array", "minItems": 12, "maxItems": 12},
+    "performance": {"type": "object"},
+    "trust_boundary": {"type": "object", "required": ["research_code_assumed_correct", "formal_guarantee_equals_empirical_validation", "data_file_content_read", "corpus_modified"]}
+  },
+  "additionalProperties": true
+}

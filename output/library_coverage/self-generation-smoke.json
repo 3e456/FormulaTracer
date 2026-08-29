@@ -1,0 +1,2579 @@
+{
+  "cases": [
+    {
+      "backend": "python-loop",
+      "execution_metadata": {
+        "backend": "PYTHON_SEQUENTIAL"
+      },
+      "generated_source": "def compute(x):\n    return x * 2 + 1\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "semantic_family": "Elementwise"
+      },
+      "normalized_theory": {
+        "semantic_family": "Elementwise"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-fe860454c5d5313d",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "x",
+                      "op": "FreeVariable"
+                    },
+                    {
+                      "op": "Constant",
+                      "value": 2
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 1
+                }
+              ],
+              "op": "Add"
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-2-11-2-20-BinOp",
+              "py-2-11-2-16-BinOp",
+              "py-2-11-2-12-Name",
+              "py-2-15-2-16-Constant",
+              "py-2-19-2-20-Constant"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 2,
+                "end_column": 21,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 12,
+                "begin_line": 2,
+                "end_column": 17,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 12,
+                "begin_line": 2,
+                "end_column": 13,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 16,
+                "begin_line": 2,
+                "end_column": 17,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 20,
+                "begin_line": 2,
+                "end_column": 21,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "Elementwise",
+      "source_hash": "b64d398edafad4557acf537506823960bc41bd9018e2274c5edc026184826772",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "python-loop",
+      "execution_metadata": {
+        "backend": "PYTHON_SEQUENTIAL"
+      },
+      "generated_source": "def compute(x):\n    return sum(v for v in x if v > 0)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "reducer": "Add",
+        "semantic_family": "FilteredSum"
+      },
+      "normalized_theory": {
+        "reducer": "Add",
+        "semantic_family": "FilteredSum"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-bde79387a460b1e3",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "body": {
+                "name": "v",
+                "op": "BoundVariable"
+              },
+              "bound_index": "v",
+              "initial_value": {
+                "op": "Constant",
+                "value": 0
+              },
+              "iterable": {
+                "bound_index": "v",
+                "iterable": {
+                  "name": "x",
+                  "op": "FreeVariable"
+                },
+                "op": "Filter",
+                "predicate": {
+                  "args": [
+                    {
+                      "name": "v",
+                      "op": "BoundVariable"
+                    },
+                    {
+                      "op": "Constant",
+                      "value": 0
+                    }
+                  ],
+                  "comparison": "GreaterThan",
+                  "op": "Compare"
+                }
+              },
+              "op": "FoldLeft",
+              "operation": "Add",
+              "reduction_order": "left_to_right"
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-2-11-2-37-Call",
+              "py-2-14-2-37-GeneratorExp",
+              "py-2-26-2-27-Name",
+              "py-2-15-2-16-Name",
+              "py-2-31-2-36-Compare",
+              "py-2-31-2-32-Name",
+              "py-2-35-2-36-Constant"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 2,
+                "end_column": 38,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 15,
+                "begin_line": 2,
+                "end_column": 38,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 27,
+                "begin_line": 2,
+                "end_column": 28,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 16,
+                "begin_line": 2,
+                "end_column": 17,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 32,
+                "begin_line": 2,
+                "end_column": 37,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 32,
+                "begin_line": 2,
+                "end_column": 33,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 36,
+                "begin_line": 2,
+                "end_column": 37,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "FilteredSum",
+      "source_hash": "278b55d1e2798b1357cbffd0b26d9706deb00507ae3ad7131c5d9e69c1224960",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "python-loop",
+      "execution_metadata": {
+        "backend": "PYTHON_SEQUENTIAL"
+      },
+      "generated_source": "def compute(x):\n    result = 0.0\n    for v in <LOCAL_PATH>",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "op": "LoopInvocation",
+        "semantic_family": "UNKNOWN"
+      },
+      "normalized_theory": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [
+          {
+            "code": "LOOP_SEMANTICS_PRESERVED",
+            "message": "loop not normalized to a finite fold",
+            "source_span": {
+              "begin_column": 5,
+              "begin_line": 3,
+              "end_column": 20,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            }
+          }
+        ],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-13db60e79271a1a4",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "body_source": "result += v",
+              "control_effects": [],
+              "initial_state": {
+                "op": "Constant",
+                "value": 0.0
+              },
+              "iterable": {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              "kind": "for",
+              "op": "LoopInvocation"
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-2-13-2-16-Constant",
+              "py-2-4-2-16-Assign",
+              "py-3-13-3-14-Name",
+              "py-5-11-5-17-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 14,
+                "begin_line": 2,
+                "end_column": 17,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 5,
+                "begin_line": 2,
+                "end_column": 17,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 14,
+                "begin_line": 3,
+                "end_column": 15,
+                "end_line": 3,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 12,
+                "begin_line": 5,
+                "end_column": 18,
+                "end_line": 5,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_PARTIALLY_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+      "semantic_family": "FiniteSum",
+      "source_hash": "ed599c33587e8c4070e4bf49e78f02a5223c73ea9f1eaaa2fee335960c133c6e",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "python-loop",
+      "execution_metadata": {
+        "backend": "PYTHON_SEQUENTIAL"
+      },
+      "generated_source": "def compute(x):\n    return x if x > 0 else -x\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "semantic_family": "Piecewise"
+      },
+      "normalized_theory": {
+        "semantic_family": "Piecewise"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-c5a021f1205b0294",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "condition": {
+                "args": [
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  },
+                  {
+                    "op": "Constant",
+                    "value": 0
+                  }
+                ],
+                "comparison": "GreaterThan",
+                "op": "Compare"
+              },
+              "else": {
+                "args": [
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Negate"
+              },
+              "op": "IfThenElse",
+              "then": {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-2-11-2-29-IfExp",
+              "py-2-16-2-21-Compare",
+              "py-2-16-2-17-Name",
+              "py-2-20-2-21-Constant",
+              "py-2-11-2-12-Name",
+              "py-2-27-2-29-UnaryOp",
+              "py-2-28-2-29-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 2,
+                "end_column": 30,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 17,
+                "begin_line": 2,
+                "end_column": 22,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 17,
+                "begin_line": 2,
+                "end_column": 18,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 21,
+                "begin_line": 2,
+                "end_column": 22,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 12,
+                "begin_line": 2,
+                "end_column": 13,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 28,
+                "begin_line": 2,
+                "end_column": 30,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 29,
+                "begin_line": 2,
+                "end_column": 30,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "Piecewise",
+      "source_hash": "cc064d3328ee1370c8d9b10b43ab2bda00f408691435890906063a0c7f27d2f6",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "numpy",
+      "execution_metadata": {
+        "backend": "CPU_ARRAY"
+      },
+      "generated_source": "import numpy as np\n\ndef compute(x, y):\n    return np.dot(x, y)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "semantic_family": "Dot"
+      },
+      "normalized_theory": {
+        "semantic_family": "Dot"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-86ec82032c262057",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [
+          {
+            "bind": {
+              "contraction": "dot"
+            },
+            "call_id": "py-4-11-4-23-Call",
+            "callable": "numpy.dot",
+            "equivalence_scope": {
+              "ignore": [
+                "implementation_algorithm",
+                "memory_layout",
+                "native_kernel"
+              ],
+              "preserve": [
+                "mathematical_relation",
+                "parameters",
+                "shape"
+              ]
+            },
+            "execution": null,
+            "family": "TensorContraction",
+            "package": "numpy",
+            "provenance": {
+              "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.dot.html",
+              "package": "numpy",
+              "qualified_callable": "numpy.dot",
+              "reference_status": "REFERENCE_EXTRACTED",
+              "verified_date": "2026-08-26",
+              "version_range": ">=2.0,<3.0"
+            },
+            "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+            "return_type": null,
+            "source_span": {
+              "begin_column": 12,
+              "begin_line": 4,
+              "end_column": 24,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            "version_check": "VERSION_UNKNOWN",
+            "version_range": ">=2.0,<3.0"
+          }
+        ],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "api": "numpy.dot",
+              "args": [
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                },
+                {
+                  "name": "y",
+                  "op": "FreeVariable"
+                }
+              ],
+              "equivalence_scope": {
+                "ignore": [
+                  "implementation_algorithm",
+                  "memory_layout",
+                  "native_kernel"
+                ],
+                "preserve": [
+                  "mathematical_relation",
+                  "parameters",
+                  "shape"
+                ]
+              },
+              "kind": "dot",
+              "op": "TensorContraction",
+              "reference_contract": {
+                "bind": {
+                  "contraction": "dot"
+                },
+                "callable": "numpy.dot",
+                "equivalence_scope": {
+                  "ignore": [
+                    "implementation_algorithm",
+                    "memory_layout",
+                    "native_kernel"
+                  ],
+                  "preserve": [
+                    "mathematical_relation",
+                    "parameters",
+                    "shape"
+                  ]
+                },
+                "execution": null,
+                "family": "TensorContraction",
+                "package": "numpy",
+                "provenance": {
+                  "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.dot.html",
+                  "package": "numpy",
+                  "qualified_callable": "numpy.dot",
+                  "reference_status": "REFERENCE_EXTRACTED",
+                  "verified_date": "2026-08-26",
+                  "version_range": ">=2.0,<3.0"
+                },
+                "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+                "return_type": null,
+                "version_check": "VERSION_UNKNOWN",
+                "version_range": ">=2.0,<3.0"
+              },
+              "semantic_family": "TensorContraction",
+              "shape_constraints": [
+                {
+                  "api": "numpy.dot",
+                  "kind": "contraction_compatibility",
+                  "relation": "contracted dimensions have equal extents"
+                }
+              ]
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [
+          {
+            "api": "numpy.dot",
+            "kind": "contraction_compatibility",
+            "relation": "contracted dimensions have equal extents"
+          }
+        ],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-23-Call",
+              "py-4-18-4-19-Name",
+              "py-4-21-4-22-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 24,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 19,
+                "begin_line": 4,
+                "end_column": 20,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 22,
+                "begin_line": 4,
+                "end_column": 23,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "Dot",
+      "source_hash": "b93fa1bbcdaebd1a687c46be07e275fdcc192cf9a712c3f245b5b82655ad6598",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "numpy",
+      "execution_metadata": {
+        "backend": "CPU_ARRAY"
+      },
+      "generated_source": "import numpy as np\n\ndef compute(x):\n    return x * 2 + 1\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "semantic_family": "Elementwise"
+      },
+      "normalized_theory": {
+        "semantic_family": "Elementwise"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-fe860454c5d5313d",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "name": "x",
+                      "op": "FreeVariable"
+                    },
+                    {
+                      "op": "Constant",
+                      "value": 2
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 1
+                }
+              ],
+              "op": "Add"
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-20-BinOp",
+              "py-4-11-4-16-BinOp",
+              "py-4-11-4-12-Name",
+              "py-4-15-4-16-Constant",
+              "py-4-19-4-20-Constant"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 21,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 17,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 13,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 16,
+                "begin_line": 4,
+                "end_column": 17,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 20,
+                "begin_line": 4,
+                "end_column": 21,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "Elementwise",
+      "source_hash": "24c526b8e6180062e0476f943250b649c93f5863c257e5df0d847d8ab6042c22",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "numpy",
+      "execution_metadata": {
+        "backend": "CPU_ARRAY"
+      },
+      "generated_source": "import numpy as np\n\ndef compute(x):\n    return np.sum(x)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "normalized_theory": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-9862742d5d3ae0ce",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [
+          {
+            "bind": {
+              "reducer": "add"
+            },
+            "call_id": "py-4-11-4-20-Call",
+            "callable": "numpy.sum",
+            "equivalence_scope": {
+              "ignore": [
+                "implementation_algorithm",
+                "memory_layout",
+                "native_kernel"
+              ],
+              "preserve": [
+                "mathematical_relation",
+                "parameters",
+                "shape"
+              ]
+            },
+            "execution": null,
+            "family": "Reduction",
+            "package": "numpy",
+            "provenance": {
+              "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
+              "package": "numpy",
+              "qualified_callable": "numpy.sum",
+              "reference_status": "LEAN_VERIFIED_MAPPING",
+              "verified_date": "2026-08-26",
+              "version_range": ">=2.0,<3.0"
+            },
+            "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+            "return_type": null,
+            "source_span": {
+              "begin_column": 12,
+              "begin_line": 4,
+              "end_column": 21,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            "version_check": "VERSION_UNKNOWN",
+            "version_range": ">=2.0,<3.0"
+          }
+        ],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "api": "numpy.sum",
+              "axes": null,
+              "equivalence_scope": {
+                "ignore": [
+                  "implementation_algorithm",
+                  "memory_layout",
+                  "native_kernel"
+                ],
+                "preserve": [
+                  "mathematical_relation",
+                  "parameters",
+                  "shape"
+                ]
+              },
+              "input": {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              "keepdims": false,
+              "op": "Reduce",
+              "reduction": "Add",
+              "reference_contract": {
+                "bind": {
+                  "reducer": "add"
+                },
+                "callable": "numpy.sum",
+                "equivalence_scope": {
+                  "ignore": [
+                    "implementation_algorithm",
+                    "memory_layout",
+                    "native_kernel"
+                  ],
+                  "preserve": [
+                    "mathematical_relation",
+                    "parameters",
+                    "shape"
+                  ]
+                },
+                "execution": null,
+                "family": "Reduction",
+                "package": "numpy",
+                "provenance": {
+                  "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.sum.html",
+                  "package": "numpy",
+                  "qualified_callable": "numpy.sum",
+                  "reference_status": "LEAN_VERIFIED_MAPPING",
+                  "verified_date": "2026-08-26",
+                  "version_range": ">=2.0,<3.0"
+                },
+                "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+                "return_type": null,
+                "version_check": "VERSION_UNKNOWN",
+                "version_range": ">=2.0,<3.0"
+              },
+              "semantic_family": "Reduction",
+              "shape_constraints": [
+                {
+                  "axis": null,
+                  "keepdims": false,
+                  "kind": "reduction_axis",
+                  "relation": "axis or named dimension must exist in input shape"
+                }
+              ]
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [
+          {
+            "axis": null,
+            "keepdims": false,
+            "kind": "reduction_axis",
+            "relation": "axis or named dimension must exist in input shape"
+          }
+        ],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-20-Call",
+              "py-4-18-4-19-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 21,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 19,
+                "begin_line": 4,
+                "end_column": 20,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "FiniteSum",
+      "source_hash": "282dcd09ebf7f3d6c6410381931675cc23cee180d6e15d271f6a7546d0266796",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "numpy",
+      "execution_metadata": {
+        "backend": "CPU_ARRAY"
+      },
+      "generated_source": "import numpy as np\n\ndef compute(a, b):\n    return np.matmul(a, b)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "semantic_family": "MatrixMultiply"
+      },
+      "normalized_theory": {
+        "semantic_family": "MatrixMultiply"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-bdead68aa6fd5a6f",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [
+          {
+            "bind": {
+              "contraction": "matmul"
+            },
+            "call_id": "py-4-11-4-26-Call",
+            "callable": "numpy.matmul",
+            "equivalence_scope": {
+              "ignore": [
+                "implementation_algorithm",
+                "memory_layout",
+                "native_kernel"
+              ],
+              "preserve": [
+                "mathematical_relation",
+                "parameters",
+                "shape"
+              ]
+            },
+            "execution": null,
+            "family": "TensorContraction",
+            "package": "numpy",
+            "provenance": {
+              "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.matmul.html",
+              "package": "numpy",
+              "qualified_callable": "numpy.matmul",
+              "reference_status": "REFERENCE_EXTRACTED",
+              "verified_date": "2026-08-26",
+              "version_range": ">=2.0,<3.0"
+            },
+            "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+            "return_type": null,
+            "source_span": {
+              "begin_column": 12,
+              "begin_line": 4,
+              "end_column": 27,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            "version_check": "VERSION_UNKNOWN",
+            "version_range": ">=2.0,<3.0"
+          }
+        ],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "api": "numpy.matmul",
+              "args": [
+                {
+                  "name": "a",
+                  "op": "FreeVariable"
+                },
+                {
+                  "name": "b",
+                  "op": "FreeVariable"
+                }
+              ],
+              "equivalence_scope": {
+                "ignore": [
+                  "implementation_algorithm",
+                  "memory_layout",
+                  "native_kernel"
+                ],
+                "preserve": [
+                  "mathematical_relation",
+                  "parameters",
+                  "shape"
+                ]
+              },
+              "kind": "matmul",
+              "op": "TensorContraction",
+              "reference_contract": {
+                "bind": {
+                  "contraction": "matmul"
+                },
+                "callable": "numpy.matmul",
+                "equivalence_scope": {
+                  "ignore": [
+                    "implementation_algorithm",
+                    "memory_layout",
+                    "native_kernel"
+                  ],
+                  "preserve": [
+                    "mathematical_relation",
+                    "parameters",
+                    "shape"
+                  ]
+                },
+                "execution": null,
+                "family": "TensorContraction",
+                "package": "numpy",
+                "provenance": {
+                  "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.matmul.html",
+                  "package": "numpy",
+                  "qualified_callable": "numpy.matmul",
+                  "reference_status": "REFERENCE_EXTRACTED",
+                  "verified_date": "2026-08-26",
+                  "version_range": ">=2.0,<3.0"
+                },
+                "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+                "return_type": null,
+                "version_check": "VERSION_UNKNOWN",
+                "version_range": ">=2.0,<3.0"
+              },
+              "semantic_family": "TensorContraction",
+              "shape_constraints": [
+                {
+                  "api": "numpy.matmul",
+                  "kind": "contraction_compatibility",
+                  "relation": "contracted dimensions have equal extents"
+                }
+              ]
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [
+          {
+            "api": "numpy.matmul",
+            "kind": "contraction_compatibility",
+            "relation": "contracted dimensions have equal extents"
+          }
+        ],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-26-Call",
+              "py-4-21-4-22-Name",
+              "py-4-24-4-25-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 27,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 22,
+                "begin_line": 4,
+                "end_column": 23,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 25,
+                "begin_line": 4,
+                "end_column": 26,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "MatrixMultiply",
+      "source_hash": "ea05741e762262b26f0e180040f8234dbdfcdf25976243927f129018f1d8ae28",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "numpy",
+      "execution_metadata": {
+        "backend": "CPU_ARRAY"
+      },
+      "generated_source": "import numpy as np\n\ndef compute(x):\n    return np.where(x > 0, x, -x)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "semantic_family": "Piecewise"
+      },
+      "normalized_theory": {
+        "semantic_family": "Piecewise"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-f9f74a22ab79796b",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [
+          {
+            "bind": {
+              "selection": "where"
+            },
+            "call_id": "py-4-11-4-33-Call",
+            "callable": "numpy.where",
+            "equivalence_scope": {
+              "ignore": [
+                "implementation_algorithm",
+                "memory_layout",
+                "native_kernel"
+              ],
+              "preserve": [
+                "mathematical_relation",
+                "parameters",
+                "shape"
+              ]
+            },
+            "execution": null,
+            "family": "ConditionalSelection",
+            "package": "numpy",
+            "provenance": {
+              "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.where.html",
+              "package": "numpy",
+              "qualified_callable": "numpy.where",
+              "reference_status": "REFERENCE_EXTRACTED",
+              "verified_date": "2026-08-26",
+              "version_range": ">=2.0,<3.0"
+            },
+            "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+            "return_type": null,
+            "source_span": {
+              "begin_column": 12,
+              "begin_line": 4,
+              "end_column": 34,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            "version_check": "VERSION_UNKNOWN",
+            "version_range": ">=2.0,<3.0"
+          }
+        ],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "api": "numpy.where",
+              "condition": {
+                "args": [
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  },
+                  {
+                    "op": "Constant",
+                    "value": 0
+                  }
+                ],
+                "comparison": "GreaterThan",
+                "op": "Compare"
+              },
+              "else": {
+                "args": [
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Negate"
+              },
+              "equivalence_scope": {
+                "ignore": [
+                  "implementation_algorithm",
+                  "memory_layout",
+                  "native_kernel"
+                ],
+                "preserve": [
+                  "mathematical_relation",
+                  "parameters",
+                  "shape"
+                ]
+              },
+              "op": "IfThenElse",
+              "reference_contract": {
+                "bind": {
+                  "selection": "where"
+                },
+                "callable": "numpy.where",
+                "equivalence_scope": {
+                  "ignore": [
+                    "implementation_algorithm",
+                    "memory_layout",
+                    "native_kernel"
+                  ],
+                  "preserve": [
+                    "mathematical_relation",
+                    "parameters",
+                    "shape"
+                  ]
+                },
+                "execution": null,
+                "family": "ConditionalSelection",
+                "package": "numpy",
+                "provenance": {
+                  "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.where.html",
+                  "package": "numpy",
+                  "qualified_callable": "numpy.where",
+                  "reference_status": "REFERENCE_EXTRACTED",
+                  "verified_date": "2026-08-26",
+                  "version_range": ">=2.0,<3.0"
+                },
+                "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+                "return_type": null,
+                "version_check": "VERSION_UNKNOWN",
+                "version_range": ">=2.0,<3.0"
+              },
+              "semantic_family": "ConditionalSelection",
+              "then": {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-33-Call",
+              "py-4-20-4-25-Compare",
+              "py-4-20-4-21-Name",
+              "py-4-24-4-25-Constant",
+              "py-4-27-4-28-Name",
+              "py-4-30-4-32-UnaryOp",
+              "py-4-31-4-32-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 34,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 21,
+                "begin_line": 4,
+                "end_column": 26,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 21,
+                "begin_line": 4,
+                "end_column": 22,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 25,
+                "begin_line": 4,
+                "end_column": 26,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 28,
+                "begin_line": 4,
+                "end_column": 29,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 31,
+                "begin_line": 4,
+                "end_column": 33,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 32,
+                "begin_line": 4,
+                "end_column": 33,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "Piecewise",
+      "source_hash": "a2432872f4017ec39dbdac43ae3d39b410d6bfb95816e36c3b303dbcb7c0adb7",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "numpy",
+      "execution_metadata": {
+        "backend": "CPU_ARRAY"
+      },
+      "generated_source": "import numpy as np\n\ndef compute(x):\n    return np.mean(x)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "reducer": "Mean",
+        "semantic_family": "Reduction"
+      },
+      "normalized_theory": {
+        "reducer": "Mean",
+        "semantic_family": "Reduction"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-8156eb7462c95f17",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [
+          {
+            "bind": {
+              "reducer": "mean"
+            },
+            "call_id": "py-4-11-4-21-Call",
+            "callable": "numpy.mean",
+            "equivalence_scope": {
+              "ignore": [
+                "implementation_algorithm",
+                "memory_layout",
+                "native_kernel"
+              ],
+              "preserve": [
+                "mathematical_relation",
+                "parameters",
+                "shape"
+              ]
+            },
+            "execution": null,
+            "family": "Reduction",
+            "package": "numpy",
+            "provenance": {
+              "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+              "package": "numpy",
+              "qualified_callable": "numpy.mean",
+              "reference_status": "REFERENCE_EXTRACTED",
+              "verified_date": "2026-08-26",
+              "version_range": ">=2.0,<3.0"
+            },
+            "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+            "return_type": null,
+            "source_span": {
+              "begin_column": 12,
+              "begin_line": 4,
+              "end_column": 22,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            "version_check": "VERSION_UNKNOWN",
+            "version_range": ">=2.0,<3.0"
+          }
+        ],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "api": "numpy.mean",
+              "axes": null,
+              "equivalence_scope": {
+                "ignore": [
+                  "implementation_algorithm",
+                  "memory_layout",
+                  "native_kernel"
+                ],
+                "preserve": [
+                  "mathematical_relation",
+                  "parameters",
+                  "shape"
+                ]
+              },
+              "input": {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              "keepdims": false,
+              "op": "Reduce",
+              "reduction": "Mean",
+              "reference_contract": {
+                "bind": {
+                  "reducer": "mean"
+                },
+                "callable": "numpy.mean",
+                "equivalence_scope": {
+                  "ignore": [
+                    "implementation_algorithm",
+                    "memory_layout",
+                    "native_kernel"
+                  ],
+                  "preserve": [
+                    "mathematical_relation",
+                    "parameters",
+                    "shape"
+                  ]
+                },
+                "execution": null,
+                "family": "Reduction",
+                "package": "numpy",
+                "provenance": {
+                  "official_reference": "https://numpy.org/doc/stable/reference/generated/numpy.mean.html",
+                  "package": "numpy",
+                  "qualified_callable": "numpy.mean",
+                  "reference_status": "REFERENCE_EXTRACTED",
+                  "verified_date": "2026-08-26",
+                  "version_range": ">=2.0,<3.0"
+                },
+                "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+                "return_type": null,
+                "version_check": "VERSION_UNKNOWN",
+                "version_range": ">=2.0,<3.0"
+              },
+              "semantic_family": "Reduction",
+              "shape_constraints": [
+                {
+                  "axis": null,
+                  "keepdims": false,
+                  "kind": "reduction_axis",
+                  "relation": "axis or named dimension must exist in input shape"
+                }
+              ]
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [
+          {
+            "axis": null,
+            "keepdims": false,
+            "kind": "reduction_axis",
+            "relation": "axis or named dimension must exist in input shape"
+          }
+        ],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-21-Call",
+              "py-4-19-4-20-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 22,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 20,
+                "begin_line": 4,
+                "end_column": 21,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "Reduction",
+      "source_hash": "ffe46227416fa3c862d644c3efb90ceb3b7d3fe587ecbeb3c30a296b0b6ac89f",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "jax",
+      "execution_metadata": {
+        "backend": "JIT_DEVICE"
+      },
+      "generated_source": "import jax.numpy as jnp\n\ndef compute(x):\n    return jnp.sum(x)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "normalized_theory": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-ad1a923dab86321e",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [
+          {
+            "bind": {
+              "reducer": "add"
+            },
+            "call_id": "py-4-11-4-21-Call",
+            "callable": "jax.numpy.sum",
+            "equivalence_scope": {
+              "ignore": [
+                "jit_strategy",
+                "device",
+                "parallel_reduction_order",
+                "autodiff_trace"
+              ],
+              "preserve": [
+                "mathematical_relation",
+                "parameters",
+                "shape"
+              ]
+            },
+            "execution": null,
+            "family": "Reduction",
+            "package": "jax",
+            "provenance": {
+              "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.sum.html",
+              "package": "jax",
+              "qualified_callable": "jax.numpy.sum",
+              "reference_status": "REFERENCE_EXTRACTED",
+              "verified_date": "2026-08-27",
+              "version_range": "*"
+            },
+            "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+            "return_type": null,
+            "source_span": {
+              "begin_column": 12,
+              "begin_line": 4,
+              "end_column": 22,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            "version_check": "VERSION_UNKNOWN",
+            "version_range": "*"
+          }
+        ],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "api": "jax.numpy.sum",
+              "axes": null,
+              "equivalence_scope": {
+                "ignore": [
+                  "jit_strategy",
+                  "device",
+                  "parallel_reduction_order",
+                  "autodiff_trace"
+                ],
+                "preserve": [
+                  "mathematical_relation",
+                  "parameters",
+                  "shape"
+                ]
+              },
+              "input": {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              "keepdims": false,
+              "op": "Reduce",
+              "reduction": "Add",
+              "reference_contract": {
+                "bind": {
+                  "reducer": "add"
+                },
+                "callable": "jax.numpy.sum",
+                "equivalence_scope": {
+                  "ignore": [
+                    "jit_strategy",
+                    "device",
+                    "parallel_reduction_order",
+                    "autodiff_trace"
+                  ],
+                  "preserve": [
+                    "mathematical_relation",
+                    "parameters",
+                    "shape"
+                  ]
+                },
+                "execution": null,
+                "family": "Reduction",
+                "package": "jax",
+                "provenance": {
+                  "official_reference": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.sum.html",
+                  "package": "jax",
+                  "qualified_callable": "jax.numpy.sum",
+                  "reference_status": "REFERENCE_EXTRACTED",
+                  "verified_date": "2026-08-27",
+                  "version_range": "*"
+                },
+                "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+                "return_type": null,
+                "version_check": "VERSION_UNKNOWN",
+                "version_range": "*"
+              },
+              "semantic_family": "Reduction",
+              "shape_constraints": [
+                {
+                  "axis": null,
+                  "keepdims": false,
+                  "kind": "reduction_axis",
+                  "relation": "axis or named dimension must exist in input shape"
+                }
+              ]
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [
+          {
+            "axis": null,
+            "keepdims": false,
+            "kind": "reduction_axis",
+            "relation": "axis or named dimension must exist in input shape"
+          }
+        ],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-21-Call",
+              "py-4-19-4-20-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 22,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 20,
+                "begin_line": 4,
+                "end_column": 21,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "FiniteSum",
+      "source_hash": "931eb26b45ba585dde71a3c088b43cf3d781e3eccd956aa7d9c998e7f298c4a8",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "torch",
+      "execution_metadata": {
+        "autograd": true,
+        "backend": "TENSOR_DEVICE"
+      },
+      "generated_source": "import torch\n\ndef compute(x):\n    return torch.sum(x)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "normalized_theory": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-4a179bd750ae726d",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [
+          {
+            "bind": {
+              "reducer": "add"
+            },
+            "call_id": "py-4-11-4-23-Call",
+            "callable": "torch.sum",
+            "equivalence_scope": {
+              "ignore": [
+                "device",
+                "kernel",
+                "parallel_reduction_order",
+                "autograd_trace"
+              ],
+              "preserve": [
+                "mathematical_relation",
+                "parameters",
+                "shape"
+              ]
+            },
+            "execution": null,
+            "family": "Reduction",
+            "package": "torch",
+            "provenance": {
+              "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.sum.html",
+              "package": "torch",
+              "qualified_callable": "torch.sum",
+              "reference_status": "REFERENCE_EXTRACTED",
+              "verified_date": "2026-08-27",
+              "version_range": "*"
+            },
+            "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+            "return_type": null,
+            "source_span": {
+              "begin_column": 12,
+              "begin_line": 4,
+              "end_column": 24,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            "version_check": "VERSION_UNKNOWN",
+            "version_range": "*"
+          }
+        ],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "api": "torch.sum",
+              "axes": null,
+              "equivalence_scope": {
+                "ignore": [
+                  "device",
+                  "kernel",
+                  "parallel_reduction_order",
+                  "autograd_trace"
+                ],
+                "preserve": [
+                  "mathematical_relation",
+                  "parameters",
+                  "shape"
+                ]
+              },
+              "input": {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              "keepdims": false,
+              "op": "Reduce",
+              "reduction": "Add",
+              "reference_contract": {
+                "bind": {
+                  "reducer": "add"
+                },
+                "callable": "torch.sum",
+                "equivalence_scope": {
+                  "ignore": [
+                    "device",
+                    "kernel",
+                    "parallel_reduction_order",
+                    "autograd_trace"
+                  ],
+                  "preserve": [
+                    "mathematical_relation",
+                    "parameters",
+                    "shape"
+                  ]
+                },
+                "execution": null,
+                "family": "Reduction",
+                "package": "torch",
+                "provenance": {
+                  "official_reference": "https://docs.pytorch.org/docs/stable/generated/torch.sum.html",
+                  "package": "torch",
+                  "qualified_callable": "torch.sum",
+                  "reference_status": "REFERENCE_EXTRACTED",
+                  "verified_date": "2026-08-27",
+                  "version_range": "*"
+                },
+                "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+                "return_type": null,
+                "version_check": "VERSION_UNKNOWN",
+                "version_range": "*"
+              },
+              "semantic_family": "Reduction",
+              "shape_constraints": [
+                {
+                  "axis": null,
+                  "keepdims": false,
+                  "kind": "reduction_axis",
+                  "relation": "axis or named dimension must exist in input shape"
+                }
+              ]
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [
+          {
+            "axis": null,
+            "keepdims": false,
+            "kind": "reduction_axis",
+            "relation": "axis or named dimension must exist in input shape"
+          }
+        ],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-23-Call",
+              "py-4-21-4-22-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 24,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 22,
+                "begin_line": 4,
+                "end_column": 23,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "FiniteSum",
+      "source_hash": "9471953908d788dfc320743e6f95828d0ba2d942d5f30994c8c0730d34ad0ada",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "cupy",
+      "execution_metadata": {
+        "backend": "GPU",
+        "reduction_order": "IMPLEMENTATION_DEPENDENT"
+      },
+      "generated_source": "import cupy as cp\n\ndef compute(x):\n    return cp.sum(x)\n",
+      "imports": [],
+      "language": "python",
+      "normalized_observed": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "normalized_theory": {
+        "reducer": "Add",
+        "semantic_family": "FiniteSum"
+      },
+      "observed_mathematical_ir": {
+        "diagnostics": [],
+        "execution_ir": {
+          "operations": [],
+          "schema_version": "0.1",
+          "status": "NO_EXECUTION_SEMANTICS"
+        },
+        "expression_id": "python-expression-c32329e1e8a7a610",
+        "function": "compute",
+        "language": "python",
+        "library_contracts": [
+          {
+            "bind": {
+              "reducer": "add"
+            },
+            "call_id": "py-4-11-4-20-Call",
+            "callable": "cupy.sum",
+            "equivalence_scope": {
+              "ignore": [
+                "gpu_kernel",
+                "device",
+                "parallel_reduction_order"
+              ],
+              "preserve": [
+                "mathematical_relation",
+                "parameters",
+                "shape"
+              ]
+            },
+            "execution": null,
+            "family": "Reduction",
+            "package": "cupy",
+            "provenance": {
+              "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.sum.html",
+              "package": "cupy",
+              "qualified_callable": "cupy.sum",
+              "reference_status": "REFERENCE_EXTRACTED",
+              "verified_date": "2026-08-27",
+              "version_range": "*"
+            },
+            "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+            "return_type": null,
+            "source_span": {
+              "begin_column": 12,
+              "begin_line": 4,
+              "end_column": 21,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            "version_check": "VERSION_UNKNOWN",
+            "version_range": "*"
+          }
+        ],
+        "numeric_domain": {
+          "category": "symbolic_numeric"
+        },
+        "outputs": [
+          {
+            "expression": {
+              "api": "cupy.sum",
+              "axes": null,
+              "equivalence_scope": {
+                "ignore": [
+                  "gpu_kernel",
+                  "device",
+                  "parallel_reduction_order"
+                ],
+                "preserve": [
+                  "mathematical_relation",
+                  "parameters",
+                  "shape"
+                ]
+              },
+              "input": {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              "keepdims": false,
+              "op": "Reduce",
+              "reduction": "Add",
+              "reference_contract": {
+                "bind": {
+                  "reducer": "add"
+                },
+                "callable": "cupy.sum",
+                "equivalence_scope": {
+                  "ignore": [
+                    "gpu_kernel",
+                    "device",
+                    "parallel_reduction_order"
+                  ],
+                  "preserve": [
+                    "mathematical_relation",
+                    "parameters",
+                    "shape"
+                  ]
+                },
+                "execution": null,
+                "family": "Reduction",
+                "package": "cupy",
+                "provenance": {
+                  "official_reference": "https://docs.cupy.dev/en/stable/reference/generated/cupy.sum.html",
+                  "package": "cupy",
+                  "qualified_callable": "cupy.sum",
+                  "reference_status": "REFERENCE_EXTRACTED",
+                  "verified_date": "2026-08-27",
+                  "version_range": "*"
+                },
+                "resolution_kind": "REFERENCE_SIMPLE_MAPPING",
+                "return_type": null,
+                "version_check": "VERSION_UNKNOWN",
+                "version_range": "*"
+              },
+              "semantic_family": "Reduction",
+              "shape_constraints": [
+                {
+                  "axis": null,
+                  "keepdims": false,
+                  "kind": "reduction_axis",
+                  "relation": "axis or named dimension must exist in input shape"
+                }
+              ]
+            },
+            "target": {
+              "name": "compute",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "schema_version": "0.1",
+        "shape_constraints": [
+          {
+            "axis": null,
+            "keepdims": false,
+            "kind": "reduction_axis",
+            "relation": "axis or named dimension must exist in input shape"
+          }
+        ],
+        "source_correspondence": [
+          {
+            "implementation_node_ids": [
+              "py-4-11-4-20-Call",
+              "py-4-18-4-19-Name"
+            ],
+            "source_spans": [
+              {
+                "begin_column": 12,
+                "begin_line": 4,
+                "end_column": 21,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 19,
+                "begin_line": 4,
+                "end_column": 20,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "term": "output"
+          }
+        ],
+        "status": "EXPRESSION_EXTRACTED"
+      },
+      "reanalysis": "ACTUAL_FORMULATRACER_FRONTEND",
+      "round_trip_status": "ROUND_TRIP_VERIFIED",
+      "semantic_family": "FiniteSum",
+      "source_hash": "f5942b22373baa7a234167f1dbfca725d2b2dff3e926803c221a7e74e3da55c8",
+      "status": "SOURCE_GENERATED"
+    },
+    {
+      "backend": "rust-loop",
+      "round_trip_status": "BACKEND_CAPABILITY_UNAVAILABLE",
+      "semantic_family": "FiniteSum",
+      "status": "BACKEND_CAPABILITY_UNAVAILABLE"
+    },
+    {
+      "backend": "rust-iterator",
+      "round_trip_status": "BACKEND_CAPABILITY_UNAVAILABLE",
+      "semantic_family": "FiniteSum",
+      "status": "BACKEND_CAPABILITY_UNAVAILABLE"
+    },
+    {
+      "backend": "rust-ndarray",
+      "round_trip_status": "BACKEND_CAPABILITY_UNAVAILABLE",
+      "semantic_family": "FiniteSum",
+      "status": "BACKEND_CAPABILITY_UNAVAILABLE"
+    },
+    {
+      "backend": "rust-rayon",
+      "round_trip_status": "BACKEND_CAPABILITY_UNAVAILABLE",
+      "semantic_family": "FiniteSum",
+      "status": "BACKEND_CAPABILITY_UNAVAILABLE"
+    },
+    {
+      "backend": "cpp-loop",
+      "round_trip_status": "BACKEND_CAPABILITY_UNAVAILABLE",
+      "semantic_family": "FiniteSum",
+      "status": "BACKEND_CAPABILITY_UNAVAILABLE"
+    },
+    {
+      "backend": "cpp-std",
+      "round_trip_status": "BACKEND_CAPABILITY_UNAVAILABLE",
+      "semantic_family": "FiniteSum",
+      "status": "BACKEND_CAPABILITY_UNAVAILABLE"
+    },
+    {
+      "backend": "cpp-eigen",
+      "round_trip_status": "BACKEND_CAPABILITY_UNAVAILABLE",
+      "semantic_family": "FiniteSum",
+      "status": "BACKEND_CAPABILITY_UNAVAILABLE"
+    }
+  ],
+  "critical_false_acceptance": 0,
+  "mutations": {
+    "cases": [
+      {
+        "actual": {
+          "family": "Reduction",
+          "reducer": "Mean"
+        },
+        "detected": true,
+        "expected": {
+          "family": "FiniteSum",
+          "reducer": "Add"
+        },
+        "mutation": "sum_to_mean"
+      },
+      {
+        "actual": {
+          "axis": 1,
+          "family": "Reduction"
+        },
+        "detected": true,
+        "expected": {
+          "axis": 0,
+          "family": "Reduction"
+        },
+        "mutation": "axis_0_to_1"
+      },
+      {
+        "actual": {
+          "family": "MatrixMultiply",
+          "operands": [
+            "B",
+            "A"
+          ]
+        },
+        "detected": true,
+        "expected": {
+          "family": "MatrixMultiply",
+          "operands": [
+            "A",
+            "B"
+          ]
+        },
+        "mutation": "matmul_operand_swap"
+      },
+      {
+        "actual": {
+          "family": "Identity"
+        },
+        "detected": true,
+        "expected": {
+          "family": "Transpose",
+          "permutation": [
+            1,
+            0
+          ]
+        },
+        "mutation": "transpose_removed"
+      },
+      {
+        "actual": {
+          "dtype": "float32",
+          "family": "Cast"
+        },
+        "detected": true,
+        "expected": {
+          "dtype": "float64",
+          "family": "Cast"
+        },
+        "mutation": "dtype_narrowing"
+      },
+      {
+        "actual": {
+          "branches": [
+            "y",
+            "x"
+          ],
+          "family": "Piecewise"
+        },
+        "detected": true,
+        "expected": {
+          "branches": [
+            "x",
+            "y"
+          ],
+          "family": "Piecewise"
+        },
+        "mutation": "where_branches_swapped"
+      }
+    ],
+    "detected": 6,
+    "false_acceptance": 0
+  },
+  "readiness": {
+    "backends": [
+      {
+        "backend": "python-loop",
+        "capabilities": [
+          "Elementwise",
+          "FilteredSum",
+          "FiniteSum",
+          "Piecewise"
+        ],
+        "generation_capability": [
+          "Elementwise",
+          "FilteredSum",
+          "FiniteSum",
+          "Piecewise"
+        ],
+        "known_unsupported_families": [
+          "Dot",
+          "MatrixMultiply",
+          "Reduction"
+        ],
+        "language": "python",
+        "round_trip_capability": true
+      },
+      {
+        "backend": "numpy",
+        "capabilities": [
+          "Dot",
+          "Elementwise",
+          "FiniteSum",
+          "MatrixMultiply",
+          "Piecewise",
+          "Reduction"
+        ],
+        "generation_capability": [
+          "Dot",
+          "Elementwise",
+          "FiniteSum",
+          "MatrixMultiply",
+          "Piecewise",
+          "Reduction"
+        ],
+        "known_unsupported_families": [
+          "FilteredSum"
+        ],
+        "language": "python",
+        "round_trip_capability": true
+      },
+      {
+        "backend": "jax",
+        "capabilities": [
+          "FiniteSum"
+        ],
+        "generation_capability": [
+          "FiniteSum"
+        ],
+        "known_unsupported_families": [
+          "Dot",
+          "Elementwise",
+          "FilteredSum",
+          "MatrixMultiply",
+          "Piecewise",
+          "Reduction"
+        ],
+        "language": "python",
+        "round_trip_capability": true
+      },
+      {
+        "backend": "torch",
+        "capabilities": [
+          "FiniteSum"
+        ],
+        "generation_capability": [
+          "FiniteSum"
+        ],
+        "known_unsupported_families": [
+          "Dot",
+          "Elementwise",
+          "FilteredSum",
+          "MatrixMultiply",
+          "Piecewise",
+          "Reduction"
+        ],
+        "language": "python",
+        "round_trip_capability": true
+      },
+      {
+        "backend": "cupy",
+        "capabilities": [
+          "FiniteSum"
+        ],
+        "generation_capability": [
+          "FiniteSum"
+        ],
+        "known_unsupported_families": [
+          "Dot",
+          "Elementwise",
+          "FilteredSum",
+          "MatrixMultiply",
+          "Piecewise",
+          "Reduction"
+        ],
+        "language": "python",
+        "round_trip_capability": true
+      },
+      {
+        "backend": "rust-loop",
+        "capabilities": [
+          "Elementwise",
+          "FiniteSum"
+        ],
+        "generation_capability": [],
+        "known_unsupported_families": [
+          "Dot",
+          "FilteredSum",
+          "MatrixMultiply",
+          "Piecewise",
+          "Reduction"
+        ],
+        "language": "rust",
+        "round_trip_capability": false
+      },
+      {
+        "backend": "rust-iterator",
+        "capabilities": [
+          "FilteredSum",
+          "FiniteSum"
+        ],
+        "generation_capability": [],
+        "known_unsupported_families": [
+          "Dot",
+          "Elementwise",
+          "MatrixMultiply",
+          "Piecewise",
+          "Reduction"
+        ],
+        "language": "rust",
+        "round_trip_capability": false
+      },
+      {
+        "backend": "rust-ndarray",
+        "capabilities": [
+          "Dot",
+          "FiniteSum",
+          "MatrixMultiply"
+        ],
+        "generation_capability": [],
+        "known_unsupported_families": [
+          "Elementwise",
+          "FilteredSum",
+          "Piecewise",
+          "Reduction"
+        ],
+        "language": "rust",
+        "round_trip_capability": false
+      },
+      {
+        "backend": "rust-rayon",
+        "capabilities": [
+          "FilteredSum",
+          "FiniteSum"
+        ],
+        "generation_capability": [],
+        "known_unsupported_families": [
+          "Dot",
+          "Elementwise",
+          "MatrixMultiply",
+          "Piecewise",
+          "Reduction"
+        ],
+        "language": "rust",
+        "round_trip_capability": false
+      },
+      {
+        "backend": "cpp-loop",
+        "capabilities": [
+          "Elementwise",
+          "FiniteSum",
+          "Piecewise"
+        ],
+        "generation_capability": [],
+        "known_unsupported_families": [
+          "Dot",
+          "FilteredSum",
+          "MatrixMultiply",
+          "Reduction"
+        ],
+        "language": "cpp",
+        "round_trip_capability": false
+      },
+      {
+        "backend": "cpp-std",
+        "capabilities": [
+          "Dot",
+          "FiniteSum",
+          "Reduction"
+        ],
+        "generation_capability": [],
+        "known_unsupported_families": [
+          "Elementwise",
+          "FilteredSum",
+          "MatrixMultiply",
+          "Piecewise"
+        ],
+        "language": "cpp",
+        "round_trip_capability": false
+      },
+      {
+        "backend": "cpp-eigen",
+        "capabilities": [
+          "Dot",
+          "FiniteSum",
+          "MatrixMultiply"
+        ],
+        "generation_capability": [],
+        "known_unsupported_families": [
+          "Elementwise",
+          "FilteredSum",
+          "Piecewise",
+          "Reduction"
+        ],
+        "language": "cpp",
+        "round_trip_capability": false
+      }
+    ]
+  },
+  "round_trip_verified": 12,
+  "schema_version": "1.0",
+  "success_rule": "Only actual frontend re-analysis matching normalized theory is accepted.",
+  "theory_families": [
+    "Dot",
+    "Elementwise",
+    "FilteredSum",
+    "FiniteSum",
+    "MatrixMultiply",
+    "Piecewise",
+    "Reduction"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "owner": "cpp_audit.numeric_types",
+  "native_operation": "F/LEGACY_NUMERIC_TYPES",
+  "cases": [
+    {
+      "case": "execution-bool",
+      "match": true
+    },
+    {
+      "case": "execution-int16",
+      "match": true
+    },
+    {
+      "case": "execution-uint32",
+      "match": true
+    },
+    {
+      "case": "execution-float64",
+      "match": true
+    },
+    {
+      "case": "execution-complex128",
+      "match": true
+    },
+    {
+      "case": "execution-python.int",
+      "match": true
+    },
+    {
+      "case": "execution-mystery",
+      "match": true
+    },
+    {
+      "case": "promotion-python.int-python.float",
+      "match": true
+    },
+    {
+      "case": "promotion-int16-uint16",
+      "match": true
+    },
+    {
+      "case": "promotion-float32-int16",
+      "match": true
+    },
+    {
+      "case": "promotion-complex64-float32",
+      "match": true
+    },
+    {
+      "case": "unknown-fail-closed",
+      "match": true
+    },
+    {
+      "case": "runtime-complex",
+      "match": true
+    }
+  ],
+  "passed": 13,
+  "total": 13,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

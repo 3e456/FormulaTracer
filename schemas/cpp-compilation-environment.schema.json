@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/cpp-compilation-environment.schema.json",
+  "title": "CppCompilationEnvironment",
+  "type": "object",
+  "required": ["project_root", "compilation_database", "compile_commands", "frontend_status", "discovery_status"],
+  "properties": {
+    "project_root": {"type": "string"},
+    "cmake_lists": {"type": ["string", "null"]},
+    "compilation_database": {"type": ["string", "null"]},
+    "compilation_database_hash": {"type": ["string", "null"]},
+    "compile_commands": {"type": "array", "items": {"type": "object", "required": ["source", "directory", "command", "command_hash"]}},
+    "frontend_path": {"type": ["string", "null"]},
+    "frontend_status": {"type": "string"},
+    "clang_version": {"type": ["string", "null"]},
+    "discovery_status": {"type": "string"}
+  }
+}

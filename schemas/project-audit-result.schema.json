@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/project-audit-result.schema.json",
+  "title": "ProjectAuditResult",
+  "type": "object",
+  "required": ["status", "project_graph", "roots", "outputs", "modules", "dependencies", "shared_dependencies", "error_causes", "proofs", "artifacts", "provenance", "diagnostics", "end_to_end_status", "end_to_end_claims", "end_to_end_coverage"],
+  "properties": {
+    "status": {"enum": ["PROJECT_FULLY_VERIFIED", "PROJECT_VERIFIED_UNDER_ASSUMPTIONS", "PROJECT_PARTIALLY_VERIFIED", "PROJECT_UNRESOLVED", "PROJECT_FAILED"]},
+    "project_graph": {"$ref": "project-dependency-graph.schema.json"},
+    "roots": {"type": "array", "items": {"type": "object", "required": ["root_id", "entry_module", "entry_symbol", "outputs", "dependency_slice", "shared_dependencies", "root_relations", "status", "graph_hash"]}},
+    "outputs": {"type": "array", "items": {"type": "object", "required": ["output_id", "name", "kind", "implementation", "formula", "error_components", "dependencies", "source_locations", "lean_status", "status", "slice_hash", "value_interval", "error_interval", "true_value_enclosure", "range_status", "range_obligations", "interval_propagation", "execution_range", "range_constraint_status", "end_to_end_claim", "end_to_end_status", "proof_chain", "total_error_bound", "artifact_enclosure", "remaining_obligations"], "properties": {"value_interval": {"type": ["object", "null"]}, "error_interval": {"type": ["object", "null"]}, "true_value_enclosure": {"type": ["object", "null"]}, "range_status": {"type": ["string", "null"]}, "range_obligations": {"type": "array"}, "interval_propagation": {"type": ["object", "null"]}, "execution_range": {"type": ["object", "null"]}, "range_constraint_status": {"type": ["string", "null"]}, "end_to_end_claim": {"type": ["object", "null"]}, "end_to_end_status": {"type": ["string", "null"]}, "proof_chain": {"type": ["object", "null"]}, "total_error_bound": {}, "artifact_enclosure": {}, "remaining_obligations": {"type": "array"}}}},
+    "modules": {"type": "array"},
+    "dependencies": {"type": "array"},
+    "shared_dependencies": {"type": "array"},
+    "error_causes": {"type": "array"},
+    "proofs": {"type": "array"},
+    "artifacts": {"type": "array", "items": {"$ref": "output-sink.schema.json"}},
+    "provenance": {"type": "object", "required": ["entry_source_hash", "used_source_hashes", "project_graph_hash", "module_graph_hash", "root_graph_hashes", "output_slice_hashes", "library_contract_registry_hash", "lean_source_hashes"]},
+    "diagnostics": {"type": "array"},
+    "end_to_end_status": {"type": ["string", "null"]},
+    "end_to_end_claims": {"type": "array", "items": {"$ref": "end-to-end-verification-claim.schema.json"}},
+    "end_to_end_coverage": {"type": "object", "required": ["number_of_outputs", "fully_verified", "verified_under_assumptions", "partially_verified", "unresolved", "failed"]}
+  }
+}

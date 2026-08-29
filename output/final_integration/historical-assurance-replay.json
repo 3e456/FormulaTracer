@@ -1,0 +1,46 @@
+{
+  "audit_bundle": "PASS",
+  "bitvector": {
+    "cases": 196864,
+    "status": "PASS"
+  },
+  "c_abi": "PASS",
+  "c_cpp": {
+    "failed": 0,
+    "passed": 4
+  },
+  "clippy_deny_warnings": "FAIL",
+  "differential": {
+    "cases": 1056,
+    "false_acceptance": 0,
+    "matches": 1056
+  },
+  "error_range": "PASS",
+  "lean": "PASS",
+  "provenance_debugger": "PASS",
+  "provider_runtime": {
+    "failed": 0,
+    "passed": 6
+  },
+  "python": {
+    "failed": 0,
+    "passed": 602,
+    "subtests_passed": 36
+  },
+  "round_trip": "PASS",
+  "rust": {
+    "c_abi_passed": 3,
+    "core_passed": 65,
+    "failed": 0
+  },
+  "structural_isomorphism": {
+    "cases": 28,
+    "false_isomorphism": 0,
+    "mutation_collapses": 0
+  },
+  "tex": {
+    "cases": 1056,
+    "matches": 1056
+  },
+  "validation": "PASS"
+}

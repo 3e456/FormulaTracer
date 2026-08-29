@@ -1,0 +1,75 @@
+name: Tier 2 - Integration checks
+
+on:
+  pull_request:
+  push:
+    branches: [main, feature/public-api-reference-harvester, feature/prepublic-semantic-coverage-hardening]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: integration-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  semantic-integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install -r requirements/ci.txt -e .
+      - run: cargo build --workspace --locked
+      - run: python -m pytest -q
+      - run: python tools/run_native_differential.py
+      - run: python tools/run_structural_isomorphism_assurance.py
+      - run: python tools/check_maintenance.py --operational
+      - name: Public synthetic semantic coverage and claim gates
+        run: |
+          python scripts/run_prepublic_semantic_upgrade.py all
+          python tools/prepublic_release_hardening.py
+          git diff --exit-code -- output/prepublic_semantic_upgrade
+      - name: Regenerate deterministic public inventories
+        run: |
+          python tools/public_release_audit.py
+          git diff --exit-code -- output/public_docs \
+            output/public_release_audit/provider-upstream-conformance.json \
+            output/public_release_audit/library-conformance-summary.json
+
+  native-consumers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo build --workspace --locked
+      - name: Rust consumer without Python runtime
+        run: cargo run --locked --manifest-path examples/rust_native/Cargo.toml
+      - name: Pure C consumer
+        run: >-
+          cc -std=c17 -Wall -Wextra -Iinclude examples/c_native/main.c
+          -Ltarget/debug -lformulatracer_c_api -o /tmp/ft-c
+      - run: LD_LIBRARY_PATH=target/debug /tmp/ft-c
+      - name: Pure C++ consumer
+        run: >-
+          c++ -std=c++20 -Wall -Wextra -Iinclude examples/cpp_native/main.cpp
+          -Ltarget/debug -lformulatracer_c_api -o /tmp/ft-cpp
+      - run: LD_LIBRARY_PATH=target/debug /tmp/ft-cpp
+
+  clang18-frontend:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update
+      - run: sudo apt-get install -y clang-18 libclang-18-dev llvm-18-dev ninja-build zlib1g-dev libzstd-dev libcurl4-openssl-dev libedit-dev
+      - name: Configure and test Clang 18 frontend
+        run: |
+          cmake -S . -B build/clang -G Ninja -DCMAKE_BUILD_TYPE=Release \
+            -DCMAKE_C_COMPILER=/usr/lib/llvm-18/bin/clang \
+            -DCMAKE_CXX_COMPILER=/usr/lib/llvm-18/bin/clang++ \
+            -DLLVM_DIR=/usr/lib/llvm-18/lib/cmake/llvm \
+            -DClang_DIR=/usr/lib/llvm-18/lib/cmake/clang
+          cmake --build build/clang
+          ctest --test-dir build/clang --output-on-failure

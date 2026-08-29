@@ -1,0 +1,71 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [
+    "remainder bound required"
+  ],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "body": {
+      "args": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "name": "k",
+              "op": "BoundVariable"
+            }
+          ],
+          "op": "Power"
+        },
+        {
+          "args": [
+            {
+              "name": "k",
+              "op": "BoundVariable"
+            }
+          ],
+          "op": "Factorial"
+        }
+      ],
+      "op": "Divide"
+    },
+    "bound_index": "k",
+    "index_domain": {
+      "lower": {
+        "op": "Constant",
+        "value": 0
+      },
+      "upper_exclusive": {
+        "name": "K",
+        "op": "FreeVariable"
+      }
+    },
+    "op": "FiniteSum"
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-dev-series.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-dev-series",
+  "root_cause": "TRUNCATION_RELATION_GAP",
+  "source_artifact_hash": "9a4f762e1128117705fbf4322c4a7b5c424334a41bf02c53e85a4f872dcecd04",
+  "case_specific_rule_used": false
+}

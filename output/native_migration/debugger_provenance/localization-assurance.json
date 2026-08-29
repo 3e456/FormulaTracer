@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "adversarial_total": 10,
+  "false_attribution": 0,
+  "span_set": 10,
+  "false_localization": 0,
+  "records": [
+    {
+      "case": "identical-lines",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "same-name-scopes",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "same-formula-functions",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "temporary-reuse",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "branch-specific",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "loop-repeat",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "provider-wrapper",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "commutative",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "structural-origin",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    },
+    {
+      "case": "different-cause",
+      "level": "SOURCE_SPAN_SET",
+      "false_attribution": false
+    }
+  ]
+}

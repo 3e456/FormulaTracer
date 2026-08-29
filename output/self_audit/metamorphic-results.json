@@ -1,0 +1,968 @@
+{
+  "cases": [
+    {
+      "base_case_id": "theory:e81edfdfe098222f:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0000",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ac5a7f963536b6506b29aa35adfe219c177f876bd6097607f935e2fe89f645bd",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:cfe1871294dc4aec:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0001",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "64ce441c551478b099a0dee089eb6c3bbbf6ad7892649195d1c0a2dfd5d1d7af",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:774eaae57bc3034a:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0002",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "592372833032fc879f1c15c3106c31a36654b6ef22b872826d454510d0e85007",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:91d1abfbee7bae06:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0003",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "3664429749b50130b0e85bdcb630ebc60333d027c27e2db28c277728fcb09182",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:33e697db1df7b38e:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0004",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ac5a7f963536b6506b29aa35adfe219c177f876bd6097607f935e2fe89f645bd",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d279c527017b27cc:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0005",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "64ce441c551478b099a0dee089eb6c3bbbf6ad7892649195d1c0a2dfd5d1d7af",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d6455ae4bcbebe87:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0006",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "592372833032fc879f1c15c3106c31a36654b6ef22b872826d454510d0e85007",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d4154f81633c87fd:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0007",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "3664429749b50130b0e85bdcb630ebc60333d027c27e2db28c277728fcb09182",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:ac4c17cc9b5d9bc1:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0008",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ac5a7f963536b6506b29aa35adfe219c177f876bd6097607f935e2fe89f645bd",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:fec83eaa8a56f687:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0009",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "64ce441c551478b099a0dee089eb6c3bbbf6ad7892649195d1c0a2dfd5d1d7af",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:c4a3fefef65a51de:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0010",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "592372833032fc879f1c15c3106c31a36654b6ef22b872826d454510d0e85007",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:c13813939690866d:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0011",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "3664429749b50130b0e85bdcb630ebc60333d027c27e2db28c277728fcb09182",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:94adb4bfb60cf379:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0012",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a41f84076fe8de6fe60ab3df56349df560301816f7868627a929aa60177665a1",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:111ed77480d2092b:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0013",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "07499b50f34fb67510f065d4e17e764eb0d88edecf3921cd050b36413bd1a5f6",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:8125ffe6e6dd8f56:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0014",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a3c9a7bf4f6dc60b81ca937b50f187f21bf03adf4f062552b65a343128f8b91d",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:f483d50af1f96f01:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0015",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "f64824140b760ac9f98ba87d23378e293f8132fa4960605355350ddfa9ba4ef3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:6bd7af91d335da3e:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0016",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a41f84076fe8de6fe60ab3df56349df560301816f7868627a929aa60177665a1",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:6527025d1fcb59f0:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0017",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "07499b50f34fb67510f065d4e17e764eb0d88edecf3921cd050b36413bd1a5f6",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:50573ffe97c03a14:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0018",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a3c9a7bf4f6dc60b81ca937b50f187f21bf03adf4f062552b65a343128f8b91d",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:61af0fa33a4f26fe:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0019",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "f64824140b760ac9f98ba87d23378e293f8132fa4960605355350ddfa9ba4ef3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:ecde06eeedb64460:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0020",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a41f84076fe8de6fe60ab3df56349df560301816f7868627a929aa60177665a1",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:25d08af9e2f1c5cc:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0021",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "07499b50f34fb67510f065d4e17e764eb0d88edecf3921cd050b36413bd1a5f6",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:42cc8f785f401da2:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0022",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a3c9a7bf4f6dc60b81ca937b50f187f21bf03adf4f062552b65a343128f8b91d",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:465134b61a19fa1a:python-explicit",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0023",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "f64824140b760ac9f98ba87d23378e293f8132fa4960605355350ddfa9ba4ef3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:b7444f5675f9b7fb:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0024",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "588f0f8a44b2fcd18d897a44b25f7d6d6cdeed3f6867fb351eaff29ece97013f",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:b7444f5675f9b7fb:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0025",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "99d09492adf1a0f38e9474a9b8c91363074d8c49d47d82c70091381038287b12",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:b7444f5675f9b7fb:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0026",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "d801ffe467a5c48f3e19fcc3de35733d6b4acd47e860338f52c8b9a5c6479195",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:b7444f5675f9b7fb:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0027",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "10e5225e4aa91bd1ebc7c121b4384b13376c8013bda38fd1560aa32a8d6adf4d",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:620fe1dee64cdba2:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0028",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "fc2b63abfc2f9bb13525752c41e146210dedadd643699574fed5e55033e07840",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:620fe1dee64cdba2:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0029",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "22dddc91f7f4dfdccce28ed86b09c3882fe4223c57deca02a4a4b2fb5e7c32f6",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:620fe1dee64cdba2:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0030",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "c2d98f599b203c375ba83d419d44cd9261c2022303b737327a96b04bbeef28e3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:620fe1dee64cdba2:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0031",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "62da5f6902ba33cdf7fbdeae2b73140bd032af5284af01128e550707a80644f5",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:b9c7b3449a56ca4e:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0032",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "89d3a9fd529bcee5ad7f3004b23cf27e221279f294dcad8baf3545504a9cce4c",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:b9c7b3449a56ca4e:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0033",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "027da1a88e5a45ba7e1beb81ea1252454829bf17c5d2edd8d7d05bbc8010ddaf",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:b9c7b3449a56ca4e:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0034",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "4facb49ad90eea7f46a8692505d0c2e135ac2c11b67029f8d6abfd9323e57c41",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:b9c7b3449a56ca4e:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0035",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a51aca25e0cef7c04fed4032d89e7b5bc3814af04a042a6d619852b10c194541",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:2ff1545abb273317:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0036",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "544ca402d8d63a87f97d33890e0c0ba048211a2dbf4f2c08a18c11e56a528c92",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:2ff1545abb273317:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0037",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "8ffd8eb7a6fc38b85c3e85a5bec7aa09b2d2e806310689af727e8b7cb06e68fc",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:2ff1545abb273317:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0038",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "b16903dbbc18b2f3a36a6d0509bc5d597ac8214db9a55f4d1b78c751b76650fa",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:2ff1545abb273317:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0039",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "233ebd6e7ef18761103a7cd7731cccb44ae5de896d3c8979b3ce0c3fd25c46d7",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:83104de14abf34dd:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0040",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "588f0f8a44b2fcd18d897a44b25f7d6d6cdeed3f6867fb351eaff29ece97013f",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:83104de14abf34dd:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0041",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "99d09492adf1a0f38e9474a9b8c91363074d8c49d47d82c70091381038287b12",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:83104de14abf34dd:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0042",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "d801ffe467a5c48f3e19fcc3de35733d6b4acd47e860338f52c8b9a5c6479195",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:83104de14abf34dd:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0043",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "10e5225e4aa91bd1ebc7c121b4384b13376c8013bda38fd1560aa32a8d6adf4d",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:3e80378905856a44:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0044",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "fc2b63abfc2f9bb13525752c41e146210dedadd643699574fed5e55033e07840",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:3e80378905856a44:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0045",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "22dddc91f7f4dfdccce28ed86b09c3882fe4223c57deca02a4a4b2fb5e7c32f6",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:3e80378905856a44:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0046",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "c2d98f599b203c375ba83d419d44cd9261c2022303b737327a96b04bbeef28e3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:3e80378905856a44:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0047",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "62da5f6902ba33cdf7fbdeae2b73140bd032af5284af01128e550707a80644f5",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:9054ee3c51af68fa:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0048",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "89d3a9fd529bcee5ad7f3004b23cf27e221279f294dcad8baf3545504a9cce4c",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:9054ee3c51af68fa:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0049",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "027da1a88e5a45ba7e1beb81ea1252454829bf17c5d2edd8d7d05bbc8010ddaf",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:9054ee3c51af68fa:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0050",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "4facb49ad90eea7f46a8692505d0c2e135ac2c11b67029f8d6abfd9323e57c41",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:9054ee3c51af68fa:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0051",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a51aca25e0cef7c04fed4032d89e7b5bc3814af04a042a6d619852b10c194541",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:c1daed875c511973:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0052",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "544ca402d8d63a87f97d33890e0c0ba048211a2dbf4f2c08a18c11e56a528c92",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:c1daed875c511973:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0053",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "8ffd8eb7a6fc38b85c3e85a5bec7aa09b2d2e806310689af727e8b7cb06e68fc",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:c1daed875c511973:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0054",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "b16903dbbc18b2f3a36a6d0509bc5d597ac8214db9a55f4d1b78c751b76650fa",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:c1daed875c511973:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0055",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "233ebd6e7ef18761103a7cd7731cccb44ae5de896d3c8979b3ce0c3fd25c46d7",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:0c0c673fa2c62cf6:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0056",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "588f0f8a44b2fcd18d897a44b25f7d6d6cdeed3f6867fb351eaff29ece97013f",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:0c0c673fa2c62cf6:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0057",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "99d09492adf1a0f38e9474a9b8c91363074d8c49d47d82c70091381038287b12",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:0c0c673fa2c62cf6:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0058",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "d801ffe467a5c48f3e19fcc3de35733d6b4acd47e860338f52c8b9a5c6479195",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:0c0c673fa2c62cf6:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0059",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "10e5225e4aa91bd1ebc7c121b4384b13376c8013bda38fd1560aa32a8d6adf4d",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:580d50b146e2108d:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0060",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "fc2b63abfc2f9bb13525752c41e146210dedadd643699574fed5e55033e07840",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:580d50b146e2108d:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0061",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "22dddc91f7f4dfdccce28ed86b09c3882fe4223c57deca02a4a4b2fb5e7c32f6",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:580d50b146e2108d:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0062",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "c2d98f599b203c375ba83d419d44cd9261c2022303b737327a96b04bbeef28e3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:580d50b146e2108d:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0063",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "62da5f6902ba33cdf7fbdeae2b73140bd032af5284af01128e550707a80644f5",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:8660add6eea19983:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0064",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "89d3a9fd529bcee5ad7f3004b23cf27e221279f294dcad8baf3545504a9cce4c",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:8660add6eea19983:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0065",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "027da1a88e5a45ba7e1beb81ea1252454829bf17c5d2edd8d7d05bbc8010ddaf",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:8660add6eea19983:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0066",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "4facb49ad90eea7f46a8692505d0c2e135ac2c11b67029f8d6abfd9323e57c41",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:8660add6eea19983:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0067",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a51aca25e0cef7c04fed4032d89e7b5bc3814af04a042a6d619852b10c194541",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d82c190994712617:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0068",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "544ca402d8d63a87f97d33890e0c0ba048211a2dbf4f2c08a18c11e56a528c92",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d82c190994712617:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0069",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "8ffd8eb7a6fc38b85c3e85a5bec7aa09b2d2e806310689af727e8b7cb06e68fc",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d82c190994712617:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0070",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "b16903dbbc18b2f3a36a6d0509bc5d597ac8214db9a55f4d1b78c751b76650fa",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d82c190994712617:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0071",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "233ebd6e7ef18761103a7cd7731cccb44ae5de896d3c8979b3ce0c3fd25c46d7",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:3eaff3e883691fd5:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0072",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "d5c6e440e5ec0922d0dd52c10adaeb158a4f5822a8077a721644c6a702f2e912",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:3eaff3e883691fd5:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0073",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "cbf2a2138441fa01b677ba33fda615ee64999177ed064af15254e943c198a34a",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:3eaff3e883691fd5:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0074",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "bbdd8e60a249f3a3d15eb94393281b02c89693fb175d8fab5ae3d9127fe96ef0",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:3eaff3e883691fd5:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0075",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "e2facd9c249f8349cc41bd9381fabf2a89145bc5be62b4881c58b99ad62a086e",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:212f92d906777a1e:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0076",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "8c887ea27c0e6e3373b5e28bd9f6fea322bfbc8129b508d542e75c6607805284",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:212f92d906777a1e:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0077",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "106b52c5af6d178b7e0a4eec0f847e241fab95aea4a22c4ea6385b5777c3b6ef",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:212f92d906777a1e:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0078",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "024361417e37e7aaf5f20170ca59c6088c179ee325c53f1a940cfd0d282d6113",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:212f92d906777a1e:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0079",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ba19a79ceb7a7c656cab520723189558a8851af0e5aecc7cf4ac4bd0e0afced3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:a5a5c1fde8406eb1:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0080",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "01ebaf7ec9e249233743256df55af22045b8a6dcff07bd339132eb9be47e2275",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:a5a5c1fde8406eb1:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0081",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a5abb45f08f8d9690f645aadc204699b9cf628d68748ddc1effed614972bcd49",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:a5a5c1fde8406eb1:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0082",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ab4ed3cc5cd70ae9b55875ab1cd5298c9e5113b7ebe355b2ebe3ef7b2c63d7da",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:a5a5c1fde8406eb1:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0083",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "9cdd5c578d3e0bde5e67ae833e182402b696df79b865569ed4d2eb9a5ac98204",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:452f836a4afdcd9a:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0084",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "7c7de758681d12af19f1490fea314f87be1bd45488c1c9e7a1c20fe17ab39de0",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:452f836a4afdcd9a:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0085",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "36f1f5c40ab552a0b2c8717358dc18b55a4192d20eb8e44f687e5c772fb112ca",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:452f836a4afdcd9a:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0086",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "34042b0a554a07efe4ca2d5c289f8f9aaf39fd21a116e5ff0c0a33c517f48776",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:452f836a4afdcd9a:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0087",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "0cdf1a536060f1cc5070a69a810bae5d93a6b923868c5546a788fc79e45b2111",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:009f5e661fd25dd8:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0088",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "d5c6e440e5ec0922d0dd52c10adaeb158a4f5822a8077a721644c6a702f2e912",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:009f5e661fd25dd8:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0089",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "cbf2a2138441fa01b677ba33fda615ee64999177ed064af15254e943c198a34a",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:009f5e661fd25dd8:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0090",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "bbdd8e60a249f3a3d15eb94393281b02c89693fb175d8fab5ae3d9127fe96ef0",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:009f5e661fd25dd8:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0091",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "e2facd9c249f8349cc41bd9381fabf2a89145bc5be62b4881c58b99ad62a086e",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:6c3060bdbdae9679:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0092",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "8c887ea27c0e6e3373b5e28bd9f6fea322bfbc8129b508d542e75c6607805284",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:6c3060bdbdae9679:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0093",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "106b52c5af6d178b7e0a4eec0f847e241fab95aea4a22c4ea6385b5777c3b6ef",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:6c3060bdbdae9679:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0094",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "024361417e37e7aaf5f20170ca59c6088c179ee325c53f1a940cfd0d282d6113",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:6c3060bdbdae9679:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0095",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ba19a79ceb7a7c656cab520723189558a8851af0e5aecc7cf4ac4bd0e0afced3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:ca1e76fedd801f07:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0096",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "01ebaf7ec9e249233743256df55af22045b8a6dcff07bd339132eb9be47e2275",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:ca1e76fedd801f07:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0097",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a5abb45f08f8d9690f645aadc204699b9cf628d68748ddc1effed614972bcd49",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:ca1e76fedd801f07:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0098",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ab4ed3cc5cd70ae9b55875ab1cd5298c9e5113b7ebe355b2ebe3ef7b2c63d7da",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:ca1e76fedd801f07:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0099",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "9cdd5c578d3e0bde5e67ae833e182402b696df79b865569ed4d2eb9a5ac98204",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d690f18d0a0e5073:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0100",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "7c7de758681d12af19f1490fea314f87be1bd45488c1c9e7a1c20fe17ab39de0",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d690f18d0a0e5073:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0101",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "36f1f5c40ab552a0b2c8717358dc18b55a4192d20eb8e44f687e5c772fb112ca",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d690f18d0a0e5073:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0102",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "34042b0a554a07efe4ca2d5c289f8f9aaf39fd21a116e5ff0c0a33c517f48776",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:d690f18d0a0e5073:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0103",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "0cdf1a536060f1cc5070a69a810bae5d93a6b923868c5546a788fc79e45b2111",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:85666257986e5a19:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0104",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "d5c6e440e5ec0922d0dd52c10adaeb158a4f5822a8077a721644c6a702f2e912",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:85666257986e5a19:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0105",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "cbf2a2138441fa01b677ba33fda615ee64999177ed064af15254e943c198a34a",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:85666257986e5a19:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0106",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "bbdd8e60a249f3a3d15eb94393281b02c89693fb175d8fab5ae3d9127fe96ef0",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:85666257986e5a19:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0107",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "e2facd9c249f8349cc41bd9381fabf2a89145bc5be62b4881c58b99ad62a086e",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:f5bc09b7a5c395b9:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0108",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "8c887ea27c0e6e3373b5e28bd9f6fea322bfbc8129b508d542e75c6607805284",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:f5bc09b7a5c395b9:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0109",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "106b52c5af6d178b7e0a4eec0f847e241fab95aea4a22c4ea6385b5777c3b6ef",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:f5bc09b7a5c395b9:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0110",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "024361417e37e7aaf5f20170ca59c6088c179ee325c53f1a940cfd0d282d6113",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:f5bc09b7a5c395b9:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0111",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ba19a79ceb7a7c656cab520723189558a8851af0e5aecc7cf4ac4bd0e0afced3",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:fcff675ea521fc0e:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0112",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "01ebaf7ec9e249233743256df55af22045b8a6dcff07bd339132eb9be47e2275",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:fcff675ea521fc0e:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0113",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "a5abb45f08f8d9690f645aadc204699b9cf628d68748ddc1effed614972bcd49",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:fcff675ea521fc0e:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0114",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "ab4ed3cc5cd70ae9b55875ab1cd5298c9e5113b7ebe355b2ebe3ef7b2c63d7da",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:fcff675ea521fc0e:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0115",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "9cdd5c578d3e0bde5e67ae833e182402b696df79b865569ed4d2eb9a5ac98204",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:183f22a92e87eb31:cupy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0116",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "7c7de758681d12af19f1490fea314f87be1bd45488c1c9e7a1c20fe17ab39de0",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:183f22a92e87eb31:jax",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0117",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "36f1f5c40ab552a0b2c8717358dc18b55a4192d20eb8e44f687e5c772fb112ca",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:183f22a92e87eb31:numpy",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0118",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "34042b0a554a07efe4ca2d5c289f8f9aaf39fd21a116e5ff0c0a33c517f48776",
+      "transform": "ALPHA_RENAME"
+    },
+    {
+      "base_case_id": "theory:183f22a92e87eb31:torch",
+      "ground_truth": "MATHEMATICALLY_SEMANTICS_PRESERVING",
+      "metamorphic_id": "metamorphic:0119",
+      "result": "TRUE_ACCEPTANCE",
+      "source_hash": "0cdf1a536060f1cc5070a69a810bae5d93a6b923868c5546a788fc79e45b2111",
+      "transform": "ALPHA_RENAME"
+    }
+  ],
+  "false_rejection": 0,
+  "schema_version": "1.0",
+  "true_acceptance": 120,
+  "unresolved": 0
+}

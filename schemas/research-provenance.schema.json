@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/research-provenance.schema.json",
+  "type": "object",
+  "required": ["schema_version", "nodes", "edges", "diagnostics", "graph_hash"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node_id", "kind", "label", "metadata", "evidence_level", "proof_authority", "origin_set"],
+        "properties": {
+          "node_id": {"type": "string"},
+          "kind": {"type": "string"},
+          "label": {"type": "string"},
+          "metadata": {"type": "object"},
+          "content_hash": {"type": ["string", "null"]},
+          "evidence_level": {"type": "string"},
+          "proof_authority": {"type": "boolean"},
+          "origin_set": {"type": "array", "items": {"type": "object"}}
+        },
+        "additionalProperties": false
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["edge_id", "kind", "source", "target", "metadata"],
+        "properties": {
+          "edge_id": {"type": "string"}, "kind": {"type": "string"},
+          "source": {"type": "string"}, "target": {"type": "string"},
+          "metadata": {"type": "object"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "diagnostics": {"type": "array", "items": {"type": "object"}},
+    "graph_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+{
+  "package_version": "0.1.0",
+  "python": ">=3.10",
+  "rust": ">=1.85; edition 2021",
+  "c_abi": "v1",
+  "audited_cpp": [
+    "C++17",
+    "C++20"
+  ],
+  "cpp_build": "C++20",
+  "llvm_clang": "major 18",
+  "lean": "4.19.0",
+  "mathlib": "4.19.0",
+  "generated": [
+    "Python",
+    "Rust",
+    "C++"
+  ]
+}

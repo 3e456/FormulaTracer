@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "generic_fixes": 5,
+  "case_specific_fixes": 0,
+  "families": [
+    "STRUCTURAL_QUOTIENT_INTEGRATION",
+    "SAFE_INLINE_UNINLINE",
+    "LOOP_FOLD_REDUCTION",
+    "PROVIDER_PROJECTION",
+    "RELATION_ASSUMPTION_OBLIGATION_CHAIN"
+  ]
+}

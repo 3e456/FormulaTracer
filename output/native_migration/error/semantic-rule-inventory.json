@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "generated_from": [
+    "python/cpp_audit/error_ir.py",
+    "python/cpp_audit/error_composition.py"
+  ],
+  "models": [
+    "ABSOLUTE", "RELATIVE", "MIXED_ABSOLUTE_RELATIVE", "COMPONENTWISE",
+    "L1", "L2", "LINF", "SYMBOLIC_BOUND", "INTERVAL_BOUND",
+    "NUMERICALLY_CHECKED_ONLY"
+  ],
+  "dependency_models": [
+    "DEPENDENCE_UNKNOWN", "SHARED_ERROR_CAUSE", "INDEPENDENT_COMPONENTS",
+    "INDEPENDENCE_PROVEN"
+  ],
+  "certification_levels": [
+    "EXACT_ERROR_RELATION", "CERTIFIED_UPPER_BOUND",
+    "CERTIFIED_UPPER_BOUND_UNDER_ASSUMPTIONS", "REFERENCE_CONTRACT_BOUND",
+    "SYMBOLICALLY_DERIVED", "NUMERICALLY_CHECKED_ONLY", "UNRESOLVED"
+  ],
+  "rules": [
+    {
+      "rule_id": "error.sum.absolute.v1",
+      "operation": "SUM",
+      "input_error_model": "compatible absolute or norm bounds",
+      "output_error_model": "same metric upper bound",
+      "mathematical_relation": "epsilon_out <= sum_i |c_i| epsilon_i",
+      "conditions": ["compatible metrics", "finite coefficients"],
+      "assumptions": [],
+      "dependency_requirements": ["shared causes preserved"],
+      "correlation_requirements": [],
+      "domain_requirements": [],
+      "differentiability_requirements": [],
+      "proof_obligations": [],
+      "certification_level": "CERTIFIED_UPPER_BOUND when input evidence is certified",
+      "failure_status": "INCOMPATIBLE_ERROR_METRICS",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.subtract.absolute.v1",
+      "operation": "SUBTRACT",
+      "input_error_model": "absolute bounds",
+      "output_error_model": "absolute upper bound",
+      "mathematical_relation": "epsilon_out <= epsilon_x + epsilon_y",
+      "conditions": ["cancellation only for identical cause with explicit authorization"],
+      "assumptions": [], "dependency_requirements": ["semantic cause identity"],
+      "correlation_requirements": [], "domain_requirements": [],
+      "differentiability_requirements": [], "proof_obligations": [],
+      "certification_level": "CERTIFIED_UPPER_BOUND",
+      "failure_status": "WRONG_PROPAGATION_COEFFICIENT",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.rss.independent.v1", "operation": "RSS",
+      "input_error_model": "compatible statistical uncertainty components",
+      "output_error_model": "root-sum-square uncertainty",
+      "mathematical_relation": "sigma_out = sqrt(sum_i sigma_i^2)",
+      "conditions": ["independence explicitly proven"], "assumptions": ["INPUTS_INDEPENDENT"],
+      "dependency_requirements": ["INDEPENDENCE_PROVEN"],
+      "correlation_requirements": ["unknown correlation is rejected"], "domain_requirements": [],
+      "differentiability_requirements": [], "proof_obligations": ["INPUTS_INDEPENDENT"],
+      "certification_level": "STATISTICAL_PROPAGATION_UNDER_ASSUMPTIONS",
+      "failure_status": "RSS_REQUIRES_PROVEN_INDEPENDENCE",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.max.conservative.v1", "operation": "MAX",
+      "input_error_model": "compatible bounds", "output_error_model": "maximum bound",
+      "mathematical_relation": "epsilon_out <= max_i epsilon_i", "conditions": [], "assumptions": [],
+      "dependency_requirements": [], "correlation_requirements": [], "domain_requirements": [],
+      "differentiability_requirements": [], "proof_obligations": [],
+      "certification_level": "SYMBOLICALLY_DERIVED", "failure_status": "BOUND_UNRESOLVED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.scalar.v1", "operation": "SCALAR_MULTIPLICATION",
+      "input_error_model": "absolute bound", "output_error_model": "absolute bound",
+      "mathematical_relation": "epsilon_out <= |a| epsilon_x",
+      "conditions": ["one error input", "finite scalar"], "assumptions": [],
+      "dependency_requirements": [], "correlation_requirements": [], "domain_requirements": [],
+      "differentiability_requirements": [], "proof_obligations": [],
+      "certification_level": "CERTIFIED_UPPER_BOUND", "failure_status": "SCALAR_PROPAGATION_REQUIRES_ONE_INPUT",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.product.rigorous.v1", "operation": "PRODUCT_PROPAGATION",
+      "input_error_model": "absolute bounds", "output_error_model": "absolute upper bound",
+      "mathematical_relation": "epsilon_xy <= |y|epsilon_x + |x|epsilon_y + epsilon_x epsilon_y",
+      "conditions": ["two inputs", "nominal magnitude bounds"], "assumptions": ["NOMINAL_INPUT_RANGES_BOUND"],
+      "dependency_requirements": ["causes preserved"], "correlation_requirements": [],
+      "domain_requirements": ["x_abs and y_abs available"], "differentiability_requirements": [],
+      "proof_obligations": ["INPUT_RANGE_REQUIRED"], "certification_level": "CERTIFIED_UPPER_BOUND_UNDER_ASSUMPTIONS",
+      "failure_status": "PRODUCT_BOUND_UNRESOLVED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.quotient.separated.v1", "operation": "QUOTIENT_PROPAGATION",
+      "input_error_model": "absolute bounds", "output_error_model": "absolute upper bound",
+      "mathematical_relation": "rigorous perturbed quotient enclosure",
+      "conditions": ["two inputs", "denominator separated from zero", "input magnitude bounds"],
+      "assumptions": ["DENOMINATOR_SEPARATED_FROM_ZERO"], "dependency_requirements": ["causes preserved"],
+      "correlation_requirements": [], "domain_requirements": ["positive lower bound exceeds denominator error"],
+      "differentiability_requirements": [],
+      "proof_obligations": ["DENOMINATOR_LOWER_BOUND_REQUIRED", "DENOMINATOR_MAY_CROSS_ZERO", "INPUT_RANGE_REQUIRED"],
+      "certification_level": "CERTIFIED_UPPER_BOUND_UNDER_ASSUMPTIONS",
+      "failure_status": "QUOTIENT_BOUND_UNRESOLVED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.power.integer.v1", "operation": "POWER_PROPAGATION",
+      "input_error_model": "absolute bound", "output_error_model": "absolute upper bound",
+      "mathematical_relation": "epsilon_out <= |n|(|x|+epsilon_x)^(|n|-1)epsilon_x",
+      "conditions": ["integer exponent", "one input", "input magnitude bound"],
+      "assumptions": ["INTEGER_POWER_DOMAIN_RESOLVED"], "dependency_requirements": [],
+      "correlation_requirements": [], "domain_requirements": ["integer power domain"],
+      "differentiability_requirements": [],
+      "proof_obligations": ["INTEGER_EXPONENT_REQUIRED", "INPUT_RANGE_REQUIRED"],
+      "certification_level": "CERTIFIED_UPPER_BOUND_UNDER_ASSUMPTIONS", "failure_status": "BOUND_UNRESOLVED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.function.lipschitz.v1", "operation": "FUNCTION_PROPAGATION",
+      "input_error_model": "metric-compatible input bound", "output_error_model": "same metric bound",
+      "mathematical_relation": "epsilon_out <= L epsilon_x",
+      "conditions": ["finite Lipschitz/sensitivity contract", "compatible metric"],
+      "assumptions": ["contract assumptions"], "dependency_requirements": [], "correlation_requirements": [],
+      "domain_requirements": ["contract domain"], "differentiability_requirements": ["derivative or Lipschitz bound"],
+      "proof_obligations": ["FUNCTION_SENSITIVITY_UNRESOLVED"],
+      "certification_level": "CERTIFIED_UPPER_BOUND only at contract evidence level",
+      "failure_status": "FUNCTION_SENSITIVITY_UNRESOLVED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.linear_map.norm.v1", "operation": "LINEAR_MAP_PROPAGATION",
+      "input_error_model": "componentwise/L1/Linf bound", "output_error_model": "compatible norm bound",
+      "mathematical_relation": "epsilon_out <= ||A|| epsilon_x",
+      "conditions": ["compatible operator norm"], "assumptions": ["COMPATIBLE_OPERATOR_NORM_BOUND"],
+      "dependency_requirements": [], "correlation_requirements": [], "domain_requirements": [],
+      "differentiability_requirements": [], "proof_obligations": ["OPERATOR_NORM_REQUIRED"],
+      "certification_level": "CERTIFIED_UPPER_BOUND_UNDER_ASSUMPTIONS", "failure_status": "LINEAR_MAP_METRIC_UNSUPPORTED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.reduction.v1", "operation": "REDUCTION_PROPAGATION",
+      "input_error_model": "compatible bounds", "output_error_model": "sum or mean bound",
+      "mathematical_relation": "sum_i epsilon_i; mean divides by positive n",
+      "conditions": ["mean count positive"], "assumptions": [], "dependency_requirements": [],
+      "correlation_requirements": [], "domain_requirements": [], "differentiability_requirements": [],
+      "proof_obligations": ["POSITIVE_REDUCTION_COUNT_REQUIRED"],
+      "certification_level": "CERTIFIED_UPPER_BOUND", "failure_status": "BOUND_UNRESOLVED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.norm.convert.v1", "operation": "NORM",
+      "input_error_model": "Linf or L1", "output_error_model": "L1",
+      "mathematical_relation": "||e||_1 <= n ||e||_inf",
+      "conditions": ["exact vector dimension"], "assumptions": ["VECTOR_DIMENSION_RESOLVED"],
+      "dependency_requirements": [], "correlation_requirements": [], "domain_requirements": [],
+      "differentiability_requirements": [], "proof_obligations": ["NORM_DIMENSION_REQUIRED"],
+      "certification_level": "CERTIFIED_UPPER_BOUND_UNDER_ASSUMPTIONS", "failure_status": "NORM_CONVERSION_UNRESOLVED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.overflow.invalidate.v1", "operation": "FINITE_ENCLOSURE",
+      "input_error_model": "finite components plus unresolved overflow", "output_error_model": "invalid enclosure",
+      "mathematical_relation": "finite bound unavailable until overflow excluded",
+      "conditions": [], "assumptions": [], "dependency_requirements": [], "correlation_requirements": [],
+      "domain_requirements": ["finite-range overflow exclusion"], "differentiability_requirements": [],
+      "proof_obligations": ["OVERFLOW_EXCLUSION_REQUIRED"], "certification_level": "UNRESOLVED",
+      "failure_status": "FINITE_ERROR_ENCLOSURE_INVALIDATED",
+      "python_implementation_location": "python/cpp_audit/error_composition.py:_reference_compose_error_components",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_semantics.rs:compose_error_components"
+    },
+    {
+      "rule_id": "error.analysis.assemble.v1", "operation": "BUILD_ERROR_ANALYSIS",
+      "input_error_model": "residual plus execution/approximation evidence",
+      "output_error_model": "cause graph, obligations and total enclosure",
+      "mathematical_relation": "independent evidence is composed without inventing missing bounds",
+      "conditions": ["shape, dimension and domain compatibility"], "assumptions": [],
+      "dependency_requirements": ["semantic cause IDs retained"], "correlation_requirements": [],
+      "domain_requirements": ["relative reference nonzero when required"], "differentiability_requirements": [],
+      "proof_obligations": ["MODEL_ERROR_BOUND_REQUIRED", "NUMERICAL_EXECUTION_BOUND", "LIBRARY_SEMANTIC_PROOF_REQUIRED"],
+      "certification_level": "minimum evidence level of all required components", "failure_status": "TOTAL_ERROR_BOUND_UNRESOLVED",
+      "python_implementation_location": "python/cpp_audit/error_ir.py:_reference_build_error_analysis",
+      "rust_implementation_location": "rust/formulatracer-core/src/error_analysis.rs:build_error_analysis"
+    }
+  ],
+  "rule_count": 14
+}

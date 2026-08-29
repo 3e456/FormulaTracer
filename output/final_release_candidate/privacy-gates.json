@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "tracked_tree": {"files_scanned": 958, "hits": 0, "status": "PASS"},
+  "generated_output": {"private_trace": 0, "status": "PASS"},
+  "windows_wheel": {"members_scanned": 69, "hits": 0, "status": "PASS"},
+  "linux_wheel": {"members_scanned": 69, "hits": 0, "status": "PASS"},
+  "sdist": {"members_scanned": 347, "hits": 0, "status": "PASS"},
+  "history_auxiliary_scan": {
+    "raw_pattern_hits": 3,
+    "classified_private_hits": 0,
+    "classification": "SELF_MATCHING_PRIVACY_REGEX_LITERALS_IN_OLD_SCANNER_BLOBS",
+    "affected_old_files": ["tools/linux_release_evidence.py", "tools/artifact_manifest.py"]
+  },
+  "private_research_trace": 0,
+  "private_local_path_trace": 0,
+  "distribution_private_trace": 0,
+  "secret_or_credential_open": 0,
+  "external_source_retained": 0,
+  "e_drive_accessed": false,
+  "protected_docx_touched": false,
+  "status": "PASS"
+}

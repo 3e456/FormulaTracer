@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "assessment": "ISOLATED_PREPUBLIC_SEMANTIC_COVERAGE_AND_RELEASE_HARDENING",
+  "assessed_revision": "e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
+  "branch": "feature/prepublic-semantic-coverage-hardening",
+  "release_ready_baseline": {
+    "branch": "feature/public-api-reference-harvester",
+    "revision": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+    "preserved_unchanged": true
+  },
+  "coverage": {
+    "corpus": "PUBLIC_SYNTHETIC_PREPUBLIC_V1",
+    "cases": 23,
+    "baseline": {
+      "FULL_RECONSTRUCTION": 0,
+      "PARTIAL_RECONSTRUCTION": 17,
+      "STRUCTURAL_ONLY": 1,
+      "UNRESOLVED": 5
+    },
+    "final": {
+      "FULL_RECONSTRUCTION": 18,
+      "PARTIAL_RECONSTRUCTION": 2,
+      "STRUCTURAL_ONLY": 0,
+      "UNRESOLVED": 3
+    },
+    "false_acceptance": 0,
+    "false_exact_promotion": 0,
+    "false_certified_promotion": 0
+  },
+  "provider_runtime": {
+    "passed": 6,
+    "failed": 0,
+    "versions": {
+      "numpy": "2.4.6",
+      "pandas": "3.0.5",
+      "xarray": "2026.7.0",
+      "dask": "2026.8.0",
+      "scipy": "1.17.1"
+    }
+  },
+  "validation": {
+    "python": {
+      "passed": 588,
+      "skipped": 1,
+      "subtests_passed": 36
+    },
+    "rust": {
+      "core_passed": 56,
+      "c_api_passed": 3,
+      "failed": 0
+    },
+    "lean": {
+      "target": "CppAudit",
+      "build": "PASS",
+      "sorry": 0,
+      "admit": 0,
+      "axiom": 0
+    },
+    "maintenance_gates": "PASS",
+    "privacy_current_tracked_tree_hits": 0,
+    "semantic_claims_gate": "PASS",
+    "windows_wheel": "PASS",
+    "windows_wheel_clean_install": "PASS",
+    "linux": "CI_CONFIGURED_NOT_EXECUTED_LOCALLY"
+  },
+  "supply_chain": {
+    "sbom": "SPDX-2.3",
+    "sbom_package_count": 30,
+    "dependency_locks": "PASS",
+    "artifact_private_trace_count": 0,
+    "artifact_docx_count": 0,
+    "platform_native_isolation": "PASS"
+  },
+  "scope_guards": {
+    "e_drive_accessed": false,
+    "protected_docx_accessed": false,
+    "parent_worktree_modified": false,
+    "public_release_performed": false,
+    "main_merged": false,
+    "tag_created": false
+  },
+  "integration_recommendation": "READY_FOR_REVIEW",
+  "limitations": [
+    "Dynamic container keys remain unresolved.",
+    "Missing or impure callbacks remain unresolved.",
+    "Unknown Dask execution backend remains partial.",
+    "SciPy relations without a material callback remain partial or unresolved.",
+    "Linux execution is delegated to the configured CI release-validation job."
+  ]
+}

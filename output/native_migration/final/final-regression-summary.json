@@ -1,0 +1,530 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "python": {
+    "passed": 579,
+    "skipped": 1,
+    "subtests_passed": 36,
+    "returncode": 0,
+    "summary": "................................................................................................................... [ 19%]\n.................................................................... [ 31%]\n..................................................................... [ 43%]\n.....................................................s.................. [ 55%]\n........................................................................ [ 68%]\n........................................................................ [ 80%]\n........................................................................ [ 93%]\n........................................                                 [100%]\n579 passed, 1 skipped, 36 subtests passed in 123.88s (0:02:03)\n"
+  },
+  "rust": {
+    "passed": 52,
+    "returncode": 0,
+    "summary": "ves_non_exact_relation_and_obligations ... ok\ntest reconstruction::tests::floating_loop_is_algorithmic_realization_not_exact_sum ... ok\ntest reconstruction::tests::safe_temporaries_inline_but_side_effects_fail_closed ... ok\ntest reconstruction::tests::structural_rename_alone_never_proves_exactness ... ok\ntest structural::tests::free_rename_without_types_is_unresolved ... ok\ntest structural::tests::alpha_binders_and_fact_gated_commutativity_have_witnesses_not_proof ... ok\ntest reconstruction::tests::safe_loop_reconstructs_sum_and_mutated_bound_does_not_match ... ok\ntest structural::tests::semantic_near_misses_are_never_quotiented ... ok\ntest unify::tests::typed_index_patterns_enforce_rank_and_substitution_preserves_indices ... ok\ntest units::tests::affine_conversion_is_exact ... ok\ntest surface::tests::parses_documented_exact_subset_and_rejects_implicit_contraction ... ok\ntest bitvector::tests::exhaustive_unsigned_eight_bit_matches_finite_bit_sequences ... ok\n\ntest result: ok. 49 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\nwarning: linker stdout: ライブラリ <PROJECT_ROOT>\\target\\debug\\deps\\formulatracer_c_api.dll.lib とオブジェクト <PROJECT_ROOT>\\target\\debug\\deps\\formulatracer_c_api.dll.exp を作成中\n  |\n  = note: `#[warn(linker_messages)]` on by default\n\nwarning: `formulatracer-c-api` (lib) generated 1 warning\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.09s\n     Running unittests src\\lib.rs (target\\debug\\deps\\formulatracer_c_api-61489633335e386c.exe)\n     Running unittests src\\main.rs (target\\debug\\deps\\formulatracer_native-6072912dc153abbf.exe)\n     Running unittests src\\lib.rs (target\\debug\\deps\\formulatracer_core-574ed09c39d6bbe0.exe)\n   Doc-tests formulatracer_c_api\n   Doc-tests formulatracer_core\n"
+  },
+  "c_cpp": {
+    "returncode": 0,
+    "output": "{\n  \"passed\": true,\n  \"returncodes\": [\n    0,\n    0,\n    0,\n    0\n  ]\n}\n"
+  },
+  "differential": {
+    "cases": 1056,
+    "semantic_matches": 1056,
+    "tex_matches": 1056,
+    "false_acceptance": 0
+  },
+  "structural_isomorphism": {
+    "cases": 28,
+    "positive_correspondences": 10,
+    "false_structural_isomorphism": 0,
+    "semantic_mutations_collapsed_by_quotient": 0
+  },
+  "bitvector_exhaustive": {
+    "cases": 196864,
+    "status": "PASS"
+  },
+  "lean": {
+    "returncode": 0,
+    "output": "Build completed successfully.\n",
+    "forbidden_declarations": {
+      "sorry": 0,
+      "admit": 0,
+      "axiom": 0
+    }
+  },
+  "waves": [
+    {
+      "script": "run_wave1_core_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave1_expression_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave1_numeric_types_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave1_math_semantics_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave2_knowledge_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave2_transformations_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave2_equality_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave3_ieee754_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave3_interval_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave3_probability_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave4_synthesis_parity.py",
+      "returncode": 0
+    }
+  ],
+  "external_oss": {
+    "cleanup": {
+      "external_source_archives_absent": true,
+      "external_source_copied_into_repo": false,
+      "external_source_retained": 0,
+      "temporary_external_checkout_directories_absent": true
+    },
+    "corpora": {
+      "external_commits": 7,
+      "external_files": 317,
+      "external_repositories": 5,
+      "self_generated_variants": 9
+    },
+    "critical_control_flow_false_acceptance_open": 0,
+    "evidence_levels": [
+      "KERNEL_VERIFIED",
+      "FORMALLY_DERIVED",
+      "REFERENCE_CONTRACT",
+      "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "REAL_WORLD_VALIDATED",
+      "MUTATION_DETECTED",
+      "METAMORPHICALLY_VALIDATED",
+      "UNRESOLVED"
+    ],
+    "generated_at": "2026-08-28T16:58:08.177805+00:00",
+    "metrics": {
+      "control_flow_constructs": {
+        "branches": 4373,
+        "break": 48,
+        "continue": 228,
+        "early_returns": 1355,
+        "iterator_chains": 43,
+        "loops": 4220,
+        "match": 21,
+        "nested_branches": 1027,
+        "nested_loops": 296,
+        "state_mutation": 5946,
+        "try_paths": 438,
+        "while": 131
+      },
+      "debugger_localization": {
+        "CORRECT_SEMANTIC_NODE": 5,
+        "DOWNSTREAM_MISS": 0,
+        "EXACT_SOURCE_SPAN": 0,
+        "SAME_BASIC_BLOCK": 0,
+        "UNRESOLVED": 0,
+        "UPSTREAM_MISS": 0
+      },
+      "false_acceptance": 0,
+      "false_rejection": 0,
+      "finite_exhaustive_comparisons": 65,
+      "finite_known_good_mismatches": 0,
+      "metamorphic_cases": 4,
+      "mutation": {
+        "CONTROL_FLOW_UNRESOLVED_FAIL_CLOSED": 0,
+        "FALSE_ACCEPTANCE": 0,
+        "MUTATION_NOT_SEMANTICALLY_EFFECTIVE": 0,
+        "SEMANTIC_MISMATCH_DETECTED": 5
+      },
+      "round_trip_success": 3
+    },
+    "schema_version": "1.0",
+    "starting_head": "e1c385c7e3593d975b7dc19c8b25ce6e69ce718b",
+    "status": "CONTROL_FLOW_ASSURANCE_COMPLETED",
+    "wall_time_seconds": 33.90030099998694
+  },
+  "external_21": {
+    "schema_version": "1.0",
+    "status": "RC_READY",
+    "external": {
+      "schema_version": "1.0",
+      "total": 21,
+      "initial": {
+        "resolved": 1,
+        "resolved_kind": "NEGATIVE_CONTROL_NOT_EQUIVALENT",
+        "positive_or_relational_reconstruction_resolved": 0,
+        "unresolved": 20,
+        "false_acceptance": 0
+      },
+      "final_status_counts": {
+        "CORRECTLY_UNRESOLVED": 21
+      },
+      "false_acceptance": 0,
+      "case_specific_repairs": 0,
+      "artifact_completeness": "21/21",
+      "correctly_unresolved_explanation_complete": true,
+      "note": "The fixed external corpus did not retain generated source; provider retrieval alone is intentionally insufficient for reconstruction closure.",
+      "outcomes": [
+        {
+          "case_id": "v2-dev-dft",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-dev-quadrature",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "ERROR_EVIDENCE_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-dev-series",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "TRUNCATION_RELATION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-final_holdout_v2-bitvector",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-final_holdout_v2-integer_modulo",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "THEORY_IR_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-final_holdout_v2-laplace",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "TRANSFORM_RELATION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-final_holdout_v2-piecewise",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "THEORY_IR_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-final_holdout_v2-units",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "CONSTRAINT_PROPAGATION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-holdout-fourier-renamed",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-holdout-negative",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "NEGATIVE_CONTROL_NOT_EQUIVALENT",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-holdout-weighted-renamed",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "ERROR_EVIDENCE_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-asymptotic",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "THEORY_IR_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-beta",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "PROVIDER_CONTRACT_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-convolution",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-difference",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "ASSUMPTION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-gamma",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "PROVIDER_CONTRACT_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-integral",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "APPROXIMATION_RELATION_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-matrix_multiply",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "PROVIDER_CONTRACT_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-probability",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "THEORY_IR_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-root_finding",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "ALGORITHM_SEMANTICS_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        },
+        {
+          "case_id": "v2-validation-svd",
+          "status": "CORRECTLY_UNRESOLVED",
+          "root_cause": "PROVIDER_CONTRACT_GAP",
+          "unresolved_reason": {
+            "blocking_stage": "LANGUAGE_FRONTEND",
+            "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+            "missing_capability": "generated source or independently observed Mathematical IR"
+          }
+        }
+      ]
+    },
+    "self_generated": {
+      "fixture_count": 25,
+      "passed": 25,
+      "failed": 0,
+      "false_reconstruction": 0
+    },
+    "gates": {
+      "RECONSTRUCTION_ARTIFACT_COMPLETENESS": "21/21",
+      "STRUCTURAL_QUOTIENT_INTEGRATED": true,
+      "INLINE_UNINLINE_RECONSTRUCTION_AVAILABLE": true,
+      "LOOP_FOLD_RECONSTRUCTION_AVAILABLE": true,
+      "BINDER_INDEX_RECONSTRUCTION_AVAILABLE": true,
+      "PROVIDER_PROJECTION_AVAILABLE": true,
+      "RELATION_CHAIN_RECONSTRUCTION_AVAILABLE": true,
+      "ASSUMPTION_RECOVERY_AVAILABLE": true,
+      "PROOF_OBLIGATION_RECOVERY_AVAILABLE": true,
+      "RECONSTRUCTION_RESULT_NATIVE_SOURCE_OF_TRUTH": true,
+      "CASE_SPECIFIC_RECONSTRUCTION_RULES": 0,
+      "CRITICAL_FALSE_RECONSTRUCTION_ACCEPTANCE_OPEN": 0,
+      "SELF_GENERATED_ASSURANCE_PASS": true,
+      "EXTERNAL_UNRESOLVED_EXPLAINED": true,
+      "NATIVE_MIGRATION_COMPLETE": true,
+      "NATIVE_CORE_COMPLETE": true,
+      "PYTHON_SEMANTIC_SOURCE_OF_TRUTH_RETIRED": true,
+      "FEATURE_FREEZE_READY": true,
+      "RC_READY": true,
+      "RC_STATUS": "RC_READY",
+      "feature_checks": {
+        "native_core_complete": true,
+        "python_semantic_source_retired": true,
+        "reconstruction_native": true,
+        "generic_capabilities": true,
+        "self_generated_assurance": true,
+        "external_unresolved_explained": true,
+        "case_specific_rules_zero": true,
+        "false_reconstruction_acceptance_zero": true,
+        "full_python": true,
+        "full_rust": true,
+        "c_cpp": true,
+        "differential": true,
+        "structural": true,
+        "critical_defects_open_zero": true
+      },
+      "release_checks": {
+        "feature_freeze_ready": true,
+        "external_oss": true,
+        "old_holdout_fingerprint_preserved": true,
+        "v2_holdout_fingerprint_preserved": true,
+        "lean": true,
+        "windows_wheel": true,
+        "linux_wheel": true,
+        "license": true,
+        "docs": true
+      },
+      "critical_defects_open": 0,
+      "remaining_blockers": []
+    },
+    "validated": "2026-08-29",
+    "release_policy": "feature frozen when FEATURE_FREEZE_READY; tag and publish remain manual"
+  },
+  "holdouts": {
+    "old_fingerprint": "9045716113c56c085ed62e9f9d5c2fc5bca85a8e419bff16bbb2c4e7b5194eb5",
+    "rc_v2_fingerprint": "6ed578f70fa857a7c87d45af014c35011b884bd97db38d09bb8c67d60d72755b",
+    "rc_v2_manifest_match": true
+  },
+  "wheels": {
+    "windows_build": {
+      "schema_version": "1.0",
+      "platform": "win32",
+      "architecture": "AMD64",
+      "native_library": "formulatracer_c_api.dll",
+      "wheel": "dist\\native\\formulatracer-0.1.0-py3-none-win_amd64.whl",
+      "wheel_sha256": "38ce35770c35bbf1ff08b643839e464b58ec26f25573f0a2d37ee9da40efd9f2",
+      "wheel_size_bytes": 1882366,
+      "license_files": [
+        "formulatracer-0.1.0.dist-info/LICENSE"
+      ],
+      "complete_project_license_included": true,
+      "docx_included": false,
+      "native_library_entries": [
+        "formulatracer-0.1.0.data/purelib/formulatracer/formulatracer_c_api.dll"
+      ],
+      "platform_native_only": true,
+      "build_passed": true,
+      "normal_user_requires_rust": false,
+      "stdout": "Processing <PROJECT_ROOT>\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: formulatracer\n  Building wheel for formulatracer (pyproject.toml): started\n  Building wheel for formulatracer (pyproject.toml): finished with status 'done'\n  Created wheel for formulatracer: filename=formulatracer-0.1.0-py3-none-win_amd64.whl size=1882366 sha256=38ce35770c35bbf1ff08b643839e464b58ec26f25573f0a2d37ee9da40efd9f2\n  Stored in directory: <LOCAL_PATH> built formulatracer\n",
+      "stderr": "\n[notice] A new release of pip is available: 24.0 -> 26.2.1\n[notice] To update, run: <PROJECT_ROOT>\\.venv\\Scripts\\python.exe -m pip install --upgrade pip\n"
+    },
+    "windows_clean_install": {
+      "schema_version": "1.0",
+      "platform": "win32",
+      "architecture": "AMD64",
+      "wheel_sha256": "38ce35770c35bbf1ff08b643839e464b58ec26f25573f0a2d37ee9da40efd9f2",
+      "environment": "new isolated virtualenv",
+      "normal_pip_install": "PASS",
+      "native_core_load": "PASS",
+      "reconstruction_result": "EXACT",
+      "reconstruction_native_operation": "PASS",
+      "production_python_semantic_calls": 0,
+      "normal_user_requires_rust": false,
+      "status": "PASS"
+    },
+    "linux_build": {
+      "schema_version": "1.0",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "native_library": "libformulatracer_c_api.so",
+      "wheel": "dist/native/formulatracer-0.1.0-py3-none-linux_x86_64.whl",
+      "wheel_sha256": "6bf652405d93362792006dfa58e9afdaf04818f8c1a9cd6d88b77d67c9fff6d3",
+      "wheel_size_bytes": 1995644,
+      "license_files": [
+        "formulatracer-0.1.0.dist-info/LICENSE"
+      ],
+      "complete_project_license_included": true,
+      "docx_included": false,
+      "native_library_entries": [
+        "formulatracer-0.1.0.data/purelib/formulatracer/libformulatracer_c_api.so"
+      ],
+      "platform_native_only": true,
+      "build_passed": true,
+      "normal_user_requires_rust": false,
+      "stdout": "Processing ./.\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: formulatracer\n  Building wheel for formulatracer (pyproject.toml): started\n  Building wheel for formulatracer (pyproject.toml): finished with status 'done'\n  Created wheel for formulatracer: filename=formulatracer-0.1.0-py3-none-linux_x86_64.whl size=1995644 sha256=6bf652405d93362792006dfa58e9afdaf04818f8c1a9cd6d88b77d67c9fff6d3\n  Stored in directory: /tmp/pip-ephem-wheel-cache-ihdze2st/wheels/3b/19/46/ff34e9872c120253a3bd769d91f459634634d3c6cf29107525\nSuccessfully built formulatracer\n",
+      "stderr": ""
+    },
+    "linux_clean_install": {
+      "schema_version": "1.0",
+      "platform": "linux",
+      "architecture": "x86_64",
+      "wheel_sha256": "6bf652405d93362792006dfa58e9afdaf04818f8c1a9cd6d88b77d67c9fff6d3",
+      "environment": "new isolated virtualenv",
+      "normal_pip_install": "PASS",
+      "native_core_load": "PASS",
+      "reconstruction_result": "EXACT",
+      "reconstruction_native_operation": "PASS",
+      "production_python_semantic_calls": 0,
+      "normal_user_requires_rust": false,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+schema_version: "0.1"
+package: igraph
+version: ">=1.0,<2.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_status: REFERENCE_REVIEWED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [vertices, edges, directedness, graph_attributes]
+  ignore: [native_graph_storage, implementation_algorithm]
+bindings:
+  - callable: igraph.Graph
+    family: GraphAlgorithm
+    bind: {algorithm: graph_construction, result_type: igraph.Graph,
+           vertex_count_parameter: n, edges_parameter: edges,
+           directed_parameter: directed}
+    reference: https://python.igraph.org/en/stable/api/igraph.Graph.html

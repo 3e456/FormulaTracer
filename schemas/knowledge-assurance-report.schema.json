@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/knowledge-assurance-report.schema.json",
+  "type": "object",
+  "required": ["cases", "knowledge_metrics", "bitvector_assurance", "egraph_metrics", "relation_counts", "release_gates", "elapsed_seconds"],
+  "properties": {
+    "cases": {"type": "array", "items": {"type": "object", "required": ["knowledge_id", "relation_kind", "positive_status", "missing_condition_status", "mutation_status", "positive_failure", "false_acceptance", "enodes", "eclasses", "rewrite_applications"]}},
+    "knowledge_metrics": {"type": "object"}, "bitvector_assurance": {"type": "object"},
+    "egraph_metrics": {"type": "object"}, "relation_counts": {"type": "object", "additionalProperties": {"type": "integer"}},
+    "release_gates": {"type": "object", "additionalProperties": {"type": "integer"}},
+    "elapsed_seconds": {"type": "number", "minimum": 0}
+  }
+}

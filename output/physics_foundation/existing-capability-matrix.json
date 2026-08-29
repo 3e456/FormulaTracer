@@ -1,0 +1,501 @@
+{
+  "features": [
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "ir.rs",
+        "function.rs"
+      ],
+      "existing_implementation": "FunctionType + Shape + Derivative",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "multivariable functions",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "GENERALIZE_EXISTING",
+      "reuse_strategy": "GENERALIZE_EXISTING"
+    },
+    {
+      "baseline_status": "FULL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "surface.rs",
+        "legacy_math_semantics.rs"
+      ],
+      "existing_implementation": "Derivative Mathematical IR",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "partial derivatives",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "REUSE_AS_IS",
+      "reuse_strategy": "REUSE_AS_IS"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "Derivative + IndexedValue + Tensor",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "gradient/jacobian/hessian",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "REGISTER_DEFINITION_ONLY",
+      "reuse_strategy": "REGISTER_DEFINITION_ONLY"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics.yaml",
+        "packs.rs"
+      ],
+      "existing_implementation": "conditional Knowledge rule",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "mixed partial symmetry",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "REGISTER_THEOREM_ONLY",
+      "reuse_strategy": "REGISTER_THEOREM_ONLY"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json",
+        "physics.yaml"
+      ],
+      "existing_implementation": "FiniteSum + Derivative + IndexedValue",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "divergence/curl/laplacian",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "COMPOSE_EXISTING",
+      "reuse_strategy": "COMPOSE_EXISTING"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "Integral + Domain + Measure + Orientation metadata",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "geometric integrals",
+      "final_status": "PARTIAL",
+      "missing_capability": "parameterized numerical realization coverage",
+      "planned_action": "GENERALIZE_EXISTING",
+      "reuse_strategy": "GENERALIZE_EXISTING"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json",
+        "physics.yaml"
+      ],
+      "existing_implementation": "conditional theorem registry",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "Gauss/Stokes",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "REGISTER_THEOREM_ONLY",
+      "reuse_strategy": "REGISTER_THEOREM_ONLY"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "Integral + Derivative + Equation",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "variational calculus",
+      "final_status": "PARTIAL",
+      "missing_capability": "full functional derivative evaluator",
+      "planned_action": "COMPOSE_EXISTING",
+      "reuse_strategy": "COMPOSE_EXISTING"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "Action + symmetry theorem metadata",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "Noether conservation",
+      "final_status": "PARTIAL",
+      "missing_capability": "general Lean proof",
+      "planned_action": "REGISTER_THEOREM_ONLY",
+      "reuse_strategy": "REGISTER_THEOREM_ONLY"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "algebra + derivative definitions",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "Hamiltonian/Legendre/Poisson",
+      "final_status": "PARTIAL",
+      "missing_capability": "symplectic solver realization",
+      "planned_action": "REGISTER_DEFINITION_ONLY",
+      "reuse_strategy": "REGISTER_DEFINITION_ONLY"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "units.rs"
+      ],
+      "existing_implementation": "native exact Units",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "dimensions",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "GENERALIZE_EXISTING",
+      "reuse_strategy": "GENERALIZE_EXISTING"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "representations.rs"
+      ],
+      "existing_implementation": "representation metadata + native evidence gate",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "frames/tensor transforms",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "GENERALIZE_EXISTING",
+      "reuse_strategy": "GENERALIZE_EXISTING"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "Equation + Derivative + Field + Domain",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "ODE/PDE/conservation",
+      "final_status": "PARTIAL",
+      "missing_capability": "general PDE frontend recognition",
+      "planned_action": "COMPOSE_EXISTING",
+      "reuse_strategy": "COMPOSE_EXISTING"
+    },
+    {
+      "baseline_status": "FULL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "approximation.rs",
+        "FiniteDifference.lean"
+      ],
+      "existing_implementation": "Approximation/Relation/Error",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "finite difference",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "REUSE_AS_IS",
+      "reuse_strategy": "REUSE_AS_IS"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "Gauss theorem + control-volume realization",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "finite volume",
+      "final_status": "PARTIAL",
+      "missing_capability": "mesh-specific consistency and stability evidence",
+      "planned_action": "ADD_REALIZATION_ONLY",
+      "reuse_strategy": "ADD_REALIZATION_ONLY"
+    },
+    {
+      "baseline_status": "FULL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "approximation.rs",
+        "Quadrature.lean"
+      ],
+      "existing_implementation": "Approximation/Relation/Error",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "quadrature",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "REUSE_AS_IS",
+      "reuse_strategy": "REUSE_AS_IS"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "legacy_math_semantics.rs",
+        "representations.rs"
+      ],
+      "existing_implementation": "native transform contracts and ROC",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "Fourier/Laplace",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "GENERALIZE_EXISTING",
+      "reuse_strategy": "GENERALIZE_EXISTING"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "Foundation.lean",
+        "representations.rs"
+      ],
+      "existing_implementation": "Complex/algebra composition + representation gate",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "Quaternion embedding",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "GENERALIZE_EXISTING",
+      "reuse_strategy": "GENERALIZE_EXISTING"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "representations.rs"
+      ],
+      "existing_implementation": "Matrix + constraints + representation gate",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "SO(3)/Euler/matrix",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "GENERALIZE_EXISTING",
+      "reuse_strategy": "GENERALIZE_EXISTING"
+    },
+    {
+      "baseline_status": "UNRESOLVED",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "Rotation + translation + homogeneous representation",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "SE(3)",
+      "final_status": "PARTIAL",
+      "missing_capability": "Lie exp/log numerical realization",
+      "planned_action": "REGISTER_DEFINITION_ONLY",
+      "reuse_strategy": "REGISTER_DEFINITION_ONLY"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "physics-v1.json"
+      ],
+      "existing_implementation": "Derivative realization relation",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "automatic differentiation",
+      "final_status": "PARTIAL",
+      "missing_capability": "provider-specific callback reconstruction",
+      "planned_action": "ADD_REALIZATION_ONLY",
+      "reuse_strategy": "ADD_REALIZATION_ONLY"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "registry/libraries/scipy.yaml"
+      ],
+      "existing_implementation": "provider registry + interprocedural marker",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "SciPy callback numerics",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "ADD_PROVIDER_CONTRACT_ONLY",
+      "reuse_strategy": "ADD_PROVIDER_CONTRACT_ONLY"
+    },
+    {
+      "baseline_status": "FULL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "python_audit.py",
+        "registry/libraries/xarray.yaml",
+        "registry/libraries/pandas.yaml"
+      ],
+      "existing_implementation": "named dimensions/alignment/missingness",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": true,
+      "feature": "xarray/pandas labeled data",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "REUSE_AS_IS",
+      "reuse_strategy": "REUSE_AS_IS"
+    },
+    {
+      "baseline_status": "PARTIAL",
+      "existing_codegen_support": "existing Python/Rust/C++ lowering after composition",
+      "existing_error_support": "native Error/Range semantics",
+      "existing_files_modules": [
+        "parallel.rs",
+        "registry/libraries/dask.yaml"
+      ],
+      "existing_implementation": "parallel semantics + reference contract",
+      "existing_ir_support": true,
+      "existing_lean_support": "lean/CppAudit and mathlib",
+      "existing_tests": [
+        "tests/test_physics_foundation.py"
+      ],
+      "existing_theorem_rule": false,
+      "feature": "Dask reduction",
+      "final_status": "FULL",
+      "missing_capability": "",
+      "planned_action": "GENERALIZE_EXISTING",
+      "reuse_strategy": "GENERALIZE_EXISTING"
+    }
+  ],
+  "module_justification": "representations.rs is a generic evidence gate over existing IR, not a second algebra",
+  "new_ir_primitives": 0,
+  "new_primitive_justifications": [],
+  "new_semantic_modules": 1,
+  "schema_version": "1.0"
+}

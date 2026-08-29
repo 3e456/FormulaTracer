@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/code-synthesis-result.schema.json",
+  "title": "CodeSynthesisResult",
+  "type": "object",
+  "required": ["theory", "constraints", "transformed_theory", "algorithm_ir", "expected_implementation_ir", "generated", "round_trip", "pipeline_trace", "status"],
+  "properties": {
+    "theory": {"type": "object"}, "constraints": {"type": "object"},
+    "transformed_theory": {}, "algorithm_ir": {"type": "object"},
+    "expected_implementation_ir": {"type": "object"}, "generated": {"type": "object"},
+    "round_trip": {"type": ["object", "null"]}, "pipeline_trace": {"type": "array"},
+    "generation_decision": {"type": ["object", "null"]},
+    "status": {"enum": ["SOURCE_GENERATED", "ROUND_TRIP_VERIFIED", "ROUND_TRIP_DIVERGENCE_LOCALIZED", "ROUND_TRIP_UNRESOLVED"]}
+  },
+  "additionalProperties": false
+}

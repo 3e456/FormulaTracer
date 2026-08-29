@@ -1,0 +1,955 @@
+{
+  "schema_version": "1.0",
+  "unsafe_occurrences": 73,
+  "items": [
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 65,
+      "function": "c_input",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 108,
+      "function": "ft_context_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 111,
+      "function": "ft_context_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 118,
+      "function": "ft_formula_from_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 142,
+      "function": "ft_formula_from_tex",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 166,
+      "function": "ft_formula_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 169,
+      "function": "ft_formula_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 176,
+      "function": "ft_verify",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 184,
+      "function": "ft_verify",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 192,
+      "function": "ft_verify_pair",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 201,
+      "function": "ft_verify_pair",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 212,
+      "function": "ft_audit_ir_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 221,
+      "function": "ft_audit_ir_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 232,
+      "function": "ft_audit_project_ir_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 240,
+      "function": "ft_result_status",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 245,
+      "function": "ft_result_status",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 256,
+      "function": "ft_result_to_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 262,
+      "function": "ft_result_to_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 268,
+      "function": "ft_result_to_tex",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 273,
+      "function": "ft_result_to_tex",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 278,
+      "function": "ft_result_theory",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 283,
+      "function": "ft_result_theory",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 289,
+      "function": "ft_result_implementation",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 296,
+      "function": "ft_result_implementation",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 302,
+      "function": "ft_semantic_object_to_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 309,
+      "function": "ft_semantic_object_to_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 314,
+      "function": "ft_semantic_object_to_tex",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 321,
+      "function": "ft_semantic_object_to_tex",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 326,
+      "function": "ft_semantic_object_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 329,
+      "function": "ft_semantic_object_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 336,
+      "function": "ft_function_from_ir_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 388,
+      "function": "ft_function_from_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 416,
+      "function": "ft_result_theory_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 421,
+      "function": "ft_result_theory_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 430,
+      "function": "ft_result_implementation_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 437,
+      "function": "ft_result_implementation_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 446,
+      "function": "ft_result_error_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 451,
+      "function": "ft_result_error_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 457,
+      "function": "ft_result_range_lower_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 464,
+      "function": "ft_result_range_lower_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 470,
+      "function": "ft_result_range_upper_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 477,
+      "function": "ft_result_range_upper_function",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 483,
+      "function": "ft_function_evaluate_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 496,
+      "function": "ft_function_evaluate_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 514,
+      "function": "ft_function_substitute_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 532,
+      "function": "ft_function_substitute_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 537,
+      "function": "ft_function_to_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 542,
+      "function": "ft_function_to_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 547,
+      "function": "ft_function_to_tex",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 552,
+      "function": "ft_function_to_tex",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 557,
+      "function": "ft_function_inspect_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 562,
+      "function": "ft_function_inspect_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 569,
+      "function": "ft_function_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 572,
+      "function": "ft_function_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 577,
+      "function": "ft_result_diagnostics_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 583,
+      "function": "ft_result_diagnostics_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 589,
+      "function": "ft_result_assumptions_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 595,
+      "function": "ft_result_assumptions_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 601,
+      "function": "ft_result_evidence_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 607,
+      "function": "ft_result_evidence_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 613,
+      "function": "ft_result_error_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 618,
+      "function": "ft_result_error_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 623,
+      "function": "ft_result_range_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 628,
+      "function": "ft_result_range_json",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 633,
+      "function": "ft_result_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 636,
+      "function": "ft_result_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 643,
+      "function": "ft_string_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 646,
+      "function": "ft_string_free",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 653,
+      "function": "ft_context_last_error",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 658,
+      "function": "ft_context_last_error",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 665,
+      "function": "set_error",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 681,
+      "function": "exact_pair_uses_core_canonicalization",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    },
+    {
+      "file": "rust\\formulatracer-c-api\\src\\lib.rs",
+      "line": 702,
+      "function": "invalid_and_null_inputs_fail_closed_without_panicking",
+      "reason": "dereference or reclaim an opaque C-ABI pointer",
+      "invariant": "the pointer is null or a live uniquely-owned handle/string returned by the matching ft_* constructor",
+      "why_safe_abstraction_is_insufficient": "raw pointers are required at the stable C ABI boundary",
+      "tests": [
+        "cargo test --workspace",
+        "python tools/run_native_cpp_tests.py",
+        "tests/test_native_core.py"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{longtable}
+\begin{document}
+\small
+\section*{FormulaTracer Semantic Debug Report}
+Debug status: \texttt{SEMANTIC\_DIVERGENCE\_LOCALIZED}\\
+End-to-end status: \texttt{PARTIAL\_END\_TO\_END\_VERIFICATION}\\
+Findings: 1; root causes: 1
+\section*{Finding 1: OPERATOR\_MISMATCH}
+Confidence: \texttt{STRONG\_ROOT\_CAUSE\_CANDIDATE}\\
+Source: \texttt{wrong\_operator.py:6}\\
+\subsection*{Expected}
+\[kg / 1000\]
+\subsection*{Actual}
+\[kg \, 1000\]
+\subsection*{Affected outputs}
+\begin{itemize}
+\item \texttt{converted}
+\end{itemize}
+\subsection*{Invalidated claims}
+\begin{itemize}
+\item \texttt{e2e-claim:2dc6416425c7ab76}
+\item \texttt{TOTAL\_TRUE\_VALUE\_ENCLOSURE\_UNRESOLVED}
+\end{itemize}
+\section*{Localization boundary}
+Runtime samples are evidence only. Unresolved FFI boundaries stop localization. Detailed graphs remain in JSON.
+\end{document}

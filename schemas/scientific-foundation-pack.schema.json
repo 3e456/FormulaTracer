@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/scientific-foundation-pack.schema.json",
+  "type": "object",
+  "required": ["schema_version", "pack_id", "definitions", "theorems", "realizations"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "pack_id": {"type": "string", "minLength": 1},
+    "definitions": {"type": "array", "items": {"$ref": "#/$defs/definition"}},
+    "theorems": {"type": "array", "items": {"$ref": "#/$defs/theorem"}},
+    "realizations": {"type": "array", "items": {"$ref": "#/$defs/realization"}}
+  },
+  "$defs": {
+    "expression": {"type": "object", "required": ["op"]},
+    "definition": {
+      "type": "object", "required": ["definition_id", "name", "expression", "expansion"],
+      "properties": {"definition_id": {"type":"string","minLength":1}, "name":{"type":"string"},
+        "expression":{"$ref":"#/$defs/expression"}, "expansion":{"$ref":"#/$defs/expression"},
+        "assumptions":{"type":"array","items":{"type":"string"}}, "references":{"type":"array","items":{"type":"string"}}}
+    },
+    "theorem": {
+      "type":"object", "required":["theorem_id","name","lhs","rhs","relation","formalization_level"],
+      "properties":{"theorem_id":{"type":"string","minLength":1},"name":{"type":"string"},
+        "lhs":{"$ref":"#/$defs/expression"},"rhs":{"$ref":"#/$defs/expression"},
+        "relation":{"enum":["EXACT_EQUALITY","EXACT_UNDER_ASSUMPTIONS","APPROXIMATION_OF","DISCRETIZATION_OF","TRUNCATED_TO","SAMPLED_AS","ALGORITHMICALLY_REALIZED_BY"]},
+        "formalization_level":{"enum":["DEFINED","THEOREM_REGISTERED","LEAN_STATEMENT_GENERATED","LEAN_PROVED","LEAN_KERNEL_VERIFIED"]},
+        "lean_theorem":{"type":["string","null"]},"assumptions":{"type":"array","items":{"type":"string"}},
+        "domain_conditions":{"type":"array","items":{"type":"string"}},"shape_conditions":{"type":"array","items":{"type":"string"}},
+        "references":{"type":"array","items":{"type":"string"}}}
+    },
+    "realization": {
+      "type":"object", "required":["realization_id","target","implementation","relation"],
+      "properties":{"realization_id":{"type":"string","minLength":1},"target":{"$ref":"#/$defs/expression"},
+        "implementation":{"$ref":"#/$defs/expression"},"relation":{"enum":["EXACT_EQUALITY","EXACT_UNDER_ASSUMPTIONS","APPROXIMATION_OF","DISCRETIZATION_OF","TRUNCATED_TO","SAMPLED_AS","ALGORITHMICALLY_REALIZED_BY"]},
+        "assumptions":{"type":"array","items":{"type":"string"}},"proof_obligations":{"type":"array","items":{"type":"string"}},
+        "languages":{"type":"array","items":{"enum":["python","rust","cpp"]}},"error_evidence":{"type":["object","null"]},
+        "references":{"type":"array","items":{"type":"string"}}}
+    }
+  }
+}

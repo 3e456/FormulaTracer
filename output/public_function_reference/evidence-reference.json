@@ -1,0 +1,16 @@
+{
+  "runtime_is_proof": false,
+  "structural_is_proof": false,
+  "user_declared_is_verification": false,
+  "values": [
+    "KERNEL_VERIFIED",
+    "KERNEL_VERIFIED_UNDER_ASSUMPTIONS",
+    "FORMALLY_DERIVED",
+    "REFERENCE_CONTRACT",
+    "PROVIDER_BACKED",
+    "RUNTIME_EVIDENCE",
+    "USER_DECLARED",
+    "STRUCTURAL_WITNESS",
+    "UNRESOLVED"
+  ]
+}

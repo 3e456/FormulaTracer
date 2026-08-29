@@ -1,0 +1,22 @@
+{
+  "exact_values": [
+    "EXACT_EQUALITY",
+    "EXACT_UNDER_ASSUMPTIONS"
+  ],
+  "non_exact_values": [
+    "APPROXIMATION_OF",
+    "DISCRETIZATION_OF",
+    "TRUNCATED_TO",
+    "SAMPLED_AS",
+    "ALGORITHMICALLY_REALIZED_BY"
+  ],
+  "values": [
+    "EXACT_EQUALITY",
+    "EXACT_UNDER_ASSUMPTIONS",
+    "APPROXIMATION_OF",
+    "DISCRETIZATION_OF",
+    "TRUNCATED_TO",
+    "SAMPLED_AS",
+    "ALGORITHMICALLY_REALIZED_BY"
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "realizations": [
+    {
+      "assumptions": [
+        "two_dimensional_cartesian",
+        "inputs_are_exact_component_partials"
+      ],
+      "implementation": {
+        "args": [
+          {
+            "name": "dF0_dx0",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "dF1_dx1",
+            "op": "FreeVariable"
+          }
+        ],
+        "op": "Add"
+      },
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "realization_id": "cartesian_divergence_from_partials",
+      "references": [
+        "ref.vector-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "target": {
+        "field": {
+          "name": "F",
+          "op": "FreeVariable"
+        },
+        "op": "Divergence"
+      }
+    },
+    {
+      "assumptions": [
+        "local_smoothness"
+      ],
+      "error_evidence": {
+        "kind": "TRUNCATION_ORDER",
+        "order": 2
+      },
+      "implementation": {
+        "op": "CentralDifference"
+      },
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "proof_obligations": [
+        "spacing_nonzero",
+        "truncation_bound_available"
+      ],
+      "realization_id": "central_difference_partial",
+      "references": [
+        "ref.finite-difference"
+      ],
+      "relation": "DISCRETIZATION_OF",
+      "target": {
+        "op": "Derivative"
+      }
+    },
+    {
+      "assumptions": [
+        "valid_mesh_control_volumes",
+        "oriented_faces"
+      ],
+      "error_evidence": {
+        "kind": "DISCRETIZATION_ERROR",
+        "status": "BOUND_NOT_AVAILABLE"
+      },
+      "implementation": {
+        "op": "FiniteVolumeFluxSum"
+      },
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "proof_obligations": [
+        "flux_consistency",
+        "stability_not_established"
+      ],
+      "realization_id": "finite_volume_flux",
+      "references": [
+        "ref.finite-volume"
+      ],
+      "relation": "DISCRETIZATION_OF",
+      "target": {
+        "op": "ControlVolumeBalance"
+      }
+    },
+    {
+      "assumptions": [
+        "parameterization_regular"
+      ],
+      "error_evidence": {
+        "kind": "QUADRATURE_ERROR"
+      },
+      "implementation": {
+        "op": "Quadrature"
+      },
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "proof_obligations": [
+        "quadrature_error_bound"
+      ],
+      "realization_id": "quadrature_geometric_integral",
+      "references": [
+        "ref.quadrature"
+      ],
+      "relation": "APPROXIMATION_OF",
+      "target": {
+        "op": "Integral"
+      }
+    },
+    {
+      "assumptions": [
+        "provider_autodiff_contract",
+        "differentiable_supported_primitives"
+      ],
+      "error_evidence": {
+        "kind": "FLOATING_EXECUTION_ERROR"
+      },
+      "implementation": {
+        "mode": "FORWARD",
+        "op": "AutomaticDifferentiation"
+      },
+      "languages": [
+        "python",
+        "rust"
+      ],
+      "realization_id": "forward_ad_derivative",
+      "references": [
+        "ref.autodiff"
+      ],
+      "relation": "ALGORITHMICALLY_REALIZED_BY",
+      "target": {
+        "op": "Derivative"
+      }
+    },
+    {
+      "assumptions": [
+        "quaternion_norm_nonzero"
+      ],
+      "error_evidence": {
+        "kind": "UNIT_NORM_DRIFT_AND_PROJECTION_ERROR"
+      },
+      "implementation": {
+        "op": "QuaternionRenormalization"
+      },
+      "languages": [
+        "python",
+        "rust",
+        "cpp"
+      ],
+      "proof_obligations": [
+        "roundoff_bound_required"
+      ],
+      "realization_id": "renormalized_quaternion_rotation",
+      "references": [
+        "ref.rotation"
+      ],
+      "relation": "ALGORITHMICALLY_REALIZED_BY",
+      "target": {
+        "op": "Rotation"
+      }
+    },
+    {
+      "assumptions": [
+        "axis_dtype_keepdims_contract",
+        "backend_and_tree_known"
+      ],
+      "error_evidence": {
+        "kind": "FLOATING_REDUCTION_TREE_ERROR"
+      },
+      "implementation": {
+        "op": "ChunkedReduction",
+        "reducer": "ADD"
+      },
+      "languages": [
+        "python"
+      ],
+      "proof_obligations": [
+        "floating_reordering_error_bound"
+      ],
+      "realization_id": "dask_tree_sum",
+      "references": [
+        "ref.dask.sum"
+      ],
+      "relation": "ALGORITHMICALLY_REALIZED_BY",
+      "target": {
+        "op": "FiniteSum"
+      }
+    },
+    {
+      "assumptions": [
+        "callback_reconstructed",
+        "finite_integration_domain"
+      ],
+      "error_evidence": {
+        "kind": "PROVIDER_REPORTED_ERROR_ESTIMATE"
+      },
+      "implementation": {
+        "name": "scipy.integrate.quad",
+        "op": "ProviderCall"
+      },
+      "languages": [
+        "python"
+      ],
+      "proof_obligations": [
+        "reported_error_interpretation",
+        "convergence_not_guaranteed"
+      ],
+      "realization_id": "scipy_quad_callback",
+      "references": [
+        "ref.scipy.quad"
+      ],
+      "relation": "APPROXIMATION_OF",
+      "target": {
+        "op": "Integral"
+      }
+    }
+  ],
+  "schema_version": "1.0"
+}

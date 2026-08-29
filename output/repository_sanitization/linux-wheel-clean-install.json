@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "platform": "linux",
+  "architecture": "x86_64",
+  "wheel_sha256": "79457f4935e85df521fb58d381daabd3358565d49bf46739d87a4cea1c00203d",
+  "environment": "new isolated virtualenv",
+  "normal_pip_install": "PASS",
+  "native_core_load": "PASS",
+  "reconstruction_result": "EXACT",
+  "reconstruction_native_operation": "PASS",
+  "production_python_semantic_calls": 0,
+  "normal_user_requires_rust": false,
+  "status": "PASS"
+}

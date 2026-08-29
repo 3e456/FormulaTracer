@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "differential_cases": 14,
+  "differential_passed": 14,
+  "metamorphic_cases": 4,
+  "metamorphic_passed": 4,
+  "false_acceptance": 0,
+  "covered": [
+    "addition", "subtraction", "scalar", "product", "quotient", "integer power",
+    "function sensitivity", "linear map", "sum reduction", "mean reduction",
+    "norm conversion", "partial unresolved", "shared cause", "graph propagation"
+  ],
+  "metamorphic_invariants": [
+    "larger input errors do not reduce a rigorous product bound",
+    "wider input ranges do not reduce a rigorous product bound",
+    "weaker dependency evidence cannot enable RSS",
+    "removing sensitivity cannot strengthen certification"
+  ]
+}

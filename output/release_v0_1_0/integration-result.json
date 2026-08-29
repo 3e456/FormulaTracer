@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "release_branch": "feature/public-api-reference-harvester",
+  "starting_head": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "integration_source_head": "0ef0c6c4fbe62748cc4f155e12ebac13c006c580",
+  "starting_head_was_ancestor": true,
+  "integration_method": "FAST_FORWARD_ONLY",
+  "fast_forward_result_head": "0ef0c6c4fbe62748cc4f155e12ebac13c006c580",
+  "post_integration_documentation_commit": "9fd2a2da2c41eb0dadf22f1131997a709706a46c",
+  "force_push": false,
+  "history_rewrite": false,
+  "main_modified": false,
+  "feature_branches_deleted": false,
+  "status": "PASS"
+}

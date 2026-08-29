@@ -1,0 +1,31 @@
+schema_version: "0.1"
+numeric_domain: {category: binary_floating_point, radix: 2, precision: 53}
+assumptions: ["0 <= r < regions", "0 <= i < inputs"]
+formula:
+  outputs:
+    - target:
+        op: IndexedValue
+        name: result
+        indices: [{op: FreeVariable, name: r}]
+      index_domain:
+        index: r
+        lower: {op: Constant, value: 0}
+        upper_exclusive: {op: FreeVariable, name: regions}
+      expression:
+        op: TransformReduce
+        bound_index: j
+        index_domain:
+          lower: {op: Constant, value: 0}
+          upper_exclusive: {op: FreeVariable, name: inputs}
+        initial_value: {op: Constant, value: 0.0}
+        transform:
+          op: Multiply
+          args:
+            - op: IndexedValue
+              name: quantity
+              indices: [{op: FreeVariable, name: r}, {op: BoundVariable, name: j}]
+            - op: IndexedValue
+              name: factor
+              indices: [{op: BoundVariable, name: j}]
+        reduction: Add
+        reduction_order: left_to_right

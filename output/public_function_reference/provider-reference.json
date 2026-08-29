@@ -1,0 +1,77 @@
+{
+  "catalog_count_is_supported_function_count": false,
+  "providers": [
+    {
+      "entire_library_supported": false,
+      "package": "builtins",
+      "registry": "registry/libraries/builtins.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "dask",
+      "registry": "registry/libraries/dask.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "geopandas",
+      "registry": "registry/libraries/geopandas.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "igraph",
+      "registry": "registry/libraries/igraph.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "netCDF4",
+      "registry": "registry/libraries/netcdf4.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "numpy",
+      "registry": "registry/libraries/numpy.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "pandas",
+      "registry": "registry/libraries/pandas.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "pyproj",
+      "registry": "registry/libraries/pyproj.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "rasterio",
+      "registry": "registry/libraries/rasterio.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "scipy",
+      "registry": "registry/libraries/scipy.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "shapely",
+      "registry": "registry/libraries/shapely.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    },
+    {
+      "entire_library_supported": false,
+      "package": "xarray",
+      "registry": "registry/libraries/xarray.yaml",
+      "support": "SELECTED_CONTRACTS_REFERENCE_ONLY_VERSION_UNPINNED"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+tests/golden/pr3a/native_clang18/** text eol=lf
+scripts/regenerate_pr3a_native_goldens.py text eol=lf
+.github/workflows/*.yml text eol=lf

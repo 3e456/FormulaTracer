@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0",
+  "wave": 1,
+  "name": "wave1-foundation",
+  "status": "COMPLETE",
+  "owners_before": [
+    "cpp_audit.core",
+    "cpp_audit.expression",
+    "cpp_audit.numeric_types",
+    "cpp_audit.math_semantics"
+  ],
+  "semantic_symbols_before": 45,
+  "symbols_before": 121,
+  "symbols_migrated": [
+    "cpp_audit.core.audit",
+    "cpp_audit.core.normalize",
+    "cpp_audit.expression.compare_exact",
+    "cpp_audit.expression.normalize_exact",
+    "cpp_audit.expression.select_transformation",
+    "cpp_audit.math_semantics.FourierSeries.process",
+    "cpp_audit.math_semantics.FunctionProperties.usable_for_verification",
+    "cpp_audit.math_semantics.InfiniteProcess.partial",
+    "cpp_audit.math_semantics.InfiniteProcess.partial_symmetric",
+    "cpp_audit.math_semantics.InfiniteProcess.tail",
+    "cpp_audit.math_semantics.OriginSet.merged",
+    "cpp_audit.math_semantics.PowerSeries.term",
+    "cpp_audit.math_semantics.TaylorSeries.process",
+    "cpp_audit.math_semantics.TruncationRequirementSolver.solve",
+    "cpp_audit.math_semantics.analyze_convergence",
+    "cpp_audit.math_semantics.convolution",
+    "cpp_audit.math_semantics.discrete_transform_layers",
+    "cpp_audit.math_semantics.function_properties",
+    "cpp_audit.math_semantics.integral_transform",
+    "cpp_audit.math_semantics.inverse_mapping",
+    "cpp_audit.math_semantics.localize_mathematical_node",
+    "cpp_audit.math_semantics.propagate_properties",
+    "cpp_audit.math_semantics.range_condition_status",
+    "cpp_audit.math_semantics.series_evaluation_candidates",
+    "cpp_audit.numeric_types._Analyzer.promote",
+    "cpp_audit.numeric_types.execution_type",
+    "cpp_audit.numeric_types.infer_value_type"
+  ],
+  "symbols_reclassified": [
+    {
+      "symbol": "cpp_audit.core._digest",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.core._semantic_diagnostics",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.core._stable_id",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.expression._constant",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.expression._normalize_node",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.expression._rename_bound",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.expression._stable_id",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.expression._substitute_free",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.expression._variable",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types._Analyzer.__init__",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types._Analyzer.assign",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types._Analyzer.block",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types._Analyzer.call",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types._Analyzer.expr",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types._Analyzer.unresolved",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types._promoted_dtype",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types._replace",
+      "classification": "LANGUAGE_FRONTEND"
+    },
+    {
+      "symbol": "cpp_audit.numeric_types.analyze_numeric_types",
+      "classification": "LANGUAGE_FRONTEND"
+    }
+  ],
+  "symbols_remaining": [],
+  "rust_parity": "PASS",
+  "false_acceptance": 0,
+  "reachability": {
+    "production_semantic": 0,
+    "dynamic_unresolved": 0
+  },
+  "dependency_edges": [
+    {
+      "source": "cpp_audit.expression",
+      "target": "cpp_audit.core"
+    },
+    {
+      "source": "cpp_audit.ieee754",
+      "target": "cpp_audit.core"
+    },
+    {
+      "source": "cpp_audit.ieee754",
+      "target": "cpp_audit.numeric_types"
+    },
+    {
+      "source": "cpp_audit.interval",
+      "target": "cpp_audit.core"
+    },
+    {
+      "source": "cpp_audit.numeric_types",
+      "target": "cpp_audit.core"
+    },
+    {
+      "source": "cpp_audit.transformations",
+      "target": "cpp_audit.core"
+    },
+    {
+      "source": "cpp_audit.transformations",
+      "target": "cpp_audit.expression"
+    }
+  ],
+  "sccs": {
+    "cpp_audit.core": 0,
+    "cpp_audit.expression": 2,
+    "cpp_audit.numeric_types": 7,
+    "cpp_audit.math_semantics": 5
+  },
+  "order_rationale": "Each remaining owner is a singleton SCC. Dependencies are migrated before consumers; frontend extraction may remain Python while all semantic decisions move native.",
+  "parity_artifacts": [
+    "output/native_migration/final/waves/wave1-core-parity.json",
+    "output/native_migration/final/waves/wave1-expression-parity.json",
+    "output/native_migration/final/waves/wave1-math-semantics-parity.json",
+    "output/native_migration/final/waves/wave1-numeric-types-parity.json"
+  ],
+  "symbols_initial": [
+    "cpp_audit.core._digest",
+    "cpp_audit.core._semantic_diagnostics",
+    "cpp_audit.core._stable_id",
+    "cpp_audit.core.audit",
+    "cpp_audit.core.normalize",
+    "cpp_audit.expression._constant",
+    "cpp_audit.expression._normalize_node",
+    "cpp_audit.expression._rename_bound",
+    "cpp_audit.expression._stable_id",
+    "cpp_audit.expression._substitute_free",
+    "cpp_audit.expression._variable",
+    "cpp_audit.expression.compare_exact",
+    "cpp_audit.expression.normalize_exact",
+    "cpp_audit.expression.select_transformation",
+    "cpp_audit.math_semantics.FourierSeries.process",
+    "cpp_audit.math_semantics.FunctionProperties.usable_for_verification",
+    "cpp_audit.math_semantics.InfiniteProcess.partial",
+    "cpp_audit.math_semantics.InfiniteProcess.partial_symmetric",
+    "cpp_audit.math_semantics.InfiniteProcess.tail",
+    "cpp_audit.math_semantics.OriginSet.merged",
+    "cpp_audit.math_semantics.PowerSeries.term",
+    "cpp_audit.math_semantics.TaylorSeries.process",
+    "cpp_audit.math_semantics.TruncationRequirementSolver.solve",
+    "cpp_audit.math_semantics.analyze_convergence",
+    "cpp_audit.math_semantics.convolution",
+    "cpp_audit.math_semantics.discrete_transform_layers",
+    "cpp_audit.math_semantics.function_properties",
+    "cpp_audit.math_semantics.integral_transform",
+    "cpp_audit.math_semantics.inverse_mapping",
+    "cpp_audit.math_semantics.localize_mathematical_node",
+    "cpp_audit.math_semantics.propagate_properties",
+    "cpp_audit.math_semantics.range_condition_status",
+    "cpp_audit.math_semantics.series_evaluation_candidates",
+    "cpp_audit.numeric_types._Analyzer.__init__",
+    "cpp_audit.numeric_types._Analyzer.assign",
+    "cpp_audit.numeric_types._Analyzer.block",
+    "cpp_audit.numeric_types._Analyzer.call",
+    "cpp_audit.numeric_types._Analyzer.expr",
+    "cpp_audit.numeric_types._Analyzer.promote",
+    "cpp_audit.numeric_types._Analyzer.unresolved",
+    "cpp_audit.numeric_types._promoted_dtype",
+    "cpp_audit.numeric_types._replace",
+    "cpp_audit.numeric_types.analyze_numeric_types",
+    "cpp_audit.numeric_types.execution_type",
+    "cpp_audit.numeric_types.infer_value_type"
+  ],
+  "full_python_regression": {
+    "status": "PASS",
+    "passed": 567,
+    "skipped": 1,
+    "subtests_passed": 36,
+    "duration_seconds": 125.48
+  }
+}

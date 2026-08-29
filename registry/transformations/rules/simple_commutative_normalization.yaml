@@ -1,0 +1,8 @@
+schema_version: "0.1"
+rule:
+  id: simple_commutative_normalization
+  kind: exact
+  source_pattern: {}
+  target_template: {}
+  theorem_reference: CppAudit.Semantics.Transformation.add_commutative_sound
+  provenance: {source: built-in exact semantics, maintainer: cpp-audit}

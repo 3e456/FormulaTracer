@@ -1,0 +1,8 @@
+{
+  "deferred": 1,
+  "remaining": 8,
+  "solved": 2,
+  "status": "PASS",
+  "total": 10,
+  "unresolved_is_not_equated_with_impossible": true
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cpp-audit.dev/schemas/transformation-set-0.1.json",
+  "type": "object", "required": ["schema_version", "transformation_set"],
+  "properties": {"schema_version": {"const": "0.1"}, "transformation_set": {"type": "object",
+    "required": ["id", "version", "exact_rules", "approximation_rules", "hard_constraints", "objectives", "selection_policy", "provenance"],
+    "properties": {"id": {"type": "string"}, "version": {"type": "string"},
+      "exact_rules": {"type": "array", "items": {"type": "string"}},
+      "approximation_rules": {"type": "array", "items": {"type": "string"}},
+      "forbidden_rules": {"type": "array", "items": {"type": "string"}},
+      "hard_constraints": {"type": "object"}, "required_observables": {"type": "array"},
+      "objectives": {"type": "array"}, "cost_model": {"type": "object"},
+      "selection_policy": {"type": "object"}, "provenance": {"type": "object"}}}}
+}

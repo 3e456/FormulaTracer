@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "platform": "win32",
+  "architecture": "AMD64",
+  "wheel_sha256": "5f668c9ed6022e924bd8138c3e84c11637c3739aafa850010ecfe5ea638488d8",
+  "environment": "new isolated virtualenv",
+  "normal_pip_install": "PASS",
+  "native_core_load": "PASS",
+  "reconstruction_result": "EXACT",
+  "reconstruction_native_operation": "PASS",
+  "production_python_semantic_calls": 0,
+  "normal_user_requires_rust": false,
+  "status": "PASS"
+}

@@ -1,0 +1,8 @@
+schema_version: "0.1"
+rule:
+  id: alpha_rename
+  kind: exact
+  source_pattern: {}
+  target_template: {}
+  theorem_reference: CppAudit.Semantics.Transformation.alpha_rename_sound
+  provenance: {source: built-in exact semantics, maintainer: cpp-audit}

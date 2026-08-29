@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/mathematical-assurance-report.schema.json",
+  "type": "object",
+  "required": ["retrieval", "adversarial", "metrics", "release_gates"],
+  "properties": {
+    "retrieval": {"type": "array", "items": {"type": "object", "required": ["case_id", "expected_provider", "rank", "status"]}},
+    "adversarial": {"type": "array", "items": {"type": "object", "required": ["case_id", "status", "false_acceptance"]}},
+    "metrics": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "release_gates": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}}
+  },
+  "additionalProperties": false
+}

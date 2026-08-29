@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "created": "2026-08-27",
+  "generator_version": "rc-validation-v1",
+  "splits": {
+    "development": [
+      {
+        "case_id": "dev-dft-alpha",
+        "semantic_fingerprint": "3310a061372d2fdca3d080e3880d0876063ac236183c2d9108d7500c20d6a7ed"
+      },
+      {
+        "case_id": "dev-taylor-alpha",
+        "semantic_fingerprint": "2fbe44f3d8e7bc73227ae67a2befd0250f1f8e6a9ba613451b36edf98dc073f9"
+      },
+      {
+        "case_id": "dev-weighted-alpha",
+        "semantic_fingerprint": "377aef41ef1b4d287a5bb0bfd0dc94f4f366a68a64eb5f8a687ed6bd4601d8f2"
+      }
+    ],
+    "validation": [
+      {
+        "case_id": "validation-dft-rename",
+        "semantic_fingerprint": "f6e51731f936394c274fc04e778b88c6941de11bd4a7cb84f094f0c5e9303597"
+      },
+      {
+        "case_id": "validation-difference",
+        "semantic_fingerprint": "1c135eb9d7a4edd6c27e6864425499c1b04039cd505ab00da3b70f6f2b8a996e"
+      },
+      {
+        "case_id": "validation-integral",
+        "semantic_fingerprint": "a6ff7f2e3b5f9f9588ebcbdf175116b7e7f9a5d58d24aefaad9f8e53865c7e05"
+      }
+    ],
+    "final_holdout": [
+      {
+        "case_id": "holdout-series-rename",
+        "semantic_fingerprint": "b70622c10beea2c18234caba76802f0a0bc5577e5e9581e1ff3ac52c73d645ee"
+      },
+      {
+        "case_id": "holdout-weighted-rename",
+        "semantic_fingerprint": "a930ad60c2fbf2d9d8fb5b48248c9d417ecdbf1225be1b12aa7cc1dbf57f002d"
+      },
+      {
+        "case_id": "holdout-negative-add",
+        "semantic_fingerprint": "0feb9ad86a624f911ecc1932a8f4671b664e55094aa0c61685f61722681da358"
+      }
+    ]
+  },
+  "holdout_policy": "fixed-before-execution; never used for repair selection"
+}

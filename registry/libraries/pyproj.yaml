@@ -1,0 +1,24 @@
+schema_version: "0.1"
+package: pyproj
+version: ">=3.0,<4.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_status: REFERENCE_REVIEWED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [ellipsoid, geodesic_relation, coordinates, units, argument_mapping]
+  ignore: [PROJ_internal_algorithm, native_implementation]
+bindings:
+  - callable: pyproj.Geod
+    family: SpatialGeometry
+    bind: {relation: ellipsoidal_geodesic_model, result_type: pyproj.Geod,
+           ellipsoid_parameter: ellps}
+    reference: https://pyproj4.github.io/pyproj/stable/api/geod.html#pyproj.Geod
+  - callable: pyproj.Geod.inv
+    family: SpatialGeometry
+    bind: {relation: inverse_geodesic, outputs: [forward_azimuth, back_azimuth, distance]}
+    reference: https://pyproj4.github.io/pyproj/stable/api/geod.html#pyproj.Geod.inv
+  - callable: pyproj.Geod.line_length
+    family: SpatialGeometry
+    bind: {relation: geodesic_polyline_length, longitude_parameter: lons,
+           latitude_parameter: lats}
+    reference: https://pyproj4.github.io/pyproj/stable/api/geod.html#pyproj.Geod.line_length

@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "families_exercised": [
+    "APPROXIMATION_FAMILY_MISMATCH",
+    "AXIS_MISMATCH",
+    "ERROR_BOUND_VIOLATION",
+    "OPERATOR_MISMATCH"
+  ],
+  "unjustified_root_cause_attribution": 0,
+  "correlation_promoted_to_cause": 0
+}

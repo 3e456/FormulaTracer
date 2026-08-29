@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/audit-debug-result.schema.json",
+  "title": "AuditDebugResult",
+  "type": "object",
+  "required": ["status", "project_status", "end_to_end_status", "findings", "first_divergences", "minimal_divergent_subgraphs", "root_causes", "affected_outputs", "debug_traces", "invalidated_claims", "root_results", "diagnostics"],
+  "properties": {
+    "status": {"enum": ["NO_SEMANTIC_DIVERGENCE_FOUND", "SEMANTIC_DIVERGENCE_LOCALIZED", "PARTIAL_SEMANTIC_LOCALIZATION", "SEMANTIC_DEBUG_BLOCKED", "SEMANTIC_DEBUG_FAILED"]},
+    "project_status": {"type": "string"},
+    "end_to_end_status": {"type": ["string", "null"]},
+    "findings": {"type": "array", "items": {"type": "object", "required": ["finding_id", "type", "expected", "actual", "source", "affected_outputs", "debug_trace", "confidence", "diagnostic_code", "message_key", "parameters", "invalidated_claims"]}},
+    "first_divergences": {"type": "array"},
+    "minimal_divergent_subgraphs": {"type": "array"},
+    "root_causes": {"type": "array"},
+    "affected_outputs": {"type": "array"},
+    "debug_traces": {"type": "array"},
+    "invalidated_claims": {"type": "array"},
+    "root_results": {"type": "object"},
+    "diagnostics": {"type": "array"},
+    "localization_metrics": {
+      "type": "object",
+      "required": ["total", "exact_span", "span_set", "semantic_node_or_better", "unresolved", "false_localization"],
+      "properties": {
+        "total": {"type": "integer", "minimum": 0},
+        "exact_span": {"type": "integer", "minimum": 0},
+        "span_set": {"type": "integer", "minimum": 0},
+        "semantic_node_or_better": {"type": "integer", "minimum": 0},
+        "unresolved": {"type": "integer", "minimum": 0},
+        "false_localization": {"type": "integer", "const": 0},
+        "false_localization_basis": {"type": "string"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

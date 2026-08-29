@@ -1,0 +1,98 @@
+{
+  "schema_version": "2.0",
+  "created": "2026-08-27",
+  "policy": "sealed before execution; post-execution case-specific repair forbidden",
+  "holdout_fingerprint": "6ed578f70fa857a7c87d45af014c35011b884bd97db38d09bb8c67d60d72755b",
+  "splits": {
+    "development": [
+      {
+        "case_id": "v2-dev-dft",
+        "semantic_fingerprint": "fde6de2eefdee59e33a2f58c05d2dad7b6d4751fcfc0907ab53342561e8db995"
+      },
+      {
+        "case_id": "v2-dev-series",
+        "semantic_fingerprint": "5cb72e08b97819f5c9c3ff061f86d0bb2ce76e5d4817a2852f9164ace8dcdf92"
+      },
+      {
+        "case_id": "v2-dev-quadrature",
+        "semantic_fingerprint": "7395081f8a838ededf8e70e45ef331c9be1251711b9d60e7084674c41a26521f"
+      }
+    ],
+    "validation": [
+      {
+        "case_id": "v2-validation-difference",
+        "semantic_fingerprint": "f50662bf1757b1736ab914b0c858f13ee393f38c24a348086985dbf0dd27d8c6"
+      },
+      {
+        "case_id": "v2-validation-integral",
+        "semantic_fingerprint": "bdb7bcee56d9f2caecc431dd70d1af89a0263d4e5f31a74940144b21e653adc1"
+      },
+      {
+        "case_id": "v2-validation-convolution",
+        "semantic_fingerprint": "58fac3595fc6c56fbde7682cdd2cc28a642395ac7461d2f9598ae07828efec49"
+      },
+      {
+        "case_id": "v2-validation-gamma",
+        "semantic_fingerprint": "f0f207d6f5d93d38515b2f778c14b190371b87bc218912c205a3b815ac55bca1"
+      },
+      {
+        "case_id": "v2-validation-beta",
+        "semantic_fingerprint": "85d1ff26641980999ccdcbb1921d165dd8d9a93936f128086a7f96dbaff8f607"
+      },
+      {
+        "case_id": "v2-validation-asymptotic",
+        "semantic_fingerprint": "8150c0e1affbc13dc624cbe151f1459051058689f352a9a667b863236a35e006"
+      },
+      {
+        "case_id": "v2-validation-matrix_multiply",
+        "semantic_fingerprint": "351a4f968fcff2c315b73d9abb552d49035981e82aad0c406268efa988a2b67b"
+      },
+      {
+        "case_id": "v2-validation-svd",
+        "semantic_fingerprint": "b223002b170c34abb810d3cf76f07f5495775293ec8cd173388b2a2e0ff4358d"
+      },
+      {
+        "case_id": "v2-validation-root_finding",
+        "semantic_fingerprint": "4b96862f9984b8c42ee75c1916962d3f39f7a13051f595b392e6140350aeb1ff"
+      },
+      {
+        "case_id": "v2-validation-probability",
+        "semantic_fingerprint": "03a5f9c32a06b590e784e021a6c4459bb0e28a8cbb3fb2b1d30b60584a143468"
+      }
+    ],
+    "final_holdout_v2": [
+      {
+        "case_id": "v2-final_holdout_v2-piecewise",
+        "semantic_fingerprint": "1e3e339ef1e557e05db1ad24d0990a1e4dee4fb1ded672b59d09c9a26ccd9da9"
+      },
+      {
+        "case_id": "v2-final_holdout_v2-integer_modulo",
+        "semantic_fingerprint": "d6729c13d674bed807c2e33955c309794b76bf95217b9ee08cd5cad729bd4843"
+      },
+      {
+        "case_id": "v2-final_holdout_v2-bitvector",
+        "semantic_fingerprint": "ec74bfaf2f1bd8d336cd8a7ea4232bff60194c7f0b647ef20cb016a41794efc3"
+      },
+      {
+        "case_id": "v2-final_holdout_v2-units",
+        "semantic_fingerprint": "0eba4f3e0acd6be71985b8041f0853f6673e8ce6c6d89941aea30faf6c5daf60"
+      },
+      {
+        "case_id": "v2-final_holdout_v2-laplace",
+        "semantic_fingerprint": "19d894b9dbc879c9e5ffea31ed316807c1edc8b07a5c0911ead7095d58ece7f6"
+      },
+      {
+        "case_id": "v2-holdout-fourier-renamed",
+        "semantic_fingerprint": "401679dd27fa1d526db169061af385421c8bf0f5d163d5ef6ac8835613408d27"
+      },
+      {
+        "case_id": "v2-holdout-weighted-renamed",
+        "semantic_fingerprint": "1bf420343524f022cf3146c213c73a8b25d62f5527b82fecdf9420b6205aca42"
+      },
+      {
+        "case_id": "v2-holdout-negative",
+        "semantic_fingerprint": "e0b6c76f2141addf91565c9ddb90420cf5fd4f3d17c767085788f966afa5c800"
+      }
+    ]
+  }
+}

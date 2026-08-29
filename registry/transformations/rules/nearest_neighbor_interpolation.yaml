@@ -1,0 +1,13 @@
+schema_version: "0.1"
+rule:
+  id: nearest_neighbor_interpolation
+  kind: approximation
+  approximation_family_id: nearest_neighbor_interpolation
+  relation: APPROXIMATION_OF
+  source_pattern: {op: Interpolation}
+  target_template: {op: Interpolation, method: nearest, support_points: [{op: FreeVariable, name: nearest_support}], query_point: {op: FreeVariable, name: x}, weights: [{op: Constant, value: 1}], axis: {op: FreeVariable, name: axis}, domain_status: INTERPOLATION}
+  parameters: [nearest_support, x, axis, dimension]
+  conditions: ["query point is inside support domain", "axis or dimension is explicit"]
+  proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_nearest_is_registered
+  cost: {symbolic_arithmetic_operations: 0, asymptotic_memory_rank: 1, transformation_path_length: 1}

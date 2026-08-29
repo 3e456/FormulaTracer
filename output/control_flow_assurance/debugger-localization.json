@@ -1,0 +1,690 @@
+{
+  "cases": [
+    {
+      "case_id": "loop_bound_minus_one",
+      "classification": "CORRECT_SEMANTIC_NODE",
+      "debugger_evidence": {
+        "checks": {
+          "alpha_rename": false,
+          "expression_graph_isomorphism": false,
+          "finite_sum_map_normalization": false,
+          "simple_algebraic_equivalence": false
+        },
+        "human": {
+          "expression": {
+            "body": {
+              "indices": [
+                {
+                  "name": "i",
+                  "op": "BoundVariable"
+                }
+              ],
+              "name": "x",
+              "op": "IndexedValue",
+              "shape_constraints": [
+                {
+                  "axis": 0,
+                  "kind": "index_within_extent"
+                }
+              ]
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "lower": {
+                "numeral_representation": {
+                  "original_text": null,
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 0
+              },
+              "upper_exclusive": {
+                "args": [
+                  {
+                    "name": "n",
+                    "op": "FreeVariable"
+                  },
+                  {
+                    "numeral_representation": {
+                      "original_text": "1",
+                      "radix": 10
+                    },
+                    "op": "Constant",
+                    "value": 1
+                  }
+                ],
+                "argument_spans": [
+                  {
+                    "begin_column": 17,
+                    "begin_line": 3,
+                    "end_column": 18,
+                    "end_line": 3,
+                    "file": "<LOCAL_PATH>"
+                  },
+                  {
+                    "begin_column": 19,
+                    "begin_line": 3,
+                    "end_column": 20,
+                    "end_line": 3,
+                    "file": "<LOCAL_PATH>"
+                  }
+                ],
+                "op": "Subtract",
+                "operator_span": {
+                  "begin_column": 18,
+                  "begin_line": 3,
+                  "end_column": 19,
+                  "end_line": 3,
+                  "file": "<LOCAL_PATH>",
+                  "operator": "-",
+                  "role": "operator"
+                },
+                "source_span": {
+                  "begin_column": 17,
+                  "begin_line": 3,
+                  "end_column": 20,
+                  "end_line": 3,
+                  "file": "<LOCAL_PATH>"
+                }
+              }
+            },
+            "op": "FiniteSum",
+            "reduction_order": "left_to_right"
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "body": {
+              "indices": [
+                {
+                  "name": "i",
+                  "op": "BoundVariable"
+                }
+              ],
+              "name": "x",
+              "op": "IndexedValue",
+              "shape_constraints": [
+                {
+                  "axis": 0,
+                  "kind": "index_within_extent"
+                }
+              ]
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "lower": {
+                "numeral_representation": {
+                  "original_text": null,
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 0
+              },
+              "upper_exclusive": {
+                "name": "n",
+                "op": "FreeVariable"
+              }
+            },
+            "op": "FiniteSum",
+            "reduction_order": "left_to_right"
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {},
+        "match": false,
+        "status": "NO_ALLOWED_APPROXIMATION_FOUND"
+      },
+      "mutation_span": {
+        "begin_line": 3,
+        "end_line": 3
+      }
+    },
+    {
+      "case_id": "accumulator_initial",
+      "classification": "CORRECT_SEMANTIC_NODE",
+      "debugger_evidence": {
+        "checks": {
+          "alpha_rename": false,
+          "expression_graph_isomorphism": false,
+          "finite_sum_map_normalization": false,
+          "simple_algebraic_equivalence": false
+        },
+        "human": {
+          "expression": {
+            "body": {
+              "indices": [
+                {
+                  "name": "i",
+                  "op": "BoundVariable"
+                }
+              ],
+              "name": "x",
+              "op": "IndexedValue",
+              "shape_constraints": [
+                {
+                  "axis": 0,
+                  "kind": "index_within_extent"
+                }
+              ]
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "lower": {
+                "numeral_representation": {
+                  "original_text": null,
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 0
+              },
+              "upper_exclusive": {
+                "name": "n",
+                "op": "FreeVariable"
+              }
+            },
+            "initial_value": {
+              "numeral_representation": {
+                "original_text": "1",
+                "radix": 10
+              },
+              "op": "Constant",
+              "value": 1
+            },
+            "op": "FoldLeft",
+            "operation": "Add",
+            "reduction_order": "left_to_right"
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "body": {
+              "indices": [
+                {
+                  "name": "i",
+                  "op": "BoundVariable"
+                }
+              ],
+              "name": "x",
+              "op": "IndexedValue",
+              "shape_constraints": [
+                {
+                  "axis": 0,
+                  "kind": "index_within_extent"
+                }
+              ]
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "lower": {
+                "numeral_representation": {
+                  "original_text": null,
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 0
+              },
+              "upper_exclusive": {
+                "name": "n",
+                "op": "FreeVariable"
+              }
+            },
+            "op": "FiniteSum",
+            "reduction_order": "left_to_right"
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {},
+        "match": false,
+        "status": "NO_ALLOWED_APPROXIMATION_FOUND"
+      },
+      "mutation_span": {
+        "begin_line": 2,
+        "end_line": 2
+      }
+    },
+    {
+      "case_id": "condition_inversion",
+      "classification": "CORRECT_SEMANTIC_NODE",
+      "debugger_evidence": {
+        "checks": {
+          "alpha_rename": false,
+          "expression_graph_isomorphism": false,
+          "finite_sum_map_normalization": false,
+          "simple_algebraic_equivalence": false
+        },
+        "human": {
+          "expression": {
+            "body": {
+              "condition": {
+                "args": [
+                  {
+                    "indices": [
+                      {
+                        "name": "i",
+                        "op": "BoundVariable"
+                      }
+                    ],
+                    "name": "mask",
+                    "op": "IndexedValue",
+                    "shape_constraints": [
+                      {
+                        "axis": 0,
+                        "kind": "index_within_extent"
+                      }
+                    ]
+                  }
+                ],
+                "op": "LogicalNot",
+                "source_span": {
+                  "begin_column": 6,
+                  "begin_line": 4,
+                  "end_column": 17,
+                  "end_line": 4,
+                  "file": "<LOCAL_PATH>"
+                }
+              },
+              "else": {
+                "op": "Constant",
+                "value": 0
+              },
+              "op": "IfThenElse",
+              "then": {
+                "indices": [
+                  {
+                    "name": "i",
+                    "op": "BoundVariable"
+                  }
+                ],
+                "name": "x",
+                "op": "IndexedValue",
+                "shape_constraints": [
+                  {
+                    "axis": 0,
+                    "kind": "index_within_extent"
+                  }
+                ]
+              }
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "lower": {
+                "numeral_representation": {
+                  "original_text": null,
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 0
+              },
+              "upper_exclusive": {
+                "name": "n",
+                "op": "FreeVariable"
+              }
+            },
+            "op": "FiniteSum",
+            "reduction_order": "left_to_right"
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "body": {
+              "condition": {
+                "indices": [
+                  {
+                    "name": "i",
+                    "op": "BoundVariable"
+                  }
+                ],
+                "name": "mask",
+                "op": "IndexedValue",
+                "shape_constraints": [
+                  {
+                    "axis": 0,
+                    "kind": "index_within_extent"
+                  }
+                ]
+              },
+              "else": {
+                "op": "Constant",
+                "value": 0
+              },
+              "op": "IfThenElse",
+              "then": {
+                "indices": [
+                  {
+                    "name": "i",
+                    "op": "BoundVariable"
+                  }
+                ],
+                "name": "x",
+                "op": "IndexedValue",
+                "shape_constraints": [
+                  {
+                    "axis": 0,
+                    "kind": "index_within_extent"
+                  }
+                ]
+              }
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "lower": {
+                "numeral_representation": {
+                  "original_text": null,
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 0
+              },
+              "upper_exclusive": {
+                "name": "n",
+                "op": "FreeVariable"
+              }
+            },
+            "op": "FiniteSum",
+            "reduction_order": "left_to_right"
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {},
+        "match": false,
+        "status": "NO_ALLOWED_APPROXIMATION_FOUND"
+      },
+      "mutation_span": {
+        "begin_line": 4,
+        "end_line": 4
+      }
+    },
+    {
+      "case_id": "early_return_boundary",
+      "classification": "CORRECT_SEMANTIC_NODE",
+      "debugger_evidence": {
+        "checks": {
+          "alpha_rename": false,
+          "expression_graph_isomorphism": false,
+          "finite_sum_map_normalization": false,
+          "simple_algebraic_equivalence": false
+        },
+        "human": {
+          "expression": {
+            "condition": {
+              "args": [
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                },
+                {
+                  "numeral_representation": {
+                    "original_text": "1",
+                    "radix": 10
+                  },
+                  "op": "Constant",
+                  "value": 1
+                }
+              ],
+              "comparison": "LessEqual",
+              "op": "Compare",
+              "source_span": {
+                "begin_column": 5,
+                "begin_line": 2,
+                "end_column": 11,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            },
+            "else": {
+              "args": [
+                {
+                  "numeral_representation": {
+                    "original_text": "2",
+                    "radix": 10
+                  },
+                  "op": "Constant",
+                  "value": 2
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "argument_spans": [
+                {
+                  "begin_column": 9,
+                  "begin_line": 4,
+                  "end_column": 10,
+                  "end_line": 4,
+                  "file": "<LOCAL_PATH>"
+                },
+                {
+                  "begin_column": 11,
+                  "begin_line": 4,
+                  "end_column": 12,
+                  "end_line": 4,
+                  "file": "<LOCAL_PATH>"
+                }
+              ],
+              "op": "Multiply",
+              "operator_span": {
+                "begin_column": 10,
+                "begin_line": 4,
+                "end_column": 11,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>",
+                "operator": "*",
+                "role": "operator"
+              },
+              "source_span": {
+                "begin_column": 9,
+                "begin_line": 4,
+                "end_column": 12,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            },
+            "op": "IfThenElse",
+            "then": {
+              "numeral_representation": {
+                "original_text": "0",
+                "radix": 10
+              },
+              "op": "Constant",
+              "value": 0
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "condition": {
+              "args": [
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                },
+                {
+                  "numeral_representation": {
+                    "original_text": "0",
+                    "radix": 10
+                  },
+                  "op": "Constant",
+                  "value": 0
+                }
+              ],
+              "comparison": "LessThan",
+              "op": "Compare",
+              "source_span": {
+                "begin_column": 5,
+                "begin_line": 2,
+                "end_column": 10,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            },
+            "else": {
+              "args": [
+                {
+                  "numeral_representation": {
+                    "original_text": "2",
+                    "radix": 10
+                  },
+                  "op": "Constant",
+                  "value": 2
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "argument_spans": [
+                {
+                  "begin_column": 9,
+                  "begin_line": 4,
+                  "end_column": 10,
+                  "end_line": 4,
+                  "file": "<LOCAL_PATH>"
+                },
+                {
+                  "begin_column": 11,
+                  "begin_line": 4,
+                  "end_column": 12,
+                  "end_line": 4,
+                  "file": "<LOCAL_PATH>"
+                }
+              ],
+              "op": "Multiply",
+              "operator_span": {
+                "begin_column": 10,
+                "begin_line": 4,
+                "end_column": 11,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>",
+                "operator": "*",
+                "role": "operator"
+              },
+              "source_span": {
+                "begin_column": 9,
+                "begin_line": 4,
+                "end_column": 12,
+                "end_line": 4,
+                "file": "<LOCAL_PATH>"
+              }
+            },
+            "op": "IfThenElse",
+            "then": {
+              "numeral_representation": {
+                "original_text": "0",
+                "radix": 10
+              },
+              "op": "Constant",
+              "value": 0
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {},
+        "match": false,
+        "status": "NO_ALLOWED_APPROXIMATION_FOUND"
+      },
+      "mutation_span": {
+        "begin_line": 2,
+        "end_line": 2
+      }
+    },
+    {
+      "case_id": "then_else_swap",
+      "classification": "CORRECT_SEMANTIC_NODE",
+      "debugger_evidence": {
+        "checks": {
+          "alpha_rename": false,
+          "expression_graph_isomorphism": false,
+          "finite_sum_map_normalization": false,
+          "simple_algebraic_equivalence": false
+        },
+        "human": {
+          "expression": {
+            "condition": {
+              "name": "c",
+              "op": "FreeVariable"
+            },
+            "else": {
+              "name": "a",
+              "op": "FreeVariable"
+            },
+            "op": "IfThenElse",
+            "then": {
+              "name": "b",
+              "op": "FreeVariable"
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "condition": {
+              "name": "c",
+              "op": "FreeVariable"
+            },
+            "else": {
+              "name": "b",
+              "op": "FreeVariable"
+            },
+            "op": "IfThenElse",
+            "then": {
+              "name": "a",
+              "op": "FreeVariable"
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {},
+        "match": false,
+        "status": "NO_ALLOWED_APPROXIMATION_FOUND"
+      },
+      "mutation_span": {
+        "begin_line": 3,
+        "end_line": 3
+      }
+    }
+  ],
+  "counts": {
+    "CORRECT_SEMANTIC_NODE": 5,
+    "DOWNSTREAM_MISS": 0,
+    "EXACT_SOURCE_SPAN": 0,
+    "SAME_BASIC_BLOCK": 0,
+    "UNRESOLVED": 0,
+    "UPSTREAM_MISS": 0
+  },
+  "schema_version": "1.0"
+}

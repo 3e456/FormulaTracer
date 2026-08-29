@@ -1,0 +1,20 @@
+{
+  "critical_open": 0,
+  "defects": [
+    {
+      "actual": "axis/keepdims were previously dropped",
+      "affected_library": "torch",
+      "category": "LibraryContract",
+      "defect_id": "DEFECT-SELF-AUDIT-0001",
+      "expected": "dim/keepdim preserved",
+      "regression_fixture": "tests/test_library_coverage.py::test_torch_reduction_dim_and_keepdim_are_preserved_for_mutation_assurance",
+      "root_cause": "NumPy keyword names were applied to torch.sum",
+      "severity": "CRITICAL_FALSE_ACCEPTANCE",
+      "status": "VERIFIED_FIXED"
+    }
+  ],
+  "discovered": 1,
+  "fixed": 1,
+  "remaining": 0,
+  "schema_version": "1.0"
+}

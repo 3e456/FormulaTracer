@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/runtime-evidence.schema.json",
+  "title": "RuntimeEvidence",
+  "type": "object",
+  "required": ["evidence_id", "kind", "status", "producer", "observations", "provenance", "proof_authority"],
+  "properties": {
+    "evidence_id": {"type": "string"},
+    "kind": {"type": "string"},
+    "status": {"type": "string"},
+    "producer": {"type": "object"},
+    "observations": {"type": "object"},
+    "provenance": {"type": "object"},
+    "proof_authority": {"const": false}
+  }
+}

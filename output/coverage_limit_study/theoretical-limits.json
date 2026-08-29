@@ -1,0 +1,8 @@
+{
+  "count": 2,
+  "general_limits": [
+    "general_unbounded_termination",
+    "arbitrary_reflection_and_dynamic_eval"
+  ],
+  "statement": "Only the listed general properties are classified as not soundly decidable statically; finite scientific subsets remain analyzable."
+}

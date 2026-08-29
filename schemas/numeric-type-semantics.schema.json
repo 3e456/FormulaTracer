@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/numeric-type-semantics.schema.json",
+  "type": "object",
+  "required": ["status", "mathematical_domain", "inputs", "values", "outputs", "casts", "promotion_rules", "diagnostics"],
+  "properties": {
+    "status": {"enum": ["TYPE_RESOLVED", "TYPE_UNRESOLVED"]},
+    "mathematical_domain": {"type": "object", "required": ["category", "domains", "separation"]},
+    "inputs": {"type": "object", "additionalProperties": {"$ref": "#/$defs/executionType"}},
+    "values": {"type": "object", "additionalProperties": {"$ref": "#/$defs/executionType"}},
+    "outputs": {"type": "object", "additionalProperties": {"$ref": "#/$defs/executionType"}},
+    "casts": {"type": "array"},
+    "promotion_rules": {"type": "array"},
+    "diagnostics": {"type": "array"}
+  },
+  "$defs": {
+    "executionType": {
+      "type": "object",
+      "required": ["dtype", "kind", "bits", "signed", "mathematical_domain", "container", "shape", "dimensions", "overflow", "underflow", "provenance"]
+    }
+  },
+  "additionalProperties": false
+}

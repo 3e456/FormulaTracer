@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "generated_date": "2026-08-29",
+  "artifacts": [
+    "formulatracer-0.1.0-py3-none-win_amd64.whl",
+    "formulatracer-0.1.0.tar.gz"
+  ],
+  "archives_scanned": 2,
+  "text_members_scanned": 192,
+  "binary_or_oversize_skipped": 0,
+  "sensitive_hits": 0,
+  "category_counts": {},
+  "status": "PASS"
+}

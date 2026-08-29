@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cpp-audit.dev/schemas/execution-ir-0.1.json",
+  "type": "object",
+  "required": ["schema_version", "status", "operations"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "status": {"enum": ["NO_EXECUTION_SEMANTICS", "EXECUTION_SEMANTICS_EXTRACTED"]},
+    "operations": {"type": "array", "items": {"$ref": "#/$defs/operation"}}
+  },
+  "$defs": {"operation": {"type": "object", "required": ["op"], "properties": {
+    "op": {"enum": ["ParallelMap", "ParallelTask", "ChunkedArray", "ChunkedReduction", "Rechunk",
+      "Coarsen", "Scatter", "Gather", "Materialize", "ExecutionBarrier"]},
+    "callable": {"type": "string"}, "floating_point_relation": {"type": "string"}
+  }, "additionalProperties": true}}
+}

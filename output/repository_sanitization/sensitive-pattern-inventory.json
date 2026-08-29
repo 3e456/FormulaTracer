@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "patterns": [
+    {
+      "pattern_id": "PATH-WINDOWS-ABSOLUTE",
+      "category": "LOCAL_ENVIRONMENT_TRACE",
+      "pattern": "<WINDOWS_ABSOLUTE_PATH>",
+      "reason": "Absolute paths can disclose local corpus and machine layout.",
+      "severity": "HIGH",
+      "public_safe_replacement_strategy": "Use <PROJECT_ROOT>, <LOCAL_PATH>, or a relative path."
+    },
+    {
+      "pattern_id": "PATH-USER-HOME",
+      "category": "PERSONAL_INFORMATION",
+      "pattern": "<USER_HOME_PATH>",
+      "reason": "Home paths can disclose user or machine identity.",
+      "severity": "HIGH",
+      "public_safe_replacement_strategy": "Use <LOCAL_USER_HOME>."
+    },
+    {
+      "pattern_id": "PRIVATE-CORPUS-MARKER",
+      "category": "PRIVATE_RESEARCH_TRACE",
+      "pattern": "<RUNTIME_SUPPLIED_REDACTED_FINGERPRINTS>",
+      "reason": "Project, dataset, source, and output markers can identify private research.",
+      "severity": "CRITICAL",
+      "public_safe_replacement_strategy": "Remove detailed evidence; retain only bucketed aggregate assurance."
+    },
+    {
+      "pattern_id": "SECRET-CREDENTIAL",
+      "category": "SECRET_OR_CREDENTIAL",
+      "pattern": "<REDACTED_CREDENTIAL_PATTERN>",
+      "reason": "Credentials require removal and rotation.",
+      "severity": "CRITICAL",
+      "public_safe_replacement_strategy": "Remove, rotate, and store only a redacted fingerprint."
+    }
+  ]
+}

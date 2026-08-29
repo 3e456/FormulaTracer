@@ -1,0 +1,46 @@
+{
+  "candidates": [
+    {
+      "official_reference": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.spatial.ConvexHull.add_points.html#scipy.spatial.ConvexHull.add_points",
+      "package": "scipy",
+      "precedence": "OFFICIAL_REFERENCE_REMAINS_AUTHORITATIVE",
+      "qualified_name": "scipy.spatial.ConvexHull.add_points",
+      "reason": "REFERENCE_CLASS_SEMANTICS_NOT_UNIQUE",
+      "semantic_class_id": "reference_insufficient_elementwisetransform_add_points",
+      "semantic_family": "ElementwiseFunction",
+      "source_inspection_status": "CANDIDATE_NOT_PERFORMED"
+    },
+    {
+      "official_reference": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.spatial.Delaunay.add_points.html#scipy.spatial.Delaunay.add_points",
+      "package": "scipy",
+      "precedence": "OFFICIAL_REFERENCE_REMAINS_AUTHORITATIVE",
+      "qualified_name": "scipy.spatial.Delaunay.add_points",
+      "reason": "REFERENCE_CLASS_SEMANTICS_NOT_UNIQUE",
+      "semantic_class_id": "reference_insufficient_elementwisetransform_add_points",
+      "semantic_family": "ElementwiseFunction",
+      "source_inspection_status": "CANDIDATE_NOT_PERFORMED"
+    },
+    {
+      "official_reference": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.spatial.HalfspaceIntersection.add_halfspaces.html#scipy.spatial.HalfspaceIntersection.add_halfspaces",
+      "package": "scipy",
+      "precedence": "OFFICIAL_REFERENCE_REMAINS_AUTHORITATIVE",
+      "qualified_name": "scipy.spatial.HalfspaceIntersection.add_halfspaces",
+      "reason": "REFERENCE_CLASS_SEMANTICS_NOT_UNIQUE",
+      "semantic_class_id": "reference_insufficient_elementwisetransform_add_halfspaces",
+      "semantic_family": "ElementwiseFunction",
+      "source_inspection_status": "CANDIDATE_NOT_PERFORMED"
+    },
+    {
+      "official_reference": "https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.spatial.Voronoi.add_points.html#scipy.spatial.Voronoi.add_points",
+      "package": "scipy",
+      "precedence": "OFFICIAL_REFERENCE_REMAINS_AUTHORITATIVE",
+      "qualified_name": "scipy.spatial.Voronoi.add_points",
+      "reason": "REFERENCE_CLASS_SEMANTICS_NOT_UNIQUE",
+      "semantic_class_id": "reference_insufficient_elementwisetransform_add_points",
+      "semantic_family": "ElementwiseFunction",
+      "source_inspection_status": "CANDIDATE_NOT_PERFORMED"
+    }
+  ],
+  "policy": "OFFICIAL_REFERENCE_HAS_PRECEDENCE",
+  "schema_version": 1
+}

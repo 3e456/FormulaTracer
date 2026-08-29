@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "repository_visibility_at_audit": "PRIVATE",
+  "repository_description_private_trace": 0,
+  "repository_topics_private_trace": 0,
+  "issues": 0,
+  "pull_requests": 0,
+  "issue_and_pr_comments": 0,
+  "discussions": 0,
+  "releases": 0,
+  "workflow_artifacts": 0,
+  "forks": 0,
+  "pull_request_refs": 0,
+  "hosted_metadata_private_trace": 0,
+  "public_workflow_artifact_private_trace": 0,
+  "public_release_artifact_private_trace": 0,
+  "hosted_metadata_residual": false,
+  "status": "PASS"
+}

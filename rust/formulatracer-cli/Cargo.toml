@@ -1,0 +1,18 @@
+[package]
+name = "formulatracer-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Native semantic-document CLI for FormulaTracer"
+readme = "../../docs/reference/rust-api.md"
+publish = false
+
+[[bin]]
+name = "formulatracer-native"
+path = "src/main.rs"
+
+[dependencies]
+formulatracer-core = { path = "../formulatracer-core" }
+serde_json.workspace = true

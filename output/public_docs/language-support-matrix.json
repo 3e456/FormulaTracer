@@ -1,0 +1,31 @@
+{
+  "C": {
+    "api": "C ABI v1",
+    "codegen": false,
+    "frontend": "limited C/C++ path",
+    "python_runtime": false,
+    "status": "TESTED"
+  },
+  "C++": {
+    "api": "thin RAII",
+    "codegen": true,
+    "frontend": "Clang 18",
+    "python_runtime": false,
+    "status": "TESTED"
+  },
+  "Python": {
+    "api": "facade",
+    "codegen": true,
+    "frontend": true,
+    "python_runtime": true,
+    "status": "TESTED"
+  },
+  "Rust": {
+    "api": "native",
+    "codegen": true,
+    "frontend": "project adapter",
+    "python_runtime": false,
+    "status": "TESTED",
+    "toolchain": ">=1.85"
+  }
+}

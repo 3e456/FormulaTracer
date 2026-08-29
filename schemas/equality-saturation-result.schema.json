@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/equality-saturation-result.schema.json",
+  "title": "Equality Saturation Result",
+  "type": "object",
+  "required": ["status", "root_eclass_ids", "iterations", "enode_count", "rule_applications", "trace", "blocked_rewrites", "selected_packs"],
+  "properties": {
+    "status": {"enum": ["SATURATED", "SATURATION_BUDGET_EXHAUSTED", "CONDITIONALLY_BLOCKED"]},
+    "root_eclass_ids": {"type": "array", "items": {"type": "string"}},
+    "iterations": {"type": "integer", "minimum": 0},
+    "enode_count": {"type": "integer", "minimum": 0},
+    "rule_applications": {"type": "integer", "minimum": 0},
+    "selected_packs": {"type": "array", "items": {"type": "string"}},
+    "trace": {"type": "array", "items": {"$ref": "#/$defs/traceStep"}},
+    "blocked_rewrites": {"type": "array", "items": {"$ref": "#/$defs/blockedRewrite"}},
+    "diagnostics": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "traceStep": {
+      "type": "object",
+      "required": ["rule_id", "relation_kind", "source_expression_id", "target_expression_id", "eclass_id", "discharged_conditions"],
+      "properties": {
+        "rule_id": {"type": "string"},
+        "relation_kind": {"enum": ["EXACT", "EXACT_UNDER_ASSUMPTIONS", "ALGEBRAIC_EQUIVALENCE", "IDENTITY_UNDER_ASSUMPTIONS"]},
+        "source_expression_id": {"type": "string"},
+        "target_expression_id": {"type": "string"},
+        "eclass_id": {"type": "string"},
+        "discharged_conditions": {"type": "array", "items": {"type": "string"}},
+        "evidence": {"type": ["string", "null"]}
+      }
+    },
+    "blockedRewrite": {
+      "type": "object",
+      "required": ["rule_id", "expression_id", "missing_conditions"],
+      "properties": {
+        "rule_id": {"type": "string"},
+        "expression_id": {"type": "string"},
+        "missing_conditions": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

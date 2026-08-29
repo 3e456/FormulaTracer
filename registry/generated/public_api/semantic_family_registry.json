@@ -1,0 +1,31 @@
+{
+  "candidate_count": 0,
+  "existing_families": [
+    "Aggregation",
+    "AlgorithmInvocation",
+    "Alignment",
+    "AxisMapping",
+    "ConditionalSelection",
+    "Distribution",
+    "ElementwiseFunction",
+    "ElementwisePredicate",
+    "GraphAlgorithm",
+    "Grouping",
+    "IndexSelection",
+    "Interpolation",
+    "LinearAlgebraRelation",
+    "NumericCast",
+    "ParallelExecution",
+    "RandomSample",
+    "Reduction",
+    "RepresentationMapping",
+    "ShapeTransform",
+    "SpatialGeometry",
+    "Statistics",
+    "TableMapping",
+    "TensorContraction"
+  ],
+  "existing_family_count": 23,
+  "new_family_candidates": [],
+  "policy": "reuse_existing_before_proposing_new"
+}

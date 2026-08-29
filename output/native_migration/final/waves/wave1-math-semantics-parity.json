@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "owner": "cpp_audit.math_semantics",
+  "native_operation": "F/LEGACY_MATH_SEMANTICS",
+  "cases": [
+    {
+      "case": "log-domain",
+      "match": true
+    },
+    {
+      "case": "unknown-unresolved",
+      "match": true
+    },
+    {
+      "case": "square-range",
+      "match": true
+    },
+    {
+      "case": "range-branch",
+      "match": true
+    },
+    {
+      "case": "unknown-assumption-fail-closed",
+      "match": true
+    },
+    {
+      "case": "geometric-certified",
+      "match": true
+    },
+    {
+      "case": "truncation",
+      "match": true
+    },
+    {
+      "case": "taylor",
+      "match": true
+    },
+    {
+      "case": "fourier",
+      "match": true
+    },
+    {
+      "case": "candidates",
+      "match": true
+    },
+    {
+      "case": "laplace",
+      "match": true
+    },
+    {
+      "case": "inverse-fail-closed",
+      "match": true
+    },
+    {
+      "case": "inverse-certified",
+      "match": true
+    },
+    {
+      "case": "fft-relation",
+      "match": true
+    }
+  ],
+  "passed": 14,
+  "total": 14,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

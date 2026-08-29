@@ -1,0 +1,5851 @@
+{
+  "cases": [
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:e81edfdfe098222f",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Subtract"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:cfe1871294dc4aec",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 3
+          }
+        ],
+        "op": "Multiply"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:774eaae57bc3034a",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 4
+          }
+        ],
+        "op": "Divide"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:91d1abfbee7bae06",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:33e697db1df7b38e",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Subtract"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:d279c527017b27cc",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 3
+          }
+        ],
+        "op": "Multiply"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:d6455ae4bcbebe87",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 4
+          }
+        ],
+        "op": "Divide"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:d4154f81633c87fd",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 1
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:ac4c17cc9b5d9bc1",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Subtract"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:fec83eaa8a56f687",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 3
+          }
+        ],
+        "op": "Multiply"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:c4a3fefef65a51de",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "op": "Constant",
+            "value": 4
+          }
+        ],
+        "op": "Divide"
+      },
+      "family": "Arithmetic",
+      "theory_id": "theory:c13813939690866d",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 1
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:94adb4bfb60cf379",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 2
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 3
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:111ed77480d2092b",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 3
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 4
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:8125ffe6e6dd8f56",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 4
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 5
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:f483d50af1f96f01",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 1
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:6bd7af91d335da3e",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 2
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 3
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:6527025d1fcb59f0",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 3
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 4
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:50573ffe97c03a14",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 4
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 5
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:61af0fa33a4f26fe",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 1
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:ecde06eeedb64460",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 2
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 3
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:25d08af9e2f1c5cc",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 3
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 4
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:42cc8f785f401da2",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 4
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 5
+          }
+        ],
+        "op": "Add"
+      },
+      "family": "Elementwise",
+      "theory_id": "theory:465134b61a19fa1a",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:b7444f5675f9b7fb",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:620fe1dee64cdba2",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:b9c7b3449a56ca4e",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:2ff1545abb273317",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:83104de14abf34dd",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:3e80378905856a44",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:9054ee3c51af68fa",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:c1daed875c511973",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:0c0c673fa2c62cf6",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:580d50b146e2108d",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:8660add6eea19983",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Add"
+      },
+      "family": "FiniteSum",
+      "theory_id": "theory:d82c190994712617",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:3eaff3e883691fd5",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:212f92d906777a1e",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:a5a5c1fde8406eb1",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:452f836a4afdcd9a",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:009f5e661fd25dd8",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:6c3060bdbdae9679",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:ca1e76fedd801f07",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:d690f18d0a0e5073",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:85666257986e5a19",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:f5bc09b7a5c395b9",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:fcff675ea521fc0e",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Multiply"
+      },
+      "family": "FiniteProduct",
+      "theory_id": "theory:183f22a92e87eb31",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:9fe79cf920426826",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:b92f711acb36c597",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:2f29c435f46a1a30",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:510b7dab516fe126",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:3265db5c4c8d7bbb",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:023d51c20bb8e428",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:c36a1a4e200bf77b",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:f702a111178424fe",
+      "variation": 3
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:887f661e02ac7e4e",
+      "variation": 0
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": false,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:633336db15a3f510",
+      "variation": 1
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:9ee03c5f93550e5d",
+      "variation": 2
+    },
+    {
+      "assumptions": [
+        "finite index domain"
+      ],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "keepdims": true,
+        "op": "Reduce",
+        "reduction": "Mean"
+      },
+      "family": "Reduction",
+      "theory_id": "theory:c3887f4a60b76372",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:7890b6155dde50ec",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:7f7bd9db2566928e",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:6d3aa7ddb529757c",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:e433293133992b08",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:c74cae70e4ff7296",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:e83a16670017218a",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:4a31a7c4be48566f",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:f8d1490450c96c44",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:9b70b6ef39eb17e4",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:813b7317f6b9b909",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:2eccb7d586f38fce",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Map",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Map",
+      "theory_id": "theory:1a1769cd36168810",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:823c1a8d287d6bd3",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:cceac1381915d941",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:ff6b27da5c87b2bb",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:a8689b34bab4d125",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:63230d58e9ba5422",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:78db7d1399ff337e",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:af2e483b1fc397e9",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:9ea9214cebacaae6",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:b308ffe4fbd9320e",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:a49e3c03a090399e",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:bc23dc0a4c3afcd9",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Filter",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Filter",
+      "theory_id": "theory:7e9a1afb1dbabbfa",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:41679589d54fc49f",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:5e42313cad699c9d",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:ecb8f17740c39910",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:236c6da9ec26ae0f",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:26943a9adaf0640b",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:f90fc0ceb72c0dd7",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:66e2e9796b2d5b86",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:358ee60110f2cac2",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:8bb01ee1ec55a51f",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:855f0b2147cb712f",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:c47c2b417fe52376",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "FoldLeft",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FoldLeft",
+      "theory_id": "theory:996593121327e6fb",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:4e590ab0042e4677",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:2c7bf70a963147b7",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:9a8edc3292e38f14",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:43ffd184082fe4b1",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:437adec87caa1bbd",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:9061bd44b36e447c",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:536a90f45271fa4a",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:365640a63afe261e",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:91072c5a462473ac",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:8958e520faac3d5d",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:31e29db92cf0bb43",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "TransformReduce",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "TransformReduce",
+      "theory_id": "theory:c492f2bccb50ab68",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:2753752f984cb905",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:17cb63d8ac445755",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:4ccb12ef665278ac",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:fd0fc313ccba1535",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:5b20f9005ca95fbf",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:6ac52e882cf50be6",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:3bbdfe25f47e1225",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:4258d6c30fdcf336",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:41ab5273b253ae85",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:8cd363a80577d543",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:46606586fda29d3c",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "FilteredSum",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "FilteredSum",
+      "theory_id": "theory:801a7adb07d8c4ad",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:16ce382a2f56d5e2",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:2acc87f8843e66ba",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:33215a40e0342375",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:d8b6e56ff9c1e8e6",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:b1197a43a4a9186a",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:ecb6022659b13870",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:2659ebfb50fb8afa",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:8eb1f0b142b0cfcf",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:d697fc5068841f23",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:a6dee59e2e12a87e",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:52d26183a6571a2c",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "ConditionalAccumulation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "ConditionalAccumulation",
+      "theory_id": "theory:a3806b7391ad50d3",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 0
+            }
+          ],
+          "op": "Compare",
+          "operator": "Gt"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:49dd21c65184f760",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Compare",
+          "operator": "GtE"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:3fc1e7fd0554a349",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Compare",
+          "operator": "Lt"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:c5a7ab9e715a0915",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Compare",
+          "operator": "LtE"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:5a3dffabd2580970",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 0
+            }
+          ],
+          "op": "Compare",
+          "operator": "Gt"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:f6d4def42d1f9b99",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Compare",
+          "operator": "GtE"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:b0963b1acf236656",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Compare",
+          "operator": "Lt"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:fb0738b704cccb65",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Compare",
+          "operator": "LtE"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:42dc54fc438b5ccb",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 0
+            }
+          ],
+          "op": "Compare",
+          "operator": "Gt"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:03f090cbacc3b37e",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Compare",
+          "operator": "GtE"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:192f7e1c9d92f915",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Compare",
+          "operator": "Lt"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:a3aeb0b653e4f61a",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Compare",
+          "operator": "LtE"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      },
+      "family": "Piecewise",
+      "theory_id": "theory:14ac2a9742f1aa21",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:1c1b54db2fa6c6e5",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:3d40d070363e9fcf",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:057c4f57eccbf8c6",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:988d2ff7ff498547",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:00e71615efa76c1d",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:ca4230179e214ca6",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:dcc57174d72e2914",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:c29e3e3f8d05115f",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:fd338d9de947f0ff",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:3b06edca5fdfb7cf",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:2bdcefd6f1036b91",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "Dot",
+      "theory_id": "theory:bd38bbc15dba052c",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:ba7aa2a6b49012ae",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:635e973b9901ae00",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:43c18fc145a750db",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:3ae81575e3d49be2",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:f0e7c822f1cd72a0",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:870b68d0098c3289",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:f0e72d35dfd6091f",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:571d7d07115b7e34",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:0f8412dd6971fc75",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:8a5f8fa45ee19bbe",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:c814cec73c06f789",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "dot",
+        "op": "TensorContraction"
+      },
+      "family": "TensorContraction",
+      "theory_id": "theory:14c5ee39313b52cd",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:3d20a1144b06931a",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:f2c2513a91456518",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:54c59f8eefb29dbc",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:fda1b8aa2ba26d5e",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:fa76f81f8593d322",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:6244ffd38874a643",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:91a123b6cab1ad6c",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:934032f108b424ef",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:7c556be63d7023eb",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:749f2e3bda41cb34",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:7d45da9d38e130c8",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "args": [
+          {
+            "name": "x",
+            "op": "FreeVariable"
+          },
+          {
+            "name": "y",
+            "op": "FreeVariable"
+          }
+        ],
+        "kind": "matmul",
+        "op": "TensorContraction"
+      },
+      "family": "MatrixMultiply",
+      "theory_id": "theory:96764eee652be88a",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:8237466955922784",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:c6709dfa9244b395",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          1,
+          4
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:b86d6b1a331398f7",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:99e2863f0606878f",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:522f291424d59c7f",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:2565cebe43e8e7e2",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          1,
+          4
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:30443c072fe377e4",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:b9e926bf2d768084",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:1328f03a4c475b66",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          4,
+          1
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:87f75d221562f3b4",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          1,
+          4
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:d3ae497c64a5c559",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "reshape",
+        "op": "ShapeTransform",
+        "shape": [
+          2,
+          2
+        ]
+      },
+      "family": "Reshape",
+      "theory_id": "theory:03dcfeaca7d37b69",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": [
+          0,
+          1
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:07c38260b315fbcc",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": [
+          1,
+          0
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:a094e2c2e33de472",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": [
+          0,
+          1
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:059eee0669c61fcd",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axes": [
+          1,
+          0
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:187e94d77b5b32a1",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": [
+          0,
+          1
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:5b2c60c0b60f3072",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": [
+          1,
+          0
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:cd356ea62384d503",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": [
+          0,
+          1
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:0a0f1cba5cc125a8",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axes": [
+          1,
+          0
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:d4456c5d9ae74eb3",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": [
+          0,
+          1
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:abbad88317c6431f",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": [
+          1,
+          0
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:424489d34e85bf8c",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": [
+          0,
+          1
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:2e30b1cb9382bfd4",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axes": [
+          1,
+          0
+        ],
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "kind": "transpose",
+        "op": "ShapeTransform"
+      },
+      "family": "Transpose",
+      "theory_id": "theory:9c0c8d01cdf50cbf",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:9ff3e1d701b2c6c5",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:60f3ec3d37507d96",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:8f06304fbeee3393",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:be7a31db2fa147b0",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:d603c0b93502918d",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:1348555b6126a4a7",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:89d376597b118fc5",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:53eb63ac9bb97b48",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:092c1b24e459152d",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:d9f3d87929a69844",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:05538d1fb3c5f785",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Broadcast",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Broadcast",
+      "theory_id": "theory:c346c89dcc517f13",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axis": 0,
+        "edge_order": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:e69f5d830665a359",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axis": 1,
+        "edge_order": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:cf45c7c03374b991",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axis": 0,
+        "edge_order": 2,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:f724a26a9f2bdb8f",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axis": 1,
+        "edge_order": 2,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:a6e2bf6fe27a36be",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axis": 0,
+        "edge_order": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:ba4100796b1d5569",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axis": 1,
+        "edge_order": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:7bfd2c6faedc9de9",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axis": 0,
+        "edge_order": 2,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:cb9bd08dde513265",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axis": 1,
+        "edge_order": 2,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:1aeb770fd7ace6f7",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axis": 0,
+        "edge_order": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:6c543741fe68d757",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axis": 1,
+        "edge_order": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:49480d1b143b22ea",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axis": 0,
+        "edge_order": 2,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:4f2e6be29526ea70",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axis": 1,
+        "edge_order": 2,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "mathematical_operator": "Gradient",
+        "op": "FiniteDifference"
+      },
+      "family": "FiniteDifference",
+      "theory_id": "theory:d04f4b49411d5a91",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axis": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 1
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:3fda5f62839fbaca",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axis": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 2
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:2e680930b04deaac",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axis": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 3
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:3c21308322ec58f3",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "axis": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 4
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:1a12376556742fe3",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axis": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 1
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:cc2f06a78d70eadd",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axis": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 2
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:77f5a7a3cc9585b9",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axis": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 3
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:61baac07008b3414",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "axis": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 4
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:9669ff8da937a59c",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axis": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 1
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:d3e4ea96eea82972",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axis": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 2
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:ef9687478679b8f5",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axis": 0,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 3
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:21f208c4bb6d8109",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "axis": 1,
+        "input": {
+          "name": "x",
+          "op": "FreeVariable"
+        },
+        "op": "DiscreteDifference",
+        "order": 4
+      },
+      "family": "DiscreteDifference",
+      "theory_id": "theory:35b5424cb9d47e4a",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:be1d45777ad75c67",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:b46489682a677af6",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:64eede6628486cd0",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:aa2259d744f94d57",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:c75d838d30f63d16",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:0bcc93bc7c58677c",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:9369a409c133bef3",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:78baf45fc29e0799",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:39f2a37a1ae6cc85",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:e521cd68471da42a",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:8b3fa1db33a4dd7d",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Quadrature",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Quadrature",
+      "theory_id": "theory:011c37cbe24228a7",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:8bd56ac27707cc70",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:2b54bfeb463f141a",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:a6e05cc4e8f82eae",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:a4cedc5a4b8534fd",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:d98fcf4113e6bcc6",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:5c428c66eb55c8e8",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:5db61d120ec75467",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:f1c5abe59a00ea48",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:e757827f0b2d0d1d",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:c5d3193db1facd5d",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:4a6713d8868ebed5",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Interpolation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Interpolation",
+      "theory_id": "theory:915aa3a497f6b061",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:fca5af44938c2e58",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:b34a81290d67f602",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:6d8d26d9916b0ed6",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:2dca101d8e11e223",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:39bd93784ba49af1",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:893271c8164568d0",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:c2b5d7dfc6b885b6",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:e4e8c9a315a1e55e",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:e0162dff2508ea89",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:b538b5985ceb0649",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:e382ba974af9a76c",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Expectation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Expectation",
+      "theory_id": "theory:749e49a66b39c57f",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:40ce2fcb9a56266c",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:412414f6a14943a2",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:74a89b42b945d096",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:fdc92f757c2e5eb6",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:056c0694adb7f1a6",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:aa32aa253ee1df7e",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:5e3cb95628cef4a6",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:2b63cd372e18233b",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:d2df0f0e3408da5a",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:fe9c708399d0665b",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:d6adfbb2947799e0",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Variance",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Variance",
+      "theory_id": "theory:aa7f46fc3e3708c5",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:71fef47757365e50",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:bb563c15e391a2af",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:d3d10ef5bbf8f1d8",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:d083ad28e5f0bba4",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:e3e2c9c0ed8f8c09",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:a3a162e495858742",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:d9efbbf30fa80d4d",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:a9ef68a175cd11e8",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:921e6fba05384144",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:6d7038ef35a8b5b8",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:5c8642b14ac9436e",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "Estimator",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "Estimator",
+      "theory_id": "theory:1e3f904e5d24232b",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:8069320d39e1d45f",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:ee5cd6c8abcfc6e3",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:f0992dd7fec25c33",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:7f62f5ba3c28bc5c",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:4a59857283c45a84",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:20866b623b8acb9f",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:e280a59c35f2a07e",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:04308b6ff59b5d78",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:6d3e93204e39fcd9",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:6605991486d97389",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:401a66aa920d3271",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "MonteCarloEstimate",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "MonteCarloEstimate",
+      "theory_id": "theory:5c9a1b2e9ca05817",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:70322e8f1bd9caa5",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:0bd94eb338387019",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:c4b28307def4fa60",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:01877b57304d51c9",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:ac8df7a5b4dc1075",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:2c29b3903363c625",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:73482d461b47a2df",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:ba900e6e78d7f2b7",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:388ebb169933543c",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:586ca03b434ab65a",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:e925b23f2e3336bd",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "GraphOperation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "GraphOperation",
+      "theory_id": "theory:46a05dd4592d9d65",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:3c56516c96f531b7",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:d7a8ae1ed4becf37",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:21aedbbfd546671d",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "SIMPLE",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:394a08acad8e8366",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:2040f9717855f4d7",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:d685daa1cdf09c0c",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:662d7cc265e32667",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "MODERATE",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:51afb1ec6f31fff5",
+      "variation": 3
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 0
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:0f38ac6f3e94515e",
+      "variation": 0
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 1
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:a4fb74ad426e0f88",
+      "variation": 1
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 2
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:6a88cb188321eb8f",
+      "variation": 2
+    },
+    {
+      "assumptions": [],
+      "complexity": "COMPLEX",
+      "expression": {
+        "op": "SpatialOperation",
+        "parameters": {
+          "variation": 3
+        },
+        "status": "THEORY_ONLY"
+      },
+      "family": "SpatialOperation",
+      "theory_id": "theory:f717e41d25f70426",
+      "variation": 3
+    }
+  ],
+  "generator_version": "large-self-audit-v1",
+  "schema_version": "1.0",
+  "seed": 20260827
+}

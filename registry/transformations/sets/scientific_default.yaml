@@ -1,0 +1,17 @@
+schema_version: "0.1"
+transformation_set:
+  id: scientific_default
+  version: "1.0.0"
+  exact_rules: [alpha_rename, inline_temporary, finite_sum_normalization, neutral_element_elimination, simple_commutative_normalization, piecewise_normalization, division_rewrite_nonzero]
+  approximation_rules: [forward_difference_first_derivative, backward_difference_first_derivative, central_difference_first_derivative, central_difference_second_derivative, left_rectangle_rule, right_rectangle_rule, midpoint_rule, trapezoidal_rule, simpson_rule, nearest_neighbor_interpolation, linear_interpolation, multilinear_interpolation]
+  forbidden_rules: [fft_derivative]
+  hard_constraints: {finite_domain_required: true, maximum_selection_error: 0.0001}
+  required_observables: []
+  objectives:
+    - {metric: computational_cost, direction: minimize}
+    - {metric: memory_cost, direction: minimize}
+    - {metric: transformation_path_length, direction: minimize}
+    - {metric: unproven_selection_error_estimate, direction: minimize}
+  cost_model: {kind: symbolic}
+  selection_policy: {type: lexicographic, default_profile: minimum_cost}
+  provenance: {maintainer: cpp-audit, source: built-in}

@@ -1,0 +1,96 @@
+{
+  "repositories": [
+    {
+      "classification": "PARTIAL_RECONSTRUCTION",
+      "code_first_status": "PASS_WITH_FINDINGS",
+      "commit": "6068016edd5acb19e17c0abbe809cdce8ba1370a",
+      "diagnostic_counts": {
+        "LOOP_SEMANTICS_PRESERVED": 2,
+        "OPAQUE_NUMERIC_CALL": 34,
+        "THEORY_NOT_REGISTERED": 1
+      },
+      "false_acceptance": 0,
+      "false_certified_promotion": 0,
+      "false_exact_promotion": 0,
+      "implementation_status": "EXPRESSION_PARTIALLY_EXTRACTED",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "reason": "finite-difference implementation",
+      "repository": "https://github.com/numpy/numpy",
+      "retrieved_date": "2026-08-29",
+      "selected_file": "numpy/lib/_function_base_impl.py",
+      "selected_function": "gradient",
+      "selected_output": "out",
+      "source_retained": false
+    },
+    {
+      "classification": "PARTIAL_RECONSTRUCTION",
+      "code_first_status": "PASS_WITH_FINDINGS",
+      "commit": "aca77e3b86d37990e8e3a5b05857cf1ee330ea90",
+      "diagnostic_counts": {
+        "OPAQUE_NUMERIC_CALL": 21,
+        "THEORY_NOT_REGISTERED": 1
+      },
+      "false_acceptance": 0,
+      "false_certified_promotion": 0,
+      "false_exact_promotion": 0,
+      "implementation_status": "EXPRESSION_PARTIALLY_EXTRACTED",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "reason": "quadrature implementation",
+      "repository": "https://github.com/scipy/scipy",
+      "retrieved_date": "2026-08-29",
+      "selected_file": "scipy/integrate/_quadrature.py",
+      "selected_function": "trapezoid",
+      "selected_output": "ret",
+      "source_retained": false
+    },
+    {
+      "classification": "PARTIAL_RECONSTRUCTION",
+      "code_first_status": "PASS_WITH_FINDINGS",
+      "commit": "a48f3152c3e83be2069772fc8043383f8a7ad62a",
+      "diagnostic_counts": {
+        "LOOP_SEMANTICS_PRESERVED": 2,
+        "OPAQUE_NUMERIC_CALL": 17,
+        "OVERLOADED_OPERATOR_SEMANTICS_UNRESOLVED": 1,
+        "THEORY_NOT_REGISTERED": 1
+      },
+      "false_acceptance": 0,
+      "false_certified_promotion": 0,
+      "false_exact_promotion": 0,
+      "implementation_status": "EXPRESSION_PARTIALLY_EXTRACTED",
+      "language": "Python",
+      "license": "Apache-2.0",
+      "reason": "labeled tensor contraction",
+      "repository": "https://github.com/pydata/xarray",
+      "retrieved_date": "2026-08-29",
+      "selected_file": "xarray/computation/computation.py",
+      "selected_function": "dot",
+      "selected_output": "result",
+      "source_retained": false
+    },
+    {
+      "classification": "PARTIAL_RECONSTRUCTION",
+      "code_first_status": "PASS_WITH_FINDINGS",
+      "commit": "9dc535daa30d7d36d63d4a003b54342fbc7032db",
+      "diagnostic_counts": {
+        "OPAQUE_NUMERIC_CALL": 5,
+        "THEORY_NOT_REGISTERED": 1
+      },
+      "false_acceptance": 0,
+      "false_certified_promotion": 0,
+      "false_exact_promotion": 0,
+      "implementation_status": "EXPRESSION_PARTIALLY_EXTRACTED",
+      "language": "Python",
+      "license": "BSD-3-Clause",
+      "reason": "parallel reduction",
+      "repository": "https://github.com/dask/dask",
+      "retrieved_date": "2026-08-29",
+      "selected_file": "dask/array/reductions.py",
+      "selected_function": "sum",
+      "selected_output": "result",
+      "source_retained": false
+    }
+  ],
+  "schema_version": "1.0"
+}

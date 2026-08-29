@@ -1,0 +1,18 @@
+{
+  "semantic_core": "Rust",
+  "interop": "Stable C ABI v1",
+  "facade_frontends": [
+    "Python",
+    "C++/Clang",
+    "Rust project frontend"
+  ],
+  "proof": "Lean 4.19.0 / mathlib 4.19.0",
+  "serialization": [
+    "JSON",
+    "TeX"
+  ],
+  "python_runtime_dependencies": [
+    "PyYAML>=6.0",
+    "jsonschema>=4.21"
+  ]
+}

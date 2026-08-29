@@ -1,0 +1,3536 @@
+{
+  "pairs": [
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:b7444f5675f9b7fb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b7444f5675f9b7fb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b7444f5675f9b7fb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b7444f5675f9b7fb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b7444f5675f9b7fb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b7444f5675f9b7fb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:620fe1dee64cdba2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:620fe1dee64cdba2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:620fe1dee64cdba2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:620fe1dee64cdba2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:620fe1dee64cdba2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:620fe1dee64cdba2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:b9c7b3449a56ca4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b9c7b3449a56ca4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b9c7b3449a56ca4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b9c7b3449a56ca4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b9c7b3449a56ca4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b9c7b3449a56ca4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:2ff1545abb273317"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2ff1545abb273317"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2ff1545abb273317"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2ff1545abb273317"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2ff1545abb273317"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2ff1545abb273317"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:83104de14abf34dd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:83104de14abf34dd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:83104de14abf34dd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:83104de14abf34dd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:83104de14abf34dd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:83104de14abf34dd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:3e80378905856a44"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3e80378905856a44"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3e80378905856a44"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3e80378905856a44"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3e80378905856a44"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3e80378905856a44"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:9054ee3c51af68fa"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:9054ee3c51af68fa"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9054ee3c51af68fa"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:9054ee3c51af68fa"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9054ee3c51af68fa"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9054ee3c51af68fa"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:c1daed875c511973"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c1daed875c511973"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c1daed875c511973"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c1daed875c511973"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c1daed875c511973"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c1daed875c511973"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:0c0c673fa2c62cf6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:0c0c673fa2c62cf6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:0c0c673fa2c62cf6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:0c0c673fa2c62cf6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:0c0c673fa2c62cf6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:0c0c673fa2c62cf6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:580d50b146e2108d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:580d50b146e2108d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:580d50b146e2108d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:580d50b146e2108d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:580d50b146e2108d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:580d50b146e2108d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:8660add6eea19983"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:8660add6eea19983"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:8660add6eea19983"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:8660add6eea19983"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:8660add6eea19983"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:8660add6eea19983"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:d82c190994712617"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:d82c190994712617"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:d82c190994712617"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:d82c190994712617"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:d82c190994712617"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:d82c190994712617"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:3eaff3e883691fd5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3eaff3e883691fd5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3eaff3e883691fd5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3eaff3e883691fd5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3eaff3e883691fd5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3eaff3e883691fd5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:212f92d906777a1e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:212f92d906777a1e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:212f92d906777a1e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:212f92d906777a1e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:212f92d906777a1e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:212f92d906777a1e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:a5a5c1fde8406eb1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:a5a5c1fde8406eb1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:a5a5c1fde8406eb1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:a5a5c1fde8406eb1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:a5a5c1fde8406eb1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:a5a5c1fde8406eb1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:452f836a4afdcd9a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:452f836a4afdcd9a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:452f836a4afdcd9a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:452f836a4afdcd9a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:452f836a4afdcd9a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:452f836a4afdcd9a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:009f5e661fd25dd8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:009f5e661fd25dd8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:009f5e661fd25dd8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:009f5e661fd25dd8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:009f5e661fd25dd8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:009f5e661fd25dd8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:6c3060bdbdae9679"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:6c3060bdbdae9679"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:6c3060bdbdae9679"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:6c3060bdbdae9679"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:6c3060bdbdae9679"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:6c3060bdbdae9679"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:ca1e76fedd801f07"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:ca1e76fedd801f07"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:ca1e76fedd801f07"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:ca1e76fedd801f07"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:ca1e76fedd801f07"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:ca1e76fedd801f07"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:d690f18d0a0e5073"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:d690f18d0a0e5073"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:d690f18d0a0e5073"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:d690f18d0a0e5073"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:d690f18d0a0e5073"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:d690f18d0a0e5073"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:85666257986e5a19"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:85666257986e5a19"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:85666257986e5a19"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:85666257986e5a19"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:85666257986e5a19"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:85666257986e5a19"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:f5bc09b7a5c395b9"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:f5bc09b7a5c395b9"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f5bc09b7a5c395b9"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:f5bc09b7a5c395b9"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f5bc09b7a5c395b9"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f5bc09b7a5c395b9"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:fcff675ea521fc0e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fcff675ea521fc0e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fcff675ea521fc0e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fcff675ea521fc0e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fcff675ea521fc0e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fcff675ea521fc0e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:183f22a92e87eb31"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:183f22a92e87eb31"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:183f22a92e87eb31"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:183f22a92e87eb31"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:183f22a92e87eb31"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:183f22a92e87eb31"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:9fe79cf920426826"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:9fe79cf920426826"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9fe79cf920426826"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:9fe79cf920426826"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9fe79cf920426826"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9fe79cf920426826"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:b92f711acb36c597"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b92f711acb36c597"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b92f711acb36c597"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b92f711acb36c597"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b92f711acb36c597"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b92f711acb36c597"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:2f29c435f46a1a30"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2f29c435f46a1a30"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2f29c435f46a1a30"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2f29c435f46a1a30"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2f29c435f46a1a30"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2f29c435f46a1a30"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:510b7dab516fe126"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:510b7dab516fe126"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:510b7dab516fe126"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:510b7dab516fe126"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:510b7dab516fe126"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:510b7dab516fe126"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:3265db5c4c8d7bbb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3265db5c4c8d7bbb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3265db5c4c8d7bbb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3265db5c4c8d7bbb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3265db5c4c8d7bbb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3265db5c4c8d7bbb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:023d51c20bb8e428"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:023d51c20bb8e428"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:023d51c20bb8e428"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:023d51c20bb8e428"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:023d51c20bb8e428"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:023d51c20bb8e428"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:c36a1a4e200bf77b"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c36a1a4e200bf77b"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c36a1a4e200bf77b"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c36a1a4e200bf77b"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c36a1a4e200bf77b"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c36a1a4e200bf77b"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:f702a111178424fe"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:f702a111178424fe"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f702a111178424fe"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:f702a111178424fe"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f702a111178424fe"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f702a111178424fe"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:887f661e02ac7e4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:887f661e02ac7e4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:887f661e02ac7e4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:887f661e02ac7e4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:887f661e02ac7e4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:887f661e02ac7e4e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:633336db15a3f510"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:633336db15a3f510"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:633336db15a3f510"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:633336db15a3f510"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:633336db15a3f510"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:633336db15a3f510"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:9ee03c5f93550e5d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:9ee03c5f93550e5d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9ee03c5f93550e5d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:9ee03c5f93550e5d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9ee03c5f93550e5d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:9ee03c5f93550e5d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:c3887f4a60b76372"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c3887f4a60b76372"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c3887f4a60b76372"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c3887f4a60b76372"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c3887f4a60b76372"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c3887f4a60b76372"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:49dd21c65184f760"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:49dd21c65184f760"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:49dd21c65184f760"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:49dd21c65184f760"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:49dd21c65184f760"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:49dd21c65184f760"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:3fc1e7fd0554a349"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3fc1e7fd0554a349"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3fc1e7fd0554a349"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3fc1e7fd0554a349"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3fc1e7fd0554a349"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3fc1e7fd0554a349"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:c5a7ab9e715a0915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c5a7ab9e715a0915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c5a7ab9e715a0915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c5a7ab9e715a0915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c5a7ab9e715a0915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c5a7ab9e715a0915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:5a3dffabd2580970"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:5a3dffabd2580970"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:5a3dffabd2580970"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:5a3dffabd2580970"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:5a3dffabd2580970"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:5a3dffabd2580970"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:f6d4def42d1f9b99"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:f6d4def42d1f9b99"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f6d4def42d1f9b99"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:f6d4def42d1f9b99"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f6d4def42d1f9b99"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f6d4def42d1f9b99"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:b0963b1acf236656"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b0963b1acf236656"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b0963b1acf236656"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b0963b1acf236656"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b0963b1acf236656"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:b0963b1acf236656"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:fb0738b704cccb65"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fb0738b704cccb65"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fb0738b704cccb65"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fb0738b704cccb65"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fb0738b704cccb65"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fb0738b704cccb65"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:42dc54fc438b5ccb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:42dc54fc438b5ccb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:42dc54fc438b5ccb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:42dc54fc438b5ccb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:42dc54fc438b5ccb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:42dc54fc438b5ccb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:03f090cbacc3b37e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:03f090cbacc3b37e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:03f090cbacc3b37e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:03f090cbacc3b37e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:03f090cbacc3b37e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:03f090cbacc3b37e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:192f7e1c9d92f915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:192f7e1c9d92f915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:192f7e1c9d92f915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:192f7e1c9d92f915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:192f7e1c9d92f915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:192f7e1c9d92f915"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:a3aeb0b653e4f61a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:a3aeb0b653e4f61a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:a3aeb0b653e4f61a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:a3aeb0b653e4f61a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:a3aeb0b653e4f61a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:a3aeb0b653e4f61a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:14ac2a9742f1aa21"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:14ac2a9742f1aa21"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:14ac2a9742f1aa21"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:14ac2a9742f1aa21"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:14ac2a9742f1aa21"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:14ac2a9742f1aa21"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:1c1b54db2fa6c6e5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:1c1b54db2fa6c6e5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:1c1b54db2fa6c6e5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:1c1b54db2fa6c6e5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:1c1b54db2fa6c6e5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:1c1b54db2fa6c6e5"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:3d40d070363e9fcf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3d40d070363e9fcf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3d40d070363e9fcf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3d40d070363e9fcf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3d40d070363e9fcf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3d40d070363e9fcf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:057c4f57eccbf8c6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:057c4f57eccbf8c6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:057c4f57eccbf8c6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:057c4f57eccbf8c6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:057c4f57eccbf8c6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:057c4f57eccbf8c6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:988d2ff7ff498547"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:988d2ff7ff498547"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:988d2ff7ff498547"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:988d2ff7ff498547"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:988d2ff7ff498547"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:988d2ff7ff498547"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:00e71615efa76c1d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:00e71615efa76c1d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:00e71615efa76c1d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:00e71615efa76c1d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:00e71615efa76c1d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:00e71615efa76c1d"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:ca4230179e214ca6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:ca4230179e214ca6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:ca4230179e214ca6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:ca4230179e214ca6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:ca4230179e214ca6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:ca4230179e214ca6"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:dcc57174d72e2914"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:dcc57174d72e2914"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:dcc57174d72e2914"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:dcc57174d72e2914"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:dcc57174d72e2914"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:dcc57174d72e2914"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:c29e3e3f8d05115f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c29e3e3f8d05115f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c29e3e3f8d05115f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c29e3e3f8d05115f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c29e3e3f8d05115f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:c29e3e3f8d05115f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:fd338d9de947f0ff"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fd338d9de947f0ff"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fd338d9de947f0ff"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fd338d9de947f0ff"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fd338d9de947f0ff"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fd338d9de947f0ff"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:3b06edca5fdfb7cf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3b06edca5fdfb7cf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3b06edca5fdfb7cf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3b06edca5fdfb7cf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3b06edca5fdfb7cf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3b06edca5fdfb7cf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:2bdcefd6f1036b91"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2bdcefd6f1036b91"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2bdcefd6f1036b91"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2bdcefd6f1036b91"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2bdcefd6f1036b91"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:2bdcefd6f1036b91"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:bd38bbc15dba052c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:bd38bbc15dba052c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:bd38bbc15dba052c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:bd38bbc15dba052c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:bd38bbc15dba052c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:bd38bbc15dba052c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:3d20a1144b06931a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3d20a1144b06931a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3d20a1144b06931a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:3d20a1144b06931a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3d20a1144b06931a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:3d20a1144b06931a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:f2c2513a91456518"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:f2c2513a91456518"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f2c2513a91456518"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:f2c2513a91456518"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f2c2513a91456518"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:f2c2513a91456518"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:54c59f8eefb29dbc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:54c59f8eefb29dbc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:54c59f8eefb29dbc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:54c59f8eefb29dbc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:54c59f8eefb29dbc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:54c59f8eefb29dbc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:fda1b8aa2ba26d5e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fda1b8aa2ba26d5e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fda1b8aa2ba26d5e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fda1b8aa2ba26d5e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fda1b8aa2ba26d5e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fda1b8aa2ba26d5e"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:fa76f81f8593d322"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fa76f81f8593d322"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fa76f81f8593d322"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:fa76f81f8593d322"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fa76f81f8593d322"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:fa76f81f8593d322"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:6244ffd38874a643"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:6244ffd38874a643"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:6244ffd38874a643"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:6244ffd38874a643"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:6244ffd38874a643"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:6244ffd38874a643"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:91a123b6cab1ad6c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:91a123b6cab1ad6c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:91a123b6cab1ad6c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:91a123b6cab1ad6c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:91a123b6cab1ad6c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:91a123b6cab1ad6c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:934032f108b424ef"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:934032f108b424ef"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:934032f108b424ef"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:934032f108b424ef"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:934032f108b424ef"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:934032f108b424ef"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:7c556be63d7023eb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:7c556be63d7023eb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:7c556be63d7023eb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:7c556be63d7023eb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:7c556be63d7023eb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:7c556be63d7023eb"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:749f2e3bda41cb34"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:749f2e3bda41cb34"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:749f2e3bda41cb34"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:749f2e3bda41cb34"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:749f2e3bda41cb34"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:749f2e3bda41cb34"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:7d45da9d38e130c8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:7d45da9d38e130c8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:7d45da9d38e130c8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:7d45da9d38e130c8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:7d45da9d38e130c8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:7d45da9d38e130c8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:96764eee652be88a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:96764eee652be88a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:96764eee652be88a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:96764eee652be88a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:96764eee652be88a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "numpy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "torch",
+      "theory_id": "theory:96764eee652be88a"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:8237466955922784"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:8237466955922784"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:8237466955922784"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:c6709dfa9244b395"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c6709dfa9244b395"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:c6709dfa9244b395"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:b86d6b1a331398f7"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b86d6b1a331398f7"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b86d6b1a331398f7"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:99e2863f0606878f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:99e2863f0606878f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:99e2863f0606878f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:522f291424d59c7f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:522f291424d59c7f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:522f291424d59c7f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:2565cebe43e8e7e2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2565cebe43e8e7e2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2565cebe43e8e7e2"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:30443c072fe377e4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:30443c072fe377e4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:30443c072fe377e4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:b9e926bf2d768084"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b9e926bf2d768084"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:b9e926bf2d768084"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:1328f03a4c475b66"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:1328f03a4c475b66"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:1328f03a4c475b66"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:87f75d221562f3b4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:87f75d221562f3b4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:87f75d221562f3b4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:d3ae497c64a5c559"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:d3ae497c64a5c559"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:d3ae497c64a5c559"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:03dcfeaca7d37b69"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:03dcfeaca7d37b69"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:03dcfeaca7d37b69"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:07c38260b315fbcc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:07c38260b315fbcc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:07c38260b315fbcc"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:a094e2c2e33de472"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:a094e2c2e33de472"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:a094e2c2e33de472"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:059eee0669c61fcd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:059eee0669c61fcd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:059eee0669c61fcd"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:187e94d77b5b32a1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:187e94d77b5b32a1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:187e94d77b5b32a1"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:5b2c60c0b60f3072"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:5b2c60c0b60f3072"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:5b2c60c0b60f3072"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:cd356ea62384d503"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:cd356ea62384d503"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:cd356ea62384d503"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:0a0f1cba5cc125a8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:0a0f1cba5cc125a8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:0a0f1cba5cc125a8"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:d4456c5d9ae74eb3"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:d4456c5d9ae74eb3"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:d4456c5d9ae74eb3"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:abbad88317c6431f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:abbad88317c6431f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:abbad88317c6431f"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:424489d34e85bf8c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:424489d34e85bf8c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:424489d34e85bf8c"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:2e30b1cb9382bfd4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2e30b1cb9382bfd4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:2e30b1cb9382bfd4"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "jax",
+      "theory_id": "theory:9c0c8d01cdf50cbf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "cupy",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:9c0c8d01cdf50cbf"
+    },
+    {
+      "execution_status": "NUMERIC_EXECUTION_DIFFERENT",
+      "left": "jax",
+      "mathematical_status": "MATHEMATICAL_IR_EQUIVALENT",
+      "right": "numpy",
+      "theory_id": "theory:9c0c8d01cdf50cbf"
+    }
+  ],
+  "schema_version": "1.0",
+  "status_counts": {
+    "MATHEMATICAL_IR_EQUIVALENT": 504
+  }
+}

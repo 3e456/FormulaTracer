@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "starting_head": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "remote_release_branch": "origin/feature/public-api-reference-harvester",
+  "remote_release_head": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "isolated_branch": "feature/prepublic-semantic-coverage-hardening",
+  "isolated_worktree_role": "NON_E_DRIVE_ISOLATED_WORKTREE",
+  "release_branch_directly_edited": false,
+  "private_corpus_enabled": false,
+  "protected_private_document_accessed": false
+}

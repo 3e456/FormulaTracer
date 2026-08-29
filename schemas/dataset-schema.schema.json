@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/dataset-schema.schema.json",
+  "type": "object",
+  "required": ["format", "fields", "dimensions"],
+  "properties": {
+    "format": {"type": "string"},
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "shape", "dimensions", "coordinates"],
+        "properties": {
+          "name": {"type": "string"}, "dtype": {"type": ["string", "null"]},
+          "shape": {"type": "array", "items": {"type": ["integer", "null"]}},
+          "dimensions": {"type": "array", "items": {"type": "string"}},
+          "coordinates": {"type": "array", "items": {"type": "string"}},
+          "unit": {"type": ["string", "null"]},
+          "missing_value_semantics": {"type": ["string", "null"]},
+          "encoding": {"type": ["string", "null"]}
+        },
+        "additionalProperties": false
+      }
+    },
+    "dimensions": {"type": "array", "items": {"type": "string"}},
+    "encoding": {"type": ["string", "null"]},
+    "schema_id": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,3780 @@
+{
+  "backends": [
+    "python-explicit",
+    "python-loop",
+    "numpy",
+    "jax",
+    "torch",
+    "cupy",
+    "sympy",
+    "rust-explicit",
+    "rust-for",
+    "rust-iterator",
+    "rust-ndarray",
+    "rust-rayon",
+    "rust-nalgebra",
+    "rust-faer",
+    "cpp-explicit",
+    "cpp-loop",
+    "cpp-std",
+    "cpp-eigen",
+    "cpp-boost"
+  ],
+  "capabilities": [
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Arithmetic",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Elementwise",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "FiniteSum",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "FiniteProduct",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Reduction",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Map",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Filter",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "FoldLeft",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "TransformReduce",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "FilteredSum",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "ConditionalAccumulation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Piecewise",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Dot",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "TensorContraction",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "MatrixMultiply",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Reshape",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Transpose",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Broadcast",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "FiniteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "DiscreteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Quadrature",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Interpolation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Expectation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Variance",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "Estimator",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "MonteCarloEstimate",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "GraphOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-explicit",
+      "execution": "PYTHON_SCALAR",
+      "family": "SpatialOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Arithmetic",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Elementwise",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "FiniteSum",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "FiniteProduct",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Reduction",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Map",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Filter",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "FoldLeft",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "TransformReduce",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "FilteredSum",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "ConditionalAccumulation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Piecewise",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Dot",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "TensorContraction",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "MatrixMultiply",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Reshape",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Transpose",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Broadcast",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "FiniteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "DiscreteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Quadrature",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Interpolation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Expectation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Variance",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "Estimator",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "MonteCarloEstimate",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "GraphOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "python-loop",
+      "execution": "PYTHON_SEQUENTIAL",
+      "family": "SpatialOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Arithmetic",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Elementwise",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "FiniteSum",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "FiniteProduct",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Reduction",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Map",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Filter",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "FoldLeft",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "TransformReduce",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "FilteredSum",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "ConditionalAccumulation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Piecewise",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Dot",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "TensorContraction",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "MatrixMultiply",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Reshape",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Transpose",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Broadcast",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "FiniteDifference",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "DiscreteDifference",
+      "language": "python",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Quadrature",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Interpolation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Expectation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Variance",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "Estimator",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "MonteCarloEstimate",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "GraphOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "numpy",
+      "execution": "CPU_ARRAY",
+      "family": "SpatialOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Arithmetic",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Elementwise",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "FiniteSum",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "FiniteProduct",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Reduction",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Map",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Filter",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "FoldLeft",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "TransformReduce",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "FilteredSum",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "ConditionalAccumulation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Piecewise",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Dot",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "TensorContraction",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "MatrixMultiply",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Reshape",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Transpose",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Broadcast",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "FiniteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "DiscreteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Quadrature",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Interpolation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Expectation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Variance",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "Estimator",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "MonteCarloEstimate",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "GraphOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "jax",
+      "execution": "JIT_DEVICE",
+      "family": "SpatialOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Arithmetic",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Elementwise",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "FiniteSum",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "FiniteProduct",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Reduction",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Map",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Filter",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "FoldLeft",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "TransformReduce",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "FilteredSum",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "ConditionalAccumulation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Piecewise",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Dot",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "TensorContraction",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "MatrixMultiply",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Reshape",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Transpose",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Broadcast",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "FiniteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "DiscreteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Quadrature",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Interpolation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Expectation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Variance",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "Estimator",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "MonteCarloEstimate",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "GraphOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "torch",
+      "execution": "TENSOR_DEVICE_AUTOGRAD",
+      "family": "SpatialOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Arithmetic",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Elementwise",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "FiniteSum",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "FiniteProduct",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Reduction",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Map",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Filter",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "FoldLeft",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "TransformReduce",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "FilteredSum",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "ConditionalAccumulation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Piecewise",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Dot",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "TensorContraction",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "MatrixMultiply",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Reshape",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Transpose",
+      "language": "python",
+      "status": "SUPPORTED_UNDER_ASSUMPTIONS"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Broadcast",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "FiniteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "DiscreteDifference",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Quadrature",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Interpolation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Expectation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Variance",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "Estimator",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "MonteCarloEstimate",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "GraphOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cupy",
+      "execution": "GPU_REORDERABLE",
+      "family": "SpatialOperation",
+      "language": "python",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Arithmetic",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Elementwise",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "FiniteSum",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "FiniteProduct",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Reduction",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Map",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Filter",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "FoldLeft",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "TransformReduce",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "FilteredSum",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "ConditionalAccumulation",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Piecewise",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Dot",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "TensorContraction",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "MatrixMultiply",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Reshape",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Transpose",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Broadcast",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "FiniteDifference",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "DiscreteDifference",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Quadrature",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Interpolation",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Expectation",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Variance",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "Estimator",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "MonteCarloEstimate",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "GraphOperation",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "sympy",
+      "execution": "SYMBOLIC",
+      "family": "SpatialOperation",
+      "language": "python",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Arithmetic",
+      "language": "rust",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Elementwise",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "FiniteSum",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "FiniteProduct",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Reduction",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Map",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Filter",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "FoldLeft",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "TransformReduce",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "FilteredSum",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "ConditionalAccumulation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Piecewise",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Dot",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "TensorContraction",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "MatrixMultiply",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Reshape",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Transpose",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Broadcast",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "FiniteDifference",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "DiscreteDifference",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Quadrature",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Interpolation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Expectation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Variance",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "Estimator",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "MonteCarloEstimate",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "GraphOperation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-explicit",
+      "execution": "RUST_SCALAR",
+      "family": "SpatialOperation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Arithmetic",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Elementwise",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "FiniteSum",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "FiniteProduct",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Reduction",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Map",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Filter",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "FoldLeft",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "TransformReduce",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "FilteredSum",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "ConditionalAccumulation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Piecewise",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Dot",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "TensorContraction",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "MatrixMultiply",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Reshape",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Transpose",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Broadcast",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "FiniteDifference",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "DiscreteDifference",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Quadrature",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Interpolation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Expectation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Variance",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "Estimator",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "MonteCarloEstimate",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "GraphOperation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-for",
+      "execution": "RUST_SEQUENTIAL",
+      "family": "SpatialOperation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Arithmetic",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Elementwise",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "FiniteSum",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "FiniteProduct",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Reduction",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Map",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Filter",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "FoldLeft",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "TransformReduce",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "FilteredSum",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "ConditionalAccumulation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Piecewise",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Dot",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "TensorContraction",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "MatrixMultiply",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Reshape",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Transpose",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Broadcast",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "FiniteDifference",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "DiscreteDifference",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Quadrature",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Interpolation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Expectation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Variance",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "Estimator",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "MonteCarloEstimate",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "GraphOperation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-iterator",
+      "execution": "RUST_ITERATOR",
+      "family": "SpatialOperation",
+      "language": "rust",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Arithmetic",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Elementwise",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "FiniteSum",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "FiniteProduct",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Reduction",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Map",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Filter",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "FoldLeft",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "TransformReduce",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "FilteredSum",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "ConditionalAccumulation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Piecewise",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Dot",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "TensorContraction",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "MatrixMultiply",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Reshape",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Transpose",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Broadcast",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "FiniteDifference",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "DiscreteDifference",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Quadrature",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Interpolation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Expectation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Variance",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "Estimator",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "MonteCarloEstimate",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "GraphOperation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-ndarray",
+      "execution": "RUST_NDARRAY",
+      "family": "SpatialOperation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Arithmetic",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Elementwise",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "FiniteSum",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "FiniteProduct",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Reduction",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Map",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Filter",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "FoldLeft",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "TransformReduce",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "FilteredSum",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "ConditionalAccumulation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Piecewise",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Dot",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "TensorContraction",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "MatrixMultiply",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Reshape",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Transpose",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Broadcast",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "FiniteDifference",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "DiscreteDifference",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Quadrature",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Interpolation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Expectation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Variance",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "Estimator",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "MonteCarloEstimate",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "GraphOperation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-rayon",
+      "execution": "PARALLEL_REORDERABLE",
+      "family": "SpatialOperation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Arithmetic",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Elementwise",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "FiniteSum",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "FiniteProduct",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Reduction",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Map",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Filter",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "FoldLeft",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "TransformReduce",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "FilteredSum",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "ConditionalAccumulation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Piecewise",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Dot",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "TensorContraction",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "MatrixMultiply",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Reshape",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Transpose",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Broadcast",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "FiniteDifference",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "DiscreteDifference",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Quadrature",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Interpolation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Expectation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Variance",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "Estimator",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "MonteCarloEstimate",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "GraphOperation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-nalgebra",
+      "execution": "RUST_NALGEBRA",
+      "family": "SpatialOperation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Arithmetic",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Elementwise",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "FiniteSum",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "FiniteProduct",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Reduction",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Map",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Filter",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "FoldLeft",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "TransformReduce",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "FilteredSum",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "ConditionalAccumulation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Piecewise",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Dot",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "TensorContraction",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "MatrixMultiply",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Reshape",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Transpose",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Broadcast",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "FiniteDifference",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "DiscreteDifference",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Quadrature",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Interpolation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Expectation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Variance",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "Estimator",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "MonteCarloEstimate",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "GraphOperation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "rust-faer",
+      "execution": "RUST_FAER",
+      "family": "SpatialOperation",
+      "language": "rust",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Arithmetic",
+      "language": "cpp",
+      "status": "SUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Elementwise",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "FiniteSum",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "FiniteProduct",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Reduction",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Map",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Filter",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "FoldLeft",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "TransformReduce",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "FilteredSum",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "ConditionalAccumulation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Piecewise",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Dot",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "TensorContraction",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "MatrixMultiply",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Reshape",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Transpose",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Broadcast",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "FiniteDifference",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "DiscreteDifference",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Quadrature",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Interpolation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Expectation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Variance",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "Estimator",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "MonteCarloEstimate",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "GraphOperation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-explicit",
+      "execution": "CPP_SCALAR",
+      "family": "SpatialOperation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Arithmetic",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Elementwise",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "FiniteSum",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "FiniteProduct",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Reduction",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Map",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Filter",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "FoldLeft",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "TransformReduce",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "FilteredSum",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "ConditionalAccumulation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Piecewise",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Dot",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "TensorContraction",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "MatrixMultiply",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Reshape",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Transpose",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Broadcast",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "FiniteDifference",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "DiscreteDifference",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Quadrature",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Interpolation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Expectation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Variance",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "Estimator",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "MonteCarloEstimate",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "GraphOperation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-loop",
+      "execution": "CPP_SEQUENTIAL",
+      "family": "SpatialOperation",
+      "language": "cpp",
+      "status": "UNSUPPORTED"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Arithmetic",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Elementwise",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "FiniteSum",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "FiniteProduct",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Reduction",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Map",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Filter",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "FoldLeft",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "TransformReduce",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "FilteredSum",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "ConditionalAccumulation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Piecewise",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Dot",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "TensorContraction",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "MatrixMultiply",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Reshape",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Transpose",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Broadcast",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "FiniteDifference",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "DiscreteDifference",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Quadrature",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Interpolation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Expectation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Variance",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "Estimator",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "MonteCarloEstimate",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "GraphOperation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-std",
+      "execution": "CPP_STD",
+      "family": "SpatialOperation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Arithmetic",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Elementwise",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "FiniteSum",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "FiniteProduct",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Reduction",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Map",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Filter",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "FoldLeft",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "TransformReduce",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "FilteredSum",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "ConditionalAccumulation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Piecewise",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Dot",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "TensorContraction",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "MatrixMultiply",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Reshape",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Transpose",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Broadcast",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "FiniteDifference",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "DiscreteDifference",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Quadrature",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Interpolation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Expectation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Variance",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "Estimator",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "MonteCarloEstimate",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "GraphOperation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-eigen",
+      "execution": "CPP_EIGEN_VECTORIZED",
+      "family": "SpatialOperation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Arithmetic",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Elementwise",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "FiniteSum",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "FiniteProduct",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Reduction",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Map",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Filter",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "FoldLeft",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "TransformReduce",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "FilteredSum",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "ConditionalAccumulation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Piecewise",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Dot",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "TensorContraction",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "MatrixMultiply",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Reshape",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Transpose",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Broadcast",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "FiniteDifference",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "DiscreteDifference",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Quadrature",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Interpolation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Expectation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Variance",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "Estimator",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "MonteCarloEstimate",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "GraphOperation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    },
+    {
+      "backend": "cpp-boost",
+      "execution": "CPP_BOOST",
+      "family": "SpatialOperation",
+      "language": "cpp",
+      "status": "REFERENCE_ONLY"
+    }
+  ],
+  "families": [
+    "Arithmetic",
+    "Elementwise",
+    "FiniteSum",
+    "FiniteProduct",
+    "Reduction",
+    "Map",
+    "Filter",
+    "FoldLeft",
+    "TransformReduce",
+    "FilteredSum",
+    "ConditionalAccumulation",
+    "Piecewise",
+    "Dot",
+    "TensorContraction",
+    "MatrixMultiply",
+    "Reshape",
+    "Transpose",
+    "Broadcast",
+    "FiniteDifference",
+    "DiscreteDifference",
+    "Quadrature",
+    "Interpolation",
+    "Expectation",
+    "Variance",
+    "Estimator",
+    "MonteCarloEstimate",
+    "GraphOperation",
+    "SpatialOperation"
+  ],
+  "schema_version": "1.0"
+}

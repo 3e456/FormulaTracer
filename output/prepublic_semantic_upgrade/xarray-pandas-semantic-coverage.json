@@ -1,0 +1,276 @@
+{
+  "schema_version": "1.0",
+  "providers": [
+    "xarray",
+    "pandas"
+  ],
+  "counts": {
+    "FULL_RECONSTRUCTION": 5
+  },
+  "false_exact_promotion": 0,
+  "false_certified_promotion": 0,
+  "records": [
+    {
+      "case_id": "xarray-inner-alignment",
+      "provider": "xarray",
+      "root_cause": "LABELED_ALIGNMENT",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "alignment_semantics": {
+            "kind": "INNER",
+            "mapping": [
+              {
+                "dimension": "time",
+                "left_present": true,
+                "output_label": 1,
+                "right_present": true
+              },
+              {
+                "dimension": "time",
+                "left_present": true,
+                "output_label": 2,
+                "right_present": true
+              }
+            ]
+          },
+          "coordinate_semantics": {
+            "time": [
+              1,
+              2
+            ]
+          },
+          "dimension_semantics": [
+            {
+              "length": 3,
+              "name": "time"
+            }
+          ],
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "xarray"
+            }
+          ],
+          "missingness_semantics": "PROPAGATE",
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "args": [
+              "x",
+              "y"
+            ],
+            "op": "Add"
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "xarray-label-select",
+      "provider": "xarray",
+      "root_cause": "LABELED_SELECTION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "xarray"
+            }
+          ],
+          "selection_semantics": {
+            "kind": "LABEL",
+            "selector": [
+              1,
+              2
+            ]
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "input": {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            "kind": "LABEL",
+            "op": "Selection",
+            "selector": [
+              1,
+              2
+            ]
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "xarray-skipna-reduction",
+      "provider": "xarray",
+      "root_cause": "LABELED_REDUCTION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "xarray"
+            }
+          ],
+          "reduction_semantics": {
+            "dimensions": [
+              "time"
+            ],
+            "dtype": "float64",
+            "keepdims": false,
+            "missing_policy": "IGNORE"
+          },
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "dimensions": [
+              "time"
+            ],
+            "input": {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            "op": "FiniteSum",
+            "skip_missing": true
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "xarray-linear-interpolation",
+      "provider": "xarray",
+      "root_cause": "INTERPOLATION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "xarray"
+            }
+          ],
+          "exact_promotion": false,
+          "proof_obligations": [
+            "INTERPOLATION_ERROR_BOUND_NOT_ESTABLISHED"
+          ],
+          "relation": "APPROXIMATION_OF",
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "coordinates": {
+              "time": [
+                0.5
+              ]
+            },
+            "input": {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            "method": "LINEAR",
+            "op": "Interpolation"
+          }
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "pandas-outer-fill",
+      "provider": "pandas",
+      "root_cause": "MISSINGNESS",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "LABELED_DATA",
+        "result": {
+          "alignment_semantics": {
+            "kind": "OUTER",
+            "mapping": [
+              {
+                "dimension": "time",
+                "left_present": true,
+                "output_label": 0,
+                "right_present": false
+              },
+              {
+                "dimension": "time",
+                "left_present": true,
+                "output_label": 1,
+                "right_present": true
+              },
+              {
+                "dimension": "time",
+                "left_present": false,
+                "output_label": 2,
+                "right_present": true
+              }
+            ]
+          },
+          "coordinate_semantics": {
+            "time": [
+              0,
+              1,
+              2
+            ]
+          },
+          "dimension_semantics": [
+            {
+              "length": 2,
+              "name": "time"
+            }
+          ],
+          "evidence": [
+            {
+              "kind": "REFERENCE_CONTRACT",
+              "provider": "pandas"
+            }
+          ],
+          "missingness_semantics": "CONDITIONAL_FALLBACK",
+          "status": "FULL_RECONSTRUCTION",
+          "value_semantics": {
+            "cases": [
+              {
+                "then": {
+                  "args": [
+                    "x",
+                    "y"
+                  ],
+                  "op": "Add"
+                },
+                "when": "both_available"
+              },
+              {
+                "then": {
+                  "name": "x",
+                  "op": "FreeVariable"
+                },
+                "when": "left_only"
+              },
+              {
+                "then": {
+                  "name": "y",
+                  "op": "FreeVariable"
+                },
+                "when": "right_only"
+              }
+            ],
+            "op": "Piecewise",
+            "otherwise": {
+              "op": "Missing"
+            }
+          }
+        },
+        "schema_version": "1.0"
+      }
+    }
+  ]
+}

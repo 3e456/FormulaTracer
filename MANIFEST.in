@@ -1,0 +1,6 @@
+include LICENSE README.md README.ja.md THIRD_PARTY_NOTICES.md CITATION.cff SECURITY.md
+include Cargo.toml Cargo.lock rust-toolchain.toml
+recursive-include rust *.rs Cargo.toml
+recursive-include include *.h *.hpp
+recursive-include schemas *.json
+recursive-include registry *.json *.yaml

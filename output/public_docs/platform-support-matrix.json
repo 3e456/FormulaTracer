@@ -1,0 +1,15 @@
+{
+  "Linux x86_64": {
+    "packaged": "CI_CONFIGURED_NOT_EXECUTED",
+    "tested": "CI_CONFIGURED_NOT_EXECUTED"
+  },
+  "Windows x86_64": {
+    "packaged": "PASS",
+    "tested": "PASS"
+  },
+  "macOS": {
+    "packaged": false,
+    "status": "UNTESTED",
+    "tested": false
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "correctly_unresolved_reason": "required type/effect/call-target/backend/runtime evidence or a genuinely general static-decision limit is absent",
+  "remaining": [
+    {
+      "audit_class": "STATIC_PLUS_USER_CONTRACT",
+      "final_class": "COVERABLE_BUT_DEFERRED",
+      "gap_id": "symbolic_data_dependent_shape",
+      "root_cause": "MISSING_TYPE_OR_SHAPE_INFORMATION"
+    },
+    {
+      "audit_class": "STATIC_PLUS_USER_CONTRACT",
+      "final_class": "REQUIRES_USER_INFORMATION",
+      "gap_id": "opaque_callback_mathematics",
+      "root_cause": "MISSING_USER_INFORMATION"
+    },
+    {
+      "audit_class": "STATIC_PLUS_USER_CONTRACT",
+      "final_class": "REQUIRES_USER_INFORMATION",
+      "gap_id": "callback_effect_summary",
+      "root_cause": "MISSING_EFFECT_INFORMATION"
+    },
+    {
+      "audit_class": "STATIC_PLUS_RUNTIME_EVIDENCE",
+      "final_class": "REQUIRES_RUNTIME_EVIDENCE",
+      "gap_id": "runtime_generated_call_target",
+      "root_cause": "MISSING_CALL_TARGET_INFORMATION"
+    },
+    {
+      "audit_class": "STATIC_PLUS_RUNTIME_EVIDENCE",
+      "final_class": "REQUIRES_PROVIDER_INFORMATION",
+      "gap_id": "unknown_dask_backend_and_tree",
+      "root_cause": "MISSING_PROVIDER_CONTRACT"
+    },
+    {
+      "audit_class": "STATIC_PLUS_USER_CONTRACT",
+      "final_class": "SOUNDLY_PARTIAL_ONLY",
+      "gap_id": "impure_callback_value_effect_split",
+      "root_cause": "MISSING_EFFECT_INFORMATION"
+    },
+    {
+      "audit_class": "STATIC_ONLY",
+      "final_class": "NOT_SOUNDLY_DECIDABLE_STATICALLY",
+      "gap_id": "general_unbounded_termination",
+      "root_cause": "COMPUTABILITY_OR_DECIDABILITY_LIMIT"
+    },
+    {
+      "audit_class": "STATIC_PLUS_RUNTIME_EVIDENCE",
+      "final_class": "NOT_SOUNDLY_DECIDABLE_STATICALLY",
+      "gap_id": "arbitrary_reflection_and_dynamic_eval",
+      "root_cause": "LANGUAGE_DYNAMICITY_LIMIT"
+    }
+  ],
+  "remaining_count": 8
+}

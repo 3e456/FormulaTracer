@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "audience": "technical",
+  "report_surface": "repository Markdown requested by the user",
+  "required_structure_mapping": {
+    "technical_summary": "Technical summary",
+    "key_findings": "The observed pipeline agrees across supported ecosystems; Adversarial changes fail closed",
+    "scope_and_definitions": "Scope, definitions, and evidence boundaries",
+    "methodology": "Methodology prevents generator self-confirmation",
+    "limitations_and_robustness": "Limitations and robustness",
+    "recommended_next_steps": "Recommended next steps",
+    "further_questions": "Further questions"
+  },
+  "sources": [
+    "output/self_audit/summary.json",
+    "output/self_audit/valid-round-trip-results.json",
+    "output/self_audit/cross-library-results.json",
+    "output/self_audit/cross-language-results.json",
+    "output/self_audit/mutation-results.json",
+    "output/self_audit/metamorphic-results.json",
+    "output/self_audit/debugger-localization.json",
+    "output/self_audit/approximation-results.json",
+    "output/self_audit/probability-results.json",
+    "output/self_audit/performance.json",
+    "output/self_audit/defect-summary.json"
+    ,"output/self_audit/regression-results.json"
+  ],
+  "visual_omission_reason": "Exact audit counts and categorical assurance statuses are more legible as compact tables; a chart would obscure denominators and proof boundaries.",
+  "chart_map": [],
+  "peak_memory_omission": "Allocation tracing materially increased the run time; peak memory is null and explicitly marked unavailable.",
+  "generated_at_basis": "Deterministic local run; seed and generator version are recorded in the artifacts."
+}

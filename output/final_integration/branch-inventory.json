@@ -1,0 +1,10 @@
+{
+  "coverage_candidate": "499fa1721a3b0ed2a64800d0eddf824b7a7ffcec",
+  "integration_branch": "feature/prepublic-final-integration-assurance",
+  "integration_head": "28b2f2ab66d284517a00b7df4d04c6d811707778",
+  "physics_candidate": "50fd9df09a01b9bd9fb2cc23ea1c1542c17ef9db",
+  "push_performed": false,
+  "release_baseline": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "release_branch_modified": false,
+  "schema_version": "1.0"
+}

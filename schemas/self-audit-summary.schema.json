@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.local/schemas/self-audit-summary.schema.json",
+  "type": "object",
+  "required": ["schema_version", "status", "generator_version", "seed", "theories_generated",
+    "valid_source_cases", "round_trip_counts", "mutation_cases", "false_acceptance",
+    "CRITICAL_SELF_AUDIT_FALSE_ACCEPTANCE_OPEN", "release_criterion"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"const": "LARGE_SCALE_SELF_AUDIT_COMPLETE"},
+    "generator_version": {"type": "string", "minLength": 1},
+    "seed": {"type": "integer"},
+    "theories_generated": {"type": "integer", "minimum": 300},
+    "valid_source_cases": {"type": "integer", "minimum": 200},
+    "round_trip_counts": {"type": "object"},
+    "mutation_cases": {"type": "integer", "minimum": 1},
+    "false_acceptance": {"type": "integer", "minimum": 0},
+    "CRITICAL_SELF_AUDIT_FALSE_ACCEPTANCE_OPEN": {"type": "integer", "minimum": 0},
+    "release_criterion": {"enum": ["PASS", "FAIL"]}
+  },
+  "additionalProperties": true
+}

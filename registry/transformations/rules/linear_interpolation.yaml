@@ -1,0 +1,14 @@
+schema_version: "0.1"
+rule:
+  id: linear_interpolation
+  kind: approximation
+  approximation_family_id: linear_interpolation
+  relation: APPROXIMATION_OF
+  source_pattern: {op: Interpolation}
+  target_template: {op: Interpolation, method: linear, support_points: [{op: FreeVariable, name: x0}, {op: FreeVariable, name: x1}], query_point: {op: FreeVariable, name: x}, weights: [{op: Subtract, args: [{op: Constant, value: 1}, {op: FreeVariable, name: t}]}, {op: FreeVariable, name: t}], axis: {op: FreeVariable, name: axis}, domain_status: INTERPOLATION}
+  parameters: [x0, x1, x, t, axis, dimension]
+  conditions: ["query point is inside support domain", "axis or dimension is explicit"]
+  proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_linear_interpolation_is_registered
+  cost: {symbolic_arithmetic_operations: 4, asymptotic_memory_rank: 1, transformation_path_length: 1}
+  library_contract: {qualified_callable: xarray.DataArray.interp, exact_semantic_operator: Interpolation, scope: public_reference_contract}

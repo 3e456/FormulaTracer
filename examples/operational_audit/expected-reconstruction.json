@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "example_origin": "INDEPENDENT_SYNTHETIC",
+  "exact_case": {
+    "output": "weighted_score",
+    "implementation_root": "Map",
+    "reduction": "SUM",
+    "comparison_match": true
+  },
+  "relational_case": {
+    "relation": "DISCRETIZATION_OF",
+    "rule": "central_difference_first_derivative",
+    "remaining_error_obligation": true
+  },
+  "opaque_case": {
+    "operation": "OpaqueNumericCall",
+    "expected_status": "UNRESOLVED"
+  }
+}

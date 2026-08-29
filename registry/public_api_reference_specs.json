@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "libraries": [
+    {"package":"numpy","package_version":"2.4.4","documentation_root":"https://numpy.org/doc/2.4/","inventory_url":"https://numpy.org/doc/2.4/objects.inv","public_prefixes":["numpy"],"runtime_module":"numpy","version_policy":"major_minor"},
+    {"package":"pandas","package_version":"3.0.2","documentation_root":"https://pandas.pydata.org/docs/","inventory_url":"https://pandas.pydata.org/docs/objects.inv","public_prefixes":["pandas"],"runtime_module":"pandas","version_policy":"major_minor"},
+    {"package":"xarray","package_version":"2026.4.0","documentation_root":"https://docs.xarray.dev/en/v2026.04.0/","inventory_url":"https://docs.xarray.dev/en/v2026.04.0/objects.inv","public_prefixes":["xarray"],"runtime_module":"xarray","version_policy":"major_minor"},
+    {"package":"scipy","package_version":"1.17.1","documentation_root":"https://docs.scipy.org/doc/scipy-1.17.0/","inventory_url":"https://docs.scipy.org/doc/scipy-1.17.0/objects.inv","public_prefixes":["scipy"],"runtime_module":"scipy","version_policy":"major_minor"},
+    {"package":"dask","package_version":"2026.3.0","documentation_root":"https://docs.dask.org/en/stable/","inventory_url":"https://docs.dask.org/en/stable/objects.inv","public_prefixes":["dask"],"runtime_module":"dask","version_policy":"reference_unversioned"},
+    {"package":"geopandas","package_version":"1.1.3","documentation_root":"https://geopandas.org/en/v1.1.3/","inventory_url":"https://geopandas.org/en/v1.1.3/objects.inv","public_prefixes":["geopandas"],"runtime_module":"geopandas","version_policy":"exact"},
+    {"package":"shapely","package_version":"2.1.2","documentation_root":"https://shapely.readthedocs.io/en/2.1.2/","inventory_url":"https://shapely.readthedocs.io/en/2.1.2/objects.inv","public_prefixes":["shapely"],"runtime_module":"shapely","version_policy":"url_pinned"},
+    {"package":"pyproj","package_version":"3.7.2","documentation_root":"https://pyproj4.github.io/pyproj/3.7.2/","inventory_url":"https://pyproj4.github.io/pyproj/3.7.2/objects.inv","public_prefixes":["pyproj"],"runtime_module":"pyproj","version_policy":"url_pinned"},
+    {"package":"rasterio","package_version":"1.4.4","documentation_root":"https://rasterio.readthedocs.io/en/stable/","inventory_url":"https://rasterio.readthedocs.io/en/stable/objects.inv","public_prefixes":["rasterio"],"runtime_module":"rasterio","version_policy":"reference_unversioned"},
+    {"package":"netCDF4","package_version":"1.7.4","documentation_root":"https://unidata.github.io/netcdf4-python/","inventory_url":null,"html_index_url":"https://unidata.github.io/netcdf4-python/","public_prefixes":["netCDF4"],"runtime_module":"netCDF4","version_policy":"exact"},
+    {"package":"igraph","package_version":"1.0.0","documentation_root":"https://python.igraph.org/en/1.0.0/","inventory_url":null,"html_index_url":"https://python.igraph.org/en/1.0.0/api/index.html","public_prefixes":["igraph"],"runtime_module":"igraph","version_policy":"url_pinned"},
+    {"package":"python-builtins","package_version":"3.11.9","documentation_root":"https://docs.python.org/3.11/","inventory_url":"https://docs.python.org/3.11/objects.inv","public_prefixes":[],"runtime_module":"builtins","version_policy":"python_minor"}
+  ]
+}
+
+

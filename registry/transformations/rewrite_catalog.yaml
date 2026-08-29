@@ -1,0 +1,248 @@
+schema_version: "1.0"
+# A broad discovery registry.  Inclusion here is not authorization to apply a rule.
+defaults: &exact
+  relation_kind: EXACT
+  preconditions: []
+  domain_constraints: []
+  type_constraints: []
+  shape_constraints: []
+  assumptions: []
+  cost: 1
+  priority: 100
+  evidence: "FormulaTracer exact-semantics registry; kernel replay required for verification"
+  inverse_rule: null
+  motifs: []
+rules:
+  - <<: *exact
+    rule_id: alpha_rename
+    cost: 0
+    priority: 0
+    motifs: [bound_index]
+  - <<: *exact
+    rule_id: associative_normalization
+    cost: 0
+    priority: 1
+    motifs: [add, multiply]
+  - <<: *exact
+    rule_id: simple_commutative_normalization
+    cost: 0
+    priority: 2
+    motifs: [add, multiply]
+  - <<: *exact
+    rule_id: neutral_element_elimination
+    cost: 0
+    priority: 3
+    motifs: [add, multiply]
+  - <<: *exact
+    rule_id: sign_normalization
+    cost: 0
+    priority: 4
+    motifs: [negate]
+  - <<: *exact
+    rule_id: factor_common_denominator
+    inverse_rule: distribute_fraction
+    motifs: [add, divide]
+  - <<: *exact
+    rule_id: distribute_fraction
+    inverse_rule: factor_common_denominator
+    motifs: [divide, add]
+  - <<: *exact
+    rule_id: factor_multiplication
+    inverse_rule: distribute_multiplication
+    motifs: [add, multiply]
+  - <<: *exact
+    rule_id: distribute_multiplication
+    inverse_rule: factor_multiplication
+    motifs: [add, multiply]
+  - <<: *exact
+    rule_id: fraction_normalization
+    motifs: [divide]
+  - <<: *exact
+    rule_id: power_normalization
+    motifs: [power, root]
+  - <<: *exact
+    rule_id: finite_sum_normalization
+    cost: 0
+    motifs: [finite_sum, reduction]
+  - <<: *exact
+    rule_id: sum_constant_extraction
+    inverse_rule: sum_constant_insertion
+    motifs: [finite_sum, multiply]
+  - <<: *exact
+    rule_id: sum_reindex
+    cost: 2
+    preconditions: [bijection_on_finite_index_domain]
+    motifs: [finite_sum, bound_index]
+  - <<: *exact
+    rule_id: finite_sum_interval_split
+    cost: 2
+    preconditions: [split_index_in_domain]
+    motifs: [finite_sum]
+  - <<: *exact
+    rule_id: transpose_index_normalization
+    cost: 2
+    shape_constraints: [rank_at_least_two]
+    motifs: [transpose, indexed_tensor]
+  - <<: *exact
+    rule_id: dot_to_index_sum
+    cost: 2
+    shape_constraints: [contracted_dimensions_equal]
+    motifs: [dot, finite_sum, indexed_multiplication]
+  - <<: *exact
+    rule_id: matmul_to_index_sum
+    cost: 2
+    shape_constraints: [inner_dimensions_equal]
+    motifs: [matmul, tensor_contraction]
+  - <<: *exact
+    rule_id: indicator_to_piecewise
+    cost: 2
+    motifs: [indicator, piecewise, where]
+  - <<: *exact
+    rule_id: expectation_linearity
+    type_constraints: [integrable_random_variables]
+    motifs: [expectation, add]
+  - <<: *exact
+    rule_id: variance_covariance_expansion
+    cost: 2
+    preconditions: [finite_second_moments]
+    motifs: [variance, covariance]
+  - <<: *exact
+    rule_id: convolution_sum_form
+    cost: 2
+    motifs: [convolution, finite_sum]
+  - <<: *exact
+    rule_id: recurrence_to_factorial_term
+    cost: 3
+    preconditions: [recurrence_base_case_matches]
+    motifs: [recurrence, factorial, series]
+  - <<: *exact
+    rule_id: dft_inverse_normalization
+    cost: 3
+    preconditions: [finite_nonzero_length]
+    motifs: [dft, complex_exponential, finite_sum]
+  - <<: *exact
+    rule_id: fourier_frequency_reindex
+    cost: 3
+    preconditions: [frequency_grid_bijection]
+    motifs: [fourier, bound_index]
+  - <<: *exact
+    rule_id: trace_cyclicity
+    cost: 2
+    shape_constraints: [cyclic_products_well_typed]
+    motifs: [trace, matmul]
+  - <<: *exact
+    rule_id: sinh_exponential_form
+    cost: 2
+    motifs: [sinh, exp]
+  - <<: *exact
+    rule_id: cosh_exponential_form
+    cost: 2
+    motifs: [cosh, exp]
+  - <<: *exact
+    rule_id: pythagorean_trig_identity
+    cost: 2
+    motifs: [sin, cos, power]
+  - <<: *exact
+    rule_id: trig_addition_identity
+    cost: 3
+    motifs: [sin, cos, add]
+  - <<: *exact
+    rule_id: euler_to_exponential
+    relation_kind: IDENTITY_UNDER_ASSUMPTIONS
+    assumptions: [complex_semantics]
+    type_constraints: [complex_valued]
+    cost: 2
+    inverse_rule: exponential_to_euler
+    motifs: [sin, cos, exp, complex_exponential, fourier]
+    evidence: "Euler identity; replay under complex-number semantics required"
+  - <<: *exact
+    rule_id: exponential_to_euler
+    relation_kind: IDENTITY_UNDER_ASSUMPTIONS
+    assumptions: [complex_semantics]
+    type_constraints: [complex_valued]
+    cost: 2
+    inverse_rule: euler_to_exponential
+    motifs: [exp, complex_exponential, fourier]
+  - <<: *exact
+    rule_id: exp_log_cancel_positive
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    domain_constraints: [x_positive_real]
+    assumptions: [x > 0]
+    motifs: [exp, log]
+    evidence: "Real exp/log inverse contract on the positive domain"
+  - <<: *exact
+    rule_id: log_exp_cancel_real
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    domain_constraints: [z_real]
+    assumptions: [z is real]
+    motifs: [exp, log]
+    evidence: "Real log/exp inverse contract; not a complex principal-log identity"
+  - <<: *exact
+    rule_id: log_product_positive
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    domain_constraints: [x_positive_real, y_positive_real]
+    assumptions: [x > 0, y > 0]
+    cost: 2
+    motifs: [log, multiply]
+  - <<: *exact
+    rule_id: factorial_gamma_natural
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    domain_constraints: [n_natural]
+    assumptions: [n is natural]
+    cost: 2
+    motifs: [factorial, gamma]
+  - <<: *exact
+    rule_id: derivative_linearity
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    preconditions: [functions_differentiable]
+    assumptions: [differentiability]
+    cost: 2
+    motifs: [derivative, add]
+  - <<: *exact
+    rule_id: integral_linearity
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    preconditions: [functions_integrable]
+    assumptions: [integrability]
+    cost: 2
+    motifs: [integral, add]
+  - <<: *exact
+    rule_id: integration_by_parts
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    preconditions: [absolute_continuity]
+    assumptions: [absolute continuity]
+    cost: 3
+    motifs: [integral, derivative, multiply]
+  - <<: *exact
+    rule_id: laplace_shift
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    domain_constraints: [region_of_convergence_shifted]
+    assumptions: [ROC established]
+    cost: 3
+    motifs: [laplace, exp]
+  - <<: *exact
+    rule_id: convolution_transform_product
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    preconditions: [transform_exists]
+    assumptions: [transform convergence]
+    cost: 3
+    motifs: [convolution, fourier, laplace, multiply]
+  - <<: *exact
+    rule_id: taylor_partial_sum
+    relation_kind: TRUNCATION
+    preconditions: [remainder_bound_available]
+    cost: 4
+    motifs: [series, factorial, derivative]
+  - <<: *exact
+    rule_id: finite_difference_first_derivative
+    relation_kind: DISCRETIZATION
+    preconditions: [spacing_nonzero, smoothness]
+    assumptions: [local smoothness]
+    cost: 5
+    motifs: [shifted_evaluation, derivative]
+  - <<: *exact
+    rule_id: quadrature_weighted_sum
+    relation_kind: APPROXIMATION
+    preconditions: [partition_resolved, quadrature_error_bound]
+    assumptions: [integrand smoothness]
+    cost: 5
+    motifs: [integral, weighted_sum, sampled_values]

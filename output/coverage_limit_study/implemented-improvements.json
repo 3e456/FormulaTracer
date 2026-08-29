@@ -1,0 +1,9 @@
+{
+  "case_specific_fix_count": 0,
+  "implemented": [
+    "finite exhaustive key Piecewise",
+    "finite exhaustive dispatch",
+    "user declaration independent comparison",
+    "user-declared callback value/effect separation"
+  ]
+}

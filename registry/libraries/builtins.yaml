@@ -1,0 +1,20 @@
+schema_version: "0.1"
+package: builtins
+version: ">=3.10,<3.14"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://docs.python.org/3/library/functions.html#{callable}"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters]
+  ignore: [implementation_algorithm]
+simple_bindings:
+  reduction:
+    add: [sum]
+    minimum: [min]
+    maximum: [max]
+  unary:
+    abs: [abs]
+    round: [round]
+  algorithm:
+    quotient_remainder: [divmod]

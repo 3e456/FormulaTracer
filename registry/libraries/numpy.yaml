@@ -1,0 +1,242 @@
+schema_version: "0.1"
+package: numpy
+version: ">=2.0,<3.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://numpy.org/doc/stable/reference/generated/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [mathematical_relation, parameters, shape]
+  ignore: [implementation_algorithm, memory_layout, native_kernel]
+
+simple_bindings:
+  reduction:
+    add: [numpy.ndarray.sum]
+    multiply: [numpy.prod, numpy.ndarray.prod]
+    mean: [numpy.mean, numpy.ndarray.mean]
+    maximum: [numpy.max, numpy.ndarray.max, numpy.nanmax]
+    minimum: [numpy.min, numpy.ndarray.min, numpy.nanmin]
+    any: [numpy.any, numpy.ndarray.any]
+    all: [numpy.all, numpy.ndarray.all]
+    nan_add: [numpy.nansum]
+  unary:
+    abs: [numpy.abs]
+    sqrt: [numpy.sqrt]
+    log: [numpy.log]
+    log10: [numpy.log10]
+    log1p: [numpy.log1p]
+    exp: [numpy.exp]
+    sin: [numpy.sin]
+    cos: [numpy.cos]
+    arcsin: [numpy.arcsin]
+    arctan2: [numpy.arctan2]
+    deg2rad: [numpy.deg2rad, numpy.radians]
+    ceil: [numpy.ceil]
+    floor: [numpy.floor]
+    round: [numpy.round]
+    rint: [numpy.rint]
+    nan_to_num: [numpy.nan_to_num]
+    maximum: [numpy.maximum]
+    minimum: [numpy.minimum]
+    divide: [numpy.divide]
+    power: [numpy.power]
+  predicate:
+    isfinite: [numpy.isfinite]
+    isnan: [numpy.isnan]
+    membership: [numpy.isin]
+    close: [numpy.isclose]
+    all_close: [numpy.allclose]
+    array_equal: [numpy.array_equal]
+    scalar: [numpy.isscalar]
+    subtype: [numpy.issubdtype]
+    masked: [numpy.ma.is_masked]
+  shape:
+    reshape: [numpy.reshape, numpy.ndarray.reshape]
+    ravel: [numpy.ndarray.ravel]
+    flatten: [numpy.ndarray.flatten]
+    transpose: [numpy.transpose, numpy.ndarray.transpose]
+    concatenate: [numpy.concatenate]
+    stack: [numpy.stack, numpy.column_stack, numpy.vstack]
+    broadcast_to: [numpy.broadcast_to]
+    meshgrid: [numpy.meshgrid]
+    repeat: [numpy.repeat, numpy.tile]
+    moveaxis: [numpy.moveaxis]
+    flipud: [numpy.flipud]
+    at_least_1d: [numpy.atleast_1d]
+  representation:
+    asarray: [numpy.asarray]
+    array: [numpy.array]
+    copy: [numpy.ndarray.copy]
+    full: [numpy.full, numpy.full_like]
+    zeros: [numpy.zeros, numpy.zeros_like]
+    ones: [numpy.ones, numpy.ones_like]
+    empty: [numpy.empty]
+    empty_like: [numpy.empty_like]
+    from_iterator: [numpy.fromiter]
+    identity_matrix: [numpy.eye]
+    mask_fill: [numpy.ma.filled]
+    mask_invalid: [numpy.ma.masked_invalid]
+    scalar_float32: [numpy.float32]
+    timedelta: [numpy.timedelta64]
+    integer_type_info: [numpy.iinfo]
+  cast:
+    astype: [numpy.ndarray.astype]
+  axis:
+    integer_range: [numpy.arange]
+    linear_spacing: [numpy.linspace]
+  contraction:
+    dot: [numpy.dot]
+    matmul: [numpy.matmul]
+    einsum: [numpy.einsum]
+  conditional:
+    where: [numpy.where]
+    clip: [numpy.clip]
+  selection:
+    flat_nonzero: [numpy.flatnonzero]
+    nonzero: [numpy.nonzero, numpy.argwhere]
+    argmin: [numpy.argmin, numpy.ndarray.argmin]
+    argmax: [numpy.argmax]
+    argsort: [numpy.argsort]
+    argpartition: [numpy.argpartition]
+    sort: [numpy.sort]
+    lexsort: [numpy.lexsort]
+    take_along_axis: [numpy.take_along_axis]
+    searchsorted: [numpy.searchsorted]
+    unravel_index: [numpy.unravel_index]
+    triangular_indices: [numpy.triu_indices]
+  statistics:
+    standard_deviation: [numpy.std, numpy.ndarray.std, numpy.nanstd]
+    median: [numpy.median, numpy.ndarray.median, numpy.nanmedian]
+    quantile: [numpy.quantile, numpy.percentile, numpy.nanquantile, numpy.nanpercentile]
+    nan_mean: [numpy.nanmean]
+    covariance: [numpy.cov]
+    correlation: [numpy.corrcoef]
+    cumulative_sum: [numpy.cumsum]
+    histogram_count: [numpy.bincount]
+    count_nonzero: [numpy.count_nonzero]
+  interpolation:
+    linear: [numpy.interp]
+  linear_algebra:
+    norm: [numpy.linalg.norm]
+    symmetric_eigendecomposition: [numpy.linalg.eigh]
+    singular_value_decomposition: [numpy.linalg.svd]
+
+bindings:
+  - callable: numpy.errstate
+    family: AlgorithmInvocation
+    bind: {algorithm: floating_point_error_policy_context,
+           policies: [divide, over, under, invalid]}
+    reference: https://numpy.org/doc/stable/reference/generated/numpy.errstate.html
+    equivalence_scope:
+      preserve: [floating_point_error_policy]
+      ignore: [context_manager_implementation]
+  - callable: numpy.add.at
+    family: AlgorithmInvocation
+    bind: {algorithm: unbuffered_indexed_addition, mutates_input: true}
+    reference: https://numpy.org/doc/stable/reference/generated/numpy.ufunc.at.html
+    equivalence_scope:
+      preserve: [indexed_update_relation, update_order, assigned_values]
+      ignore: [native_kernel, memory_layout]
+  - callable: numpy.maximum.at
+    family: AlgorithmInvocation
+    bind: {algorithm: unbuffered_indexed_maximum, mutates_input: true}
+    reference: https://numpy.org/doc/stable/reference/generated/numpy.ufunc.at.html
+    equivalence_scope:
+      preserve: [indexed_update_relation, update_order, assigned_values]
+      ignore: [native_kernel, memory_layout]
+  - callable: numpy.minimum.at
+    family: AlgorithmInvocation
+    bind: {algorithm: unbuffered_indexed_minimum, mutates_input: true}
+    reference: https://numpy.org/doc/stable/reference/generated/numpy.ufunc.at.html
+    equivalence_scope:
+      preserve: [indexed_update_relation, update_order, assigned_values]
+      ignore: [native_kernel, memory_layout]
+  - callable: numpy.sum
+    family: Reduction
+    bind: {reducer: add}
+    reference: https://numpy.org/doc/stable/reference/generated/numpy.sum.html
+    reference_status: LEAN_VERIFIED_MAPPING
+  - callable: numpy.diff
+    family: Statistics
+    bind: {statistic: finite_difference}
+  - callable: numpy.gradient
+    family: Statistics
+    bind: {statistic: numerical_gradient}
+  - callable: numpy.unique
+    family: Statistics
+    bind: {statistic: unique_values, return_index_parameter: return_index,
+           return_inverse_parameter: return_inverse, return_counts_parameter: return_counts}
+  - callable: numpy.ndarray.tolist
+    family: RepresentationMapping
+    bind: {mapping: array_to_nested_python_scalars}
+  - callable: numpy.ndarray.tobytes
+    family: RepresentationMapping
+    bind: {mapping: contiguous_byte_representation, order_parameter: order}
+  - callable: numpy.ndarray.item
+    family: RepresentationMapping
+    bind: {mapping: array_scalar_to_python_scalar}
+  - callable: numpy.ndarray.view
+    family: RepresentationMapping
+    bind: {mapping: dtype_or_subclass_view}
+  - callable: numpy.ndim
+    family: ShapeTransform
+    bind: {transform: rank_query}
+  - callable: numpy.size
+    family: ShapeTransform
+    bind: {transform: element_count}
+  - callable: numpy.indices
+    family: AxisMapping
+    bind: {mapping: dense_index_grid}
+  - callable: numpy.fill_diagonal
+    family: AlgorithmInvocation
+    bind: {algorithm: diagonal_assignment, mutates_input: true}
+    equivalence_scope:
+      preserve: [diagonal_index_relation, assigned_value, wrap_parameter]
+      ignore: [iteration_algorithm, memory_layout]
+  - callable: numpy.random.default_rng
+    family: RepresentationMapping
+    bind: {mapping: random_generator}
+    reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.default_rng.html
+    equivalence_scope:
+      preserve: [generator_identity]
+      ignore: [PRNG_engine_when_not_requested]
+  - callable: numpy.random.Generator.uniform
+    family: RandomSample
+    bind: {distribution: uniform, parameters: [low, high], shape_parameter: size,
+           sequence_identity: engine_dependent}
+    reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.uniform.html
+    equivalence_scope:
+      preserve: [distribution, parameters, shape]
+      ignore: [implementation_algorithm, PRNG_engine, sample_sequence]
+  - callable: numpy.random.Generator.integers
+    family: RandomSample
+    bind: {distribution: discrete_uniform, parameters: [low, high, endpoint], shape_parameter: size,
+           sequence_identity: engine_dependent}
+    reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.integers.html
+    equivalence_scope:
+      preserve: [distribution, parameters, shape]
+      ignore: [implementation_algorithm, PRNG_engine, sample_sequence]
+  - callable: numpy.random.Generator.choice
+    family: RandomSample
+    bind: {distribution: categorical_or_finite_population, parameters: [a, replace, p], shape_parameter: size,
+           sequence_identity: engine_dependent}
+    reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.choice.html
+    equivalence_scope:
+      preserve: [distribution, population, probabilities, replacement, shape]
+      ignore: [implementation_algorithm, PRNG_engine, sample_sequence]
+  - callable: numpy.random.Generator.permutation
+    family: RandomSample
+    bind: {distribution: random_permutation, parameters: [x], shape_from: x,
+           sequence_identity: engine_dependent}
+    reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.permutation.html
+    equivalence_scope:
+      preserve: [distribution, population, shape]
+      ignore: [implementation_algorithm, PRNG_engine, sample_sequence]
+  - callable: numpy.random.Generator.normal
+    family: RandomSample
+    bind: {distribution: normal, parameters: [loc, scale], shape_parameter: size,
+           sequence_identity: engine_dependent}
+    reference: https://numpy.org/doc/stable/reference/random/generated/numpy.random.Generator.normal.html
+    equivalence_scope:
+      preserve: [distribution, parameters, shape]
+      ignore: [implementation_algorithm, PRNG_engine, sample_sequence]

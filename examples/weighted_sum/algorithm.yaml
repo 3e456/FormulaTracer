@@ -1,0 +1,18 @@
+schema_version: "0.1"
+algorithm_id: weighted_sum
+algorithm_version: "1.0.0"
+dimensions:
+  region: {symbol: r}
+  input: {symbol: i}
+inputs:
+  quantity: {type: tensor, scalar: real, dimensions: [region, input], unit: kg}
+  factor: {type: tensor, scalar: real, dimensions: [input], unit: unit_weight}
+steps:
+  weighted: {op: multiply, args: [quantity, factor]}
+  result: {op: reduce_sum, args: [weighted], dimensions: [input], reduction_order: left_to_right}
+outputs:
+  result: {dimensions: [region], unit: kg_result}
+preconditions: [quantity_nonnegative, factor_nonnegative, matching_input_coordinates, non_aliasing]
+postconditions: [result_nonnegative]
+numeric_model: AbstractReal
+missing_policy: reject

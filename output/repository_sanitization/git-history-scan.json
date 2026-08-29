@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "generated_date": "2026-08-29",
+  "scope": "ALL_REACHABLE_GIT_BLOBS",
+  "refs_scanned": 6,
+  "commits_scanned": 155,
+  "text_blobs_scanned": 1738,
+  "binary_or_oversize_skipped": 5,
+  "sensitive_hits": 0,
+  "category_counts": {},
+  "history_rewrite": "COMPLETE_IN_VALIDATED_FRESH_MIRROR",
+  "status": "PASS"
+}

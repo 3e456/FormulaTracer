@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "validated_code_sha": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "integration_source_head": "0ef0c6c4fbe62748cc4f155e12ebac13c006c580",
+  "post_validation_change_classes": {
+    "DOCUMENTATION_ONLY": 12,
+    "ASSURANCE_METADATA_ONLY": 8,
+    "GENERATED_REPORT_ONLY": 4,
+    "TEST_ONLY": 1,
+    "RELEASE_TOOLING": 1,
+    "EXAMPLE_EXECUTABLE": 1,
+    "BUILD_CONFIG": 0,
+    "PACKAGE_METADATA": 0,
+    "PRODUCT_EXECUTABLE_CODE": 0,
+    "SEMANTIC_CODE": 0,
+    "SCHEMA": 0,
+    "PUBLIC_API": 0
+  },
+  "product_paths_checked": [
+    "python/formulatracer",
+    "python/cpp_audit",
+    "rust",
+    "lean",
+    "include",
+    "schemas",
+    "pyproject.toml",
+    "Cargo.toml",
+    "Cargo.lock"
+  ],
+  "product_diff_after_validation": false,
+  "package_behavior_change_after_validation": false,
+  "classification_note": "tools/public_function_reference.py, its focused test, and the synthetic documentation example changed after validation. The user explicitly classified the final wording/generator correction as documentation-only release work and required document/parity/privacy revalidation without changing validated_code_sha.",
+  "status": "PASS"
+}

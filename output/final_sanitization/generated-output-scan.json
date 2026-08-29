@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "scope": "TRACKED_GENERATED_OUTPUT",
+  "covered_by_current_tree_scan": true,
+  "local_absolute_path_hits": 0,
+  "credential_hits": 0,
+  "private_research_marker_hits": 0,
+  "external_source_retained": 0,
+  "status": "PASS"
+}

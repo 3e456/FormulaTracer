@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0",
+  "engine": "RUST_NATIVE_RECONSTRUCTION_V1",
+  "fixture_count": 25,
+  "passed": 25,
+  "failed": 0,
+  "false_reconstruction": 0,
+  "triad": [
+    "NEGATIVE_MUTATION",
+    "POSITIVE_RECONSTRUCTION",
+    "RELATIONAL_RECONSTRUCTION"
+  ],
+  "outcomes": [
+    {
+      "case_id": "direct-exact",
+      "kind": "POSITIVE_RECONSTRUCTION",
+      "expected": "EXACT",
+      "actual": "EXACT",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "temporary-inline",
+      "kind": "POSITIVE_RECONSTRUCTION",
+      "expected": "EXACT",
+      "actual": "EXACT",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "temporary-unknown-effect",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "INLINE_UNINLINE",
+        "code": "INLINE_RECONSTRUCTION_UNRESOLVED",
+        "reason": "execution-sensitive temporary graph cannot be inlined safely"
+      }
+    },
+    {
+      "case_id": "loop-sum",
+      "kind": "POSITIVE_RECONSTRUCTION",
+      "expected": "EXACT",
+      "actual": "EXACT",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "loop-product",
+      "kind": "POSITIVE_RECONSTRUCTION",
+      "expected": "EXACT",
+      "actual": "EXACT",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "floating-loop-order",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "ALGORITHMIC_REALIZATION_RECONSTRUCTED",
+      "actual": "ALGORITHMIC_REALIZATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "loop-bound-mutation",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "approximation",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "APPROXIMATION_RECONSTRUCTED",
+      "actual": "APPROXIMATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "discretization",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "DISCRETIZATION_RECONSTRUCTED",
+      "actual": "DISCRETIZATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "truncation",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "TRUNCATION_RECONSTRUCTED",
+      "actual": "TRUNCATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "sampling",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "SAMPLING_RECONSTRUCTED",
+      "actual": "SAMPLING_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "algorithm-realization",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "ALGORITHMIC_REALIZATION_RECONSTRUCTED",
+      "actual": "ALGORITHMIC_REALIZATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "composite-sampled-fft",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "COMPOSITE_RELATION_RECONSTRUCTED",
+      "actual": "COMPOSITE_RELATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "provider-projection-python",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "APPROXIMATION_RECONSTRUCTED",
+      "actual": "APPROXIMATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "provider-projection-rust",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "APPROXIMATION_RECONSTRUCTED",
+      "actual": "APPROXIMATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "provider-projection-cpp",
+      "kind": "RELATIONAL_RECONSTRUCTION",
+      "expected": "APPROXIMATION_RECONSTRUCTED",
+      "actual": "APPROXIMATION_RECONSTRUCTED",
+      "passed": true,
+      "unresolved_reason": null
+    },
+    {
+      "case_id": "mutation-operator",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "mutation-axis",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "mutation-index-role",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "mutation-normalization",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "mutation-fourier-sign",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "mutation-shape",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "mutation-dtype",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "mutation-domain",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    },
+    {
+      "case_id": "mutation-branch",
+      "kind": "NEGATIVE_MUTATION",
+      "expected": "CORRECTLY_UNRESOLVED",
+      "actual": "CORRECTLY_UNRESOLVED",
+      "passed": true,
+      "unresolved_reason": {
+        "blocking_stage": "EXACT_EGRAPH_OR_RELATION_GRAPH",
+        "code": "RELATION_NOT_ESTABLISHED",
+        "structural_isomorphism_is_not_proof": true
+      }
+    }
+  ]
+}

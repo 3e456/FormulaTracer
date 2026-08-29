@@ -1,0 +1,351 @@
+{
+  "providers": [
+    {
+      "package": "builtins",
+      "registry_file": "registry/libraries/builtins.yaml",
+      "reference_scope": ">=3.10,<3.14",
+      "reference_status": "REFERENCE_EXTRACTED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": "https://docs.python.org/3/library/functions.html#{callable}"
+    },
+    {
+      "package": "dask",
+      "registry_file": "registry/libraries/dask.yaml",
+      "reference_scope": ">=2026.1,<2027.0",
+      "reference_status": "REFERENCE_EXTRACTED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "geopandas",
+      "registry_file": "registry/libraries/geopandas.yaml",
+      "reference_scope": ">=1.0,<2.0",
+      "reference_status": "REFERENCE_EXTRACTED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": "https://geopandas.org/en/stable/docs/reference/api/{callable}.html"
+    },
+    {
+      "package": "igraph",
+      "registry_file": "registry/libraries/igraph.yaml",
+      "reference_scope": ">=1.0,<2.0",
+      "reference_status": "REFERENCE_REVIEWED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "netCDF4",
+      "registry_file": "registry/libraries/netcdf4.yaml",
+      "reference_scope": ">=1.7,<2.0",
+      "reference_status": "REFERENCE_REVIEWED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "numpy",
+      "registry_file": "registry/libraries/numpy.yaml",
+      "reference_scope": ">=2.0,<3.0",
+      "reference_status": "REFERENCE_EXTRACTED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": "https://numpy.org/doc/stable/reference/generated/{callable}.html"
+    },
+    {
+      "package": "pandas",
+      "registry_file": "registry/libraries/pandas.yaml",
+      "reference_scope": ">=2.0,<4.0",
+      "reference_status": "REFERENCE_EXTRACTED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": "https://pandas.pydata.org/docs/reference/api/{callable}.html"
+    },
+    {
+      "package": "pyproj",
+      "registry_file": "registry/libraries/pyproj.yaml",
+      "reference_scope": ">=3.0,<4.0",
+      "reference_status": "REFERENCE_REVIEWED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "rasterio",
+      "registry_file": "registry/libraries/rasterio.yaml",
+      "reference_scope": ">=1.4,<2.0",
+      "reference_status": "REFERENCE_REVIEWED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "scipy",
+      "registry_file": "registry/libraries/scipy.yaml",
+      "reference_scope": ">=1.15,<2.0",
+      "reference_status": "REFERENCE_REVIEWED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "shapely",
+      "registry_file": "registry/libraries/shapely.yaml",
+      "reference_scope": ">=2.0,<3.0",
+      "reference_status": "REFERENCE_REVIEWED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": "https://shapely.readthedocs.io/en/stable/reference/{callable}.html"
+    },
+    {
+      "package": "xarray",
+      "registry_file": "registry/libraries/xarray.yaml",
+      "reference_scope": ">=2025.1,<2027.0",
+      "reference_status": "REFERENCE_EXTRACTED",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": "https://docs.xarray.dev/en/stable/generated/{callable}.html"
+    },
+    {
+      "package": "Eigen",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "boost",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "cupy",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "dask_ml",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "faer",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "h5py",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "jax",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "lightgbm",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "nalgebra",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "ndarray",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "networkx",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "numba",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "polars",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "pyarrow",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "rayon",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "sklearn",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "statsmodels",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "std",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "sympy",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "torch",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "xgboost",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    },
+    {
+      "package": "zarr",
+      "registry_file": "output/library_coverage/version-provenance.json",
+      "reference_scope": "UNVERIFIED",
+      "reference_status": "REFERENCE_CONTRACT",
+      "public_support_designation": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "entire_library_supported": false,
+      "official_reference": null
+    }
+  ],
+  "coverage": {
+    "ALIAS_COUNT": 158,
+    "DEPRECATED_API_COUNT": 34,
+    "DEPRECATED_CURRENT": 0,
+    "DEPRECATED_STATUS_UNKNOWN": 14830,
+    "DETAILED_REVIEW_COVERAGE": 1.0,
+    "DETAILED_REVIEW_REQUIRED": 5330,
+    "DETAILED_REVIEW_SEMANTIC_CLASS_COUNT": 21,
+    "EXISTING_FAMILY_REUSE": 4020,
+    "FORMALIZED_PUBLIC_API": 9207,
+    "FORMALIZED_PUBLIC_API_COUNT": 9207,
+    "FORMAL_CONTRACT_INVENTORY_ALIGNMENT": 0.9595959595959596,
+    "FORMAL_CONTRACT_OBJECT_COUNT": 2139,
+    "GENERATED_CONTRACT_CANDIDATE": 4020,
+    "IO_BOUNDARY": 717,
+    "METADATA": 4298,
+    "NEW_FAMILY_REQUIRED": 0,
+    "NON_NUMERIC": 499,
+    "NOT_APPLICABLE_CANDIDATE": 139,
+    "PRIVATE_EXCLUDED": 1296,
+    "REFERENCE_DETAILED_CONTRACT_CANDIDATE": 5172,
+    "REFERENCE_HARVEST_COVERAGE": 1.0,
+    "REFERENCE_INSUFFICIENT": 4,
+    "REFERENCE_SIMPLE_MAPPING_CANDIDATE": 3880,
+    "REFERENCE_VERSION_COMPATIBLE_MINOR": 4,
+    "REFERENCE_VERSION_UNVERIFIED": 2,
+    "REFERENCE_VERSION_VERIFIED": 6,
+    "REGISTERED_CONTRACT_MATCH": 298,
+    "RESEARCH_OBSERVED_API_COVERAGE": 1.0,
+    "REVIEW_PENDING": 0,
+    "SEMANTIC_CONTRACT_COVERAGE": 0.9847058823529412,
+    "SEMANTIC_EQUIVALENCE_CLASS_COUNT": 1837,
+    "SIGNATURE_AVAILABLE": 4,
+    "SIGNATURE_UNAVAILABLE": 14860,
+    "TOTAL_CONTRACT_TARGET": 9350,
+    "TOTAL_PUBLIC_API": 14864,
+    "USED_LIBRARY_PUBLIC_API_COVERAGE": 1.0,
+    "VERSION_VERIFICATION_COVERAGE": 0.8333333333333334
+  },
+  "support_policy": "SELECTED_CONTRACTS_NOT_ENTIRE_LIBRARY",
+  "release_version_policy": "REFERENCE_ONLY_VERSION_UNPINNED"
+}

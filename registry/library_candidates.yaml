@@ -1,0 +1,5 @@
+schema_version: '0.1'
+generated_date: '2026-08-26'
+status: NEEDS_REVIEW
+source_inventory: numeric_library_inventory.json
+candidates: []

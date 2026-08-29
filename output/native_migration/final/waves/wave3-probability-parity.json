@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "wave": 3,
+  "component": "probability",
+  "cases": [
+    {
+      "case": "known_provider",
+      "passed": true,
+      "invariant": "provider classification is reference-only"
+    },
+    {
+      "case": "unknown_provider",
+      "passed": true,
+      "invariant": "unknown random source unresolved"
+    },
+    {
+      "case": "sample_mean",
+      "passed": true,
+      "invariant": "estimator target explicit"
+    },
+    {
+      "case": "conditional_hoeffding",
+      "passed": true,
+      "invariant": "probabilistic bound retains assumptions"
+    },
+    {
+      "case": "unbounded_support",
+      "passed": true,
+      "invariant": "unbounded support never certified"
+    },
+    {
+      "case": "empirical_not_exact",
+      "passed": true,
+      "invariant": "empirical evidence is not contract proof"
+    }
+  ],
+  "passed": 6,
+  "total": 6,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

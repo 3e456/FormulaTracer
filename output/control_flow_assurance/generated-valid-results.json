@@ -1,0 +1,141 @@
+{
+  "cases": [
+    {
+      "canonical_ir_status": "SAME_CANONICAL_MATHEMATICAL_IR",
+      "case_id": "generated-1",
+      "languages": {
+        "cpp": {
+          "round_trip": "ROUND_TRIP_VERIFIED",
+          "source_hash": "47dee9f5096a0759faf80f8a13bdd5c396e105fd5cbdeac76d03fc0c644e4747",
+          "status": "ROUND_TRIP_VERIFIED"
+        },
+        "python": {
+          "round_trip": "ROUND_TRIP_VERIFIED",
+          "source_hash": "5a22bba5f2a0e97e64ea9b4a3f1187a2636b5dee71ca2c0ae53aa84e20ab17e7",
+          "status": "ROUND_TRIP_VERIFIED"
+        },
+        "rust": {
+          "round_trip": "ROUND_TRIP_VERIFIED",
+          "source_hash": "b8fb4ce4454a73a1bc74d5fffde19162bc197af3e9cebb0aa52a165b271dc93f",
+          "status": "ROUND_TRIP_VERIFIED"
+        }
+      },
+      "theory": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 3
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Add"
+      }
+    },
+    {
+      "canonical_ir_status": "CROSS_LANGUAGE_CANONICAL_IR_UNRESOLVED",
+      "case_id": "generated-2",
+      "languages": {
+        "cpp": {
+          "round_trip": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+          "source_hash": "bd60e2c4b7a6d2f63b9b812bffd9a10b7a93e36893f4ce67347bc926bf52e04d",
+          "status": "ROUND_TRIP_DIVERGENCE_LOCALIZED"
+        },
+        "python": {
+          "round_trip": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+          "source_hash": "e8bae17686b48cb47c6bed80721a5717f9ef8220e587a19f8489583dec5302d1",
+          "status": "ROUND_TRIP_DIVERGENCE_LOCALIZED"
+        },
+        "rust": {
+          "round_trip": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+          "source_hash": "f0c70d00295b66fa3ccc2bffc848bb37345f59167100c0caa7ad9b4b8d013d74",
+          "status": "ROUND_TRIP_DIVERGENCE_LOCALIZED"
+        }
+      },
+      "theory": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 0
+            }
+          ],
+          "comparison": "GreaterThan",
+          "op": "Compare"
+        },
+        "else": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Negate"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "x",
+          "op": "FreeVariable"
+        }
+      }
+    },
+    {
+      "canonical_ir_status": "CROSS_LANGUAGE_CANONICAL_IR_UNRESOLVED",
+      "case_id": "generated-3",
+      "languages": {
+        "cpp": {
+          "round_trip": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+          "source_hash": "b70a7e0d0d6f6010e8cc526ec1b5cd3d963d158aef37c4bdcdd776a3fadc23fd",
+          "status": "ROUND_TRIP_DIVERGENCE_LOCALIZED"
+        },
+        "python": {
+          "round_trip": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+          "source_hash": "8a58c5b97ed5d087bbd3275fd67073cf66f1210f486d224b59d10fc87247f78f",
+          "status": "ROUND_TRIP_DIVERGENCE_LOCALIZED"
+        },
+        "rust": {
+          "round_trip": "ROUND_TRIP_UNRESOLVED",
+          "source_hash": "efb4c5da5677e51064f9297d51257555e95ef32494279c177de9ac005b50a790",
+          "status": "ROUND_TRIP_UNRESOLVED"
+        }
+      },
+      "theory": {
+        "body": {
+          "name": "i",
+          "op": "FreeVariable"
+        },
+        "bound_index": "i",
+        "index_domain": {
+          "lower": {
+            "op": "Constant",
+            "value": 0
+          },
+          "upper_exclusive": {
+            "name": "n",
+            "op": "FreeVariable"
+          }
+        },
+        "op": "FiniteSum"
+      }
+    }
+  ],
+  "evidence_level": "METAMORPHICALLY_VALIDATED",
+  "round_trip_success": 3,
+  "schema_version": "1.0",
+  "self_generated_valid_cases": 9
+}

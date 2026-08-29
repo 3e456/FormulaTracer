@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-08-29T00:00:00+09:00",
+  "starting_release_branch": "feature/public-api-reference-harvester",
+  "starting_release_branch_head": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "integration_branch": "feature/prepublic-final-integration-assurance",
+  "integration_branch_head_from_request": "3f6bca2f36f95d6aa355a7119c8733dc241576f4",
+  "actual_integration_branch_head": "0ef0c6c4fbe62748cc4f155e12ebac13c006c580",
+  "validated_code_sha": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "default_branch": "main",
+  "default_branch_head": "8ff86f8c4b8d51289c7d26d0e11d685c60cafa6b",
+  "tag_inventory_before": [],
+  "release_inventory_before": [],
+  "working_tree_before": "CLEAN",
+  "repository_visibility": "PRIVATE"
+}

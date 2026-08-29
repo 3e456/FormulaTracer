@@ -1,0 +1,9 @@
+{
+  "public_api_documented": true,
+  "readme_quickstart_executable": true,
+  "documented_symbol_not_found": 0,
+  "broken_internal_doc_links": 0,
+  "example_execution_failure": 0,
+  "readme_en_ja_parity": "PASS",
+  "status": "PASS"
+}

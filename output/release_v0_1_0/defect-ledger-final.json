@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "total": 54,
+  "accounted": 54,
+  "verified_fixed": 50,
+  "deferred": 3,
+  "wont_fix_with_reason": 1,
+  "open": 0,
+  "critical_open": 0,
+  "false_acceptance_open": 0,
+  "unaccounted": 0,
+  "release_gate": "PASS"
+}

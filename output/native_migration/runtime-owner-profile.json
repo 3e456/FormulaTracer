@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "measurement_scope": "PRODUCTION",
+  "total_production_semantic_calls": 3162,
+  "direct_python_semantic_reference_calls": 0,
+  "owners": [
+    {
+      "owner": "semantic_kernel",
+      "calls": 3162,
+      "percentage_of_production_calls": 100.0,
+      "percentage_of_direct_python_calls": null,
+      "kernel": "NATIVE_OR_NON_OWNER",
+      "scc": null,
+      "status": "RUST_NATIVE_OR_NON_SEMANTIC_OWNER"
+    }
+  ],
+  "operations": [
+    {
+      "operation": "semantic_kernel:BUILD_ERROR_ANALYSIS",
+      "calls": 2176,
+      "percentage_of_production_calls": 68.81720430107526
+    },
+    {
+      "operation": "semantic_kernel:ASSEMBLE_PROJECT_VERIFICATION",
+      "calls": 292,
+      "percentage_of_production_calls": 9.234661606578115
+    },
+    {
+      "operation": "semantic_kernel:ASSEMBLE_PROVENANCE",
+      "calls": 292,
+      "percentage_of_production_calls": 9.234661606578115
+    },
+    {
+      "operation": "semantic_kernel:RESOLVE_CONFIGURATION",
+      "calls": 292,
+      "percentage_of_production_calls": 9.234661606578115
+    },
+    {
+      "operation": "semantic_kernel:DEBUG_PROJECT",
+      "calls": 108,
+      "percentage_of_production_calls": 3.415559772296015
+    },
+    {
+      "operation": "semantic_kernel:PROPAGATE_ERROR_GRAPH",
+      "calls": 2,
+      "percentage_of_production_calls": 0.06325110689437065
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "critical_control_flow_false_acceptance_open": 0,
+  "critical_defects": 2,
+  "defect_ids": [
+    "DEFECT-CONTROL-FLOW-0001",
+    "DEFECT-CONTROL-FLOW-0002",
+    "DEFECT-CONTROL-FLOW-0003",
+    "DEFECT-CONTROL-FLOW-0004"
+  ],
+  "fixed": 4,
+  "new_defects": 4,
+  "remaining": 0,
+  "schema_version": "1.0"
+}

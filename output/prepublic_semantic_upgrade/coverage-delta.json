@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "same_corpus": true,
+  "baseline_counts": {
+    "PARTIAL_RECONSTRUCTION": 17,
+    "STRUCTURAL_ONLY": 1,
+    "UNRESOLVED": 5
+  },
+  "final_counts": {
+    "FULL_RECONSTRUCTION": 18,
+    "PARTIAL_RECONSTRUCTION": 2,
+    "UNRESOLVED": 3
+  },
+  "full_delta": 18,
+  "false_acceptance_delta": 0,
+  "false_exact_promotion": 0,
+  "false_certified_promotion": 0,
+  "improvement_success": true
+}

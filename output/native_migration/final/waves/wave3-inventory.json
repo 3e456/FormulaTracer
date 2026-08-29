@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "wave": 3,
+  "status": "IN_PROGRESS",
+  "migration_order": [
+    "cpp_audit.ieee754",
+    "cpp_audit.interval",
+    "cpp_audit.probability"
+  ],
+  "order_rationale": "All owners are singleton SCCs; IEEE execution facts feed interval evidence boundaries, while probability consumes neither as exact proof.",
+  "counts": {
+    "cpp_audit.ieee754": 0,
+    "cpp_audit.interval": 0,
+    "cpp_audit.probability": 0
+  },
+  "total": 0,
+  "symbols": []
+}

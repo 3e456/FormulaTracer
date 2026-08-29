@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "version_policy": "REFERENCE_ONLY_VERSION_UNPINNED",
+  "records": [
+    {
+      "api": "dask.array.reduction",
+      "upstream_reference": "https://docs.dask.org/en/stable/generated/dask.array.reduction.html",
+      "reference_version_date": "stable docs accessed 2026-08-29",
+      "upstream_guaranteed_semantics": ["chunk function", "optional recursive combine", "final aggregate", "axis", "dtype", "keepdims", "split_every"],
+      "formulatracer_derived_semantics": ["ChunkedReduction execution object", "mathematical target separated from execution"],
+      "required_assumptions": ["provider reference applies to installed Dask version"],
+      "backend_requirements": ["explicit backend contract for floating error semantics"],
+      "reduction_tree_requirements": ["chunk counts and split_every known"],
+      "error_certificate_status": "CONDITIONAL_DERIVATION_AVAILABLE_NOT_CERTIFIED"
+    },
+    {
+      "api": "dask.array.sum",
+      "upstream_reference": "https://docs.dask.org/en/stable/generated/dask.array.sum.html",
+      "reference_version_date": "stable docs accessed 2026-08-29",
+      "upstream_guaranteed_semantics": ["sum target", "axis", "dtype", "keepdims", "split_every"],
+      "formulatracer_derived_semantics": ["FiniteSum target", "chunked/tree floating execution"],
+      "required_assumptions": ["documented dtype and backend are resolved"],
+      "backend_requirements": ["NumPy/CuPy/other backend must be explicit"],
+      "reduction_tree_requirements": ["chunk counts and split_every known for a concrete tree"],
+      "error_certificate_status": "CONDITIONAL_DERIVATION_AVAILABLE_NOT_CERTIFIED"
+    },
+    {
+      "api": "dask.array.mean",
+      "upstream_reference": "https://docs.dask.org/en/latest/array-api.html",
+      "reference_version_date": "current docs accessed 2026-08-29",
+      "upstream_guaranteed_semantics": ["mean target", "axis", "dtype", "keepdims", "split_every"],
+      "formulatracer_derived_semantics": ["Mean target", "reduction execution distinct from division"],
+      "required_assumptions": ["count and reduction graph semantics resolved"],
+      "backend_requirements": ["backend arithmetic contract required"],
+      "reduction_tree_requirements": ["chunk graph known"],
+      "error_certificate_status": "UNRESOLVED"
+    },
+    {
+      "api": "dask.array elementwise",
+      "upstream_reference": "https://docs.dask.org/en/latest/array-api.html",
+      "reference_version_date": "current docs accessed 2026-08-29",
+      "upstream_guaranteed_semantics": ["lazy blocked array operation"],
+      "formulatracer_derived_semantics": ["DataflowElementwise with composed backend contract"],
+      "required_assumptions": ["broadcast and dtype facts available"],
+      "backend_requirements": ["backend must be explicit for execution/error claims"],
+      "reduction_tree_requirements": [],
+      "error_certificate_status": "BACKEND_DEPENDENT"
+    }
+  ],
+  "prohibited_claims": [
+    "FormulaTracer-derived bounds must not be represented as upstream Dask guarantees",
+    "unknown duck-array backends must not inherit NumPy floating semantics"
+  ]
+}

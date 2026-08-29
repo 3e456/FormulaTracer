@@ -1,0 +1,554 @@
+{
+  "diagnostics": [],
+  "edges": [
+    {
+      "argument_role": "index",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-i-decl-loop-LOOP_BOUND_DEPENDS_ON-index",
+      "kind": "LOOP_BOUND_DEPENDS_ON",
+      "source_node_id": "i-decl",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "loop"
+    },
+    {
+      "argument_role": "lower",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-zero-loop-LOOP_BOUND_DEPENDS_ON-lower",
+      "kind": "LOOP_BOUND_DEPENDS_ON",
+      "source_node_id": "zero",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "loop"
+    },
+    {
+      "argument_role": "upper",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-n-ref-loop-LOOP_BOUND_DEPENDS_ON-upper",
+      "kind": "LOOP_BOUND_DEPENDS_ON",
+      "source_node_id": "n-ref",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "loop"
+    },
+    {
+      "argument_role": "arg1",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-i-ref-x-index-VALUE_DEPENDS_ON-arg1",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "i-ref",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "x-index"
+    },
+    {
+      "argument_role": "arg1",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-i-ref-y-index-VALUE_DEPENDS_ON-arg1",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "i-ref",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "y-index"
+    },
+    {
+      "argument_role": "lhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-x-index-condition-VALUE_DEPENDS_ON-lhs",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "x-index",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "condition"
+    },
+    {
+      "argument_role": "rhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-zero-value-condition-VALUE_DEPENDS_ON-rhs",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "zero-value",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "condition"
+    },
+    {
+      "argument_role": "condition",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-condition-if-CONDITION_DEPENDS_ON-condition",
+      "kind": "CONDITION_DEPENDS_ON",
+      "source_node_id": "condition",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "if"
+    },
+    {
+      "argument_role": "lhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-y-index-true-WRITES-lhs",
+      "kind": "WRITES",
+      "source_node_id": "y-index",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "true"
+    },
+    {
+      "argument_role": "value",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-x-index-true-VALUE_DEPENDS_ON-value",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "x-index",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "true"
+    },
+    {
+      "argument_role": "loop",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-loop-true-CONTROL_GUARDS-loop",
+      "kind": "CONTROL_GUARDS",
+      "source_node_id": "loop",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "true"
+    },
+    {
+      "argument_role": "true_branch",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-if-true-CONTROL_GUARDS-true_branch",
+      "kind": "CONTROL_GUARDS",
+      "source_node_id": "if",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "true"
+    },
+    {
+      "argument_role": "arg1",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-i-ref-else-index-VALUE_DEPENDS_ON-arg1",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "i-ref",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "else-index"
+    },
+    {
+      "argument_role": "lhs",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-else-index-false-WRITES-lhs",
+      "kind": "WRITES",
+      "source_node_id": "else-index",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "false"
+    },
+    {
+      "argument_role": "value",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-zero-value-false-VALUE_DEPENDS_ON-value",
+      "kind": "VALUE_DEPENDS_ON",
+      "source_node_id": "zero-value",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "false"
+    },
+    {
+      "argument_role": "loop",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-loop-false-CONTROL_GUARDS-loop",
+      "kind": "CONTROL_GUARDS",
+      "source_node_id": "loop",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "false"
+    },
+    {
+      "argument_role": "false_branch",
+      "confidence": "RESOLVED",
+      "derivation": "clang_ast",
+      "edge_id": "e-if-false-CONTROL_GUARDS-false_branch",
+      "kind": "CONTROL_GUARDS",
+      "source_node_id": "if",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "target_node_id": "false"
+    }
+  ],
+  "nodes": [
+    {
+      "attributes": {
+        "name": "i",
+        "semantic_kind": "LocalVariable"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "i-decl",
+      "kind": "VarDecl",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "semantic_kind": "Literal",
+        "value": "0"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "zero",
+      "kind": "IntegerLiteral",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "name": "n",
+        "semantic_kind": "Load"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "n-ref",
+      "kind": "DeclRefExpr",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "comparison": "<",
+        "index": "i",
+        "lower": "0",
+        "semantic_kind": "Loop",
+        "upper": "n"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "loop",
+      "kind": "ForStmt",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "name": "i",
+        "semantic_kind": "Load"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "i-ref",
+      "kind": "DeclRefExpr",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "arg0": "x",
+        "arg1": "i",
+        "semantic_kind": "Call"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "x-index",
+      "kind": "CXXOperatorCallExpr",
+      "resolved_symbol": "std::span::operator[]",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "arg0": "y",
+        "arg1": "i",
+        "semantic_kind": "Call"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "y-index",
+      "kind": "CXXOperatorCallExpr",
+      "resolved_symbol": "std::span::operator[]",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "semantic_kind": "Literal",
+        "value": "0"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "zero-value",
+      "kind": "IntegerLiteral",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "operator": ">",
+        "semantic_kind": "Comparison"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "condition",
+      "kind": "BinaryOperator",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "semantic_kind": "Conditional"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "if",
+      "kind": "IfStmt",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "operator": "=",
+        "output_base": "y",
+        "output_index": "i",
+        "semantic_kind": "Store"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "WriteMemory",
+      "id": "true",
+      "kind": "BinaryOperator",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "arg0": "y",
+        "arg1": "i",
+        "semantic_kind": "Call"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "Pure",
+      "id": "else-index",
+      "kind": "CXXOperatorCallExpr",
+      "resolved_symbol": "std::span::operator[]",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    },
+    {
+      "attributes": {
+        "operator": "=",
+        "output_base": "y",
+        "output_index": "i",
+        "semantic_kind": "Store"
+      },
+      "constness": "mutable",
+      "cpp_type": "double",
+      "effect": "WriteMemory",
+      "id": "false",
+      "kind": "BinaryOperator",
+      "resolved_symbol": "",
+      "source_span": {
+        "begin_column": 1,
+        "begin_line": 1,
+        "end_column": 20,
+        "end_line": 1,
+        "file": "tests/golden/pr3a/fixtures/if_then_else/source.cpp"
+      },
+      "value_category": "prvalue"
+    }
+  ],
+  "output_node_ids": [
+    "false",
+    "true"
+  ],
+  "schema_version": "0.1",
+  "status": "DEPENDENCY_GRAPH_BUILT"
+}

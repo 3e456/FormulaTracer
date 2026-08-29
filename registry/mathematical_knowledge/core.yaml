@@ -1,0 +1,163 @@
+schema_version: "1.0"
+defaults: &defaults
+  preconditions: []
+  domain_constraints: []
+  type_constraints: []
+  shape_constraints: []
+  required_facts: []
+  algebraic_structures: []
+  forward_enabled: true
+  reverse_enabled: false
+  rewrite_cost: 1
+  priority: 100
+  motif_tags: []
+  provider_hints: []
+  evidence_kind: REFERENCE_THEOREM
+  reference: "Standard mathematical identity; conditions encoded in this entry"
+  lean_theorem: null
+knowledge:
+  - <<: *defaults
+    knowledge_id: algebra_add_zero
+    name: Additive identity
+    category: ALGEBRA
+    lhs: {op: Add, args: [{op: PatternVariable, name: x}, {op: Constant, value: 0}]}
+    rhs: {op: PatternVariable, name: x}
+    relation_kind: EXACT
+    algebraic_structures: [MONOID]
+    reverse_enabled: false
+    motif_tags: [add]
+  - <<: *defaults
+    knowledge_id: algebra_multiply_zero
+    name: Multiplication by zero
+    category: ALGEBRA
+    lhs: {op: Multiply, args: [{op: PatternVariable, name: x}, {op: Constant, value: 0}]}
+    rhs: {op: Constant, value: 0}
+    relation_kind: EXACT
+    algebraic_structures: [RING]
+    motif_tags: [multiply]
+  - <<: *defaults
+    knowledge_id: algebra_multiply_one
+    name: Multiplicative identity
+    category: ALGEBRA
+    lhs: {op: Multiply, args: [{op: PatternVariable, name: x}, {op: Constant, value: 1}]}
+    rhs: {op: PatternVariable, name: x}
+    relation_kind: EXACT
+    algebraic_structures: [MONOID]
+    reverse_enabled: false
+    motif_tags: [multiply]
+  - <<: *defaults
+    knowledge_id: exp_log_positive_real
+    name: Real exponential-logarithm cancellation
+    category: EXP_LOG
+    lhs: {op: FunctionCall, name: exp, args: [{op: FunctionCall, name: log, args: [{op: PatternVariable, name: x}]}]}
+    rhs: {op: PatternVariable, name: x}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    domain_constraints: [x_positive_real]
+    required_facts: [x_positive_real]
+    motif_tags: [exp, log]
+  - <<: *defaults
+    knowledge_id: trig_pythagorean
+    name: Pythagorean trigonometric identity
+    category: TRIGONOMETRY
+    lhs: {op: Add, args: [{op: Power, args: [{op: FunctionCall, name: sin, args: [{op: PatternVariable, name: x}]}, {op: Constant, value: 2}]}, {op: Power, args: [{op: FunctionCall, name: cos, args: [{op: PatternVariable, name: x}]}, {op: Constant, value: 2}]}]}
+    rhs: {op: Constant, value: 1}
+    relation_kind: IDENTITY
+    motif_tags: [sin, cos, power]
+  - <<: *defaults
+    knowledge_id: hyperbolic_identity
+    name: Hyperbolic Pythagorean identity
+    category: HYPERBOLIC
+    lhs: {op: Subtract, args: [{op: Power, args: [{op: FunctionCall, name: cosh, args: [{op: PatternVariable, name: x}]}, {op: Constant, value: 2}]}, {op: Power, args: [{op: FunctionCall, name: sinh, args: [{op: PatternVariable, name: x}]}, {op: Constant, value: 2}]}]}
+    rhs: {op: Constant, value: 1}
+    relation_kind: IDENTITY
+    motif_tags: [sinh, cosh]
+  - <<: *defaults
+    knowledge_id: factorial_recurrence
+    name: Factorial recurrence
+    category: COMBINATORICS
+    lhs: {op: Factorial, args: [{op: Add, args: [{op: PatternVariable, name: n}, {op: Constant, value: 1}]}]}
+    rhs: {op: Multiply, args: [{op: Add, args: [{op: PatternVariable, name: n}, {op: Constant, value: 1}]}, {op: Factorial, args: [{op: PatternVariable, name: n}]}]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    domain_constraints: [n_natural]
+    required_facts: [n_natural]
+    motif_tags: [factorial, recurrence]
+    lean_theorem: factorial_recurrence
+  - <<: *defaults
+    knowledge_id: sum_constant_extraction_knowledge
+    name: Finite-sum constant extraction
+    category: SUM_PRODUCT
+    lhs: {op: FiniteSum, bound_index: i, body: {op: Multiply, args: [{op: PatternVariable, name: c}, {op: PatternVariable, name: body}]}}
+    rhs: {op: Multiply, args: [{op: PatternVariable, name: c}, {op: FiniteSum, bound_index: i, body: {op: PatternVariable, name: body}}]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    preconditions: [c_independent_of_bound_index]
+    required_facts: [c_independent_of_bound_index]
+    motif_tags: [finite_sum, multiply]
+  - <<: *defaults
+    knowledge_id: derivative_finite_difference_relation
+    name: Derivative to central finite difference
+    category: CALCULUS
+    lhs: {op: Derivative}
+    rhs: {op: CentralDifference}
+    relation_kind: DISCRETIZATION
+    preconditions: [spacing_nonzero, local_smoothness]
+    required_facts: [spacing_nonzero, local_smoothness]
+    motif_tags: [derivative, shifted_evaluation]
+  - <<: *defaults
+    knowledge_id: integral_quadrature_relation
+    name: Integral to numerical quadrature
+    category: CALCULUS
+    lhs: {op: Integral}
+    rhs: {op: Quadrature}
+    relation_kind: APPROXIMATION
+    preconditions: [quadrature_error_bound]
+    required_facts: [quadrature_error_bound]
+    motif_tags: [integral, weighted_sum]
+  - <<: *defaults
+    knowledge_id: infinite_series_partial_sum
+    name: Infinite series truncation
+    category: SERIES
+    lhs: {op: InfiniteSeries}
+    rhs: {op: PartialSum}
+    relation_kind: TRUNCATION
+    preconditions: [tail_bound_available]
+    required_facts: [tail_bound_available]
+    motif_tags: [series]
+  - <<: *defaults
+    knowledge_id: continuous_fourier_sampling
+    name: Continuous Fourier transform sampling
+    category: FOURIER
+    lhs: {op: IntegralTransform, transform: Fourier}
+    rhs: {op: DFT}
+    relation_kind: SAMPLING
+    preconditions: [domain_truncation_specified, sampling_grid_specified]
+    required_facts: [domain_truncation_specified, sampling_grid_specified]
+    motif_tags: [fourier, dft]
+  - <<: *defaults
+    knowledge_id: dft_fft_realization
+    name: DFT algorithmic realization by FFT
+    category: FOURIER
+    lhs: {op: DFT}
+    rhs: {op: FFT}
+    relation_kind: ALGORITHMIC_REALIZATION
+    required_facts: [normalization_convention_validated]
+    motif_tags: [dft, fft]
+  - <<: *defaults
+    knowledge_id: dot_contraction
+    name: Dot product as tensor contraction
+    category: LINEAR_ALGEBRA
+    lhs: {op: Dot, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: y}]}
+    rhs: {op: TensorContraction, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: y}], kind: dot}
+    relation_kind: DEFINITIONAL
+    shape_constraints: [contracted_dimensions_equal]
+    required_facts: [contracted_dimensions_equal]
+    motif_tags: [dot, tensor_contraction]
+  - <<: *defaults
+    knowledge_id: expectation_linearity_knowledge
+    name: Expectation linearity
+    category: PROBABILITY
+    lhs: {op: Expectation, body: {op: Add, args: [{op: PatternVariable, name: x}, {op: PatternVariable, name: y}]}}
+    rhs: {op: Add, args: [{op: Expectation, body: {op: PatternVariable, name: x}}, {op: Expectation, body: {op: PatternVariable, name: y}}]}
+    relation_kind: EXACT_UNDER_ASSUMPTIONS
+    type_constraints: [x_y_integrable_random_variables]
+    required_facts: [x_y_integrable_random_variables]
+    motif_tags: [expectation, add]

@@ -1,0 +1,102 @@
+[
+  {
+    "reference_id": "dlmf-gamma",
+    "title": "DLMF \u00a75.2 Gamma definitions",
+    "organization": "NIST DLMF",
+    "url": "https://dlmf.nist.gov/5.2",
+    "reference_kind": "PRIMARY_MATHEMATICAL_REFERENCE",
+    "version_or_revision": "DLMF 1.2.7",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "dlmf-asymptotic",
+    "title": "DLMF \u00a72.1 Definitions and Elementary Properties",
+    "organization": "NIST DLMF",
+    "url": "https://dlmf.nist.gov/2.1",
+    "reference_kind": "PRIMARY_MATHEMATICAL_REFERENCE",
+    "version_or_revision": "DLMF 1.2.7",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "wolfram-gamma",
+    "title": "Gamma function identities",
+    "organization": "Wolfram Research",
+    "url": "https://functions.wolfram.com/GammaBetaErf/Gamma/",
+    "reference_kind": "OFFICIAL_MATHEMATICAL_REFERENCE",
+    "version_or_revision": "accessed online",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "boost-math",
+    "title": "Boost.Math",
+    "organization": "Boost C++ Libraries",
+    "url": "https://www.boost.org/library/latest/math/",
+    "reference_kind": "OFFICIAL_PROVIDER_REFERENCE",
+    "version_or_revision": "1.92.0",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "netlib-lapack",
+    "title": "LAPACK Users' Guide",
+    "organization": "Netlib",
+    "url": "https://www.netlib.org/lapack/lug/",
+    "reference_kind": "PRIMARY_ALGORITHM_REFERENCE",
+    "version_or_revision": "Third edition",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "netlib-blas",
+    "title": "BLAS",
+    "organization": "Netlib",
+    "url": "https://www.netlib.org/blas/",
+    "reference_kind": "OFFICIAL_PROVIDER_REFERENCE",
+    "version_or_revision": "online reference",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "numpy-fft",
+    "title": "Discrete Fourier Transform",
+    "organization": "NumPy",
+    "url": "https://numpy.org/doc/stable/reference/routines.fft.html",
+    "reference_kind": "OFFICIAL_PROVIDER_REFERENCE",
+    "version_or_revision": "stable documentation",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "numpy-linalg",
+    "title": "Linear algebra",
+    "organization": "NumPy",
+    "url": "https://numpy.org/doc/stable/reference/routines.linalg.html",
+    "reference_kind": "OFFICIAL_PROVIDER_REFERENCE",
+    "version_or_revision": "stable documentation",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "scipy-integrate-v2",
+    "title": "Integration",
+    "organization": "SciPy",
+    "url": "https://docs.scipy.org/doc/scipy/reference/integrate.html",
+    "reference_kind": "OFFICIAL_PROVIDER_REFERENCE",
+    "version_or_revision": "current documentation",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  },
+  {
+    "reference_id": "scipy-optimize",
+    "title": "Optimization and root finding",
+    "organization": "SciPy",
+    "url": "https://docs.scipy.org/doc/scipy/reference/optimize.html",
+    "reference_kind": "OFFICIAL_PROVIDER_REFERENCE",
+    "version_or_revision": "current documentation",
+    "accessed": "2026-08-27",
+    "retained_source": false
+  }
+]

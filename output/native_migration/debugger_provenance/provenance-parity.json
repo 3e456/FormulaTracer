@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "total": 6,
+  "pass": 6,
+  "mismatch": 0,
+  "records": [
+    {
+      "case": "configuration-0",
+      "match": true
+    },
+    {
+      "case": "configuration-1",
+      "match": true
+    },
+    {
+      "case": "configuration-2",
+      "match": true
+    },
+    {
+      "case": "schema-0",
+      "match": true
+    },
+    {
+      "case": "schema-1",
+      "match": true
+    },
+    {
+      "case": "schema-2",
+      "match": true
+    }
+  ]
+}

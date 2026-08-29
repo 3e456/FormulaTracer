@@ -1,0 +1,19 @@
+schema_version: "0.1"
+entity_id: std.math.abs
+standard_version: cpp17
+header: cmath
+qualified_name: std::abs
+kind: function
+signature: "arithmetic abs(arithmetic)"
+template_parameters: []
+effect: Pure
+semantic_family: ElementaryFunction
+preconditions: []
+postconditions: [returns_absolute_value]
+exceptions: []
+aliasing: {}
+iterator_requirements: []
+complexity: constant
+lowering: {op: FunctionCall, function: abs}
+proof_status: CONTRACT_VERIFIED
+source_reference: "ISO C++17 [c.math.abs]"

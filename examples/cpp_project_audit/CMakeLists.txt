@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(cpp_project_audit LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+add_executable(cpp_project_audit src/main.cpp src/model.cpp)
+target_include_directories(cpp_project_audit PRIVATE include)

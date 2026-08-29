@@ -1,0 +1,754 @@
+{
+  "cases": [
+    {
+      "case_id": "loop_bound_minus_one",
+      "classification": "SEMANTIC_MISMATCH_DETECTED",
+      "evidence_level": "MUTATION_DETECTED",
+      "expected_semantic_change": true,
+      "mutated_cfg_status": "CFG_RESOLVED",
+      "mutated_ir": {
+        "body": {
+          "indices": [
+            {
+              "name": "i",
+              "op": "BoundVariable"
+            }
+          ],
+          "name": "x",
+          "op": "IndexedValue",
+          "shape_constraints": [
+            {
+              "axis": 0,
+              "kind": "index_within_extent"
+            }
+          ]
+        },
+        "bound_index": "i",
+        "index_domain": {
+          "lower": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 0
+          },
+          "step": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 1
+          },
+          "upper_exclusive": {
+            "args": [
+              {
+                "name": "n",
+                "op": "FreeVariable"
+              },
+              {
+                "numeral_representation": {
+                  "original_text": "1",
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 1
+              }
+            ],
+            "argument_spans": [
+              {
+                "begin_column": 17,
+                "begin_line": 3,
+                "end_column": 18,
+                "end_line": 3,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 19,
+                "begin_line": 3,
+                "end_column": 20,
+                "end_line": 3,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "op": "Subtract",
+            "operator_span": {
+              "begin_column": 18,
+              "begin_line": 3,
+              "end_column": 19,
+              "end_line": 3,
+              "file": "<LOCAL_PATH>",
+              "operator": "-",
+              "role": "operator"
+            },
+            "source_span": {
+              "begin_column": 17,
+              "begin_line": 3,
+              "end_column": 20,
+              "end_line": 3,
+              "file": "<LOCAL_PATH>"
+            }
+          }
+        },
+        "initial_value": {
+          "numeral_representation": {
+            "original_text": "0",
+            "radix": 10
+          },
+          "op": "Constant",
+          "value": 0
+        },
+        "op": "FoldLeft",
+        "operation": "Add",
+        "reduction_order": "left_to_right"
+      },
+      "mutated_source_hash": "284c6c638a28db772de59e073cd5ce8f8f9aa02a33a83a7d559fdd1c26a64aac",
+      "mutated_source_span": {
+        "begin_line": 3,
+        "end_line": 3
+      },
+      "original_cfg_status": "CFG_RESOLVED",
+      "original_ir": {
+        "body": {
+          "indices": [
+            {
+              "name": "i",
+              "op": "BoundVariable"
+            }
+          ],
+          "name": "x",
+          "op": "IndexedValue",
+          "shape_constraints": [
+            {
+              "axis": 0,
+              "kind": "index_within_extent"
+            }
+          ]
+        },
+        "bound_index": "i",
+        "index_domain": {
+          "lower": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 0
+          },
+          "step": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 1
+          },
+          "upper_exclusive": {
+            "name": "n",
+            "op": "FreeVariable"
+          }
+        },
+        "initial_value": {
+          "numeral_representation": {
+            "original_text": "0",
+            "radix": 10
+          },
+          "op": "Constant",
+          "value": 0
+        },
+        "op": "FoldLeft",
+        "operation": "Add",
+        "reduction_order": "left_to_right"
+      },
+      "source_hash": "8b18a9e196da6071cbfa5b1564f7a8970b338c8600833d75168d5c56e4d0e665",
+      "witness": {
+        "inputs": {
+          "n": 1,
+          "x": [
+            -2,
+            -1,
+            0,
+            1
+          ]
+        },
+        "mutated": 0,
+        "original": -2
+      }
+    },
+    {
+      "case_id": "accumulator_initial",
+      "classification": "SEMANTIC_MISMATCH_DETECTED",
+      "evidence_level": "MUTATION_DETECTED",
+      "expected_semantic_change": true,
+      "mutated_cfg_status": "CFG_RESOLVED",
+      "mutated_ir": {
+        "body": {
+          "indices": [
+            {
+              "name": "i",
+              "op": "BoundVariable"
+            }
+          ],
+          "name": "x",
+          "op": "IndexedValue",
+          "shape_constraints": [
+            {
+              "axis": 0,
+              "kind": "index_within_extent"
+            }
+          ]
+        },
+        "bound_index": "i",
+        "index_domain": {
+          "lower": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 0
+          },
+          "step": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 1
+          },
+          "upper_exclusive": {
+            "name": "n",
+            "op": "FreeVariable"
+          }
+        },
+        "initial_value": {
+          "numeral_representation": {
+            "original_text": "1",
+            "radix": 10
+          },
+          "op": "Constant",
+          "value": 1
+        },
+        "op": "FoldLeft",
+        "operation": "Add",
+        "reduction_order": "left_to_right"
+      },
+      "mutated_source_hash": "528cc37ecee0859210fe9a4e5b56ebc9f2202a36dcaf2c161aec0ab919cb6b62",
+      "mutated_source_span": {
+        "begin_line": 2,
+        "end_line": 2
+      },
+      "original_cfg_status": "CFG_RESOLVED",
+      "original_ir": {
+        "body": {
+          "indices": [
+            {
+              "name": "i",
+              "op": "BoundVariable"
+            }
+          ],
+          "name": "x",
+          "op": "IndexedValue",
+          "shape_constraints": [
+            {
+              "axis": 0,
+              "kind": "index_within_extent"
+            }
+          ]
+        },
+        "bound_index": "i",
+        "index_domain": {
+          "lower": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 0
+          },
+          "step": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 1
+          },
+          "upper_exclusive": {
+            "name": "n",
+            "op": "FreeVariable"
+          }
+        },
+        "initial_value": {
+          "numeral_representation": {
+            "original_text": "0",
+            "radix": 10
+          },
+          "op": "Constant",
+          "value": 0
+        },
+        "op": "FoldLeft",
+        "operation": "Add",
+        "reduction_order": "left_to_right"
+      },
+      "source_hash": "8b18a9e196da6071cbfa5b1564f7a8970b338c8600833d75168d5c56e4d0e665",
+      "witness": {
+        "inputs": {
+          "n": 0,
+          "x": [
+            -2,
+            -1,
+            0,
+            1
+          ]
+        },
+        "mutated": 1,
+        "original": 0
+      }
+    },
+    {
+      "case_id": "condition_inversion",
+      "classification": "SEMANTIC_MISMATCH_DETECTED",
+      "evidence_level": "MUTATION_DETECTED",
+      "expected_semantic_change": true,
+      "mutated_cfg_status": "CFG_PARTIALLY_RESOLVED",
+      "mutated_ir": {
+        "body": {
+          "condition": {
+            "args": [
+              {
+                "indices": [
+                  {
+                    "name": "i",
+                    "op": "BoundVariable"
+                  }
+                ],
+                "name": "mask",
+                "op": "IndexedValue",
+                "shape_constraints": [
+                  {
+                    "axis": 0,
+                    "kind": "index_within_extent"
+                  }
+                ]
+              }
+            ],
+            "op": "LogicalNot",
+            "source_span": {
+              "begin_column": 6,
+              "begin_line": 4,
+              "end_column": 17,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            }
+          },
+          "else": {
+            "op": "Constant",
+            "value": 0
+          },
+          "op": "IfThenElse",
+          "then": {
+            "indices": [
+              {
+                "name": "i",
+                "op": "BoundVariable"
+              }
+            ],
+            "name": "x",
+            "op": "IndexedValue",
+            "shape_constraints": [
+              {
+                "axis": 0,
+                "kind": "index_within_extent"
+              }
+            ]
+          }
+        },
+        "bound_index": "i",
+        "index_domain": {
+          "lower": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 0
+          },
+          "step": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 1
+          },
+          "upper_exclusive": {
+            "name": "n",
+            "op": "FreeVariable"
+          }
+        },
+        "initial_value": {
+          "numeral_representation": {
+            "original_text": "0",
+            "radix": 10
+          },
+          "op": "Constant",
+          "value": 0
+        },
+        "op": "FoldLeft",
+        "operation": "Add",
+        "reduction_order": "left_to_right"
+      },
+      "mutated_source_hash": "127c36800ed8986cc2bd97ee7994e56c0da3e15c68046877fb2f7d2fcad35ee9",
+      "mutated_source_span": {
+        "begin_line": 4,
+        "end_line": 4
+      },
+      "original_cfg_status": "CFG_PARTIALLY_RESOLVED",
+      "original_ir": {
+        "body": {
+          "condition": {
+            "indices": [
+              {
+                "name": "i",
+                "op": "BoundVariable"
+              }
+            ],
+            "name": "mask",
+            "op": "IndexedValue",
+            "shape_constraints": [
+              {
+                "axis": 0,
+                "kind": "index_within_extent"
+              }
+            ]
+          },
+          "else": {
+            "op": "Constant",
+            "value": 0
+          },
+          "op": "IfThenElse",
+          "then": {
+            "indices": [
+              {
+                "name": "i",
+                "op": "BoundVariable"
+              }
+            ],
+            "name": "x",
+            "op": "IndexedValue",
+            "shape_constraints": [
+              {
+                "axis": 0,
+                "kind": "index_within_extent"
+              }
+            ]
+          }
+        },
+        "bound_index": "i",
+        "index_domain": {
+          "lower": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 0
+          },
+          "step": {
+            "numeral_representation": {
+              "original_text": null,
+              "radix": 10
+            },
+            "op": "Constant",
+            "value": 1
+          },
+          "upper_exclusive": {
+            "name": "n",
+            "op": "FreeVariable"
+          }
+        },
+        "initial_value": {
+          "numeral_representation": {
+            "original_text": "0",
+            "radix": 10
+          },
+          "op": "Constant",
+          "value": 0
+        },
+        "op": "FoldLeft",
+        "operation": "Add",
+        "reduction_order": "left_to_right"
+      },
+      "source_hash": "841a504662fd30cb24d1aca44ab5a413aaf88ec57f4e96629adda2d060225b36",
+      "witness": {
+        "inputs": {
+          "mask": [
+            false
+          ],
+          "n": 1,
+          "x": [
+            -2,
+            -1,
+            2
+          ]
+        },
+        "mutated": -2,
+        "original": 0
+      }
+    },
+    {
+      "case_id": "early_return_boundary",
+      "classification": "SEMANTIC_MISMATCH_DETECTED",
+      "evidence_level": "MUTATION_DETECTED",
+      "expected_semantic_change": true,
+      "mutated_cfg_status": "CFG_RESOLVED",
+      "mutated_ir": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "numeral_representation": {
+                "original_text": "1",
+                "radix": 10
+              },
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "comparison": "LessEqual",
+          "op": "Compare",
+          "source_span": {
+            "begin_column": 5,
+            "begin_line": 2,
+            "end_column": 11,
+            "end_line": 2,
+            "file": "<LOCAL_PATH>"
+          }
+        },
+        "else": {
+          "args": [
+            {
+              "numeral_representation": {
+                "original_text": "2",
+                "radix": 10
+              },
+              "op": "Constant",
+              "value": 2
+            },
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "argument_spans": [
+            {
+              "begin_column": 9,
+              "begin_line": 4,
+              "end_column": 10,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            {
+              "begin_column": 11,
+              "begin_line": 4,
+              "end_column": 12,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            }
+          ],
+          "op": "Multiply",
+          "operator_span": {
+            "begin_column": 10,
+            "begin_line": 4,
+            "end_column": 11,
+            "end_line": 4,
+            "file": "<LOCAL_PATH>",
+            "operator": "*",
+            "role": "operator"
+          },
+          "source_span": {
+            "begin_column": 9,
+            "begin_line": 4,
+            "end_column": 12,
+            "end_line": 4,
+            "file": "<LOCAL_PATH>"
+          }
+        },
+        "op": "IfThenElse",
+        "then": {
+          "numeral_representation": {
+            "original_text": "0",
+            "radix": 10
+          },
+          "op": "Constant",
+          "value": 0
+        }
+      },
+      "mutated_source_hash": "5506de6b3c7779554a63f82f07b461fea8897c358cd398afa30db2b60daa9760",
+      "mutated_source_span": {
+        "begin_line": 2,
+        "end_line": 2
+      },
+      "original_cfg_status": "CFG_RESOLVED",
+      "original_ir": {
+        "condition": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "numeral_representation": {
+                "original_text": "0",
+                "radix": 10
+              },
+              "op": "Constant",
+              "value": 0
+            }
+          ],
+          "comparison": "LessThan",
+          "op": "Compare",
+          "source_span": {
+            "begin_column": 5,
+            "begin_line": 2,
+            "end_column": 10,
+            "end_line": 2,
+            "file": "<LOCAL_PATH>"
+          }
+        },
+        "else": {
+          "args": [
+            {
+              "numeral_representation": {
+                "original_text": "2",
+                "radix": 10
+              },
+              "op": "Constant",
+              "value": 2
+            },
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          ],
+          "argument_spans": [
+            {
+              "begin_column": 9,
+              "begin_line": 4,
+              "end_column": 10,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            },
+            {
+              "begin_column": 11,
+              "begin_line": 4,
+              "end_column": 12,
+              "end_line": 4,
+              "file": "<LOCAL_PATH>"
+            }
+          ],
+          "op": "Multiply",
+          "operator_span": {
+            "begin_column": 10,
+            "begin_line": 4,
+            "end_column": 11,
+            "end_line": 4,
+            "file": "<LOCAL_PATH>",
+            "operator": "*",
+            "role": "operator"
+          },
+          "source_span": {
+            "begin_column": 9,
+            "begin_line": 4,
+            "end_column": 12,
+            "end_line": 4,
+            "file": "<LOCAL_PATH>"
+          }
+        },
+        "op": "IfThenElse",
+        "then": {
+          "numeral_representation": {
+            "original_text": "0",
+            "radix": 10
+          },
+          "op": "Constant",
+          "value": 0
+        }
+      },
+      "source_hash": "09429626a8890554053b55e12514b3eeb559885ee9da38ee3ec282e8f19fd1e8",
+      "witness": {
+        "inputs": {
+          "x": 1
+        },
+        "mutated": 0,
+        "original": 2
+      }
+    },
+    {
+      "case_id": "then_else_swap",
+      "classification": "SEMANTIC_MISMATCH_DETECTED",
+      "evidence_level": "MUTATION_DETECTED",
+      "expected_semantic_change": true,
+      "mutated_cfg_status": "CFG_RESOLVED",
+      "mutated_ir": {
+        "condition": {
+          "name": "c",
+          "op": "FreeVariable"
+        },
+        "else": {
+          "name": "a",
+          "op": "FreeVariable"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "b",
+          "op": "FreeVariable"
+        }
+      },
+      "mutated_source_hash": "62390ce1897f3210bd2e44e7517ac67eac3437b331b4be0c992b6586ebb31665",
+      "mutated_source_span": {
+        "begin_line": 3,
+        "end_line": 3
+      },
+      "original_cfg_status": "CFG_RESOLVED",
+      "original_ir": {
+        "condition": {
+          "name": "c",
+          "op": "FreeVariable"
+        },
+        "else": {
+          "name": "b",
+          "op": "FreeVariable"
+        },
+        "op": "IfThenElse",
+        "then": {
+          "name": "a",
+          "op": "FreeVariable"
+        }
+      },
+      "source_hash": "7c2732d74aaeae5f318b028bb2f44150ec69455d8272866599efb032399b3581",
+      "witness": {
+        "inputs": {
+          "a": -2,
+          "b": -1,
+          "c": false
+        },
+        "mutated": -2,
+        "original": -1
+      }
+    }
+  ],
+  "counts": {
+    "CONTROL_FLOW_UNRESOLVED_FAIL_CLOSED": 0,
+    "FALSE_ACCEPTANCE": 0,
+    "MUTATION_NOT_SEMANTICALLY_EFFECTIVE": 0,
+    "SEMANTIC_MISMATCH_DETECTED": 5
+  },
+  "false_acceptance_count": 0,
+  "schema_version": "1.0"
+}

@@ -1,0 +1,82 @@
+{
+  "api_count": 4,
+  "apis": [
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://eigen.tuxfamily.org/dox/",
+      "package": "Eigen",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "Eigen::DenseBase::reshaped",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "Eigen::DenseBase::reshaped",
+          "named_dimensions_preserved": false,
+          "relation": "product(shape(out))=product(shape(in))"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://eigen.tuxfamily.org/dox/",
+      "package": "Eigen",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "Eigen::MatrixBase::operator*",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://eigen.tuxfamily.org/dox/",
+      "package": "Eigen",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "Eigen::MatrixBase::prod",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://eigen.tuxfamily.org/dox/",
+      "package": "Eigen",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "Eigen::MatrixBase::sum",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    }
+  ],
+  "classification_counts": {
+    "FORMAL_CONTRACT": 4
+  },
+  "language": "cpp"
+}

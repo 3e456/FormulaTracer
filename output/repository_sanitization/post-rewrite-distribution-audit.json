@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "source": "POST_REWRITE_HEAD",
+  "windows_wheel": {
+    "status": "PASS",
+    "native_core_load": "PASS",
+    "archive_private_trace": 0,
+    "sha256": "5f668c9ed6022e924bd8138c3e84c11637c3739aafa850010ecfe5ea638488d8"
+  },
+  "linux_wheel": {
+    "status": "PASS",
+    "native_core_load": "PASS",
+    "archive_private_trace": 0,
+    "sha256": "79457f4935e85df521fb58d381daabd3358565d49bf46739d87a4cea1c00203d"
+  },
+  "sdist": {
+    "status": "PASS",
+    "archive_private_trace": 0,
+    "sha256": "6292a458aa94fedf816229808162de4e6fc1b9b6edaebb6fe54c7b29a1bc0635"
+  },
+  "private_research_trace": 0,
+  "private_local_path": 0,
+  "secret_or_credential": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "assessed_revision": "71619511009b2ea3753c8c56b9a259fff13b1bea",
+  "corpus": "PUBLIC_SYNTHETIC_PREPUBLIC_V1",
+  "case_count": 23,
+  "ranked_root_causes": [
+    {
+      "root_cause": "CALLBACK",
+      "blocked_cases": 5
+    },
+    {
+      "root_cause": "CONTAINER",
+      "blocked_cases": 2
+    },
+    {
+      "root_cause": "INTERPROCEDURAL",
+      "blocked_cases": 2
+    },
+    {
+      "root_cause": "REDUCTION_TREE",
+      "blocked_cases": 2
+    },
+    {
+      "root_cause": "DYNAMIC_DISPATCH",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "INTERPOLATION",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "LABELED_ALIGNMENT",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "LABELED_REDUCTION",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "LABELED_SELECTION",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "LIBRARY_COMPOSITION",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "LOOP_FOLD",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "MISSINGNESS",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "NUMERICAL_RELATION",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "PATH_CONDITION",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "SHAPE_INDEX",
+      "blocked_cases": 1
+    },
+    {
+      "root_cause": "TYPED_OPAQUE",
+      "blocked_cases": 1
+    }
+  ],
+  "implementation_order": [
+    "INTERPROCEDURAL",
+    "LOOP_FOLD",
+    "PATH_CONDITION",
+    "SHAPE_INDEX",
+    "CONTAINER",
+    "CALLBACK",
+    "TYPED_OPAQUE",
+    "LABELED_ALIGNMENT",
+    "MISSINGNESS",
+    "REDUCTION_TREE",
+    "NUMERICAL_RELATION"
+  ]
+}

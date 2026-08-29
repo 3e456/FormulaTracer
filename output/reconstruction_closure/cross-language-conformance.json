@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "semantic_owner": "RUST_CORE",
+  "rust": "PASS",
+  "c_abi": "PASS",
+  "cpp": "PASS",
+  "python": "PASS",
+  "fields": [
+    "status",
+    "relation_chain",
+    "assumptions",
+    "proof_obligations",
+    "unresolved_reason",
+    "structural_witness"
+  ],
+  "semantic_reimplementation_in_bindings": 0
+}

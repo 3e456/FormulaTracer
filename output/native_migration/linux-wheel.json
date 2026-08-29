@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "platform": "linux",
+  "architecture": "x86_64",
+  "native_library": "libformulatracer_c_api.so",
+  "wheel": "dist/native/formulatracer-0.1.0-py3-none-linux_x86_64.whl",
+  "wheel_sha256": "0f27c3dd35aedae6640fd7d49b4bbda33a415a7519789c01204d1e72de9f6e3c",
+  "wheel_size_bytes": 1996060,
+  "license_files": [
+    "formulatracer-0.1.0.dist-info/licenses/LICENSE"
+  ],
+  "third_party_notice_files": [
+    "formulatracer-0.1.0.dist-info/licenses/THIRD_PARTY_NOTICES.md"
+  ],
+  "complete_project_license_included": true,
+  "docx_included": false,
+  "native_library_entries": [
+    "formulatracer-0.1.0.data/purelib/formulatracer/libformulatracer_c_api.so"
+  ],
+  "platform_native_only": true,
+  "build_passed": true,
+  "normal_user_requires_rust": false,
+  "stdout": "Processing <PROJECT_ROOT>\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: formulatracer\n  Building wheel for formulatracer (pyproject.toml): started\n  Building wheel for formulatracer (pyproject.toml): finished with status 'done'\n  Created wheel for formulatracer: filename=formulatracer-0.1.0-py3-none-linux_x86_64.whl size=1996060 sha256=0f27c3dd35aedae6640fd7d49b4bbda33a415a7519789c01204d1e72de9f6e3c\n  Stored in directory: /tmp/pip-ephem-wheel-cache-0yj_cr5v/wheels/ab/b8/c0/a9ba31bee702e5eb1c32d648f0503425e03b81d5dafe8f0dd3\nSuccessfully built formulatracer\n",
+  "stderr": ""
+}

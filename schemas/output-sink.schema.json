@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/output-sink.schema.json",
+  "title": "OutputSink",
+  "type": "object",
+  "required": ["sink_id", "sink_kind", "format", "payload", "source_span", "provenance", "serialization_boundary", "dataset_outputs"],
+  "properties": {
+    "sink_id": {"type": "string"},
+    "sink_kind": {"enum": ["FILE_OUTPUT", "DATASET_OUTPUT", "STREAM_OUTPUT"]},
+    "format": {"type": "string"},
+    "path_expression": {"type": ["string", "null"]},
+    "payload": {},
+    "payload_symbol": {"type": ["string", "null"]},
+    "dataset_variable": {"type": ["string", "null"]},
+    "dimensions": {"type": "array", "items": {"type": "string"}},
+    "dtype": {"type": ["string", "null"]},
+    "library_contract": {"type": ["object", "null"]},
+    "source_span": {"type": "object"},
+    "provenance": {"type": "object", "required": ["module", "file", "callable", "source_span"]},
+    "serialization_boundary": {"type": "object", "required": ["boundary_id", "mathematical_payload", "serializer", "status"]},
+    "dataset_outputs": {"type": "array"},
+    "certified_payload_range": {"type": ["object", "null"]},
+    "range_status": {"type": ["string", "null"]},
+    "range_obligations": {"type": "array"},
+    "serialization_cast": {"type": ["object", "null"]}
+  }
+}

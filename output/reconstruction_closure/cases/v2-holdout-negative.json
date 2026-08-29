@@ -1,0 +1,41 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "args": [
+      {
+        "name": "a",
+        "op": "FreeVariable"
+      },
+      {
+        "name": "b",
+        "op": "FreeVariable"
+      }
+    ],
+    "op": "Add"
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-holdout-negative.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-holdout-negative",
+  "root_cause": "NEGATIVE_CONTROL_NOT_EQUIVALENT",
+  "source_artifact_hash": "86e87f54a8da54163e352bc656dc7f8348bc93951c08777afd41924df68c5c46",
+  "case_specific_rule_used": false
+}

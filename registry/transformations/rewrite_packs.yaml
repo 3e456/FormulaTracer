@@ -1,0 +1,38 @@
+schema_version: "1.0"
+packs:
+  - pack_id: Algebra
+    motifs: [add, multiply, divide, power, negate]
+    rule_ids: [associative_normalization, simple_commutative_normalization, neutral_element_elimination, sign_normalization, factor_common_denominator, distribute_fraction, factor_multiplication, distribute_multiplication, fraction_normalization, power_normalization]
+  - pack_id: Calculus
+    motifs: [integral, derivative, shifted_evaluation]
+    rule_ids: [derivative_linearity, integral_linearity, integration_by_parts]
+  - pack_id: Series
+    motifs: [series, factorial, recurrence]
+    rule_ids: [recurrence_to_factorial_term, factorial_gamma_natural]
+  - pack_id: Trigonometric
+    motifs: [sin, cos, complex_exponential]
+    rule_ids: [pythagorean_trig_identity, trig_addition_identity, euler_to_exponential, exponential_to_euler]
+  - pack_id: ExponentialLog
+    motifs: [exp, log, sinh, cosh]
+    rule_ids: [exp_log_cancel_positive, log_exp_cancel_real, log_product_positive, sinh_exponential_form, cosh_exponential_form]
+  - pack_id: Fourier
+    motifs: [fourier, dft, complex_exponential]
+    rule_ids: [euler_to_exponential, exponential_to_euler, dft_inverse_normalization, fourier_frequency_reindex, convolution_transform_product]
+  - pack_id: Laplace
+    motifs: [laplace, transform]
+    rule_ids: [laplace_shift, convolution_transform_product]
+  - pack_id: Tensor
+    motifs: [matmul, dot, transpose, indexed_tensor, tensor_contraction]
+    rule_ids: [transpose_index_normalization, dot_to_index_sum, matmul_to_index_sum, trace_cyclicity]
+  - pack_id: Combinatorics
+    motifs: [factorial, gamma, recurrence]
+    rule_ids: [factorial_gamma_natural, recurrence_to_factorial_term]
+  - pack_id: Probability
+    motifs: [expectation, variance, covariance]
+    rule_ids: [expectation_linearity, variance_covariance_expansion]
+  - pack_id: IndexedReduction
+    motifs: [finite_sum, reduction, bound_index, indexed_multiplication]
+    rule_ids: [alpha_rename, finite_sum_normalization, sum_constant_extraction, sum_reindex, finite_sum_interval_split]
+  - pack_id: BitVector
+    motifs: [bitvector, mask, shift, rotate, bitfield, modulo]
+    rule_ids: [python_bitand_mask8_mod, unsigned8_bitnot_subtract, unsigned8_shift_left_mod, unsigned8_logical_shift_right_floor, bitfield_extract_shift_mask, bitand_commutative, bitor_commutative, bitxor_self_zero, bitand_zero, rotate_roundtrip]

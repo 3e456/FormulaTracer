@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/control-flow-assurance-summary.schema.json",
+  "type": "object",
+  "required": ["schema_version", "status", "critical_control_flow_false_acceptance_open", "cleanup", "corpora", "metrics", "evidence_levels"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "status": {"const": "CONTROL_FLOW_ASSURANCE_COMPLETED"},
+    "critical_control_flow_false_acceptance_open": {"type": "integer", "minimum": 0},
+    "cleanup": {
+      "type": "object",
+      "required": ["temporary_external_checkout_directories_absent", "external_source_archives_absent", "external_source_copied_into_repo"],
+      "properties": {
+        "temporary_external_checkout_directories_absent": {"type": "boolean"},
+        "external_source_archives_absent": {"type": "boolean"},
+        "external_source_copied_into_repo": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "corpora": {"type": "object"},
+    "metrics": {"type": "object"},
+    "evidence_levels": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+  },
+  "additionalProperties": true
+}

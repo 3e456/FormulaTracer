@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "scope": [
+    "tracked current tree",
+    "public documentation and examples",
+    "Windows/Linux wheels",
+    "sdist",
+    "previous sanitized reachable-history evidence"
+  ],
+  "private_research_trace_current_tree": 0,
+  "private_research_trace_distribution_artifacts": 0,
+  "private_local_path_trace": 0,
+  "public_personal_email": 0,
+  "secret_or_credential_open": 0,
+  "git_history_private_email": 0,
+  "history_emails": [
+    "GitHub noreply addresses only"
+  ],
+  "external_source_retained": 0,
+  "status": "PASS"
+}

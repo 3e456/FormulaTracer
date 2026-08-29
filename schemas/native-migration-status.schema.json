@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/native-migration-status.schema.json",
+  "type": "object",
+  "required": ["schema_version", "baseline_sha", "components", "critical_gates"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "baseline_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "components": {"type": "array", "items": {"type": "object", "required": ["component", "python_reference", "rust_status", "semantic_match", "python_retired"]}},
+    "critical_gates": {"type": "object"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,59 @@
+{
+  "classification_counts": {
+    "FRONTEND_LIMITATION": 1,
+    "NORMALIZATION_GAP": 5
+  },
+  "critical_false_acceptance": 0,
+  "divergence_count": 6,
+  "divergences": [
+    {
+      "case_id": "generated-2",
+      "classification": "NORMALIZATION_GAP",
+      "false_acceptance": false,
+      "language": "cpp",
+      "prior_status": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+      "theory_family": "Piecewise"
+    },
+    {
+      "case_id": "generated-2",
+      "classification": "NORMALIZATION_GAP",
+      "false_acceptance": false,
+      "language": "python",
+      "prior_status": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+      "theory_family": "Piecewise"
+    },
+    {
+      "case_id": "generated-2",
+      "classification": "NORMALIZATION_GAP",
+      "false_acceptance": false,
+      "language": "rust",
+      "prior_status": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+      "theory_family": "Piecewise"
+    },
+    {
+      "case_id": "generated-3",
+      "classification": "NORMALIZATION_GAP",
+      "false_acceptance": false,
+      "language": "cpp",
+      "prior_status": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+      "theory_family": "FiniteSum"
+    },
+    {
+      "case_id": "generated-3",
+      "classification": "NORMALIZATION_GAP",
+      "false_acceptance": false,
+      "language": "python",
+      "prior_status": "ROUND_TRIP_DIVERGENCE_LOCALIZED",
+      "theory_family": "FiniteSum"
+    },
+    {
+      "case_id": "generated-3",
+      "classification": "FRONTEND_LIMITATION",
+      "false_acceptance": false,
+      "language": "rust",
+      "prior_status": "ROUND_TRIP_UNRESOLVED",
+      "theory_family": "FiniteSum"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "wave": 2,
+  "name": "wave2-equivalence",
+  "status": "COMPLETE",
+  "owners_before": [
+    "cpp_audit.transformations",
+    "cpp_audit.mathematical_knowledge",
+    "cpp_audit.equality_saturation"
+  ],
+  "semantic_symbols_before": 56,
+  "symbols_before": 95,
+  "symbols_migrated": [
+    "cpp_audit.equality_saturation.ExactEqualitySaturator.__init__",
+    "cpp_audit.equality_saturation.ExactEqualitySaturator.run",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.__init__",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.assert_fact",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.knows",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.merge",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.missing_for",
+    "cpp_audit.equality_saturation.MathematicalRelationGraph.__init__",
+    "cpp_audit.equality_saturation.MathematicalRelationGraph.add",
+    "cpp_audit.equality_saturation.TypedEGraph.__init__",
+    "cpp_audit.equality_saturation.TypedEGraph.add",
+    "cpp_audit.equality_saturation.TypedEGraph.add_equivalent",
+    "cpp_audit.equality_saturation.TypedEGraph.ematch",
+    "cpp_audit.equality_saturation.TypedEGraph.equivalent",
+    "cpp_audit.equality_saturation.TypedEGraph.extract",
+    "cpp_audit.equality_saturation.TypedEGraph.union",
+    "cpp_audit.equality_saturation.replay_equality_trace",
+    "cpp_audit.equality_saturation.saturate_and_match",
+    "cpp_audit.equality_saturation.select_rewrite_packs",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeEntry.all_conditions",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeEntry.is_exact",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.entries",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.register",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.select",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.validate",
+    "cpp_audit.mathematical_knowledge.apply_knowledge_once",
+    "cpp_audit.transformations._application",
+    "cpp_audit.transformations._apply_exact_rule",
+    "cpp_audit.transformations._find_pattern_matches",
+    "cpp_audit.transformations._hard_constraints",
+    "cpp_audit.transformations._pattern_matches",
+    "cpp_audit.transformations._replace_path",
+    "cpp_audit.transformations._rewrite_once",
+    "cpp_audit.transformations._template",
+    "cpp_audit.transformations.apply_transformation_set",
+    "cpp_audit.transformations.bounded_rewrite_search"
+  ],
+  "symbols_reclassified": [
+    {
+      "symbol": "cpp_audit.equality_saturation.TypedEGraph.find",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.equality_saturation.TypedEGraph.nodes",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.equality_saturation._expression_id",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.equality_saturation._marker",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.equality_saturation._source_origins",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.__init__",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.default",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.get",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.load",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.transformations._apply_exact_node",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.transformations._contains_derivative_order",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.transformations._contains_op",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.transformations._expression_id",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.transformations._id",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.transformations._load_rules",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.transformations._mentions_bound",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.transformations._obligations",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.transformations._rename_bound",
+      "classification": "REFERENCE_ORACLE"
+    },
+    {
+      "symbol": "cpp_audit.transformations._root",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    },
+    {
+      "symbol": "cpp_audit.transformations._with_expression",
+      "classification": "ORCHESTRATION_SERIALIZATION_PRESENTATION"
+    }
+  ],
+  "symbols_remaining": [],
+  "rust_parity": "PASS",
+  "false_acceptance": 0,
+  "reachability": {
+    "production_semantic": 0,
+    "dynamic_unresolved": 0
+  },
+  "dependency_edges": [
+    {
+      "source": "cpp_audit.equality_saturation",
+      "target": "cpp_audit.mathematical_knowledge"
+    },
+    {
+      "source": "cpp_audit.equality_saturation",
+      "target": "cpp_audit.transformations"
+    },
+    {
+      "source": "cpp_audit.mathematical_knowledge",
+      "target": "cpp_audit.transformations"
+    },
+    {
+      "source": "cpp_audit.transformations",
+      "target": "cpp_audit.core"
+    },
+    {
+      "source": "cpp_audit.transformations",
+      "target": "cpp_audit.expression"
+    }
+  ],
+  "sccs": {
+    "cpp_audit.transformations": 10,
+    "cpp_audit.mathematical_knowledge": 6,
+    "cpp_audit.equality_saturation": 1
+  },
+  "order_rationale": "Each remaining owner is a singleton SCC. Dependencies are migrated before consumers; frontend extraction may remain Python while all semantic decisions move native.",
+  "symbols_initial": [
+    "cpp_audit.equality_saturation.ExactEqualitySaturator.__init__",
+    "cpp_audit.equality_saturation.ExactEqualitySaturator.run",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.__init__",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.assert_fact",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.knows",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.merge",
+    "cpp_audit.equality_saturation.MathematicalFactEngine.missing_for",
+    "cpp_audit.equality_saturation.MathematicalRelationGraph.__init__",
+    "cpp_audit.equality_saturation.MathematicalRelationGraph.add",
+    "cpp_audit.equality_saturation.TypedEGraph.__init__",
+    "cpp_audit.equality_saturation.TypedEGraph.add",
+    "cpp_audit.equality_saturation.TypedEGraph.add_equivalent",
+    "cpp_audit.equality_saturation.TypedEGraph.ematch",
+    "cpp_audit.equality_saturation.TypedEGraph.equivalent",
+    "cpp_audit.equality_saturation.TypedEGraph.extract",
+    "cpp_audit.equality_saturation.TypedEGraph.find",
+    "cpp_audit.equality_saturation.TypedEGraph.nodes",
+    "cpp_audit.equality_saturation.TypedEGraph.union",
+    "cpp_audit.equality_saturation._expression_id",
+    "cpp_audit.equality_saturation._marker",
+    "cpp_audit.equality_saturation._source_origins",
+    "cpp_audit.equality_saturation.replay_equality_trace",
+    "cpp_audit.equality_saturation.saturate_and_match",
+    "cpp_audit.equality_saturation.select_rewrite_packs",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeEntry.all_conditions",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeEntry.is_exact",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.__init__",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.default",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.entries",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.get",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.load",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.register",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.select",
+    "cpp_audit.mathematical_knowledge.MathematicalKnowledgeRegistry.validate",
+    "cpp_audit.mathematical_knowledge.apply_knowledge_once",
+    "cpp_audit.transformations._application",
+    "cpp_audit.transformations._apply_exact_node",
+    "cpp_audit.transformations._apply_exact_rule",
+    "cpp_audit.transformations._contains_derivative_order",
+    "cpp_audit.transformations._contains_op",
+    "cpp_audit.transformations._expression_id",
+    "cpp_audit.transformations._find_pattern_matches",
+    "cpp_audit.transformations._hard_constraints",
+    "cpp_audit.transformations._id",
+    "cpp_audit.transformations._load_rules",
+    "cpp_audit.transformations._mentions_bound",
+    "cpp_audit.transformations._obligations",
+    "cpp_audit.transformations._pattern_matches",
+    "cpp_audit.transformations._rename_bound",
+    "cpp_audit.transformations._replace_path",
+    "cpp_audit.transformations._rewrite_once",
+    "cpp_audit.transformations._root",
+    "cpp_audit.transformations._template",
+    "cpp_audit.transformations._with_expression",
+    "cpp_audit.transformations.apply_transformation_set",
+    "cpp_audit.transformations.bounded_rewrite_search"
+  ],
+  "parity_artifacts": [
+    "output/native_migration/final/waves/wave2-equality-parity.json",
+    "output/native_migration/final/waves/wave2-knowledge-parity.json",
+    "output/native_migration/final/waves/wave2-transformations-parity.json"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "release_version": "0.1.0",
+  "release_commit": "RESOLVE_FROM_TAG:v0.1.0",
+  "validated_code_sha": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "gates": {
+    "INTEGRATED_HEAD_VERIFIED": true,
+    "PRIVACY_PASS": true,
+    "LICENSE_PASS": true,
+    "DOCS_PASS": true,
+    "VERSION_PASS": true,
+    "DEFECT_LEDGER_PASS": true,
+    "FALSE_ACCEPTANCE_ZERO": true,
+    "LEAN_PASS": true,
+    "CLIPPY_PASS": true,
+    "PACKAGING_EVIDENCE_PASS": true
+  },
+  "github_actions_note": "CI_NOT_EXECUTED_DUE_TO_ACCOUNT_LIMIT; exact Debian 12 Docker evidence retained",
+  "pypi_publish": false,
+  "crates_io_publish": false,
+  "repository_visibility_changed": false,
+  "e_drive_accessed": false,
+  "protected_docx_touched": false,
+  "pre_tag_decision": "READY_TO_CREATE_RELEASE_V0_1_0"
+}

@@ -1,0 +1,316 @@
+{
+  "cases": [
+    {
+      "case_id": "finite_sum",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 0,
+        "break_count": 0,
+        "cfg_status": "CFG_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 0,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 1,
+        "mutation_count": 1,
+        "nested_branch_count": 0,
+        "nested_loop_count": 0,
+        "return_count": 1,
+        "statuses": [
+          "CFG_RESOLVED",
+          "LOOP_NORMALIZED",
+          "LOOP_NORMALIZED_UNDER_ASSUMPTIONS",
+          "MUTATION_RESOLVED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [],
+        "while_count": 0
+      },
+      "comparisons": 4,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "FoldLeft",
+      "findings": [],
+      "source_hash": "8b18a9e196da6071cbfa5b1564f7a8970b338c8600833d75168d5c56e4d0e665",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    },
+    {
+      "case_id": "range_start",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 0,
+        "break_count": 0,
+        "cfg_status": "CFG_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 0,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 1,
+        "mutation_count": 1,
+        "nested_branch_count": 0,
+        "nested_loop_count": 0,
+        "return_count": 1,
+        "statuses": [
+          "CFG_RESOLVED",
+          "LOOP_NORMALIZED",
+          "LOOP_NORMALIZED_UNDER_ASSUMPTIONS",
+          "MUTATION_RESOLVED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [],
+        "while_count": 0
+      },
+      "comparisons": 12,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "FoldLeft",
+      "findings": [],
+      "source_hash": "ca013fc0e64bdfc941c4dfe18d495d8553b752fecf7860f0f2275db64e222568",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    },
+    {
+      "case_id": "range_step",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 0,
+        "break_count": 0,
+        "cfg_status": "CFG_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 0,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 1,
+        "mutation_count": 1,
+        "nested_branch_count": 0,
+        "nested_loop_count": 0,
+        "return_count": 1,
+        "statuses": [
+          "CFG_RESOLVED",
+          "LOOP_NORMALIZED",
+          "LOOP_NORMALIZED_UNDER_ASSUMPTIONS",
+          "MUTATION_RESOLVED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [],
+        "while_count": 0
+      },
+      "comparisons": 3,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "FoldLeft",
+      "findings": [],
+      "source_hash": "c200ce80c04ac4e6fbb7126bfb2cd8b3616c582cec8a47f670646de94813b1c3",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    },
+    {
+      "case_id": "zero_iteration_initial",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 0,
+        "break_count": 0,
+        "cfg_status": "CFG_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 0,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 1,
+        "mutation_count": 1,
+        "nested_branch_count": 0,
+        "nested_loop_count": 0,
+        "return_count": 1,
+        "statuses": [
+          "CFG_RESOLVED",
+          "LOOP_NORMALIZED",
+          "LOOP_NORMALIZED_UNDER_ASSUMPTIONS",
+          "MUTATION_RESOLVED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [],
+        "while_count": 0
+      },
+      "comparisons": 2,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "FoldLeft",
+      "findings": [],
+      "source_hash": "a4f969999378c969ae62fa48798d69e5e2d8c72116ac8328cce2797ff5b95f8a",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    },
+    {
+      "case_id": "conditional_accumulation",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 1,
+        "break_count": 0,
+        "cfg_status": "CFG_PARTIALLY_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 0,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 1,
+        "mutation_count": 1,
+        "nested_branch_count": 1,
+        "nested_loop_count": 0,
+        "return_count": 1,
+        "statuses": [
+          "BRANCH_MERGE_UNRESOLVED",
+          "CFG_PARTIALLY_RESOLVED",
+          "LOOP_NORMALIZED",
+          "LOOP_NORMALIZED_UNDER_ASSUMPTIONS",
+          "MUTATION_RESOLVED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [
+          {
+            "code": "BRANCH_MERGE_UNRESOLVED",
+            "source_span": {
+              "begin_column": 2,
+              "begin_line": 4,
+              "end_column": 12,
+              "end_line": 5
+            }
+          }
+        ],
+        "while_count": 0
+      },
+      "comparisons": 15,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "FoldLeft",
+      "findings": [],
+      "source_hash": "841a504662fd30cb24d1aca44ab5a413aaf88ec57f4e96629adda2d060225b36",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    },
+    {
+      "case_id": "branch_merge",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 1,
+        "break_count": 0,
+        "cfg_status": "CFG_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 0,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 0,
+        "mutation_count": 0,
+        "nested_branch_count": 0,
+        "nested_loop_count": 0,
+        "return_count": 1,
+        "statuses": [
+          "BRANCH_MERGE_RESOLVED",
+          "BRANCH_PATHS_RESOLVED",
+          "CFG_RESOLVED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [],
+        "while_count": 0
+      },
+      "comparisons": 12,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "IfThenElse",
+      "findings": [],
+      "source_hash": "7c2732d74aaeae5f318b028bb2f44150ec69455d8272866599efb032399b3581",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    },
+    {
+      "case_id": "nested_branch",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 2,
+        "break_count": 0,
+        "cfg_status": "CFG_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 0,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 0,
+        "mutation_count": 0,
+        "nested_branch_count": 1,
+        "nested_loop_count": 0,
+        "return_count": 1,
+        "statuses": [
+          "BRANCH_MERGE_RESOLVED",
+          "BRANCH_PATHS_RESOLVED",
+          "CFG_RESOLVED",
+          "NESTED_CONTROL_FLOW_VERIFIED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [],
+        "while_count": 0
+      },
+      "comparisons": 4,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "IfThenElse",
+      "findings": [],
+      "source_hash": "6d81bee159231dc3122e40c487f3b22afe11abce2f6f74dc3e09ebedae74490d",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    },
+    {
+      "case_id": "early_return",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 1,
+        "break_count": 0,
+        "cfg_status": "CFG_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 1,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 0,
+        "mutation_count": 0,
+        "nested_branch_count": 0,
+        "nested_loop_count": 0,
+        "return_count": 2,
+        "statuses": [
+          "BRANCH_MERGE_RESOLVED",
+          "BRANCH_PATHS_RESOLVED",
+          "CFG_RESOLVED",
+          "EARLY_RETURN_SEMANTICS_VERIFIED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [],
+        "while_count": 0
+      },
+      "comparisons": 5,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "IfThenElse",
+      "findings": [],
+      "source_hash": "09429626a8890554053b55e12514b3eeb559885ee9da38ee3ec282e8f19fd1e8",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    },
+    {
+      "case_id": "branch_mutation",
+      "cfg_summary": {
+        "alias_status": "ALIASES_RESOLVED",
+        "branch_count": 1,
+        "break_count": 0,
+        "cfg_status": "CFG_RESOLVED",
+        "continue_count": 0,
+        "early_return_count": 0,
+        "exception_path_count": 0,
+        "exception_paths": [],
+        "loop_count": 0,
+        "mutation_count": 2,
+        "nested_branch_count": 0,
+        "nested_loop_count": 0,
+        "return_count": 1,
+        "statuses": [
+          "BRANCH_MERGE_RESOLVED",
+          "BRANCH_PATHS_RESOLVED",
+          "CFG_RESOLVED",
+          "MUTATION_RESOLVED"
+        ],
+        "termination_status": "TERMINATION_NOT_AT_ISSUE",
+        "unresolved_control_flow": [],
+        "while_count": 0
+      },
+      "comparisons": 8,
+      "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+      "expression_op": "IfThenElse",
+      "findings": [],
+      "source_hash": "d6ad60bbd9ec2bc3f2675e6ec34e25a8d3204e8e4711fc8807656f3d4d99e1f5",
+      "status": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN"
+    }
+  ],
+  "evidence_level": "EXHAUSTIVELY_TESTED_ON_FINITE_DOMAIN",
+  "finite_exhaustive_comparisons": 65,
+  "schema_version": "1.0",
+  "semantic_mismatch_count": 0,
+  "unresolved_comparisons": 0
+}

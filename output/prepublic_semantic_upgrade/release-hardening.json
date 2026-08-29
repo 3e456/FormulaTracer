@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "source_commit": "e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
+  "semantic_claims_gate": "PASS",
+  "sbom_format": "SPDX-2.3",
+  "sbom_package_count": 30,
+  "dependency_locks": {
+    "cargo": true,
+    "lean": true,
+    "python_ci_constraints": true
+  },
+  "wheel_portability": {
+    "canonical_checker": "tools/artifact_manifest.py",
+    "windows_native_isolation_required": true,
+    "linux_native_isolation_required": true,
+    "private_trace_count_required": 0,
+    "license_and_notices_required": true
+  },
+  "failures": []
+}

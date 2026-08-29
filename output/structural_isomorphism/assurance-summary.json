@@ -1,0 +1,821 @@
+{
+  "schema_version": "1.0",
+  "engine": "formulatracer-core:typed-structural-isomorphism-v1",
+  "semantic_role": "COMPARISON_AID_NOT_PROOF",
+  "cases": 28,
+  "positive_cases": 10,
+  "negative_mutations": 18,
+  "positive_correspondences": 10,
+  "unresolved": 2,
+  "false_structural_isomorphism": 0,
+  "semantic_mutations_collapsed_by_quotient": 0,
+  "cases_detail": [
+    {
+      "case_id": "identical",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_IDENTICAL",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "": ""
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "typed-rename",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC_UNDER_FACTS",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {
+          "x": "y"
+        },
+        "node_mapping": {
+          "": "",
+          "/op": "/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": [
+          "typed_symbol_correspondence:x:y"
+        ]
+      }
+    },
+    {
+      "case_id": "source-span",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [
+          "source_span"
+        ],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "": ""
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "node-id",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [
+          "node_id"
+        ],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "": ""
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "alpha-sum",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {
+          "i": "#b0",
+          "j": "#b0"
+        },
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {
+          "i": "#b0",
+          "j": "#b0"
+        },
+        "mapping": {},
+        "node_mapping": {
+          "": ""
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "explicit-map",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC_UNDER_FACTS",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {
+          "quantity": "Q"
+        },
+        "node_mapping": {
+          "": "",
+          "/op": "/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": [
+          "explicit_symbol_mapping:quantity:Q"
+        ]
+      }
+    },
+    {
+      "case_id": "commutative-add",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC_UNDER_FACTS",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {
+          "x": "y"
+        },
+        "node_mapping": {
+          "": "",
+          "/args/0": "/args/0",
+          "/args/0/op": "/args/0/op",
+          "/args/1": "/args/1",
+          "/op": "/op"
+        },
+        "operand_permutations": [
+          {
+            "normalized_order": [
+              1,
+              0
+            ],
+            "original_order": [
+              0,
+              1
+            ],
+            "path": ""
+          }
+        ],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": [
+          "commutative:Add",
+          "typed_symbol_correspondence:x:y"
+        ]
+      }
+    },
+    {
+      "case_id": "associative-add",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC_UNDER_FACTS",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [
+          ""
+        ],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "": ""
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": [
+          "associative:Add"
+        ]
+      }
+    },
+    {
+      "case_id": "associative-commutative-multiply",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC_UNDER_FACTS",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [
+          ""
+        ],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {
+          "x": "y"
+        },
+        "node_mapping": {
+          "": "",
+          "/args/0": "/args/0",
+          "/args/0/op": "/args/0/op",
+          "/args/1": "/args/1",
+          "/args/2": "/args/2",
+          "/op": "/op"
+        },
+        "operand_permutations": [
+          {
+            "normalized_order": [
+              1,
+              0
+            ],
+            "original_order": [
+              0,
+              1
+            ],
+            "path": "/args/0"
+          },
+          {
+            "normalized_order": [
+              2,
+              1,
+              0
+            ],
+            "original_order": [
+              0,
+              1,
+              2
+            ],
+            "path": ""
+          }
+        ],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": [
+          "associative:Multiply",
+          "commutative:Multiply",
+          "typed_symbol_correspondence:x:y"
+        ]
+      }
+    },
+    {
+      "case_id": "indexed-typed-rename",
+      "kind": "POSITIVE",
+      "status": "STRUCTURALLY_ISOMORPHIC_UNDER_FACTS",
+      "comparison_may_proceed": true,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {
+          "A": "matrix"
+        },
+        "node_mapping": {
+          "": "",
+          "/indices": "/indices",
+          "/op": "/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": [
+          "typed_symbol_correspondence:A:matrix"
+        ]
+      }
+    },
+    {
+      "case_id": "add-subtract",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "multiply-divide",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "power-exponent",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/args/0": "/args/0",
+          "/args/1/op": "/args/1/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "reduction-axis",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "transpose-inverse",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "bit-width",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/args": "/args"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "signedness",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/args": "/args"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "dtype",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "shape",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/op": "/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "units",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/op": "/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "branch-swap",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/condition": "/condition",
+          "/else/op": "/else/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "condition",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "ISOMORPHISM_UNRESOLVED",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [
+          "SYMBOL_TYPE_UNRESOLVED:p:q"
+        ],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "comparison",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "bound",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/body": "/body",
+          "/lower": "/lower",
+          "/op": "/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "index",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/indices/0/op": "/indices/0/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "normalization",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {
+          "/args/0/op": "/args/0/op"
+        },
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "operator-metadata",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "NOT_STRUCTURALLY_ISOMORPHIC",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    },
+    {
+      "case_id": "untyped-rename",
+      "kind": "NEGATIVE_MUTATION",
+      "status": "ISOMORPHISM_UNRESOLVED",
+      "comparison_may_proceed": false,
+      "proof_authority": false,
+      "witness": {
+        "association_changes": [],
+        "binder_mapping": {},
+        "blocked_reasons": [
+          "SYMBOL_TYPE_UNRESOLVED:x:unknown"
+        ],
+        "evidence_level": "COMPARISON_AID",
+        "ignored_representation_metadata": [],
+        "index_mapping": {},
+        "mapping": {},
+        "node_mapping": {},
+        "operand_permutations": [],
+        "proof_authority": false,
+        "provenance": [
+          "formulatracer-core:typed-structural-isomorphism-v1"
+        ],
+        "required_assumptions": [],
+        "required_facts": []
+      }
+    }
+  ]
+}

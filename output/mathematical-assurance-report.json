@@ -1,0 +1,642 @@
+{
+  "retrieval": [
+    {
+      "case_id": "dft-0",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-0",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-0",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-0",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-1",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-1",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-1",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-1",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-2",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-2",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-2",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-2",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-3",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-3",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-3",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-3",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-4",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-4",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-4",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-4",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-5",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-5",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-5",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-5",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-6",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-6",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-6",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-6",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-7",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-7",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-7",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-7",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-8",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-8",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-8",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-8",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-9",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-9",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-9",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-9",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-10",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-10",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-10",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-10",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-11",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-11",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-11",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-11",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-12",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-12",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-12",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-12",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-13",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-13",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-13",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-13",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-14",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-14",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-14",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-14",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-15",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-15",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-15",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-15",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-16",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-16",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-16",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-16",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-17",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-17",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-17",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-17",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-18",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-18",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-18",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-18",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-19",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-19",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-19",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-19",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-20",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-20",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-20",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-20",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-21",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-21",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-21",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-21",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-22",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-22",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-22",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-22",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-23",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-23",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-23",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-23",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "dft-24",
+      "expected_provider": "numpy.fft.fft",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "taylor-24",
+      "expected_provider": "scipy.special.expn_series",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "difference-24",
+      "expected_provider": "numpy.central_difference",
+      "rank": 1,
+      "status": "RETRIEVED"
+    },
+    {
+      "case_id": "quadrature-24",
+      "expected_provider": "numpy.dot.quadrature",
+      "rank": 4,
+      "status": "RETRIEVED"
+    }
+  ],
+  "adversarial": [
+    {
+      "case_id": "exp-log-without-domain",
+      "status": "NO_AUTHORIZED_REWRITE_PATH",
+      "false_acceptance": false
+    },
+    {
+      "case_id": "unknown-divergent-series",
+      "status": "DIVERGENCE_CERTIFIED",
+      "false_acceptance": false
+    },
+    {
+      "case_id": "implicit-einstein",
+      "status": "AMBIGUITY_REJECTED",
+      "false_acceptance": false
+    },
+    {
+      "case_id": "overgeneralized-fft",
+      "status": "NOT_VERIFIED",
+      "false_acceptance": false
+    }
+  ],
+  "metrics": {
+    "generated_retrieval_cases": 100,
+    "provider_retrieval_miss": 0,
+    "adversarial_cases": 4,
+    "detected_or_fail_closed": 4,
+    "false_acceptance": 0
+  },
+  "release_gates": {
+    "CRITICAL_INFINITE_PROCESS_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_TRANSFORM_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_GENERATION_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_PATTERN_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_REWRITE_FALSE_ACCEPTANCE_OPEN": 0,
+    "TEX_AMBIGUITY_FALSE_ACCEPTANCE": 0,
+    "PROVIDER_RETRIEVAL_MISS": 0
+  }
+}

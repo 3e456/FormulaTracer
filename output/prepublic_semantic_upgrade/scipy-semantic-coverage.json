@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "providers": [
+    "scipy"
+  ],
+  "counts": {
+    "FULL_RECONSTRUCTION": 3,
+    "PARTIAL_RECONSTRUCTION": 1
+  },
+  "false_exact_promotion": 0,
+  "false_certified_promotion": 0,
+  "records": [
+    {
+      "case_id": "scipy-linear-solve",
+      "provider": "scipy",
+      "root_cause": "NUMERICAL_RELATION",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "algorithm_layer": {
+            "callback": null,
+            "method": "LAPACK_SOLVER",
+            "tolerances": {}
+          },
+          "certified_promotion": false,
+          "error_evidence": {
+            "certified": false,
+            "kind": "BOUND_NOT_AVAILABLE"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.solve.html"
+            }
+          ],
+          "exact_promotion": false,
+          "problem_layer": {
+            "kind": "LINEAR_SOLVE",
+            "target": {
+              "a": "A",
+              "b": "b",
+              "op": "LinearSystem"
+            }
+          },
+          "relation_chain": [
+            {
+              "from": "PROBLEM",
+              "kind": "ALGORITHMICALLY_REALIZED_BY",
+              "to": "ALGORITHM"
+            },
+            {
+              "from": "COMPUTED_RESULT",
+              "kind": "APPROXIMATION_OF",
+              "to": "PROBLEM"
+            }
+          ],
+          "result_layer": "x_hat",
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "scipy-quad",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "algorithm_layer": {
+            "callback": {
+              "base": "x",
+              "exponent": 2,
+              "op": "Power"
+            },
+            "method": "QUADPACK",
+            "tolerances": {
+              "epsabs": 1.49e-08,
+              "epsrel": 1.49e-08
+            }
+          },
+          "certified_promotion": false,
+          "error_evidence": {
+            "certified": false,
+            "kind": "LIBRARY_RETURNED_ESTIMATE",
+            "value": "abserr"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.quad.html"
+            }
+          ],
+          "exact_promotion": false,
+          "problem_layer": {
+            "kind": "DEFINITE_INTEGRAL",
+            "target": {
+              "bounds": [
+                0,
+                1
+              ],
+              "op": "Integral"
+            }
+          },
+          "relation_chain": [
+            {
+              "from": "PROBLEM",
+              "kind": "ALGORITHMICALLY_REALIZED_BY",
+              "to": "ALGORITHM"
+            },
+            {
+              "from": "COMPUTED_RESULT",
+              "kind": "APPROXIMATION_OF",
+              "to": "PROBLEM"
+            }
+          ],
+          "result_layer": "y_hat",
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "scipy-quad-missing-callback",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "PARTIAL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "algorithm": "QUADPACK",
+          "certified_promotion": false,
+          "exact_promotion": false,
+          "problem": {
+            "op": "Integral"
+          },
+          "returned_approximation": "y_hat",
+          "status": "PARTIAL_RECONSTRUCTION",
+          "unresolved": [
+            {
+              "code": "CALLBACK_RECONSTRUCTION_UNRESOLVED"
+            }
+          ]
+        },
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "case_id": "scipy-minimize",
+      "provider": "scipy",
+      "root_cause": "CALLBACK",
+      "status": "FULL_RECONSTRUCTION",
+      "result": {
+        "kernel": "C",
+        "operation": "PROVIDER_EXECUTION",
+        "result": {
+          "algorithm_layer": {
+            "callback": {
+              "base": "x",
+              "exponent": 2,
+              "op": "Power"
+            },
+            "method": "BFGS",
+            "tolerances": {
+              "tol": 1e-08
+            }
+          },
+          "certified_promotion": false,
+          "error_evidence": {
+            "certified": false,
+            "kind": "BOUND_NOT_AVAILABLE"
+          },
+          "evidence": [
+            {
+              "authority": "UPSTREAM_REFERENCE_GUARANTEE",
+              "reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html"
+            }
+          ],
+          "exact_promotion": false,
+          "problem_layer": {
+            "kind": "OPTIMIZATION",
+            "target": {
+              "op": "ArgMin",
+              "variable": "x"
+            }
+          },
+          "relation_chain": [
+            {
+              "from": "PROBLEM",
+              "kind": "ALGORITHMICALLY_REALIZED_BY",
+              "to": "ALGORITHM"
+            },
+            {
+              "from": "COMPUTED_RESULT",
+              "kind": "APPROXIMATION_OF",
+              "to": "PROBLEM"
+            }
+          ],
+          "result_layer": "x_hat",
+          "status": "FULL_RECONSTRUCTION",
+          "unresolved": []
+        },
+        "schema_version": "1.0"
+      }
+    }
+  ]
+}

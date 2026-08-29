@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0",
+  "taxonomy_frozen_before_fixes": true,
+  "source_artifacts_modified": false,
+  "unresolved_count": 20,
+  "root_cause_counts": {
+    "ALGORITHM_SEMANTICS_GAP": 1,
+    "APPROXIMATION_RELATION_GAP": 1,
+    "ASSUMPTION_GAP": 1,
+    "CONSTRAINT_PROPAGATION_GAP": 1,
+    "ERROR_EVIDENCE_GAP": 2,
+    "FRONTEND_RECONSTRUCTION_GAP": 4,
+    "PROVIDER_CONTRACT_GAP": 4,
+    "THEORY_IR_GAP": 4,
+    "TRANSFORM_RELATION_GAP": 1,
+    "TRUNCATION_RELATION_GAP": 1
+  },
+  "findings": [
+    {
+      "case_id": "v2-dev-dft",
+      "split": "development",
+      "family": "fourier",
+      "primary_root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "NOT_VERIFIED",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "ARTIFACT_INFORMATION_LOSS"
+      ],
+      "blocking_stage": "LANGUAGE_FRONTEND",
+      "required_generic_capability": "independent generated-source reconstruction"
+    },
+    {
+      "case_id": "v2-dev-series",
+      "split": "development",
+      "family": "series",
+      "primary_root_cause": "TRUNCATION_RELATION_GAP",
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "NON_EXACT_RELATION_CANDIDATE",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "BOUND_CORRESPONDENCE_GAP"
+      ],
+      "blocking_stage": "RELATION_GRAPH",
+      "required_generic_capability": "finite/infinite bound relation reconstruction"
+    },
+    {
+      "case_id": "v2-dev-quadrature",
+      "split": "development",
+      "family": "quadrature",
+      "primary_root_cause": "ERROR_EVIDENCE_GAP",
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "CONTRACT_OBLIGATIONS_REMAINING",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "MISSING_PROOF_OBLIGATION"
+      ],
+      "blocking_stage": "ERROR_RANGE",
+      "required_generic_capability": "certified provider error evidence"
+    },
+    {
+      "case_id": "v2-validation-difference",
+      "split": "validation",
+      "family": "finite_difference",
+      "primary_root_cause": "ASSUMPTION_GAP",
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "CONTRACT_OBLIGATIONS_REMAINING",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "MISSING_PROOF_OBLIGATION"
+      ],
+      "blocking_stage": "FACT_CONSTRAINT_ENGINE",
+      "required_generic_capability": "explicit assumption recovery"
+    },
+    {
+      "case_id": "v2-validation-integral",
+      "split": "validation",
+      "family": "integral",
+      "primary_root_cause": "APPROXIMATION_RELATION_GAP",
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "NON_EXACT_RELATION_CANDIDATE",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "ERROR_EVIDENCE_GAP"
+      ],
+      "blocking_stage": "RELATION_GRAPH",
+      "required_generic_capability": "approximation/discretization relation chain"
+    },
+    {
+      "case_id": "v2-validation-convolution",
+      "split": "validation",
+      "family": "convolution",
+      "primary_root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "NOT_VERIFIED",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "ARTIFACT_INFORMATION_LOSS"
+      ],
+      "blocking_stage": "LANGUAGE_FRONTEND",
+      "required_generic_capability": "independent generated-source reconstruction"
+    },
+    {
+      "case_id": "v2-validation-gamma",
+      "split": "validation",
+      "family": "gamma",
+      "primary_root_cause": "PROVIDER_CONTRACT_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [],
+      "blocking_stage": "PROVIDER_PROJECTION",
+      "required_generic_capability": "versioned mathematical provider projection"
+    },
+    {
+      "case_id": "v2-validation-beta",
+      "split": "validation",
+      "family": "beta",
+      "primary_root_cause": "PROVIDER_CONTRACT_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [],
+      "blocking_stage": "PROVIDER_PROJECTION",
+      "required_generic_capability": "versioned mathematical provider projection"
+    },
+    {
+      "case_id": "v2-validation-asymptotic",
+      "split": "validation",
+      "family": "asymptotic",
+      "primary_root_cause": "THEORY_IR_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "UNSUPPORTED_MATHEMATICS"
+      ],
+      "blocking_stage": "THEORY_FRONTEND",
+      "required_generic_capability": "supported canonical Mathematical IR primitive"
+    },
+    {
+      "case_id": "v2-validation-matrix_multiply",
+      "split": "validation",
+      "family": "matrix_multiply",
+      "primary_root_cause": "PROVIDER_CONTRACT_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [],
+      "blocking_stage": "PROVIDER_PROJECTION",
+      "required_generic_capability": "versioned mathematical provider projection"
+    },
+    {
+      "case_id": "v2-validation-svd",
+      "split": "validation",
+      "family": "svd",
+      "primary_root_cause": "PROVIDER_CONTRACT_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [],
+      "blocking_stage": "PROVIDER_PROJECTION",
+      "required_generic_capability": "versioned mathematical provider projection"
+    },
+    {
+      "case_id": "v2-validation-root_finding",
+      "split": "validation",
+      "family": "root_finding",
+      "primary_root_cause": "ALGORITHM_SEMANTICS_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [],
+      "blocking_stage": "ALGORITHM_IR",
+      "required_generic_capability": "algorithm-to-mathematics projection"
+    },
+    {
+      "case_id": "v2-validation-probability",
+      "split": "validation",
+      "family": "probability",
+      "primary_root_cause": "THEORY_IR_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "UNSUPPORTED_MATHEMATICS"
+      ],
+      "blocking_stage": "THEORY_FRONTEND",
+      "required_generic_capability": "supported canonical Mathematical IR primitive"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-piecewise",
+      "split": "final_holdout_v2",
+      "family": "piecewise",
+      "primary_root_cause": "THEORY_IR_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "UNSUPPORTED_MATHEMATICS"
+      ],
+      "blocking_stage": "THEORY_FRONTEND",
+      "required_generic_capability": "supported canonical Mathematical IR primitive"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-integer_modulo",
+      "split": "final_holdout_v2",
+      "family": "integer_modulo",
+      "primary_root_cause": "THEORY_IR_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "UNSUPPORTED_MATHEMATICS"
+      ],
+      "blocking_stage": "THEORY_FRONTEND",
+      "required_generic_capability": "supported canonical Mathematical IR primitive"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-bitvector",
+      "split": "final_holdout_v2",
+      "family": "bitvector",
+      "primary_root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "ARTIFACT_INFORMATION_LOSS"
+      ],
+      "blocking_stage": "LANGUAGE_FRONTEND",
+      "required_generic_capability": "independent generated-source reconstruction"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-units",
+      "split": "final_holdout_v2",
+      "family": "units",
+      "primary_root_cause": "CONSTRAINT_PROPAGATION_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "SHAPE_GAP"
+      ],
+      "blocking_stage": "FACT_CONSTRAINT_ENGINE",
+      "required_generic_capability": "unit/type/shape constraint propagation"
+    },
+    {
+      "case_id": "v2-final_holdout_v2-laplace",
+      "split": "final_holdout_v2",
+      "family": "laplace",
+      "primary_root_cause": "TRANSFORM_RELATION_GAP",
+      "retrieval_status": "NOT_APPLICABLE",
+      "verification_status": "FAIL_CLOSED",
+      "relation_status": "UNRESOLVED_OR_OUT_OF_SCOPE",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "NORMALIZATION_CONVENTION_GAP"
+      ],
+      "blocking_stage": "RELATION_GRAPH",
+      "required_generic_capability": "transform relation and convention chain"
+    },
+    {
+      "case_id": "v2-holdout-fourier-renamed",
+      "split": "final_holdout_v2",
+      "family": "fourier",
+      "primary_root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "NOT_VERIFIED",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "ARTIFACT_INFORMATION_LOSS"
+      ],
+      "blocking_stage": "LANGUAGE_FRONTEND",
+      "required_generic_capability": "independent generated-source reconstruction"
+    },
+    {
+      "case_id": "v2-holdout-weighted-renamed",
+      "split": "final_holdout_v2",
+      "family": "quadrature",
+      "primary_root_cause": "ERROR_EVIDENCE_GAP",
+      "retrieval_status": "RETRIEVED",
+      "verification_status": "CONTRACT_OBLIGATIONS_REMAINING",
+      "relation_status": "RECONSTRUCTION_UNRESOLVED",
+      "false_acceptance": false,
+      "repair_policy": "GENERIC_FAMILY_FIX_ONLY",
+      "holdout_mutation_allowed": false,
+      "secondary_causes": [
+        "MISSING_PROOF_OBLIGATION"
+      ],
+      "blocking_stage": "ERROR_RANGE",
+      "required_generic_capability": "certified provider error evidence"
+    }
+  ],
+  "taxonomy_fingerprint": "bc0b37ffd7d786a843fc4840a2c24c321315dd799e9d75cd2ca7885c51d78542"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/semantic-equivalence-registry.schema.json",
+  "title": "Reviewed semantic equivalence class registry",
+  "type": "object",
+  "required": ["schema_version", "classes"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "classes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "family", "canonical_semantics", "members", "member_count", "review_status"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "family": {"type": "string", "minLength": 1},
+          "members": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+          "member_count": {"type": "integer", "minimum": 1},
+          "review_status": {"enum": ["REFERENCE_REVIEWED_CLASS_TEMPLATE", "REFERENCE_CANDIDATE_OR_VERIFIED_MEMBER"]}
+        }
+      }
+    }
+  }
+}

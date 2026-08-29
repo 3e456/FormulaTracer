@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "command": ".venv/Scripts/python -m pip wheel . --no-deps --no-build-isolation",
+  "status": "WHEEL_BUILT_AND_INSPECTED",
+  "artifact_name": "cpp_algorithm_audit-0.1.0-py3-none-any.whl",
+  "sha256": "e07e5a01f8e74c96ea356fd48046941f467ffed69cb7da5c04396fbc2fc77400",
+  "archive_entry_count": 61,
+  "metadata": {
+    "name": "cpp-algorithm-audit",
+    "version": "0.1.0",
+    "declared_license": "Apache-2.0",
+    "requires_dist": ["PyYAML>=6.0", "jsonschema>=4.21"]
+  },
+  "license_file_present": true,
+  "license_file_complete_canonical_text": false,
+  "unexpected_docx_present": false,
+  "temporary_artifact_retained": false,
+  "release_gate": "LICENSE_DECISION_AND_COMPLETE_TEXT_REQUIRED"
+}

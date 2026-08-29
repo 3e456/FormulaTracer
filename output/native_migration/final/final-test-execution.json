@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "python": {
+    "passed": 579,
+    "skipped": 1,
+    "subtests_passed": 36,
+    "returncode": 0,
+    "summary": "................................................................................................................... [ 19%]\n.................................................................... [ 31%]\n..................................................................... [ 43%]\n.....................................................s.................. [ 55%]\n........................................................................ [ 68%]\n........................................................................ [ 80%]\n........................................................................ [ 93%]\n........................................                                 [100%]\n579 passed, 1 skipped, 36 subtests passed in 123.88s (0:02:03)\n"
+  },
+  "rust": {
+    "passed": 52,
+    "returncode": 0,
+    "summary": "ves_non_exact_relation_and_obligations ... ok\ntest reconstruction::tests::floating_loop_is_algorithmic_realization_not_exact_sum ... ok\ntest reconstruction::tests::safe_temporaries_inline_but_side_effects_fail_closed ... ok\ntest reconstruction::tests::structural_rename_alone_never_proves_exactness ... ok\ntest structural::tests::free_rename_without_types_is_unresolved ... ok\ntest structural::tests::alpha_binders_and_fact_gated_commutativity_have_witnesses_not_proof ... ok\ntest reconstruction::tests::safe_loop_reconstructs_sum_and_mutated_bound_does_not_match ... ok\ntest structural::tests::semantic_near_misses_are_never_quotiented ... ok\ntest unify::tests::typed_index_patterns_enforce_rank_and_substitution_preserves_indices ... ok\ntest units::tests::affine_conversion_is_exact ... ok\ntest surface::tests::parses_documented_exact_subset_and_rejects_implicit_contraction ... ok\ntest bitvector::tests::exhaustive_unsigned_eight_bit_matches_finite_bit_sequences ... ok\n\ntest result: ok. 49 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\n\nrunning 0 tests\n\ntest result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s\n\nwarning: linker stdout: ライブラリ <PROJECT_ROOT>\\target\\debug\\deps\\formulatracer_c_api.dll.lib とオブジェクト <PROJECT_ROOT>\\target\\debug\\deps\\formulatracer_c_api.dll.exp を作成中\n  |\n  = note: `#[warn(linker_messages)]` on by default\n\nwarning: `formulatracer-c-api` (lib) generated 1 warning\n    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.09s\n     Running unittests src\\lib.rs (target\\debug\\deps\\formulatracer_c_api-61489633335e386c.exe)\n     Running unittests src\\main.rs (target\\debug\\deps\\formulatracer_native-6072912dc153abbf.exe)\n     Running unittests src\\lib.rs (target\\debug\\deps\\formulatracer_core-574ed09c39d6bbe0.exe)\n   Doc-tests formulatracer_c_api\n   Doc-tests formulatracer_core\n"
+  },
+  "c_cpp": {
+    "returncode": 0,
+    "output": "{\n  \"passed\": true,\n  \"returncodes\": [\n    0,\n    0,\n    0,\n    0\n  ]\n}\n"
+  },
+  "differential": {
+    "returncode": 0,
+    "output": "{\n  \"cases\": 1056,\n  \"semantic_matches\": 1056,\n  \"tex_matches\": 1056,\n  \"false_acceptance\": 0\n}\n"
+  },
+  "structural_isomorphism": {
+    "returncode": 0,
+    "output": "{\n  \"cases\": 28,\n  \"positive_correspondences\": 10,\n  \"false_structural_isomorphism\": 0,\n  \"semantic_mutations_collapsed_by_quotient\": 0\n}\n"
+  },
+  "waves": [
+    {
+      "script": "run_wave1_core_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave1_expression_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave1_numeric_types_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave1_math_semantics_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave2_knowledge_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave2_transformations_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave2_equality_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave3_ieee754_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave3_interval_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave3_probability_parity.py",
+      "returncode": 0
+    },
+    {
+      "script": "run_wave4_synthesis_parity.py",
+      "returncode": 0
+    }
+  ],
+  "lean": {
+    "returncode": 0,
+    "output": "Build completed successfully.\n",
+    "forbidden_declarations": {
+      "sorry": 0,
+      "admit": 0,
+      "axiom": 0
+    }
+  },
+  "status": "PASS"
+}

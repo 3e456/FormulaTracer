@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "release_version": "0.1.0",
+  "release_commit": "RESOLVE_FROM_TAG:v0.1.0",
+  "validated_code_sha": "e2b8c98f234f887b6309d2403f283024703a1088",
+  "reproducibility": "STRUCTURALLY_REPRODUCIBLE",
+  "validated_artifact_evidence": [
+    {
+      "name": "formulatracer-0.1.0-py3-none-win_amd64.whl",
+      "platform": "Windows x86_64",
+      "sha256": "9563034003106bbed5e5c05e3d0c216f251c75dc8d9f6e605fd8c46702c72600",
+      "attached": false
+    },
+    {
+      "name": "formulatracer-0.1.0-py3-none-linux_x86_64.whl",
+      "platform": "Debian 12 x86_64",
+      "sha256": "56652259c1d5fc597759cde1064c3b6b2607e0b165a4861bcaf0fe34120b0d36",
+      "attached": false
+    },
+    {
+      "name": "formulatracer-0.1.0-windows-source.tar.gz",
+      "platform": "source artifact validated on Windows",
+      "sha256": "de1ad0ffe3276be76a2e5e45a5519501cf71ccd3f4cc6c436ec143d464106f3a",
+      "attached": false
+    },
+    {
+      "name": "formulatracer-0.1.0-linux-source.tar.gz",
+      "platform": "source artifact validated on Debian 12",
+      "sha256": "fd2d0729653fb3ea12b704ea5f3d03dae1d3b3db6a62ec402035f299479c3c43",
+      "attached": false
+    }
+  ],
+  "github_generated_source_archives": true,
+  "release_attachments": ["sbom.spdx.json", "artifact-manifest.json"],
+  "license": "Apache-2.0",
+  "license_sha256": "52b612fef6cb450f213d942ed14ef630272e94ac4643a273105640b1037bf1b6"
+}

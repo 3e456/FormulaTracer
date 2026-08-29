@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/library-coverage-summary.schema.json",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "public_apis_classified",
+    "classification_counts",
+    "semantic_equivalence_classes",
+    "meaningful_semantic_classification_rate",
+    "self_generation_capable_backends",
+    "round_trip_verified",
+    "CRITICAL_LIBRARY_FALSE_ACCEPTANCE_OPEN",
+    "external_source_retained",
+    "private_corpus_before_after",
+    "self_audit_readiness"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"const": "MAJOR_LIBRARY_COVERAGE_EXPANSION_COMPLETE"},
+    "public_apis_classified": {"type": "integer", "minimum": 1},
+    "classification_counts": {"type": "object"},
+    "semantic_equivalence_classes": {"type": "integer", "minimum": 1},
+    "meaningful_semantic_classification_rate": {"type": "number", "minimum": 0, "maximum": 1},
+    "self_generation_capable_backends": {"type": "integer", "minimum": 1},
+    "round_trip_verified": {"type": "integer", "minimum": 1},
+    "CRITICAL_LIBRARY_FALSE_ACCEPTANCE_OPEN": {"const": 0},
+    "external_source_retained": {"const": 0},
+    "private_corpus_before_after": {"type": "object", "required": ["before", "after", "data_file_content_read", "corpus_modified"]},
+    "self_audit_readiness": {"type": "object", "required": ["backends"]}
+  },
+  "additionalProperties": true
+}

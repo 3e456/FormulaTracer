@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "rules": {
+    "version_field_required": true,
+    "supported_old_versions_are_readable": true,
+    "unsupported_future_versions": "FAIL_CLOSED",
+    "silent_downgrade": false,
+    "migration": "explicit converter or documented regeneration"
+  },
+  "contracts": [
+    {"name": "AuditBundle manifest", "path": "schemas/audit-bundle-manifest.schema.json", "current": "1.0"},
+    {"name": "Implementation IR", "path": "schemas/implementation-ir.schema.json", "current": "0.1"},
+    {"name": "Expression IR", "path": "schemas/expression-ir.schema.json", "current": "0.1"},
+    {"name": "Reconstruction artifact", "path": "schemas/reconstruction-artifact.schema.json", "current": "1.0"}
+  ]
+}

@@ -1,0 +1,22 @@
+schema_version: "0.1"
+rule:
+  id: trapezoidal_rule
+  kind: approximation
+  approximation_family_id: trapezoidal_rule
+  relation: APPROXIMATION_OF
+  source_pattern: {op: Integral, domain: {op: PatternVariable, name: domain}}
+  target_template:
+    op: Quadrature
+    method: trapezoidal
+    integration_domain: {op: PatternVariable, name: domain}
+    partition: {op: FreeVariable, name: partition}
+    step_size: {op: FreeVariable, name: h}
+    sample_nodes: [left, right]
+    weights: [{op: Constant, value: 0.5}, {op: Constant, value: 0.5}]
+    composite: true
+  parameters: [h, partition, axis, dimension]
+  conditions: ["partition and step are known", "integrand is sufficiently smooth"]
+  proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_trapezoidal_is_registered
+  cost: {symbolic_arithmetic_operations: 3, asymptotic_memory_rank: 1, transformation_path_length: 1}
+  library_contract: {qualified_callable: scipy.integrate.trapezoid, exact_semantic_operator: Quadrature, scope: public_reference_contract}

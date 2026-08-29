@@ -1,0 +1,14 @@
+schema_version: "0.1"
+rule:
+  id: simpson_rule
+  kind: approximation
+  approximation_family_id: simpson_rule
+  relation: APPROXIMATION_OF
+  source_pattern: {op: Integral, domain: {op: PatternVariable, name: domain}}
+  target_template: {op: Quadrature, method: simpson, integration_domain: {op: PatternVariable, name: domain}, partition: {op: FreeVariable, name: partition}, step_size: {op: FreeVariable, name: h}, sample_nodes: [left, midpoint, right], weights: [{op: Constant, value: 1}, {op: Constant, value: 4}, {op: Constant, value: 1}], weight_scale: {op: Divide, args: [{op: FreeVariable, name: h}, {op: Constant, value: 6}]}, composite: true}
+  parameters: [h, partition, axis, dimension]
+  conditions: ["partition is uniform", "interval count is even", "integrand is sufficiently smooth"]
+  proof_status: CONVERGENCE_PROOF_NOT_YET_ESTABLISHED
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_simpson_is_registered
+  cost: {symbolic_arithmetic_operations: 5, asymptotic_memory_rank: 1, transformation_path_length: 1}
+  library_contract: {qualified_callable: scipy.integrate.simpson, exact_semantic_operator: Quadrature, scope: public_reference_contract}

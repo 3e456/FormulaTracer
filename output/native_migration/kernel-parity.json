@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0",
+  "scope": "NATIVE_KERNEL_COMPLETION_INCREMENT",
+  "total_comparisons": 24,
+  "matching": 24,
+  "mismatches": 0,
+  "by_kernel": {
+    "A": {
+      "matching": 10,
+      "total": 10
+    },
+    "B": {
+      "matching": 9,
+      "total": 9
+    },
+    "C": {
+      "matching": 2,
+      "total": 2
+    },
+    "D": {
+      "matching": 1,
+      "total": 1
+    },
+    "E": {
+      "matching": 1,
+      "total": 1
+    },
+    "F": {
+      "matching": 1,
+      "total": 1
+    }
+  },
+  "records": [
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "NATURAL:COMMUTATIVE_SEMIRING",
+      "expected": "PROVEN_TRUE",
+      "actual": "PROVEN_TRUE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "NATURAL:RING",
+      "expected": "PROVEN_FALSE",
+      "actual": "PROVEN_FALSE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "INTEGER:RING",
+      "expected": "PROVEN_TRUE",
+      "actual": "PROVEN_TRUE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "INTEGER:FIELD",
+      "expected": "PROVEN_FALSE",
+      "actual": "PROVEN_FALSE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "RATIONAL:FIELD",
+      "expected": "PROVEN_TRUE",
+      "actual": "PROVEN_TRUE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "REAL:FIELD",
+      "expected": "PROVEN_TRUE",
+      "actual": "PROVEN_TRUE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "COMPLEX:FIELD",
+      "expected": "PROVEN_TRUE",
+      "actual": "PROVEN_TRUE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "BOOLEAN:BOOLEAN_ALGEBRA",
+      "expected": "PROVEN_TRUE",
+      "actual": "PROVEN_TRUE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "algebraic_structure",
+      "case": "BITVECTOR:BITVECTOR_ALGEBRA",
+      "expected": "PROVEN_TRUE",
+      "actual": "PROVEN_TRUE",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "A",
+      "surface": "domain_fact",
+      "case": "unknown-domain",
+      "expected": "UNRESOLVED",
+      "actual": "UNRESOLVED",
+      "match": true,
+      "parity_kind": "FAIL_CLOSED_CONTRACT"
+    },
+    {
+      "kernel": "B",
+      "surface": "canonical_tex",
+      "case": "tex-0",
+      "expected": "2",
+      "actual": "2",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "B",
+      "surface": "canonical_tex",
+      "case": "tex-1",
+      "expected": "2.0",
+      "actual": "2.0",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "B",
+      "surface": "canonical_tex",
+      "case": "tex-2",
+      "expected": "x_{i}",
+      "actual": "x_{i}",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "B",
+      "surface": "canonical_tex",
+      "case": "tex-3",
+      "expected": "{x+1}",
+      "actual": "{x+1}",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "B",
+      "surface": "canonical_tex",
+      "case": "tex-4",
+      "expected": "\\sum_{i=0}^{N-1} x_{i}",
+      "actual": "\\sum_{i=0}^{N-1} x_{i}",
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "B",
+      "surface": "canonical_equality",
+      "case": "equal-0",
+      "expected": true,
+      "actual": true,
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "B",
+      "surface": "canonical_equality",
+      "case": "equal-1",
+      "expected": true,
+      "actual": true,
+      "match": true,
+      "parity_kind": "PYTHON_REFERENCE"
+    },
+    {
+      "kernel": "B",
+      "surface": "canonical_equality",
+      "case": "alpha-plus-commutative",
+      "expected": true,
+      "actual": true,
+      "reference_value": false,
+      "match": true,
+      "parity_kind": "AUTHORIZED_CANONICAL_SEMANTICS",
+      "note": "The validation-only Python oracle has a known false rejection because it does not sort commutative arguments; native behavior matches the documented canonical algebraic semantics."
+    },
+    {
+      "kernel": "B",
+      "surface": "typed_structural_isomorphism",
+      "case": "typed-symbol-rename-is-comparison-aid",
+      "expected": "COMPARISON_AID",
+      "actual": "COMPARISON_AID",
+      "match": true,
+      "parity_kind": "NATIVE_INTEGRITY_CONTRACT"
+    },
+    {
+      "kernel": "C",
+      "surface": "interval",
+      "case": "division-across-zero",
+      "expected": "UNRESOLVED",
+      "actual": "UNRESOLVED",
+      "match": true,
+      "parity_kind": "FAIL_CLOSED_CONTRACT"
+    },
+    {
+      "kernel": "C",
+      "surface": "error_composition",
+      "case": "certified-sum",
+      "expected": 0.3,
+      "actual": 0.30000000000000004,
+      "match": true,
+      "parity_kind": "FAIL_CLOSED_CONTRACT"
+    },
+    {
+      "kernel": "D",
+      "surface": "provider_adoption",
+      "case": "obligation-preserved",
+      "expected": "MATCH_WITH_OBLIGATIONS",
+      "actual": "MATCH_WITH_OBLIGATIONS",
+      "match": true,
+      "parity_kind": "FAIL_CLOSED_CONTRACT"
+    },
+    {
+      "kernel": "E",
+      "surface": "semantic_diff",
+      "case": "changed-constant",
+      "expected": "SEMANTIC_DIVERGENCE",
+      "actual": "SEMANTIC_DIVERGENCE",
+      "match": true,
+      "parity_kind": "FAIL_CLOSED_CONTRACT"
+    },
+    {
+      "kernel": "F",
+      "surface": "native_audit_bundle",
+      "case": "deterministic-payload",
+      "expected": "VALID_NATIVE_BUNDLE",
+      "actual": "VALID_NATIVE_BUNDLE",
+      "match": true,
+      "parity_kind": "NATIVE_INTEGRITY_CONTRACT"
+    }
+  ],
+  "warning": "Contract assertions are not Python-Rust parity. Full ownership retirement remains blocked until every production semantic surface has reference differential coverage."
+}

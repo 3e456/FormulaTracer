@@ -1,0 +1,470 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "FormulaTracer-prepublic-build-inputs",
+  "documentNamespace": "https://github.com/3e456/FormulaTracer/sbom/e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
+  "creationInfo": {
+    "created": "2026-08-29T00:00:00Z",
+    "creators": [
+      "Tool: FormulaTracer-prepublic-release-hardening"
+    ]
+  },
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-Cargo-block-buffer-0.10.4",
+      "name": "block-buffer",
+      "versionInfo": "0.10.4",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/block-buffer@0.10.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-cfg-if-1.0.4",
+      "name": "cfg-if",
+      "versionInfo": "1.0.4",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/cfg-if@1.0.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-cpufeatures-0.2.17",
+      "name": "cpufeatures",
+      "versionInfo": "0.2.17",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/cpufeatures@0.2.17"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-crypto-common-0.1.7",
+      "name": "crypto-common",
+      "versionInfo": "0.1.7",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/crypto-common@0.1.7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-digest-0.10.7",
+      "name": "digest",
+      "versionInfo": "0.10.7",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/digest@0.10.7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-formulatracer-c-api-0.1.0",
+      "name": "formulatracer-c-api",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/formulatracer-c-api@0.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-formulatracer-cli-0.1.0",
+      "name": "formulatracer-cli",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/formulatracer-cli@0.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-formulatracer-core-0.1.0",
+      "name": "formulatracer-core",
+      "versionInfo": "0.1.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/formulatracer-core@0.1.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-generic-array-0.14.7",
+      "name": "generic-array",
+      "versionInfo": "0.14.7",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/generic-array@0.14.7"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-itoa-1.0.18",
+      "name": "itoa",
+      "versionInfo": "1.0.18",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/itoa@1.0.18"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-libc-0.2.189",
+      "name": "libc",
+      "versionInfo": "0.2.189",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/libc@0.2.189"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-memchr-2.8.3",
+      "name": "memchr",
+      "versionInfo": "2.8.3",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/memchr@2.8.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-proc-macro2-1.0.107",
+      "name": "proc-macro2",
+      "versionInfo": "1.0.107",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/proc-macro2@1.0.107"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-quote-1.0.47",
+      "name": "quote",
+      "versionInfo": "1.0.47",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/quote@1.0.47"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-serde-1.0.229",
+      "name": "serde",
+      "versionInfo": "1.0.229",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/serde@1.0.229"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-serde_core-1.0.229",
+      "name": "serde_core",
+      "versionInfo": "1.0.229",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/serde_core@1.0.229"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-serde_derive-1.0.229",
+      "name": "serde_derive",
+      "versionInfo": "1.0.229",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/serde_derive@1.0.229"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-serde_json-1.0.151",
+      "name": "serde_json",
+      "versionInfo": "1.0.151",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/serde_json@1.0.151"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-sha2-0.10.9",
+      "name": "sha2",
+      "versionInfo": "0.10.9",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/sha2@0.10.9"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-syn-3.0.4",
+      "name": "syn",
+      "versionInfo": "3.0.4",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/syn@3.0.4"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-thiserror-2.0.20",
+      "name": "thiserror",
+      "versionInfo": "2.0.20",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/thiserror@2.0.20"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-thiserror-impl-2.0.20",
+      "name": "thiserror-impl",
+      "versionInfo": "2.0.20",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/thiserror-impl@2.0.20"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-typenum-1.20.1",
+      "name": "typenum",
+      "versionInfo": "1.20.1",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/typenum@1.20.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-unicode-ident-1.0.24",
+      "name": "unicode-ident",
+      "versionInfo": "1.0.24",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/unicode-ident@1.0.24"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-version_check-0.9.5",
+      "name": "version_check",
+      "versionInfo": "0.9.5",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/version_check@0.9.5"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-Cargo-zmij-1.0.23",
+      "name": "zmij",
+      "versionInfo": "1.0.23",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:cargo/zmij@1.0.23"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-PyPI-PyYAML-6.0.3",
+      "name": "PyYAML",
+      "versionInfo": "6.0.3",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/PyYAML@6.0.3"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-PyPI-jsonschema-4.26.0",
+      "name": "jsonschema",
+      "versionInfo": "4.26.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/jsonschema@4.26.0"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-PyPI-pytest-9.1.1",
+      "name": "pytest",
+      "versionInfo": "9.1.1",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/pytest@9.1.1"
+        }
+      ]
+    },
+    {
+      "SPDXID": "SPDXRef-PyPI-build-1.3.0",
+      "name": "build",
+      "versionInfo": "1.3.0",
+      "downloadLocation": "NOASSERTION",
+      "licenseConcluded": "NOASSERTION",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:pypi/build@1.3.0"
+        }
+      ]
+    }
+  ],
+  "source": {
+    "commit": "e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
+    "cargo_lock_sha256": "935513873d15342e5c7ea3bc2c43e185fbbf6604f976416c7cd9cdc1fe238db3",
+    "ci_requirements_sha256": "e190d60c900957a55fa8dde79a935120adb9a50cb6be2c8f6107ffcd1cab4d48"
+  }
+}

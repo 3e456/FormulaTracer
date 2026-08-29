@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/python-control-flow-graph.schema.json",
+  "type": "object",
+  "required": ["schema_version", "function", "entry", "exit", "blocks", "edges", "mutations", "aliases", "summary", "diagnostics"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "function": {"type": "string"},
+    "entry": {"type": "string"},
+    "exit": {"type": "string"},
+    "blocks": {"type": "array", "items": {"type": "object", "required": ["id", "kind", "statements"]}},
+    "edges": {"type": "array", "items": {"type": "object", "required": ["source", "target", "kind"]}},
+    "mutations": {"type": "array", "items": {"type": "object", "required": ["id", "kind", "target", "status", "source_span"]}},
+    "aliases": {"type": "array"},
+    "summary": {"type": "object", "required": ["cfg_status", "branch_count", "loop_count", "mutation_count", "alias_status", "exception_paths", "termination_status", "unresolved_control_flow"]},
+    "diagnostics": {"type": "array"}
+  },
+  "additionalProperties": false
+}

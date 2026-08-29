@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0",
+  "measurement_scope": "PRODUCTION",
+  "total_production_semantic_calls": 3162,
+  "sccs": [
+    {
+      "scc": 0,
+      "modules": [
+        "cpp_audit.approximation_families"
+      ],
+      "kernels": [
+        "C"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 1,
+      "modules": [
+        "cpp_audit.approximation_proofs"
+      ],
+      "kernels": [
+        "C"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 2,
+      "modules": [
+        "cpp_audit.bitvector"
+      ],
+      "kernels": [
+        "A"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 3,
+      "modules": [
+        "cpp_audit.core"
+      ],
+      "kernels": [
+        "F"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 4,
+      "modules": [
+        "cpp_audit.end_to_end"
+      ],
+      "kernels": [
+        "C"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 5,
+      "modules": [
+        "cpp_audit.equality_saturation"
+      ],
+      "kernels": [
+        "B"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 6,
+      "modules": [
+        "cpp_audit.expression"
+      ],
+      "kernels": [
+        "B"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 7,
+      "modules": [
+        "cpp_audit.generation_planning"
+      ],
+      "kernels": [
+        "D"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 8,
+      "modules": [
+        "cpp_audit.ieee754"
+      ],
+      "kernels": [
+        "A"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 9,
+      "modules": [
+        "cpp_audit.interval"
+      ],
+      "kernels": [
+        "C"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 10,
+      "modules": [
+        "cpp_audit.logic_semantics"
+      ],
+      "kernels": [
+        "A"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 11,
+      "modules": [
+        "cpp_audit.math_semantics"
+      ],
+      "kernels": [
+        "B"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 12,
+      "modules": [
+        "cpp_audit.mathematical_knowledge"
+      ],
+      "kernels": [
+        "D"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 13,
+      "modules": [
+        "cpp_audit.mathematical_primitives"
+      ],
+      "kernels": [
+        "A"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 14,
+      "modules": [
+        "cpp_audit.numeric_types"
+      ],
+      "kernels": [
+        "A"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 15,
+      "modules": [
+        "cpp_audit.parallel_semantics"
+      ],
+      "kernels": [
+        "C"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 16,
+      "modules": [
+        "cpp_audit.probability"
+      ],
+      "kernels": [
+        "C"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 17,
+      "modules": [
+        "cpp_audit.synthesis"
+      ],
+      "kernels": [
+        "D"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 18,
+      "modules": [
+        "cpp_audit.transformations"
+      ],
+      "kernels": [
+        "B"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    },
+    {
+      "scc": 19,
+      "modules": [
+        "cpp_audit.units"
+      ],
+      "kernels": [
+        "A"
+      ],
+      "calls": 0,
+      "percentage_of_production_calls": 0.0
+    }
+  ],
+  "calls_by_kernel_from_owners": {
+    "NATIVE_OR_NON_OWNER": 3162
+  }
+}

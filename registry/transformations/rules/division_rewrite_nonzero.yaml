@@ -1,0 +1,20 @@
+schema_version: "0.1"
+rule:
+  id: division_rewrite_nonzero
+  kind: exact_under_assumptions
+  source_pattern:
+    op: Divide
+    args:
+      - {op: PatternVariable, name: numerator}
+      - {op: PatternVariable, name: denominator}
+  target_template:
+    op: Multiply
+    args:
+      - {op: PatternVariable, name: numerator}
+      - op: Divide
+        args:
+          - {op: Constant, value: 1}
+          - {op: PatternVariable, name: denominator}
+  conditions: ["denominator != 0"]
+  theorem_reference: CppAudit.Semantics.Transformation.division_rewrite_sound
+  provenance: {source: built-in exact semantics, maintainer: cpp-audit}

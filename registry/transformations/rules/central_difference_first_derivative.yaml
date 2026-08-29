@@ -1,0 +1,33 @@
+schema_version: "0.1"
+rule:
+  id: central_difference_first_derivative
+  kind: approximation
+  approximation_family_id: central_difference_first_derivative
+  source_pattern: {op: Derivative, order: 1, variable: x}
+  target_template:
+    op: Divide
+    numerator:
+      op: Subtract
+      args:
+        - {op: FunctionCall, name: f, args: [{op: Add, args: [{op: FreeVariable, name: x}, {op: FreeVariable, name: h}]}]}
+        - {op: FunctionCall, name: f, args: [{op: Subtract, args: [{op: FreeVariable, name: x}, {op: FreeVariable, name: h}]}]}
+    denominator: {op: Multiply, args: [{op: Constant, value: 2}, {op: FreeVariable, name: h}]}
+  parameters: [h, spacing, axis, dimension]
+  conditions: ["h > 0", "x-h and x+h are in domain", "f is sufficiently smooth"]
+  convergence: {kind: uniform_on_region, parameter: h, limit_point: 0, error_order: 2}
+  supported_observables: [frequency_response]
+  frequency_symbol: "i sin(omega h) / h"
+  exact_frequency_symbol: "i omega"
+  selection_error_estimate: 0.000001
+  proof_status: UNPROVEN_SELECTION_METADATA
+  theorem_reference: CppAudit.Semantics.NumericalApproximation.generated_central_is_registered
+  library_contract: {qualified_callable: numpy.gradient, registry: registry/libraries/numpy.yaml, exact_semantic_operator: FiniteDifference, scope: public_reference_contract}
+  cost:
+    asymptotic_time: O(n)
+    asymptotic_memory: O(1)
+    asymptotic_memory_rank: 1
+    symbolic_arithmetic_operations: 4
+    function_evaluations: "2*n"
+    memory_reads: "2*n"
+    memory_writes: n
+    transformation_path_length: 1

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/math-surface-ast.schema.json",
+  "title": "MathSurfaceAST",
+  "type": "object",
+  "required": ["kind", "children"],
+  "properties": {
+    "kind": {"type": "string"},
+    "value": {"type": ["string", "null"]},
+    "children": {"type": "array", "items": {"$ref": "#"}},
+    "subscript": {"type": ["string", "null"]},
+    "superscript": {"type": ["string", "null"]},
+    "source_span": {"type": ["array", "null"], "prefixItems": [{"type": "integer"}, {"type": "integer"}]},
+    "original_tex": {"type": ["string", "null"]},
+    "style": {"type": "object"}
+  },
+  "additionalProperties": false
+}

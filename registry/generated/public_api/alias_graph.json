@@ -1,0 +1,641 @@
+{
+  "ambiguous": {},
+  "cycles": [],
+  "edge_count": 158,
+  "edges": [
+    {
+      "alias": "dask.array.core.Array",
+      "canonical": "dask.array.Array"
+    },
+    {
+      "alias": "dask.bag.core.Bag",
+      "canonical": "dask.bag.Bag"
+    },
+    {
+      "alias": "dask.bag.core.Item",
+      "canonical": "dask.bag.Item"
+    },
+    {
+      "alias": "dask.dataframe.groupby.Aggregation",
+      "canonical": "dask.dataframe.Aggregation"
+    },
+    {
+      "alias": "geopandas.geodataframe.GeoDataFrame",
+      "canonical": "geopandas.GeoDataFrame"
+    },
+    {
+      "alias": "geopandas.geoseries.GeoSeries",
+      "canonical": "geopandas.GeoSeries"
+    },
+    {
+      "alias": "igraph.Cover.membership",
+      "canonical": "igraph.Clustering.membership"
+    },
+    {
+      "alias": "igraph.Cover.n",
+      "canonical": "igraph.Clustering.n"
+    },
+    {
+      "alias": "igraph.Cover.size",
+      "canonical": "igraph.Clustering.size"
+    },
+    {
+      "alias": "igraph.Cover.size_histogram",
+      "canonical": "igraph.Clustering.size_histogram"
+    },
+    {
+      "alias": "igraph.Cover.sizes",
+      "canonical": "igraph.Clustering.sizes"
+    },
+    {
+      "alias": "igraph.Cover.summary",
+      "canonical": "igraph.Clustering.summary"
+    },
+    {
+      "alias": "igraph.Dendrogram.summary",
+      "canonical": "igraph.Clustering.summary"
+    },
+    {
+      "alias": "igraph.EdgeSeq.attributes",
+      "canonical": "igraph.Edge.attributes"
+    },
+    {
+      "alias": "igraph.Graph.es",
+      "canonical": "igraph.Cut.es"
+    },
+    {
+      "alias": "igraph.Graph.summary",
+      "canonical": "igraph.Clustering.summary"
+    },
+    {
+      "alias": "igraph.GraphBase.Adjacency",
+      "canonical": "igraph.Graph.Adjacency"
+    },
+    {
+      "alias": "igraph.GraphBase.Read_DIMACS",
+      "canonical": "igraph.Graph.Read_DIMACS"
+    },
+    {
+      "alias": "igraph.GraphBase.add_edges",
+      "canonical": "igraph.Graph.add_edges"
+    },
+    {
+      "alias": "igraph.GraphBase.add_vertices",
+      "canonical": "igraph.Graph.add_vertices"
+    },
+    {
+      "alias": "igraph.GraphBase.all_st_cuts",
+      "canonical": "igraph.Graph.all_st_cuts"
+    },
+    {
+      "alias": "igraph.GraphBase.all_st_mincuts",
+      "canonical": "igraph.Graph.all_st_mincuts"
+    },
+    {
+      "alias": "igraph.GraphBase.attributes",
+      "canonical": "igraph.Edge.attributes"
+    },
+    {
+      "alias": "igraph.GraphBase.biconnected_components",
+      "canonical": "igraph.Graph.biconnected_components"
+    },
+    {
+      "alias": "igraph.GraphBase.bipartite_projection",
+      "canonical": "igraph.Graph.bipartite_projection"
+    },
+    {
+      "alias": "igraph.GraphBase.bipartite_projection_size",
+      "canonical": "igraph.Graph.bipartite_projection_size"
+    },
+    {
+      "alias": "igraph.GraphBase.cohesive_blocks",
+      "canonical": "igraph.Graph.cohesive_blocks"
+    },
+    {
+      "alias": "igraph.GraphBase.community_edge_betweenness",
+      "canonical": "igraph.Graph.community_edge_betweenness"
+    },
+    {
+      "alias": "igraph.GraphBase.community_fastgreedy",
+      "canonical": "igraph.Graph.community_fastgreedy"
+    },
+    {
+      "alias": "igraph.GraphBase.community_fluid_communities",
+      "canonical": "igraph.Graph.community_fluid_communities"
+    },
+    {
+      "alias": "igraph.GraphBase.community_infomap",
+      "canonical": "igraph.Graph.community_infomap"
+    },
+    {
+      "alias": "igraph.GraphBase.community_label_propagation",
+      "canonical": "igraph.Graph.community_label_propagation"
+    },
+    {
+      "alias": "igraph.GraphBase.community_leading_eigenvector",
+      "canonical": "igraph.Graph.community_leading_eigenvector"
+    },
+    {
+      "alias": "igraph.GraphBase.community_leiden",
+      "canonical": "igraph.Graph.community_leiden"
+    },
+    {
+      "alias": "igraph.GraphBase.community_multilevel",
+      "canonical": "igraph.Graph.community_multilevel"
+    },
+    {
+      "alias": "igraph.GraphBase.community_optimal_modularity",
+      "canonical": "igraph.Graph.community_optimal_modularity"
+    },
+    {
+      "alias": "igraph.GraphBase.community_spinglass",
+      "canonical": "igraph.Graph.community_spinglass"
+    },
+    {
+      "alias": "igraph.GraphBase.community_voronoi",
+      "canonical": "igraph.Graph.community_voronoi"
+    },
+    {
+      "alias": "igraph.GraphBase.community_walktrap",
+      "canonical": "igraph.Graph.community_walktrap"
+    },
+    {
+      "alias": "igraph.GraphBase.connected_components",
+      "canonical": "igraph.Graph.connected_components"
+    },
+    {
+      "alias": "igraph.GraphBase.count_multiple",
+      "canonical": "igraph.Edge.count_multiple"
+    },
+    {
+      "alias": "igraph.GraphBase.delete_edges",
+      "canonical": "igraph.Graph.delete_edges"
+    },
+    {
+      "alias": "igraph.GraphBase.dyad_census",
+      "canonical": "igraph.Graph.dyad_census"
+    },
+    {
+      "alias": "igraph.GraphBase.get_adjacency",
+      "canonical": "igraph.Graph.get_adjacency"
+    },
+    {
+      "alias": "igraph.GraphBase.get_biadjacency",
+      "canonical": "igraph.Graph.get_biadjacency"
+    },
+    {
+      "alias": "igraph.GraphBase.gomory_hu_tree",
+      "canonical": "igraph.Graph.gomory_hu_tree"
+    },
+    {
+      "alias": "igraph.GraphBase.is_loop",
+      "canonical": "igraph.Edge.is_loop"
+    },
+    {
+      "alias": "igraph.GraphBase.is_multiple",
+      "canonical": "igraph.Edge.is_multiple"
+    },
+    {
+      "alias": "igraph.GraphBase.is_mutual",
+      "canonical": "igraph.Edge.is_mutual"
+    },
+    {
+      "alias": "igraph.GraphBase.maxflow",
+      "canonical": "igraph.Graph.maxflow"
+    },
+    {
+      "alias": "igraph.GraphBase.mincut",
+      "canonical": "igraph.Graph.mincut"
+    },
+    {
+      "alias": "igraph.GraphBase.modularity",
+      "canonical": "igraph.Graph.modularity"
+    },
+    {
+      "alias": "igraph.GraphBase.path_length_hist",
+      "canonical": "igraph.Graph.path_length_hist"
+    },
+    {
+      "alias": "igraph.GraphBase.st_mincut",
+      "canonical": "igraph.Graph.st_mincut"
+    },
+    {
+      "alias": "igraph.GraphBase.transitivity_avglocal_undirected",
+      "canonical": "igraph.Graph.transitivity_avglocal_undirected"
+    },
+    {
+      "alias": "igraph.GraphBase.triad_census",
+      "canonical": "igraph.Graph.triad_census"
+    },
+    {
+      "alias": "igraph.GraphBase.write_dimacs",
+      "canonical": "igraph.Graph.write_dimacs"
+    },
+    {
+      "alias": "igraph.Matching.graph",
+      "canonical": "igraph.Edge.graph"
+    },
+    {
+      "alias": "igraph.Vertex.attribute_names",
+      "canonical": "igraph.Edge.attribute_names"
+    },
+    {
+      "alias": "igraph.Vertex.attributes",
+      "canonical": "igraph.Edge.attributes"
+    },
+    {
+      "alias": "igraph.Vertex.betweenness",
+      "canonical": "igraph.GraphBase.betweenness"
+    },
+    {
+      "alias": "igraph.Vertex.closeness",
+      "canonical": "igraph.GraphBase.closeness"
+    },
+    {
+      "alias": "igraph.Vertex.constraint",
+      "canonical": "igraph.GraphBase.constraint"
+    },
+    {
+      "alias": "igraph.Vertex.degree",
+      "canonical": "igraph.GraphBase.degree"
+    },
+    {
+      "alias": "igraph.Vertex.delete",
+      "canonical": "igraph.Edge.delete"
+    },
+    {
+      "alias": "igraph.Vertex.distances",
+      "canonical": "igraph.GraphBase.distances"
+    },
+    {
+      "alias": "igraph.Vertex.diversity",
+      "canonical": "igraph.GraphBase.diversity"
+    },
+    {
+      "alias": "igraph.Vertex.eccentricity",
+      "canonical": "igraph.GraphBase.eccentricity"
+    },
+    {
+      "alias": "igraph.Vertex.get_shortest_paths",
+      "canonical": "igraph.GraphBase.get_shortest_paths"
+    },
+    {
+      "alias": "igraph.Vertex.graph",
+      "canonical": "igraph.Edge.graph"
+    },
+    {
+      "alias": "igraph.Vertex.incident",
+      "canonical": "igraph.GraphBase.incident"
+    },
+    {
+      "alias": "igraph.Vertex.indegree",
+      "canonical": "igraph.Graph.indegree"
+    },
+    {
+      "alias": "igraph.Vertex.index",
+      "canonical": "igraph.Edge.index"
+    },
+    {
+      "alias": "igraph.Vertex.is_minimal_separator",
+      "canonical": "igraph.GraphBase.is_minimal_separator"
+    },
+    {
+      "alias": "igraph.Vertex.is_separator",
+      "canonical": "igraph.GraphBase.is_separator"
+    },
+    {
+      "alias": "igraph.Vertex.neighbors",
+      "canonical": "igraph.GraphBase.neighbors"
+    },
+    {
+      "alias": "igraph.Vertex.outdegree",
+      "canonical": "igraph.Graph.outdegree"
+    },
+    {
+      "alias": "igraph.Vertex.pagerank",
+      "canonical": "igraph.Graph.pagerank"
+    },
+    {
+      "alias": "igraph.Vertex.personalized_pagerank",
+      "canonical": "igraph.GraphBase.personalized_pagerank"
+    },
+    {
+      "alias": "igraph.Vertex.predecessors",
+      "canonical": "igraph.Graph.predecessors"
+    },
+    {
+      "alias": "igraph.Vertex.strength",
+      "canonical": "igraph.GraphBase.strength"
+    },
+    {
+      "alias": "igraph.Vertex.successors",
+      "canonical": "igraph.Graph.successors"
+    },
+    {
+      "alias": "igraph.Vertex.update_attributes",
+      "canonical": "igraph.Edge.update_attributes"
+    },
+    {
+      "alias": "igraph.VertexClustering.as_cover",
+      "canonical": "igraph.Clustering.as_cover"
+    },
+    {
+      "alias": "igraph.VertexClustering.graph",
+      "canonical": "igraph.Edge.graph"
+    },
+    {
+      "alias": "igraph.VertexClustering.modularity",
+      "canonical": "igraph.Graph.modularity"
+    },
+    {
+      "alias": "igraph.VertexCover.crossing",
+      "canonical": "igraph.VertexClustering.crossing"
+    },
+    {
+      "alias": "igraph.VertexCover.graph",
+      "canonical": "igraph.Edge.graph"
+    },
+    {
+      "alias": "igraph.VertexCover.subgraph",
+      "canonical": "igraph.VertexClustering.subgraph"
+    },
+    {
+      "alias": "igraph.VertexCover.subgraphs",
+      "canonical": "igraph.VertexClustering.subgraphs"
+    },
+    {
+      "alias": "igraph.VertexSeq.attributes",
+      "canonical": "igraph.Edge.attributes"
+    },
+    {
+      "alias": "igraph.VertexSeq.find",
+      "canonical": "igraph.EdgeSeq.find"
+    },
+    {
+      "alias": "igraph.VertexSeq.select",
+      "canonical": "igraph.EdgeSeq.select"
+    },
+    {
+      "alias": "igraph.summary.summary",
+      "canonical": "igraph.Clustering.summary"
+    },
+    {
+      "alias": "igraph.write",
+      "canonical": "igraph.Graph.write"
+    },
+    {
+      "alias": "numpy.distutils.extension.Extension",
+      "canonical": "numpy.distutils.core.Extension"
+    },
+    {
+      "alias": "numpy.random.bit_generator.BitGenerator",
+      "canonical": "numpy.random.BitGenerator"
+    },
+    {
+      "alias": "numpy.random.bit_generator.SeedSequence",
+      "canonical": "numpy.random.SeedSequence"
+    },
+    {
+      "alias": "numpy.random.mtrand.RandomState",
+      "canonical": "numpy.random.RandomState"
+    },
+    {
+      "alias": "numpy.recarray",
+      "canonical": "numpy.rec.recarray"
+    },
+    {
+      "alias": "pandas.tseries.offsets.DateOffset",
+      "canonical": "pandas.DateOffset"
+    },
+    {
+      "alias": "pyproj.crs.crs.BoundCRS",
+      "canonical": "pyproj.crs.BoundCRS"
+    },
+    {
+      "alias": "pyproj.crs.crs.CRS",
+      "canonical": "pyproj.crs.CRS"
+    },
+    {
+      "alias": "pyproj.crs.crs.CompoundCRS",
+      "canonical": "pyproj.crs.CompoundCRS"
+    },
+    {
+      "alias": "pyproj.crs.crs.CustomConstructorCRS",
+      "canonical": "pyproj.crs.CustomConstructorCRS"
+    },
+    {
+      "alias": "pyproj.crs.crs.DerivedGeographicCRS",
+      "canonical": "pyproj.crs.DerivedGeographicCRS"
+    },
+    {
+      "alias": "pyproj.crs.crs.GeocentricCRS",
+      "canonical": "pyproj.crs.GeocentricCRS"
+    },
+    {
+      "alias": "pyproj.crs.crs.GeographicCRS",
+      "canonical": "pyproj.crs.GeographicCRS"
+    },
+    {
+      "alias": "pyproj.crs.crs.ProjectedCRS",
+      "canonical": "pyproj.crs.ProjectedCRS"
+    },
+    {
+      "alias": "pyproj.crs.crs.VerticalCRS",
+      "canonical": "pyproj.crs.VerticalCRS"
+    },
+    {
+      "alias": "pyproj.geod.Geod",
+      "canonical": "pyproj.Geod"
+    },
+    {
+      "alias": "pyproj.proj.Proj",
+      "canonical": "pyproj.Proj"
+    },
+    {
+      "alias": "shapely.constructive.BufferCapStyle",
+      "canonical": "shapely.BufferCapStyle"
+    },
+    {
+      "alias": "shapely.constructive.BufferJoinStyle",
+      "canonical": "shapely.BufferJoinStyle"
+    },
+    {
+      "alias": "shapely.geometry.collection.GeometryCollection",
+      "canonical": "shapely.GeometryCollection"
+    },
+    {
+      "alias": "shapely.geometry.linestring.LineString",
+      "canonical": "shapely.LineString"
+    },
+    {
+      "alias": "shapely.geometry.multilinestring.MultiLineString",
+      "canonical": "shapely.MultiLineString"
+    },
+    {
+      "alias": "shapely.geometry.multipoint.MultiPoint",
+      "canonical": "shapely.MultiPoint"
+    },
+    {
+      "alias": "shapely.geometry.multipolygon.MultiPolygon",
+      "canonical": "shapely.MultiPolygon"
+    },
+    {
+      "alias": "shapely.geometry.point.Point",
+      "canonical": "shapely.Point"
+    },
+    {
+      "alias": "shapely.geometry.polygon.LinearRing",
+      "canonical": "shapely.LinearRing"
+    },
+    {
+      "alias": "shapely.geometry.polygon.Polygon",
+      "canonical": "shapely.Polygon"
+    },
+    {
+      "alias": "shapely.strtree.STRtree",
+      "canonical": "shapely.STRtree"
+    },
+    {
+      "alias": "xarray.backends.common.BackendArray",
+      "canonical": "xarray.backends.BackendArray"
+    },
+    {
+      "alias": "xarray.backends.common.BackendEntrypoint",
+      "canonical": "xarray.backends.BackendEntrypoint"
+    },
+    {
+      "alias": "xarray.backends.file_manager.CachingFileManager",
+      "canonical": "xarray.backends.CachingFileManager"
+    },
+    {
+      "alias": "xarray.backends.file_manager.DummyFileManager",
+      "canonical": "xarray.backends.DummyFileManager"
+    },
+    {
+      "alias": "xarray.backends.file_manager.FileManager",
+      "canonical": "xarray.backends.FileManager"
+    },
+    {
+      "alias": "xarray.backends.h5netcdf_.H5NetCDFStore",
+      "canonical": "xarray.backends.H5NetCDFStore"
+    },
+    {
+      "alias": "xarray.backends.h5netcdf_.H5netcdfBackendEntrypoint",
+      "canonical": "xarray.backends.H5netcdfBackendEntrypoint"
+    },
+    {
+      "alias": "xarray.backends.netCDF4_.NetCDF4BackendEntrypoint",
+      "canonical": "xarray.backends.NetCDF4BackendEntrypoint"
+    },
+    {
+      "alias": "xarray.backends.netCDF4_.NetCDF4DataStore",
+      "canonical": "xarray.backends.NetCDF4DataStore"
+    },
+    {
+      "alias": "xarray.backends.pydap_.PydapBackendEntrypoint",
+      "canonical": "xarray.backends.PydapBackendEntrypoint"
+    },
+    {
+      "alias": "xarray.backends.pydap_.PydapDataStore",
+      "canonical": "xarray.backends.PydapDataStore"
+    },
+    {
+      "alias": "xarray.backends.scipy_.ScipyBackendEntrypoint",
+      "canonical": "xarray.backends.ScipyBackendEntrypoint"
+    },
+    {
+      "alias": "xarray.backends.scipy_.ScipyDataStore",
+      "canonical": "xarray.backends.ScipyDataStore"
+    },
+    {
+      "alias": "xarray.backends.store.StoreBackendEntrypoint",
+      "canonical": "xarray.backends.StoreBackendEntrypoint"
+    },
+    {
+      "alias": "xarray.backends.zarr.ZarrBackendEntrypoint",
+      "canonical": "xarray.backends.ZarrBackendEntrypoint"
+    },
+    {
+      "alias": "xarray.backends.zarr.ZarrStore",
+      "canonical": "xarray.backends.ZarrStore"
+    },
+    {
+      "alias": "xarray.coding.cftimeindex.CFTimeIndex",
+      "canonical": "xarray.CFTimeIndex"
+    },
+    {
+      "alias": "xarray.core.coordinates.Coordinates",
+      "canonical": "xarray.Coordinates"
+    },
+    {
+      "alias": "xarray.core.dataarray.DataArray",
+      "canonical": "xarray.DataArray"
+    },
+    {
+      "alias": "xarray.core.dataset.Dataset",
+      "canonical": "xarray.Dataset"
+    },
+    {
+      "alias": "xarray.core.datatree.DataTree",
+      "canonical": "xarray.DataTree"
+    },
+    {
+      "alias": "xarray.core.indexes.Index",
+      "canonical": "xarray.Index"
+    },
+    {
+      "alias": "xarray.core.indexing.IndexSelResult",
+      "canonical": "xarray.IndexSelResult"
+    },
+    {
+      "alias": "xarray.core.variable.IndexVariable",
+      "canonical": "xarray.IndexVariable"
+    },
+    {
+      "alias": "xarray.core.variable.Variable",
+      "canonical": "xarray.Variable"
+    },
+    {
+      "alias": "xarray.indexes.CoordinateTransform",
+      "canonical": "xarray.core.coordinate_transform.CoordinateTransform"
+    },
+    {
+      "alias": "xarray.indexes.CoordinateTransformIndex",
+      "canonical": "xarray.core.indexes.CoordinateTransformIndex"
+    },
+    {
+      "alias": "xarray.indexes.PandasIndex",
+      "canonical": "xarray.core.indexes.PandasIndex"
+    },
+    {
+      "alias": "xarray.indexes.PandasMultiIndex",
+      "canonical": "xarray.core.indexes.PandasMultiIndex"
+    },
+    {
+      "alias": "xarray.indexes.nd_point_index.NDPointIndex",
+      "canonical": "xarray.indexes.NDPointIndex"
+    },
+    {
+      "alias": "xarray.indexes.nd_point_index.TreeAdapter",
+      "canonical": "xarray.indexes.TreeAdapter"
+    },
+    {
+      "alias": "xarray.indexes.range_index.RangeIndex",
+      "canonical": "xarray.indexes.RangeIndex"
+    },
+    {
+      "alias": "xarray.plot.facetgrid.FacetGrid",
+      "canonical": "xarray.plot.FacetGrid"
+    },
+    {
+      "alias": "xarray.set_options",
+      "canonical": "xarray.core.options.set_options"
+    },
+    {
+      "alias": "xarray.structure.merge.Context",
+      "canonical": "xarray.Context"
+    }
+  ],
+  "node_count": 14864,
+  "status": "VALID"
+}

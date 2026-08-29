@@ -1,0 +1,575 @@
+{
+  "cases": [
+    {
+      "case_id": "alpha_rename",
+      "classification": "CORRECT_EQUIVALENCE",
+      "comparison": {
+        "checks": {
+          "alpha_rename": true,
+          "expression_graph_isomorphism": true,
+          "finite_sum_map_normalization": true,
+          "simple_algebraic_equivalence": true
+        },
+        "human": {
+          "expression": {
+            "body": {
+              "indices": [
+                {
+                  "name": "k",
+                  "op": "BoundVariable"
+                }
+              ],
+              "name": "x",
+              "op": "IndexedValue",
+              "shape_constraints": [
+                {
+                  "axis": 0,
+                  "kind": "index_within_extent"
+                }
+              ]
+            },
+            "bound_index": "k",
+            "index_domain": {
+              "lower": {
+                "numeral_representation": {
+                  "original_text": null,
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 0
+              },
+              "upper_exclusive": {
+                "name": "n",
+                "op": "FreeVariable"
+              }
+            },
+            "op": "FiniteSum",
+            "reduction_order": "left_to_right"
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "body": {
+              "indices": [
+                {
+                  "name": "i",
+                  "op": "BoundVariable"
+                }
+              ],
+              "name": "x",
+              "op": "IndexedValue",
+              "shape_constraints": [
+                {
+                  "axis": 0,
+                  "kind": "index_within_extent"
+                }
+              ]
+            },
+            "bound_index": "i",
+            "index_domain": {
+              "lower": {
+                "numeral_representation": {
+                  "original_text": null,
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 0
+              },
+              "upper_exclusive": {
+                "name": "n",
+                "op": "FreeVariable"
+              }
+            },
+            "op": "FiniteSum",
+            "reduction_order": "left_to_right"
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {
+          "bound_indices": {
+            "i": "k"
+          },
+          "symbols": {
+            "n": "n",
+            "result": "result",
+            "x": "x"
+          }
+        },
+        "match": true,
+        "status": "EQUIVALENT_BY_EXACT_TRANSFORMATIONS"
+      },
+      "evidence_level": "METAMORPHICALLY_VALIDATED",
+      "left_hash": "8b18a9e196da6071cbfa5b1564f7a8970b338c8600833d75168d5c56e4d0e665",
+      "right_hash": "b3f97a207feb49f0e35b786730c12e0f301596692af8036c3f0da054402fafb4"
+    },
+    {
+      "case_id": "temporary_introduction",
+      "classification": "CORRECT_EQUIVALENCE",
+      "comparison": {
+        "checks": {
+          "alpha_rename": true,
+          "expression_graph_isomorphism": true,
+          "finite_sum_map_normalization": true,
+          "simple_algebraic_equivalence": true
+        },
+        "human": {
+          "expression": {
+            "args": [
+              {
+                "numeral_representation": {
+                  "original_text": "2",
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 2
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "argument_spans": [
+              {
+                "begin_column": 4,
+                "begin_line": 2,
+                "end_column": 5,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 6,
+                "begin_line": 2,
+                "end_column": 7,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "op": "Multiply",
+            "operator_span": {
+              "begin_column": 5,
+              "begin_line": 2,
+              "end_column": 6,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>",
+              "operator": "*",
+              "role": "operator"
+            },
+            "source_span": {
+              "begin_column": 4,
+              "begin_line": 2,
+              "end_column": 7,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>"
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "args": [
+              {
+                "numeral_representation": {
+                  "original_text": "2",
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 2
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "argument_spans": [
+              {
+                "begin_column": 4,
+                "begin_line": 2,
+                "end_column": 5,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 6,
+                "begin_line": 2,
+                "end_column": 7,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "op": "Multiply",
+            "operator_span": {
+              "begin_column": 5,
+              "begin_line": 2,
+              "end_column": 6,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>",
+              "operator": "*",
+              "role": "operator"
+            },
+            "source_span": {
+              "begin_column": 4,
+              "begin_line": 2,
+              "end_column": 7,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>"
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {
+          "bound_indices": {},
+          "symbols": {
+            "result": "result",
+            "x": "x"
+          }
+        },
+        "match": true,
+        "status": "EQUIVALENT_BY_EXACT_TRANSFORMATIONS"
+      },
+      "evidence_level": "METAMORPHICALLY_VALIDATED",
+      "left_hash": "b59826fe61a4aac75ca281667ec0d586564d31d5bd55abf155769b3405ffccef",
+      "right_hash": "33f86f18254f92c06e9b459d0a9cd22ad63ea9b4f43107f18dda75ae5acfd243"
+    },
+    {
+      "case_id": "parentheses",
+      "classification": "CORRECT_EQUIVALENCE",
+      "comparison": {
+        "checks": {
+          "alpha_rename": true,
+          "expression_graph_isomorphism": true,
+          "finite_sum_map_normalization": true,
+          "simple_algebraic_equivalence": true
+        },
+        "human": {
+          "expression": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "numeral_representation": {
+                      "original_text": "2",
+                      "radix": 10
+                    },
+                    "op": "Constant",
+                    "value": 2
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "argument_spans": [
+                  {
+                    "begin_column": 5,
+                    "begin_line": 2,
+                    "end_column": 6,
+                    "end_line": 2,
+                    "file": "<LOCAL_PATH>"
+                  },
+                  {
+                    "begin_column": 7,
+                    "begin_line": 2,
+                    "end_column": 8,
+                    "end_line": 2,
+                    "file": "<LOCAL_PATH>"
+                  }
+                ],
+                "op": "Multiply",
+                "operator_span": {
+                  "begin_column": 6,
+                  "begin_line": 2,
+                  "end_column": 7,
+                  "end_line": 2,
+                  "file": "<LOCAL_PATH>",
+                  "operator": "*",
+                  "role": "operator"
+                },
+                "source_span": {
+                  "begin_column": 5,
+                  "begin_line": 2,
+                  "end_column": 8,
+                  "end_line": 2,
+                  "file": "<LOCAL_PATH>"
+                }
+              },
+              {
+                "numeral_representation": {
+                  "original_text": "1",
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 1
+              }
+            ],
+            "argument_spans": [
+              {
+                "begin_column": 5,
+                "begin_line": 2,
+                "end_column": 8,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 10,
+                "begin_line": 2,
+                "end_column": 11,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "op": "Add",
+            "operator_span": {
+              "begin_column": 9,
+              "begin_line": 2,
+              "end_column": 10,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>",
+              "operator": "+",
+              "role": "operator"
+            },
+            "source_span": {
+              "begin_column": 4,
+              "begin_line": 2,
+              "end_column": 11,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>"
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "numeral_representation": {
+                      "original_text": "2",
+                      "radix": 10
+                    },
+                    "op": "Constant",
+                    "value": 2
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "argument_spans": [
+                  {
+                    "begin_column": 4,
+                    "begin_line": 2,
+                    "end_column": 5,
+                    "end_line": 2,
+                    "file": "<LOCAL_PATH>"
+                  },
+                  {
+                    "begin_column": 6,
+                    "begin_line": 2,
+                    "end_column": 7,
+                    "end_line": 2,
+                    "file": "<LOCAL_PATH>"
+                  }
+                ],
+                "op": "Multiply",
+                "operator_span": {
+                  "begin_column": 5,
+                  "begin_line": 2,
+                  "end_column": 6,
+                  "end_line": 2,
+                  "file": "<LOCAL_PATH>",
+                  "operator": "*",
+                  "role": "operator"
+                },
+                "source_span": {
+                  "begin_column": 4,
+                  "begin_line": 2,
+                  "end_column": 7,
+                  "end_line": 2,
+                  "file": "<LOCAL_PATH>"
+                }
+              },
+              {
+                "numeral_representation": {
+                  "original_text": "1",
+                  "radix": 10
+                },
+                "op": "Constant",
+                "value": 1
+              }
+            ],
+            "argument_spans": [
+              {
+                "begin_column": 4,
+                "begin_line": 2,
+                "end_column": 7,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              {
+                "begin_column": 8,
+                "begin_line": 2,
+                "end_column": 9,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            ],
+            "op": "Add",
+            "operator_span": {
+              "begin_column": 7,
+              "begin_line": 2,
+              "end_column": 8,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>",
+              "operator": "+",
+              "role": "operator"
+            },
+            "source_span": {
+              "begin_column": 4,
+              "begin_line": 2,
+              "end_column": 9,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>"
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {
+          "bound_indices": {},
+          "symbols": {
+            "result": "result",
+            "x": "x"
+          }
+        },
+        "match": true,
+        "status": "EQUIVALENT_BY_EXACT_TRANSFORMATIONS"
+      },
+      "evidence_level": "METAMORPHICALLY_VALIDATED",
+      "left_hash": "b72b311aa1267d44cd81339fc839ff919bfdb681aad4df20631f3e4af3acf317",
+      "right_hash": "117003696b6d06f45ac5594e468634372555f4ce583fcda33b6b33309f49f2ec"
+    },
+    {
+      "case_id": "conditional_expression",
+      "classification": "CORRECT_EQUIVALENCE",
+      "comparison": {
+        "checks": {
+          "alpha_rename": true,
+          "expression_graph_isomorphism": true,
+          "finite_sum_map_normalization": true,
+          "simple_algebraic_equivalence": true
+        },
+        "human": {
+          "expression": {
+            "branch_spans": {
+              "else": {
+                "begin_column": 16,
+                "begin_line": 2,
+                "end_column": 17,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              },
+              "then": {
+                "begin_column": 4,
+                "begin_line": 2,
+                "end_column": 5,
+                "end_line": 2,
+                "file": "<LOCAL_PATH>"
+              }
+            },
+            "condition": {
+              "name": "c",
+              "op": "FreeVariable"
+            },
+            "condition_span": {
+              "begin_column": 9,
+              "begin_line": 2,
+              "end_column": 10,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>"
+            },
+            "else": {
+              "name": "b",
+              "op": "FreeVariable"
+            },
+            "mathematical_semantic": "Select",
+            "op": "IfThenElse",
+            "source_span": {
+              "begin_column": 4,
+              "begin_line": 2,
+              "end_column": 17,
+              "end_line": 2,
+              "file": "<LOCAL_PATH>"
+            },
+            "then": {
+              "name": "a",
+              "op": "FreeVariable"
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "implementation": {
+          "expression": {
+            "condition": {
+              "name": "c",
+              "op": "FreeVariable"
+            },
+            "else": {
+              "name": "b",
+              "op": "FreeVariable"
+            },
+            "op": "IfThenElse",
+            "then": {
+              "name": "a",
+              "op": "FreeVariable"
+            }
+          },
+          "target": {
+            "name": "result",
+            "op": "FreeVariable"
+          }
+        },
+        "mapping": {
+          "bound_indices": {},
+          "symbols": {
+            "a": "a",
+            "b": "b",
+            "c": "c",
+            "result": "result"
+          }
+        },
+        "match": true,
+        "status": "EQUIVALENT_BY_EXACT_TRANSFORMATIONS"
+      },
+      "evidence_level": "METAMORPHICALLY_VALIDATED",
+      "left_hash": "7c2732d74aaeae5f318b028bb2f44150ec69455d8272866599efb032399b3581",
+      "right_hash": "fc88eed0b2612ba91e6364ccfdae6b740219f63aa24a197640074cf6a067f57e"
+    }
+  ],
+  "correct_equivalence_count": 4,
+  "false_rejection_count": 0,
+  "metamorphic_case_count": 4,
+  "schema_version": "1.0",
+  "unresolved_count": 0
+}

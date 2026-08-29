@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "baseline_sha": "1426247d7378a50b120866c72e7a50dd1a5f77f2",
+  "overall_status": "MIGRATION_IN_PROGRESS",
+  "acceptance_complete": false,
+  "interop": {
+    "schema_version": "1.0",
+    "interop_contract": "STABLE_C_ABI_V1",
+    "bindings": {
+      "c": "DIRECT_C_ABI",
+      "cpp": "THIN_RAII_OVER_C_ABI",
+      "python": "THIN_ERGONOMIC_OVER_C_ABI",
+      "rust": "NATIVE_API_SAME_CORE"
+    },
+    "semantic_implementation_count": 1,
+    "generated_research_code_languages": [
+      "Python",
+      "Rust",
+      "C++"
+    ],
+    "tooling_limitation": "CMake 3.31 crashes after MSVC detection in this Unicode workspace; direct MSVC conformance is authoritative for this host",
+    "passed": true,
+    "steps": [
+      {
+        "command": [
+          "<LOCAL_PATH>",
+          "/nologo",
+          "/W4",
+          "/std:c17",
+          "/I<PROJECT_ROOT>\\include",
+          "<PROJECT_ROOT>\\tests\\native\\c_api_test.c",
+          "<PROJECT_ROOT>\\target\\debug\\formulatracer_c_api.dll.lib",
+          "/Fo:<PROJECT_ROOT>\\build\\native-api-tests-msvc\\c_api_test.obj",
+          "/Fe:<PROJECT_ROOT>\\build\\native-api-tests-msvc\\formulatracer_c_api_test.exe"
+        ],
+        "returncode": 0,
+        "stdout": "c_api_test.c\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "<LOCAL_PATH>",
+          "/nologo",
+          "/W4",
+          "/EHsc",
+          "/std:c++20",
+          "/I<PROJECT_ROOT>\\include",
+          "<PROJECT_ROOT>\\tests\\native\\cpp_api_test.cpp",
+          "<PROJECT_ROOT>\\target\\debug\\formulatracer_c_api.dll.lib",
+          "/Fo:<PROJECT_ROOT>\\build\\native-api-tests-msvc\\cpp_api_test.obj",
+          "/Fe:<PROJECT_ROOT>\\build\\native-api-tests-msvc\\formulatracer_cpp_api_test.exe"
+        ],
+        "returncode": 0,
+        "stdout": "cpp_api_test.cpp\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "<PROJECT_ROOT>\\build\\native-api-tests-msvc\\formulatracer_c_api_test.exe"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "<PROJECT_ROOT>\\build\\native-api-tests-msvc\\formulatracer_cpp_api_test.exe"
+        ],
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ]
+  },
+  "components": [
+    {
+      "component": "fundamental_ir_and_schema_bridge",
+      "python_reference": "python IR dataclasses/dicts",
+      "rust_status": "COMPLETE_CANDIDATE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "canonicalization_and_symbol_isomorphism",
+      "python_reference": "math_surface.generalize/canonical_equal",
+      "rust_status": "NATIVE_PRODUCTION_PATH_DIFFERENTIAL_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": true
+    },
+    {
+      "component": "numeral_and_bitvector",
+      "python_reference": "bitvector.py",
+      "rust_status": "EXHAUSTIVE_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "fact_constraint_engine",
+      "python_reference": "equality_saturation.MathematicalFactEngine",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "exact_egraph",
+      "python_reference": "equality_saturation.TypedEGraph",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "relation_graph",
+      "python_reference": "equality_saturation.MathematicalRelationGraph",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "typed_unification",
+      "python_reference": "math_surface.typed_unify",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "knowledge_and_provider_pack_engine",
+      "python_reference": "registry and generation_planning",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "approximation_error_range",
+      "python_reference": "approximation/error/interval modules",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "provenance_cache_debugger",
+      "python_reference": "research_provenance/semantic_debugger",
+      "rust_status": "PARTIAL_CANDIDATE",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "tex_renderer",
+      "python_reference": "math_surface.to_tex",
+      "rust_status": "NATIVE_PRODUCTION_PATH_DIFFERENTIAL_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": true
+    },
+    {
+      "component": "tex_parser",
+      "python_reference": "math_surface.parse_tex",
+      "rust_status": "PARTIAL_FAIL_CLOSED_CANDIDATE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "verification_result",
+      "python_reference": "Python presentation wrappers",
+      "rust_status": "NATIVE_STRUCTURED_RESULT_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "mathematical_function",
+      "python_reference": "no retired Python semantic equivalent",
+      "rust_status": "NATIVE_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "tex_certificate",
+      "python_reference": "audit_execution presentation",
+      "rust_status": "NATIVE_STRUCTURED_CERTIFICATE_COMPLETE",
+      "semantic_match": true,
+      "python_retired": false
+    },
+    {
+      "component": "audit_bundle",
+      "python_reference": "assurance_release AuditBundle",
+      "rust_status": "NATIVE_CANDIDATE_COMPLETE_PARITY_PENDING",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "python_frontends",
+      "python_reference": "Python AST/CFG/project adapters",
+      "rust_status": "INTENTIONALLY_RETAINED_FRONTEND",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "cpp_clang_frontend",
+      "python_reference": "Clang 18 adapter",
+      "rust_status": "INTENTIONALLY_RETAINED_FRONTEND",
+      "semantic_match": false,
+      "python_retired": false
+    },
+    {
+      "component": "error_semantics",
+      "python_reference": "error_ir/error_composition validation-only oracles",
+      "rust_status": "NATIVE_PRODUCTION_PATH_DIFFERENTIAL_GATE_PASSED",
+      "semantic_match": true,
+      "python_retired": true
+    }
+  ],
+  "differential": {
+    "cases": 1056,
+    "semantic_matches": 1056,
+    "tex_matches": 1056,
+    "false_acceptance": 0
+  },
+  "critical_gates": {
+    "CRITICAL_RUST_FALSE_ACCEPTANCE_OPEN": 0,
+    "CRITICAL_PYTHON_RUST_SEMANTIC_MISMATCH_OPEN": 0,
+    "CRITICAL_RELATION_MISMATCH_OPEN": 0,
+    "CRITICAL_C_ABI_MEMORY_SAFETY_OPEN": 0,
+    "LANGUAGE_BINDING_SEMANTIC_DUPLICATION": 0
+  },
+  "blocking_retirement_gates": [
+    "full Kernel A-F production-surface parity",
+    "Python semantic retirement",
+    "legacy/native AuditBundle field parity",
+    "measured direct Python semantic calls: 625"
+  ],
+  "performance_policy": "OBSERVATION_ONLY_NOT_A_MIGRATION_GATE",
+  "native_kernel_boundary": {
+    "schema_version": "1.0",
+    "kernels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "c_abi_entrypoint": "ft_kernel_execute_json",
+    "measured_comparisons": 24,
+    "measured_matches": 24,
+    "full_surface_parity": false
+  },
+  "python_semantic_source_of_truth_modules": 20
+}

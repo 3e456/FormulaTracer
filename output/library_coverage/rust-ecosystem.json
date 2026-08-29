@@ -1,0 +1,276 @@
+{
+  "api_count": 15,
+  "apis": [
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.rs/faer/latest/faer/",
+      "package": "faer",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "faer::Mat::mul",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.rs/faer/latest/faer/",
+      "package": "faer",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "faer::Mat::transpose",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "faer::Mat::transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.rs/nalgebra/latest/nalgebra/",
+      "package": "nalgebra",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "nalgebra::Matrix::mul",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.rs/nalgebra/latest/nalgebra/",
+      "package": "nalgebra",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "nalgebra::Matrix::transpose",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "nalgebra::Matrix::transpose",
+          "named_dimensions_preserved": false,
+          "relation": "shape(out)=permute(shape(in), axes)"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://docs.rs/ndarray/latest/ndarray/",
+      "package": "ndarray",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "ndarray::ArrayBase::dot",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.rs/ndarray/latest/ndarray/",
+      "package": "ndarray",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "ndarray::ArrayBase::sum",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "RESHAPE",
+      "official_reference": "https://docs.rs/ndarray/latest/ndarray/",
+      "package": "ndarray",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "ndarray::ArrayBase::t",
+      "semantic_family": "ShapeTransform",
+      "shape_constraints": [
+        {
+          "kind": "ndarray::ArrayBase::t",
+          "named_dimensions_preserved": false,
+          "relation": "each input extent is equal or one along every aligned axis"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "UNKNOWN",
+      "official_reference": "https://docs.rs/rayon/latest/rayon/",
+      "package": "rayon",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "rayon::iter::ParallelIterator::map",
+      "semantic_family": "Map",
+      "shape_constraints": [],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://docs.rs/rayon/latest/rayon/",
+      "package": "rayon",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "rayon::iter::ParallelIterator::sum",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "std::accumulate",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "TENSOR_CONTRACTION",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "std::inner_product",
+      "semantic_family": "TensorContraction",
+      "shape_constraints": [
+        {
+          "kind": "matmul_dimension_relation",
+          "relation": "contracted extents are equal"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "std::iter::Iterator::product",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "std::iter::Iterator::sum",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "std::reduce",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    },
+    {
+      "call_count": 0,
+      "classification": "FORMAL_CONTRACT",
+      "meaningful_category": "REDUCTION",
+      "official_reference": "https://en.cppreference.com/w/cpp/algorithm",
+      "package": "std",
+      "proof_evidence": "FORMALLY_DERIVED",
+      "qualified_name": "std::transform_reduce",
+      "semantic_family": "Reduction",
+      "shape_constraints": [
+        {
+          "axis_source": "axis",
+          "kind": "reduction_output_rank",
+          "named_dimensions_preserved": false,
+          "relation": "rank(out)=rank(x)-|reduced_axes| unless keepdims"
+        }
+      ],
+      "usage_files": []
+    }
+  ],
+  "classification_counts": {
+    "FORMAL_CONTRACT": 15
+  },
+  "language": "rust"
+}

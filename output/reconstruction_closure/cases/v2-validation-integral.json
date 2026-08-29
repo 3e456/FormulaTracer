@@ -1,0 +1,52 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [
+    "error estimate checked"
+  ],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "integrand": {
+      "args": [
+        {
+          "name": "t",
+          "op": "FreeVariable"
+        }
+      ],
+      "name": "f",
+      "op": "FunctionCall"
+    },
+    "lower": {
+      "name": "a",
+      "op": "FreeVariable"
+    },
+    "op": "Integral",
+    "upper": {
+      "name": "b",
+      "op": "FreeVariable"
+    },
+    "variable": "t"
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-validation-integral.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-validation-integral",
+  "root_cause": "APPROXIMATION_RELATION_GAP",
+  "source_artifact_hash": "6d42fa4ba1b89ca44345983039761062657fe25f9770c88c24d7eac8e75c74b9",
+  "case_specific_rule_used": false
+}

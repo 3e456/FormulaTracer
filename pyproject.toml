@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77", "wheel>=0.42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "formulatracer"
+version = "0.1.0"
+description = "Fail-closed mathematical and provenance audit for scientific Python, C++, and Rust"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+dependencies = ["PyYAML>=6.0", "jsonschema>=4.21"]
+keywords = ["scientific-computing", "program-analysis", "formal-verification", "provenance"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Rust",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+Homepage = "https://github.com/3e456/FormulaTracer"
+Repository = "https://github.com/3e456/FormulaTracer"
+Documentation = "https://github.com/3e456/FormulaTracer/tree/main/docs"
+Issues = "https://github.com/3e456/FormulaTracer/issues"
+Discussions = "https://github.com/3e456/FormulaTracer/discussions"
+
+[project.scripts]
+formulatracer = "cpp_audit.cli:main"
+cpp-audit = "cpp_audit.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package-data]
+cpp_audit = ["py.typed"]
+formulatracer = ["formulatracer_c_api.dll", "libformulatracer_c_api.so"]

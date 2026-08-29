@@ -1,0 +1,236 @@
+{
+  "definitions": [
+    {
+      "definition_id": "action",
+      "expansion": {
+        "body": {
+          "args": [
+            {
+              "name": "q",
+              "op": "PatternVariable"
+            },
+            {
+              "function": {
+                "name": "q",
+                "op": "PatternVariable"
+              },
+              "op": "Derivative",
+              "variable": "t"
+            },
+            {
+              "name": "t",
+              "op": "FreeVariable"
+            }
+          ],
+          "op": "Lagrangian"
+        },
+        "op": "Integral",
+        "variable": "t"
+      },
+      "expression": {
+        "op": "Action",
+        "path": {
+          "name": "q",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Action functional",
+      "references": [
+        "ref.variational-calculus"
+      ]
+    },
+    {
+      "definition_id": "poisson_bracket",
+      "expansion": {
+        "body": {
+          "args": [
+            {
+              "args": [
+                {
+                  "function": {
+                    "name": "f",
+                    "op": "PatternVariable"
+                  },
+                  "op": "Derivative",
+                  "variable": "q_i"
+                },
+                {
+                  "function": {
+                    "name": "g",
+                    "op": "PatternVariable"
+                  },
+                  "op": "Derivative",
+                  "variable": "p_i"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "args": [
+                {
+                  "function": {
+                    "name": "f",
+                    "op": "PatternVariable"
+                  },
+                  "op": "Derivative",
+                  "variable": "p_i"
+                },
+                {
+                  "function": {
+                    "name": "g",
+                    "op": "PatternVariable"
+                  },
+                  "op": "Derivative",
+                  "variable": "q_i"
+                }
+              ],
+              "op": "Multiply"
+            }
+          ],
+          "op": "Subtract"
+        },
+        "bound_index": "i",
+        "op": "FiniteSum"
+      },
+      "expression": {
+        "args": [
+          {
+            "name": "f",
+            "op": "PatternVariable"
+          },
+          {
+            "name": "g",
+            "op": "PatternVariable"
+          }
+        ],
+        "op": "PoissonBracket"
+      },
+      "name": "Canonical Poisson bracket",
+      "references": [
+        "ref.hamiltonian-mechanics"
+      ]
+    }
+  ],
+  "realizations": [],
+  "schema_version": "1.0",
+  "theorems": [
+    {
+      "assumptions": [
+        "admissible_variations",
+        "fixed_endpoint_variation",
+        "L_twice_differentiable"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "StationaryAction",
+        "path": {
+          "name": "q",
+          "op": "PatternVariable"
+        }
+      },
+      "name": "Euler-Lagrange necessary condition",
+      "references": [
+        "ref.variational-calculus"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "lhs": {
+          "args": [
+            {
+              "function": {
+                "function": {
+                  "op": "Lagrangian"
+                },
+                "op": "Derivative",
+                "variable": "qdot"
+              },
+              "op": "Derivative",
+              "variable": "t"
+            },
+            {
+              "function": {
+                "op": "Lagrangian"
+              },
+              "op": "Derivative",
+              "variable": "q"
+            }
+          ],
+          "op": "Subtract"
+        },
+        "op": "Equation",
+        "rhs": {
+          "op": "Constant",
+          "value": 0
+        }
+      },
+      "theorem_id": "euler_lagrange"
+    },
+    {
+      "assumptions": [
+        "differentiable_one_parameter_symmetry",
+        "action_invariant_up_to_boundary_term",
+        "euler_lagrange_holds"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "of": {
+          "op": "Action"
+        },
+        "op": "ContinuousSymmetry"
+      },
+      "name": "Noether symmetry to conservation",
+      "references": [
+        "ref.noether"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "op": "ConservedQuantity",
+        "provenance": "NOETHER_DERIVED"
+      },
+      "theorem_id": "noether"
+    },
+    {
+      "assumptions": [
+        "regular_legendre_transform",
+        "momentum_definition"
+      ],
+      "formalization_level": "THEOREM_REGISTERED",
+      "lean_theorem": null,
+      "lhs": {
+        "op": "Lagrangian"
+      },
+      "name": "Lagrangian-Hamiltonian Legendre relation",
+      "references": [
+        "ref.hamiltonian-mechanics"
+      ],
+      "relation": "EXACT_UNDER_ASSUMPTIONS",
+      "rhs": {
+        "definition": {
+          "args": [
+            {
+              "args": [
+                {
+                  "name": "p",
+                  "op": "FreeVariable"
+                },
+                {
+                  "name": "qdot",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Dot"
+            },
+            {
+              "op": "Lagrangian"
+            }
+          ],
+          "op": "Subtract"
+        },
+        "op": "Hamiltonian"
+      },
+      "theorem_id": "legendre_hamiltonian"
+    }
+  ]
+}

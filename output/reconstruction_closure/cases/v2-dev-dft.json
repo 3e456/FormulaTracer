@@ -1,0 +1,70 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [
+    "complex input",
+    "normalization convention validated"
+  ],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "body": {
+      "args": [
+        {
+          "indices": [
+            {
+              "name": "n",
+              "op": "BoundVariable"
+            }
+          ],
+          "name": "x",
+          "op": "IndexedValue"
+        },
+        {
+          "args": [
+            {
+              "name": "phase",
+              "op": "FreeVariable"
+            }
+          ],
+          "name": "exp",
+          "op": "FunctionCall"
+        }
+      ],
+      "op": "Multiply"
+    },
+    "bound_index": "n",
+    "index_domain": {
+      "lower": {
+        "op": "Constant",
+        "value": 0
+      },
+      "upper_exclusive": {
+        "name": "N",
+        "op": "FreeVariable"
+      }
+    },
+    "op": "FiniteSum"
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-dev-dft.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-dev-dft",
+  "root_cause": "FRONTEND_RECONSTRUCTION_GAP",
+  "source_artifact_hash": "cbabf538f472dcb670842725007ec89d2d9978c01a1be8e7e4b345cf356f8248",
+  "case_specific_rule_used": false
+}

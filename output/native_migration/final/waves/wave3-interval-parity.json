@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "wave": 3,
+  "component": "interval",
+  "cases": [
+    {
+      "case": "exact_integer_add",
+      "passed": true,
+      "invariant": "integer arithmetic remains exact"
+    },
+    {
+      "case": "four_corner_product",
+      "passed": true,
+      "invariant": "all endpoint products considered"
+    },
+    {
+      "case": "division_zero_crossing",
+      "passed": true,
+      "invariant": "zero-crossing never certified"
+    },
+    {
+      "case": "even_power_crossing_zero",
+      "passed": true,
+      "invariant": "even power contains zero"
+    },
+    {
+      "case": "periodic_critical_point",
+      "passed": true,
+      "invariant": "critical points included"
+    },
+    {
+      "case": "sqrt_domain_fail_closed",
+      "passed": true,
+      "invariant": "invalid domain unresolved"
+    },
+    {
+      "case": "branch_feasibility",
+      "passed": true,
+      "invariant": "branch status native"
+    }
+  ],
+  "passed": 7,
+  "total": 7,
+  "false_acceptance": 0,
+  "status": "PASS"
+}

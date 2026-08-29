@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "repository_revision": "1730a3088e4f16b3544b663443bd206a4b705594",
+  "branch": "feature/prepublic-final-integration-assurance",
+  "version": "0.1.0",
+  "package_name": "formulatracer",
+  "project_license": "Apache-2.0",
+  "license_recommendation": "RETAIN_APACHE_2_0",
+  "documentation_status": "PASS",
+  "language_support": {
+    "package_version": "0.1.0",
+    "python": ">=3.10",
+    "rust": ">=1.85; edition 2021",
+    "c_abi": "v1",
+    "audited_cpp": [
+      "C++17",
+      "C++20"
+    ],
+    "cpp_build": "C++20",
+    "llvm_clang": "major 18",
+    "lean": "4.19.0",
+    "mathlib": "4.19.0",
+    "generated": [
+      "Python",
+      "Rust",
+      "C++"
+    ]
+  },
+  "native_support": "DOCUMENTED_AND_EXAMPLES_ADDED",
+  "python_pypi_readiness": {
+    "windows_wheel_build": "PASS",
+    "windows_clean_install": "PASS",
+    "linux_wheel_build": "PASS",
+    "linux_clean_install": "PASS",
+    "sdist_build": "PASS",
+    "end_user_rust_required": false
+  },
+  "rust_crates_io_readiness": "METADATA_READY_NOT_PUBLISHED",
+  "provider_conformance": "PASS_WITH_VERSION_RANGES_UNPINNED",
+  "third_party_licensing": "PASS; REAUDIT_ON_ARTIFACT_CHANGE",
+  "privacy_security": "PASS",
+  "tests": {
+    "schema_version": "1.0",
+    "status": "PASS",
+    "python": {
+      "passed": 579,
+      "skipped": 1,
+      "subtests_passed": 36,
+      "failed": 0
+    },
+    "rust": {
+      "core_passed": 49,
+      "c_api_passed": 3,
+      "failed": 0
+    },
+    "c_abi_cpp_wrapper": "PASS_4_OF_4",
+    "rust_standalone": "PASS",
+    "c_standalone": "PASS",
+    "cpp_standalone": "PASS",
+    "readme_quickstart": "PASS",
+    "example_execution_failures": 0,
+    "lean": {
+      "lake_build": "PASS",
+      "sorry": 0,
+      "admit": 0,
+      "axiom": 0
+    },
+    "python_distribution": {
+      "windows_wheel_build": "PASS",
+      "windows_clean_install": "PASS",
+      "linux_wheel_build": "PASS",
+      "linux_clean_install": "PASS",
+      "sdist_build": "PASS",
+      "end_user_rust_required": false
+    },
+    "native_semantic_ownership": {
+      "production_python_semantic_symbols": 0,
+      "production_reachable_python_semantic_symbols": 0,
+      "dynamic_reachability_unresolved": 0,
+      "python_semantic_fallback_count": 0
+    },
+    "differential": {
+      "python_rust": "1056/1056",
+      "tex": "1056/1056",
+      "false_acceptance": 0
+    },
+    "structural_isomorphism": {
+      "cases": 28,
+      "false_structural_isomorphism": 0,
+      "semantic_mutation_collapse": 0
+    },
+    "bitvector_exhaustive": "196864/196864",
+    "privacy_security": "PASS"
+  },
+  "critical_defects": 0,
+  "remaining_unresolved": 4,
+  "release_blockers": [],
+  "PUBLIC_RELEASE_READY": true
+}

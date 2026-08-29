@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "version_consistency": "PASS",
+  "python_version": "0.1.0",
+  "rust_workspace_version": "0.1.0",
+  "citation_version": "0.1.0",
+  "c_abi_version": 1,
+  "license": "Apache-2.0",
+  "public_api_inventory_items": 628,
+  "public_stable_symbols": 113,
+  "document_example_tests": {"passed": 6, "failed": 0},
+  "maintenance_gate": "PASS",
+  "working_tree_before_release_record": "CLEAN",
+  "git_diff_check": "PASS",
+  "semantic_regression_rerun_for_wording_change": false,
+  "semantic_regression_reuse": {
+    "validated_at_sha": "e2b8c98f234f887b6309d2403f283024703a1088",
+    "windows_python": "608 passed; 36 subtests",
+    "linux_python": "607 passed; 1 platform-specific skipped; 36 subtests",
+    "rust": "68 passed",
+    "c_cpp": "4 passed",
+    "python_rust_differential": "1056/1056",
+    "tex_differential": "1056/1056",
+    "bitvector": "196864/196864",
+    "lean": "2842 targets PASS; sorry/admit/axiom 0/0/0",
+    "clippy": "PASS; warnings 0",
+    "false_acceptance": 0
+  },
+  "status": "PASS"
+}

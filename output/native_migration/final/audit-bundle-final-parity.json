@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "field_level_comparison": {
+    "status": true,
+    "claims": true,
+    "theory": true,
+    "implementation": true,
+    "mathematical_ir": true,
+    "relation": true,
+    "assumptions": true,
+    "error": true,
+    "range": true,
+    "proof_obligations": true,
+    "evidence": true,
+    "provenance": true
+  },
+  "payload_hash_present": true,
+  "integrity_status": "AUDIT_BUNDLE_INTEGRITY_VERIFIED",
+  "canonical_owner": "rust/formulatracer-core/src/bundle.rs",
+  "python_role": "thin serialization and filesystem packaging"
+}

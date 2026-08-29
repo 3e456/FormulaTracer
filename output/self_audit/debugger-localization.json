@@ -1,0 +1,6659 @@
+{
+  "cases": [
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Subtract"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Add"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0000",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Subtract"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0001",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Divide"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Multiply"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0002",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 4
+            }
+          ],
+          "op": "Multiply"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 4
+            }
+          ],
+          "op": "Divide"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0003",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Subtract"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Add"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0004",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Subtract"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0005",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Divide"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Multiply"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0006",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 4
+            }
+          ],
+          "op": "Multiply"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 4
+            }
+          ],
+          "op": "Divide"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0007",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Subtract"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 1
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 1
+            }
+          ],
+          "op": "Add"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0008",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Subtract"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0009",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Divide"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 3
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 3
+            }
+          ],
+          "op": "Multiply"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0010",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 4
+            }
+          ],
+          "op": "Multiply"
+        },
+        "boundary_inputs": [
+          {
+            "role": "args",
+            "semantics": [
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              },
+              {
+                "op": "Constant",
+                "value": 4
+              }
+            ]
+          }
+        ],
+        "expected": {
+          "args": [
+            {
+              "name": "x",
+              "op": "FreeVariable"
+            },
+            {
+              "op": "Constant",
+              "value": 4
+            }
+          ],
+          "op": "Divide"
+        },
+        "mathematical": true,
+        "path": [],
+        "role": null,
+        "type": "OPERATOR_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0011",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0012",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0013",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0014",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0015",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0016",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0017",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0018",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0019",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0020",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0021",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0022",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0023",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0024",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0025",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0026",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0027",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0028",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0029",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0030",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0031",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0032",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0033",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0034",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0035",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0036",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0037",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0038",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0039",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0040",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0041",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0042",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0043",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0044",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0045",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0046",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0047",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0048",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0049",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0050",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0051",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0052",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0053",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0054",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0055",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0056",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0057",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0058",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0059",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0060",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0061",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0062",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0063",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0064",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0065",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0066",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0067",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0068",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0069",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0070",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0071",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0072",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0073",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0074",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0075",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0076",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0077",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0078",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0079",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0080",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0081",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0082",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0083",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0084",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0085",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0086",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0087",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0088",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0089",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0090",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0091",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0092",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0093",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0094",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0095",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0096",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0097",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0098",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0099",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0100",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0101",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0102",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0103",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0104",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0105",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0106",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Multiply"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0107",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0108",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0109",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0110",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0111",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0112",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0113",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0114",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0115",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0116",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0117",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0118",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0119",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0120",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0121",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0122",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0123",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0124",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0125",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0126",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0127",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0128",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0129",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0130",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0131",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0132",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0133",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0134",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0135",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0136",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0137",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0138",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0139",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0140",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0141",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0142",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0143",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0144",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0145",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0146",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0147",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0148",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0149",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0150",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0151",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0152",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0153",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0154",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": {
+        "actual": {
+          "op": "Reduce",
+          "reduction": "Add"
+        },
+        "boundary_inputs": [
+          {
+            "role": "input",
+            "semantics": {
+              "name": "x",
+              "op": "FreeVariable"
+            }
+          }
+        ],
+        "expected": {
+          "op": "Reduce",
+          "reduction": "Mean"
+        },
+        "mathematical": true,
+        "path": [
+          "reduction"
+        ],
+        "role": null,
+        "type": "REDUCTION_MISMATCH"
+      },
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "CORRECT_SEMANTIC_NODE",
+      "mutation_id": "mutation:0155",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0156",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0157",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0158",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0159",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0160",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0161",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0162",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0163",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0164",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0165",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0166",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0167",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0168",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0169",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0170",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0171",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 2
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0172",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0173",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0174",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0175",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0176",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0177",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0178",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0179",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0180",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0181",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0182",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0183",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0184",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0185",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0186",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0187",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0188",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0189",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0190",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0191",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0192",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0193",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0194",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0195",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0196",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0197",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0198",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0199",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0200",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0201",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0202",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0203",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0204",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0205",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0206",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0207",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0208",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0209",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0210",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0211",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0212",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0213",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0214",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0215",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0216",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0217",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0218",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0219",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0220",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0221",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0222",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0223",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0224",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0225",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0226",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0227",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0228",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0229",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0230",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0231",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0232",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0233",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0234",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0235",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0236",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0237",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0238",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    },
+    {
+      "divergence_stage": "FRONTEND_REEXTRACTION_DIVERGENCE",
+      "exact_source_span": false,
+      "first_divergence": null,
+      "ground_truth_span": {
+        "line": 4
+      },
+      "localization": "UNRESOLVED",
+      "mutation_id": "mutation:0239",
+      "note": "Expression IR has no per-operator source span; exact-span credit is fail-closed."
+    }
+  ],
+  "correct_semantic_node": 156,
+  "exact_source_span": 0,
+  "localization_counts": {
+    "CORRECT_SEMANTIC_NODE": 156,
+    "UNRESOLVED": 84
+  },
+  "schema_version": "1.0"
+}

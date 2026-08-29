@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/dependency-license-inventory.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "version_or_revision", "license", "usage_category", "linked_or_imported", "distributed_with_formulatracer", "source_copied", "notice_required", "license_text_required", "compatible_candidate_licenses"],
+    "properties": {
+      "usage_category": {"enum": ["runtime dependency", "build dependency", "development/test dependency", "optional provider", "external validation only", "referenced documentation/paper", "copied/vendored source"]},
+      "linked_or_imported": {"type": "boolean"},
+      "distributed_with_formulatracer": {"type": "boolean"},
+      "source_copied": {"type": "boolean"}
+    },
+    "additionalProperties": true
+  }
+}

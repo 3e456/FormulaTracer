@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/mathematical-knowledge-registry.schema.json",
+  "type": "object",
+  "required": ["schema_version", "knowledge"],
+  "properties": {
+    "schema_version": {"type": "string"},
+    "knowledge": {"type": "array", "items": {"$ref": "#/$defs/entry"}}
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": ["knowledge_id", "name", "category", "lhs", "rhs", "relation_kind", "forward_enabled", "reverse_enabled", "rewrite_cost", "priority", "motif_tags", "provider_hints", "evidence_kind"],
+      "properties": {
+        "knowledge_id": {"type": "string", "minLength": 1}, "name": {"type": "string"}, "category": {"type": "string"},
+        "lhs": {"type": "object"}, "rhs": {"type": "object"},
+        "relation_kind": {"enum": ["EXACT", "EXACT_UNDER_ASSUMPTIONS", "DEFINITIONAL", "IDENTITY", "TRANSFORMATION", "APPROXIMATION", "DISCRETIZATION", "TRUNCATION", "SAMPLING", "ALGORITHMIC_REALIZATION"]},
+        "preconditions": {"type": "array", "items": {"type": "string"}}, "domain_constraints": {"type": "array", "items": {"type": "string"}},
+        "type_constraints": {"type": "array", "items": {"type": "string"}}, "shape_constraints": {"type": "array", "items": {"type": "string"}},
+        "required_facts": {"type": "array", "items": {"type": "string"}}, "forward_enabled": {"type": "boolean"}, "reverse_enabled": {"type": "boolean"},
+        "algebraic_structures": {"type": "array", "items": {"enum": ["SEMIGROUP", "MONOID", "GROUP", "COMMUTATIVE_GROUP", "RING", "COMMUTATIVE_RING", "INTEGRAL_DOMAIN", "FIELD", "BOOLEAN_ALGEBRA", "VECTOR_SPACE", "MATRIX_ALGEBRA", "MODULAR_RING", "FINITE_FIELD", "BITVECTOR_ALGEBRA"]}},
+        "rewrite_cost": {"type": "integer", "minimum": 0}, "priority": {"type": "integer"},
+        "motif_tags": {"type": "array", "items": {"type": "string"}}, "provider_hints": {"type": "array", "items": {"type": "string"}},
+        "evidence_kind": {"enum": ["LEAN_VERIFIED", "FORMALLY_DERIVED", "REFERENCE_THEOREM", "REFERENCE_CONTRACT", "USER_ASSUMPTION"]},
+        "reference": {"type": ["string", "null"]}, "lean_theorem": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

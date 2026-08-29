@@ -1,0 +1,8 @@
+schema_version: "0.1"
+rule:
+  id: finite_sum_normalization
+  kind: exact
+  source_pattern: {}
+  target_template: {}
+  theorem_reference: CppAudit.Semantics.Transformation.finite_sum_normalization_sound
+  provenance: {source: built-in exact semantics, maintainer: cpp-audit}

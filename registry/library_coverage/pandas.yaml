@@ -1,0 +1,13 @@
+schema_version: "0.1"
+package: pandas
+version: ">=2.0,<4.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_template: "https://pandas.pydata.org/docs/reference/api/{callable}.html"
+reference_status: REFERENCE_EXTRACTED
+verified_date: "2026-08-27"
+equivalence_scope:
+  preserve: [values, index, columns, missing_value_rules, argument_mapping]
+  ignore: [implementation_algorithm, memory_layout, storage_manager]
+simple_bindings:
+  representation:
+    tabular_input_boundary: [pandas.read_csv, pandas.read_excel]

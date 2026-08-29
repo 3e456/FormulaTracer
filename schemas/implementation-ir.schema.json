@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cpp-audit.dev/schemas/implementation-ir-0.1.json",
+  "type": "object",
+  "required": ["schema_version", "dependency_graph_version", "standard_version", "source_hash", "function", "translation_unit", "producer", "nodes", "dependency_edges", "analysis", "used_standard_entities", "diagnostics"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "dependency_graph_version": {"const": "0.1"},
+    "standard_version": {"enum": ["cpp17", "cpp20"]},
+    "source_hash": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "function": {"type": "string"}, "translation_unit": {"type": "string"},
+    "producer": {"type": "object", "required": ["kind", "clang_version", "compile_command", "compilation_database"], "properties": {"kind": {"const": "clang-libtooling"}, "clang_version": {"type": "string"}, "compile_command": {"type": "string", "minLength": 1}, "compilation_database": {"type": "string", "minLength": 1}}},
+    "nodes": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/node"}},
+    "dependency_edges": {"type": "array", "items": {"$ref": "#/$defs/edge"}},
+    "analysis": {"type": "object"}, "used_standard_entities": {"type": "array", "items": {"type": "string"}},
+    "diagnostics": {"type": "array", "items": {"type": "object"}}
+  },
+  "$defs": {
+    "span": {"type": "object", "required": ["file", "begin_line", "begin_column", "end_line", "end_column"], "properties": {"file": {"type": "string"}, "begin_line": {"type": "integer"}, "begin_column": {"type": "integer"}, "end_line": {"type": "integer"}, "end_column": {"type": "integer"}}},
+    "node": {"type": "object", "required": ["id", "kind", "source_span", "cpp_type", "value_category", "constness", "effect", "attributes"], "properties": {"id": {"type": "string"}, "kind": {"type": "string"}, "source_span": {"$ref": "#/$defs/span"}, "cpp_type": {"type": "string"}, "value_category": {"type": "string"}, "constness": {"type": "string"}, "resolved_symbol": {"type": "string"}, "effect": {"type": "string"}, "attributes": {"type": "object"}}},
+    "edge": {"type": "object", "required": ["edge_id", "kind", "source_node_id", "target_node_id", "argument_role", "source_span", "confidence", "derivation"], "properties": {"edge_id": {"type": "string"}, "kind": {"enum": ["DEFINES", "READS", "WRITES", "VALUE_DEPENDS_ON", "INDEX_DEPENDS_ON", "CONDITION_DEPENDS_ON", "LOOP_BOUND_DEPENDS_ON", "PREVIOUS_ACCUMULATOR_VALUE", "CONTROL_GUARDS", "RESULT_OF"]}, "source_node_id": {"type": "string"}, "target_node_id": {"type": "string"}, "argument_role": {"type": "string"}, "source_span": {"$ref": "#/$defs/span"}, "confidence": {"enum": ["RESOLVED", "UNRESOLVED"]}, "derivation": {"type": "string"}}}
+  }
+}

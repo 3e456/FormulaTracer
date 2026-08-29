@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://formulatracer.dev/schemas/ieee754-semantics.schema.json",
+  "type": "object",
+  "required": ["status", "formats", "operations", "evaluation_order", "rounding_contract", "special_value_observations", "non_associativity_risks", "fma_contract", "equivalence", "diagnostics"],
+  "properties": {
+    "status": {"enum": ["IEEE754_CONTRACT_RESOLVED", "IEEE754_CONTRACT_UNRESOLVED"]},
+    "formats": {"type": "object"}, "operations": {"type": "array"},
+    "evaluation_order": {"type": "string"}, "rounding_contract": {"type": "object"},
+    "special_value_observations": {"type": "array"}, "non_associativity_risks": {"type": "array"},
+    "fma_contract": {"type": "string"}, "equivalence": {"type": "object"},
+    "diagnostics": {"type": "array"}
+  },
+  "additionalProperties": false
+}

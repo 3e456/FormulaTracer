@@ -1,0 +1,20 @@
+schema_version: "0.1"
+package: rasterio
+version: ">=1.4,<2.0"
+resolution_kind: REFERENCE_SIMPLE_MAPPING
+reference_status: REFERENCE_REVIEWED
+verified_date: "2026-08-26"
+equivalence_scope:
+  preserve: [geometry_values, raster_shape, affine_transform, fill_rule, argument_mapping]
+  ignore: [GDAL_algorithm, native_implementation, memory_layout]
+bindings:
+  - callable: rasterio.features.rasterize
+    family: SpatialGeometry
+    bind: {relation: rasterization, shapes_parameter: shapes, shape_parameter: out_shape,
+           transform_parameter: transform, fill_parameter: fill, overlap_rule: painter_order}
+    reference: https://rasterio.readthedocs.io/en/stable/api/rasterio.features.html#rasterio.features.rasterize
+  - callable: rasterio.transform.from_bounds
+    family: SpatialGeometry
+    bind: {relation: affine_transform_from_bounds, bounds_parameters: [west, south, east, north],
+           raster_shape_parameters: [width, height]}
+    reference: https://rasterio.readthedocs.io/en/stable/api/rasterio.transform.html#rasterio.transform.from_bounds

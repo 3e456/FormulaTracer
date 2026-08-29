@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "version_policy": "REFERENCE_ONLY_VERSION_UNPINNED",
+  "access_date": "2026-08-29",
+  "records": [
+    {
+      "provider": "xarray",
+      "semantic_family": "LABELED_ALIGNMENT",
+      "operations": ["binary arithmetic", "align"],
+      "official_reference": "https://docs.xarray.dev/en/stable/user-guide/computation.html",
+      "upstream_claim": "binary operations align index coordinates; the default join is the intersection",
+      "native_owner": "labeled_data"
+    },
+    {
+      "provider": "xarray",
+      "semantic_family": "INTERPOLATION",
+      "operations": ["DataArray.interp"],
+      "official_reference": "https://docs.xarray.dev/en/stable/generated/xarray.DataArray.interp.html",
+      "upstream_claim": "interpolates onto new coordinates using a documented method",
+      "native_owner": "labeled_data"
+    },
+    {
+      "provider": "xarray",
+      "semantic_family": "LABELED_REDUCTION",
+      "operations": ["DataArray.sum", "DataArray.mean"],
+      "official_reference": "https://docs.xarray.dev/en/stable/generated/xarray.DataArray.sum.html",
+      "upstream_claim": "dimension, skipna, keep_attrs and provider kwargs affect reduction",
+      "native_owner": "labeled_data"
+    },
+    {
+      "provider": "pandas",
+      "semantic_family": "MISSINGNESS",
+      "operations": ["fillna", "arithmetic with fill_value", "sum"],
+      "official_reference": "https://pandas.pydata.org/docs/user_guide/missing_data.html",
+      "upstream_claim": "missing sentinels, propagation, fill and reduction policies are dtype/operation dependent",
+      "native_owner": "labeled_data"
+    },
+    {
+      "provider": "pandas",
+      "semantic_family": "LABELED_ALIGNMENT",
+      "operations": ["Series/DataFrame arithmetic", "align"],
+      "official_reference": "https://pandas.pydata.org/docs/user_guide/basics.html",
+      "upstream_claim": "objects align by labels and arithmetic can apply explicit fill values",
+      "native_owner": "labeled_data"
+    },
+    {
+      "provider": "dask",
+      "semantic_family": "CHUNKED_REDUCTION",
+      "operations": ["dask.array.reduction", "sum", "mean"],
+      "official_reference": "https://docs.dask.org/en/stable/generated/dask.array.reduction.html",
+      "upstream_claim": "reduction executes chunk, optional combine, and aggregate stages controlled by split_every",
+      "native_owner": "provider_execution"
+    },
+    {
+      "provider": "scipy",
+      "semantic_family": "LINEAR_SOLVE",
+      "operations": ["scipy.linalg.solve"],
+      "official_reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.solve.html",
+      "upstream_claim": "returns a computed solution for A @ x = b using structure-dependent LAPACK routines",
+      "native_owner": "provider_execution"
+    },
+    {
+      "provider": "scipy",
+      "semantic_family": "ADAPTIVE_QUADRATURE",
+      "operations": ["scipy.integrate.quad"],
+      "official_reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.quad.html",
+      "upstream_claim": "returns a numerical integral and an absolute-error estimate under documented tolerances",
+      "native_owner": "provider_execution"
+    },
+    {
+      "provider": "scipy",
+      "semantic_family": "OPTIMIZATION",
+      "operations": ["scipy.optimize.minimize"],
+      "official_reference": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html",
+      "upstream_claim": "returns an algorithm-dependent candidate and termination metadata",
+      "native_owner": "provider_execution"
+    }
+  ]
+}

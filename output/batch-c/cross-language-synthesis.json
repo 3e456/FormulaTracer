@@ -1,0 +1,1709 @@
+{
+  "canonical_ir_status": "SAME_CANONICAL_MATHEMATICAL_IR",
+  "results": {
+    "cpp": {
+      "algorithm_ir": {
+        "algorithm_id": "algorithm:42c086770d0d5975",
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "selected_transformations": [],
+        "status": "ALGORITHM_IR_SELECTED"
+      },
+      "constraints": {
+        "allowed_approximations": [],
+        "language": "cpp",
+        "numeric_domain": "real",
+        "readability": "CANONICAL",
+        "transformation_set": null
+      },
+      "expected_implementation_ir": {
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "language": "cpp",
+        "output": "y"
+      },
+      "generated": {
+        "algorithm_ir": {
+          "algorithm_id": "algorithm:42c086770d0d5975",
+          "expression": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "selected_transformations": [],
+          "status": "ALGORITHM_IR_SELECTED"
+        },
+        "expected_implementation_ir": {
+          "expression": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "language": "cpp",
+          "output": "y"
+        },
+        "filename": "generated.cpp",
+        "generation_id": "generated:d56535e580a4d272",
+        "language": "cpp",
+        "round_trip": {
+          "comparison": {
+            "actual": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3
+                    },
+                    {
+                      "name": "x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2
+                }
+              ],
+              "op": "Add"
+            },
+            "expected": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3
+                    },
+                    {
+                      "name": "x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2
+                }
+              ],
+              "op": "Add"
+            },
+            "match": true
+          },
+          "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+          "first_synthesis_divergence": null,
+          "observed_implementation_ir": {
+            "alias_semantics": {
+              "complete_verification": false,
+              "status": "UNRESOLVED"
+            },
+            "clang_expression_extraction": null,
+            "clang_implementation_ir": null,
+            "execution_ir": {
+              "operations": [],
+              "overall_policy": "SEQUENTIAL"
+            },
+            "expression_id": "expression:b6a709365325d76d",
+            "frontend_authority": "PORTABLE_RECOGNIZER_PARTIAL",
+            "language": "cpp",
+            "library_contracts": [],
+            "mathematical_ir": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3.0
+                    },
+                    {
+                      "name": "compute::x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2.0
+                }
+              ],
+              "op": "Add"
+            },
+            "module": "generated",
+            "numeric_execution": {
+              "cpp_types": [
+                "double"
+              ],
+              "floating_point_exact_real_equivalence": false,
+              "ieee754_equivalence": "NOT_CLAIMED",
+              "mathematical_domain": "Real"
+            },
+            "outputs": [
+              {
+                "expression": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "op": "Constant",
+                          "value": 3.0
+                        },
+                        {
+                          "name": "compute::x",
+                          "op": "FreeVariable"
+                        }
+                      ],
+                      "op": "Multiply"
+                    },
+                    {
+                      "op": "Constant",
+                      "value": 2.0
+                    }
+                  ],
+                  "op": "Add"
+                },
+                "name": "compute"
+              }
+            ],
+            "schema_version": "1.0",
+            "symbol": "compute"
+          },
+          "observed_mathematical_ir": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3.0
+                  },
+                  {
+                    "name": "compute::x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2.0
+              }
+            ],
+            "op": "Add"
+          },
+          "status": "ROUND_TRIP_VERIFIED"
+        },
+        "source": "#include <cmath>\n#include <cstddef>\n#include <vector>\n\ndouble compute(double x) {\n    double y = ((3.0 * x) + 2.0);\n    return y;\n}\n",
+        "source_path": "output\\batch-c\\cpp.cpp",
+        "status": "SOURCE_GENERATED"
+      },
+      "pipeline_trace": [
+        {
+          "stage": "THEORY",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          }
+        },
+        {
+          "stage": "ALGORITHM_IR",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          }
+        },
+        {
+          "hash": "47dee9f5096a0759faf80f8a13bdd5c396e105fd5cbdeac76d03fc0c644e4747",
+          "stage": "GENERATED_SOURCE"
+        },
+        {
+          "stage": "OBSERVED_IMPLEMENTATION_IR",
+          "value": {
+            "alias_semantics": {
+              "complete_verification": false,
+              "status": "UNRESOLVED"
+            },
+            "clang_expression_extraction": null,
+            "clang_implementation_ir": null,
+            "execution_ir": {
+              "operations": [],
+              "overall_policy": "SEQUENTIAL"
+            },
+            "expression_id": "expression:b6a709365325d76d",
+            "frontend_authority": "PORTABLE_RECOGNIZER_PARTIAL",
+            "language": "cpp",
+            "library_contracts": [],
+            "mathematical_ir": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3.0
+                    },
+                    {
+                      "name": "compute::x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2.0
+                }
+              ],
+              "op": "Add"
+            },
+            "module": "generated",
+            "numeric_execution": {
+              "cpp_types": [
+                "double"
+              ],
+              "floating_point_exact_real_equivalence": false,
+              "ieee754_equivalence": "NOT_CLAIMED",
+              "mathematical_domain": "Real"
+            },
+            "outputs": [
+              {
+                "expression": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "op": "Constant",
+                          "value": 3.0
+                        },
+                        {
+                          "name": "compute::x",
+                          "op": "FreeVariable"
+                        }
+                      ],
+                      "op": "Multiply"
+                    },
+                    {
+                      "op": "Constant",
+                      "value": 2.0
+                    }
+                  ],
+                  "op": "Add"
+                },
+                "name": "compute"
+              }
+            ],
+            "schema_version": "1.0",
+            "symbol": "compute"
+          }
+        },
+        {
+          "stage": "OBSERVED_MATHEMATICAL_IR",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3.0
+                  },
+                  {
+                    "name": "compute::x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2.0
+              }
+            ],
+            "op": "Add"
+          }
+        }
+      ],
+      "round_trip": {
+        "comparison": {
+          "actual": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "expected": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "match": true
+        },
+        "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+        "first_synthesis_divergence": null,
+        "observed_implementation_ir": {
+          "alias_semantics": {
+            "complete_verification": false,
+            "status": "UNRESOLVED"
+          },
+          "clang_expression_extraction": null,
+          "clang_implementation_ir": null,
+          "execution_ir": {
+            "operations": [],
+            "overall_policy": "SEQUENTIAL"
+          },
+          "expression_id": "expression:b6a709365325d76d",
+          "frontend_authority": "PORTABLE_RECOGNIZER_PARTIAL",
+          "language": "cpp",
+          "library_contracts": [],
+          "mathematical_ir": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3.0
+                  },
+                  {
+                    "name": "compute::x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2.0
+              }
+            ],
+            "op": "Add"
+          },
+          "module": "generated",
+          "numeric_execution": {
+            "cpp_types": [
+              "double"
+            ],
+            "floating_point_exact_real_equivalence": false,
+            "ieee754_equivalence": "NOT_CLAIMED",
+            "mathematical_domain": "Real"
+          },
+          "outputs": [
+            {
+              "expression": {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "op": "Constant",
+                        "value": 3.0
+                      },
+                      {
+                        "name": "compute::x",
+                        "op": "FreeVariable"
+                      }
+                    ],
+                    "op": "Multiply"
+                  },
+                  {
+                    "op": "Constant",
+                    "value": 2.0
+                  }
+                ],
+                "op": "Add"
+              },
+              "name": "compute"
+            }
+          ],
+          "schema_version": "1.0",
+          "symbol": "compute"
+        },
+        "observed_mathematical_ir": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3.0
+                },
+                {
+                  "name": "compute::x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2.0
+            }
+          ],
+          "op": "Add"
+        },
+        "status": "ROUND_TRIP_VERIFIED"
+      },
+      "status": "ROUND_TRIP_VERIFIED",
+      "theory": {
+        "assumptions": [],
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "inputs": [
+          "x"
+        ],
+        "output": "y"
+      },
+      "transformed_theory": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 3
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Add"
+      }
+    },
+    "python": {
+      "algorithm_ir": {
+        "algorithm_id": "algorithm:42c086770d0d5975",
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "selected_transformations": [],
+        "status": "ALGORITHM_IR_SELECTED"
+      },
+      "constraints": {
+        "allowed_approximations": [],
+        "language": "python",
+        "numeric_domain": "real",
+        "readability": "CANONICAL",
+        "transformation_set": null
+      },
+      "expected_implementation_ir": {
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "language": "python",
+        "output": "y"
+      },
+      "generated": {
+        "algorithm_ir": {
+          "algorithm_id": "algorithm:42c086770d0d5975",
+          "expression": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "selected_transformations": [],
+          "status": "ALGORITHM_IR_SELECTED"
+        },
+        "expected_implementation_ir": {
+          "expression": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "language": "python",
+          "output": "y"
+        },
+        "filename": "generated.py",
+        "generation_id": "generated:4b84155fbd25f916",
+        "language": "python",
+        "round_trip": {
+          "comparison": {
+            "actual": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3
+                    },
+                    {
+                      "name": "x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2
+                }
+              ],
+              "op": "Add"
+            },
+            "expected": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3
+                    },
+                    {
+                      "name": "x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2
+                }
+              ],
+              "op": "Add"
+            },
+            "match": true
+          },
+          "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+          "first_synthesis_divergence": null,
+          "observed_implementation_ir": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "generated.compute.x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "observed_mathematical_ir": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "generated.compute.x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "status": "ROUND_TRIP_VERIFIED"
+        },
+        "source": "import math\n\ndef compute(x):\n    y = ((3 * x) + 2)\n    return y\n",
+        "source_path": "output\\batch-c\\python.py",
+        "status": "SOURCE_GENERATED"
+      },
+      "pipeline_trace": [
+        {
+          "stage": "THEORY",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          }
+        },
+        {
+          "stage": "ALGORITHM_IR",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          }
+        },
+        {
+          "hash": "5a22bba5f2a0e97e64ea9b4a3f1187a2636b5dee71ca2c0ae53aa84e20ab17e7",
+          "stage": "GENERATED_SOURCE"
+        },
+        {
+          "stage": "OBSERVED_IMPLEMENTATION_IR",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "generated.compute.x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          }
+        },
+        {
+          "stage": "OBSERVED_MATHEMATICAL_IR",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "generated.compute.x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          }
+        }
+      ],
+      "round_trip": {
+        "comparison": {
+          "actual": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "expected": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "match": true
+        },
+        "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+        "first_synthesis_divergence": null,
+        "observed_implementation_ir": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "generated.compute.x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "observed_mathematical_ir": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "generated.compute.x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "status": "ROUND_TRIP_VERIFIED"
+      },
+      "status": "ROUND_TRIP_VERIFIED",
+      "theory": {
+        "assumptions": [],
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "inputs": [
+          "x"
+        ],
+        "output": "y"
+      },
+      "transformed_theory": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 3
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Add"
+      }
+    },
+    "rust": {
+      "algorithm_ir": {
+        "algorithm_id": "algorithm:42c086770d0d5975",
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "selected_transformations": [],
+        "status": "ALGORITHM_IR_SELECTED"
+      },
+      "constraints": {
+        "allowed_approximations": [],
+        "language": "rust",
+        "numeric_domain": "real",
+        "readability": "CANONICAL",
+        "transformation_set": null
+      },
+      "expected_implementation_ir": {
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "language": "rust",
+        "output": "y"
+      },
+      "generated": {
+        "algorithm_ir": {
+          "algorithm_id": "algorithm:42c086770d0d5975",
+          "expression": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "selected_transformations": [],
+          "status": "ALGORITHM_IR_SELECTED"
+        },
+        "expected_implementation_ir": {
+          "expression": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "language": "rust",
+          "output": "y"
+        },
+        "filename": "lib.rs",
+        "generation_id": "generated:e057eb4a61da57ca",
+        "language": "rust",
+        "round_trip": {
+          "comparison": {
+            "actual": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3
+                    },
+                    {
+                      "name": "x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2
+                }
+              ],
+              "op": "Add"
+            },
+            "expected": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3
+                    },
+                    {
+                      "name": "x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2
+                }
+              ],
+              "op": "Add"
+            },
+            "match": true
+          },
+          "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+          "first_synthesis_divergence": null,
+          "observed_implementation_ir": {
+            "execution_ir": {
+              "operations": [],
+              "overall_policy": "SEQUENTIAL"
+            },
+            "expression_id": "expression:206498337aeeabaf",
+            "language": "rust",
+            "library_contracts": [],
+            "mathematical_ir": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3.0
+                    },
+                    {
+                      "name": "formulatracer_generated::compute::x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2.0
+                }
+              ],
+              "op": "Add"
+            },
+            "module": "formulatracer_generated",
+            "mutation_ir": [],
+            "outputs": [
+              {
+                "expression": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "op": "Constant",
+                          "value": 3.0
+                        },
+                        {
+                          "name": "formulatracer_generated::compute::x",
+                          "op": "FreeVariable"
+                        }
+                      ],
+                      "op": "Multiply"
+                    },
+                    {
+                      "op": "Constant",
+                      "value": 2.0
+                    }
+                  ],
+                  "op": "Add"
+                },
+                "name": "y"
+              }
+            ],
+            "proof_obligations": [],
+            "schema_version": "1.0",
+            "symbol": "formulatracer_generated::compute"
+          },
+          "observed_mathematical_ir": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3.0
+                  },
+                  {
+                    "name": "formulatracer_generated::compute::x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2.0
+              }
+            ],
+            "op": "Add"
+          },
+          "status": "ROUND_TRIP_VERIFIED"
+        },
+        "source": "pub fn compute(x: f64) -> f64 {\n    let y: f64 = ((3.0 * x) + 2.0);\n    y\n}\n",
+        "source_path": "output\\batch-c\\lib.rs",
+        "status": "SOURCE_GENERATED"
+      },
+      "pipeline_trace": [
+        {
+          "stage": "THEORY",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          }
+        },
+        {
+          "stage": "ALGORITHM_IR",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          }
+        },
+        {
+          "hash": "b8fb4ce4454a73a1bc74d5fffde19162bc197af3e9cebb0aa52a165b271dc93f",
+          "stage": "GENERATED_SOURCE"
+        },
+        {
+          "stage": "OBSERVED_IMPLEMENTATION_IR",
+          "value": {
+            "execution_ir": {
+              "operations": [],
+              "overall_policy": "SEQUENTIAL"
+            },
+            "expression_id": "expression:206498337aeeabaf",
+            "language": "rust",
+            "library_contracts": [],
+            "mathematical_ir": {
+              "args": [
+                {
+                  "args": [
+                    {
+                      "op": "Constant",
+                      "value": 3.0
+                    },
+                    {
+                      "name": "formulatracer_generated::compute::x",
+                      "op": "FreeVariable"
+                    }
+                  ],
+                  "op": "Multiply"
+                },
+                {
+                  "op": "Constant",
+                  "value": 2.0
+                }
+              ],
+              "op": "Add"
+            },
+            "module": "formulatracer_generated",
+            "mutation_ir": [],
+            "outputs": [
+              {
+                "expression": {
+                  "args": [
+                    {
+                      "args": [
+                        {
+                          "op": "Constant",
+                          "value": 3.0
+                        },
+                        {
+                          "name": "formulatracer_generated::compute::x",
+                          "op": "FreeVariable"
+                        }
+                      ],
+                      "op": "Multiply"
+                    },
+                    {
+                      "op": "Constant",
+                      "value": 2.0
+                    }
+                  ],
+                  "op": "Add"
+                },
+                "name": "y"
+              }
+            ],
+            "proof_obligations": [],
+            "schema_version": "1.0",
+            "symbol": "formulatracer_generated::compute"
+          }
+        },
+        {
+          "stage": "OBSERVED_MATHEMATICAL_IR",
+          "value": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3.0
+                  },
+                  {
+                    "name": "formulatracer_generated::compute::x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2.0
+              }
+            ],
+            "op": "Add"
+          }
+        }
+      ],
+      "round_trip": {
+        "comparison": {
+          "actual": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "expected": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3
+                  },
+                  {
+                    "name": "x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2
+              }
+            ],
+            "op": "Add"
+          },
+          "match": true
+        },
+        "end_to_end_status": "PARTIAL_END_TO_END_VERIFICATION",
+        "first_synthesis_divergence": null,
+        "observed_implementation_ir": {
+          "execution_ir": {
+            "operations": [],
+            "overall_policy": "SEQUENTIAL"
+          },
+          "expression_id": "expression:206498337aeeabaf",
+          "language": "rust",
+          "library_contracts": [],
+          "mathematical_ir": {
+            "args": [
+              {
+                "args": [
+                  {
+                    "op": "Constant",
+                    "value": 3.0
+                  },
+                  {
+                    "name": "formulatracer_generated::compute::x",
+                    "op": "FreeVariable"
+                  }
+                ],
+                "op": "Multiply"
+              },
+              {
+                "op": "Constant",
+                "value": 2.0
+              }
+            ],
+            "op": "Add"
+          },
+          "module": "formulatracer_generated",
+          "mutation_ir": [],
+          "outputs": [
+            {
+              "expression": {
+                "args": [
+                  {
+                    "args": [
+                      {
+                        "op": "Constant",
+                        "value": 3.0
+                      },
+                      {
+                        "name": "formulatracer_generated::compute::x",
+                        "op": "FreeVariable"
+                      }
+                    ],
+                    "op": "Multiply"
+                  },
+                  {
+                    "op": "Constant",
+                    "value": 2.0
+                  }
+                ],
+                "op": "Add"
+              },
+              "name": "y"
+            }
+          ],
+          "proof_obligations": [],
+          "schema_version": "1.0",
+          "symbol": "formulatracer_generated::compute"
+        },
+        "observed_mathematical_ir": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3.0
+                },
+                {
+                  "name": "formulatracer_generated::compute::x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2.0
+            }
+          ],
+          "op": "Add"
+        },
+        "status": "ROUND_TRIP_VERIFIED"
+      },
+      "status": "ROUND_TRIP_VERIFIED",
+      "theory": {
+        "assumptions": [],
+        "expression": {
+          "args": [
+            {
+              "args": [
+                {
+                  "op": "Constant",
+                  "value": 3
+                },
+                {
+                  "name": "x",
+                  "op": "FreeVariable"
+                }
+              ],
+              "op": "Multiply"
+            },
+            {
+              "op": "Constant",
+              "value": 2
+            }
+          ],
+          "op": "Add"
+        },
+        "inputs": [
+          "x"
+        ],
+        "output": "y"
+      },
+      "transformed_theory": {
+        "args": [
+          {
+            "args": [
+              {
+                "op": "Constant",
+                "value": 3
+              },
+              {
+                "name": "x",
+                "op": "FreeVariable"
+              }
+            ],
+            "op": "Multiply"
+          },
+          {
+            "op": "Constant",
+            "value": 2
+          }
+        ],
+        "op": "Add"
+      }
+    }
+  }
+}

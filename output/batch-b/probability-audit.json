@@ -1,0 +1,116 @@
+{
+  "clt": null,
+  "definition_validation": {
+    "definition_status": "DISTRIBUTION_DEFINITION_NUMERICALLY_VALIDATED",
+    "diagnostics": [],
+    "evidence_level": "NUMERICALLY_CHECKED",
+    "nonnegative_status": "NONNEGATIVE_NUMERICALLY_CHECKED",
+    "normalization_status": "NORMALIZATION_NUMERICALLY_CHECKED",
+    "sampler_conformance_status": "SAMPLER_CONFORMANCE_NOT_PROVEN",
+    "support_status": "SUPPORT_CONSISTENT"
+  },
+  "distribution": {
+    "cdf": "x",
+    "name": "user_distribution",
+    "parameters": {},
+    "pdf": "1",
+    "pmf": null,
+    "support": [
+      0,
+      1
+    ]
+  },
+  "empirical_estimator": {
+    "estimate": 0.5,
+    "estimator": {
+      "estimator_id": "estimator:30dde9dc68440cb3",
+      "expression": {
+        "input": {
+          "op": "SampleSequence"
+        },
+        "op": "Mean"
+      },
+      "kind": "SAMPLE_MEAN",
+      "sample_size": null,
+      "status": "ESTIMATOR_TARGET_UNRESOLVED",
+      "target": null
+    },
+    "evidence_level": "NUMERICALLY_CHECKED",
+    "observed_variance": 0.08333125,
+    "sample_size": 200
+  },
+  "empirical_validation": {
+    "empirical_cdf_distance": 0.0025000000000000577,
+    "evidence_level": "EMPIRICALLY_SUPPORTED",
+    "progression": [
+      {
+        "empirical_cdf_distance": 0.7525,
+        "sample_size": 50
+      },
+      {
+        "empirical_cdf_distance": 0.5025,
+        "sample_size": 100
+      },
+      {
+        "empirical_cdf_distance": 0.0025000000000000577,
+        "sample_size": 200
+      }
+    ],
+    "sample_size": 200,
+    "status": "DISTRIBUTION_EMPIRICALLY_SUPPORTED",
+    "threshold": 0.11525840533340724,
+    "wasserstein_distance": 0.0
+  },
+  "estimator": {
+    "estimator_id": "estimator:30dde9dc68440cb3",
+    "expression": {
+      "input": {
+        "op": "SampleSequence"
+      },
+      "op": "Mean"
+    },
+    "kind": "SAMPLE_MEAN",
+    "sample_size": null,
+    "status": "ESTIMATOR_TARGET_UNRESOLVED",
+    "target": null
+  },
+  "independence": {
+    "evidence_level": "EMPIRICALLY_SUPPORTED",
+    "lag_correlations": {
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0,
+      "4": 1.0,
+      "5": 1.0
+    },
+    "sample_size": 200,
+    "status": "INDEPENDENCE_EMPIRICALLY_INCONSISTENT",
+    "threshold": 0.1414213562373095
+  },
+  "monte_carlo": {
+    "enclosure": {
+      "claim": "P(|estimate - target| <= 0.096032279132) >= 0.95",
+      "coverage_probability": 0.95,
+      "lower": 0.4039677208680079,
+      "proof_authority": "REFERENCE_THEOREM",
+      "upper": 0.5960322791319921
+    },
+    "estimate": 0.5,
+    "sample_size": 200,
+    "sampling_error": {
+      "alpha": 0.05,
+      "assumptions": [
+        "IID",
+        "bounded support",
+        "sample mean"
+      ],
+      "epsilon": 0.09603227913199208,
+      "method": "HOEFFDING_REFERENCE_THEOREM",
+      "status": "REFERENCE_THEOREM_BOUND"
+    },
+    "status": "MONTE_CARLO_PROBABILISTIC_ENCLOSURE_UNDER_ASSUMPTIONS",
+    "target": null
+  },
+  "parallel_randomness": null,
+  "status": "PROBABILITY_AUDIT_EMPIRICALLY_SUPPORTED"
+}

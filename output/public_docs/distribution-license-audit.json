@@ -1,0 +1,943 @@
+{
+  "project_license_present": true,
+  "third_party_notices_present": true,
+  "python_dependency_inventory": [
+    {
+      "name": "Python",
+      "version_or_revision": "3.11.9",
+      "license": "PSF-2.0",
+      "usage_category": "runtime dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "PyYAML",
+      "version_or_revision": "6.0.3",
+      "license": "MIT",
+      "usage_category": "runtime dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/yaml/pyyaml",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "jsonschema",
+      "version_or_revision": "4.26.0",
+      "license": "MIT",
+      "usage_category": "runtime dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/python-jsonschema/jsonschema",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "attrs",
+      "version_or_revision": "26.1.0",
+      "license": "MIT",
+      "usage_category": "runtime dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version_or_revision": "2025.9.1",
+      "license": "MIT",
+      "usage_category": "runtime dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "referencing",
+      "version_or_revision": "0.37.0",
+      "license": "MIT",
+      "usage_category": "runtime dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "rpds-py",
+      "version_or_revision": "2026.6.3",
+      "license": "MIT",
+      "usage_category": "runtime dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "setuptools",
+      "version_or_revision": "65.5.0",
+      "license": "MIT",
+      "usage_category": "build dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "wheel",
+      "version_or_revision": "0.48.0",
+      "license": "MIT",
+      "usage_category": "build dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "CMake",
+      "version_or_revision": "cmake version 3.31.4",
+      "license": "BSD-3-Clause",
+      "usage_category": "build dependency",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "Ninja",
+      "version_or_revision": "NOT_INSTALLED",
+      "license": "Apache-2.0",
+      "usage_category": "build dependency",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "LLVM/Clang",
+      "version_or_revision": "REQUIRED_18; NOT_INSTALLED",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "usage_category": "build dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/llvm/llvm-project",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "Lean",
+      "version_or_revision": "4.19.0",
+      "license": "Apache-2.0",
+      "usage_category": "build dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/leanprover/lean4",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "mathlib",
+      "version_or_revision": "4.19.0/c44e0c8",
+      "license": "Apache-2.0",
+      "usage_category": "build dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/leanprover-community/mathlib4",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "pytest",
+      "version_or_revision": "9.1.1",
+      "license": "MIT",
+      "usage_category": "development/test dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": "<python-environment>/Lib/site-packages",
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "NumPy",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-3-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/numpy/numpy",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "SciPy",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-3-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/scipy/scipy",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "pandas",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-3-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "xarray",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "Apache-2.0",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "Dask",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-3-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "Numba",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-2-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "JAX",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "Apache-2.0",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "PyTorch",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-3-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "CuPy",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "MIT",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "SymPy",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-3-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "scikit-learn",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-3-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "statsmodels",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSD-3-Clause",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "Eigen",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "MPL-2.0",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "Boost",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "BSL-1.0",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "egg",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "MIT OR Apache-2.0",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/egraphs-good/egg",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "egglog",
+      "version_or_revision": "REFERENCE_ONLY_VERSION_UNPINNED",
+      "license": "MIT",
+      "usage_category": "optional provider",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/egraphs-good/egglog",
+      "installed_location": null,
+      "measurement_status": "DECLARED_NOT_IMPORTED"
+    },
+    {
+      "name": "NumPy external corpus",
+      "version_or_revision": "commit recorded in external-corpus-results.json",
+      "license": "BSD-3-Clause",
+      "usage_category": "external validation only",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "SciPy external corpus",
+      "version_or_revision": "commit recorded in external-corpus-results.json",
+      "license": "BSD-3-Clause",
+      "usage_category": "external validation only",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "NIST DLMF",
+      "version_or_revision": "online reference",
+      "license": "US Government work / site terms",
+      "usage_category": "referenced documentation/paper",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "LAPACK Users' Guide",
+      "version_or_revision": "3rd edition",
+      "license": "reference-only; verify publication terms",
+      "usage_category": "referenced documentation/paper",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "egg equality-saturation paper",
+      "version_or_revision": "POPL 2021",
+      "license": "reference-only publication",
+      "usage_category": "referenced documentation/paper",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    },
+    {
+      "name": "Repository vendored-source audit",
+      "version_or_revision": "HEAD",
+      "license": "NOT_APPLICABLE",
+      "usage_category": "copied/vendored source",
+      "linked_or_imported": false,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "PYTHON_METADATA_OR_DECLARED_REFERENCE",
+      "installed_location": null,
+      "measurement_status": "MEASURED"
+    }
+  ],
+  "rust_compiled_dependency_closure": [
+    {
+      "name": "block-buffer",
+      "version": "0.10.4",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "cfg-if",
+      "version": "1.0.4",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "cpufeatures",
+      "version": "0.2.17",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "crypto-common",
+      "version": "0.1.7",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "digest",
+      "version": "0.10.7",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "generic-array",
+      "version": "0.14.7",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "itoa",
+      "version": "1.0.18",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "libc",
+      "version": "0.2.189",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "memchr",
+      "version": "2.8.3",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "proc-macro2",
+      "version": "1.0.107",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "quote",
+      "version": "1.0.47",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "serde",
+      "version": "1.0.229",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "serde_core",
+      "version": "1.0.229",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "serde_derive",
+      "version": "1.0.229",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "serde_json",
+      "version": "1.0.151",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "sha2",
+      "version": "0.10.9",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "syn",
+      "version": "3.0.4",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "thiserror",
+      "version": "2.0.20",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "thiserror-impl",
+      "version": "2.0.20",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "typenum",
+      "version": "1.20.1",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "unicode-ident",
+      "version": "1.0.24",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "version_check",
+      "version": "0.9.5",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    },
+    {
+      "name": "zmij",
+      "version": "1.0.23",
+      "usage_category": "compiled into distributed binary",
+      "license": "UNVERIFIED",
+      "official_repository": null,
+      "compiled_in": true,
+      "distributed": true,
+      "source_copied": false
+    }
+  ],
+  "license_conflicts": 0,
+  "artifact_reaudit_required_on_change": true
+}

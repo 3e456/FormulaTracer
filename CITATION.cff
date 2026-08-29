@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use FormulaTracer in research, please cite this software."
+title: "FormulaTracer"
+type: software
+authors:
+  - family-names: "FormulaTracer contributors"
+version: 0.1.0
+date-released: 2026-08-27
+repository-code: "https://github.com/3e456/FormulaTracer"
+url: "https://github.com/3e456/FormulaTracer"
+license: Apache-2.0
+abstract: >-
+  Experimental fail-closed auditing of mathematical meaning, provenance,
+  approximation, and verification claims in scientific Python, C++, and Rust.
+keywords:
+  - scientific computing
+  - program analysis
+  - formal verification
+  - Lean

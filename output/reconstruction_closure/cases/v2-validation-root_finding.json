@@ -1,0 +1,35 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "function": {
+      "name": "f",
+      "op": "FreeVariable"
+    },
+    "op": "Root"
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-validation-root_finding.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-validation-root_finding",
+  "root_cause": "ALGORITHM_SEMANTICS_GAP",
+  "source_artifact_hash": "720ae1eebe12c818abd2e704c25dc5092d85b73ac1b7a51469ebac1e3891aae3",
+  "case_specific_rule_used": false
+}

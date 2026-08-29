@@ -1,0 +1,36 @@
+{
+  "algorithm_reconstruction": null,
+  "assumptions": [],
+  "binder_index_witness": null,
+  "error": null,
+  "evidence": [],
+  "original_theory": {
+    "op": "Quantity",
+    "unit": "m/s",
+    "value": {
+      "name": "x",
+      "op": "FreeVariable"
+    }
+  },
+  "proof_obligations": [],
+  "provenance": {
+    "source_artifact": "output/reconstruction/cases/v2-final_holdout_v2-units.json"
+  },
+  "provider_projection": null,
+  "range": null,
+  "reconstructed_theory": null,
+  "relation_chain": [],
+  "schema_version": "1.0",
+  "status": "CORRECTLY_UNRESOLVED",
+  "structural_witness": null,
+  "temporary_mapping": {},
+  "unresolved_reason": {
+    "blocking_stage": "LANGUAGE_FRONTEND",
+    "code": "RECONSTRUCTION_INPUT_UNAVAILABLE",
+    "missing_capability": "generated source or independently observed Mathematical IR"
+  },
+  "case_id": "v2-final_holdout_v2-units",
+  "root_cause": "CONSTRAINT_PROPAGATION_GAP",
+  "source_artifact_hash": "67d0ba1c6510927d0b4b82b369e1a1727c71aa13de8ad011fd0836f5fb38aa29",
+  "case_specific_rule_used": false
+}

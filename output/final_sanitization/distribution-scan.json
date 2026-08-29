@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "scope": "BUILT_DISTRIBUTION_ARCHIVES",
+  "archives_scanned": 2,
+  "files_or_blobs_scanned": 415,
+  "binary_or_oversize_skipped": 1,
+  "hit_count": 0,
+  "category_counts": {},
+  "status": "PASS"
+}
