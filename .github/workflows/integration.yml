@@ -34,6 +34,8 @@ jobs:
       - run: python tools/check_maintenance.py --operational
       - name: Public synthetic semantic coverage and claim gates
         run: |
+          FORMULATRACER_ASSESSED_REVISION="$(python -c 'import json; print(json.load(open("output/prepublic_semantic_upgrade/final-coverage.json", encoding="utf-8"))["assessed_revision"])')"
+          export FORMULATRACER_ASSESSED_REVISION
           python scripts/run_prepublic_semantic_upgrade.py all
           python tools/prepublic_release_hardening.py
           git diff --exit-code -- output/prepublic_semantic_upgrade

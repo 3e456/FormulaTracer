@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "source_commit": "e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
+  "source_commit": "0d2241f294ae7ac5562e824556c976b2aaa0de0e",
   "semantic_claims_gate": "PASS",
   "sbom_format": "SPDX-2.3",
   "sbom_package_count": 30,

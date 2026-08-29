@@ -164,7 +164,9 @@ def report(mode):
     counts = Counter(item["status"] for item in records)
     causes = Counter(item["root_cause"] for item in records
                      if item["status"] != "FULL_RECONSTRUCTION")
-    revision = STARTING_HEAD if mode == "baseline" else subprocess.check_output(
+    revision = STARTING_HEAD if mode == "baseline" else os.environ.get(
+        "FORMULATRACER_ASSESSED_REVISION"
+    ) or subprocess.check_output(
         ["git", "-c", f"safe.directory={ROOT.as_posix()}", "rev-parse", "HEAD"],
         cwd=ROOT,
         text=True,

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 try:
@@ -16,8 +17,10 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output" / "prepublic_semantic_upgrade"
 
 
-def sha(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+def sha_text(path: Path) -> str:
+    """Hash locked text inputs independently of checkout line endings."""
+    normalized = path.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n")
+    return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
 
 def cargo_packages():
@@ -66,7 +69,7 @@ def claims_gate():
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    commit = subprocess.check_output(
+    commit = os.environ.get("FORMULATRACER_ASSESSED_REVISION") or subprocess.check_output(
         ["git", "-c", f"safe.directory={ROOT.as_posix()}", "rev-parse", "HEAD"],
         cwd=ROOT,
         text=True,
@@ -75,8 +78,8 @@ def main():
     sbom = {"spdxVersion":"SPDX-2.3", "dataLicense":"CC0-1.0", "SPDXID":"SPDXRef-DOCUMENT",
             "name":"FormulaTracer-prepublic-build-inputs", "documentNamespace":f"https://github.com/3e456/FormulaTracer/sbom/{commit}",
             "creationInfo":{"created":"2026-08-29T00:00:00Z","creators":["Tool: FormulaTracer-prepublic-release-hardening"]},
-            "packages":packages, "source":{"commit":commit,"cargo_lock_sha256":sha(ROOT/'Cargo.lock'),
-            "ci_requirements_sha256":sha(ROOT/'requirements'/'ci.txt')}}
+            "packages":packages, "source":{"commit":commit,"cargo_lock_sha256":sha_text(ROOT/'Cargo.lock'),
+            "ci_requirements_sha256":sha_text(ROOT/'requirements'/'ci.txt')}}
     (OUT / "sbom.spdx.json").write_text(json.dumps(sbom,indent=2)+"\n",encoding="utf-8")
     failures = claims_gate()
     report = {"schema_version":"1.0", "source_commit":commit,

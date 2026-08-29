@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "mode": "final",
   "measurement_kind": "NATIVE_KERNEL_EXECUTION",
-  "assessed_revision": "e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
+  "assessed_revision": "0d2241f294ae7ac5562e824556c976b2aaa0de0e",
   "corpus": "PUBLIC_SYNTHETIC_PREPUBLIC_V1",
   "case_count": 23,
   "definition": {
@@ -220,8 +220,8 @@
             {
               "code": "CONTAINER_ACCESS_UNRESOLVED",
               "missing": [
-                "static key",
-                "pure lookup"
+                "static key or finite candidate set",
+                "value alternatives"
               ]
             }
           ]
@@ -306,6 +306,7 @@
               "exponent": 2,
               "op": "Power"
             },
+            "effects": "UNKNOWN_EFFECT",
             "op": "HigherOrderCall",
             "parameters": {
               "a": 0,

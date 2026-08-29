@@ -3,7 +3,7 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "FormulaTracer-prepublic-build-inputs",
-  "documentNamespace": "https://github.com/3e456/FormulaTracer/sbom/e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
+  "documentNamespace": "https://github.com/3e456/FormulaTracer/sbom/0d2241f294ae7ac5562e824556c976b2aaa0de0e",
   "creationInfo": {
     "created": "2026-08-29T00:00:00Z",
     "creators": [
@@ -463,8 +463,8 @@
     }
   ],
   "source": {
-    "commit": "e37633c4fc5a82d64bc4c155904f1a8ef878d9ba",
-    "cargo_lock_sha256": "935513873d15342e5c7ea3bc2c43e185fbbf6604f976416c7cd9cdc1fe238db3",
-    "ci_requirements_sha256": "e190d60c900957a55fa8dde79a935120adb9a50cb6be2c8f6107ffcd1cab4d48"
+    "commit": "0d2241f294ae7ac5562e824556c976b2aaa0de0e",
+    "cargo_lock_sha256": "79b381beddc7af6051fe12646e71341ae58d8e5e69af2a2f928e449489593b9d",
+    "ci_requirements_sha256": "facdd8fd709610dabde1f8785f2c6bb9ca97e8e42134a80d443af6653edf7fc8"
   }
 }
