@@ -1,0 +1,98 @@
+name: Unsupported semantics or provider request / 未対応semantics・provider要望
+description: Request evaluation of an unresolved library call, provider, backend, or mathematical operation / 未解決のlibrary call・provider・backend・数学演算の評価を依頼
+title: "[Semantics]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        `UNRESOLVED` is not automatically a bug. It is often the correct fail-closed result when FormulaTracer lacks enough source, provider contract, user contract, or runtime evidence to assign mathematical meaning safely. FormulaTracer will not guess that meaning merely to add support.
+
+        Outcomes may include provider support, guidance for user-defined semantics, documentation, intentional unsupported status, or confirmation that the operation is correctly unresolved. Submitting an issue does not promise provider support or a response date.
+
+        日本語・英語のどちらでも報告できます。内容確認や技術的な議論の都合により、日本語での説明、追記、再現手順、または公式資料の説明がある報告を先に確認・対応する場合があります。
+  - type: input
+    id: provider
+    attributes:
+      label: Library or provider / library・provider
+      placeholder: "ExampleLibrary"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Library/provider version / version
+      placeholder: "1.2.3"
+  - type: input
+    id: operation
+    attributes:
+      label: Operation or callable / operation・callable
+      description: Use a qualified name when possible.
+      placeholder: "example.module.operation"
+    validations:
+      required: true
+  - type: textarea
+    id: reproducer
+    attributes:
+      label: Minimal code example / 最小コード例
+      description: Use synthetic inputs only; do not attach private research source or data.
+      placeholder: |
+        # Minimal synthetic example
+    validations:
+      required: true
+  - type: textarea
+    id: meaning
+    attributes:
+      label: Expected mathematical meaning / 期待する数学的意味
+      description: State the expression or semantic operation you believe the call represents, and distinguish facts from assumptions.
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Official or upstream documentation URL / 公式・upstream資料URL
+      description: Prefer an authoritative public specification, reference, or source link.
+      placeholder: "https://..."
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Expected relation kind / 想定するrelation
+      options:
+        - Exact
+        - Approximate
+        - Implementation-dependent
+        - Unknown
+    validations:
+      required: true
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Relevant assumptions / 関連するassumptions
+      description: Include mathematical, execution, convergence, independence, or provider assumptions if known.
+  - type: textarea
+    id: signature
+    attributes:
+      label: Domain, codomain, shape, dtype, units, or frame / domain・codomain・shape・dtype・unit・frame
+      description: Provide only information supported by the API contract or example; do not guess.
+  - type: textarea
+    id: current
+    attributes:
+      label: Current FormulaTracer result / 現在の結果
+      description: Include a sanitized `UNRESOLVED`, opaque-call, diagnostic, or contract result.
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: Desired behavior / 希望する動作
+      description: Explain whether you expect provider support, user-defined semantics guidance, documentation, or another fail-closed outcome.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations / 確認
+      options:
+        - label: I understand that `UNRESOLVED` may be correct and that this request does not promise provider support. / `UNRESOLVED`が正しい場合があり、provider対応を約束する要望ではないことを理解しています。
+          required: true
+        - label: This request contains no secrets, credentials, private/proprietary source or data, or private local paths. / 秘密情報・認証情報・private/proprietary source・data・private local pathを含めていません。
+          required: true
