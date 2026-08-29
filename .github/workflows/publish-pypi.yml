@@ -31,12 +31,26 @@ jobs:
 
       - name: Repair and validate the Linux wheel for PyPI
         run: |
-          python3 -m pip install --disable-pip-version-check "auditwheel==6.4.2"
+          python3 -m pip install --disable-pip-version-check \
+            "auditwheel==6.4.2" "wheel==0.45.1"
+          python3 -m wheel unpack \
+            dist/evidence/formulatracer-0.1.0-py3-none-linux_x86_64.whl \
+            --dest dist/unpacked
+          test -d dist/unpacked/formulatracer-0.1.0/formulatracer-0.1.0.data/purelib
+          cp -a \
+            dist/unpacked/formulatracer-0.1.0/formulatracer-0.1.0.data/purelib/. \
+            dist/unpacked/formulatracer-0.1.0/
+          rm -r dist/unpacked/formulatracer-0.1.0/formulatracer-0.1.0.data/purelib
+          rmdir dist/unpacked/formulatracer-0.1.0/formulatracer-0.1.0.data
+          mkdir -p dist/normalized
+          python3 -m wheel pack \
+            dist/unpacked/formulatracer-0.1.0 \
+            --dest-dir dist/normalized
           python3 -m auditwheel show \
-            dist/evidence/formulatracer-0.1.0-py3-none-linux_x86_64.whl
+            dist/normalized/formulatracer-0.1.0-py3-none-linux_x86_64.whl
           python3 -m auditwheel repair \
             --wheel-dir dist/pypi \
-            dist/evidence/formulatracer-0.1.0-py3-none-linux_x86_64.whl
+            dist/normalized/formulatracer-0.1.0-py3-none-linux_x86_64.whl
           python3 -m venv .pypi-linux-smoke
           .pypi-linux-smoke/bin/python -m pip install --disable-pip-version-check \
             dist/pypi/formulatracer-0.1.0-py3-none-manylinux*_x86_64.whl

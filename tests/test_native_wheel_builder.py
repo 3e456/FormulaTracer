@@ -3,6 +3,7 @@ from pathlib import Path
 import pytest
 
 from tools.build_native_wheel import (compatible_wheel, native_archive_status,
+                                      native_archive_uses_purelib,
                                       platform_native_library)
 
 
@@ -29,3 +30,10 @@ def test_archive_rejects_mixed_platform_native_libraries():
     assert native_archive_status([linux], "linux") == ([linux], True)
     assert native_archive_status([windows, linux], "linux")[1] is False
     assert native_archive_status([windows], "linux")[1] is False
+
+
+def test_archive_rejects_native_library_in_purelib_scheme():
+    invalid = "formulatracer-0.1.0.data/purelib/formulatracer/libformulatracer_c_api.so"
+    valid = "formulatracer/libformulatracer_c_api.so"
+    assert native_archive_uses_purelib([invalid])
+    assert not native_archive_uses_purelib([valid])

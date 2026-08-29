@@ -8,6 +8,7 @@ import sys
 from wheel.bdist_wheel import bdist_wheel
 from setuptools import setup
 from setuptools.command.build_py import build_py
+from setuptools.dist import Distribution
 
 
 ROOT = Path(__file__).resolve().parent
@@ -65,4 +66,14 @@ class PlatformIndependentPythonAbiWheel(bdist_wheel):
         return "py3", "none", platform
 
 
-setup(cmdclass={"bdist_wheel": PlatformIndependentPythonAbiWheel, "build_py": NativeBuildPy})
+class NativeDistribution(Distribution):
+    """Select platlib for the native payload without claiming a CPython ABI."""
+
+    def has_ext_modules(self):
+        return True
+
+
+setup(
+    cmdclass={"bdist_wheel": PlatformIndependentPythonAbiWheel, "build_py": NativeBuildPy},
+    distclass=NativeDistribution,
+)

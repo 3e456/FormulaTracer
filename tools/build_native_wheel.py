@@ -61,6 +61,14 @@ def native_archive_status(names: list[str], platform_name: str) -> tuple[list[st
     return native, len(native) == 1 and Path(native[0]).name == expected
 
 
+def native_archive_uses_purelib(names: list[str]) -> bool:
+    """Reject native payloads installed through a wheel's purelib scheme."""
+    return any(
+        ".data/purelib/" in name and Path(name).name in NATIVE_LIBRARY_NAMES
+        for name in names
+    )
+
+
 def main() -> int:
     cargo = shutil.which("cargo") or str(Path.home() / ".cargo" / "bin" / "cargo.exe")
     build = subprocess.run([cargo, "build", "--workspace", "--release"], cwd=ROOT, check=False)
@@ -99,6 +107,7 @@ def main() -> int:
     contains_docx = False
     native_library_entries: list[str] = []
     platform_native_only = False
+    native_library_in_purelib = False
     if artifact:
         with zipfile.ZipFile(artifact) as archive:
             names = archive.namelist()
@@ -107,6 +116,7 @@ def main() -> int:
             contains_docx = any(name.lower().endswith(".docx") for name in names)
             contains_complete_license = bool(license_files) and b"TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION" in archive.read(license_files[0])
             native_library_entries, platform_native_only = native_archive_status(names, sys.platform)
+            native_library_in_purelib = native_archive_uses_purelib(names)
     payload = {
         "schema_version": "1.0",
         "platform": sys.platform,
@@ -121,8 +131,9 @@ def main() -> int:
         "docx_included": contains_docx,
         "native_library_entries": native_library_entries,
         "platform_native_only": platform_native_only,
+        "native_library_in_purelib": native_library_in_purelib,
         "build_passed": wheel.returncode == 0 and bool(artifact) and contains_complete_license and bool(notice_files)
-        and not contains_docx and platform_native_only,
+        and not contains_docx and platform_native_only and not native_library_in_purelib,
         "normal_user_requires_rust": False,
         "stdout": public_text(wheel.stdout),
         "stderr": public_text(wheel.stderr),
