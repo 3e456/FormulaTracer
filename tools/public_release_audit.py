@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import ast
 import json
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -116,8 +117,10 @@ def validate_links() -> dict[str, Any]:
 
 
 def reference_inventory() -> list[dict[str, Any]]:
-    # A source-derived date keeps committed evidence reproducible across reruns.
-    accessed = git("show", "-s", "--format=%cs", "HEAD")
+    # Preserve the evidence collection date during deterministic CI reruns.
+    accessed = os.environ.get("FORMULATRACER_REFERENCE_ACCESS_DATE") or git(
+        "show", "-s", "--format=%cs", "HEAD"
+    )
     rows = [
         ("NUMPY_SUM", "NumPy project", "numpy.sum reference", "https://numpy.org/doc/stable/reference/generated/numpy.sum.html", "provider contract"),
         ("SCIPY_SOLVE", "SciPy project", "scipy.linalg.solve reference", "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.solve.html", "provider contract"),
@@ -216,7 +219,9 @@ def main() -> int:
     if links["status"] != "PASS": blockers.append("BROKEN_INTERNAL_DOC_LINKS")
     if validation.get("status") != "PASS": blockers.append("FULL_VALIDATION_NOT_RECORDED")
     release_ready = not blockers
-    assessment = {"schema_version": "1.0", "repository_revision": git("rev-parse", "HEAD"),
+    assessment = {"schema_version": "1.0", "repository_revision": os.environ.get(
+        "FORMULATRACER_ASSESSED_REVISION"
+    ) or git("rev-parse", "HEAD"),
         "branch": git("branch", "--show-current"), "version": pyproject["project"]["version"],
         "package_name": pyproject["project"]["name"], "project_license": "Apache-2.0",
         "license_recommendation": "RETAIN_APACHE_2_0", "documentation_status": links["status"],

@@ -41,6 +41,10 @@ jobs:
           git diff --exit-code -- output/prepublic_semantic_upgrade
       - name: Regenerate deterministic public inventories
         run: |
+          FORMULATRACER_REFERENCE_ACCESS_DATE="$(python -c 'import json; print(json.load(open("output/public_docs/reference-inventory.json", encoding="utf-8"))[0]["verified_accessed_date"])')"
+          export FORMULATRACER_REFERENCE_ACCESS_DATE
+          FORMULATRACER_ASSESSED_REVISION="$(python -c 'import json; print(json.load(open("output/public_release_audit/final-public-release-assessment.json", encoding="utf-8"))["repository_revision"])')"
+          export FORMULATRACER_ASSESSED_REVISION
           python tools/public_release_audit.py
           git diff --exit-code -- output/public_docs \
             output/public_release_audit/provider-upstream-conformance.json \

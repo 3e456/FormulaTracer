@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "repository_revision": "1730a3088e4f16b3544b663443bd206a4b705594",
-  "branch": "feature/prepublic-final-integration-assurance",
+  "repository_revision": "d8ccebd9d564a2b41b1bae83558e3723e79bd430",
+  "branch": "main",
   "version": "0.1.0",
   "package_name": "formulatracer",
   "project_license": "Apache-2.0",
