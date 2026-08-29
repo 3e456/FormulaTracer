@@ -8,34 +8,80 @@
 [![Rust 1.85+](https://img.shields.io/badge/Rust-1.85%2B-orange)](Cargo.toml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-green)](LICENSE)
 
-FormulaTracer is an experimental, fail-closed semantic auditor for scientific
-software. It reconstructs mathematical meaning from code, then keeps exact and
-non-exact relations, assumptions, proof obligations, numerical evidence,
-provider contracts, provenance, and source localization in one structured
-workflow. A separately declared theory is optional.
+FormulaTracer reconstructs the mathematics actually implemented in scientific
+code, audits assumptions and approximations, compares implementations with
+declared theory, and generates auditable code from mathematical specifications.
+
+It is designed for scientific software where mathematically similar-looking
+code may differ because of discretization, floating-point behavior, library
+semantics, domains, units, assumptions, or implementation details.
 
 When FormulaTracer cannot justify an interpretation, it reports `UNRESOLVED`
 instead of guessing. Structural similarity is not proof, numerical similarity
 is not a certified bound, and provider retrieval is not verification.
 
-Public references: [Python functions](docs/reference/public-functions.md) ·
-[Rust](docs/reference/rust-api-reference.md) · [C ABI](docs/reference/c-api-reference.md) ·
-[C++](docs/reference/cpp-api-reference.md) · [result/status/evidence](docs/reference/result-model-reference.md) ·
-[providers](docs/reference/provider-api.md) · [physics](docs/reference/physics-api.md) ·
-[user-defined semantics](docs/reference/user-defined-api.md)
+```console
+python -m pip install formulatracer
+```
+
+## What FormulaTracer does
+
+- Reconstructs mathematical expressions and structures from scientific source code.
+- Distinguishes exact equality from approximation, discretization, truncation,
+  sampling, and algorithmic realization.
+- Tracks assumptions, proof obligations, numerical error and range, and provenance.
+- Compares independently reconstructed implementation mathematics with declared theory.
+- Localizes semantic mismatches back to source code.
+- Supports user-defined semantics for opaque or proprietary operations without
+  treating declarations as verification.
+- Generates scientific code from mathematical specifications and independently
+  re-audits the generated implementation.
+- Preserves unresolved semantics instead of guessing.
+- Integrates selected Lean-verified proof evidence where available.
 
 ## Why FormulaTracer?
 
-A formula alone does not say whether the implementation is exact or approximate,
-which assumptions it needs, where it came from, or which source span caused a
-divergence. FormulaTracer connects those questions through one Rust-owned
+Scientific code is not just source syntax. An implementation may look
+mathematically equivalent to a theoretical formula while actually introducing:
+
+- finite-difference discretization;
+- floating-point reduction order;
+- truncation or approximate numerical integration;
+- hidden axis, dtype, domain, or unit assumptions;
+- library-specific semantics; or
+- unresolved callback behavior.
+
+FormulaTracer keeps these distinctions explicit instead of collapsing them into
+one equivalent/not-equivalent answer. It connects them through one Rust-owned
 semantic model and returns a structured `VerificationResult` or
 `ReconstructionResult`; TeX, JSON, and explanations are derived views.
 
 Typical uses include scientific implementation review, model-change review,
 pre-publication checks, reproducibility work, and inherited-code assessment.
 
-## Install
+## Example: derivative versus finite difference
+
+Theory:
+
+```text
+dy/dx
+```
+
+Implementation:
+
+```python
+(f(x + h) - f(x)) / h
+```
+
+FormulaTracer does not report these as exact equality. It can represent the
+implementation as a finite-difference realization of a derivative, together
+with its discretization relation and relevant assumptions.
+
+Likewise, if an external callback has no source, provider contract, user
+declaration, or runtime evidence, FormulaTracer reports it as unresolved rather
+than inventing a mathematical interpretation.
+
+## Installation
 
 Python 3.10 or newer is required. Published supported wheels are intended to
 include the native core, so end users do not need Rust, Cargo, or CMake.
@@ -44,9 +90,12 @@ include the native core, so end users do not need Rust, Cargo, or CMake.
 python -m pip install formulatracer
 ```
 
-This repository is currently version `0.1.0`; package publication is not part
-of this readiness work. Source developers need Rust 1.85+, and the optional
-C++ frontend requires LLVM/Clang major 18 and a C++20 build toolchain.
+Published wheels currently support Windows x86-64 and Linux x86-64 with a
+manylinux-compatible wheel. Python 3.10 through 3.13 is supported. macOS wheels
+are not currently published.
+
+This repository is version `0.1.1`. Source developers need Rust 1.85+, and the
+optional C++ frontend requires LLVM/Clang major 18 and a C++20 build toolchain.
 
 ## Quick start: audit code without a theory
 
@@ -61,7 +110,11 @@ The report contains the independently reconstructed implementation expression,
 numeric backward slice, assumptions, provider contracts, provenance, and any
 unresolved boundary. No theory annotation is required.
 
-An optional stronger comparison can be added when a theory is available:
+## Mathematics to code
+
+FormulaTracer also works in the opposite direction. A mathematical
+specification can be used to retrieve implementation candidates, select one,
+generate source, and independently re-audit the result:
 
 ```python
 from formulatracer import FormulaTracer
@@ -78,6 +131,13 @@ print(result.independent_audit)
 Candidate similarity only starts an investigation. Selection still requires
 typed unification, constraints, authorized transformations, and independent
 re-analysis.
+
+## Theory comparison
+
+A declared theory is optional. When one is supplied, FormulaTracer compares it
+with mathematics reconstructed independently from the implementation. The
+declaration is never substituted for the implementation-derived expression and
+does not become verified evidence merely because a user provided it.
 
 ## Core workflow
 
@@ -115,6 +175,12 @@ Most external library entries are currently
 broad NumPy/SciPy/xarray version range. Axis, dtype, missing-value, named-
 dimension, device, laziness, mutation, and default semantics remain explicit
 contract conditions. See the [provider matrix](docs/reference/libraries-and-providers.md).
+
+## No LLM required for core auditing
+
+FormulaTracer's core semantic audit does not require an LLM or generative AI.
+Unknown semantics are preserved as unresolved rather than filled in by
+model-generated guesses.
 
 ## User-defined semantics: a redundant evidence path
 
@@ -197,6 +263,13 @@ Start with the [class and function usage guide](docs/reference/api-usage-guide.m
 [GitHub Discussions](https://github.com/3e456/FormulaTracer/discussions) for
 usage questions. Report vulnerabilities privately as described in
 [SECURITY.md](SECURITY.md).
+
+Public references: [Python functions](docs/reference/public-functions.md) ·
+[Rust](docs/reference/rust-api-reference.md) · [C ABI](docs/reference/c-api-reference.md) ·
+[C++](docs/reference/cpp-api-reference.md) ·
+[result/status/evidence](docs/reference/result-model-reference.md) ·
+[providers](docs/reference/provider-api.md) · [physics](docs/reference/physics-api.md) ·
+[user-defined semantics](docs/reference/user-defined-api.md)
 
 ## Citation, license, and contributing
 

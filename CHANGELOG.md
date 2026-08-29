@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 - PyPI presentation and packaging metadata
+
+- Reworked the README opening for faster PyPI onboarding while preserving the
+  fail-closed guarantee boundary.
+- Expanded PyPI summary, keywords, Trove classifiers, and project links.
+- Kept semantic and runtime behavior unchanged.
+
 ## 0.1.0 - release-candidate preparation
 
 - Added Python, C++, Rust, cross-language, provenance, range/error, probability,

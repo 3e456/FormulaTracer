@@ -4,39 +4,83 @@
 
 **科学計算コードから監査可能な数学へ。**
 
-FormulaTracerは、科学計算softwareから数学的意味を復元する実験的な
-fail-closed型semantic auditorです。exact/non-exact relation、仮定、証明義務、
-数値的根拠、provider contract、provenance、source localizationを一つの
-workflowで扱います。人間が登録するTheoryは任意です。
+FormulaTracerは、科学計算コードに実装された数学を復元し、仮定や近似を監査し、
+実装と宣言されたTheoryを比較し、数式仕様から監査可能なコードを生成します。
+
+見かけ上は数学的に似ているコードでも、離散化、浮動小数点挙動、ライブラリ固有の
+意味、定義域、単位、仮定、実装詳細によって結果が異なり得る科学計算softwareを
+対象としています。
 
 根拠をもって意味を確定できない場合、推測で補完せず
 `UNRESOLVED`として明示します。構造的類似はproof、数値的近さは
 certified bound、provider retrievalはverificationと同じではありません。
 
-公開reference: [Python functions](docs/reference/public-functions.ja.md) ·
-[Rust](docs/reference/rust-api-reference.ja.md) · [C ABI](docs/reference/c-api-reference.ja.md) ·
-[C++](docs/reference/cpp-api-reference.ja.md) · [result/status/evidence](docs/reference/result-model-reference.ja.md) ·
-[providers](docs/reference/provider-api.ja.md) · [physics](docs/reference/physics-api.ja.md) ·
-[user-defined semantics](docs/reference/user-defined-api.ja.md)
+```console
+python -m pip install formulatracer
+```
+
+## FormulaTracerでできること
+
+- 科学計算sourceから数式と数学的構造を復元します。
+- exact equalityとapproximation、discretization、truncation、sampling、
+  algorithmic realizationを区別します。
+- 仮定、証明義務、数値誤差・range、provenanceを追跡します。
+- コードから独立に復元した実装数学と、宣言されたTheoryを比較します。
+- semantic mismatchをsource codeへ局所化します。
+- opaqueまたはproprietaryな演算へuser-defined semanticsを与えられますが、
+  declaration自体をverificationとして扱いません。
+- 数式仕様から科学計算コードを生成し、その実装を独立に再監査します。
+- 未解決の意味を推測で埋めず、`UNRESOLVED`として保持します。
+- 利用可能な場合はLean kernelで確認されたproof evidenceを統合します。
 
 ## FormulaTracerの目的
 
-式だけを取り出しても、exactかapproximationか、必要な仮定、計算の由来、
-対応source spanは分かりません。FormulaTracerはこれらをRustが所有する
-semantic modelで接続し、`VerificationResult`または`ReconstructionResult`を返します。
-TeX、JSON、説明文はその派生表現です。
+科学計算コードは単なるsource syntaxではありません。Theoryと数学的に同じように
+見える実装にも、次の差異が含まれる場合があります。
+
+- 有限差分による離散化
+- 浮動小数点reductionの順序
+- 打切りや近似数値積分
+- 暗黙のaxis、dtype、domain、unitに関する仮定
+- ライブラリ固有のsemantics
+- 未解決のcallback挙動
+
+FormulaTracerはこれらを単一の「同値・非同値」へ潰さず、Rustが所有するsemantic
+modelで明示します。結果は`VerificationResult`または`ReconstructionResult`として
+返し、TeX、JSON、説明文はその派生表現です。
+
+## 例: 微分と有限差分
+
+Theory:
+
+```text
+dy/dx
+```
+
+Implementation:
+
+```python
+(f(x + h) - f(x)) / h
+```
+
+FormulaTracerは両者をexact equalityとは判定しません。実装を微分の有限差分による
+realizationとして表し、discretization relationと必要な仮定を保持できます。
+
+同様に、外部callbackについてsource、provider contract、user declaration、runtime
+evidenceのいずれも得られない場合、数学的意味を捏造せず`UNRESOLVED`と報告します。
 
 ## インストール
 
-Python 3.10以降が必要です。対応wheelは、通常の利用者にRust、Cargo、
-CMakeを要求しない構成を目標とします。
+Python 3.10から3.13に対応します。公開wheelはWindows x86-64とLinux x86-64
+（manylinux）を対象とし、通常の利用者にRust、Cargo、CMakeを要求しません。
 
 ```console
 python -m pip install formulatracer
 ```
 
-現在のpackage versionは`0.1.0`です。source開発にはRust 1.85以降、任意の
-C++ frontendにはLLVM/Clang major 18とC++20 build toolchainが必要です。
+現在のpackage versionは`0.1.1`です。macOS wheelは現在公開していません。
+source開発にはRust 1.85以降、任意のC++ frontendにはLLVM/Clang major 18と
+C++20 build toolchainが必要です。
 
 ## Quick Start: Theoryなしのコード監査
 
@@ -48,7 +92,10 @@ formulatracer python-audit examples/python_audit/weighted_sum.py --function calc
 レポートには、コードから独立に復元した実装式、numeric backward slice、仮定、
 provider contract、provenance、未解決境界が含まれます。Theory annotationは不要です。
 
-Theoryがある場合だけ、より強い比較を追加できます。
+## 数式からコードへ
+
+FormulaTracerは逆方向にも利用できます。数学仕様から実装候補を検索・選択して
+sourceを生成し、その結果を通常の監査経路で独立に再解析します。
 
 ```python
 from formulatracer import FormulaTracer
@@ -64,6 +111,12 @@ print(result.independent_audit)
 
 similarityは調査開始の理由にすぎません。採用にはtyped unification、制約、
 許可済み変形、独立再解析が必要です。
+
+## Theory比較
+
+Theoryの宣言は任意です。指定された場合も、コードから独立に復元した実装数学と
+比較します。user declarationを実装抽出式の代わりに使用せず、宣言されたという
+理由だけでverified evidenceへ昇格させません。
 
 ## 中心workflow
 
@@ -93,6 +146,11 @@ provider contractは選択されたpublic APIを対象とし、upstream library�
 多くは`REFERENCE_ONLY_VERSION_UNPINNED`であり、NumPy/SciPy/xarrayの広いversion範囲を
 正式保証していません。axis、dtype、欠損値、named dimension、device、lazy evaluation、
 mutation、default semanticsは個別のcontract条件です。
+
+## Core auditにLLMは不要
+
+FormulaTracerのcore semantic auditはLLMや生成AIを必要としません。未知の意味を
+model-generated guessで補わず、未解決のまま保持します。
 
 ## User-defined semantics: 冗長な根拠経路
 
@@ -161,6 +219,13 @@ static proofへ誤昇格させません。
 [GitHub Issues](https://github.com/3e456/FormulaTracer/issues)、利用方法の質問は
 [GitHub Discussions](https://github.com/3e456/FormulaTracer/discussions)、脆弱性は
 [SECURITY.md](SECURITY.md)に従いGitHub Private vulnerability reportingから報告してください。
+
+公開reference: [Python functions](docs/reference/public-functions.ja.md) ·
+[Rust](docs/reference/rust-api-reference.ja.md) · [C ABI](docs/reference/c-api-reference.ja.md) ·
+[C++](docs/reference/cpp-api-reference.ja.md) ·
+[result/status/evidence](docs/reference/result-model-reference.ja.md) ·
+[providers](docs/reference/provider-api.ja.md) · [physics](docs/reference/physics-api.ja.md) ·
+[user-defined semantics](docs/reference/user-defined-api.ja.md)
 
 ## 引用・ライセンス・貢献
 

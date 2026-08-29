@@ -1,6 +1,6 @@
 # API and schema compatibility
 
-FormulaTracer is currently version 0.1.0. SemVer permits breaking changes before 1.0, but the project deliberately limits avoidable breakage.
+FormulaTracer is currently version 0.1.1. SemVer permits breaking changes before 1.0, but the project deliberately limits avoidable breakage.
 
 ## Stability classes
 

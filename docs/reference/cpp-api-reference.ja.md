@@ -1,6 +1,6 @@
 # C++ RAII API Reference（日本語）
 
-FormulaTracer 0.1.0 / generated from the public headers and native source.
+FormulaTracer 0.1.1 / generated from the public headers and native source.
 
 internal項目は除外します。Experimental項目は一覧化しますが安定性保証ではありません。
 

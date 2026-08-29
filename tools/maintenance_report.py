@@ -31,7 +31,7 @@ def main() -> int:
         "starting_head": args.starting_head,
         "audited_working_revision": head,
         "branch": subprocess.check_output(["git", "branch", "--show-current"], cwd=ROOT, text=True).strip(),
-        "project_version": "0.1.0",
+        "project_version": "0.1.1",
         "public_release_operation_performed": False,
         "ci": {
             "tier_1_fast": ".github/workflows/ci.yml",

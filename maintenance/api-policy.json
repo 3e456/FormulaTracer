@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "project_version": "0.1.0",
+  "project_version": "0.1.1",
   "policy": "0.x compatibility with documented deprecation",
   "python": {
     "stable": [

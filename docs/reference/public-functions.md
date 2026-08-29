@@ -1,6 +1,6 @@
 # Public Function and API Reference
 
-Version: FormulaTracer 0.1.0 / C ABI v1
+Version: FormulaTracer 0.1.1 / C ABI v1
 
 This reference corresponds to the implementation-derived canonical inventory. Text, TeX and JSON are projections of structured results; missing evidence fails closed as unresolved.
 
