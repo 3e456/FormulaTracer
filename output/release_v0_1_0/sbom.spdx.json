@@ -431,6 +431,21 @@
       "versionInfo": "4.26.0"
     },
     {
+      "SPDXID": "SPDXRef-PyPI-tomli-conditional",
+      "downloadLocation": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:pypi/tomli",
+          "referenceType": "purl"
+        }
+      ],
+      "licenseConcluded": "MIT",
+      "name": "tomli",
+      "supplier": "NOASSERTION",
+      "versionInfo": ">=2.0; python_version < 3.11"
+    },
+    {
       "SPDXID": "SPDXRef-PyPI-pytest-9.1.1",
       "downloadLocation": "NOASSERTION",
       "externalRefs": [

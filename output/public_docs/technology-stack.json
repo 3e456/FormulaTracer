@@ -13,6 +13,7 @@
   ],
   "python_runtime_dependencies": [
     "PyYAML>=6.0",
-    "jsonschema>=4.21"
+    "jsonschema>=4.21",
+    "tomli>=2.0; python_version < '3.11'"
   ]
 }

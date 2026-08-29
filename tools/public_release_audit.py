@@ -11,7 +11,10 @@ import json
 from pathlib import Path
 import re
 import subprocess
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:  # Python 3.10
+    import tomli as tomllib
 from typing import Any
 
 import yaml
@@ -153,7 +156,9 @@ def main() -> int:
     dump(DOC_OUT / "language-support.json", language)
     dump(DOC_OUT / "technology-stack.json", {"semantic_core": "Rust", "interop": "Stable C ABI v1",
          "facade_frontends": ["Python", "C++/Clang", "Rust project frontend"], "proof": "Lean 4.19.0 / mathlib 4.19.0",
-         "serialization": ["JSON", "TeX"], "python_runtime_dependencies": ["PyYAML>=6.0", "jsonschema>=4.21"]})
+         "serialization": ["JSON", "TeX"], "python_runtime_dependencies": [
+             "PyYAML>=6.0", "jsonschema>=4.21", "tomli>=2.0; python_version < '3.11'"
+         ]})
     providers, coverage = provider_inventory()
     dump(DOC_OUT / "library-provider-inventory.json", {"providers": providers, "coverage": coverage["coverage"],
          "support_policy": "SELECTED_CONTRACTS_NOT_ENTIRE_LIBRARY", "release_version_policy": "REFERENCE_ONLY_VERSION_UNPINNED"})

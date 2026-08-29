@@ -6,16 +6,19 @@ Windows RC environment. This is an engineering assessment, not legal advice.
 ## Conclusion first
 
 No tracked third-party source or vendored dependency tree was found. PyYAML and
-jsonschema are the only direct Python runtime requirements in `pyproject.toml`;
-their observed versions are 6.0.3 and 4.26.0. LLVM/Clang 18 is an optional
-native build/link requirement, and Lean/mathlib are proof-build requirements.
+jsonschema are direct Python runtime requirements in `pyproject.toml`; tomli is
+an additional conditional requirement on Python versions earlier than 3.11.
+The observed PyYAML and jsonschema versions are 6.0.3 and 4.26.0. LLVM/Clang 18
+is an optional native build/link requirement, and Lean/mathlib are proof-build
+requirements.
 Scientific libraries in provider registries are not thereby imported or
 distributed.
 
 Windows and Linux native wheels were built, inspected, installed into clean
-environments, and executed. Their metadata declares only PyYAML and jsonschema
-at Python runtime; neither artifact contains the untracked DOCX or an external
-source tree. The wheels include the complete project license.
+environments, and executed. Their metadata declares PyYAML and jsonschema at
+Python runtime and tomli conditionally for Python before 3.11; neither artifact
+contains the untracked DOCX or an external source tree. The wheels include the
+complete project license.
 
 FormulaTracer is licensed under Apache-2.0. The choice retains the repository's
 existing declarations and supplies an explicit patent grant while remaining
@@ -28,7 +31,7 @@ advice.
 
 | Category | Observed items | Imported/linked? | Distributed in tracked source? |
 |---|---|---:|---:|
-| Runtime dependency | PyYAML, jsonschema; transitive attrs, jsonschema-specifications, referencing, rpds-py | Yes at runtime | No |
+| Runtime dependency | PyYAML, jsonschema; conditional tomli on Python <3.11; transitive attrs, jsonschema-specifications, referencing, rpds-py | Yes at runtime | No |
 | Build dependency | setuptools; optional LLVM/Clang 18; Lean 4.19.0; mathlib 4.19.0 | Build/proof dependent | No |
 | Development/test dependency | pytest 9.1.1 | Test only | No |
 | Optional provider | NumPy, SciPy, pandas, xarray, Dask, Numba, JAX, PyTorch, CuPy, SymPy, scikit-learn, statsmodels, Eigen, Boost, egg, egglog | No in base runtime | No |
@@ -71,6 +74,7 @@ artifacts they ship.
 
 - [PyYAML official repository](https://github.com/yaml/pyyaml) — MIT.
 - [jsonschema project metadata](https://github.com/python-jsonschema/jsonschema/blob/main/pyproject.toml) — MIT and runtime dependency declarations.
+- [tomli official repository](https://github.com/hukkin/tomli) — MIT; conditional Python 3.10 compatibility dependency.
 - [LLVM license](https://github.com/llvm/llvm-project/blob/main/llvm/LICENSE.TXT) — Apache-2.0 with LLVM exception.
 - [mathlib4 repository](https://github.com/leanprover-community/mathlib4) — Apache-2.0.
 - [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), [MIT](https://opensource.org/license/mit), and [BSD-3-Clause](https://opensource.org/license/BSD-3-clause) canonical candidate terms.

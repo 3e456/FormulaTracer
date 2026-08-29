@@ -10,9 +10,11 @@ Reference-only knowledge does not mean code is copied or redistributed.
 
 ## Runtime
 
-The Python package declares PyYAML and jsonschema. The observed jsonschema
-dependency chain includes attrs, jsonschema-specifications, referencing, and
-rpds-py. Package managers install these; their source is not vendored here.
+The Python package declares PyYAML and jsonschema, plus the MIT-licensed tomli
+compatibility parser only on Python versions earlier than 3.11. The observed
+jsonschema dependency chain includes attrs, jsonschema-specifications,
+referencing, and rpds-py. Package managers install these; their source is not
+vendored here.
 
 ## Rust components compiled into native artifacts
 

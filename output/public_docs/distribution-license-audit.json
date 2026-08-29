@@ -60,6 +60,25 @@
       "measurement_status": "MEASURED"
     },
     {
+      "name": "tomli",
+      "version_or_revision": ">=2.0; python_version < 3.11",
+      "license": "MIT",
+      "usage_category": "conditional runtime dependency",
+      "linked_or_imported": true,
+      "distributed_with_formulatracer": false,
+      "source_copied": false,
+      "notice_required": false,
+      "license_text_required": false,
+      "compatible_candidate_licenses": [
+        "Apache-2.0",
+        "MIT",
+        "BSD-3-Clause"
+      ],
+      "source_location": "https://github.com/hukkin/tomli",
+      "installed_location": null,
+      "measurement_status": "DECLARED_CONDITIONAL_UNMEASURED"
+    },
+    {
       "name": "attrs",
       "version_or_revision": "26.1.0",
       "license": "MIT",

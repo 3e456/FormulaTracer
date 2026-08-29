@@ -9,9 +9,10 @@ optional provider, validation-only, reference-only, vendored/copied, or compiled
 into a distributed binary. Optional/reference-only providers are not
 FormulaTracer runtime dependencies merely because a contract mentions them.
 
-The Python runtime directly requires PyYAML and jsonschema. Native Rust binaries
-compile the Cargo dependency closure listed in the artifact audit. LLVM/Clang is
-an optional C++ frontend build/link dependency; Lean/mathlib is a proof-build
+The Python runtime directly requires PyYAML and jsonschema, with tomli required
+conditionally on Python versions earlier than 3.11. Native Rust binaries compile
+the Cargo dependency closure listed in the artifact audit. LLVM/Clang is an
+optional C++ frontend build/link dependency; Lean/mathlib is a proof-build
 dependency. No third-party source tree is intentionally vendored.
 
 Every wheel, sdist, DLL/SO/static library, and native CLI must be audited as an
