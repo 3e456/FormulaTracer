@@ -1,0 +1,36 @@
+name: Publish verified release to PyPI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    name: Publish v0.1.0
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/formulatracer
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Download exact GitHub Release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p dist/evidence dist/pypi
+          gh release download v0.1.0 \
+            --repo "${{ github.repository }}" \
+            --dir dist/evidence
+          (cd dist/evidence && sha256sum --check SHA256SUMS)
+          cp dist/evidence/formulatracer-0.1.0-py3-none-win_amd64.whl dist/pypi/
+          cp dist/evidence/formulatracer-0.1.0-py3-none-linux_x86_64.whl dist/pypi/
+          cp dist/evidence/formulatracer-0.1.0.tar.gz dist/pypi/
+
+      - name: Publish distributions with PyPI Trusted Publishing
+        uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33
+        with:
+          packages-dir: dist/pypi
