@@ -27,8 +27,25 @@ jobs:
             --dir dist/evidence
           (cd dist/evidence && sha256sum --check SHA256SUMS)
           cp dist/evidence/formulatracer-0.1.0-py3-none-win_amd64.whl dist/pypi/
-          cp dist/evidence/formulatracer-0.1.0-py3-none-linux_x86_64.whl dist/pypi/
           cp dist/evidence/formulatracer-0.1.0.tar.gz dist/pypi/
+
+      - name: Repair and validate the Linux wheel for PyPI
+        run: |
+          python3 -m pip install --disable-pip-version-check "auditwheel==6.4.2"
+          python3 -m auditwheel show \
+            dist/evidence/formulatracer-0.1.0-py3-none-linux_x86_64.whl
+          python3 -m auditwheel repair \
+            --wheel-dir dist/pypi \
+            dist/evidence/formulatracer-0.1.0-py3-none-linux_x86_64.whl
+          python3 -m venv .pypi-linux-smoke
+          .pypi-linux-smoke/bin/python -m pip install --disable-pip-version-check \
+            dist/pypi/formulatracer-0.1.0-py3-none-manylinux*_x86_64.whl
+          .pypi-linux-smoke/bin/python - <<'PY'
+          import formulatracer
+
+          assert formulatracer.native_available()
+          print("repaired Linux wheel smoke: PASS")
+          PY
 
       - name: Publish distributions with PyPI Trusted Publishing
         uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33
