@@ -1,5 +1,5 @@
 {
-  "package_version": "0.1.0",
+  "package_version": "0.1.1",
   "python": ">=3.10",
   "rust": ">=1.85; edition 2021",
   "c_abi": "v1",
