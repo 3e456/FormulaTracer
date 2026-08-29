@@ -119,10 +119,25 @@ class EphemeralCheckout(AbstractContextManager[Path]):
     def _cleanup(self) -> None:
         root = self.root
         if root and root.exists():
+            os.chmod(root, stat.S_IRUSR | stat.S_IWUSR | stat.S_IXUSR)
             for path in root.rglob("*"):
-                try: os.chmod(path, stat.S_IWRITE | stat.S_IREAD)
-                except OSError: pass
-            shutil.rmtree(root)
+                try:
+                    mode = stat.S_IRUSR | stat.S_IWUSR
+                    if path.is_dir():
+                        mode |= stat.S_IXUSR
+                    os.chmod(path, mode)
+                except OSError:
+                    pass
+
+            def retry_with_write_access(function, path, _exc_info):
+                candidate = Path(path)
+                mode = stat.S_IRUSR | stat.S_IWUSR
+                if candidate.is_dir():
+                    mode |= stat.S_IXUSR
+                os.chmod(candidate, mode)
+                function(path)
+
+            shutil.rmtree(root, onerror=retry_with_write_access)
         self.cleanup_verified = bool(root and not root.exists())
 
     def __exit__(self, exc_type, exc, traceback) -> bool:
