@@ -231,6 +231,8 @@ static proofへ誤昇格させません。
 
 ## 引用・ライセンス・貢献
 
+FormulaTracer v0.1.1の引用にはDOI
+[10.5281/zenodo.22171670](https://doi.org/10.5281/zenodo.22171670)を使用してください。
 引用情報は[CITATION.cff](CITATION.cff)にあります。FormulaTracerは[Apache-2.0](LICENSE)です。
 第三者分類と再配布の注意点は[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)を参照してください。
 生成コードのlicenseはuser input、template、upstream provenanceに依存します。

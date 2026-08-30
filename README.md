@@ -275,8 +275,10 @@ Public references: [Python functions](docs/reference/public-functions.md) ·
 
 ## Citation, license, and contributing
 
-Citation metadata is in [CITATION.cff](CITATION.cff). FormulaTracer is licensed
-under [Apache-2.0](LICENSE); third-party categories and redistribution notes are
+Cite FormulaTracer v0.1.1 using DOI
+[10.5281/zenodo.22171670](https://doi.org/10.5281/zenodo.22171670). Citation
+metadata is in [CITATION.cff](CITATION.cff). FormulaTracer is licensed under
+[Apache-2.0](LICENSE); third-party categories and redistribution notes are
 in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Generated-code licensing
 depends on user input, selected templates, and upstream provenance; generation
 does not automatically impose the FormulaTracer project license on all output.
