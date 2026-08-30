@@ -9,6 +9,9 @@ on:
 permissions:
   contents: read
 
+env:
+  FORMULATRACER_RELEASE_VERSION: "0.1.1"
+
 jobs:
   full-semantic-assurance:
     runs-on: ubuntu-latest
@@ -76,7 +79,7 @@ jobs:
           .linux-wheel-smoke/bin/python -m pip install dist/release/*.whl
           .linux-wheel-smoke/bin/python tools/linux_wheel_smoke.py
           python tools/linux_release_evidence.py --smoke-passed
-      - run: python tools/repository_sanitization_scan.py --scope both --summary-only --fail-on-hit --archive dist/release/formulatracer-0.1.0.tar.gz
+      - run: python tools/repository_sanitization_scan.py --scope both --summary-only --fail-on-hit --archive dist/release/formulatracer-${{ env.FORMULATRACER_RELEASE_VERSION }}.tar.gz
       - uses: actions/upload-artifact@v4
         with:
           name: verified-artifacts-${{ runner.os }}
