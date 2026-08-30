@@ -102,6 +102,17 @@ jobs:
           python tools/artifact_manifest.py \
             dist/release/*.whl dist/release/*.tar.gz \
             --output dist/release/release-manifest.json
+      - if: runner.os == 'Linux'
+        name: Clean-build and validate the exact sdist
+        run: |
+          VERSION="${FORMULATRACER_RELEASE_VERSION}"
+          python -m venv .sdist-smoke
+          .sdist-smoke/bin/python -m pip install --upgrade pip
+          .sdist-smoke/bin/python -m pip install --disable-pip-version-check \
+            "dist/release/formulatracer-${VERSION}.tar.gz"
+          .sdist-smoke/bin/python tools/linux_wheel_smoke.py
+          .sdist-smoke/bin/python -c \
+            "import importlib.metadata as m; assert m.version('formulatracer') == '${VERSION}'"
       - run: python tools/repository_sanitization_scan.py --scope both --summary-only --fail-on-hit --archive dist/release/formulatracer-${{ env.FORMULATRACER_RELEASE_VERSION }}.tar.gz
       - if: runner.os == 'Windows'
         run: python tools/repository_sanitization_scan.py --scope current --summary-only --fail-on-hit --archive dist/release/formulatracer-${{ env.FORMULATRACER_RELEASE_VERSION }}-py3-none-win_amd64.whl
