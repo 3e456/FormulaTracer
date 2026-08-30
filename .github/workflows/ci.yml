@@ -20,8 +20,8 @@ jobs:
         python: ["3.10", "3.11", "3.12", "3.13"]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
           cache: pip
@@ -41,7 +41,7 @@ jobs:
         toolchain: ["1.85.0", "stable"]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: rustup toolchain install ${{ matrix.toolchain }} --profile minimal
       - run: cargo +${{ matrix.toolchain }} test --workspace --locked
       - if: matrix.toolchain == 'stable'
@@ -54,10 +54,10 @@ jobs:
   docs-security-metadata:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: pip

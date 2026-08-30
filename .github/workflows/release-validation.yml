@@ -17,10 +17,10 @@ jobs:
   full-semantic-assurance:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: pip
@@ -51,7 +51,7 @@ jobs:
   lean-proof-layer:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: leanprover/lean-action@v1
         with:
           lake-package-directory: "."
@@ -65,8 +65,8 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: pip
@@ -119,7 +119,7 @@ jobs:
         run: python tools/repository_sanitization_scan.py --scope current --summary-only --fail-on-hit --archive dist/release/formulatracer-${{ env.FORMULATRACER_RELEASE_VERSION }}-py3-none-win_amd64.whl
       - if: runner.os == 'Linux'
         run: python tools/repository_sanitization_scan.py --scope current --summary-only --fail-on-hit --archive dist/release/formulatracer-${{ env.FORMULATRACER_RELEASE_VERSION }}-py3-none-manylinux*_x86_64.whl
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: verified-artifacts-${{ runner.os }}
           path: dist/release/

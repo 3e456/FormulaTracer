@@ -17,8 +17,8 @@ jobs:
   semantic-integration:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
           cache: pip
@@ -53,7 +53,7 @@ jobs:
   native-consumers:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: cargo build --workspace --locked
       - name: Rust consumer without Python runtime
         run: cargo run --locked --manifest-path examples/rust_native/Cargo.toml
@@ -71,7 +71,7 @@ jobs:
   clang18-frontend:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: sudo apt-get update
       - run: sudo apt-get install -y clang-18 libclang-18-dev llvm-18-dev ninja-build zlib1g-dev libzstd-dev libcurl4-openssl-dev libedit-dev
       - name: Configure and test Clang 18 frontend
