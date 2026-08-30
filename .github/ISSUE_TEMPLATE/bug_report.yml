@@ -1,0 +1,96 @@
+name: Bug report / 不具合報告
+description: Report a reproducible defect, incorrect result, regression, or crash / 再現可能な不具合・誤判定・退行・クラッシュを報告
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve FormulaTracer. Issues are for reporting, discussing, and evaluating problems; submitting one does not guarantee a fix or a response date. Reports may be closed when they cannot be reproduced, are outside project scope, or lack enough evidence for a safe semantic change.
+
+        FormulaTracer does not infer unsupported semantics or promote them to supported/verified status without sufficient evidence. Security vulnerabilities must be reported through the process in [SECURITY.md](https://github.com/3e456/FormulaTracer/security/policy), not through this public form.
+
+        日本語・英語のどちらでも報告できます。内容確認や技術的な議論の都合により、日本語での説明、追記、または再現手順がある報告を先に確認・対応する場合があります。Issueの提出は修正や対応時期を保証するものではありません。
+  - type: dropdown
+    id: category
+    attributes:
+      label: Problem category / 問題の分類
+      description: Select the closest category. / 最も近い分類を選んでください。
+      options:
+        - Incorrect exact/approximate relation classification
+        - Unsupported evidence promoted to verified
+        - Unresolved semantics incorrectly decided
+        - Incorrect source localization
+        - Provider semantics mismatch
+        - Runtime or native regression
+        - Crash or installation failure
+        - Other reproducible defect
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: FormulaTracer version
+      description: For example, 0.1.0 or a commit SHA.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: OS, architecture, and Python version / OS・architecture・Python version
+      description: Include Rust, Clang, or Lean versions only when relevant.
+      placeholder: "Windows 11 x86_64, Python 3.12"
+    validations:
+      required: true
+  - type: textarea
+    id: reproducer
+    attributes:
+      label: Minimal reproducible example / 最小再現例
+      description: Use independently authored synthetic code. Do not attach private research source, data, credentials, or local audit output.
+      placeholder: |
+        # Minimal synthetic example and exact commands
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 期待する動作
+      description: State the expected status, relation, evidence, or other observable behavior and why.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / 実際の動作
+      description: Include the observed error or a concise, sanitized audit result.
+    validations:
+      required: true
+  - type: textarea
+    id: audit_result
+    attributes:
+      label: Audit status, relation, and evidence / status・relation・evidence
+      description: If available, provide sanitized status, relation, assumptions, and evidence values.
+      placeholder: |
+        status: UNRESOLVED
+        relation: ...
+        evidence: ...
+  - type: input
+    id: provider
+    attributes:
+      label: Relevant provider or library / 関連provider・library
+      description: Include the exact version when the problem involves a provider contract.
+      placeholder: "numpy 2.x / scipy 1.x / not applicable"
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context / 補足
+      description: Add public documentation links or other sanitized information that may help reproduce the issue.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations / 確認
+      options:
+        - label: I searched existing issues for the same problem. / 同じ問題の既存Issueを確認しました。
+          required: true
+        - label: This report contains no vulnerability details, secrets, credentials, private research data, or private local paths. / 脆弱性情報・秘密情報・認証情報・private research data・private local pathを含めていません。
+          required: true

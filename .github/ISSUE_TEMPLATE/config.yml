@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Usage questions and general discussion / 利用質問・一般的な議論
+    url: https://github.com/3e456/FormulaTracer/discussions
+    about: Ask usage questions or start general technical discussions in GitHub Discussions. / 利用質問・一般的な技術議論はDiscussionsへお願いします。
+  - name: Security vulnerability / セキュリティ脆弱性
+    url: https://github.com/3e456/FormulaTracer/security/policy
+    about: Follow SECURITY.md and use private vulnerability reporting; do not disclose vulnerabilities in public issues. / SECURITY.mdに従い、公開Issueではなくprivate vulnerability reportingを利用してください。
