@@ -11,6 +11,7 @@ permissions:
 
 env:
   FORMULATRACER_RELEASE_VERSION: "0.1.1"
+  FORMULATRACER_REFERENCE_ACCESS_DATE: "2026-08-29"
 
 jobs:
   full-semantic-assurance:
