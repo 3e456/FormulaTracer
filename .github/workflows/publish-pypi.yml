@@ -37,31 +37,15 @@ jobs:
           cp "dist/evidence/formulatracer-${VERSION}-py3-none-win_amd64.whl" dist/pypi/
           cp "dist/evidence/formulatracer-${VERSION}.tar.gz" dist/pypi/
 
-      - name: Repair and validate the Linux wheel for PyPI
+      - name: Validate the exact GitHub Release Linux wheel
         env:
           RELEASE_TAG: ${{ inputs.release_tag }}
         run: |
           VERSION="${RELEASE_TAG#v}"
-          python3 -m pip install --disable-pip-version-check \
-            "auditwheel==6.4.2" "wheel==0.45.1"
-          python3 -m wheel unpack \
-            "dist/evidence/formulatracer-${VERSION}-py3-none-linux_x86_64.whl" \
-            --dest dist/unpacked
-          test -d "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib"
-          cp -a \
-            "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib/." \
-            "dist/unpacked/formulatracer-${VERSION}/"
-          rm -r "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib"
-          rmdir "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data"
-          mkdir -p dist/normalized
-          python3 -m wheel pack \
-            "dist/unpacked/formulatracer-${VERSION}" \
-            --dest-dir dist/normalized
+          python3 -m pip install --disable-pip-version-check "auditwheel==6.4.2"
           python3 -m auditwheel show \
-            "dist/normalized/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
-          python3 -m auditwheel repair \
-            --wheel-dir dist/pypi \
-            "dist/normalized/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
+            dist/evidence/formulatracer-${VERSION}-py3-none-manylinux*_x86_64.whl
+          cp dist/evidence/formulatracer-${VERSION}-py3-none-manylinux*_x86_64.whl dist/pypi/
           python3 -m venv .pypi-linux-smoke
           .pypi-linux-smoke/bin/python -m pip install --disable-pip-version-check \
             dist/pypi/formulatracer-${VERSION}-py3-none-manylinux*_x86_64.whl

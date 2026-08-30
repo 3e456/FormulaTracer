@@ -80,7 +80,45 @@ jobs:
           .linux-wheel-smoke/bin/python -m pip install dist/release/*.whl
           .linux-wheel-smoke/bin/python tools/linux_wheel_smoke.py
           python tools/linux_release_evidence.py --smoke-passed
+      - if: runner.os == 'Linux'
+        name: Produce and validate the final manylinux wheel
+        run: |
+          VERSION="${FORMULATRACER_RELEASE_VERSION}"
+          python -m pip install --disable-pip-version-check \
+            "auditwheel==6.4.2" "wheel==0.45.1"
+          python -m wheel unpack \
+            "dist/release/formulatracer-${VERSION}-py3-none-linux_x86_64.whl" \
+            --dest dist/unpacked
+          test -d "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib"
+          cp -a \
+            "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib/." \
+            "dist/unpacked/formulatracer-${VERSION}/"
+          rm -r "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib"
+          rmdir "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data"
+          mkdir -p dist/normalized dist/final
+          python -m wheel pack \
+            "dist/unpacked/formulatracer-${VERSION}" \
+            --dest-dir dist/normalized
+          python -m auditwheel show \
+            "dist/normalized/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
+          python -m auditwheel repair \
+            --wheel-dir dist/final \
+            "dist/normalized/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
+          python -m auditwheel show dist/final/formulatracer-${VERSION}-py3-none-manylinux*_x86_64.whl
+          python -m venv .manylinux-wheel-smoke
+          .manylinux-wheel-smoke/bin/python -m pip install --disable-pip-version-check \
+            dist/final/formulatracer-${VERSION}-py3-none-manylinux*_x86_64.whl
+          .manylinux-wheel-smoke/bin/python tools/linux_wheel_smoke.py
+          rm "dist/release/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
+          cp dist/final/formulatracer-${VERSION}-py3-none-manylinux*_x86_64.whl dist/release/
+          python tools/artifact_manifest.py \
+            dist/release/*.whl dist/release/*.tar.gz \
+            --output dist/release/release-manifest.json
       - run: python tools/repository_sanitization_scan.py --scope both --summary-only --fail-on-hit --archive dist/release/formulatracer-${{ env.FORMULATRACER_RELEASE_VERSION }}.tar.gz
+      - if: runner.os == 'Windows'
+        run: python tools/repository_sanitization_scan.py --scope current --summary-only --fail-on-hit --archive dist/release/formulatracer-${{ env.FORMULATRACER_RELEASE_VERSION }}-py3-none-win_amd64.whl
+      - if: runner.os == 'Linux'
+        run: python tools/repository_sanitization_scan.py --scope current --summary-only --fail-on-hit --archive dist/release/formulatracer-${{ env.FORMULATRACER_RELEASE_VERSION }}-py3-none-manylinux*_x86_64.whl
       - uses: actions/upload-artifact@v4
         with:
           name: verified-artifacts-${{ runner.os }}
