@@ -161,6 +161,8 @@ static proofへ誤昇格させません。
 [GitHub Issues](https://github.com/3e456/FormulaTracer/issues)、利用方法の質問は
 [GitHub Discussions](https://github.com/3e456/FormulaTracer/discussions)、脆弱性は
 [SECURITY.md](SECURITY.md)に従いGitHub Private vulnerability reportingから報告してください。
+報告・support方針は[SUPPORT.md](SUPPORT.md)を参照してください。外部からのPull Requestは
+現在受け付けていないため、修正提案はIssueまたはDiscussionへ提出してください。
 
 ## 引用・ライセンス・貢献
 
@@ -168,5 +170,5 @@ static proofへ誤昇格させません。
 第三者分類と再配布の注意点は[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)を参照してください。
 生成コードのlicenseはuser input、template、upstream provenanceに依存します。
 
-貢献ではfail-closed behaviorを維持し、positive / negative / unresolved testを追加してください。
-[CONTRIBUTING.md](CONTRIBUTING.md)を参照してください。
+外部参加方針は[CONTRIBUTING.md](CONTRIBUTING.md)を参照してください。外部からのPull Requestは
+現在受け付けていません。

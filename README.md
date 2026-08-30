@@ -196,7 +196,9 @@ Start with the [class and function usage guide](docs/reference/api-usage-guide.m
 [GitHub Issues](https://github.com/3e456/FormulaTracer/issues) for bugs and
 [GitHub Discussions](https://github.com/3e456/FormulaTracer/discussions) for
 usage questions. Report vulnerabilities privately as described in
-[SECURITY.md](SECURITY.md).
+[SECURITY.md](SECURITY.md). See [SUPPORT.md](SUPPORT.md) for the reporting and
+support policy. External pull requests are not currently accepted; propose
+changes through an Issue or Discussion.
 
 ## Citation, license, and contributing
 
@@ -206,6 +208,6 @@ in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Generated-code licensing
 depends on user input, selected templates, and upstream provenance; generation
 does not automatically impose the FormulaTracer project license on all output.
 
-Contributions should preserve fail-closed behavior, add positive/negative/
-unresolved tests, and record non-blocking findings in the defect ledger. See
-[CONTRIBUTING.md](CONTRIBUTING.md).
+FormulaTracer's external participation model is documented in
+[CONTRIBUTING.md](CONTRIBUTING.md). External pull requests are not currently
+accepted.

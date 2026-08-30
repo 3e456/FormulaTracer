@@ -1,0 +1,66 @@
+name: Feature request / 機能要望
+description: Propose an API, workflow, language, generation, or integration improvement / API・workflow・言語・生成・連携の改善を提案
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests are places to discuss and evaluate needs, not promises to implement them or deliver them on a schedule. A request may remain open, be deferred, be closed as out of scope, or be declined when it conflicts with compatibility or FormulaTracer's semantic architecture.
+
+        FormulaTracer does not implement guessed semantics without adequate mathematical, provider, or runtime evidence. Please describe the scientific or engineering problem—not only the implementation you would like.
+
+        日本語・英語のどちらでも報告できます。内容確認や技術的な議論の都合により、日本語での説明、追記、または具体例がある要望を先に確認・対応する場合があります。Issueの提出は実装や対応時期を保証するものではありません。
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve / 解決したい問題
+      description: What scientific, engineering, or audit problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: capability
+    attributes:
+      label: Proposed capability / 希望する機能
+      description: Describe the API, workflow, language support, code generation, or integration you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: fit
+    attributes:
+      label: Why this belongs in FormulaTracer / FormulaTracerに適する理由
+      description: Explain how it relates to mathematical reconstruction, semantic auditing, evidence, or auditable generation.
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Example scientific or research workflow / 利用例
+      description: Give a minimal synthetic example of how the capability would be used.
+      placeholder: |
+        1. Input/source
+        2. FormulaTracer operation
+        3. Expected structured result
+  - type: textarea
+    id: semantics
+    attributes:
+      label: Expected semantics and evidence / 期待するsemanticsと根拠
+      description: Describe exact/non-exact relations, assumptions, domains, error expectations, or authoritative references if known.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / 検討した代替案
+      description: What existing API, provider, user-defined contract, or external workflow have you tried?
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance and test implications / 保守・テスト上の影響
+      description: If known, note compatibility risks, fixtures, providers, platforms, or ongoing maintenance needs.
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations / 確認
+      options:
+        - label: I searched existing issues and discussions for a similar request. / 類似のIssue・Discussionを確認しました。
+          required: true
+        - label: This request contains no secrets, credentials, private research data, or private local paths. / 秘密情報・認証情報・private research data・private local pathを含めていません。
+          required: true
