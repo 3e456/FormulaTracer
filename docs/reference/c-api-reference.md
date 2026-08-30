@@ -1,6 +1,6 @@
 # C ABI v1 Function Reference
 
-FormulaTracer 0.1.0 / generated from the public headers and native source.
+FormulaTracer 0.1.1 / generated from the public headers and native source.
 
 Internal items are excluded. Experimental entries are listed but are not stability promises.
 

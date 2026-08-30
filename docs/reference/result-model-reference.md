@@ -1,6 +1,6 @@
 # Structured Result Model
 
-FormulaTracer 0.1.0 returns a structured `VerificationResult`/`NativeResult`.
+FormulaTracer 0.1.1 returns a structured `VerificationResult`/`NativeResult`.
 `to_tex()`, `to_json()`, `to_dict()`, and `explain()` are projections; none is
 the canonical result by itself.
 

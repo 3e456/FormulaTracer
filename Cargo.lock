@@ -48,7 +48,7 @@ dependencies = [
 
 [[package]]
 name = "formulatracer-c-api"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "formulatracer-core",
  "serde",
@@ -57,7 +57,7 @@ dependencies = [
 
 [[package]]
 name = "formulatracer-cli"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "formulatracer-core",
  "serde_json",
@@ -65,7 +65,7 @@ dependencies = [
 
 [[package]]
 name = "formulatracer-core"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "serde",
  "serde_json",

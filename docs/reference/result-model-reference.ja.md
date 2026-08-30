@@ -1,6 +1,6 @@
 # 構造化Result Model
 
-FormulaTracer 0.1.0は構造化された`VerificationResult`/`NativeResult`を返します。
+FormulaTracer 0.1.1は構造化された`VerificationResult`/`NativeResult`を返します。
 `to_tex()`、`to_json()`、`to_dict()`、`explain()`は派生表現であり、それ自体が
 canonical resultではありません。
 

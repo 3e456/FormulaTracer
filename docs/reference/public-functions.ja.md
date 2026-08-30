@@ -1,6 +1,6 @@
 # 公開Function/APIリファレンス
 
-Version: FormulaTracer 0.1.0 / C ABI v1
+Version: FormulaTracer 0.1.1 / C ABI v1
 
 このreferenceは実装から生成したcanonical inventoryに対応します。文字列・TeX・JSONは構造化resultの派生表現であり、証拠不足はfail-closed（安全側に未解決）になります。
 

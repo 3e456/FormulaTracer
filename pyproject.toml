@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "formulatracer"
-version = "0.1.0"
-description = "Fail-closed mathematical and provenance audit for scientific Python, C++, and Rust"
+version = "0.1.1"
+description = "Reconstructs and audits the mathematics implemented in scientific code, with theory comparison and auditable code generation"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "Apache-2.0"
@@ -15,9 +15,28 @@ dependencies = [
   "jsonschema>=4.21",
   "tomli>=2.0; python_version < '3.11'",
 ]
-keywords = ["scientific-computing", "program-analysis", "formal-verification", "provenance"]
+keywords = [
+  "scientific-computing",
+  "scientific-software",
+  "research-software",
+  "program-analysis",
+  "code-analysis",
+  "static-analysis",
+  "software-verification",
+  "formal-methods",
+  "formal-verification",
+  "numerical-analysis",
+  "numerical-computing",
+  "mathematical-software",
+  "code-generation",
+  "reproducibility",
+  "provenance",
+  "scientific-reproducibility",
+  "lean4",
+]
 classifiers = [
   "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
   "Intended Audience :: Science/Research",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.10",
@@ -26,6 +45,11 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Rust",
   "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Code Generators",
+  "Topic :: Software Development :: Quality Assurance",
+  "Typing :: Typed",
 ]
 
 [project.urls]
@@ -34,6 +58,8 @@ Repository = "https://github.com/3e456/FormulaTracer"
 Documentation = "https://github.com/3e456/FormulaTracer/tree/main/docs"
 Issues = "https://github.com/3e456/FormulaTracer/issues"
 Discussions = "https://github.com/3e456/FormulaTracer/discussions"
+Changelog = "https://github.com/3e456/FormulaTracer/blob/main/CHANGELOG.md"
+Releases = "https://github.com/3e456/FormulaTracer/releases"
 
 [project.scripts]
 formulatracer = "cpp_audit.cli:main"

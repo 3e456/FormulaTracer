@@ -225,7 +225,7 @@ def stable_markdown(rows: list[dict[str, Any]], language: str) -> str:
     title = "公開Function/APIリファレンス" if ja else "Public Function and API Reference"
     intro = ("このreferenceは実装から生成したcanonical inventoryに対応します。文字列・TeX・JSONは構造化resultの派生表現であり、証拠不足はfail-closed（安全側に未解決）になります。" if ja else
              "This reference corresponds to the implementation-derived canonical inventory. Text, TeX and JSON are projections of structured results; missing evidence fails closed as unresolved.")
-    lines = [f"# {title}", "", "Version: FormulaTracer 0.1.0 / C ABI v1", "", intro, ""]
+    lines = [f"# {title}", "", "Version: FormulaTracer 0.1.1 / C ABI v1", "", intro, ""]
     for row in rows:
         if row["language"] != "Python" or row["stability"] != "PUBLIC_STABLE" or "." in row["qualified_symbol"].removeprefix("formulatracer."):
             continue
@@ -246,7 +246,7 @@ def stable_markdown(rows: list[dict[str, Any]], language: str) -> str:
 
 def reference_index(title: str, rows: list[dict[str, Any]], language: str) -> str:
     ja = language == "ja"
-    lines = [f"# {title}", "", "FormulaTracer 0.1.0 / generated from the public headers and native source.", "",
+    lines = [f"# {title}", "", "FormulaTracer 0.1.1 / generated from the public headers and native source.", "",
              "Internal items are excluded. Experimental entries are listed but are not stability promises." if not ja else "internal項目は除外します。Experimental項目は一覧化しますが安定性保証ではありません。", "",
              "| Symbol | Stability | Signature | Ownership / failure |", "|---|---|---|---|"]
     for row in rows:
@@ -286,7 +286,7 @@ def main() -> int:
     physics = {"source": physics_path.relative_to(ROOT).as_posix() if physics_path.exists() else None, "definitions": physics_data.get("definitions", []), "theorems": physics_data.get("theorems", []), "realizations": physics_data.get("realizations", []), "claim_boundary":"DEFINED, theorem registration, realization availability and Lean kernel evidence are separate fields"}
     user_defined = {"operation":"COVERAGE_BLOCKER/USER_DECLARATION", "statuses":["MATCH","MISMATCH","NOT_EVALUABLE"], "evidence":"USER_DECLARED", "auto_verified":False, "effects":"UNKNOWN_EFFECT remains unresolved", "second_engine":False}
 
-    dump("public-api-inventory.json", {"schema_version":"1.0","version":"0.1.0","items":all_rows})
+    dump("public-api-inventory.json", {"schema_version":"1.0","version":"0.1.1","items":all_rows})
     for filename, rows in (("python-api.json", python_rows), ("rust-api.json", rust_rows), ("c-api.json", c_rows), ("cpp-api.json", cpp_rows)):
         dump(filename, {"schema_version":"1.0","items":rows})
     dump("cli-api.json", cli)
