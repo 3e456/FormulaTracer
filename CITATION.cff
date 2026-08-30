@@ -15,5 +15,8 @@ abstract: >-
 keywords:
   - scientific computing
   - program analysis
+  - software verification
+  - numerical analysis
+  - research software
   - formal verification
   - Lean
