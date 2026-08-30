@@ -85,25 +85,13 @@ jobs:
         run: |
           VERSION="${FORMULATRACER_RELEASE_VERSION}"
           python -m pip install --disable-pip-version-check \
-            "auditwheel==6.4.2" "wheel==0.45.1"
-          python -m wheel unpack \
-            "dist/release/formulatracer-${VERSION}-py3-none-linux_x86_64.whl" \
-            --dest dist/unpacked
-          test -d "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib"
-          cp -a \
-            "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib/." \
-            "dist/unpacked/formulatracer-${VERSION}/"
-          rm -r "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data/purelib"
-          rmdir "dist/unpacked/formulatracer-${VERSION}/formulatracer-${VERSION}.data"
-          mkdir -p dist/normalized dist/final
-          python -m wheel pack \
-            "dist/unpacked/formulatracer-${VERSION}" \
-            --dest-dir dist/normalized
+            "auditwheel==6.4.2"
+          mkdir -p dist/final
           python -m auditwheel show \
-            "dist/normalized/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
+            "dist/release/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
           python -m auditwheel repair \
             --wheel-dir dist/final \
-            "dist/normalized/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
+            "dist/release/formulatracer-${VERSION}-py3-none-linux_x86_64.whl"
           python -m auditwheel show dist/final/formulatracer-${VERSION}-py3-none-manylinux*_x86_64.whl
           python -m venv .manylinux-wheel-smoke
           .manylinux-wheel-smoke/bin/python -m pip install --disable-pip-version-check \
